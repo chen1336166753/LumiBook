@@ -94,11 +94,22 @@ runs:
       shell: bash
       if: ${{ runner.os != 'Windows' && inputs.no-build != 'true' }}
       run: |
+        set +e
         if [[ "${{ inputs.target }}" == "x86_64-unknown-linux-gnu" ]]; then
-          yarn workspace ${{ inputs.package }} build --target ${{ inputs.target }}
+          yarn workspace ${{ inputs.package }} build --target ${{ inputs.target }} 2>&1 | tee /tmp/rust-build.log
         else
-          yarn workspace ${{ inputs.package }} build --target ${{ inputs.target }} --use-napi-cross
+          yarn workspace ${{ inputs.package }} build --target ${{ inputs.target }} --use-napi-cross 2>&1 | tee /tmp/rust-build.log
         fi
+        code=${PIPESTATUS[0]}
+        if [ "$code" -ne 0 ]; then
+          {
+            echo "### Build failed with exit code $code"
+            echo '```text'
+            tail -n 80 /tmp/rust-build.log
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+        fi
+        exit $code
       env:
         DEBUG: 'napi:*'
 
@@ -107,7 +118,18 @@ runs:
       shell: bash
       if: ${{ runner.os == 'Windows' && inputs.no-build != 'true' }}
       run: |
-        yarn workspace ${{ inputs.package }} build --target ${{ inputs.target }}
+        set +e
+        yarn workspace ${{ inputs.package }} build --target ${{ inputs.target }} 2>&1 | tee /tmp/rust-build.log
+        code=${PIPESTATUS[0]}
+        if [ "$code" -ne 0 ]; then
+          {
+            echo "### Build failed with exit code $code"
+            echo '```text'
+            tail -n 80 /tmp/rust-build.log
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+        fi
+        exit $code
       env:
         DEBUG: 'napi:*'
         CARGO_HOME: ${{ env.DEV_DRIVE }}/.cargo
