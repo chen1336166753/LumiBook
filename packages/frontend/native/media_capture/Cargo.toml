@@ -16,7 +16,7 @@ crossbeam-channel = { workspace = true }
 napi              = { workspace = true, features = ["napi4"] }
 napi-derive       = { workspace = true, features = ["type-def"] }
 ogg               = { workspace = true }
-opus-codec        = { git = "https://github.com/chen1336166753/opus-codec", rev = "c2afef2" }
+opus-codec        = { git = "https://github.com/toeverything/opus-codec", rev = "c2afef2" }
 rand              = { workspace = true }
 rubato            = { workspace = true }
 symphonia         = { workspace = true, features = ["all", "opt-simd"] }
