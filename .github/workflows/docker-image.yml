@@ -1,0 +1,39 @@
+name: 构建并发布 Docker 镜像
+
+# 推送到 canary（或手动触发）时，构建全平台 server 镜像并推送到
+# ghcr.io/chen1336166753/lumibook（识光 LumiBook 自托管镜像）
+on:
+  push:
+    branches:
+      - canary
+  workflow_dispatch:
+    inputs:
+      build-type:
+        description: '镜像类型（canary / stable）'
+        required: false
+        default: 'canary'
+
+permissions:
+  contents: read
+  packages: write
+
+jobs:
+  prepare:
+    name: Prepare
+    runs-on: ubuntu-latest
+    outputs:
+      short-sha: ${{ steps.short.outputs.short-sha }}
+    steps:
+      - name: Compute short SHA
+        id: short
+        run: echo "short-sha=${GITHUB_SHA::7}" >> "$GITHUB_OUTPUT"
+
+  images:
+    name: Build Images
+    needs: prepare
+    uses: ./.github/workflows/build-images.yml
+    with:
+      build-type: ${{ github.event.inputs.build-type || 'canary' }}
+      app-version: 0.27.5-canary
+      git-short-hash: ${{ needs.prepare.outputs.short-sha }}
+    secrets: inherit

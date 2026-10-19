@@ -22,7 +22,6 @@ jobs:
   build-web:
     name: Build @lumibook/web
     runs-on: ubuntu-latest
-    environment: ${{ inputs.build-type }}
     steps:
       - uses: actions/checkout@v7
       - name: Setup Version
@@ -39,7 +38,7 @@ jobs:
           R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
           BUILD_TYPE: ${{ inputs.build-type }}
           SENTRY_ORG: ${{ secrets.SENTRY_ORG }}
-          SENTRY_PROJECT: 'affine-web'
+          SENTRY_PROJECT: 'lumibook-web'
           SENTRY_RELEASE: ${{ inputs.app-version }}
           SENTRY_AUTH_TOKEN: ${{ secrets.SENTRY_AUTH_TOKEN }}
           SENTRY_DSN: ${{ secrets.SENTRY_DSN }}
@@ -54,7 +53,6 @@ jobs:
   build-admin:
     name: Build @lumibook/admin
     runs-on: ubuntu-latest
-    environment: ${{ inputs.build-type }}
     steps:
       - uses: actions/checkout@v7
       - name: Setup Version
@@ -71,7 +69,7 @@ jobs:
           R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
           BUILD_TYPE: ${{ inputs.build-type }}
           SENTRY_ORG: ${{ secrets.SENTRY_ORG }}
-          SENTRY_PROJECT: 'affine-admin'
+          SENTRY_PROJECT: 'lumibook-admin'
           SENTRY_AUTH_TOKEN: ${{ secrets.SENTRY_AUTH_TOKEN }}
           SENTRY_DSN: ${{ secrets.SENTRY_DSN }}
           PERFSEE_TOKEN: ${{ secrets.PERFSEE_TOKEN }}
@@ -85,7 +83,6 @@ jobs:
   build-mobile:
     name: Build @lumibook/mobile
     runs-on: ubuntu-latest
-    environment: ${{ inputs.build-type }}
     steps:
       - uses: actions/checkout@v7
       - name: Setup Version
@@ -102,7 +99,7 @@ jobs:
           R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
           BUILD_TYPE: ${{ inputs.build-type }}
           SENTRY_ORG: ${{ secrets.SENTRY_ORG }}
-          SENTRY_PROJECT: 'affine-mobile'
+          SENTRY_PROJECT: 'lumibook-mobile'
           SENTRY_AUTH_TOKEN: ${{ secrets.SENTRY_AUTH_TOKEN }}
           SENTRY_DSN: ${{ secrets.SENTRY_DSN }}
           PERFSEE_TOKEN: ${{ secrets.PERFSEE_TOKEN }}
@@ -116,7 +113,6 @@ jobs:
   build-server-native:
     name: Build Server native - ${{ matrix.targets.name }}
     runs-on: ubuntu-22.04
-    environment: ${{ inputs.build-type }}
     strategy:
       fail-fast: false
       matrix:
@@ -222,8 +218,6 @@ jobs:
         uses: actions/setup-node@v7
         with:
           node-version-file: '.nvmrc'
-          registry-url: https://npm.pkg.github.com
-          scope: '@toeverything'
 
       - name: Download web artifact
         uses: actions/download-artifact@v4
@@ -269,4 +263,7 @@ jobs:
           platforms: linux/amd64,linux/arm64,linux/arm/v7
           provenance: true
           file: .github/deployment/node/Dockerfile
-          tags: ghcr.io/toeverything/affine:${{inputs.build-type}}-${{ inputs.git-short-hash }}
+          tags: |
+            ghcr.io/chen1336166753/lumibook:${{inputs.build-type}}-${{ inputs.git-short-hash }}
+            ghcr.io/chen1336166753/lumibook:${{inputs.build-type }}
+
