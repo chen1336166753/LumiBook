@@ -15,8 +15,7 @@ import type {
 import { GlobalContextService } from '@lumibook/core/modules/global-context';
 import { createIsland, type Island } from '@lumibook/core/utils/island';
 import { ServerDeploymentType } from '@lumibook/graphql';
-import { Trans, useTranslation } from '@lumibook/i18n';
-import { ContactWithUsIcon } from '@blocksuite/icons/rc';
+import { useTranslation } from '@lumibook/i18n';
 import { FrameworkScope, useLiveData, useService } from '@lumibook/infra';
 import { debounce } from 'lodash-es';
 import {
@@ -34,7 +33,6 @@ import { AccountSetting } from './account-setting';
 import { GeneralSetting } from './general-setting';
 import { IssueFeedbackModal } from './issue-feedback-modal';
 import { SettingSidebar } from './setting-sidebar';
-import { StarLumiBookModal } from './star-affine-modal';
 import * as style from './style.css';
 import {
   SubPageContext,
@@ -143,15 +141,11 @@ const SettingModalInner = ({
     [setSettingState]
   );
   const [openIssueFeedbackModal, setOpenIssueFeedbackModal] = useState(false);
-  const [openStarLumiBookModal, setOpenStarLumiBookModal] = useState(false);
 
   const handleOpenIssueFeedbackModal = useCallback(() => {
     setOpenIssueFeedbackModal(true);
   }, [setOpenIssueFeedbackModal]);
 
-  const handleOpenStarLumiBookModal = useCallback(() => {
-    setOpenStarLumiBookModal(true);
-  }, [setOpenStarLumiBookModal]);
 
   const addSubPageIsland = useCallback(() => {
     const island = createIsland();
@@ -233,30 +227,7 @@ const SettingModalInner = ({
                   ) : null}
                 </Suspense>
               </div>
-              <div className={style.footer}>
-                <ContactWithUsIcon fontSize={16} />
-                <Trans
-                  i18nKey={'com.affine.settings.suggestion-2'}
-                  components={{
-                    1: (
-                      <span
-                        className={style.link}
-                        onClick={handleOpenStarLumiBookModal}
-                      />
-                    ),
-                    2: (
-                      <span
-                        className={style.link}
-                        onClick={handleOpenIssueFeedbackModal}
-                      />
-                    ),
-                  }}
-                />
-              </div>
-              <StarLumiBookModal
-                open={openStarLumiBookModal}
-                setOpen={setOpenStarLumiBookModal}
-              />
+              <InfoFooter />
               <IssueFeedbackModal
                 open={openIssueFeedbackModal}
                 setOpen={setOpenIssueFeedbackModal}
@@ -304,5 +275,16 @@ export const SettingDialog = ({
         />
       </Suspense>
     </Modal>
+  );
+};
+
+
+const InfoFooter = () => {
+  return (
+    <div className={style.footer}>
+      <span className={style.brandText}>
+        识光 LumiBook · Light up your knowledge.
+      </span>
+    </div>
   );
 };

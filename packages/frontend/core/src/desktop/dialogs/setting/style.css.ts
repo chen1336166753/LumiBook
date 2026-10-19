@@ -44,6 +44,11 @@ export const footer = style({
   maxWidth: '560px',
 });
 
+export const brandText = style({
+  color: cssVar('textSecondaryColor'),
+  textAlign: 'center',
+});
+
 export const link = style({
   color: cssVar('linkColor'),
   cursor: 'pointer',
