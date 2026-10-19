@@ -1,0 +1,50 @@
+import { Avatar } from '@lumibook/component';
+import { useWorkspaceInfo } from '@lumibook/core/components/hooks/use-workspace-info';
+import { WorkspaceAvatar } from '@lumibook/core/components/workspace-avatar';
+import { WorkspaceService } from '@lumibook/core/modules/workspace';
+import { UNTITLED_WORKSPACE_NAME } from '@lumibook/env/constant';
+import { ArrowDownSmallIcon } from '@blocksuite/icons/rc';
+import { useServiceOptional } from '@lumibook/infra';
+import clsx from 'clsx';
+import { forwardRef, type HTMLAttributes } from 'react';
+
+import { card, dropdownIcon, label } from './card.css';
+
+export interface CurrentWorkspaceCardProps extends HTMLAttributes<HTMLDivElement> {}
+
+export const CurrentWorkspaceCard = forwardRef<
+  HTMLDivElement,
+  CurrentWorkspaceCardProps
+>(function CurrentWorkspaceCard({ onClick, className, ...attrs }, ref) {
+  const currentWorkspace = useServiceOptional(WorkspaceService)?.workspace;
+  const info = useWorkspaceInfo(currentWorkspace?.meta);
+  const name = info?.name ?? UNTITLED_WORKSPACE_NAME;
+
+  return (
+    <div
+      ref={ref}
+      onClick={onClick}
+      className={clsx(card, className)}
+      data-testid="workspace-selector-trigger"
+      {...attrs}
+    >
+      {currentWorkspace ? (
+        <WorkspaceAvatar
+          key={currentWorkspace?.id}
+          meta={currentWorkspace?.meta}
+          rounded={3}
+          data-testid="workspace-avatar"
+          size={40}
+          name={name}
+          colorfulFallback
+        />
+      ) : (
+        <Avatar size={40} rounded={3} colorfulFallback />
+      )}
+      <div className={label}>
+        {name}
+        <ArrowDownSmallIcon className={dropdownIcon} />
+      </div>
+    </div>
+  );
+});

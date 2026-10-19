@@ -1,0 +1,99 @@
+import { useThemeColorV2 } from '@lumibook/component';
+import { usePageHelper } from '@lumibook/core/blocksuite/block-suite-page-list/utils';
+import {
+  createDocExplorerContext,
+  DocExplorerContext,
+} from '@lumibook/core/components/explorer/context';
+import { DocsExplorer } from '@lumibook/core/components/explorer/docs-view/docs-list';
+import { CollectionRulesService } from '@lumibook/core/modules/collection-rules';
+import { WorkspaceService } from '@lumibook/core/modules/workspace';
+import { inferOpenMode } from '@lumibook/core/utils';
+import { useLiveData, useService } from '@lumibook/infra';
+import { type MouseEvent, useCallback, useEffect, useState } from 'react';
+
+import { Page } from '../../components/page';
+import { AllDocsHeader, MobileAllDocsEmptyState } from '../../views';
+
+const AllDocs = () => {
+  const [explorerContextValue] = useState(() =>
+    createDocExplorerContext({
+      quickFavorite: false,
+      showDocIcon: false,
+      displayProperties: [
+        'system:createdAt',
+        'system:updatedAt',
+        'system:tags',
+      ],
+      view: 'masonry',
+      showDragHandle: false,
+      groupBy: undefined,
+      orderBy: undefined,
+    })
+  );
+  const collectionRulesService = useService(CollectionRulesService);
+  const workspace = useService(WorkspaceService).workspace;
+  const pageHelper = usePageHelper(workspace.docCollection);
+  const groups = useLiveData(explorerContextValue.groups$);
+  const isEmpty =
+    groups.length === 0 ||
+    (groups.length && groups.every(group => !group.items.length));
+
+  const handleCreateDoc = useCallback(
+    (event: MouseEvent<HTMLButtonElement>) => {
+      pageHelper.createPage(undefined, {
+        at: inferOpenMode(event),
+      });
+    },
+    [pageHelper]
+  );
+
+  useEffect(() => {
+    const subscription = collectionRulesService
+      .watch({
+        filters: [
+          { type: 'system', key: 'trash', method: 'is', value: 'false' },
+        ],
+        extraFilters: [
+          { type: 'system', key: 'trash', method: 'is', value: 'false' },
+          {
+            type: 'system',
+            key: 'empty-journal',
+            method: 'is',
+            value: 'false',
+          },
+        ],
+        orderBy: {
+          type: 'system',
+          key: 'updatedAt',
+          desc: true,
+        },
+      })
+      .subscribe({
+        next: result => {
+          explorerContextValue.groups$.next(result.groups);
+        },
+        error: console.error,
+      });
+    return () => subscription.unsubscribe();
+  }, [collectionRulesService, explorerContextValue.groups$]);
+
+  if (isEmpty) {
+    return <MobileAllDocsEmptyState type="docs" onAction={handleCreateDoc} />;
+  }
+
+  return (
+    <DocExplorerContext.Provider value={explorerContextValue}>
+      <DocsExplorer masonryItemWidthMin={150} />
+    </DocExplorerContext.Provider>
+  );
+};
+
+export const Component = () => {
+  useThemeColorV2('layer/background/mobile/primary');
+
+  return (
+    <Page header={<AllDocsHeader />} tab>
+      <AllDocs />
+    </Page>
+  );
+};

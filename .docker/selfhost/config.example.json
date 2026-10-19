@@ -1,0 +1,13 @@
+{
+  "$schema": "https://github.com/chen1336166753/affine/releases/latest/download/config.schema.json",
+  "deployment": {
+    "type": "selfhosted"
+  },
+  "server": {
+    "name": "识光 Self Hosted Server"
+  },
+  "indexer": {
+    "enabled": true,
+    "provider.type": "embedded"
+  }
+}
