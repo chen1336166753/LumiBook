@@ -13,8 +13,11 @@ on:
         required: false
         default: 'canary'
 
+# 注意：被调用的 build-images.yml 会请求 contents/id-token/packages 的写权限，
+# 可复用工作流的权限不能超过此处授予的范围，故三项必须齐全，否则启动即失败。
 permissions:
-  contents: read
+  contents: write
+  id-token: write
   packages: write
 
 jobs:
