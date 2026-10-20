@@ -1,5 +1,5 @@
 import { useI18n } from '@lumibook/i18n';
-import { cssVar } from '@lumibook/theme';
+import { cssVar } from '@toeverything/theme';
 
 import Input from '../../../ui/input';
 import * as styles from './styles.css';

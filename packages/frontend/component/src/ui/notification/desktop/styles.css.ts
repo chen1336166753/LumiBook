@@ -1,4 +1,4 @@
-import { cssVar } from '@lumibook/theme';
+import { cssVar } from '@toeverything/theme';
 import { createVar, globalStyle, style } from '@vanilla-extract/css';
 
 export const cardColor = createVar();

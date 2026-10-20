@@ -1,6 +1,6 @@
 import { PlusIcon } from '@blocksuite/icons/lit';
 import { ShadowlessElement } from '@blocksuite/std';
-import { cssVarV2 } from '@lumibook/theme/v2';
+import { cssVarV2 } from '@toeverything/theme/v2';
 import { html, unsafeCSS } from 'lit';
 
 export class NewRecordPreview extends ShadowlessElement {

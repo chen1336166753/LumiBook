@@ -5,7 +5,7 @@ import { type DocRecord, DocService } from '@lumibook/core/modules/doc';
 import { WorkspaceService } from '@lumibook/core/modules/workspace';
 import { useI18n } from '@lumibook/i18n';
 import { useLiveData, useService } from '@lumibook/infra';
-import { cssVarV2 } from '@lumibook/theme/v2';
+import { cssVarV2 } from '@toeverything/theme/v2';
 import { type ReactNode, useCallback, useEffect, useMemo, useRef } from 'react';
 
 import { PlainTextDocGroupHeader } from '../explorer/docs-view/group-header';

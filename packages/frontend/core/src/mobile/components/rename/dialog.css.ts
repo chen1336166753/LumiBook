@@ -1,5 +1,5 @@
-import { bodyEmphasized } from '@lumibook/theme/typography';
-import { cssVarV2 } from '@lumibook/theme/v2';
+import { bodyEmphasized } from '@toeverything/theme/typography';
+import { cssVarV2 } from '@toeverything/theme/v2';
 import { style } from '@vanilla-extract/css';
 
 export const header = style({

@@ -16,7 +16,7 @@ import { useI18n } from '@lumibook/i18n';
 import track from '@lumibook/track';
 import { AllDocsIcon } from '@blocksuite/icons/rc';
 import { LiveData, useLiveData, useService } from '@lumibook/infra';
-import { cssVar } from '@lumibook/theme';
+import { cssVar } from '@toeverything/theme';
 import { useCallback, useEffect, useRef, useState } from 'react';
 
 import * as styles from './style.css';

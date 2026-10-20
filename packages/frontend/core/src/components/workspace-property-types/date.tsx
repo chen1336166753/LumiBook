@@ -7,7 +7,7 @@ import {
 import type { FilterParams } from '@lumibook/core/modules/collection-rules';
 import { i18nTime, useI18n } from '@lumibook/i18n';
 import { DateTimeIcon } from '@blocksuite/icons/rc';
-import { cssVarV2 } from '@lumibook/theme/v2';
+import { cssVarV2 } from '@toeverything/theme/v2';
 import {
   useCallback,
   useEffect,

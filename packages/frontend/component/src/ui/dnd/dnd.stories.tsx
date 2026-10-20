@@ -1,5 +1,5 @@
 import type { Meta, StoryFn } from '@storybook/react';
-import { cssVar } from '@lumibook/theme';
+import { cssVar } from '@toeverything/theme';
 import { cloneDeep } from 'lodash-es';
 import { useCallback, useState } from 'react';
 

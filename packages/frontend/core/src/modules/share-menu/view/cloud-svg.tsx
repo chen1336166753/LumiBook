@@ -1,4 +1,4 @@
-import { cssVar } from '@lumibook/theme';
+import { cssVar } from '@toeverything/theme';
 
 export const CloudSvg = () => (
   <svg

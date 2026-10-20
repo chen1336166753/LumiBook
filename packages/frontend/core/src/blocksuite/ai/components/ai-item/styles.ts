@@ -1,9 +1,9 @@
 import { unsafeCSSVar, unsafeCSSVarV2 } from '@blocksuite/affine/shared/theme';
-import { darkCssVariables, lightCssVariables } from '@lumibook/theme';
+import { darkCssVariables, lightCssVariables } from '@toeverything/theme';
 import {
   darkCssVariablesV2,
   lightCssVariablesV2,
-} from '@lumibook/theme/v2';
+} from '@toeverything/theme/v2';
 import { css, unsafeCSS } from 'lit';
 
 export const menuItemStyles = css`

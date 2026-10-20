@@ -18,7 +18,7 @@ import { CompatibleFavoriteItemsAdapter } from '@lumibook/core/modules/favorite'
 import { WorkspaceService } from '@lumibook/core/modules/workspace';
 import { useI18n } from '@lumibook/i18n';
 import { useLiveData, useService } from '@lumibook/infra';
-import { cssVar } from '@lumibook/theme';
+import { cssVar } from '@toeverything/theme';
 import { useCallback, useMemo, useState } from 'react';
 
 const FavoriteOperation = ({ collection }: { collection: ListItem }) => {

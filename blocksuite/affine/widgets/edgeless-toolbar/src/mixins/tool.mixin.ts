@@ -15,7 +15,7 @@ import {
 } from '@blocksuite/std/gfx';
 import { consume } from '@lit/context';
 import { effect } from '@preact/signals-core';
-import { cssVar } from '@lumibook/theme';
+import { cssVar } from '@toeverything/theme';
 import type { LitElement } from 'lit';
 import { property, state } from 'lit/decorators.js';
 

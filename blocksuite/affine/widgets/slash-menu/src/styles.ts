@@ -1,6 +1,6 @@
 import { scrollbarStyle } from '@blocksuite/affine-shared/styles';
 import { unsafeCSSVar, unsafeCSSVarV2 } from '@blocksuite/affine-shared/theme';
-import { baseTheme } from '@lumibook/theme';
+import { baseTheme } from '@toeverything/theme';
 import { css, unsafeCSS } from 'lit';
 
 export const styles = css`

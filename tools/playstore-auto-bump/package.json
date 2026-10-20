@@ -9,9 +9,9 @@
     "bump": "r ./index.ts"
   },
   "dependencies": {
+    "@googleapis/androidpublisher": "^36.0.0",
     "@lumibook/cli": "workspace:*",
     "@lumibook/utils": "workspace:*",
-    "@googleapis/androidpublisher": "^36.0.0",
     "typescript": "npm:@typescript/typescript6@6.0.2"
   },
   "devDependencies": {

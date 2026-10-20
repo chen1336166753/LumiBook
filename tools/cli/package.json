@@ -15,8 +15,8 @@
     "affine": "r ./src/affine.ts"
   },
   "dependencies": {
-    "@lumibook/utils": "workspace:*",
     "@lumibook/s3-compat": "workspace:*",
+    "@lumibook/utils": "workspace:*",
     "@napi-rs/simple-git": "^1.0.0",
     "@rspack/core": "^2.0.8",
     "@rspack/dev-server": "^2.1.0",

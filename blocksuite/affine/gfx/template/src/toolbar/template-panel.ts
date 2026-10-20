@@ -16,7 +16,7 @@ import type { Bound } from '@blocksuite/global/gfx';
 import { WithDisposable } from '@blocksuite/global/lit';
 import type { BlockComponent } from '@blocksuite/std';
 import { GfxControllerIdentifier } from '@blocksuite/std/gfx';
-import { baseTheme } from '@lumibook/theme';
+import { baseTheme } from '@toeverything/theme';
 import { css, html, LitElement, nothing, unsafeCSS } from 'lit';
 import { property, state } from 'lit/decorators.js';
 import { repeat } from 'lit/directives/repeat.js';

@@ -19,7 +19,7 @@ vi.mock('@lumibook/component', () => ({
     open ? <div role="dialog">{children}</div> : null,
 }));
 
-vi.mock('@lumibook/theme/v2', () => ({
+vi.mock('@toeverything/theme/v2', () => ({
   cssVarV2: () => 'mock-color',
 }));
 

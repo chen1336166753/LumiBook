@@ -3,7 +3,7 @@ import { WithDisposable } from '@blocksuite/global/lit';
 import { ViewBarIcon } from '@blocksuite/icons/lit';
 import type { BlockStdScope } from '@blocksuite/std';
 import { GfxControllerIdentifier } from '@blocksuite/std/gfx';
-import { baseTheme } from '@lumibook/theme';
+import { baseTheme } from '@toeverything/theme';
 import { css, html, LitElement, unsafeCSS } from 'lit';
 import { property } from 'lit/decorators.js';
 

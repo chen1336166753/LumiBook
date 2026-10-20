@@ -15,8 +15,8 @@
     "./worker": "./src/worker.ts"
   },
   "peerDependencies": {
-    "@lumibook/templates": "workspace:*",
-    "@blocksuite/affine": "workspace:*"
+    "@blocksuite/affine": "workspace:*",
+    "@lumibook/templates": "workspace:*"
   },
   "dependencies": {
     "zod": "^3.25.76"

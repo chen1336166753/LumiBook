@@ -5,7 +5,7 @@ import { useI18n } from '@lumibook/i18n';
 import track from '@lumibook/track';
 import { SortDownIcon, SortUpIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
-import { cssVarV2 } from '@lumibook/theme/v2';
+import { cssVarV2 } from '@toeverything/theme/v2';
 import { useMemo } from 'react';
 
 import { WorkspacePropertyName } from '../../properties';

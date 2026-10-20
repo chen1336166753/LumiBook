@@ -1,4 +1,4 @@
-import { cssVar } from '@lumibook/theme';
+import { cssVar } from '@toeverything/theme';
 import { globalStyle, style } from '@vanilla-extract/css';
 export const moveToTrashStyle = style({
   padding: '4px 12px',

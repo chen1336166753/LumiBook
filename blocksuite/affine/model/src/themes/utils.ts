@@ -2,7 +2,7 @@ import {
   type AffineThemeKeyV2,
   darkThemeV2,
   lightThemeV2,
-} from '@lumibook/theme/v2';
+} from '@toeverything/theme/v2';
 
 import type { Color } from './color';
 import type { Palette } from './types';

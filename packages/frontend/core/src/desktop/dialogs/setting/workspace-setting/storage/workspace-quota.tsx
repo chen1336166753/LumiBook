@@ -3,7 +3,7 @@ import { SettingRow } from '@lumibook/component/setting-components';
 import { WorkspaceQuotaService } from '@lumibook/core/modules/quota';
 import { useI18n } from '@lumibook/i18n';
 import { useLiveData, useService } from '@lumibook/infra';
-import { cssVarV2 } from '@lumibook/theme/v2';
+import { cssVarV2 } from '@toeverything/theme/v2';
 import { useEffect } from 'react';
 
 import * as styles from './style.css';

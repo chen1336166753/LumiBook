@@ -1,7 +1,7 @@
 import { unsafeCSSVarV2 } from '@blocksuite/affine-shared/theme';
 import { IS_MOBILE } from '@blocksuite/global/env';
 import { CloseIcon, SearchIcon } from '@blocksuite/icons/lit';
-import { baseTheme } from '@lumibook/theme';
+import { baseTheme } from '@toeverything/theme';
 import { css, html, unsafeCSS } from 'lit';
 import { query, state } from 'lit/decorators.js';
 import { classMap } from 'lit/directives/class-map.js';

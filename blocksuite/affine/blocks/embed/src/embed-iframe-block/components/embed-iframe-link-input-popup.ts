@@ -4,7 +4,7 @@ import {
 } from '@blocksuite/affine-shared/services';
 import { unsafeCSSVar, unsafeCSSVarV2 } from '@blocksuite/affine-shared/theme';
 import { CloseIcon } from '@blocksuite/icons/lit';
-import { baseTheme } from '@lumibook/theme';
+import { baseTheme } from '@toeverything/theme';
 import { css, html, nothing, unsafeCSS } from 'lit';
 import { property } from 'lit/decorators.js';
 import { classMap } from 'lit/directives/class-map.js';

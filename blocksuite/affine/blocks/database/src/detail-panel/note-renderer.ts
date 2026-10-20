@@ -14,7 +14,7 @@ import { SignalWatcher, WithDisposable } from '@blocksuite/global/lit';
 import { type EditorHost, ShadowlessElement } from '@blocksuite/std';
 import type { BaseTextAttributes } from '@blocksuite/store';
 import { computed } from '@preact/signals-core';
-import { cssVarV2 } from '@lumibook/theme/v2';
+import { cssVarV2 } from '@toeverything/theme/v2';
 import { css, html, unsafeCSS } from 'lit';
 import { property } from 'lit/decorators.js';
 

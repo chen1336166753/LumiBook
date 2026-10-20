@@ -16,7 +16,7 @@ import {
 import { DeleteIcon, PaletteIcon, SmileIcon } from '@blocksuite/icons/lit';
 import { BlockFlavourIdentifier } from '@blocksuite/std';
 import type { ExtensionType } from '@blocksuite/store';
-import { cssVarV2 } from '@lumibook/theme/v2';
+import { cssVarV2 } from '@toeverything/theme/v2';
 import { html } from 'lit';
 import { repeat } from 'lit/directives/repeat.js';
 import { styleMap } from 'lit/directives/style-map.js';

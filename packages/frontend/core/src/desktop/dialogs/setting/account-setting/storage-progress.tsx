@@ -1,7 +1,7 @@
 import { Button, ErrorMessage, Skeleton, Tooltip } from '@lumibook/component';
 import { useI18n } from '@lumibook/i18n';
 import { useLiveData, useService } from '@lumibook/infra';
-import { cssVar } from '@lumibook/theme';
+import { cssVar } from '@toeverything/theme';
 import { useEffect, useMemo } from 'react';
 
 import {

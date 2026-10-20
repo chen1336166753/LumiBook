@@ -4,7 +4,7 @@ import type {
   DialogComponentProps,
   WORKSPACE_DIALOG_SCHEMA,
 } from '@lumibook/core/modules/dialogs';
-import { cssVar } from '@lumibook/theme';
+import { cssVar } from '@toeverything/theme';
 
 export const DocSelectorDialog = ({
   close,

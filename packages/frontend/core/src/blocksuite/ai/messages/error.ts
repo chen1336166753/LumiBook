@@ -5,7 +5,7 @@ import { unsafeCSSVarV2 } from '@blocksuite/affine/shared/theme';
 import { type EditorHost } from '@blocksuite/affine/std';
 import { InformationIcon, ToggleDownIcon } from '@blocksuite/icons/lit';
 import { signal } from '@preact/signals-core';
-import { baseTheme } from '@lumibook/theme';
+import { baseTheme } from '@toeverything/theme';
 import { css, html, LitElement, nothing, unsafeCSS } from 'lit';
 import { property } from 'lit/decorators.js';
 

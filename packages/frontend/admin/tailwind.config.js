@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-const { baseTheme, themeToVar } = require('@lumibook/theme');
+const { baseTheme, themeToVar } = require('@toeverything/theme');
 
 const themeVar = (key, fallback) =>
   `var(${themeToVar(key)}${fallback ? `, ${fallback}` : ''})`;

@@ -1,6 +1,6 @@
 import { cssVarV2 } from '@blocksuite/affine-shared/theme';
 import { css } from '@emotion/css';
-import { baseTheme } from '@lumibook/theme';
+import { baseTheme } from '@toeverything/theme';
 
 export const linkCellStyle = css({
   width: '100%',

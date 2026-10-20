@@ -7,7 +7,7 @@ import { useI18n } from '@lumibook/i18n';
 import { track } from '@lumibook/track';
 import { AiIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService, useServices } from '@lumibook/infra';
-import { cssVar } from '@lumibook/theme';
+import { cssVar } from '@toeverything/theme';
 import Lottie from 'lottie-react';
 import { useTheme } from 'next-themes';
 import { useCallback, useEffect, useMemo, useRef } from 'react';

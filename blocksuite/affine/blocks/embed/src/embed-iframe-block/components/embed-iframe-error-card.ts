@@ -9,7 +9,7 @@ import { WithDisposable } from '@blocksuite/global/lit';
 import { EditIcon, InformationIcon, ResetIcon } from '@blocksuite/icons/lit';
 import type { BlockStdScope } from '@blocksuite/std';
 import { flip, offset } from '@floating-ui/dom';
-import { baseTheme } from '@lumibook/theme';
+import { baseTheme } from '@toeverything/theme';
 import { css, html, LitElement, nothing, unsafeCSS } from 'lit';
 import { property, query } from 'lit/decorators.js';
 import { classMap } from 'lit/directives/class-map.js';

@@ -9,7 +9,7 @@ import { SubscriptionPlan } from '@lumibook/graphql';
 import { useI18n } from '@lumibook/i18n';
 import { track } from '@lumibook/track';
 import { useLiveData, useService } from '@lumibook/infra';
-import { cssVar } from '@lumibook/theme';
+import { cssVar } from '@toeverything/theme';
 import { useCallback, useEffect } from 'react';
 
 import { AIResume, AISubscribe } from '../general-setting/plans/ai/actions';

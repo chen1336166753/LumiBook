@@ -5,7 +5,7 @@ import { WithDisposable } from '@blocksuite/global/lit';
 import { type BlockComponent, ShadowlessElement } from '@blocksuite/std';
 import { GfxControllerIdentifier } from '@blocksuite/std/gfx';
 import { RANGE_SYNC_EXCLUDE_ATTR } from '@blocksuite/std/inline';
-import { cssVarV2 } from '@lumibook/theme/v2';
+import { cssVarV2 } from '@toeverything/theme/v2';
 import { css, html, nothing } from 'lit';
 import { property, query } from 'lit/decorators.js';
 import { styleMap } from 'lit/directives/style-map.js';

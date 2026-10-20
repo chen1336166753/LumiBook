@@ -10,7 +10,7 @@ import {
 import { SignalWatcher, WithDisposable } from '@blocksuite/global/lit';
 import { provide } from '@lit/context';
 import { effect, signal } from '@preact/signals-core';
-import { baseTheme } from '@lumibook/theme';
+import { baseTheme } from '@toeverything/theme';
 import { css, html, LitElement, type PropertyValues, unsafeCSS } from 'lit';
 import { property } from 'lit/decorators.js';
 

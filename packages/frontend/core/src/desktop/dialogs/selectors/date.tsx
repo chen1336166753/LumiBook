@@ -2,7 +2,7 @@ import { DatePicker, Menu } from '@lumibook/component';
 import type { DialogComponentProps } from '@lumibook/core/modules/dialogs';
 import type { WORKSPACE_DIALOG_SCHEMA } from '@lumibook/core/modules/dialogs/constant';
 import { useI18n } from '@lumibook/i18n';
-import { cssVarV2 } from '@lumibook/theme/v2';
+import { cssVarV2 } from '@toeverything/theme/v2';
 import { useCallback, useState } from 'react';
 
 /**

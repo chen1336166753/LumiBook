@@ -7,7 +7,7 @@ import type {
 import { WithDisposable } from '@blocksuite/global/lit';
 import type { EditorHost } from '@blocksuite/std';
 import { ShadowlessElement } from '@blocksuite/std';
-import { cssVarV2 } from '@lumibook/theme/v2';
+import { cssVarV2 } from '@toeverything/theme/v2';
 import { css, html, unsafeCSS } from 'lit';
 import { property } from 'lit/decorators.js';
 

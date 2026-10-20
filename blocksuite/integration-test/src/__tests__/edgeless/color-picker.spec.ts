@@ -1,4 +1,4 @@
-import '@lumibook/theme/style.css';
+import '@toeverything/theme/style.css';
 import '@blocksuite/affine/gfx/pointer';
 
 import type { EdgelessRootBlockComponent } from '@blocksuite/affine/blocks/root';

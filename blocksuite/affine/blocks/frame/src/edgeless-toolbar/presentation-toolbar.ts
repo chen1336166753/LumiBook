@@ -22,7 +22,7 @@ import {
 import type { BlockComponent } from '@blocksuite/std';
 import type { ToolOptions } from '@blocksuite/std/gfx';
 import { effect } from '@preact/signals-core';
-import { cssVar } from '@lumibook/theme';
+import { cssVar } from '@toeverything/theme';
 import { css, html, LitElement, nothing, type PropertyValues } from 'lit';
 import { property, state } from 'lit/decorators.js';
 

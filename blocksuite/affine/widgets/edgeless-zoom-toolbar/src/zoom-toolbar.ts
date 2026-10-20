@@ -10,7 +10,7 @@ import {
   ZOOM_STEP,
 } from '@blocksuite/std/gfx';
 import { effect } from '@preact/signals-core';
-import { baseTheme } from '@lumibook/theme';
+import { baseTheme } from '@toeverything/theme';
 import { css, html, LitElement, nothing, unsafeCSS } from 'lit';
 import { property } from 'lit/decorators.js';
 import clamp from 'lodash-es/clamp';

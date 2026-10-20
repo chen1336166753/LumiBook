@@ -20,7 +20,7 @@ import type { UniComponent } from '@blocksuite/affine-shared/types';
 import * as icons from '@blocksuite/icons/lit';
 import type { BlockComponent } from '@blocksuite/std';
 import { type Signal } from '@preact/signals-core';
-import { cssVarV2 } from '@lumibook/theme/v2';
+import { cssVarV2 } from '@toeverything/theme/v2';
 import type { TemplateResult } from 'lit';
 import { html } from 'lit';
 import { type StyleInfo, styleMap } from 'lit/directives/style-map.js';

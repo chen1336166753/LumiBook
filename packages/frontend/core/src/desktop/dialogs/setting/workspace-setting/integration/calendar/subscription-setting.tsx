@@ -1,6 +1,6 @@
 import { Checkbox } from '@lumibook/component';
 import type { CalendarAccountsQuery } from '@lumibook/graphql';
-import { cssVarV2 } from '@lumibook/theme/v2';
+import { cssVarV2 } from '@toeverything/theme/v2';
 import { useCallback } from 'react';
 
 import * as styles from './subscription-setting.css';

@@ -9,13 +9,13 @@
     "dev": "affine bundle --dev"
   },
   "dependencies": {
+    "@blocksuite/affine": "workspace:*",
     "@lumibook/component": "workspace:*",
     "@lumibook/core": "workspace:*",
     "@lumibook/env": "workspace:*",
+    "@lumibook/infra": "workspace:*",
     "@lumibook/nbstore": "workspace:*",
     "@lumibook/track": "workspace:*",
-    "@blocksuite/affine": "workspace:*",
-    "@lumibook/infra": "workspace:*",
     "react": "^19.2.1",
     "react-dom": "^19.2.1",
     "react-router-dom": "^7.18.4"

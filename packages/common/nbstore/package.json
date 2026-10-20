@@ -19,9 +19,9 @@
     "./frontend": "./src/frontend/index.ts"
   },
   "dependencies": {
+    "@lumibook/infra": "workspace:*",
     "@lumibook/reader": "workspace:*",
     "@lumibook/realtime": "workspace:*",
-    "@lumibook/infra": "workspace:*",
     "eventemitter2": "^6.4.9",
     "graphemer": "^1.4.0",
     "lodash-es": "^4.17.23",
@@ -32,20 +32,20 @@
     "yjs": "^13.6.27"
   },
   "devDependencies": {
+    "@blocksuite/affine": "workspace:*",
     "@lumibook/error": "workspace:*",
     "@lumibook/graphql": "workspace:*",
     "@lumibook/realtime": "workspace:*",
-    "@blocksuite/affine": "workspace:*",
     "fake-indexeddb": "^6.0.0",
     "idb": "^8.0.0",
     "socket.io-client": "^4.8.3",
     "vitest": "^4.1.11"
   },
   "peerDependencies": {
+    "@blocksuite/affine": "workspace:*",
     "@lumibook/error": "workspace:*",
     "@lumibook/graphql": "workspace:*",
     "@lumibook/realtime": "workspace:*",
-    "@blocksuite/affine": "workspace:*",
     "idb": "^8.0.0",
     "socket.io-client": "^4.8.3"
   }

@@ -1,4 +1,4 @@
-import { cssVar } from '@lumibook/theme';
+import { cssVar } from '@toeverything/theme';
 import { style, type StyleRule } from '@vanilla-extract/css';
 
 export const docEditorRoot = style({

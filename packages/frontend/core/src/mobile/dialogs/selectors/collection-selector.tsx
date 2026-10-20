@@ -7,7 +7,7 @@ import type {
 import { useI18n } from '@lumibook/i18n';
 import { ViewLayersIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
-import { cssVarV2 } from '@lumibook/theme/v2';
+import { cssVarV2 } from '@toeverything/theme/v2';
 import { useMemo } from 'react';
 
 import { GenericSelector } from './generic-selector';

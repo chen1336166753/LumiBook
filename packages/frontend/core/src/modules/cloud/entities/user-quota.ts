@@ -3,7 +3,7 @@ import type {
   UserQuotaStateSnapshot,
 } from '@lumibook/realtime';
 import { Entity, LiveData } from '@lumibook/infra';
-import { cssVarV2 } from '@lumibook/theme/v2';
+import { cssVarV2 } from '@toeverything/theme/v2';
 import bytes from 'bytes';
 
 import { RealtimeLiveQuery } from '../realtime/live-query';

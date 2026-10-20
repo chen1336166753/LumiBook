@@ -11,7 +11,7 @@ import type { AffineTextAttributes } from '@blocksuite/affine/shared/types';
 import { type DeltaInsert, Text } from '@blocksuite/affine/store';
 import { computed } from '@preact/signals-core';
 import { Entity, LiveData } from '@lumibook/infra';
-import { cssVarV2 } from '@lumibook/theme/v2';
+import { cssVarV2 } from '@toeverything/theme/v2';
 
 import type { WorkspaceService } from '../../workspace';
 import type { AudioMediaManagerService } from '../services/audio-media-manager';

@@ -1,6 +1,6 @@
 import type { MessageCommunicapable } from '@lumibook/infra/op';
 import { OpConsumer } from '@lumibook/infra/op';
-import initMmdr, { render_mermaid_svg } from '@lumibook/mermaid-wasm';
+import initMmdr, { render_mermaid_svg } from '@toeverything/mermaid-wasm';
 
 import type {
   MermaidOps,

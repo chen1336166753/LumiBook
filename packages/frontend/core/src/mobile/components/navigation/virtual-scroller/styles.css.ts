@@ -1,5 +1,5 @@
-import { headlineRegular } from '@lumibook/theme/typography';
-import { cssVarV2 } from '@lumibook/theme/v2';
+import { headlineRegular } from '@toeverything/theme/typography';
+import { cssVarV2 } from '@toeverything/theme/v2';
 import { style } from '@vanilla-extract/css';
 
 import { globalVars } from '../../../styles/variables.css';

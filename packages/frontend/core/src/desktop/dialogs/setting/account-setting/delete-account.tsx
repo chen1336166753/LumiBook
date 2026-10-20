@@ -10,7 +10,7 @@ import { Trans, useI18n } from '@lumibook/i18n';
 import { track } from '@lumibook/track';
 import { ArrowRightSmallIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
-import { cssVarV2 } from '@lumibook/theme/v2';
+import { cssVarV2 } from '@toeverything/theme/v2';
 import { useCallback, useState } from 'react';
 
 import * as styles from './style.css';

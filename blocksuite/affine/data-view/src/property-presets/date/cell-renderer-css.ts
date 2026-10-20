@@ -1,5 +1,5 @@
 import { css } from '@emotion/css';
-import { baseTheme } from '@lumibook/theme';
+import { baseTheme } from '@toeverything/theme';
 
 export const dateCellStyle = css({
   display: 'flex',

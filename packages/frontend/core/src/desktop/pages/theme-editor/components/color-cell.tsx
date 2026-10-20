@@ -1,6 +1,6 @@
 import { IconButton, Input, Menu, MenuItem } from '@lumibook/component';
 import { MoreHorizontalIcon } from '@blocksuite/icons/rc';
-import { cssVar } from '@lumibook/theme';
+import { cssVar } from '@toeverything/theme';
 import { useCallback, useState } from 'react';
 
 import * as styles from '../theme-editor.css';

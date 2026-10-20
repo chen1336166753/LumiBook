@@ -29,7 +29,7 @@ import {
   UnsyncIcon,
 } from '@blocksuite/icons/rc';
 import { LiveData, useLiveData, useService } from '@lumibook/infra';
-import { cssVar } from '@lumibook/theme';
+import { cssVar } from '@toeverything/theme';
 import clsx from 'clsx';
 import type { HTMLAttributes } from 'react';
 import { forwardRef, useCallback, useEffect, useMemo, useState } from 'react';

@@ -10,7 +10,7 @@
     "@blocksuite/affine": "workspace:*",
     "@blocksuite/integration-test": "workspace:*",
     "@playwright/test": "=1.58.2",
-    "@lumibook/theme": "^1.1.23",
+    "@toeverything/theme": "^1.1.23",
     "json-stable-stringify": "^1.2.1"
   },
   "version": "0.27.5"

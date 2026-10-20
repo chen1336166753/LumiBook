@@ -8,7 +8,7 @@ import {
 import { PageHeader } from '@lumibook/core/mobile/components';
 import { useI18n } from '@lumibook/i18n';
 import { ArrowRightSmallIcon } from '@blocksuite/icons/rc';
-import { cssVarV2 } from '@lumibook/theme/v2';
+import { cssVarV2 } from '@toeverything/theme/v2';
 import {
   type ReactNode,
   type TouchEvent as ReactTouchEvent,

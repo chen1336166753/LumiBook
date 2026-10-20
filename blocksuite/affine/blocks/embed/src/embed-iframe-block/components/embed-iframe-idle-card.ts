@@ -1,7 +1,7 @@
 import { unsafeCSSVarV2 } from '@blocksuite/affine-shared/theme';
 import { WithDisposable } from '@blocksuite/global/lit';
 import { EmbedIcon } from '@blocksuite/icons/lit';
-import { baseTheme } from '@lumibook/theme';
+import { baseTheme } from '@toeverything/theme';
 import { css, html, LitElement, unsafeCSS } from 'lit';
 import { property } from 'lit/decorators.js';
 import { classMap } from 'lit/directives/class-map.js';

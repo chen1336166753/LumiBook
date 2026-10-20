@@ -5,7 +5,7 @@ import {
 } from '@lumibook/core/modules/cloud/stores/server-config';
 import { useI18n } from '@lumibook/i18n';
 import { useLiveData } from '@lumibook/infra';
-import { cssVarV2 } from '@lumibook/theme/v2';
+import { cssVarV2 } from '@toeverything/theme/v2';
 
 const rules = [
   {

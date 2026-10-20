@@ -1,11 +1,11 @@
-import type { Document } from '@lumibook/pdf-viewer';
+import type { Document } from '@toeverything/pdf-viewer';
 import {
   createPDFium,
   PageRenderingflags,
   Runtime,
   Viewer,
-} from '@lumibook/pdf-viewer';
-import wasmUrl from '@lumibook/pdfium/wasm?url';
+} from '@toeverything/pdf-viewer';
+import wasmUrl from '@toeverything/pdfium/wasm?url';
 
 import { type MessageData, type MessageDataType, MessageOp } from './types';
 

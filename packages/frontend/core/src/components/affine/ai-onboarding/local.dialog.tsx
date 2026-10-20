@@ -7,7 +7,7 @@ import { AuthService } from '@lumibook/core/modules/cloud';
 import { useI18n } from '@lumibook/i18n';
 import { AiIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
-import { cssVar } from '@lumibook/theme';
+import { cssVar } from '@toeverything/theme';
 import { useEffect, useMemo, useRef } from 'react';
 
 import { toggleLocalAIOnboarding } from './apis';

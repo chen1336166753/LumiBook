@@ -1,6 +1,6 @@
 import { css } from '@emotion/css';
-import { baseTheme } from '@lumibook/theme';
-import { cssVarV2 } from '@lumibook/theme/v2';
+import { baseTheme } from '@toeverything/theme';
+import { cssVarV2 } from '@toeverything/theme/v2';
 
 export const tagSelectContainerStyle = css({
   position: 'absolute',

@@ -1,4 +1,4 @@
-import { cssVar } from '@lumibook/theme';
+import { cssVar } from '@toeverything/theme';
 import { createVar, style } from '@vanilla-extract/css';
 export const hoverMaxWidth = createVar();
 export const root = style({

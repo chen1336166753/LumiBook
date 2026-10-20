@@ -1,4 +1,4 @@
-import { cssVar } from '@lumibook/theme';
+import { cssVar } from '@toeverything/theme';
 import { keyframes, style } from '@vanilla-extract/css';
 
 import { onboardingVars, paperLocation } from '../style.css';

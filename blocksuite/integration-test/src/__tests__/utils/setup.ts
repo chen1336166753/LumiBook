@@ -1,5 +1,5 @@
-import '@lumibook/theme/style.css';
-import '@lumibook/theme/fonts.css';
+import '@toeverything/theme/style.css';
+import '@toeverything/theme/fonts.css';
 
 import type { DocMode } from '@blocksuite/affine/model';
 import { AffineSchemas } from '@blocksuite/affine/schemas';

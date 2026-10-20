@@ -1,5 +1,5 @@
 import { Service } from '@lumibook/infra';
-import { cssVar } from '@lumibook/theme';
+import { cssVar } from '@toeverything/theme';
 
 import { TagList } from '../entities/tag-list';
 

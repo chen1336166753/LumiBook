@@ -1,9 +1,9 @@
-import { type AffineTheme, darkTheme, lightTheme } from '@lumibook/theme';
+import { type AffineTheme, darkTheme, lightTheme } from '@toeverything/theme';
 import {
   type AffineThemeKeyV2,
   darkThemeV2,
   lightThemeV2,
-} from '@lumibook/theme/v2';
+} from '@toeverything/theme/v2';
 import { useTheme } from 'next-themes';
 
 export const useThemeValueV2 = (key: AffineThemeKeyV2) => {

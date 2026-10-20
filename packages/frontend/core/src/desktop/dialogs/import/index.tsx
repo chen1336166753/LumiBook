@@ -45,8 +45,8 @@ import {
   ZipIcon,
 } from '@blocksuite/icons/rc';
 import { useService } from '@lumibook/infra';
-import { cssVar } from '@lumibook/theme';
-import { cssVarV2 } from '@lumibook/theme/v2';
+import { cssVar } from '@toeverything/theme';
+import { cssVarV2 } from '@toeverything/theme/v2';
 import {
   type ReactElement,
   type SVGAttributes,

@@ -9,13 +9,13 @@
     "dev": "affine bundle --dev"
   },
   "dependencies": {
+    "@emotion/react": "^11.14.0",
     "@lumibook/component": "workspace:*",
     "@lumibook/core": "workspace:*",
     "@lumibook/env": "workspace:*",
+    "@lumibook/infra": "workspace:*",
     "@lumibook/nbstore": "workspace:*",
     "@lumibook/track": "workspace:*",
-    "@emotion/react": "^11.14.0",
-    "@lumibook/infra": "workspace:*",
     "react": "^19.2.1",
     "react-dom": "^19.2.1",
     "react-router-dom": "^7.18.4"

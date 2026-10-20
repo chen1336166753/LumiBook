@@ -1,7 +1,7 @@
 import { ConfirmModal, Input } from '@lumibook/component';
 import type { Member } from '@lumibook/core/modules/permissions';
 import { useI18n } from '@lumibook/i18n';
-import { cssVar } from '@lumibook/theme';
+import { cssVar } from '@toeverything/theme';
 
 import * as styles from './styles.css';
 

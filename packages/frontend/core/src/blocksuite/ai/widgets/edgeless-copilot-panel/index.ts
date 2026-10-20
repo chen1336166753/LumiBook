@@ -4,7 +4,7 @@ import { scrollbarStyle } from '@blocksuite/affine/shared/styles';
 import { unsafeCSSVar } from '@blocksuite/affine/shared/theme';
 import { on, stopPropagation } from '@blocksuite/affine/shared/utils';
 import type { EditorHost } from '@blocksuite/affine/std';
-import { darkCssVariables, lightCssVariables } from '@lumibook/theme';
+import { darkCssVariables, lightCssVariables } from '@toeverything/theme';
 import { css, html, LitElement, nothing, unsafeCSS } from 'lit';
 import { property } from 'lit/decorators.js';
 

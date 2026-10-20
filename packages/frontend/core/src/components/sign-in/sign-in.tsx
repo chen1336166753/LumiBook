@@ -22,7 +22,7 @@ import {
   PublishIcon,
 } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
-import { cssVar } from '@lumibook/theme';
+import { cssVar } from '@toeverything/theme';
 import {
   type Dispatch,
   type SetStateAction,

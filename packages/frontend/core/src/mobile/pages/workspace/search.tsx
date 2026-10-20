@@ -20,7 +20,7 @@ import {
   useService,
   useServices,
 } from '@lumibook/infra';
-import { bodyEmphasized } from '@lumibook/theme/typography';
+import { bodyEmphasized } from '@toeverything/theme/typography';
 import { useCallback, useEffect, useMemo } from 'react';
 
 import {

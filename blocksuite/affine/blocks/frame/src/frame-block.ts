@@ -13,7 +13,7 @@ import {
   getTopElements,
   GfxViewInteractionExtension,
 } from '@blocksuite/std/gfx';
-import { cssVarV2 } from '@lumibook/theme/v2';
+import { cssVarV2 } from '@toeverything/theme/v2';
 import { html } from 'lit';
 import { state } from 'lit/decorators.js';
 import { repeat } from 'lit/directives/repeat.js';

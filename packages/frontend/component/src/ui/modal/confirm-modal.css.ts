@@ -1,4 +1,4 @@
-import { bodyEmphasized, bodyRegular } from '@lumibook/theme/typography';
+import { bodyEmphasized, bodyRegular } from '@toeverything/theme/typography';
 import { style } from '@vanilla-extract/css';
 
 // desktop

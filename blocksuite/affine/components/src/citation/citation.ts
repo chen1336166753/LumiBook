@@ -1,6 +1,6 @@
 import { unsafeCSSVarV2 } from '@blocksuite/affine-shared/theme';
 import { SignalWatcher, WithDisposable } from '@blocksuite/global/lit';
-import { baseTheme } from '@lumibook/theme';
+import { baseTheme } from '@toeverything/theme';
 import {
   css,
   html,

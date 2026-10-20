@@ -5,7 +5,7 @@ import {
 import { WorkspaceDialogService } from '@lumibook/core/modules/dialogs';
 import { useI18n } from '@lumibook/i18n';
 import { useLiveData, useService } from '@lumibook/infra';
-import { cssVar } from '@lumibook/theme';
+import { cssVar } from '@toeverything/theme';
 import { assignInlineVars } from '@vanilla-extract/dynamic';
 import clsx from 'clsx';
 import { useCallback, useEffect } from 'react';

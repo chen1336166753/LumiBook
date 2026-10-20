@@ -20,7 +20,7 @@ import {
   LockIcon,
 } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
-import { cssVar } from '@lumibook/theme';
+import { cssVar } from '@toeverything/theme';
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import {
   Area,

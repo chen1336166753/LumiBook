@@ -60,7 +60,7 @@ import {
 } from '@blocksuite/std';
 import { GfxControllerIdentifier } from '@blocksuite/std/gfx';
 import { consume } from '@lit/context';
-import { baseTheme } from '@lumibook/theme';
+import { baseTheme } from '@toeverything/theme';
 import { css, html, LitElement, nothing, unsafeCSS } from 'lit';
 import { property } from 'lit/decorators.js';
 import { repeat } from 'lit/directives/repeat.js';

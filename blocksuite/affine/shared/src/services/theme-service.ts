@@ -12,7 +12,7 @@ import {
   type AffineCssVariables,
   combinedDarkCssVariables,
   combinedLightCssVariables,
-} from '@lumibook/theme';
+} from '@toeverything/theme';
 
 import { isInsideEdgelessEditor } from '../utils/dom';
 

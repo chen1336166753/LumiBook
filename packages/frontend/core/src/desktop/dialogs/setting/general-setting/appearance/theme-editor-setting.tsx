@@ -10,7 +10,7 @@ import {
   useService,
   useServiceOptional,
 } from '@lumibook/infra';
-import { cssVar } from '@lumibook/theme';
+import { cssVar } from '@toeverything/theme';
 import { useCallback } from 'react';
 
 export const ThemeEditorSetting = () => {

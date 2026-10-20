@@ -1,5 +1,5 @@
 import type { EditorHost } from '@blocksuite/std';
-import { baseTheme } from '@lumibook/theme';
+import { baseTheme } from '@toeverything/theme';
 import { html } from 'lit';
 
 import { createToastContainer } from './create.js';

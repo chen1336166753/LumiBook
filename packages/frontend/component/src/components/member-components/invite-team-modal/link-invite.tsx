@@ -4,8 +4,8 @@ import {
 } from '@lumibook/graphql';
 import { useI18n } from '@lumibook/i18n';
 import { CloseIcon } from '@blocksuite/icons/rc';
-import { cssVar } from '@lumibook/theme';
-import { cssVarV2 } from '@lumibook/theme/v2';
+import { cssVar } from '@toeverything/theme';
+import { cssVarV2 } from '@toeverything/theme/v2';
 import { useCallback, useMemo, useState } from 'react';
 
 import { Button, IconButton } from '../../../ui/button';

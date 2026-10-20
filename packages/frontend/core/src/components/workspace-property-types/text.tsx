@@ -2,8 +2,8 @@ import { Input, PropertyValue } from '@lumibook/component';
 import type { FilterParams } from '@lumibook/core/modules/collection-rules';
 import { useI18n } from '@lumibook/i18n';
 import { TextIcon, TextTypeIcon } from '@blocksuite/icons/rc';
-import { cssVar } from '@lumibook/theme';
-import { cssVarV2 } from '@lumibook/theme/v2';
+import { cssVar } from '@toeverything/theme';
+import { cssVarV2 } from '@toeverything/theme/v2';
 import {
   type ChangeEventHandler,
   useCallback,

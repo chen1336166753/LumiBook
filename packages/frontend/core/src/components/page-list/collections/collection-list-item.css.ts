@@ -1,4 +1,4 @@
-import { cssVar } from '@lumibook/theme';
+import { cssVar } from '@toeverything/theme';
 import { globalStyle, style } from '@vanilla-extract/css';
 export const root = style({
   display: 'flex',

@@ -5,7 +5,7 @@ import {
 } from '@blocksuite/affine/shared/services';
 import { scrollbarStyle } from '@blocksuite/affine/shared/styles';
 import { type EditorHost } from '@blocksuite/affine/std';
-import { cssVar } from '@lumibook/theme';
+import { cssVar } from '@toeverything/theme';
 import { css, html, LitElement, unsafeCSS } from 'lit';
 import { property } from 'lit/decorators.js';
 import { styleMap } from 'lit/directives/style-map.js';

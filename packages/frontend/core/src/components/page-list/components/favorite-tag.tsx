@@ -2,7 +2,7 @@ import type { IconButtonProps } from '@lumibook/component';
 import { IconButton } from '@lumibook/component';
 import { useI18n } from '@lumibook/i18n';
 import { FavoritedIcon, FavoriteIcon } from '@blocksuite/icons/rc';
-import { cssVar } from '@lumibook/theme';
+import { cssVar } from '@toeverything/theme';
 import Lottie from 'lottie-react';
 import { forwardRef, useCallback, useState } from 'react';
 

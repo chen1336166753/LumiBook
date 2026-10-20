@@ -1,5 +1,5 @@
 import { EDGELESS_BLOCK_CHILD_PADDING } from '@blocksuite/affine-shared/consts';
-import { cssVar } from '@lumibook/theme';
+import { cssVar } from '@toeverything/theme';
 import { style } from '@vanilla-extract/css';
 
 export const ACTIVE_NOTE_EXTRA_PADDING = 20;

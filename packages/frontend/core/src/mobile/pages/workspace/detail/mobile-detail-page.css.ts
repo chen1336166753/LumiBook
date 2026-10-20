@@ -1,6 +1,6 @@
-import { cssVar } from '@lumibook/theme';
-import { bodyEmphasized } from '@lumibook/theme/typography';
-import { cssVarV2 } from '@lumibook/theme/v2';
+import { cssVar } from '@toeverything/theme';
+import { bodyEmphasized } from '@toeverything/theme/typography';
+import { cssVarV2 } from '@toeverything/theme/v2';
 import { globalStyle, style } from '@vanilla-extract/css';
 
 export const root = style({

@@ -1,5 +1,5 @@
 import { unsafeCSSVarV2 } from '@blocksuite/affine-shared/theme';
-import { baseTheme } from '@lumibook/theme';
+import { baseTheme } from '@toeverything/theme';
 import {
   css,
   html,

@@ -12,7 +12,7 @@ import {
   ViewIcon,
 } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
-import { cssVar } from '@lumibook/theme';
+import { cssVar } from '@toeverything/theme';
 import clsx from 'clsx';
 import { useEffect } from 'react';
 

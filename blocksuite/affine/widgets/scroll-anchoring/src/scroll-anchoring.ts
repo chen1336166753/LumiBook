@@ -4,7 +4,7 @@ import { Bound, deserializeXYWH } from '@blocksuite/global/gfx';
 import { WidgetComponent } from '@blocksuite/std';
 import { GfxControllerIdentifier, type GfxModel } from '@blocksuite/std/gfx';
 import { computed, signal } from '@preact/signals-core';
-import { cssVarV2 } from '@lumibook/theme/v2';
+import { cssVarV2 } from '@toeverything/theme/v2';
 import { css, html, nothing, unsafeCSS } from 'lit';
 import { classMap } from 'lit/directives/class-map.js';
 import { styleMap } from 'lit/directives/style-map.js';

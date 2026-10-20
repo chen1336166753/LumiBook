@@ -7,7 +7,7 @@ import { SendIcon } from '@blocksuite/icons/lit';
 import {
   darkCssVariablesV2,
   lightCssVariablesV2,
-} from '@lumibook/theme/v2';
+} from '@toeverything/theme/v2';
 import { css, html, LitElement, nothing, unsafeCSS } from 'lit';
 import { property, query, state } from 'lit/decorators.js';
 

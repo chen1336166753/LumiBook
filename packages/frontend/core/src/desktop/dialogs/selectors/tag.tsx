@@ -18,7 +18,7 @@ import { TagService } from '@lumibook/core/modules/tag';
 import { WorkspaceService } from '@lumibook/core/modules/workspace';
 import { useI18n } from '@lumibook/i18n';
 import { useLiveData, useService } from '@lumibook/infra';
-import { cssVar } from '@lumibook/theme';
+import { cssVar } from '@toeverything/theme';
 import { useCallback, useMemo, useState } from 'react';
 
 const FavoriteOperation = ({ tag }: { tag: ListItem }) => {

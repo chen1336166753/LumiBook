@@ -1,6 +1,6 @@
 import { unsafeCSSVarV2 } from '@blocksuite/affine-shared/theme';
 import { IS_MOBILE } from '@blocksuite/global/env';
-import { cssVarV2 } from '@lumibook/theme/v2';
+import { cssVarV2 } from '@toeverything/theme/v2';
 import { css, html, type TemplateResult } from 'lit';
 import { property, query } from 'lit/decorators.js';
 import { classMap } from 'lit/directives/class-map.js';

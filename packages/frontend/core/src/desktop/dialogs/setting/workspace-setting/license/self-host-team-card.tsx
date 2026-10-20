@@ -18,7 +18,7 @@ import {
 } from '@lumibook/graphql';
 import { Trans, useI18n } from '@lumibook/i18n';
 import { useLiveData, useService } from '@lumibook/infra';
-import { cssVarV2 } from '@lumibook/theme/v2';
+import { cssVarV2 } from '@toeverything/theme/v2';
 import clsx from 'clsx';
 import { useCallback, useEffect, useMemo, useState } from 'react';
 

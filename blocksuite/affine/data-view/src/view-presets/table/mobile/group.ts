@@ -11,7 +11,7 @@ import {
 } from '@blocksuite/icons/lit';
 import { ShadowlessElement } from '@blocksuite/std';
 import { signal } from '@preact/signals-core';
-import { cssVarV2 } from '@lumibook/theme/v2';
+import { cssVarV2 } from '@toeverything/theme/v2';
 import { css, html, nothing, unsafeCSS } from 'lit';
 import { property } from 'lit/decorators.js';
 import { repeat } from 'lit/directives/repeat.js';

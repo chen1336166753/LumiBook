@@ -1,6 +1,6 @@
 import { Progress } from '@lumibook/component';
 import { useI18n } from '@lumibook/i18n';
-import { cssVarV2 } from '@lumibook/theme/v2';
+import { cssVarV2 } from '@toeverything/theme/v2';
 
 import { embeddingProgress, embeddingProgressTitle } from './styles-css';
 

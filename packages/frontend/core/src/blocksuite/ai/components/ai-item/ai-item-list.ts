@@ -7,7 +7,7 @@ import {
   requiredProperties,
 } from '@blocksuite/affine/std';
 import { flip, offset } from '@floating-ui/dom';
-import { baseTheme } from '@lumibook/theme';
+import { baseTheme } from '@toeverything/theme';
 import { css, html, LitElement, nothing, unsafeCSS } from 'lit';
 import { property } from 'lit/decorators.js';
 import { repeat } from 'lit/directives/repeat.js';

@@ -1,5 +1,5 @@
-import { baseTheme } from '@lumibook/theme';
-import { cssVarV2 } from '@lumibook/theme/v2';
+import { baseTheme } from '@toeverything/theme';
+import { cssVarV2 } from '@toeverything/theme/v2';
 import {
   css,
   html,

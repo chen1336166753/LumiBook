@@ -1,7 +1,7 @@
 import { LoadingIcon } from '@blocksuite/affine/components/icons';
 import { WithDisposable } from '@blocksuite/affine/global/lit';
 import { unsafeCSSVar } from '@blocksuite/affine/shared/theme';
-import { baseTheme } from '@lumibook/theme';
+import { baseTheme } from '@toeverything/theme';
 import {
   css,
   html,

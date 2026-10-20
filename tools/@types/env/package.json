@@ -4,8 +4,8 @@
   "types": "./__all.d.ts",
   "type": "module",
   "dependencies": {
-    "@lumibook/env": "workspace:*",
-    "@blocksuite/affine": "workspace:*"
+    "@blocksuite/affine": "workspace:*",
+    "@lumibook/env": "workspace:*"
   },
   "version": "0.27.5"
 }

@@ -26,7 +26,7 @@ import type { BlockStdScope, EditorHost } from '@blocksuite/affine/std';
 import type { Store } from '@blocksuite/affine/store';
 import { Slot } from '@radix-ui/react-slot';
 import { useLiveData, useService } from '@lumibook/infra';
-import { cssVar } from '@lumibook/theme';
+import { cssVar } from '@toeverything/theme';
 import clsx from 'clsx';
 import type { CSSProperties, HTMLAttributes } from 'react';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';

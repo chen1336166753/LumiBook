@@ -3,13 +3,13 @@ import {
   OpConsumer,
   transfer,
 } from '@lumibook/infra/op';
-import type { Document } from '@lumibook/pdf-viewer';
+import type { Document } from '@toeverything/pdf-viewer';
 import {
   createPDFium,
   PageRenderingflags,
   Runtime,
   Viewer,
-} from '@lumibook/pdf-viewer';
+} from '@toeverything/pdf-viewer';
 import {
   BehaviorSubject,
   combineLatestWith,

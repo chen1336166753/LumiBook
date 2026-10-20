@@ -13,7 +13,7 @@ import { unsafeCSSVar, unsafeCSSVarV2 } from '@blocksuite/affine-shared/theme';
 import { SignalWatcher, WithDisposable } from '@blocksuite/global/lit';
 import type { BlockStdScope } from '@blocksuite/std';
 import { computed, signal } from '@preact/signals-core';
-import { baseTheme } from '@lumibook/theme';
+import { baseTheme } from '@toeverything/theme';
 import { css, html, LitElement, nothing, unsafeCSS } from 'lit';
 import { property } from 'lit/decorators.js';
 

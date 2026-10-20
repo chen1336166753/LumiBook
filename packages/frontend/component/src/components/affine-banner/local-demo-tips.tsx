@@ -1,7 +1,7 @@
 import { Button, IconButton } from '@lumibook/component/ui/button';
 import { useI18n } from '@lumibook/i18n';
 import { CloseIcon } from '@blocksuite/icons/rc';
-import { cssVar } from '@lumibook/theme';
+import { cssVar } from '@toeverything/theme';
 import { useCallback } from 'react';
 
 import * as styles from './index.css';

@@ -1,6 +1,6 @@
 import { WorkbenchService } from '@lumibook/core/modules/workbench';
 import { useLiveData, useService } from '@lumibook/infra';
-import { cssVarV2 } from '@lumibook/theme/v2';
+import { cssVarV2 } from '@toeverything/theme/v2';
 import {
   createContext,
   type PropsWithChildren,

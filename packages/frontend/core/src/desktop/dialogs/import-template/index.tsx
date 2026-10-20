@@ -20,7 +20,7 @@ import { useI18n } from '@lumibook/i18n';
 import type { DocMode } from '@blocksuite/affine/model';
 import { AllDocsIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
-import { cssVar } from '@lumibook/theme';
+import { cssVar } from '@toeverything/theme';
 import { useCallback, useEffect, useState } from 'react';
 
 import * as styles from './dialog.css';

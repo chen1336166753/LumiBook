@@ -1,5 +1,5 @@
 import { FavoritedIcon, FavoriteIcon } from '@blocksuite/icons/rc';
-import { cssVar } from '@lumibook/theme';
+import { cssVar } from '@toeverything/theme';
 import type { SVGProps } from 'react';
 
 export const IsFavoriteIcon = ({

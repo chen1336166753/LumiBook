@@ -11,7 +11,7 @@ import { useI18n } from '@lumibook/i18n';
 import { track } from '@lumibook/track';
 import { SingleSelectCheckSolidIcon } from '@blocksuite/icons/rc';
 import { useService } from '@lumibook/infra';
-import { cssVar } from '@lumibook/theme';
+import { cssVar } from '@toeverything/theme';
 import { nanoid } from 'nanoid';
 import { useState } from 'react';
 
