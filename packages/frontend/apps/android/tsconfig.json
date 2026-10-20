@@ -7,14 +7,14 @@
   },
   "include": ["./src"],
   "references": [
+    { "path": "../../../../blocksuite/affine/all" },
     { "path": "../../component" },
     { "path": "../../core" },
     { "path": "../../../common/env" },
     { "path": "../../i18n" },
+    { "path": "../../../common/infra" },
     { "path": "../mobile-shared" },
     { "path": "../../../common/nbstore" },
-    { "path": "../../track" },
-    { "path": "../../../../blocksuite/affine/all" },
-    { "path": "../../../common/infra" }
+    { "path": "../../track" }
   ]
 }

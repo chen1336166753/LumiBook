@@ -8,14 +8,14 @@
   },
   "include": ["./src"],
   "references": [
+    { "path": "../../../../blocksuite/affine/all" },
     { "path": "../../component" },
     { "path": "../../core" },
     { "path": "../../../common/debug" },
     { "path": "../../electron-api" },
     { "path": "../../i18n" },
+    { "path": "../../../common/infra" },
     { "path": "../../../common/nbstore" },
-    { "path": "../../track" },
-    { "path": "../../../../blocksuite/affine/all" },
-    { "path": "../../../common/infra" }
+    { "path": "../../track" }
   ]
 }

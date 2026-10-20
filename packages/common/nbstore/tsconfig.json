@@ -8,11 +8,11 @@
     "tsBuildInfoFile": "./dist/tsconfig.tsbuildinfo"
   },
   "references": [
+    { "path": "../infra" },
     { "path": "../reader" },
     { "path": "../realtime" },
-    { "path": "../infra" },
+    { "path": "../../../blocksuite/affine/all" },
     { "path": "../error" },
-    { "path": "../graphql" },
-    { "path": "../../../blocksuite/affine/all" }
+    { "path": "../graphql" }
   ]
 }
