@@ -5,7 +5,7 @@ const openDocInfoModal = async (page: Page) => {
   await page.click('[data-testid="detail-page-header-more-button"]');
   await expect(page.getByRole('dialog')).toBeVisible();
 
-  const viewInfo = page.getByRole('button', { name: 'view info' });
+  const viewInfo = page.getByRole('button', { name: '查看信息' });
   const viewInfoBox = await viewInfo.boundingBox();
   expect(viewInfoBox).not.toBeNull();
   if (!viewInfoBox) throw new Error('View info action has no layout box');

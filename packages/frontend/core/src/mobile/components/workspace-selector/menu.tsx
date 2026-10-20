@@ -347,7 +347,7 @@ export const SelectorMenu = ({ onClose }: { onClose?: () => void }) => {
   return (
     <div className={styles.root}>
       <header className={styles.head}>
-        Workspace
+        工作区
         <div className={styles.headActions}>
           <AddServer />
           <IconButton onClick={onClose} size="24" icon={<CloseIcon />} />

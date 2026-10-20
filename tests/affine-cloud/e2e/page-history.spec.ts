@@ -135,7 +135,7 @@ test('can restore page to a history version', async ({ page }) => {
   // click restore
   await modal
     .getByRole('button', {
-      name: 'Restore current version',
+      name: '恢复当前版本',
     })
     .click();
 
@@ -147,7 +147,7 @@ test('can restore page to a history version', async ({ page }) => {
   // click restore
   await confirm
     .getByRole('button', {
-      name: 'Restore',
+      name: '恢复',
     })
     .click();
 

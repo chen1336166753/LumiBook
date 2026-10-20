@@ -380,7 +380,7 @@ test.describe('Toolbar More Actions', () => {
     await expect(toolbar).toBeVisible();
 
     await toolbar.getByLabel('More menu').click();
-    await toolbar.getByLabel('Copy as Markdown').click();
+    await toolbar.getByLabel('复制为 Markdown').click();
 
     const clipboardText = await (
       await page.evaluateHandle(() => navigator.clipboard.readText())
@@ -399,7 +399,7 @@ test.describe('Toolbar More Actions', () => {
     await expect(toolbar).toBeVisible();
 
     await toolbar.getByLabel('More menu').click();
-    await toolbar.getByLabel('Copy as Markdown').click();
+    await toolbar.getByLabel('复制为 Markdown').click();
 
     const clipboardText = await (
       await page.evaluateHandle(() => navigator.clipboard.readText())
@@ -418,7 +418,7 @@ test.describe('Toolbar More Actions', () => {
     await expect(toolbar).toBeVisible();
 
     await toolbar.getByLabel('More menu').click();
-    await toolbar.getByLabel('Copy as Markdown').click();
+    await toolbar.getByLabel('复制为 Markdown').click();
 
     const clipboardText = await (
       await page.evaluateHandle(() => navigator.clipboard.readText())

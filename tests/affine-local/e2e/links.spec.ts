@@ -425,7 +425,7 @@ test('@ popover with input=dec should create a reference with a December date', 
   await page.keyboard.type('dc');
 
   const decemberMenuItem = page.locator(
-    '.linked-doc-popover icon-button:has-text("十二月")'
+    '.linked-doc-popover icon-button:has-text("12月")'
   );
   await expect(decemberMenuItem).toBeVisible();
 
@@ -697,7 +697,7 @@ test.describe('Customize linked doc title and description', () => {
     await expect(aliasPopup.locator('input')).toHaveValue('Test Page Alias');
 
     // Reset
-    await aliasPopup.getByRole('button', { name: '重置' }).click();
+    await aliasPopup.getByRole('button', { name: 'Reset' }).click();
 
     await expect(title).toHaveText('Test Page');
 
@@ -780,7 +780,7 @@ test.describe('Customize linked doc title and description', () => {
     await page.keyboard.type('This is a new description');
 
     // Saves aliases
-    await cardEditPopup.getByRole('button', { name: '保存' }).click();
+    await cardEditPopup.getByRole('button', { name: 'Save' }).click();
     await expect(cardTitle).toHaveText('Test Page Alias Again');
     await expect(cardDescription).toHaveText('This is a new description');
     await expect(cardEditPopup).not.toBeVisible();
@@ -816,7 +816,7 @@ test.describe('Customize linked doc title and description', () => {
     await toolbar.getByRole('button', { name: 'Edit' }).click();
 
     // Resets
-    await cardEditPopup.getByRole('button', { name: '重置' }).click();
+    await cardEditPopup.getByRole('button', { name: 'Reset' }).click();
 
     await expect(cardTitle).toHaveText('Test Page');
     await expect(cardDescription).toBeHidden();
@@ -1095,7 +1095,7 @@ test('should display date as the original title of journal', async ({
   // Description alias
   await page.keyboard.type('This is a new description');
 
-  await popover.getByLabel('保存').click();
+  await popover.getByLabel('Save').click();
 
   await inlineLink.hover();
   await expect(toolbar).toBeVisible();
@@ -1124,7 +1124,7 @@ test('should display date as the original title of journal', async ({
 
   const cardEditPopup = page.locator('embed-card-edit-modal');
   // Resets
-  await cardEditPopup.getByRole('button', { name: '重置' }).click();
+  await cardEditPopup.getByRole('button', { name: 'Reset' }).click();
 
   await expect(toolbar).toBeVisible();
   await expect(linkedDocTitle).toBeHidden();
@@ -1141,7 +1141,7 @@ test('should add HTTP protocol into link automatically', async ({ page }) => {
 
   await page.keyboard.press('Space');
 
-  const link = 'https://github.com/chen1336166753/affine';
+  const link = 'https://github.com/toeverything/affine';
 
   const { toolbar, switchViewBtn, cardViewBtn } = toolbarButtons(page);
 

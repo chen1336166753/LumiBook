@@ -20,7 +20,7 @@ test('create new tab', async ({ views }) => {
   await page.getByTestId('add-tab-view-button').click();
   await expectTabCount(page, 2);
   // new tab title should be All docs
-  await expectTabTitle(page, 1, 'All docs');
+  await expectTabTitle(page, 1, '全部文档');
   await expectActiveTab(page, 1);
 });
 
@@ -71,11 +71,11 @@ test('tab title will change when navigating', async ({ page }) => {
 
   // create new page
   await clickNewPageButton(page);
-  await expectTabTitle(page, 0, 'Untitled');
+  await expectTabTitle(page, 0, '未命名');
 
   // go to all page
   await page.getByTestId('all-pages').click();
-  await expectTabTitle(page, 0, 'All docs');
+  await expectTabTitle(page, 0, '全部文档');
 
   // go to today's journal
   await page.getByTestId('slider-bar-journals-button').click();
@@ -101,7 +101,7 @@ test('open new tab via cmd+click page link', async ({ page }) => {
       modifiers: ['ControlOrMeta'],
     });
   await expectTabCount(page, 2);
-  await expectTabTitle(page, 0, 'Untitled');
+  await expectTabTitle(page, 0, '未命名');
   await expectTabTitle(page, 1, 'hi from another page');
   await expectActiveTab(page, 0);
 });
@@ -136,7 +136,7 @@ test('reorder tabs', async ({ page }) => {
     modifiers: ['ControlOrMeta'],
   });
 
-  await expectTabTitle(page, 0, 'Untitled');
+  await expectTabTitle(page, 0, '未命名');
   await expectTabTitle(page, 1, titles[0]);
   await expectTabTitle(page, 2, titles[1]);
 
@@ -148,6 +148,6 @@ test('reorder tabs', async ({ page }) => {
   );
 
   await expectTabTitle(page, 0, titles[0]);
-  await expectTabTitle(page, 1, 'Untitled');
+  await expectTabTitle(page, 1, '未命名');
   await expectTabTitle(page, 2, titles[1]);
 });

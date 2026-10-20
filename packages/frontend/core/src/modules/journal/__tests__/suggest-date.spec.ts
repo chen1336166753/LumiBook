@@ -15,6 +15,11 @@ vi.mock('emoji-mart', () => {
 
 import { suggestJournalDate } from '../suggest-journal-date';
 
+const weekDayName = (index: number) =>
+  new Intl.DateTimeFormat(I18n.language, { weekday: 'long' }).format(
+    new Date(2024, 0, index)
+  );
+
 describe('suggestJournalDate', () => {
   afterEach(() => {
     vi.useRealTimers();
@@ -41,113 +46,43 @@ describe('suggestJournalDate', () => {
     });
   });
 
-  test('last week - monday', () => {
-    expect(suggestJournalDate('lm')).toEqual({
+  test.each([
+    { index: 1, name: 'monday' },
+    { index: 2, name: 'tuesday' },
+    { index: 3, name: 'wednesday' },
+    { index: 4, name: 'thursday' },
+    { index: 5, name: 'friday' },
+  ])('last week - $name', ({ index }) => {
+    const alias = I18n.t('com.affine.last-week', {
+      weekday: weekDayName(index),
+    });
+    expect(suggestJournalDate(alias)).toEqual({
       dateString: dayjs()
         .subtract(1, 'week')
         .startOf('week')
-        .add(1, 'day')
+        .add(index, 'day')
         .format(JOURNAL_DATE_FORMAT),
-      alias: 'Last Monday',
+      alias,
     });
   });
 
-  test('last week - tuesday', () => {
-    expect(suggestJournalDate('ltt')).toEqual({
-      dateString: dayjs()
-        .subtract(1, 'week')
-        .startOf('week')
-        .add(2, 'day')
-        .format(JOURNAL_DATE_FORMAT),
-      alias: 'Last Tuesday',
+  test.each([
+    { index: 1, name: 'monday' },
+    { index: 2, name: 'tuesday' },
+    { index: 3, name: 'wednesday' },
+    { index: 4, name: 'thursday' },
+    { index: 5, name: 'friday' },
+  ])('next week - $name', ({ index }) => {
+    const alias = I18n.t('com.affine.next-week', {
+      weekday: weekDayName(index),
     });
-  });
-
-  test('last week - wednesday', () => {
-    expect(suggestJournalDate('lw')).toEqual({
-      dateString: dayjs()
-        .subtract(1, 'week')
-        .startOf('week')
-        .add(3, 'day')
-        .format(JOURNAL_DATE_FORMAT),
-      alias: 'Last Wednesday',
-    });
-  });
-
-  test('last week - thursday', () => {
-    expect(suggestJournalDate('lth')).toEqual({
-      dateString: dayjs()
-        .subtract(1, 'week')
-        .startOf('week')
-        .add(4, 'day')
-        .format(JOURNAL_DATE_FORMAT),
-      alias: 'Last Thursday',
-    });
-  });
-
-  test('last week - friday', () => {
-    expect(suggestJournalDate('lf')).toEqual({
-      dateString: dayjs()
-        .subtract(1, 'week')
-        .startOf('week')
-        .add(5, 'day')
-        .format(JOURNAL_DATE_FORMAT),
-      alias: 'Last Friday',
-    });
-  });
-
-  test('next week - monday', () => {
-    expect(suggestJournalDate('nm')).toEqual({
+    expect(suggestJournalDate(alias)).toEqual({
       dateString: dayjs()
         .add(1, 'week')
         .startOf('week')
-        .add(1, 'day')
+        .add(index, 'day')
         .format(JOURNAL_DATE_FORMAT),
-      alias: 'Next Monday',
-    });
-  });
-
-  test('next week - tuesday', () => {
-    expect(suggestJournalDate('nxtus')).toEqual({
-      dateString: dayjs()
-        .add(1, 'week')
-        .startOf('week')
-        .add(2, 'day')
-        .format(JOURNAL_DATE_FORMAT),
-      alias: 'Next Tuesday',
-    });
-  });
-
-  test('next week - wednesday', () => {
-    expect(suggestJournalDate('nw')).toEqual({
-      dateString: dayjs()
-        .add(1, 'week')
-        .startOf('week')
-        .add(3, 'day')
-        .format(JOURNAL_DATE_FORMAT),
-      alias: 'Next Wednesday',
-    });
-  });
-
-  test('next week - thursday', () => {
-    expect(suggestJournalDate('nth')).toEqual({
-      dateString: dayjs()
-        .add(1, 'week')
-        .startOf('week')
-        .add(4, 'day')
-        .format(JOURNAL_DATE_FORMAT),
-      alias: 'Next Thursday',
-    });
-  });
-
-  test('next week - friday', () => {
-    expect(suggestJournalDate('nf')).toEqual({
-      dateString: dayjs()
-        .add(1, 'week')
-        .startOf('week')
-        .add(5, 'day')
-        .format(JOURNAL_DATE_FORMAT),
-      alias: 'Next Friday',
+      alias,
     });
   });
 

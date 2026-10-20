@@ -7,9 +7,24 @@ import { waitForEditorLoad } from '@affine-test/kit/utils/page-logic';
 import { expect, type Locator, type Page } from '@playwright/test';
 
 type MaybeDate = string | number | Date;
+function toDate(value: MaybeDate) {
+  if (typeof value === 'string') {
+    // The default locale renders dates as `2026年3月23日`, which `Date`
+    // cannot parse reliably across engines.
+    const chineseDate = /^(\d{4})年(\d{1,2})月(\d{1,2})日$/.exec(value.trim());
+    if (chineseDate) {
+      return new Date(
+        Number(chineseDate[1]),
+        Number(chineseDate[2]) - 1,
+        Number(chineseDate[3])
+      );
+    }
+  }
+  return new Date(value);
+}
 function isSameDay(d1: MaybeDate, d2: MaybeDate) {
-  const date1 = new Date(d1);
-  const date2 = new Date(d2);
+  const date1 = toDate(d1);
+  const date2 = toDate(d2);
   return (
     date1.getFullYear() === date2.getFullYear() &&
     date1.getMonth() === date2.getMonth() &&

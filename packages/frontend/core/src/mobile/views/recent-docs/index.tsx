@@ -1,5 +1,6 @@
 import { useBlockSuiteDocMeta } from '@lumibook/core/components/hooks/use-block-suite-page-meta';
 import { WorkspaceService } from '@lumibook/core/modules/workspace';
+import { I18n } from '@lumibook/i18n';
 import { useService } from '@lumibook/infra';
 import { useMemo } from 'react';
 
@@ -25,7 +26,7 @@ export const RecentDocs = ({ max = 5 }: { max?: number }) => {
   return (
     <CollapsibleSection
       path={['recent']}
-      title="Recent"
+      title={I18n['Recent']()}
       headerClassName={styles.header}
       className={styles.recentSection}
       testId="recent-docs"

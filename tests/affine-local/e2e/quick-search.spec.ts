@@ -148,7 +148,7 @@ test('Create a new page with keyword', async ({ page }) => {
   await openQuickSearchByShortcut(page);
   await insertInputText(page, '"test123456"');
   const addNewPage = page.locator(
-    '[cmdk-item] >> text=新建 “test123456” 为标题的文档'
+    '[cmdk-item] >> text=新建 “"test123456"” 为标题的文档'
   );
   await addNewPage.click();
   await page.waitForTimeout(300);
@@ -201,7 +201,7 @@ test('Navigate to the 404 page and try to open quick search', async ({
   page,
 }) => {
   await page.goto('http://localhost:8080/404');
-  const notFoundTip = page.locator('button >> text=Back to My Content');
+  const notFoundTip = page.locator('button >> text=返回我的内容');
   await expect(notFoundTip).toBeVisible();
   await openQuickSearchByShortcut(page, false);
   const quickSearch = page.locator('[data-testid=cmdk-quick-search]');

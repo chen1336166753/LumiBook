@@ -135,7 +135,7 @@ test("Deleted page's reference will not be shown in sidebar", async ({
   await deleteBtn.click();
 
   // confirm delete
-  await page.locator('button >> text=Delete').click();
+  await page.locator('button >> text=删除').click();
 
   await expect(
     page.getByTestId(favItemTestId).getByTestId(favItemAnotherPageTestId)

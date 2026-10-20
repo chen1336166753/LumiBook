@@ -159,7 +159,7 @@ describe('AIChatMessages scrolling', () => {
       userMessage
         .querySelector('[data-testid="chat-scope-receipt"]')
         ?.textContent?.replace(/\s+/g, ' ')
-    ).toContain('Product notes, brief.pdf · 2 sources');
+    ).toContain('Product notes, brief.pdf · 2 个来源');
     userMessage.remove();
 
     const userMessageWithoutReceipt =
@@ -270,7 +270,7 @@ describe('AIChatMessages scrolling', () => {
     await liveRead.updateComplete;
     const resultCard =
       liveRead.querySelector<ToolResultCard>('tool-result-card');
-    expect(resultCard?.name).toBe('Read outline of "Getting Started"');
+    expect(resultCard?.name).toBe('已读取「Getting Started」的大纲');
     expect(resultCard?.results).toEqual([
       expect.objectContaining({
         title: 'Getting Started',
@@ -279,18 +279,18 @@ describe('AIChatMessages scrolling', () => {
     ]);
     expect(
       liveRead.querySelector<ToolFailedCard>('tool-call-failed')?.name
-    ).toBe('This view is not available in the current editor mode');
+    ).toBe('当前编辑器模式下不可用此视图');
     expect(
       [...liveRead.querySelectorAll<ToolResultCard>('tool-result-card')].map(
         card => card.name
       )
-    ).toContain('Read canvas of "Getting Started"');
+    ).toContain('已读取“Getting Started”的画布');
     expect(
       liveRead.querySelector<HTMLDetailsElement>('.tool-group')?.open
     ).toBe(true);
     expect(
       liveRead.querySelector('.tool-group-summary')?.textContent
-    ).toContain('3 actions · 1 failed');
+    ).toContain('已完成 3 个操作 · 1 个失败');
     liveRead.remove();
 
     if (!customElements.get('ai-error-wrapper')) {
@@ -310,7 +310,7 @@ describe('AIChatMessages scrolling', () => {
     const error =
       errorContainer.querySelector<AIErrorWrapper>('ai-error-wrapper');
     await error?.updateComplete;
-    expect(error?.text).toContain('still processing');
+    expect(error?.text).toContain('你所选的来源还在处理中');
     expect(error?.actionTooltip).toBe('');
     error?.shadowRoot
       ?.querySelector<HTMLElement>('[data-testid="ai-error-action-button"]')

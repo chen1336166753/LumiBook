@@ -36,7 +36,7 @@ test('open split view', async ({ page }) => {
   await expectTabTitle(
     page,
     0,
-    ['Untitled', 'hi from another page'],
+    ['未命名', 'hi from another page'],
     SPLIT_VIEW_READY_TIMEOUT
   );
 
@@ -67,7 +67,7 @@ test('open split view', async ({ page }) => {
   await expectTabTitle(
     page,
     0,
-    ['hi from another page', 'Untitled'],
+    ['hi from another page', '未命名'],
     SPLIT_VIEW_READY_TIMEOUT
   );
 });
@@ -111,7 +111,7 @@ test('open split view in all docs (drag to resize handle)', async ({
   await expectTabTitle(
     page,
     0,
-    ['test-page', 'All docs'],
+    ['test-page', '全部文档'],
     SPLIT_VIEW_READY_TIMEOUT
   );
 });

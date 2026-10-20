@@ -66,7 +66,7 @@ test('page delete -> create new page -> refresh page -> new page should be appea
   await page.getByTestId('delete-page-button').click();
   await page.getByText('永久删除?').dblclick();
   await page.getByRole('button', { name: '删除' }).click();
-  await expect(page.getByText('Deleted docs will appear here')).toBeVisible();
+  await expect(page.getByText('已删除的文档将显示在此处。')).toBeVisible();
   await page.getByTestId('all-pages').click();
 
   await clickNewPageButton(page);

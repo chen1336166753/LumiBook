@@ -25,7 +25,7 @@ export const clickPropertyValue = async (page: Page, property: string) => {
 };
 
 export const openTagsEditor = async (page: Page) => {
-  await clickPropertyValue(page, 'tags');
+  await clickPropertyValue(page, '标签');
   await expect(page.getByTestId('tags-editor-popup')).toBeVisible();
 };
 

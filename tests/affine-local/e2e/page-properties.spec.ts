@@ -98,11 +98,11 @@ test('add custom property', async ({ page }) => {
 test('add custom property & edit', async ({ page }) => {
   await addCustomProperty(page, page, 'checkbox');
   await expect(
-    getPropertyValueLocator(page, 'checkbox').locator('input')
+    getPropertyValueLocator(page, '复选框').locator('input')
   ).not.toBeChecked();
-  await clickPropertyValue(page, 'checkbox');
+  await clickPropertyValue(page, '复选框');
   await expect(
-    getPropertyValueLocator(page, 'checkbox').locator('input')
+    getPropertyValueLocator(page, '复选框').locator('input')
   ).toBeChecked();
 });
 
@@ -116,10 +116,8 @@ test('property table reordering', async ({ page }) => {
 
   await dragTo(
     page,
-    page.locator('[data-testid="doc-property-name"]:has-text("Text")'),
-    page.locator(
-      '[data-testid="doc-property-name"]:has-text("Checkbox") + div'
-    ),
+    page.locator('[data-testid="doc-property-name"]:has-text("文本")'),
+    page.locator('[data-testid="doc-property-name"]:has-text("复选框") + div'),
     'bottom'
   );
 
@@ -212,12 +210,12 @@ test('change page properties visibility', async ({ page }) => {
 
   // text property should not be visible
   await expect(
-    page.locator('[data-testid="doc-property-name"]:has-text("Text")')
+    page.locator('[data-testid="doc-property-name"]:has-text("文本")')
   ).not.toBeVisible();
 
   // number property should be visible
   await expect(
-    page.locator('[data-testid="doc-property-name"]:has-text("Number")')
+    page.locator('[data-testid="doc-property-name"]:has-text("数字")')
   ).toBeVisible();
 });
 
@@ -228,7 +226,7 @@ test('check if added property is also in workspace settings', async ({
   await openWorkspaceProperties(page);
   const settingModal = page.locator('[data-testid=setting-modal-content]');
   const item = settingModal.locator(
-    '[data-testid=doc-property-manager-item]:has-text("Text")'
+    '[data-testid=doc-property-manager-item]:has-text("文本")'
   );
   await item.waitFor({ state: 'attached' });
   await expect(item).toBeVisible();
@@ -237,7 +235,7 @@ test('check if added property is also in workspace settings', async ({
 test('edit property name', async ({ page }) => {
   await addCustomProperty(page, page, 'text');
   await page
-    .locator('[data-testid="doc-property-name"]:has-text("Text")')
+    .locator('[data-testid="doc-property-name"]:has-text("文本")')
     .click();
   await expect(page.locator('[data-radix-menu-content]')).toBeVisible();
   await expect(page.locator('[data-radix-menu-content] input')).toHaveValue(
@@ -263,7 +261,7 @@ test('edit property name', async ({ page }) => {
 test('delete property via property popup', async ({ page }) => {
   await addCustomProperty(page, page, 'text');
   await page
-    .locator('[data-testid="doc-property-name"]:has-text("Text")')
+    .locator('[data-testid="doc-property-name"]:has-text("文本")')
     .click();
   await expect(page.locator('[data-radix-menu-content]')).toBeVisible();
   await page

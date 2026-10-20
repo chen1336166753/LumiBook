@@ -198,7 +198,7 @@ test('can open peek view for embedded frames', async ({ page }) => {
     .click();
   await page
     .locator(
-      'affine-toolbar-widget editor-menu-action[aria-label="Open in center peek"]'
+      'affine-toolbar-widget editor-menu-action[aria-label="在中心预览打开"]'
     )
     .click();
 

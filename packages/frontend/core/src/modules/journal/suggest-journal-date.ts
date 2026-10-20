@@ -11,12 +11,13 @@ const monthNames = Array.from({ length: 12 }, (_, index) =>
   )
 );
 
-// todo: infer locale from user's locale?
-const weekDayNames = Array.from({ length: 7 }, (_, index) =>
-  new Intl.DateTimeFormat('en-US', { weekday: 'long' }).format(
-    new Date(2024, 0, index)
-  )
-);
+function getWeekDayNames() {
+  return Array.from({ length: 7 }, (_, index) =>
+    new Intl.DateTimeFormat(I18n.language, { weekday: 'long' }).format(
+      new Date(2024, 0, index)
+    )
+  );
+}
 
 export function suggestJournalDate(query: string): {
   dateString: string;
@@ -60,6 +61,7 @@ export function suggestJournalDate(query: string): {
   }
 
   // next week dates, start from monday
+  const weekDayNames = getWeekDayNames();
   const nextWeekDates = Array.from({ length: 7 }, (_, index) =>
     dayjs()
       .add(1, 'week')

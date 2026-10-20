@@ -16,7 +16,7 @@ describe('date-title', () => {
 
   test('formats dates using journal style', () => {
     getOrCreateI18n();
-    expect(buildNewDocDateTitle('2026-03-23', 'journal')).toBe('Mar 23, 2026');
+    expect(buildNewDocDateTitle('2026-03-23', 'journal')).toBe('2026年3月23日');
   });
 
   test('increments to the next available duplicate suffix', () => {

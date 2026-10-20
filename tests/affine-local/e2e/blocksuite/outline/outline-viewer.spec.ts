@@ -212,7 +212,7 @@ test('outline viewer should be useable in doc peek preview', async ({
   await toolbar.getByLabel(/^Open doc with$/).click();
   await toolbar
     .getByLabel('Open doc menu')
-    .getByLabel('Open in center peek')
+    .getByLabel('在中心预览打开')
     .click();
 
   const peekView = page.getByTestId('peek-view-modal');

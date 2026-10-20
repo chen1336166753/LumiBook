@@ -82,7 +82,7 @@ test('export then add', async ({ electronApp, page, appInfo, workspace }) => {
   // change workspace name
   await input.fill(newWorkspaceName);
   await page.getByTestId('save-workspace-name').click();
-  await page.waitForSelector('text="Update workspace name success"');
+  await page.waitForSelector('text="成功更新工作区名称"');
 
   const tmpPath = path.join(appInfo.sessionData, w.meta.id + '-tmp.db');
 
@@ -91,7 +91,7 @@ test('export then add', async ({ electronApp, page, appInfo, workspace }) => {
 
   await page.getByTestId('workspace-setting:storage').click();
   await page.getByTestId('export-affine-backup').click();
-  await page.waitForSelector('text="Export success"');
+  await page.waitForSelector('text="导出成功"');
   expect(await fs.exists(tmpPath)).toBe(true);
 
   await page.getByTestId('modal-close-button').click();
@@ -166,9 +166,7 @@ test('delete workspace and then restore it from backup', async ({ page }) => {
   await expect(page.getByTestId('backup-workspace-item')).toHaveCount(1);
   await page.getByTestId('backup-workspace-item').click();
   await page.getByRole('menuitem', { name: '启用本地工作区' }).click();
-  const toast = page.locator(
-    '[data-sonner-toast]:has-text("Workspace enabled successfully")'
-  );
+  const toast = page.locator('[data-sonner-toast]:has-text("工作区启用成功")');
   await expect(toast).toBeVisible();
   await toast.getByRole('button', { name: '打开' }).click();
   //#endregion

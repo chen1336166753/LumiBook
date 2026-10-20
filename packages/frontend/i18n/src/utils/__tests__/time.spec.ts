@@ -156,7 +156,7 @@ describe('humanTime', () => {
           accuracy: 'minute',
         },
       })
-    ).toBe('now');
+    ).toBe('刚刚');
     expect(
       i18nTime('2024-10-10 13:25:00', {
         now: '2024-10-10 13:30:30',
@@ -172,7 +172,7 @@ describe('humanTime', () => {
           accuracy: 'hour',
         },
       })
-    ).toBe('now');
+    ).toBe('刚刚');
     expect(
       i18nTime('2024-10-10 12:30:30', {
         now: '2024-10-10 13:30:30',
@@ -180,7 +180,7 @@ describe('humanTime', () => {
           accuracy: 'day',
         },
       })
-    ).toBe('today');
+    ).toBe('今天');
     expect(
       i18nTime('2024-10-4 00:00:00', {
         now: '2024-10-10 13:30:30',
@@ -196,7 +196,7 @@ describe('humanTime', () => {
           accuracy: 'week',
         },
       })
-    ).toBe('this week');
+    ).toBe('本周');
     expect(
       i18nTime('2024-9-1 00:00:00', {
         now: '2024-9-30 13:30:30',
@@ -204,7 +204,7 @@ describe('humanTime', () => {
           accuracy: 'month',
         },
       })
-    ).toBe('this month');
+    ).toBe('本月');
     expect(
       i18nTime('2024-9-10 13:30:30', {
         now: '2024-10-10 13:30:30',
@@ -212,7 +212,7 @@ describe('humanTime', () => {
           accuracy: 'year',
         },
       })
-    ).toBe('this year');
+    ).toBe('今年');
     expect(
       i18nTime('2023-9-10 13:30:30', {
         now: '2024-10-10 13:30:30',

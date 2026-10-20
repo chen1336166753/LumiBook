@@ -4,7 +4,7 @@ import { GeneralTokenizer } from '../tokenizer';
 
 test('tokenizer', () => {
   {
-    const tokens = new GeneralTokenizer().tokenize('hello  world,\n 识光');
+    const tokens = new GeneralTokenizer().tokenize('hello  world,\n affine');
 
     expect(tokens).toEqual([
       { term: 'hello', start: 0, end: 5 },

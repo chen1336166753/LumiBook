@@ -38,14 +38,14 @@ test('open in app card should be shown for cloud workspace', async ({
   await page
     .getByTestId('open-in-app-card')
     .getByRole('checkbox', {
-      name: 'Remember choice',
+      name: '记住我的选择',
     })
     .locator('input')
     .click();
 
   await page
     .getByRole('button', {
-      name: 'Dismiss',
+      name: '忽略',
     })
     .click();
 
