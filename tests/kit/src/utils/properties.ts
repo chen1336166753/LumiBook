@@ -108,9 +108,7 @@ export const ensureAddPropertyButtonVisible = async (
   }
   await togglePropertyListVisibility(page);
   await page.waitForTimeout(500);
-  await expect(
-    root.getByRole('button', { name: '添加属性' })
-  ).toBeVisible();
+  await expect(root.getByRole('button', { name: '添加属性' })).toBeVisible();
 };
 
 export const togglePropertyListVisibility = async (page: Page) => {

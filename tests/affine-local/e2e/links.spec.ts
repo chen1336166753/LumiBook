@@ -901,10 +901,7 @@ test('should save open doc mode of internal links', async ({ page }) => {
   const recentOpenModeBtn = toolbar.locator(
     'editor-icon-button:has-text("Open")'
   );
-  await expect(recentOpenModeBtn).toHaveAttribute(
-    'aria-label',
-    '打开这篇文档'
-  );
+  await expect(recentOpenModeBtn).toHaveAttribute('aria-label', '打开这篇文档');
   await expect(
     recentOpenModeBtn.locator('span.label:has-text("Open")')
   ).toBeVisible();
