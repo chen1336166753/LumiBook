@@ -259,7 +259,7 @@ export async function loginUserDirectly(
     afterLogin?: () => Promise<void>;
   }
 ) {
-  await page.getByPlaceholder('Enter your email address').fill(user.email);
+  await page.getByPlaceholder('请输入电子邮件地址').fill(user.email);
   await page.getByTestId('continue-login-button').click({
     delay: 200,
   });

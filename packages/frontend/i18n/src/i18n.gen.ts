@@ -50,7 +50,7 @@ export function useLumiBookI18N(): {
     /**
       * `识光 Cloud`
       */
-    ["\u8BC6\u5149 Cloud"](): string;
+    ["AFFiNE Cloud"](): string;
     /**
       * `全部文档`
       */
@@ -186,11 +186,11 @@ export function useLumiBookI18N(): {
     /**
       * `启用 识光 同步`
       */
-    ["Enable \u8BC6\u5149 Cloud"](): string;
+    ["Enable AFFiNE Cloud"](): string;
     /**
       * `启用后，此工作区会通过 识光 同步进行备份和同步。`
       */
-    ["Enable \u8BC6\u5149 Cloud Description"](): string;
+    ["Enable AFFiNE Cloud Description"](): string;
     /**
       * `以下功能需要 识光 同步。网页版工作区保存在当前浏览器中，磁盘空间不足时可能会被浏览器自动移除。启用 识光 同步后，可让这个工作区更稳妥，并在多设备使用。`
       */

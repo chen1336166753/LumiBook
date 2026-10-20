@@ -90,7 +90,7 @@ test.describe('login first', () => {
       await locator.click({
         delay: 50,
       });
-      const nameInput = page.getByPlaceholder('Input account name');
+      const nameInput = page.getByPlaceholder('输入账号名称');
       await nameInput.clear();
       await nameInput.pressSequentially(newName, {
         delay: 50,
