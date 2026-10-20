@@ -118,8 +118,6 @@ jobs:
             echo "Run 'yarn affine @lumibook/i18n build' and make sure all generated i18n changes are submitted"
             echo "--- dirty files ---"
             git status --porcelain
-            echo "--- diff stat ---"
-            git diff --stat
             echo "--- diff ---"
             git diff
             exit 1
@@ -477,8 +475,6 @@ jobs:
             echo "Run 'yarn affine init && yarn affine gql build && yarn affine i18n build && yarn affine server genconfig' and make sure all changes are submitted"
             echo "--- dirty files ---"
             git status --porcelain
-            echo "--- diff stat ---"
-            git diff --stat
             echo "--- diff ---"
             git diff
             exit 1
