@@ -120,6 +120,8 @@ jobs:
             git status --porcelain
             echo "--- diff stat ---"
             git diff --stat
+            echo "--- diff ---"
+            git diff
             exit 1
           else
             echo "All generated i18n changes are submitted"
@@ -477,6 +479,8 @@ jobs:
             git status --porcelain
             echo "--- diff stat ---"
             git diff --stat
+            echo "--- diff ---"
+            git diff
             exit 1
           else
             echo "All changes are submitted"
