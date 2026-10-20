@@ -13,16 +13,22 @@ const TEMPLATE_PATH = join(__dirname, './edgeless');
 
 const getZipFilesInCategroies = () => {
   return fs.readdir(ZIP_PATH).then(folders => {
+    // Sort explicitly: fs.readdir order is filesystem-dependent, which made the
+    // generated .gen.ts differ between Windows and Linux (CI), leaving the
+    // working tree dirty after postinstall.
     return Promise.all(
       folders
         .filter(folder => {
           return statSync(join(ZIP_PATH, folder)).isDirectory();
         })
+        .sort()
         .map(async folder => {
-          const files = await fs.readdir(join(ZIP_PATH, folder));
+          const files = (await fs.readdir(join(ZIP_PATH, folder)))
+            .filter(file => path.extname(file) === '.zip')
+            .sort();
           return {
             category: folder,
-            files: files.filter(file => path.extname(file) === '.zip'),
+            files,
           };
         })
     );
@@ -230,7 +236,11 @@ const buildScript = async templatesInGroup => {
     });
   });
 
-  const importStatements = templates
+  // The import block is a flat list, so sort it by file name to keep the output
+  // stable across filesystems (fs.readdir order is not portable). The category
+  // declaration below keeps its own group order.
+  const importStatements = [...templates]
+    .sort()
     .map(template => {
       return `import ${toVariableName(
         template

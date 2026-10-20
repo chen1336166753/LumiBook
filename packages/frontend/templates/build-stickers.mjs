@@ -6,13 +6,18 @@ import { fileURLToPath } from 'node:url';
 const data = {};
 
 const __dirname = join(fileURLToPath(import.meta.url), '..');
-const categories = Array.from(
-  await fs.readdir(join(__dirname, './stickers'))
-).filter(v => v !== '.DS_Store');
+const categories = Array.from(await fs.readdir(join(__dirname, './stickers')))
+  .filter(v => v !== '.DS_Store')
+  // fs.readdir order is filesystem-dependent; sort so the generated file is stable
+  .sort();
 
 const naturalSort = array => {
   return array.sort(
-    new Intl.Collator(undefined, { numeric: true, sensitivity: 'base' }).compare
+    // Pin the locale: Intl.Collator with an undefined locale resolves differently
+    // across platforms (zh-CN on the maintainer's machine vs en-US on CI), which
+    // reordered the CJK-named stickers and left the working tree dirty after
+    // postinstall. 'zh' reproduces the committed ordering deterministically.
+    new Intl.Collator('zh', { numeric: true, sensitivity: 'base' }).compare
   );
 };
 

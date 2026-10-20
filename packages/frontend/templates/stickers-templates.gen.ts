@@ -436,10 +436,10 @@ import stickerCover215 from './stickers/Contorted Stickers/Cover/Stop.svg';
 import stickerContent215 from './stickers/Contorted Stickers/Content/Stop.svg';
 import stickerCover216 from './stickers/Paper/Cover/+1.svg';
 import stickerContent216 from './stickers/Paper/Content/+1.svg';
-import stickerCover217 from './stickers/Paper/Cover/A lot of question.svg';
-import stickerContent217 from './stickers/Paper/Content/A lot of question.svg';
-import stickerCover218 from './stickers/Paper/Cover/识光 AI.svg';
-import stickerContent218 from './stickers/Paper/Content/识光 AI.svg';
+import stickerCover217 from './stickers/Paper/Cover/识光 AI.svg';
+import stickerContent217 from './stickers/Paper/Content/识光 AI.svg';
+import stickerCover218 from './stickers/Paper/Cover/A lot of question.svg';
+import stickerContent218 from './stickers/Paper/Content/A lot of question.svg';
 import stickerCover219 from './stickers/Paper/Cover/Arrow.svg';
 import stickerContent219 from './stickers/Paper/Content/Arrow.svg';
 import stickerCover220 from './stickers/Paper/Cover/Atention.svg';
@@ -1849,16 +1849,16 @@ const templates = {
         hash: "FEF1FPZ9H1lIO54e6gP5RlNNZqukz3ADuzPFgog5qH4=",
       }),
      buildStickerTemplate({
-        name: "A lot of question",
+        name: "识光 AI",
         cover: stickerCover217,
         content: stickerContent217,
-        hash: "yKPa7vqOxC6rh-e0SVdlp0RwMWQ9mzDKTtE5g2UnHGk=",
+        hash: "FwBs2WApEGkiFmu1XR4fHZ_7fOlSsSBdYEyGs2lDeLk=",
       }),
      buildStickerTemplate({
-        name: "识光 AI",
+        name: "A lot of question",
         cover: stickerCover218,
         content: stickerContent218,
-        hash: "FwBs2WApEGkiFmu1XR4fHZ_7fOlSsSBdYEyGs2lDeLk=",
+        hash: "yKPa7vqOxC6rh-e0SVdlp0RwMWQ9mzDKTtE5g2UnHGk=",
       }),
      buildStickerTemplate({
         name: "Arrow",
