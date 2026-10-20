@@ -32,7 +32,7 @@ test('Create new workspace, then delete it', async ({ page, workspace }) => {
     .getByTestId('delete-workspace-input')
     .pressSequentially(currentWorkspaceName);
   const promise = page
-    .getByText('Successfully deleted', { exact: true })
+    .getByText('成功删除', { exact: true })
     .waitFor({ state: 'visible' });
   await page.getByTestId('delete-workspace-confirm-button').click();
   await promise;
@@ -61,7 +61,7 @@ test('Delete last workspace', async ({ page }) => {
     .getByTestId('delete-workspace-input')
     .pressSequentially(currentWorkspaceName as string);
   const deleted = page
-    .getByText('Successfully deleted', { exact: true })
+    .getByText('成功删除', { exact: true })
     .waitFor({ state: 'visible' });
   await page.getByTestId('delete-workspace-confirm-button').click();
   await deleted;

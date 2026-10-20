@@ -28,7 +28,7 @@ test('New a page ,then open it and show delete modal', async ({
   await clickPageMoreActions(page);
   const deleteBtn = page.getByTestId('editor-option-menu-delete');
   await deleteBtn.click();
-  const confirmTip = page.getByRole('dialog', { name: 'Delete doc?' });
+  const confirmTip = page.getByRole('dialog', { name: '确定要删除文档？' });
   await expect(confirmTip).toBeVisible();
   const currentWorkspace = await workspace.current();
 
@@ -52,7 +52,7 @@ test('New a page ,then go to all pages and show delete modal', async ({
   await getPageOperationButton(page, newPageId).click();
   const deleteBtn = page.getByTestId('doc-list-operation-trash');
   await deleteBtn.click();
-  const confirmTip = page.getByRole('dialog', { name: 'Delete doc?' });
+  const confirmTip = page.getByRole('dialog', { name: '确定要删除文档？' });
   await expect(confirmTip).toBeVisible();
   const currentWorkspace = await workspace.current();
 

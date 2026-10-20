@@ -80,7 +80,7 @@ test('open split view in all docs (operations button)', async ({ page }) => {
   await getPageByTitle(page, testTitle)
     .getByTestId('doc-list-operation-button')
     .click();
-  await page.getByRole('menuitem', { name: 'Open in split view' }).click();
+  await page.getByRole('menuitem', { name: '在分割视图中打开' }).click();
   await expect(page.getByTestId('split-view-panel')).toHaveCount(2, {
     timeout: SPLIT_VIEW_READY_TIMEOUT,
   });

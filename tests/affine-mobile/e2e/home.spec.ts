@@ -64,9 +64,9 @@ test('workspace selector does not offer workspace creation', async ({
   await page
     .locator('[data-testid="workspace-selector-trigger"]:visible')
     .click();
-  await expect(page.getByText('Workspace', { exact: true })).toBeVisible();
+  await expect(page.getByText('工作区', { exact: true })).toBeVisible();
   await expect(page.getByTestId('new-workspace')).toHaveCount(0);
-  await expect(page.getByText('Name your workspace')).toHaveCount(0);
+  await expect(page.getByText('命名您的工作区')).toHaveCount(0);
 });
 
 test('app tabs is visible', async ({ page }) => {
@@ -75,7 +75,7 @@ test('app tabs is visible', async ({ page }) => {
   await expect(tabs).toBeVisible();
 
   await expect(tabs.getByRole('tab', { name: 'home' })).toBeVisible();
-  await expect(tabs.getByRole('tab', { name: 'all' })).toBeVisible();
+  await expect(tabs.getByRole('tab', { name: '全部' })).toBeVisible();
   await expect(tabs.getByRole('tab', { name: 'journal' })).toBeVisible();
   await expect(tabs.getByRole('tab', { name: 'new' })).toBeVisible();
 });
@@ -84,9 +84,9 @@ test('notifications prompt unauthenticated users to sign in', async ({
   page,
 }) => {
   await page.getByTestId('notification-button').tap();
-  const notifications = page.getByText('Sign in to continue');
+  const notifications = page.getByText('登录以继续');
   await expect(notifications).toBeVisible();
-  await page.getByRole('button', { name: 'Sign in' }).click();
+  await page.getByRole('button', { name: '登录' }).click();
   await expect(page.getByTestId('continue-login-button')).toBeVisible();
 });
 
@@ -115,7 +115,7 @@ test('recent docs', async ({ page }) => {
 });
 
 test('all tab', async ({ page }) => {
-  const docsTab = page.locator('#app-tabs').getByRole('tab', { name: 'all' });
+  const docsTab = page.locator('#app-tabs').getByRole('tab', { name: '全部' });
   await expect(docsTab).toBeVisible();
 
   await docsTab.click();

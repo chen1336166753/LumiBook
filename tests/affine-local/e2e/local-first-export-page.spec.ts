@@ -17,7 +17,7 @@ test.skip('New a page ,then open it and export html', async ({
   await clickNewPageButton(page);
   await getBlockSuiteEditorTitle(page).click();
   await page
-    .getByPlaceholder('Title')
+    .getByPlaceholder('标题')
     .fill('this is a new page to export html content');
   await page.getByTestId('all-pages').click();
 
@@ -34,7 +34,7 @@ test.skip('New a page ,then open it and export html', async ({
   await exportParentBtn.click();
   const [download] = await Promise.all([
     page.waitForEvent('download'),
-    page.getByRole('button', { name: 'Export to HTML' }).click(),
+    page.getByRole('button', { name: '导出为 HTML' }).click(),
   ]);
   expect(download.suggestedFilename()).toBe(
     'this is a new page to export html content.html'
@@ -51,7 +51,7 @@ test.skip('New a page ,then open it and export markdown', async ({
   await clickNewPageButton(page);
   await getBlockSuiteEditorTitle(page).click();
   await page
-    .getByPlaceholder('Title')
+    .getByPlaceholder('标题')
     .fill('this is a new page to export markdown content');
   await page.getByTestId('all-pages').click();
   const cell = page.getByRole('cell', {
@@ -67,7 +67,7 @@ test.skip('New a page ,then open it and export markdown', async ({
   await exportParentBtn.click();
   const [download] = await Promise.all([
     page.waitForEvent('download'),
-    page.getByRole('button', { name: 'Export to Markdown' }).click(),
+    page.getByRole('button', { name: '导出为 Markdown' }).click(),
   ]);
   expect(download.suggestedFilename()).toBe(
     'this is a new page to export markdown content.md'

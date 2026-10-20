@@ -24,7 +24,7 @@ test('click btn new page and open in tab', async ({ page, workspace }) => {
   await getPageOperationButton(page, newPageId).click();
   const [newTabPage] = await Promise.all([
     page.waitForEvent('popup'),
-    page.getByRole('menuitem', { name: 'Open in new tab' }).click(),
+    page.getByRole('menuitem', { name: '在新标签页打开' }).click(),
   ]);
 
   await expect(newTabPage).toHaveURL(newPageUrl, { timeout: 15000 });
@@ -127,7 +127,7 @@ test('ctrl click embedded doc link and open in new tab', async ({ page }) => {
   const toolbar = page.locator('affine-toolbar-widget editor-toolbar');
 
   await expect(toolbar).toBeVisible();
-  await toolbar.getByRole('button', { name: 'Switch view' }).click();
+  await toolbar.getByRole('button', { name: '切换视图' }).click();
   await page.getByRole('button', { name: 'Card view' }).click();
 
   const embededDocBlock = page.locator('affine-embed-linked-doc-block');

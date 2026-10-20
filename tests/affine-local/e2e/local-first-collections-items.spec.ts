@@ -89,7 +89,7 @@ test('Show collections items in sidebar', async ({ page }) => {
   await collectionPage
     .getByTestId('navigation-panel-tree-node-operation-button')
     .click();
-  const deletePage = page.getByText('Move to trash');
+  const deletePage = page.getByText('移动到回收站');
   await deletePage.click();
   await page.getByTestId('confirm-modal-confirm').click();
   await expect(
@@ -100,7 +100,7 @@ test('Show collections items in sidebar', async ({ page }) => {
   await first
     .getByTestId('navigation-panel-tree-node-operation-button')
     .click();
-  const deleteCollection = page.getByText('Delete');
+  const deleteCollection = page.getByText('删除');
   await deleteCollection.click();
   await page.waitForTimeout(50);
   await expect(items).toHaveCount(0);
@@ -133,7 +133,7 @@ test('edit collection', async ({ page }) => {
   await first
     .getByTestId('navigation-panel-tree-node-operation-button')
     .click();
-  const editCollection = page.getByText('Rename');
+  const editCollection = page.getByText('重命名');
   await editCollection.click();
   await page.getByTestId('rename-modal-input').fill('123');
   await page.keyboard.press('Enter');

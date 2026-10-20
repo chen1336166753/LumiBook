@@ -165,12 +165,12 @@ test('delete workspace and then restore it from backup', async ({ page }) => {
   await page.getByTestId('backup-panel-trigger').click();
   await expect(page.getByTestId('backup-workspace-item')).toHaveCount(1);
   await page.getByTestId('backup-workspace-item').click();
-  await page.getByRole('menuitem', { name: 'Enable local workspace' }).click();
+  await page.getByRole('menuitem', { name: '启用本地工作区' }).click();
   const toast = page.locator(
     '[data-sonner-toast]:has-text("Workspace enabled successfully")'
   );
   await expect(toast).toBeVisible();
-  await toast.getByRole('button', { name: 'Open' }).click();
+  await toast.getByRole('button', { name: '打开' }).click();
   //#endregion
 
   await page.waitForTimeout(1000);

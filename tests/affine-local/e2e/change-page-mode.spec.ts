@@ -122,7 +122,7 @@ test('Clearing out the title bar will remove the page title', async ({
   await titleBarTextContent.dblclick({ delay: 100 });
   await titleContent.fill('');
   await titleContent.blur();
-  expect(await titleBarTextContent.textContent()).toBe('Untitled');
+  expect(await titleBarTextContent.textContent()).toBe('未命名');
 });
 
 test('Rename by editor header items, save with shortcut', async ({ page }) => {
@@ -140,5 +140,5 @@ test('Rename by editor header items, save with shortcut', async ({ page }) => {
   await menusRenameItem.click({ delay: 100 });
   await titleContent.fill('');
   await page.keyboard.press('Escape');
-  expect(await titleBarTextContent.textContent()).toBe('Untitled');
+  expect(await titleBarTextContent.textContent()).toBe('未命名');
 });

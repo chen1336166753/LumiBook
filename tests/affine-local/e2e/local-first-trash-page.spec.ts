@@ -13,8 +13,8 @@ import { expect, type Page } from '@playwright/test';
 const movePageToTrash = async (page: Page, docId: string) => {
   await getPageOperationButton(page, docId).click();
   await page.getByTestId('doc-list-operation-trash').click();
-  await expect(page.getByRole('dialog', { name: 'Delete doc?' })).toBeVisible();
-  await page.getByRole('button', { name: 'Delete' }).click();
+  await expect(page.getByRole('dialog', { name: '确定要删除文档？' })).toBeVisible();
+  await page.getByRole('button', { name: '删除' }).click();
 };
 
 const createAndTrashPage = async (page: Page, title: string) => {
@@ -64,16 +64,16 @@ test('select all trashed pages from the Trash title', async ({ page }) => {
     .first()
     .click({ modifiers: ['Shift'] });
 
-  await expect(selectAllButton).toHaveText('Select all');
+  await expect(selectAllButton).toHaveText('全选');
   await selectAllButton.click();
   await expect(page.getByTestId('floating-toolbar')).toHaveText(
-    '2 doc(s) selected'
+    '已选中 2 篇文档'
   );
-  await expect(selectAllButton).toHaveText('Clear selection');
+  await expect(selectAllButton).toHaveText('清除选择');
 
   await selectAllButton.click();
   await expect(page.getByTestId('floating-toolbar')).toHaveText(
-    '0 doc(s) selected'
+    '已选中 0 篇文档'
   );
-  await expect(selectAllButton).toHaveText('Select all');
+  await expect(selectAllButton).toHaveText('全选');
 });

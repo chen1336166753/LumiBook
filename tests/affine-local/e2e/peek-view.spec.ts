@@ -33,7 +33,7 @@ test('can open peek view via link popover', async ({ page }) => {
   await toolbar.getByLabel(/^Open doc with$/).click();
   await toolbar
     .getByLabel('Open doc menu')
-    .getByLabel('Open in center peek')
+    .getByLabel('在中心预览打开')
     .click();
 
   // verify peek view is opened
@@ -69,7 +69,7 @@ test('can open peek view via db+click link card', async ({ page }) => {
   const toolbar = page.locator('affine-toolbar-widget editor-toolbar');
   await expect(toolbar).toBeVisible();
 
-  await toolbar.getByLabel('Switch view').click();
+  await toolbar.getByLabel('切换视图').click();
   await toolbar.getByLabel('Card view').click();
 
   await expect(

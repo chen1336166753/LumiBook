@@ -36,7 +36,7 @@ test('Create new doc in favorites', async ({ page }) => {
   await openNavigationPanelNodeSwipeMenu(page, node);
   const menu = page.getByRole('dialog');
   await expect(menu).toBeVisible();
-  await expect(menu.getByRole('button', { name: 'Duplicate' })).toBeVisible();
+  await expect(menu.getByRole('button', { name: '复制' })).toBeVisible();
   await expect(page.locator('#app-tabs')).toHaveCount(1);
 
   // const label = node.getByText(testTitleText);

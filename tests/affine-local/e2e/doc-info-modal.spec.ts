@@ -67,7 +67,7 @@ test('New a page, then open info modal from all doc', async ({ page }) => {
   const cell = getPageByTitle(page, 'this is a new page');
   expect(cell).not.toBeUndefined();
   await getPageOperationButton(page, newPageId).click();
-  await page.getByRole('menuitem', { name: 'View Info' }).click();
+  await page.getByRole('menuitem', { name: '查看信息' }).click();
 
   const infoModal = page.getByTestId('info-modal');
   await expect(infoModal).toBeVisible();
@@ -94,7 +94,7 @@ test('New a page and add to favourites, then open info modal from sidebar', asyn
   await favoriteListItemInSidebar
     .getByTestId('navigation-panel-tree-node-operation-button')
     .click();
-  const infoBtn = page.getByText('View Info');
+  const infoBtn = page.getByText('查看信息');
   await infoBtn.click();
 
   const infoModal = page.getByTestId('info-modal');

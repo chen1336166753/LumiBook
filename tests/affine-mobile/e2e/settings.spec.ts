@@ -9,7 +9,7 @@ const openSettings = async (page: Page) => {
 
 test('can open settings', async ({ page }) => {
   await openSettings(page);
-  await expect(page.getByText('Devices', { exact: true })).toHaveCount(0);
+  await expect(page.getByText('设备管理', { exact: true })).toHaveCount(0);
 });
 
 test('can change theme', async ({ page }) => {
@@ -17,7 +17,7 @@ test('can change theme', async ({ page }) => {
   const select = page
     .getByTestId('setting-row')
     .filter({
-      hasText: 'Color mode',
+      hasText: '配色方案',
     })
     .getByTestId('native-dropdown-select-trigger');
 

@@ -75,10 +75,10 @@ const dragToCollection = async (page: Page, dragItem: Locator) => {
 const dragToTrash = async (page: Page, title: string, dragItem: Locator) => {
   // drag to trash
   await dragTo(page, dragItem, page.getByTestId('trash-page'));
-  const confirmTip = page.getByText('Delete doc?');
+  const confirmTip = page.getByText('确定要删除文档？');
   await expect(confirmTip).toBeVisible();
 
-  await page.getByRole('button', { name: 'Delete' }).click();
+  await page.getByRole('button', { name: '删除' }).click();
 
   await expect(
     page.getByText(title),
@@ -305,7 +305,7 @@ test('drag a page card block to another page', async ({ page }) => {
   const toolbar = page.locator('affine-toolbar-widget editor-toolbar');
 
   // convert page reference to card block
-  await toolbar.getByRole('button', { name: 'Switch view' }).click();
+  await toolbar.getByRole('button', { name: '切换视图' }).click();
   await toolbar.getByRole('button', { name: 'Card view' }).click();
 
   // hover the card block to show the drag handle
@@ -369,7 +369,7 @@ test('drag a favourite page into canvas on edgeless mode', async ({ page }) => {
   await embedDoc.click();
 
   const toolbar = locateToolbar(page);
-  const switchViewButton = toolbar.getByLabel('Switch view');
+  const switchViewButton = toolbar.getByLabel('切换视图');
   await switchViewButton.click();
   await toolbar.getByLabel('Card view').click(); // this will record the view as preferred view
   const cardDoc = page.locator('affine-embed-edgeless-linked-doc-block');
@@ -421,7 +421,7 @@ test('drag a favourite page into note on edgeless mode', async ({ page }) => {
   await cardDocInNote.click();
 
   const toolbar = locateToolbar(page);
-  const switchViewButton = toolbar.getByLabel('Switch view');
+  const switchViewButton = toolbar.getByLabel('切换视图');
   await switchViewButton.click();
   await toolbar.getByLabel('Embed view').click(); // this should not record the view as preferred view
   await expect(embedDocInNote).toBeVisible();

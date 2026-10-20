@@ -27,10 +27,10 @@ test('New a page , then delete it in all pages, restore it', async ({
   await getPageOperationButton(page, newPageId).click();
   const deleteBtn = page.getByTestId('doc-list-operation-trash');
   await deleteBtn.click();
-  const confirmTip = page.getByRole('dialog', { name: 'Delete doc?' });
+  const confirmTip = page.getByRole('dialog', { name: '确定要删除文档？' });
   await expect(confirmTip).toBeVisible();
 
-  await page.getByRole('button', { name: 'Delete' }).click();
+  await page.getByRole('button', { name: '删除' }).click();
 
   await page.getByTestId('trash-page').click();
   await page.waitForTimeout(50);

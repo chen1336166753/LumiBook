@@ -107,16 +107,16 @@ test('select two pages and delete', async ({ page }) => {
   // the floating popover should appear
   await expect(page.locator('[data-testid="floating-toolbar"]')).toBeVisible();
   await expect(page.locator('[data-testid="floating-toolbar"]')).toHaveText(
-    '2 doc(s) selected'
+    '已选中 2 篇文档'
   );
 
   // click delete button
   await page.locator('[data-testid="list-toolbar-delete"]').click();
 
   // the confirm dialog should appear
-  await expect(page.getByText('Delete 2 docs?')).toBeVisible();
+  await expect(page.getByText('确认删除 2 篇文档吗？')).toBeVisible();
 
-  await page.getByRole('button', { name: 'Delete' }).click();
+  await page.getByRole('button', { name: '删除' }).click();
 
   // check the page count again
   await page.waitForTimeout(300);
@@ -146,16 +146,16 @@ test('select three pages with shiftKey and delete', async ({ page }) => {
   // the floating popover should appear
   await expect(page.locator('[data-testid="floating-toolbar"]')).toBeVisible();
   await expect(page.locator('[data-testid="floating-toolbar"]')).toHaveText(
-    '3 doc(s) selected'
+    '已选中 3 篇文档'
   );
 
   // click delete button
   await page.locator('[data-testid="list-toolbar-delete"]').click();
 
   // the confirm dialog should appear
-  await expect(page.getByText('Delete 3 docs?')).toBeVisible();
+  await expect(page.getByText('确认删除 3 篇文档吗？')).toBeVisible();
 
-  await page.getByRole('button', { name: 'Delete' }).click();
+  await page.getByRole('button', { name: '删除' }).click();
 
   // check the page count again
   await page.waitForTimeout(300);
@@ -177,14 +177,14 @@ test('select all and delete closes the floating toolbar', async ({ page }) => {
   const pageCount = await getPagesCount(page);
 
   const selectAllButton = page
-    .getByRole('button', { name: 'Select all' })
+    .getByRole('button', { name: '全选' })
     .last();
   await selectAllButton.hover();
   await selectAllButton.click();
 
   await expect(page.locator('[data-testid="floating-toolbar"]')).toBeVisible();
   await page.locator('[data-testid="list-toolbar-delete"]').click();
-  await page.getByRole('button', { name: 'Delete' }).click();
+  await page.getByRole('button', { name: '删除' }).click();
 
   await page.waitForTimeout(300);
   await expect(
@@ -217,7 +217,7 @@ test('create a tag and delete it', async ({ page }) => {
   // delete the tag
   await page.getByTestId('tag-item-operation-button').click();
   await page.getByTestId('delete-tag').click();
-  await page.getByTestId('confirm-modal-confirm').getByText('Delete').click();
+  await page.getByTestId('confirm-modal-confirm').getByText('删除').click();
   await page.waitForURL(url => url.pathname.endsWith('tag'));
 
   const newCell = page.getByTestId('tag-list-item').getByText('test-tag');

@@ -135,7 +135,7 @@ test('Create a new page without keyword', async ({ page }) => {
   await waitForEditorLoad(page);
   await clickNewPageButton(page);
   await openQuickSearchByShortcut(page);
-  const addNewPage = page.getByText('New page', { exact: true });
+  const addNewPage = page.getByText('新建文档', { exact: true });
   await addNewPage.click();
   await page.waitForTimeout(300);
   await assertTitle(page, '');
@@ -240,7 +240,7 @@ test('Focus title after creating a new page', async ({ page }) => {
   await waitForEditorLoad(page);
   await clickNewPageButton(page);
   await openQuickSearchByShortcut(page);
-  const addNewPage = page.getByText('New page', { exact: true });
+  const addNewPage = page.getByText('新建文档', { exact: true });
   await addNewPage.click();
   await titleIsFocused(page);
 });
@@ -249,7 +249,7 @@ test('can use keyboard down to select goto setting', async ({ page }) => {
   await openHomePage(page);
   await waitForEditorLoad(page);
   await openQuickSearchByShortcut(page);
-  await selectItem(page, 'Go to Settings');
+  await selectItem(page, '前往设置');
 
   await expect(page.getByTestId('setting-modal')).toBeVisible();
 });
@@ -273,7 +273,7 @@ test('assert the recent browse pages are on the recent list', async ({
 
   // create second page
   await openQuickSearchByShortcut(page);
-  const addNewPage = page.getByText('New page', { exact: true });
+  const addNewPage = page.getByText('新建文档', { exact: true });
   await addNewPage.click();
   await waitForEditorLoad(page);
   {
@@ -313,7 +313,7 @@ test('assert the recent browse pages are on the recent list', async ({
   await waitForEditorLoad(page);
   await openQuickSearchByShortcut(page);
   {
-    const addNewPage = page.getByText('New page', { exact: true });
+    const addNewPage = page.getByText('新建文档', { exact: true });
     await addNewPage.click();
   }
   await waitForEditorLoad(page);
@@ -343,7 +343,7 @@ test('can use cmdk to export png', async ({ page }) => {
   await openQuickSearchByShortcut(page);
   const [download] = await Promise.all([
     page.waitForEvent('download'),
-    selectItem(page, 'Export to PNG'),
+    selectItem(page, '导出为 PNG'),
   ]);
   expect(download.suggestedFilename()).toBe('this is a new page to export.png');
 });
@@ -355,15 +355,15 @@ test('can use cmdk to delete page and restore it', async ({ page }) => {
   await getBlockSuiteEditorTitle(page).click();
   await getBlockSuiteEditorTitle(page).fill('this is a new page to delete');
   await openQuickSearchByShortcut(page);
-  await selectItem(page, 'Move to trash');
+  await selectItem(page, '移动到回收站');
   await page.getByTestId('confirm-modal-confirm').click();
   const restoreButton = page.getByTestId('page-restore-button');
   await expect(restoreButton).toBeVisible();
   await page.waitForTimeout(100);
   await openQuickSearchByShortcut(page);
-  expect(await commandsIsVisible(page, 'Move to trash')).toBe(false);
-  expect(await commandsIsVisible(page, 'Restore from trash')).toBe(true);
-  await selectItem(page, 'Restore from trash');
+  expect(await commandsIsVisible(page, '移动到回收站')).toBe(false);
+  expect(await commandsIsVisible(page, '从垃圾箱恢复')).toBe(true);
+  await selectItem(page, '从垃圾箱恢复');
   await expect(restoreButton).not.toBeVisible();
 });
 

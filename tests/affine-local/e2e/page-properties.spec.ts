@@ -125,21 +125,21 @@ test('property table reordering', async ({ page }) => {
 
   // new order should be Doc mode, (Tags), Created at, Updated at, Number, Date, Checkbox, Text
   for (const [index, property] of [
-    'Tags',
-    'Doc mode',
+    '标签',
+    '文档模式',
     'Journal',
-    'Template',
-    'Created',
-    'Updated',
-    'Created by',
-    'Edgeless theme',
-    'Page width',
-    'Number',
-    'Date',
-    'Checkbox',
-    'Text',
-    'Created by',
-    'Last edited by',
+    '模板',
+    '创建时间',
+    '更新时间',
+    '创建者',
+    '无界配色方案',
+    '页面宽度',
+    '数字',
+    '日期',
+    '复选框',
+    '文本',
+    '创建者',
+    '最后编辑者',
   ].entries()) {
     await expect(
       page
@@ -165,27 +165,27 @@ test('page info show more will show all properties', async ({ page }) => {
   await addCustomProperty(page, page, 'createdBy');
   await addCustomProperty(page, page, 'updatedBy');
 
-  await changePropertyVisibility(page, 'Text', 'always-hide');
+  await changePropertyVisibility(page, '文本', 'always-hide');
 
   await expect(page.getByTestId('property-collapsible-button')).toBeVisible();
   await page.click('[data-testid="property-collapsible-button"]');
 
   for (const [index, property] of [
-    'Tags',
-    'Doc mode',
+    '标签',
+    '文档模式',
     'Journal',
-    'Template',
-    'Created',
-    'Updated',
-    'Created by',
-    'Edgeless theme',
-    'Page width',
-    'Text',
-    'Number',
-    'Date',
-    'Checkbox',
-    'Created by',
-    'Last edited by',
+    '模板',
+    '创建时间',
+    '更新时间',
+    '创建者',
+    '无界配色方案',
+    '页面宽度',
+    '文本',
+    '数字',
+    '日期',
+    '复选框',
+    '创建者',
+    '最后编辑者',
   ].entries()) {
     await expect(
       page
@@ -204,11 +204,11 @@ test('change page properties visibility', async ({ page }) => {
   await togglePropertyListVisibility(page);
 
   // add some number to number property
-  await clickPropertyValue(page, 'Number');
+  await clickPropertyValue(page, '数字');
   await page.locator('input[type=number]').fill('123');
 
-  await changePropertyVisibility(page, 'Text', 'always-hide');
-  await changePropertyVisibility(page, 'Number', 'hide-when-empty');
+  await changePropertyVisibility(page, '文本', 'always-hide');
+  await changePropertyVisibility(page, '数字', 'hide-when-empty');
 
   // text property should not be visible
   await expect(
@@ -241,7 +241,7 @@ test('edit property name', async ({ page }) => {
     .click();
   await expect(page.locator('[data-radix-menu-content]')).toBeVisible();
   await expect(page.locator('[data-radix-menu-content] input')).toHaveValue(
-    'Text'
+    '文本'
   );
   await page.locator('[data-radix-menu-content] input').fill('New Text');
   await page.keyboard.press('Enter');
@@ -269,14 +269,14 @@ test('delete property via property popup', async ({ page }) => {
   await page
     .locator('[data-radix-menu-content]')
     .getByRole('menuitem', {
-      name: 'Delete property',
+      name: '删除属性',
     })
     .click();
   // confirm delete dialog should show
   await expect(page.getByRole('dialog')).toBeVisible();
   await page
     .getByRole('button', {
-      name: 'Confirm',
+      name: '确认',
     })
     .click();
   // check if the property is removed
@@ -287,9 +287,9 @@ test('delete property via property popup', async ({ page }) => {
 
 test('workspace properties can be collapsed', async ({ page }) => {
   await expect(page.getByTestId('doc-property-row').first()).toBeVisible();
-  await page.getByRole('button', { name: 'Workspace properties' }).click();
+  await page.getByRole('button', { name: '工作区属性' }).click();
   await expect(page.getByTestId('doc-property-row').first()).not.toBeVisible();
-  await page.getByRole('button', { name: 'Workspace properties' }).click();
+  await page.getByRole('button', { name: '工作区属性' }).click();
   await expect(page.getByTestId('doc-property-row').first()).toBeVisible();
 });
 

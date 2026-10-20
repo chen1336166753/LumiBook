@@ -17,7 +17,7 @@ const openDocInfoModal = async (page: Page) => {
 };
 
 test.beforeEach(async ({ page }) => {
-  const docsTab = page.locator('#app-tabs').getByRole('tab', { name: 'all' });
+  const docsTab = page.locator('#app-tabs').getByRole('tab', { name: '全部' });
   await expect(docsTab).toBeVisible();
   await docsTab.click();
   await page.getByTestId('doc-list-item').first().click();
@@ -34,7 +34,7 @@ test('switch to edgeless mode', async ({ page }) => {
   await expect(page.getByRole('dialog')).toBeVisible();
 
   const switchMode = page.getByRole('button', {
-    name: 'Default to Edgeless mode',
+    name: '默认为无界模式',
   });
   const switchModeBox = await switchMode.boundingBox();
   expect(switchModeBox).not.toBeNull();
@@ -48,19 +48,19 @@ test('switch to edgeless mode', async ({ page }) => {
 
 test('can show doc info', async ({ page }) => {
   await openDocInfoModal(page);
-  await expect(page.getByRole('dialog')).toContainText('Created');
-  await expect(page.getByRole('dialog')).toContainText('Updated');
+  await expect(page.getByRole('dialog')).toContainText('创建时间');
+  await expect(page.getByRole('dialog')).toContainText('更新时间');
 });
 
 test('can add text property', async ({ page }) => {
   await openDocInfoModal(page);
 
   await expect(
-    page.getByRole('button', { name: 'Add property' })
+    page.getByRole('button', { name: '添加属性' })
   ).toBeVisible();
 
-  await page.getByRole('button', { name: 'Add property' }).click();
-  await page.getByRole('button', { name: 'Text' }).click();
+  await page.getByRole('button', { name: '添加属性' }).click();
+  await page.getByRole('button', { name: '文本' }).click();
 
   await expect(
     page.getByTestId('mobile-menu-back-button').last()
