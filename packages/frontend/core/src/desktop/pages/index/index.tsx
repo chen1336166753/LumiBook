@@ -9,11 +9,7 @@ import {
   createFirstAppData,
 } from '@lumibook/core/utils/first-app-data';
 import { ServerFeature } from '@lumibook/graphql';
-import {
-  useLiveData,
-  useService,
-  useServiceOptional,
-} from '@lumibook/infra';
+import { useLiveData, useService, useServiceOptional } from '@lumibook/infra';
 import {
   type ReactNode,
   useCallback,

@@ -1,4 +1,7 @@
-import type { RealtimeRequestName, RealtimeTopicName } from '@lumibook/realtime';
+import type {
+  RealtimeRequestName,
+  RealtimeTopicName,
+} from '@lumibook/realtime';
 
 export const REALTIME_GATEWAY_REQUIRED_REQUESTS = [
   'workspace.access.get',

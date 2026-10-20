@@ -176,9 +176,7 @@ test('select all and delete closes the floating toolbar', async ({ page }) => {
 
   const pageCount = await getPagesCount(page);
 
-  const selectAllButton = page
-    .getByRole('button', { name: '全选' })
-    .last();
+  const selectAllButton = page.getByRole('button', { name: '全选' }).last();
   await selectAllButton.hover();
   await selectAllButton.click();
 

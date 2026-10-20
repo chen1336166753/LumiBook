@@ -1,4 +1,7 @@
-import type { DropTargetDropEvent, DropTargetOptions } from '@lumibook/component';
+import type {
+  DropTargetDropEvent,
+  DropTargetOptions,
+} from '@lumibook/component';
 import type { AffineDNDData } from '@lumibook/core/types/dnd';
 
 import type { NavigationPanelTreeNodeDropEffect } from '../tree';

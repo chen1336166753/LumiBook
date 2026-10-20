@@ -226,9 +226,7 @@ export class DocRendererController {
       envMeta.isSelfHosted = true;
     }
 
-    const title = opts?.title
-      ? htmlSanitize(`${opts.title} | 识光`)
-      : '识光';
+    const title = opts?.title ? htmlSanitize(`${opts.title} | 识光`) : '识光';
     const summary = opts ? htmlSanitize(opts.summary) : assets.description;
     const image = opts?.avatar ?? 'https://affine.pro/og.jpeg';
 

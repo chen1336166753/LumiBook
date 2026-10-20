@@ -9,11 +9,7 @@ import {
 import { AppTabsHeader } from '@lumibook/core/modules/app-tabs-header';
 import { NavigationButtons } from '@lumibook/core/modules/navigation';
 import { WorkspaceService } from '@lumibook/core/modules/workspace';
-import {
-  useLiveData,
-  useService,
-  useServiceOptional,
-} from '@lumibook/infra';
+import { useLiveData, useService, useServiceOptional } from '@lumibook/infra';
 import clsx from 'clsx';
 import {
   forwardRef,

@@ -5,11 +5,7 @@ import { NavigateContext } from '@lumibook/core/components/hooks/use-navigate-he
 import { WorkspaceNavigator } from '@lumibook/core/components/workspace-selector';
 import type { AffineDNDData } from '@lumibook/core/types/dnd';
 import { useI18n } from '@lumibook/i18n';
-import {
-  useLiveData,
-  useService,
-  useServiceOptional,
-} from '@lumibook/infra';
+import { useLiveData, useService, useServiceOptional } from '@lumibook/infra';
 import clsx from 'clsx';
 import type { PropsWithChildren, ReactElement } from 'react';
 import { useCallback, useContext, useEffect, useMemo } from 'react';

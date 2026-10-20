@@ -273,7 +273,6 @@ export const SettingDialog = ({
   );
 };
 
-
 const InfoFooter = () => {
   return (
     <div className={style.footer}>

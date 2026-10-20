@@ -1,5 +1,8 @@
 import { toggleGeneralAIOnboarding } from '@lumibook/core/components/affine/ai-onboarding/apis';
-import type { AuthAccountInfo, AuthService } from '@lumibook/core/modules/cloud';
+import type {
+  AuthAccountInfo,
+  AuthService,
+} from '@lumibook/core/modules/cloud';
 import type { GlobalDialogService } from '@lumibook/core/modules/dialogs';
 
 import type { AIRequestService } from '../runtime/request';

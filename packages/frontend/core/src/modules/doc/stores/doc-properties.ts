@@ -1,9 +1,4 @@
-import {
-  LiveData,
-  Store,
-  yjsGetPath,
-  yjsObserveDeep,
-} from '@lumibook/infra';
+import { LiveData, Store, yjsGetPath, yjsObserveDeep } from '@lumibook/infra';
 import { isNil, omitBy } from 'lodash-es';
 import { combineLatest, map, switchMap } from 'rxjs';
 import { AbstractType as YAbstractType } from 'yjs';

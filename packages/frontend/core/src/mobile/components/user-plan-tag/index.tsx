@@ -1,4 +1,7 @@
-import { ServerService, SubscriptionService } from '@lumibook/core/modules/cloud';
+import {
+  ServerService,
+  SubscriptionService,
+} from '@lumibook/core/modules/cloud';
 import { SubscriptionPlan } from '@lumibook/graphql';
 import { useLiveData, useServices } from '@lumibook/infra';
 import clsx from 'clsx';

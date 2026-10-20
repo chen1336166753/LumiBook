@@ -17,15 +17,14 @@ import type {
   DatabaseValueCell,
 } from '@lumibook/core/modules/doc-info/types';
 import { DocIntegrationPropertiesTable } from '@lumibook/core/modules/integration';
-import { ViewService, WorkbenchService } from '@lumibook/core/modules/workbench';
+import {
+  ViewService,
+  WorkbenchService,
+} from '@lumibook/core/modules/workbench';
 import { WorkspacePropertyService } from '@lumibook/core/modules/workspace-property';
 import type { AffineDNDData } from '@lumibook/core/types/dnd';
 import { useI18n } from '@lumibook/i18n';
-import {
-  useLiveData,
-  useService,
-  useServiceOptional,
-} from '@lumibook/infra';
+import { useLiveData, useService, useServiceOptional } from '@lumibook/infra';
 import { track } from '@lumibook/track';
 import * as Collapsible from '@radix-ui/react-collapsible';
 import clsx from 'clsx';

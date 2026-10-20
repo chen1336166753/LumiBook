@@ -66,12 +66,7 @@ test('disabled copilot hides its server feature and rejects every API transport'
   try {
     t.false(server.features.includes(ServerFeature.Copilot));
     await t.throwsAsync(
-      createCopilotSession(
-        app,
-        workspace.id,
-        randomUUID(),
-        'Chat With 识光 AI'
-      )
+      createCopilotSession(app, workspace.id, randomUUID(), 'Chat With 识光 AI')
     );
     await app.GET('/api/copilot/unsplash/photos').expect(403);
     await app

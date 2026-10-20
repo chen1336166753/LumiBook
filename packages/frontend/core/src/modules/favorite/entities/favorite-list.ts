@@ -1,7 +1,4 @@
-import {
-  Entity,
-  generateFractionalIndexingKeyBetween,
-} from '@lumibook/infra';
+import { Entity, generateFractionalIndexingKeyBetween } from '@lumibook/infra';
 
 import type { FavoriteSupportTypeUnion } from '../constant';
 import type { FavoriteRecord, FavoriteStore } from '../stores/favorite';

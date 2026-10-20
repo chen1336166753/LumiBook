@@ -1,10 +1,7 @@
 import { buttonVariants } from '@lumibook/admin/components/ui/button';
 import { Separator } from '@lumibook/admin/components/ui/separator';
 import { cn } from '@lumibook/admin/utils';
-import {
-  ChevronRightIcon,
-  MailWarningIcon,
-} from 'lucide-react';
+import { ChevronRightIcon, MailWarningIcon } from 'lucide-react';
 
 type Channel = 'stable' | 'canary' | 'beta' | 'internal';
 

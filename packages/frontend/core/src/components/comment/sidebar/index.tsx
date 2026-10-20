@@ -25,11 +25,7 @@ import { toDocSearchParams } from '@lumibook/core/modules/navigation';
 import { WorkbenchService } from '@lumibook/core/modules/workbench';
 import { copyTextToClipboard } from '@lumibook/core/utils/clipboard';
 import { i18nTime, useI18n } from '@lumibook/i18n';
-import {
-  useLiveData,
-  useService,
-  useServiceOptional,
-} from '@lumibook/infra';
+import { useLiveData, useService, useServiceOptional } from '@lumibook/infra';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { debounceTime, distinctUntilChanged } from 'rxjs/operators';
 

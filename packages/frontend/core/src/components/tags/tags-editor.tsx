@@ -8,7 +8,10 @@ import {
   RowInput,
   Scrollable,
 } from '@lumibook/component';
-import { TagService, useDeleteTagConfirmModal } from '@lumibook/core/modules/tag';
+import {
+  TagService,
+  useDeleteTagConfirmModal,
+} from '@lumibook/core/modules/tag';
 import { useI18n } from '@lumibook/i18n';
 import { useLiveData, useService } from '@lumibook/infra';
 import clsx from 'clsx';

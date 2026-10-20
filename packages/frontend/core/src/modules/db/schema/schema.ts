@@ -57,7 +57,9 @@ export const LumiBook_WORKSPACE_DB_SCHEMA = {
 } as const satisfies DBSchemaBuilder;
 export type LumiBookWorkspaceDbSchema = typeof LumiBook_WORKSPACE_DB_SCHEMA;
 
-export type DocProperties = ORMEntity<LumiBookWorkspaceDbSchema['docProperties']>;
+export type DocProperties = ORMEntity<
+  LumiBookWorkspaceDbSchema['docProperties']
+>;
 export type DocCustomPropertyInfo = ORMEntity<
   LumiBookWorkspaceDbSchema['docCustomPropertyInfo']
 >;

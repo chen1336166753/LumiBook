@@ -4,7 +4,10 @@ import {
   IndexedDBDocStorage,
   IndexedDBDocSyncStorage,
 } from '@lumibook/nbstore/idb';
-import { SqliteDocStorage, SqliteDocSyncStorage } from '@lumibook/nbstore/sqlite';
+import {
+  SqliteDocStorage,
+  SqliteDocSyncStorage,
+} from '@lumibook/nbstore/sqlite';
 import type { StoreClient } from '@lumibook/nbstore/worker/client';
 
 import type { ServerService } from '../../cloud';

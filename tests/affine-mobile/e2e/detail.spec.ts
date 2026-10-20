@@ -55,9 +55,7 @@ test('can show doc info', async ({ page }) => {
 test('can add text property', async ({ page }) => {
   await openDocInfoModal(page);
 
-  await expect(
-    page.getByRole('button', { name: '添加属性' })
-  ).toBeVisible();
+  await expect(page.getByRole('button', { name: '添加属性' })).toBeVisible();
 
   await page.getByRole('button', { name: '添加属性' }).click();
   await page.getByRole('button', { name: '文本' }).click();

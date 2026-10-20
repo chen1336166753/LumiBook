@@ -6,7 +6,12 @@ import {
   PageIcon,
   TocIcon,
 } from '@blocksuite/icons/rc';
-import { IconButton, notify, toast, useConfirmModal } from '@lumibook/component';
+import {
+  IconButton,
+  notify,
+  toast,
+  useConfirmModal,
+} from '@lumibook/component';
 import {
   MenuSeparator,
   MenuSub,

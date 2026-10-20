@@ -1,5 +1,8 @@
 import { UserFriendlyError } from '@lumibook/error';
-import { type OAuthProviderType, ServerDeploymentType } from '@lumibook/graphql';
+import {
+  type OAuthProviderType,
+  ServerDeploymentType,
+} from '@lumibook/graphql';
 import { OnEvent, Service } from '@lumibook/infra';
 import { track } from '@lumibook/track';
 import { nanoid } from 'nanoid';

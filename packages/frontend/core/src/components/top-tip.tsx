@@ -1,4 +1,7 @@
-import { BrowserWarning, LocalDemoTips } from '@lumibook/component/affine-banner';
+import {
+  BrowserWarning,
+  LocalDemoTips,
+} from '@lumibook/component/affine-banner';
 import { Trans, useI18n } from '@lumibook/i18n';
 import { useLiveData, useService } from '@lumibook/infra';
 import { useCallback, useState } from 'react';

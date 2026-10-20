@@ -71,9 +71,7 @@ export const ImportPage = ({
         left={<NotionIcon width={20} height={20} />}
         title="Notion"
         right={
-          <Tooltip
-            content={'Learn how to Import your Notion pages into 识光.'}
-          >
+          <Tooltip content={'Learn how to Import your Notion pages into 识光.'}>
             <HelpIcon width={20} height={20} />
           </Tooltip>
         }

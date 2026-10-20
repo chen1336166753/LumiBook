@@ -1,6 +1,9 @@
 import { AccountIcon, AdminIcon, SignOutIcon } from '@blocksuite/icons/rc';
 import { MenuItem } from '@lumibook/component';
-import { ServerService, UserFeatureService } from '@lumibook/core/modules/cloud';
+import {
+  ServerService,
+  UserFeatureService,
+} from '@lumibook/core/modules/cloud';
 import { WorkspaceDialogService } from '@lumibook/core/modules/dialogs';
 import { useI18n } from '@lumibook/i18n';
 import { useLiveData, useService } from '@lumibook/infra';

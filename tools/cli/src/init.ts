@@ -1,11 +1,7 @@
 import { readFileSync, writeFileSync } from 'node:fs';
 
 import type { Path } from '@lumibook/utils/path';
-import {
-  type Package,
-  Workspace,
-  yarnList,
-} from '@lumibook/utils/workspace';
+import { type Package, Workspace, yarnList } from '@lumibook/utils/workspace';
 import { applyEdits, modify } from 'jsonc-parser';
 import { format, type FormatConfig } from 'oxfmt';
 

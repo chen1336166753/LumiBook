@@ -4,7 +4,11 @@ import {
   InformationIcon,
 } from '@blocksuite/icons/rc';
 import { IconButton, Menu, observeResize } from '@lumibook/component';
-import type { PDF, PDFMeta, PDFRendererState } from '@lumibook/core/modules/pdf';
+import type {
+  PDF,
+  PDFMeta,
+  PDFRendererState,
+} from '@lumibook/core/modules/pdf';
 import { PDFService, PDFStatus } from '@lumibook/core/modules/pdf';
 import { cacheBitmap } from '@lumibook/core/modules/pdf/cache/bitmap-cache';
 import {

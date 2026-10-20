@@ -1,7 +1,4 @@
-import type {
-  Table as OrmTable,
-  TableSchemaBuilder,
-} from '@lumibook/infra';
+import type { Table as OrmTable, TableSchemaBuilder } from '@lumibook/infra';
 import { Entity, LiveData } from '@lumibook/infra';
 import { distinctUntilChanged, map } from 'rxjs';
 

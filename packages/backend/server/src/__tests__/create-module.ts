@@ -7,7 +7,7 @@ import {
 import { PrismaClient } from '@prisma/client';
 
 import { FunctionalityModules } from '../app.module';
-import { EventBus,LumiBookLogger } from '../base';
+import { EventBus, LumiBookLogger } from '../base';
 import { OVERRIDE_CONFIG_TOKEN } from '../base/config/factory';
 import { getDefaultConfig } from '../base/config/register';
 import { BackendRuntimeProvider } from '../core/backend-runtime';

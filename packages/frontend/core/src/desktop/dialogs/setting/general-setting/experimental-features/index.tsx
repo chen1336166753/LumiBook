@@ -4,7 +4,13 @@ import {
   EmailIcon,
   GithubIcon,
 } from '@blocksuite/icons/rc';
-import { Button, Checkbox, Loading, Switch, Tooltip } from '@lumibook/component';
+import {
+  Button,
+  Checkbox,
+  Loading,
+  Switch,
+  Tooltip,
+} from '@lumibook/component';
 import { SettingHeader } from '@lumibook/component/setting-components';
 import { useAsyncCallback } from '@lumibook/core/components/hooks/affine-async-hooks';
 import {

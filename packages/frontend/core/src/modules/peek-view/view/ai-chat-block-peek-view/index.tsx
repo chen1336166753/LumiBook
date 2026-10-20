@@ -10,7 +10,10 @@ import {
   AIModelService,
   AIToolsConfigService,
 } from '@lumibook/core/modules/ai-button';
-import { ServerService, SubscriptionService } from '@lumibook/core/modules/cloud';
+import {
+  ServerService,
+  SubscriptionService,
+} from '@lumibook/core/modules/cloud';
 import { WorkspaceDialogService } from '@lumibook/core/modules/dialogs';
 import { FeatureFlagService } from '@lumibook/core/modules/feature-flag';
 import { useFramework } from '@lumibook/infra';

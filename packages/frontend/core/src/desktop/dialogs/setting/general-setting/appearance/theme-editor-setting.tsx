@@ -5,11 +5,7 @@ import { DesktopApiService } from '@lumibook/core/modules/desktop-api';
 import { ThemeEditorService } from '@lumibook/core/modules/theme-editor';
 import { UrlService } from '@lumibook/core/modules/url';
 import { useI18n } from '@lumibook/i18n';
-import {
-  useLiveData,
-  useService,
-  useServiceOptional,
-} from '@lumibook/infra';
+import { useLiveData, useService, useServiceOptional } from '@lumibook/infra';
 import { cssVar } from '@toeverything/theme';
 import { useCallback } from 'react';
 

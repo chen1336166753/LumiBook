@@ -1,4 +1,10 @@
-import { Button, ConfirmModal, Input, Modal, notify } from '@lumibook/component';
+import {
+  Button,
+  ConfirmModal,
+  Input,
+  Modal,
+  notify,
+} from '@lumibook/component';
 import { SettingRow } from '@lumibook/component/setting-components';
 import { useEnableCloud } from '@lumibook/core/components/hooks/affine/use-enable-cloud';
 import { useAsyncCallback } from '@lumibook/core/components/hooks/affine-async-hooks';

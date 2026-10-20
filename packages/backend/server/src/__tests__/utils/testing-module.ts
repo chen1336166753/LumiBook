@@ -9,7 +9,7 @@ import {
 import { PrismaClient } from '@prisma/client';
 
 import { buildAppModule, FunctionalityModules } from '../../app.module';
-import { ConfigFactory,LumiBookLogger } from '../../base';
+import { ConfigFactory, LumiBookLogger } from '../../base';
 import { OVERRIDE_CONFIG_TOKEN } from '../../base/config/factory';
 import { getDefaultConfig } from '../../base/config/register';
 import { GqlModule } from '../../base/graphql';

@@ -45,7 +45,11 @@ export const AIOnboardingLocal = () => {
         key: 'learn-more',
         label: t['com.affine.ai-onboarding.local.action-learn-more'](),
         onClick: () => {
-          window.open('https://github.com/chen1336166753/LumiBook', '_blank', 'noreferrer');
+          window.open(
+            'https://github.com/chen1336166753/LumiBook',
+            '_blank',
+            'noreferrer'
+          );
         },
       },
     ];

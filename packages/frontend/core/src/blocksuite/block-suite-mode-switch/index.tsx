@@ -3,13 +3,12 @@ import { EdgelessIcon, PageIcon } from '@blocksuite/icons/rc';
 import { RadioGroup, type RadioItem } from '@lumibook/component';
 import { registerAffineCommand } from '@lumibook/core/commands';
 import { EditorService } from '@lumibook/core/modules/editor';
-import { ViewService, WorkbenchService } from '@lumibook/core/modules/workbench';
-import { useI18n } from '@lumibook/i18n';
 import {
-  useLiveData,
-  useService,
-  useServiceOptional,
-} from '@lumibook/infra';
+  ViewService,
+  WorkbenchService,
+} from '@lumibook/core/modules/workbench';
+import { useI18n } from '@lumibook/i18n';
+import { useLiveData, useService, useServiceOptional } from '@lumibook/infra';
 import { track } from '@lumibook/track';
 import { useCallback, useEffect, useMemo } from 'react';
 

@@ -29,7 +29,8 @@ const AFFINE_MOBILE_STORE_URL = BUILD_CONFIG.isIOS
   : BUILD_CONFIG.isAndroid
     ? 'https://play.google.com/store/apps/details?id=app.affine.pro'
     : undefined;
-const AFFINE_DOWNLOAD_URL = 'https://github.com/chen1336166753/LumiBook/releases';
+const AFFINE_DOWNLOAD_URL =
+  'https://github.com/chen1336166753/LumiBook/releases';
 
 const SupportGroup = () => {
   const t = useI18n();

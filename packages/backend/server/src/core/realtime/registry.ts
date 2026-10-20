@@ -1,4 +1,7 @@
-import type { RealtimeRequestName, RealtimeTopicName } from '@lumibook/realtime';
+import type {
+  RealtimeRequestName,
+  RealtimeTopicName,
+} from '@lumibook/realtime';
 import { Injectable } from '@nestjs/common';
 
 import type { RealtimeRequestHandler, RealtimeTopicHandler } from './types';

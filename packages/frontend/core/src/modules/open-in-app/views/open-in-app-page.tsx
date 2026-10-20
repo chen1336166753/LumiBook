@@ -19,7 +19,8 @@ interface OpenAppProps {
 }
 const channel = BUILD_CONFIG.appBuildType;
 const url =
-  'https://github.com/chen1336166753/LumiBook/releases' + (channel !== 'stable' ? '/beta-canary' : '');
+  'https://github.com/chen1336166753/LumiBook/releases' +
+  (channel !== 'stable' ? '/beta-canary' : '');
 
 export const OpenInAppPage = ({
   urlToOpen,

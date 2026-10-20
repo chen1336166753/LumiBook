@@ -1,4 +1,7 @@
-import { DefaultServerService, type Server } from '@lumibook/core/modules/cloud';
+import {
+  DefaultServerService,
+  type Server,
+} from '@lumibook/core/modules/cloud';
 import type { AuthSessionStatus } from '@lumibook/core/modules/cloud/entities/session';
 import { FrameworkScope, useService } from '@lumibook/infra';
 import { useState } from 'react';

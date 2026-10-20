@@ -127,8 +127,8 @@ export const ShareImportController = ({
           </PageHeader>
           <main className={styles.main}>
             <div className={styles.warning}>
-              Update 识光 to import this shared item. It will stay in your
-              inbox until then.
+              Update 识光 to import this shared item. It will stay in your inbox
+              until then.
             </div>
           </main>
         </div>
@@ -257,8 +257,8 @@ export const ShareImportController = ({
               {selectedWorkspaceName}
             </h2>
             <p className={styles.confirmationText}>
-              识光 could not confirm that this workspace, your permissions,
-              and its destinations are current online. Saving will use the most
+              识光 could not confirm that this workspace, your permissions, and
+              its destinations are current online. Saving will use the most
               recent data available on this device.
             </p>
           </main>

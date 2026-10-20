@@ -3,7 +3,10 @@ import {
   JournalPlaceholder,
 } from '@lumibook/core/desktop/pages/workspace/journals';
 import { JournalService } from '@lumibook/core/modules/journal';
-import { ViewService, WorkbenchService } from '@lumibook/core/modules/workbench';
+import {
+  ViewService,
+  WorkbenchService,
+} from '@lumibook/core/modules/workbench';
 import { i18nTime } from '@lumibook/i18n';
 import { useLiveData, useService } from '@lumibook/infra';
 import { cssVarV2 } from '@toeverything/theme/v2';

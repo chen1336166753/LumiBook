@@ -60,10 +60,7 @@ test.describe('AIChatWith/Text', () => {
   });
 
   test('should support insert above', async ({ loggedInPage: page, utils }) => {
-    const { generateHeadings } = await utils.editor.askAIWithText(
-      page,
-      '识光'
-    );
+    const { generateHeadings } = await utils.editor.askAIWithText(page, '识光');
     const { answer } = await generateHeadings();
     await answer.locator('h1').isVisible();
     await expect(answer).toHaveText(/识光/, { timeout: 10000 });

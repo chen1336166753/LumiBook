@@ -9,11 +9,7 @@ import { UrlService } from '@lumibook/core/modules/url';
 import { WorkbenchService } from '@lumibook/core/modules/workbench';
 import { WorkspaceService } from '@lumibook/core/modules/workspace';
 import { useI18n } from '@lumibook/i18n';
-import {
-  useService,
-  useServiceOptional,
-  useServices,
-} from '@lumibook/infra';
+import { useService, useServiceOptional, useServices } from '@lumibook/infra';
 import { useStore } from 'jotai';
 import { useTheme } from 'next-themes';
 import { useEffect } from 'react';

@@ -1,7 +1,10 @@
 import { Logo1Icon } from '@blocksuite/icons/rc';
 import { ScrollableContainer } from '@lumibook/component';
 import { MenuItem } from '@lumibook/component/ui/menu';
-import { AuthService, DefaultServerService } from '@lumibook/core/modules/cloud';
+import {
+  AuthService,
+  DefaultServerService,
+} from '@lumibook/core/modules/cloud';
 import { GlobalDialogService } from '@lumibook/core/modules/dialogs';
 import { type WorkspaceMetadata } from '@lumibook/core/modules/workspace';
 import { ServerFeature } from '@lumibook/graphql';

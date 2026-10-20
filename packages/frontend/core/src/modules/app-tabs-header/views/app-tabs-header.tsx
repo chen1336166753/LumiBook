@@ -12,11 +12,7 @@ import { useAsyncCallback } from '@lumibook/core/components/hooks/affine-async-h
 import { useCatchEventCallback } from '@lumibook/core/components/hooks/use-catch-event-hook';
 import type { AffineDNDData } from '@lumibook/core/types/dnd';
 import { useI18n } from '@lumibook/i18n';
-import {
-  useLiveData,
-  useService,
-  useServiceOptional,
-} from '@lumibook/infra';
+import { useLiveData, useService, useServiceOptional } from '@lumibook/infra';
 import { track } from '@lumibook/track';
 import { assignInlineVars } from '@vanilla-extract/dynamic';
 import clsx from 'clsx';

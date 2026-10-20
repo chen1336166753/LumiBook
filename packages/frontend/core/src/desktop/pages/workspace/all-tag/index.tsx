@@ -5,7 +5,10 @@ import {
 } from '@lumibook/core/components/page-list/tags';
 import { CreateOrEditTag } from '@lumibook/core/components/page-list/tags/create-tag';
 import type { TagMeta } from '@lumibook/core/components/page-list/types';
-import { TagService, useDeleteTagConfirmModal } from '@lumibook/core/modules/tag';
+import {
+  TagService,
+  useDeleteTagConfirmModal,
+} from '@lumibook/core/modules/tag';
 import { useI18n } from '@lumibook/i18n';
 import { useLiveData, useService } from '@lumibook/infra';
 import { useCallback, useState } from 'react';

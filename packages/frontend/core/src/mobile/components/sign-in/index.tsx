@@ -1,4 +1,7 @@
-import { SignInPanel, type SignInStep } from '@lumibook/core/components/sign-in';
+import {
+  SignInPanel,
+  type SignInStep,
+} from '@lumibook/core/components/sign-in';
 import type { AuthSessionStatus } from '@lumibook/core/modules/cloud/entities/session';
 import { useCallback } from 'react';
 

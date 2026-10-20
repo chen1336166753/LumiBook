@@ -19,11 +19,7 @@ import { GuardService } from '@lumibook/core/modules/permissions';
 import { WorkspaceService } from '@lumibook/core/modules/workspace';
 import { UserFriendlyError } from '@lumibook/error';
 import { useI18n } from '@lumibook/i18n';
-import {
-  useLiveData,
-  useService,
-  useServiceOptional,
-} from '@lumibook/infra';
+import { useLiveData, useService, useServiceOptional } from '@lumibook/infra';
 import { track } from '@lumibook/track';
 import { useSetAtom } from 'jotai';
 import { useCallback, useEffect } from 'react';

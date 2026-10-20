@@ -41,7 +41,9 @@ const useUpdateStatusLabels = (checkUpdateStatus: CheckUpdateStatus) => {
     if (updateReady) {
       return t['com.affine.aboutLumiBook.checkUpdate.subtitle.restart']();
     } else if (updateAvailable && downloadProgress === null) {
-      return t['com.affine.aboutLumiBook.checkUpdate.subtitle.update-available']({
+      return t[
+        'com.affine.aboutLumiBook.checkUpdate.subtitle.update-available'
+      ]({
         version: updateAvailable.version,
       });
     } else if (checkingForUpdates) {

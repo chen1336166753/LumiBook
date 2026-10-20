@@ -63,7 +63,11 @@ export const AIPlan = () => {
                 className={styles.purchaseButton}
                 displayedFrequency="monthly"
               />
-              <a href="https://github.com/chen1336166753/LumiBook" target="_blank" rel="noreferrer">
+              <a
+                href="https://github.com/chen1336166753/LumiBook"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <Button className={styles.learnAIButton}>
                   {t['com.affine.payment.ai.pricing-plan.learn']()}
                 </Button>

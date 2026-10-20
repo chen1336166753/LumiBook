@@ -4,7 +4,12 @@ import {
   PlusIcon,
   SplitViewIcon,
 } from '@blocksuite/icons/rc';
-import { IconButton, MenuItem, MenuSeparator, toast } from '@lumibook/component';
+import {
+  IconButton,
+  MenuItem,
+  MenuSeparator,
+  toast,
+} from '@lumibook/component';
 import { usePageHelper } from '@lumibook/core/blocksuite/block-suite-page-list/utils';
 import { IsFavoriteIcon } from '@lumibook/core/components/pure/icons';
 import { DocsService } from '@lumibook/core/modules/doc';

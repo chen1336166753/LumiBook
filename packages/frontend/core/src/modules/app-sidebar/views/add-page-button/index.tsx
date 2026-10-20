@@ -6,7 +6,13 @@ import {
   PlusIcon,
   TemplateIcon,
 } from '@blocksuite/icons/rc';
-import { Button, IconButton, Menu, MenuItem, MenuSub } from '@lumibook/component';
+import {
+  Button,
+  IconButton,
+  Menu,
+  MenuItem,
+  MenuSub,
+} from '@lumibook/component';
 import { usePageHelper } from '@lumibook/core/blocksuite/block-suite-page-list/utils';
 import { useAsyncCallback } from '@lumibook/core/components/hooks/affine-async-hooks';
 import { DocsService } from '@lumibook/core/modules/doc';

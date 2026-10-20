@@ -1,4 +1,7 @@
-import type { SubscriptionQuery, SubscriptionRecurring } from '@lumibook/graphql';
+import type {
+  SubscriptionQuery,
+  SubscriptionRecurring,
+} from '@lumibook/graphql';
 import { SubscriptionPlan } from '@lumibook/graphql';
 import {
   catchErrorInto,

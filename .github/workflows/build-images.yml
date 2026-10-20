@@ -266,4 +266,3 @@ jobs:
           tags: |
             ghcr.io/chen1336166753/lumibook:${{inputs.build-type}}-${{ inputs.git-short-hash }}
             ghcr.io/chen1336166753/lumibook:${{inputs.build-type }}
-

@@ -13,11 +13,7 @@ import { JournalService } from '@lumibook/core/modules/journal';
 import { WorkbenchService } from '@lumibook/core/modules/workbench';
 import { ViewService } from '@lumibook/core/modules/workbench/services/view';
 import { i18nTime, useI18n } from '@lumibook/i18n';
-import {
-  useLiveData,
-  useService,
-  useServiceOptional,
-} from '@lumibook/infra';
+import { useLiveData, useService, useServiceOptional } from '@lumibook/infra';
 import dayjs from 'dayjs';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 

@@ -24,7 +24,10 @@ import type {
   DocStorage,
   ListedBlobRecord,
 } from '@lumibook/nbstore';
-import { CloudBlobStorage, StaticCloudDocStorage } from '@lumibook/nbstore/cloud';
+import {
+  CloudBlobStorage,
+  StaticCloudDocStorage,
+} from '@lumibook/nbstore/cloud';
 import {
   IndexedDBBlobStorage,
   IndexedDBBlobSyncStorage,

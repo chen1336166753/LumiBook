@@ -3,7 +3,10 @@ import {
   notify,
   useConfirmModal,
 } from '@lumibook/component';
-import { AuthService, DefaultServerService } from '@lumibook/core/modules/cloud';
+import {
+  AuthService,
+  DefaultServerService,
+} from '@lumibook/core/modules/cloud';
 import { UserFriendlyError } from '@lumibook/error';
 import { ServerFeature } from '@lumibook/graphql';
 import { useI18n } from '@lumibook/i18n';

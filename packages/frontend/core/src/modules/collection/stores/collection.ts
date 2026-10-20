@@ -1,10 +1,5 @@
 import type { Collection as LegacyCollectionInfo } from '@lumibook/env/filter';
-import {
-  Store,
-  yjsGetPath,
-  yjsObserve,
-  yjsObserveDeep,
-} from '@lumibook/infra';
+import { Store, yjsGetPath, yjsObserve, yjsObserveDeep } from '@lumibook/infra';
 import dayjs from 'dayjs';
 import { nanoid } from 'nanoid';
 import { distinctUntilChanged, map, type Observable, switchMap } from 'rxjs';

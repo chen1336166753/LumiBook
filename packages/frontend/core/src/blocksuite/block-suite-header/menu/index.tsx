@@ -38,11 +38,7 @@ import { WorkbenchService } from '@lumibook/core/modules/workbench';
 import { ViewService } from '@lumibook/core/modules/workbench/services/view';
 import { WorkspaceService } from '@lumibook/core/modules/workspace';
 import { useI18n } from '@lumibook/i18n';
-import {
-  useLiveData,
-  useService,
-  useServiceOptional,
-} from '@lumibook/infra';
+import { useLiveData, useService, useServiceOptional } from '@lumibook/infra';
 import { track } from '@lumibook/track';
 import { useCallback, useState } from 'react';
 

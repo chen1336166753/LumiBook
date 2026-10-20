@@ -10,7 +10,10 @@ import {
 } from '@blocksuite/icons/rc';
 import type { TextSelection } from '@blocksuite/std';
 import { IconButton, notify, toast } from '@lumibook/component';
-import { LitDocEditor, type PageEditor } from '@lumibook/core/blocksuite/editors';
+import {
+  LitDocEditor,
+  type PageEditor,
+} from '@lumibook/core/blocksuite/editors';
 import { SnapshotHelper } from '@lumibook/core/modules/comment/services/snapshot-helper';
 import type { CommentAttachment } from '@lumibook/core/modules/comment/types';
 import { PeekViewService } from '@lumibook/core/modules/peek-view';

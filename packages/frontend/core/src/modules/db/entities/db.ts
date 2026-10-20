@@ -1,8 +1,4 @@
-import {
-  type DBSchemaBuilder,
-  Entity,
-  type TableMap,
-} from '@lumibook/infra';
+import { type DBSchemaBuilder, Entity, type TableMap } from '@lumibook/infra';
 
 import { WorkspaceDBTable } from './table';
 

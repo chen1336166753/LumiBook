@@ -1,12 +1,6 @@
 import { SearchIcon } from '@blocksuite/icons/rc';
 import { ServerFeature } from '@lumibook/graphql';
-import {
-  effect,
-  Entity,
-  LiveData,
-  onComplete,
-  onStart,
-} from '@lumibook/infra';
+import { effect, Entity, LiveData, onComplete, onStart } from '@lumibook/infra';
 import { truncate } from 'lodash-es';
 import { catchError, EMPTY, map, of, switchMap, tap, throttleTime } from 'rxjs';
 

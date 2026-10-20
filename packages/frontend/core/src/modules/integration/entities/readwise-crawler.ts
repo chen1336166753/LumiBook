@@ -1,10 +1,4 @@
-import {
-  effect,
-  Entity,
-  LiveData,
-  onComplete,
-  onStart,
-} from '@lumibook/infra';
+import { effect, Entity, LiveData, onComplete, onStart } from '@lumibook/infra';
 import { catchError, EMPTY, Observable, switchMap, tap } from 'rxjs';
 
 import type { ReadwiseStore } from '../store/readwise';
