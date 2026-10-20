@@ -1,4 +1,4 @@
-import { app, Menu } from 'electron';
+import { app, Menu, shell } from 'electron';
 
 import { isMacOS } from '../../shared/utils';
 import { logger, revealLogFile } from '../logger';
@@ -252,7 +252,6 @@ export function createApplicationMenu() {
         {
           label: '关于识光',
           click: async () => {
-            const { shell } = require('electron');
             await shell.openExternal(
               'https://github.com/chen1336166753/LumiBook'
             );

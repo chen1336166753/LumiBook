@@ -1,4 +1,7 @@
-import { DefaultServerService } from '@lumibook/core/modules/cloud';
+import {
+  AuthService,
+  DefaultServerService,
+} from '@lumibook/core/modules/cloud';
 import { DesktopApiService } from '@lumibook/core/modules/desktop-api';
 import { WorkspacesService } from '@lumibook/core/modules/workspace';
 import {
@@ -26,7 +29,6 @@ import {
   useNavigateHelper,
 } from '../../../components/hooks/use-navigate-helper';
 import { WorkspaceNavigator } from '../../../components/workspace-selector';
-import { AuthService } from '../../../modules/cloud';
 import { AppContainer } from '../../components/app-container';
 
 /**

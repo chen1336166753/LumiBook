@@ -142,11 +142,6 @@ const SettingModalInner = ({
   );
   const [openIssueFeedbackModal, setOpenIssueFeedbackModal] = useState(false);
 
-  const handleOpenIssueFeedbackModal = useCallback(() => {
-    setOpenIssueFeedbackModal(true);
-  }, [setOpenIssueFeedbackModal]);
-
-
   const addSubPageIsland = useCallback(() => {
     const island = createIsland();
     setSubPageIslands(prev => [...prev, island]);

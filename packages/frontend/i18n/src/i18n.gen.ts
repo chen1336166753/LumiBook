@@ -1,5 +1,5 @@
 // @ts-nocheck
-/* oxlint-disable */
+/* eslint-disable */
 import { createElement, useMemo, type ComponentType, type JSX } from "react";
 import { useTranslation, Trans, type TransProps } from "react-i18next";
 type TypedTransProps<Value, Components, Context extends string | undefined = undefined> = Omit<TransProps<string, never, never, Context>, "values" | "ns" | "i18nKey"> & ({} extends Value ? {} : {
@@ -36,831 +36,831 @@ function createProxy(initValue: (key: string) => any) {
 }
 export function useLumiBookI18N(): {
     /**
-      * `Back to my Content`
+      * `返回我的内容`
       */
     ["404.back"](): string;
     /**
-      * `Sorry, you do not have access or this content does not exist...`
+      * `抱歉，您没有访问权限或该内容不存在...`
       */
     ["404.hint"](): string;
     /**
-      * `Sign in to another account`
+      * `登录另一个帐户`
       */
     ["404.signOut"](): string;
     /**
       * `识光 Cloud`
       */
-    ["识光 Cloud"](): string;
+    ["\u8BC6\u5149 Cloud"](): string;
     /**
-      * `All docs`
+      * `全部文档`
       */
     ["All pages"](): string;
     /**
-      * `App version`
+      * `应用版本`
       */
     ["App Version"](): string;
     /**
-      * `Available offline`
+      * `可供离线使用`
       */
     ["Available Offline"](): string;
     /**
-      * `Bold`
+      * `粗体`
       */
     Bold(): string;
     /**
-      * `Cancel`
+      * `取消`
       */
     Cancel(): string;
     /**
-      * `Click to replace photo`
+      * `点击以更换照片`
       */
     ["Click to replace photo"](): string;
     /**
-      * `Collections`
+      * `精选`
       */
     Collections(): string;
     /**
-      * `Complete`
+      * `完成`
       */
     Complete(): string;
     /**
-      * `Confirm`
+      * `确认`
       */
     Confirm(): string;
     /**
-      * `Continue`
+      * `继续`
       */
     Continue(): string;
     /**
-      * `Convert to `
+      * `转换为`
       */
     ["Convert to "](): string;
     /**
-      * `Copied link to clipboard`
+      * `复制链接到剪贴板`
       */
     ["Copied link to clipboard"](): string;
     /**
-      * `Copied to clipboard`
+      * `复制到剪贴板`
       */
     ["Copied to clipboard"](): string;
     /**
-      * `Copy`
+      * `复制`
       */
     Copy(): string;
     /**
-      * `Create`
+      * `创建`
       */
     Create(): string;
     /**
-      * `Created`
+      * `创建时间`
       */
     Created(): string;
     /**
-      * `Customise`
+      * `自定义`
       */
     Customize(): string;
     /**
-      * `Colors`
+      * `颜色`
       */
     Colors(): string;
     /**
-      * `Database file already loaded`
+      * `数据库文件已加载`
       */
     DB_FILE_ALREADY_LOADED(): string;
     /**
-      * `Invalid database file`
+      * `无效的数据库文件`
       */
     DB_FILE_INVALID(): string;
     /**
-      * `Database file migration failed`
+      * `数据库文件迁移失败`
       */
     DB_FILE_MIGRATION_FAILED(): string;
     /**
-      * `Database file path invalid`
+      * `数据库文件路径无效`
       */
     DB_FILE_PATH_INVALID(): string;
     /**
-      * `Date`
+      * `日期`
       */
     Date(): string;
     /**
-      * `Delete`
+      * `删除`
       */
     Delete(): string;
     /**
-      * `Deleted`
+      * `删除`
       */
     Deleted(): string;
     /**
-      * `Disable`
+      * `禁用`
       */
     Disable(): string;
     /**
-      * `Disable public sharing`
+      * `禁用公开分享`
       */
     ["Disable Public Sharing"](): string;
     /**
-      * `Disable snapshot`
+      * `禁用快照`
       */
     ["Disable Snapshot"](): string;
     /**
-      * `Divider`
+      * `分割线`
       */
     Divider(): string;
     /**
-      * `Edgeless`
+      * `无界`
       */
     Edgeless(): string;
     /**
-      * `Edit`
+      * `编辑`
       */
     Edit(): string;
     /**
-      * `Editor version`
+      * `编辑器版本`
       */
     ["Editor Version"](): string;
     /**
-      * `Enable`
+      * `启用`
       */
     Enable(): string;
     /**
-      * `Enable 识光 Sync`
+      * `启用 识光 同步`
       */
-    ["Enable 识光 Cloud"](): string;
+    ["Enable \u8BC6\u5149 Cloud"](): string;
     /**
-      * `Your workspace will be synced and backed up with 识光 Sync.`
+      * `启用后，此工作区会通过 识光 同步进行备份和同步。`
       */
-    ["Enable 识光 Cloud Description"](): string;
+    ["Enable \u8BC6\u5149 Cloud Description"](): string;
     /**
-      * `Some features need 识光 Sync. Web workspaces are saved in this browser and may be removed automatically when disk space is low. Enable 识光 Sync to keep this workspace safer and available across devices.`
+      * `以下功能需要 识光 同步。网页版工作区保存在当前浏览器中，磁盘空间不足时可能会被浏览器自动移除。启用 识光 同步后，可让这个工作区更稳妥，并在多设备使用。`
       */
     ["Enable cloud hint"](): string;
     /**
-      * `Full Backup`
+      * `全量备份`
       */
     ["Full Backup"](): string;
     /**
-      * `Export a complete workspace backup`
+      * `导出完整的工作区备份`
       */
     ["Full Backup Description"](): string;
     /**
-      * `Sync all cloud data and export a complete workspace backup`
+      * `同步所有云数据并导出完整的工作区备份`
       */
     ["Full Backup Hint"](): string;
     /**
-      * `Quick Export`
+      * `快速导出`
       */
     ["Quick Export"](): string;
     /**
-      * `Skip cloud synchronization and quickly export current data(some attachments or docs may be missing)`
+      * `跳过云同步并快速导出当前数据（某些附件或文档可能会丢失）`
       */
     ["Quick Export Description"](): string;
     /**
-      * `Export failed`
+      * `导出失败`
       */
     ["Export failed"](): string;
     /**
-      * `Export success`
+      * `导出成功`
       */
     ["Export success"](): string;
     /**
-      * `Export to HTML`
+      * `导出为 HTML`
       */
     ["Export to HTML"](): string;
     /**
-      * `Export to Markdown`
+      * `导出为 Markdown`
       */
     ["Export to Markdown"](): string;
     /**
-      * `Export to PNG`
+      * `导出为 PNG`
       */
     ["Export to PNG"](): string;
     /**
-      * `File already exists`
+      * `文件已存在`
       */
     FILE_ALREADY_EXISTS(): string;
     /**
-      * `Favourite`
+      * `收藏`
       */
     Favorite(): string;
     /**
-      * `Favourited`
+      * `已收藏`
       */
     Favorited(): string;
     /**
-      * `Favourites`
+      * `收藏夹`
       */
     Favorites(): string;
     /**
-      * `Feedback`
+      * `反馈`
       */
     Feedback(): string;
     /**
-      * `Found 0 results`
+      * `找到 0 个结果`
       */
     ["Find 0 result"](): string;
     /**
-      * `Go back`
+      * `返回`
       */
     ["Go Back"](): string;
     /**
-      * `Go forward`
+      * `前进`
       */
     ["Go Forward"](): string;
     /**
-      * `Got it`
+      * `知道了`
       */
     ["Got it"](): string;
     /**
-      * `Heading {{number}}`
+      * `标题 {{number}}`
       */
     Heading(options: {
         readonly number: string;
     }): string;
     /**
-      * `Image`
+      * `图像`
       */
     Image(): string;
     /**
-      * `Import`
+      * `导入`
       */
     Import(): string;
     /**
-      * `Info`
+      * `信息`
       */
     Info(): string;
     /**
-      * `Invitation sent`
+      * `邀请已发送`
       */
     ["Invitation sent"](): string;
     /**
-      * `Invited members have been notified with email to join this Workspace.`
+      * `已通过电子邮件通知受邀成员加入此工作区。`
       */
     ["Invitation sent hint"](): string;
     /**
-      * `Invite`
+      * `邀请`
       */
     Invite(): string;
     /**
-      * `Invite members`
+      * `邀请成员`
       */
     ["Invite Members"](): string;
     /**
-      * `Invited members will collaborate with you in current workspace`
+      * `受邀成员将在当前工作空间中与您协作`
       */
     ["Invite Members Message"](): string;
     /**
-      * `Insufficient team seat`
+      * `团队席位不足`
       */
     ["insufficient-team-seat"](): string;
     /**
-      * `Joined workspace`
+      * `加入的工作区`
       */
     ["Joined Workspace"](): string;
     /**
-      * `Leave`
+      * `退出`
       */
     Leave(): string;
     /**
-      * `Hyperlink (with selected text)`
+      * `超链接（选定文本）`
       */
     Link(): string;
     /**
-      * `Loading...`
+      * `加载中...`
       */
     Loading(): string;
     /**
-      * `Local`
+      * `本地`
       */
     Local(): string;
     /**
-      * `Member`
+      * `成员`
       */
     Member(): string;
     /**
-      * `Members`
+      * `成员`
       */
     Members(): string;
     /**
-      * `Manage members here, invite new member by email.`
+      * `在这里管理成员，通过电子邮件邀请新成员。`
       */
     ["Members hint"](): string;
     /**
-      * `New doc`
+      * `新建文档`
       */
     ["New Page"](): string;
     /**
-      * `Owner`
+      * `所有者`
       */
     Owner(): string;
     /**
-      * `Page`
+      * `页面`
       */
     Page(): string;
     /**
-      * `Pen`
+      * `笔`
       */
     Pen(): string;
     /**
-      * `Pending`
+      * `待定`
       */
     Pending(): string;
     /**
-      * `Collaborator`
+      * `协作者`
       */
     Collaborator(): string;
     /**
-      * `Under Review`
+      * `正在审核`
       */
     ["Under-Review"](): string;
     /**
-      * `Need More Seats`
+      * `席位不足`
       */
     ["Need-More-Seats"](): string;
     /**
-      * `Allocating Seat`
+      * `分配名额`
       */
     ["Allocating Seat"](): string;
     /**
-      * `Admin`
+      * `管理员`
       */
     Admin(): string;
     /**
-      * `Publish`
+      * `发布`
       */
     Publish(): string;
     /**
-      * `Published to web`
+      * `公开到互联网`
       */
     ["Published to Web"](): string;
     /**
-      * `Quick search`
+      * `快速搜索`
       */
     ["Quick Search"](): string;
     /**
-      * `Search`
+      * `快速搜索`
       */
     ["Quick search"](): string;
     /**
-      * `Recent`
+      * `最近`
       */
     Recent(): string;
     /**
-      * `Remove from workspace`
+      * `从工作区移除`
       */
     ["Remove from workspace"](): string;
     /**
-      * `Remove photo`
+      * `移除照片`
       */
     ["Remove photo"](): string;
     /**
-      * `Remove special filter`
+      * `移除特殊筛选`
       */
     ["Remove special filter"](): string;
     /**
-      * `Removed successfully`
+      * `成功移除`
       */
     ["Removed successfully"](): string;
     /**
-      * `Rename`
+      * `重命名`
       */
     Rename(): string;
     /**
-      * `Retry`
+      * `重试`
       */
     Retry(): string;
     /**
-      * `Save`
+      * `保存`
       */
     Save(): string;
     /**
-      * `Select`
+      * `选择`
       */
     Select(): string;
     /**
-      * `Sign in to 识光`
+      * `登录 识光`
       */
     ["Sign in"](): string;
     /**
-      * `Sign in and enable`
+      * `登录并启用`
       */
     ["Sign in and Enable"](): string;
     /**
-      * `Sign out of 识光`
+      * `退出 识光`
       */
     ["Sign out"](): string;
     /**
-      * `Snapshot`
+      * `快照`
       */
     Snapshot(): string;
     /**
-      * `Storage`
+      * `储存`
       */
     Storage(): string;
     /**
-      * `Storage and export`
+      * `储存与导出`
       */
     ["Storage and Export"](): string;
     /**
-      * `Successfully deleted`
+      * `成功删除`
       */
     ["Successfully deleted"](): string;
     /**
-      * `Successfully joined!`
+      * `加入成功！`
       */
     ["Successfully joined!"](): string;
     /**
-      * `Switch`
+      * `切换`
       */
     Switch(): string;
     /**
-      * `Switch view`
+      * `切换视图`
       */
     switchView(): string;
     /**
-      * `Sync`
+      * `同步`
       */
     Sync(): string;
     /**
-      * `Tags`
+      * `标签`
       */
     Tags(): string;
     /**
-      * `Text`
+      * `文本`
       */
     Text(): string;
     /**
-      * `Theme`
+      * `主题`
       */
     Theme(): string;
     /**
-      * `Title`
+      * `标题`
       */
     Title(): string;
     /**
-      * `Trash`
+      * `垃圾箱`
       */
     Trash(): string;
     /**
-      * `Unknown error`
+      * `未知错误`
       */
     UNKNOWN_ERROR(): string;
     /**
-      * `Undo`
+      * `撤销`
       */
     Undo(): string;
     /**
-      * `Unpin`
+      * `取消固定`
       */
     Unpin(): string;
     /**
-      * `Untitled`
+      * `未命名`
       */
     Untitled(): string;
     /**
-      * `Update workspace name success`
+      * `成功更新工作区名称`
       */
     ["Update workspace name success"](): string;
     /**
-      * `Updated`
+      * `更新时间`
       */
     Updated(): string;
     /**
-      * `Upload`
+      * `上传`
       */
     Upload(): string;
     /**
-      * `Users`
+      * `用户`
       */
     Users(): string;
     /**
-      * `Version`
+      * `版本`
       */
     Version(): string;
     /**
-      * `Visit workspace`
+      * `访问工作区`
       */
     ["Visit Workspace"](): string;
     /**
-      * `Workspace name`
+      * `工作区名称`
       */
     ["Workspace Name"](): string;
     /**
-      * `Workspace Owner`
+      * `工作区所有者`
       */
     ["Workspace Owner"](): string;
     /**
-      * `Workspace profile`
+      * `工作区配置文件`
       */
     ["Workspace Profile"](): string;
     /**
-      * `Workspace settings`
+      * `工作区设置`
       */
     ["Workspace Settings"](): string;
     /**
-      * `{{name}}'s settings`
+      * `{{name}} 的设置`
       */
     ["Workspace Settings with name"](options: {
         readonly name: string;
     }): string;
     /**
-      * `{{name}} is saved locally`
+      * `{{name}} 已保存在本地`
       */
     ["Workspace saved locally"](options: {
         readonly name: string;
     }): string;
     /**
-      * `Zoom in`
+      * `放大`
       */
     ["Zoom in"](): string;
     /**
-      * `Zoom out`
+      * `缩小`
       */
     ["Zoom out"](): string;
     /**
-      * `Unknown User`
+      * `未知用户`
       */
     ["Unknown User"](): string;
     /**
-      * `Deleted User`
+      * `删除用户`
       */
     ["Deleted User"](): string;
     /**
-      * `all`
+      * `全部`
       */
     all(): string;
     /**
-      * `current`
+      * `当前`
       */
     current(): string;
     /**
-      * `created at {{time}}`
+      * `创建于 {{time}}`
       */
     ["created at"](options: {
         readonly time: string;
     }): string;
     /**
-      * `last updated at {{time}}`
+      * `最后更新于 {{time}}`
       */
     ["updated at"](options: {
         readonly time: string;
     }): string;
     /**
-      * `Automatically check for new updates periodically.`
+      * `定期自动检查更新。`
       */
     ["com.affine.aboutLumiBook.autoCheckUpdate.description"](): string;
     /**
-      * `Check for updates automatically`
+      * `自动检查更新`
       */
     ["com.affine.aboutLumiBook.autoCheckUpdate.title"](): string;
     /**
-      * `Automatically download updates (to this device).`
+      * `自动下载更新（到此设备）。`
       */
     ["com.affine.aboutLumiBook.autoDownloadUpdate.description"](): string;
     /**
-      * `Download updates automatically`
+      * `自动下载更新`
       */
     ["com.affine.aboutLumiBook.autoDownloadUpdate.title"](): string;
     /**
-      * `View the 识光 Changelog.`
+      * `查看 识光 更新日志。`
       */
     ["com.affine.aboutLumiBook.changelog.description"](): string;
     /**
-      * `Discover what's new`
+      * `发现新动态`
       */
     ["com.affine.aboutLumiBook.changelog.title"](): string;
     /**
-      * `Check for update`
+      * `检查更新`
       */
     ["com.affine.aboutLumiBook.checkUpdate.button.check"](): string;
     /**
-      * `Download update`
+      * `下载更新`
       */
     ["com.affine.aboutLumiBook.checkUpdate.button.download"](): string;
     /**
-      * `Restart to update`
+      * `重新启动以安装更新`
       */
     ["com.affine.aboutLumiBook.checkUpdate.button.restart"](): string;
     /**
-      * `Retry`
+      * `重试`
       */
     ["com.affine.aboutLumiBook.checkUpdate.button.retry"](): string;
     /**
-      * `New version is ready`
+      * `新版本已准备就绪`
       */
     ["com.affine.aboutLumiBook.checkUpdate.description"](): string;
     /**
-      * `Manually check for updates.`
+      * `手动检查更新`
       */
     ["com.affine.aboutLumiBook.checkUpdate.subtitle.check"](): string;
     /**
-      * `Checking for updates...`
+      * `检查更新中...`
       */
     ["com.affine.aboutLumiBook.checkUpdate.subtitle.checking"](): string;
     /**
-      * `Downloading the latest version...`
+      * `正在下载最新版本...`
       */
     ["com.affine.aboutLumiBook.checkUpdate.subtitle.downloading"](): string;
     /**
-      * `Unable to connect to the update server.`
+      * `无法连接服务器。`
       */
     ["com.affine.aboutLumiBook.checkUpdate.subtitle.error"](): string;
     /**
-      * `You've got the latest version of 识光.`
+      * `您已获得最新版本的 识光。`
       */
     ["com.affine.aboutLumiBook.checkUpdate.subtitle.latest"](): string;
     /**
-      * `Restart to apply update.`
+      * `重新启动以应用更新。`
       */
     ["com.affine.aboutLumiBook.checkUpdate.subtitle.restart"](): string;
     /**
-      * `New update available ({{version}})`
+      * `有可用的更新（{{version}}）`
       */
     ["com.affine.aboutLumiBook.checkUpdate.subtitle.update-available"](options: {
         readonly version: string;
     }): string;
     /**
-      * `Check for updates`
+      * `检查更新`
       */
     ["com.affine.aboutLumiBook.checkUpdate.title"](): string;
     /**
-      * `Communities`
+      * `社区`
       */
     ["com.affine.aboutLumiBook.community.title"](): string;
     /**
-      * `识光 community`
+      * `识光 社区`
       */
     ["com.affine.aboutLumiBook.contact.community"](): string;
     /**
-      * `Contact us`
+      * `联系我们`
       */
     ["com.affine.aboutLumiBook.contact.title"](): string;
     /**
-      * `Official website`
+      * `官网`
       */
     ["com.affine.aboutLumiBook.contact.website"](): string;
     /**
-      * `Privacy`
+      * `隐私`
       */
     ["com.affine.aboutLumiBook.legal.privacy"](): string;
     /**
-      * `Legal Info`
+      * `法律信息`
       */
     ["com.affine.aboutLumiBook.legal.title"](): string;
     /**
-      * `Terms of use`
+      * `使用条款`
       */
     ["com.affine.aboutLumiBook.legal.tos"](): string;
     /**
-      * `Information about 识光`
+      * `关于 识光 的资讯`
       */
     ["com.affine.aboutLumiBook.subtitle"](): string;
     /**
-      * `About 识光`
+      * `关于 识光`
       */
     ["com.affine.aboutLumiBook.title"](): string;
     /**
-      * `App version`
+      * `应用版本`
       */
     ["com.affine.aboutLumiBook.version.app"](): string;
     /**
-      * `Editor version`
+      * `编辑器版本`
       */
     ["com.affine.aboutLumiBook.version.editor.title"](): string;
     /**
-      * `Version`
+      * `版本`
       */
     ["com.affine.aboutLumiBook.version.title"](): string;
     /**
-      * `Get started`
+      * `开始使用`
       */
     ["com.affine.ai-onboarding.edgeless.get-started"](): string;
     /**
-      * `Lets you think bigger, create faster, work smarter and save time for every project.`
+      * `让您的思维更开阔，创新更迅速，工作更效率，节省每个项目时间。`
       */
     ["com.affine.ai-onboarding.edgeless.message"](): string;
     /**
-      * `Upgrade to unlimited usage`
+      * `升级为无限制使用`
       */
     ["com.affine.ai-onboarding.edgeless.purchase"](): string;
     /**
-      * `Right-clicking to select content AI`
+      * `右键拖选内容使用 识光 AI`
       */
     ["com.affine.ai-onboarding.edgeless.title"](): string;
     /**
-      * `Lets you think bigger, create faster, work smarter and save time for every project.`
+      * `让您的思维更开阔，创新更迅速，工作更效率，节省每个项目时间。`
       */
     ["com.affine.ai-onboarding.general.1.description"](): string;
     /**
-      * `Meet 识光 AI`
+      * `邂逅 识光 AI`
       */
     ["com.affine.ai-onboarding.general.1.title"](): string;
     /**
-      * `Answer questions, draft docs, visualize ideas - 识光 AI can save you time at every possible step. Powered by GPT's most powerful model.`
+      * `即刻回答您的所有疑问。`
       */
     ["com.affine.ai-onboarding.general.2.description"](): string;
     /**
-      * `Chat with 识光 AI`
+      * `与 识光 AI 聊天`
       */
     ["com.affine.ai-onboarding.general.2.title"](): string;
     /**
-      * `Get insightful answer to any question, instantly.`
+      * `几秒内即可获得完美的语气、拼写和摘要。`
       */
     ["com.affine.ai-onboarding.general.3.description"](): string;
     /**
-      * `Edit inline with 识光 AI`
+      * `使用 识光 AI 内联编辑`
       */
     ["com.affine.ai-onboarding.general.3.title"](): string;
     /**
-      * `Expand thinking. Untangle complexity. Breakdown and visualise your content with crafted mindmap and presentable slides with one click.`
+      * `从构思到实现，将想法变为现实。`
       */
     ["com.affine.ai-onboarding.general.4.description"](): string;
     /**
-      * `Make mind-map and presents with AI`
+      * `使用 识光 AI 使其成为现实`
       */
     ["com.affine.ai-onboarding.general.4.title"](): string;
     /**
-      * `识光 AI is ready`
+      * `识光 AI 已蓄势待发`
       */
     ["com.affine.ai-onboarding.general.5.title"](): string;
     /**
-      * `Get started`
+      * `开始使用`
       */
     ["com.affine.ai-onboarding.general.get-started"](): string;
     /**
-      * `Next`
+      * `下一步`
       */
     ["com.affine.ai-onboarding.general.next"](): string;
     /**
-      * `Back`
+      * `返回`
       */
     ["com.affine.ai-onboarding.general.prev"](): string;
     /**
-      * `Get unlimited usage`
+      * `获取无限制的使用`
       */
     ["com.affine.ai-onboarding.general.purchase"](): string;
     /**
-      * `Remind me later`
+      * `稍后提醒我`
       */
     ["com.affine.ai-onboarding.general.skip"](): string;
     /**
-      * `Try for free`
+      * `免费试用`
       */
     ["com.affine.ai-onboarding.general.try-for-free"](): string;
     /**
-      * `Dismiss`
+      * `忽略`
       */
     ["com.affine.ai-onboarding.local.action-dismiss"](): string;
     /**
-      * `Get started`
+      * `开始使用`
       */
     ["com.affine.ai-onboarding.local.action-get-started"](): string;
     /**
-      * `Learn more`
+      * `了解更多`
       */
     ["com.affine.ai-onboarding.local.action-learn-more"](): string;
     /**
-      * `Lets you think bigger, create faster, work smarter and save time for every project.`
+      * `让您的思维更开阔，创新更迅速，工作更效率，节省每个项目时间。`
       */
     ["com.affine.ai-onboarding.local.message"](): string;
     /**
-      * `Meet 识光 AI`
+      * `邂逅 识光 AI`
       */
     ["com.affine.ai-onboarding.local.title"](): string;
     /**
-      * `New`
+      * `新建`
       */
     ["com.affine.ai-scroll-tip.tag"](): string;
     /**
-      * `Meet 识光 AI`
+      * `邂逅 识光 AI`
       */
     ["com.affine.ai-scroll-tip.title"](): string;
     /**
-      * `View`
+      * `查看`
       */
     ["com.affine.ai-scroll-tip.view"](): string;
     /**
-      * `Please switch to edgeless mode`
+      * `请切换到无界模式`
       */
     ["com.affine.ai.action.edgeless-only.dialog-title"](): string;
     /**
-      * `Cancel`
+      * `取消`
       */
     ["com.affine.ai.login-required.dialog-cancel"](): string;
     /**
-      * `Sign in`
+      * `登录`
       */
     ["com.affine.ai.login-required.dialog-confirm"](): string;
     /**
-      * `To use 识光 AI, please sign in to your 识光 Cloud account.`
+      * `要使用 识光 AI，请先登录您的 识光 Cloud 帐户。`
       */
     ["com.affine.ai.login-required.dialog-content"](): string;
     /**
-      * `Sign in to continue`
+      * `登录以继续`
       */
     ["com.affine.ai.login-required.dialog-title"](): string;
     /**
-      * `Failed to insert template, please try again.`
+      * `插入模板失败，请重试。`
       */
     ["com.affine.ai.template-insert.failed"](): string;
     /**
@@ -868,741 +868,741 @@ export function useLumiBookI18N(): {
       */
     ["com.affine.ai.chat-panel.title"](): string;
     /**
-      * `识光 AI is loading history...`
+      * `识光 AI 正在加载历史记录...`
       */
     ["com.affine.ai.chat-panel.loading-history"](): string;
     /**
-      * `Embedding {{done}}/{{total}}`
+      * `嵌入 {{done}}/{{total}}`
       */
     ["com.affine.ai.chat-panel.embedding-progress"](options: Readonly<{
         done: string;
         total: string;
     }>): string;
     /**
-      * `Local workspaces don't support attachments or references.`
+      * `本地工作区暂不支持附件或引用。`
       */
     ["com.affine.ai.chat-panel.local-workspace-context-unavailable"](): string;
     /**
-      * `Reading canvas`
+      * `正在读取画布`
       */
     ["com.affine.ai.chat-panel.tool.canvas.reading"](): string;
     /**
-      * `Read canvas of "{{title}}"`
+      * `已读取“{{title}}”的画布`
       */
     ["com.affine.ai.chat-panel.tool.canvas.read"](options: {
         readonly title: string;
     }): string;
     /**
-      * `Read canvas`
+      * `已读取画布`
       */
     ["com.affine.ai.chat-panel.tool.canvas.read-untitled"](): string;
     /**
-      * `Canvas read failed`
+      * `画布读取失败`
       */
     ["com.affine.ai.chat-panel.tool.canvas.failed"](): string;
     /**
-      * `Canvas content`
+      * `画布内容`
       */
     ["com.affine.ai.chat-panel.tool.canvas.content"](): string;
     /**
-      * `Current document`
+      * `当前文档`
       */
     ["com.affine.ai.chat-panel.tool.live.current-document"](): string;
     /**
-      * `Checking editor state`
+      * `正在检查编辑器状态`
       */
     ["com.affine.ai.chat-panel.tool.live.state-checking"](): string;
     /**
-      * `Checked editor state`
+      * `已检查编辑器状态`
       */
     ["com.affine.ai.chat-panel.tool.live.state-checked"](): string;
     /**
-      * `Reading selection`
+      * `正在读取所选内容`
       */
     ["com.affine.ai.chat-panel.tool.live.selection-reading"](): string;
     /**
-      * `Read selection`
+      * `已读取所选内容`
       */
     ["com.affine.ai.chat-panel.tool.live.selection-read"](): string;
     /**
-      * `Reading editor content`
+      * `正在读取编辑器内容`
       */
     ["com.affine.ai.chat-panel.tool.live.content-reading"](): string;
     /**
-      * `Read editor content`
+      * `已读取编辑器内容`
       */
     ["com.affine.ai.chat-panel.tool.live.content-read"](): string;
     /**
-      * `Reading outline of "{{title}}"`
+      * `正在读取「{{title}}」的大纲`
       */
     ["com.affine.ai.chat-panel.tool.live.outline-reading"](options: {
         readonly title: string;
     }): string;
     /**
-      * `Read outline of "{{title}}"`
+      * `已读取「{{title}}」的大纲`
       */
     ["com.affine.ai.chat-panel.tool.live.outline-read"](options: {
         readonly title: string;
     }): string;
     /**
-      * `Reading canvas of "{{title}}"`
+      * `正在读取「{{title}}」的画布`
       */
     ["com.affine.ai.chat-panel.tool.live.canvas-reading"](options: {
         readonly title: string;
     }): string;
     /**
-      * `Read canvas of "{{title}}"`
+      * `已读取「{{title}}」的画布`
       */
     ["com.affine.ai.chat-panel.tool.live.canvas-read"](options: {
         readonly title: string;
     }): string;
     /**
-      * `This view is not available in the current editor mode`
+      * `当前编辑器模式下不可用此视图`
       */
     ["com.affine.ai.chat-panel.tool.live.view-unavailable"](): string;
     /**
-      * `Live editor read failed`
+      * `编辑器实时读取失败`
       */
     ["com.affine.ai.chat-panel.tool.live.failed"](): string;
     /**
-      * `{{mode}} mode`
+      * `{{mode}}模式`
       */
     ["com.affine.ai.chat-panel.tool.live.mode"](options: {
         readonly mode: string;
     }): string;
     /**
-      * `{{count}} blocks`
+      * `{{count}} 个内容块`
       */
     ["com.affine.ai.chat-panel.tool.live.blocks"](options: {
         readonly count: string;
     }): string;
     /**
-      * `{{count}} elements`
+      * `{{count}} 个元素`
       */
     ["com.affine.ai.chat-panel.tool.live.elements"](options: {
         readonly count: string;
     }): string;
     /**
-      * `Document`
+      * `文档`
       */
     ["com.affine.ai.chat-panel.scope.document"](): string;
     /**
-      * `Tag`
+      * `标签`
       */
     ["com.affine.ai.chat-panel.scope.tag"](): string;
     /**
-      * `Collection`
+      * `合集`
       */
     ["com.affine.ai.chat-panel.scope.collection"](): string;
     /**
-      * `Favorites`
+      * `收藏`
       */
     ["com.affine.ai.chat-panel.scope.favorite"](): string;
     /**
-      * `Attachment`
+      * `附件`
       */
     ["com.affine.ai.chat-panel.scope.artifact"](): string;
     /**
-      * `{{count}} sources`
+      * `{{count}} 个来源`
       */
     ["com.affine.ai.chat-panel.scope.sources"](options: {
         readonly count: string;
     }): string;
     /**
-      * `Your selected sources are still processing. Try again shortly.`
+      * `你所选的来源还在处理中，请稍后重试。`
       */
     ["com.affine.ai.error.selectedSourcesProcessing"](): string;
     /**
-      * `Some selected sources could not be processed. Try again; if the problem continues, remove them and send a new message.`
+      * `部分所选来源处理失败。请重试，若仍失败可移除后重新发送。`
       */
     ["com.affine.ai.error.selectedSourcesFailed"](): string;
     /**
-      * `One or more selected sources are unavailable. Check the sources or workspace AI indexing settings, then retry.`
+      * `有一个或多个来源不可用。请检查来源或工作区的 AI 索引设置后重试。`
       */
     ["com.affine.ai.error.selectedSourcesUnavailable"](): string;
     /**
-      * `Too many sources or too much content was selected. Select fewer sources and send a new message.`
+      * `所选来源数量或内容过多，请减少来源后重新发送。`
       */
     ["com.affine.ai.error.selectedSourcesLimitExceeded"](): string;
     /**
-      * `Retry`
+      * `重试`
       */
     ["com.affine.ai.error.retry"](): string;
     /**
-      * `Working… · {{count}} actions`
+      * `正在处理… · {{count}} 个操作`
       */
     ["com.affine.ai.chat-panel.tool-group.running"](options: {
         readonly count: string;
     }): string;
     /**
-      * `Completed {{count}} actions`
+      * `已完成 {{count}} 个操作`
       */
     ["com.affine.ai.chat-panel.tool-group.completed"](options: {
         readonly count: string;
     }): string;
     /**
-      * `Completed {{count}} actions · {{failed}} failed`
+      * `已完成 {{count}} 个操作 · {{failed}} 个失败`
       */
     ["com.affine.ai.chat-panel.tool-group.failed"](options: Readonly<{
         count: string;
         failed: string;
     }>): string;
     /**
-      * `Delete this history?`
+      * `删除此历史记录？`
       */
     ["com.affine.ai.chat-panel.session.delete.confirm.title"](): string;
     /**
-      * `Do you want to delete this AI conversation history? Once deleted, it cannot be recovered.`
+      * `确定要删除这段 AI 对话历史记录吗？删除后无法恢复。`
       */
     ["com.affine.ai.chat-panel.session.delete.confirm.message"](): string;
     /**
-      * `History deleted`
+      * `已删除历史记录`
       */
     ["com.affine.ai.chat-panel.session.delete.toast.success"](): string;
     /**
-      * `Failed to delete history`
+      * `删除历史记录失败`
       */
     ["com.affine.ai.chat-panel.session.delete.toast.failed"](): string;
     /**
-      * `All docs`
+      * `所有文档`
       */
     ["com.affine.all-pages.header"](): string;
     /**
-      * `Learn more`
+      * `了解更多`
       */
     ["com.affine.app-sidebar.learn-more"](): string;
     /**
-      * `Star us`
+      * `给我们点亮星标`
       */
     ["com.affine.app-sidebar.star-us"](): string;
     /**
-      * `Download update`
+      * `下载更新`
       */
     ["com.affine.appUpdater.downloadUpdate"](): string;
     /**
-      * `Downloading`
+      * `下载中`
       */
     ["com.affine.appUpdater.downloading"](): string;
     /**
-      * `Restart to install update`
+      * `重新启动以安装更新`
       */
     ["com.affine.appUpdater.installUpdate"](): string;
     /**
-      * `Open download page`
+      * `打开下载页面`
       */
     ["com.affine.appUpdater.openDownloadPage"](): string;
     /**
-      * `Update available`
+      * `有可用的更新`
       */
     ["com.affine.appUpdater.updateAvailable"](): string;
     /**
-      * `Discover what's new!`
+      * `发现新动态！`
       */
     ["com.affine.appUpdater.whatsNew"](): string;
     /**
-      * `Customise the appearance of the client.`
+      * `自定义客户端外观。`
       */
     ["com.affine.appearanceSettings.clientBorder.description"](): string;
     /**
-      * `Client border style`
+      * `客户端边框样式`
       */
     ["com.affine.appearanceSettings.clientBorder.title"](): string;
     /**
-      * `Choose your colour mode`
+      * `选择您的配色方案`
       */
     ["com.affine.appearanceSettings.color.description"](): string;
     /**
-      * `Colour mode`
+      * `配色方案`
       */
     ["com.affine.appearanceSettings.color.title"](): string;
     /**
-      * `Edit all 识光 theme variables here`
+      * `在此编辑所有识光主题变量`
       */
     ["com.affine.appearanceSettings.customize-theme.description"](): string;
     /**
-      * `Customize Theme`
+      * `自定义主题`
       */
     ["com.affine.appearanceSettings.customize-theme.title"](): string;
     /**
-      * `Images`
+      * `图片`
       */
     ["com.affine.appearanceSettings.images.title"](): string;
     /**
-      * `Smooth image rendering`
+      * `平滑图片渲染`
       */
     ["com.affine.appearanceSettings.images.antialiasing.title"](): string;
     /**
-      * `When disabled, images are rendered using nearest-neighbor scaling for crisp pixels.`
+      * `禁用后，图片将使用最近邻缩放渲染，以保持像素清晰。`
       */
     ["com.affine.appearanceSettings.images.antialiasing.description"](): string;
     /**
-      * `Reset all`
+      * `重置所有`
       */
     ["com.affine.appearanceSettings.customize-theme.reset"](): string;
     /**
-      * `Open Theme Editor`
+      * `打开主题编辑器`
       */
     ["com.affine.appearanceSettings.customize-theme.open"](): string;
     /**
-      * `Choose your font style`
+      * `选择您的字体样式`
       */
     ["com.affine.appearanceSettings.font.description"](): string;
     /**
-      * `Font style`
+      * `字体样式`
       */
     ["com.affine.appearanceSettings.font.title"](): string;
     /**
-      * `Mono`
+      * `等宽`
       */
     ["com.affine.appearanceSettings.fontStyle.mono"](): string;
     /**
-      * `Sans`
+      * `默认`
       */
     ["com.affine.appearanceSettings.fontStyle.sans"](): string;
     /**
-      * `Serif`
+      * `衬线`
       */
     ["com.affine.appearanceSettings.fontStyle.serif"](): string;
     /**
-      * `Select the language for the interface.`
+      * `选择界面语言。`
       */
     ["com.affine.appearanceSettings.language.description"](): string;
     /**
-      * `Display language`
+      * `显示语言`
       */
     ["com.affine.appearanceSettings.language.title"](): string;
     /**
-      * `Use background noise effect on the sidebar.`
+      * `在侧边栏使用噪点背景效果。`
       */
     ["com.affine.appearanceSettings.noisyBackground.description"](): string;
     /**
-      * `Noise background on the sidebar`
+      * `侧边栏噪点背景`
       */
     ["com.affine.appearanceSettings.noisyBackground.title"](): string;
     /**
-      * `Sidebar`
+      * `侧边栏`
       */
     ["com.affine.appearanceSettings.sidebar.title"](): string;
     /**
-      * `Customize your 识光 appearance`
+      * `识光界面个性化设置`
       */
     ["com.affine.appearanceSettings.subtitle"](): string;
     /**
-      * `Menubar`
+      * `菜单栏`
       */
     ["com.affine.appearanceSettings.menubar.title"](): string;
     /**
-      * `Enable menubar app`
+      * `启用菜单栏应用`
       */
     ["com.affine.appearanceSettings.menubar.toggle"](): string;
     /**
-      * `Display the menubar app in the tray for quick access to 识光 or meeting recordings.`
+      * `在托盘中显示菜单栏应用程序，以便快速访问 识光 或会议记录。`
       */
     ["com.affine.appearanceSettings.menubar.description"](): string;
     /**
-      * `Window behavior`
+      * `窗口行为`
       */
     ["com.affine.appearanceSettings.menubar.windowBehavior.title"](): string;
     /**
-      * `Quick open from tray icon`
+      * `点击托盘图标时启动`
       */
     ["com.affine.appearanceSettings.menubar.windowBehavior.openOnLeftClick.toggle"](): string;
     /**
-      * `Open 识光 when left‑clicking the tray icon.`
+      * `点击识光的系统托盘图标时启动识光。`
       */
     ["com.affine.appearanceSettings.menubar.windowBehavior.openOnLeftClick.description"](): string;
     /**
-      * `Minimize to tray`
+      * `最小化到托盘`
       */
     ["com.affine.appearanceSettings.menubar.windowBehavior.minimizeToTray.toggle"](): string;
     /**
-      * `Minimize 识光 to the system tray.`
+      * `最小化识光到系统托盘。`
       */
     ["com.affine.appearanceSettings.menubar.windowBehavior.minimizeToTray.description"](): string;
     /**
-      * `Close to tray`
+      * `关闭到托盘`
       */
     ["com.affine.appearanceSettings.menubar.windowBehavior.closeToTray.toggle"](): string;
     /**
-      * `Close 识光 to the system tray.`
+      * `关闭识光时最小化到系统托盘。`
       */
     ["com.affine.appearanceSettings.menubar.windowBehavior.closeToTray.description"](): string;
     /**
-      * `Start minimized`
+      * `启动时最小化`
       */
     ["com.affine.appearanceSettings.menubar.windowBehavior.startMinimized.toggle"](): string;
     /**
-      * `Start 识光 minimized to the system tray.`
+      * `启动识光时最小化到系统托盘。`
       */
     ["com.affine.appearanceSettings.menubar.windowBehavior.startMinimized.description"](): string;
     /**
-      * `Theme`
+      * `主题`
       */
     ["com.affine.appearanceSettings.theme.title"](): string;
     /**
-      * `Appearance settings`
+      * `外观设置`
       */
     ["com.affine.appearanceSettings.title"](): string;
     /**
-      * `Use transparency effect on the sidebar.`
+      * `在侧边栏使用半透明效果。`
       */
     ["com.affine.appearanceSettings.translucentUI.description"](): string;
     /**
-      * `Translucent UI on the sidebar`
+      * `侧边栏的透明效果`
       */
     ["com.affine.appearanceSettings.translucentUI.title"](): string;
     /**
-      * `Show linked doc in sidebar`
+      * `在侧边栏中显示链接的文档`
       */
     ["com.affine.appearanceSettings.showLinkedDocInSidebar.title"](): string;
     /**
-      * `Control whether to show the structure of linked docs in the sidebar.`
+      * `控制侧边栏中是否显示链接文档的结构。`
       */
     ["com.affine.appearanceSettings.showLinkedDocInSidebar.description"](): string;
     /**
-      * `Your current email is {{email}}. We'll send a confirmation link there first so you can securely switch to a new email address.`
+      * `您当前的邮箱是 {{email}}。我们将向此邮箱发送一个临时的验证链接。`
       */
     ["com.affine.auth.change.email.message"](options: {
         readonly email: string;
     }): string;
     /**
-      * `Please enter your new email address below. We will send a verification link to this email address to complete the process.`
+      * `请在下方输入您的新电子邮件地址。我们将把验证链接发送至该电子邮件地址以完成此过程。`
       */
     ["com.affine.auth.change.email.page.subtitle"](): string;
     /**
-      * `Congratulations! You have successfully updated the email address associated with your 识光 account.`
+      * `恭喜！您已成功更新与 识光 账户关联的电子邮件地址。`
       */
     ["com.affine.auth.change.email.page.success.subtitle"](): string;
     /**
-      * `Email address updated!`
+      * `邮箱地址已更新！`
       */
     ["com.affine.auth.change.email.page.success.title"](): string;
     /**
-      * `Change email address`
+      * `更改邮箱地址`
       */
     ["com.affine.auth.change.email.page.title"](): string;
     /**
-      * `Forgot password`
+      * `忘记密码`
       */
     ["com.affine.auth.forget"](): string;
     /**
-      * `Later`
+      * `稍后`
       */
     ["com.affine.auth.later"](): string;
     /**
-      * `Open 识光`
+      * `打开 识光`
       */
     ["com.affine.auth.open.affine"](): string;
     /**
-      * `Download app`
+      * `下载应用`
       */
     ["com.affine.auth.open.affine.download-app"](): string;
     /**
-      * `Try again`
+      * `重试`
       */
     ["com.affine.auth.open.affine.try-again"](): string;
     /**
-      * `Still have problems?`
+      * `仍然遇到问题？`
       */
     ["com.affine.auth.open.affine.still-have-problems"](): string;
     /**
-      * `Continue with Browser`
+      * `使用浏览器继续`
       */
     ["com.affine.auth.open.affine.continue-with-browser"](): string;
     /**
-      * `Download Latest Client`
+      * `下载最新客户端`
       */
     ["com.affine.auth.open.affine.download-latest-client"](): string;
     /**
-      * `Open here instead`
+      * `在此处打开`
       */
     ["com.affine.auth.open.affine.doc.open-here"](): string;
     /**
-      * `Edit settings`
+      * `编辑设置`
       */
     ["com.affine.auth.open.affine.doc.edit-settings"](): string;
     /**
-      * `Requires 识光 desktop app version 0.18 or later.`
+      * `需要 识光 桌面应用程序版本 0.18 或更高。`
       */
     ["com.affine.auth.open.affine.doc.footer-text"](): string;
     /**
-      * `Please set a password of {{min}}-{{max}} characters with both letters and numbers to continue signing up with `
+      * `请输入一个长度在 {{min}}-{{max}} 个字符之间，同时包含字母和数字的密码以继续注册`
       */
     ["com.affine.auth.page.sent.email.subtitle"](options: Readonly<{
         min: string;
         max: string;
     }>): string;
     /**
-      * `Welcome to 识光, you're almost there!`
+      * `欢迎来到 识光，即将完成！`
       */
     ["com.affine.auth.page.sent.email.title"](): string;
     /**
-      * `Password`
+      * `密码`
       */
     ["com.affine.auth.password"](): string;
     /**
-      * `Invalid password`
+      * `无效密码`
       */
     ["com.affine.auth.password.error"](): string;
     /**
-      * `Set password failed`
+      * `设置密码失败`
       */
     ["com.affine.auth.password.set-failed"](): string;
     /**
-      * `Reset password`
+      * `重置密码`
       */
     ["com.affine.auth.reset.password"](): string;
     /**
-      * `You will receive an email with a link to reset your password. Please check your inbox.`
+      * `您将收到一封电子邮件，以便重置密码。请在收件箱中查收。`
       */
     ["com.affine.auth.reset.password.message"](): string;
     /**
-      * `Password reset successful`
+      * `密码重置成功`
       */
     ["com.affine.auth.reset.password.page.success"](): string;
     /**
-      * `Reset your 识光 password`
+      * `重置您的 识光 密码`
       */
     ["com.affine.auth.reset.password.page.title"](): string;
     /**
-      * `Send reset link`
+      * `发送重置链接`
       */
     ["com.affine.auth.send.reset.password.link"](): string;
     /**
-      * `Send set link`
+      * `发送设置链接`
       */
     ["com.affine.auth.send.set.password.link"](): string;
     /**
-      * `Send verification link`
+      * `发送验证链接`
       */
     ["com.affine.auth.send.verify.email.hint"](): string;
     /**
-      * `Verification code`
+      * `验证码`
       */
     ["com.affine.auth.sign.auth.code"](): string;
     /**
-      * `Invalid verification code`
+      * `无效的验证码`
       */
     ["com.affine.auth.sign.auth.code.invalid"](): string;
     /**
-      * `Continue with code`
+      * `输入验证码`
       */
     ["com.affine.auth.sign.auth.code.continue"](): string;
     /**
-      * `Resend code`
+      * `重新发送验证码`
       */
     ["com.affine.auth.sign.auth.code.resend"](): string;
     /**
-      * `Resend in {{second}}s`
+      * `在 {{second}} 秒后重新发送`
       */
     ["com.affine.auth.sign.auth.code.resend.hint"](options: {
         readonly second: string;
     }): string;
     /**
-      * `Sent`
+      * `已发送`
       */
     ["com.affine.auth.sent"](): string;
     /**
-      * `The verification link failed to be sent, please try again later.`
+      * `验证链接发送失败，请稍后重试。`
       */
     ["com.affine.auth.sent.change.email.fail"](): string;
     /**
-      * `Verification link has been sent.`
+      * `验证链接已发送`
       */
     ["com.affine.auth.sent.change.email.hint"](): string;
     /**
-      * `Reset password link has been sent.`
+      * `重置密码链接已发送。`
       */
     ["com.affine.auth.sent.change.password.hint"](): string;
     /**
-      * `Your password has been updated! You can sign in to 识光 with the new password.`
+      * `您的密码已更新！您可以使用新密码登录 识光。`
       */
     ["com.affine.auth.sent.reset.password.success.message"](): string;
     /**
-      * `Set password link has been sent.`
+      * `设置密码链接已发送。`
       */
     ["com.affine.auth.sent.set.password.hint"](): string;
     /**
-      * `Your password has been saved! You can sign in to 识光 with email and password.`
+      * `您的密码已保存！您可以使用邮箱和密码登录 识光。`
       */
     ["com.affine.auth.sent.set.password.success.message"](): string;
     /**
-      * `Verification link has been sent.`
+      * `验证链接已发送`
       */
     ["com.affine.auth.sent.verify.email.hint"](): string;
     /**
-      * `Save Email`
+      * `保存电子邮件`
       */
     ["com.affine.auth.set.email.save"](): string;
     /**
-      * `Set password`
+      * `设置密码`
       */
     ["com.affine.auth.set.password"](): string;
     /**
-      * `Please set a password of {{min}}-{{max}} characters with both letters and numbers to continue signing up with `
+      * `请输入一个长度在 {{min}}-{{max}} 个字符之间，同时包含字母和数字的密码以继续注册`
       */
     ["com.affine.auth.set.password.message"](options: Readonly<{
         min: string;
         max: string;
     }>): string;
     /**
-      * `Maximum {{max}} characters`
+      * `至多 {{max}} 个字符`
       */
     ["com.affine.auth.set.password.message.maxlength"](options: {
         readonly max: string;
     }): string;
     /**
-      * `Minimum {{min}} characters`
+      * `至少 {{min}} 个字符`
       */
     ["com.affine.auth.set.password.message.minlength"](options: {
         readonly min: string;
     }): string;
     /**
-      * `Password set successful`
+      * `密码设置成功`
       */
     ["com.affine.auth.set.password.page.success"](): string;
     /**
-      * `Set your 识光 password`
+      * `设置您的 识光 密码`
       */
     ["com.affine.auth.set.password.page.title"](): string;
     /**
-      * `Set a password at least {{min}} letters long`
+      * `密码长度至少需要 {{min}} 个字符`
       */
     ["com.affine.auth.set.password.placeholder"](options: {
         readonly min: string;
     }): string;
     /**
-      * `Confirm password`
+      * `确认密码`
       */
     ["com.affine.auth.set.password.placeholder.confirm"](): string;
     /**
-      * `Save password`
+      * `保存密码`
       */
     ["com.affine.auth.set.password.save"](): string;
     /**
-      * `Cancel`
+      * `取消`
       */
     ["com.affine.auth.sign-out.confirm-modal.cancel"](): string;
     /**
-      * `Sign Out`
+      * `登出`
       */
     ["com.affine.auth.sign-out.confirm-modal.confirm"](): string;
     /**
-      * `After signing out, synced workspaces associated with this account will be removed from this device. Signing in again will add them back.`
+      * `退出登录后，此账号关联的同步工作区将从当前设备移除；再次登录后会重新添加。`
       */
     ["com.affine.auth.sign-out.confirm-modal.description"](): string;
     /**
-      * `Sign out?`
+      * `登出？`
       */
     ["com.affine.auth.sign-out.confirm-modal.title"](): string;
     /**
-      * `If you haven't received the email, please check your spam folder.`
+      * `如果您没有收到电子邮件，请检查您的垃圾邮件文件夹。`
       */
     ["com.affine.auth.sign.auth.code.message"](): string;
     /**
-      * `Sign in with magic link`
+      * `使用魔法链接登录`
       */
     ["com.affine.auth.sign.auth.code.send-email.sign-in"](): string;
     /**
-      * `Terms of conditions`
+      * `条款与条件`
       */
     ["com.affine.auth.sign.condition"](): string;
     /**
-      * `Continue with email`
+      * `以电子邮件继续`
       */
     ["com.affine.auth.sign.email.continue"](): string;
     /**
-      * `Invalid email`
+      * `无效的电子邮件`
       */
     ["com.affine.auth.sign.email.error"](): string;
     /**
-      * `Enter your email address`
+      * `请输入电子邮件地址`
       */
     ["com.affine.auth.sign.email.placeholder"](): string;
     /**
-      * `Sign in to 识光`
+      * `登录 识光`
       */
     ["com.affine.auth.sign.in"](): string;
     /**
-      * `Confirm your email`
+      * `请确认电子邮件`
       */
     ["com.affine.auth.sign.in.sent.email.subtitle"](): string;
     /**
-      * `Self-hosted 识光`
+      * `自托管 识光`
       */
     ["com.affine.auth.sign.add-selfhosted.title"](): string;
     /**
-      * `Connect to your 识光 server`
+      * `连接到你的 识光 服务器`
       */
     ["com.affine.auth.sign.add-selfhosted"](): string;
     /**
-      * `识光 Server URL`
+      * `识光 服务器地址`
       */
     ["com.affine.auth.sign.add-selfhosted.baseurl"](): string;
     /**
-      * `Connect`
+      * `连接`
       */
     ["com.affine.auth.sign.add-selfhosted.connect-button"](): string;
     /**
-      * `Unable to connect to the server.`
+      * `无法连接至服务器。`
       */
     ["com.affine.auth.sign.add-selfhosted.error"](): string;
     /**
-      * `Privacy policy`
+      * `隐私政策`
       */
     ["com.affine.auth.sign.policy"](): string;
     /**
-      * `Sign up`
+      * `注册`
       */
     ["com.affine.auth.sign.up"](): string;
     /**
-      * `Create your account`
+      * `创建您的账号`
       */
     ["com.affine.auth.sign.up.sent.email.subtitle"](): string;
     /**
-      * `The app will automatically open or redirect to the web version. If you encounter any issues, you can also click the button below to manually open the 识光 app.`
+      * `识光 客户端将自动打开或重定向到网页端，如果您遇到任何问题，可以点击下方按钮手动打开 识光。`
       */
     ["com.affine.auth.sign.up.success.subtitle"](): string;
     /**
-      * `Your account has been created and you're now signed in!`
+      * `注册成功`
       */
     ["com.affine.auth.sign.up.success.title"](): string;
     /**
-      * `You have successfully signed in. The app will automatically open or redirect to the web version. if you encounter any issues, you can also click the button below to  manually open the 识光 app.`
+      * `您已成功登录。应用程序将自动打开或重定向至网页版。 如果您遇到任何问题，您还可以单击下面的按钮手动打开 识光 应用程序。`
       */
     ["com.affine.auth.signed.success.subtitle"](): string;
     /**
-      * `You're almost there!`
+      * `即将完成！`
       */
     ["com.affine.auth.signed.success.title"](): string;
     /**
-      * `Server error, please try again later.`
+      * `服务器错误，请稍后重试。`
       */
     ["com.affine.auth.toast.message.failed"](): string;
     /**
-      * `You have signed in to 识光.`
+      * `您已登录 识光，开始同步您的数据！`
       */
     ["com.affine.auth.toast.message.signed-in"](): string;
     /**
-      * `Unable to sign in`
+      * `无法登录`
       */
     ["com.affine.auth.toast.title.failed"](): string;
     /**
-      * `Signed in`
+      * `已登录`
       */
     ["com.affine.auth.toast.title.signed-in"](): string;
     /**
-      * `Your current email is {{email}}. We'll send a verification link to this email so you can confirm it belongs to you.`
+      * `您当前的邮箱是 {{email}}。我们将向此邮箱发送一个临时的验证链接。`
       */
     ["com.affine.auth.verify.email.message"](options: {
         readonly email: string;
     }): string;
     /**
-      * `Back`
+      * `返回首页`
       */
     ["com.affine.backButton"](): string;
     /**
-      * `Your workspace is saved in this browser. When disk space is low, the browser may remove it automatically. Enable 识光 Sync to keep it safer.`
+      * `此工作区只保存在当前浏览器中。磁盘空间不足时，浏览器可能会自动移除它。启用 识光 同步可以更稳妥地保留数据。`
       */
     ["com.affine.banner.local-warning"](): string;
     /**
@@ -1610,19 +1610,19 @@ export function useLumiBookI18N(): {
       */
     ["com.affine.brand.affineCloud"](): string;
     /**
-      * `Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec`
+      * `一月,二月,三月,四月,五月,六月,七月,八月,九月,十月,十一月,十二月`
       */
     ["com.affine.calendar-date-picker.month-names"](): string;
     /**
-      * `Today`
+      * `今天`
       */
     ["com.affine.calendar-date-picker.today"](): string;
     /**
-      * `Su,Mo,Tu,We,Th,Fr,Sa`
+      * `周日,周一,周二,周三,周四,周五,周六`
       */
     ["com.affine.calendar-date-picker.week-days"](): string;
     /**
-      * `Host by 识光.Pro, Save, sync, and backup all your data.`
+      * `由 识光.Pro 托管，保存、同步和备份您的所有数据。`
       */
     ["com.affine.cloud-scroll-tip.caption"](): string;
     /**
@@ -1630,1017 +1630,1025 @@ export function useLumiBookI18N(): {
       */
     ["com.affine.cloud-scroll-tip.title"](): string;
     /**
-      * `Collections`
+      * `精选`
       */
     ["com.affine.cmdk.affine.category.affine.collections"](): string;
     /**
-      * `Create`
+      * `创建`
       */
     ["com.affine.cmdk.affine.category.affine.creation"](): string;
     /**
-      * `Edgeless`
+      * `无界`
       */
     ["com.affine.cmdk.affine.category.affine.edgeless"](): string;
     /**
-      * `General`
+      * `常规`
       */
     ["com.affine.cmdk.affine.category.affine.general"](): string;
     /**
-      * `Help`
+      * `帮助`
       */
     ["com.affine.cmdk.affine.category.affine.help"](): string;
     /**
-      * `Layout controls`
+      * `布局控制`
       */
     ["com.affine.cmdk.affine.category.affine.layout"](): string;
     /**
-      * `Navigation`
+      * `导航`
       */
     ["com.affine.cmdk.affine.category.affine.navigation"](): string;
     /**
-      * `Docs`
+      * `文档`
       */
     ["com.affine.cmdk.affine.category.affine.pages"](): string;
     /**
-      * `Recent`
+      * `最近`
       */
     ["com.affine.cmdk.affine.category.affine.recent"](): string;
     /**
-      * `Settings`
+      * `设置`
       */
     ["com.affine.cmdk.affine.category.affine.settings"](): string;
     /**
-      * `Tags`
+      * `标签`
       */
     ["com.affine.cmdk.affine.category.affine.tags"](): string;
     /**
-      * `Updates`
+      * `更新`
       */
     ["com.affine.cmdk.affine.category.affine.updates"](): string;
     /**
-      * `Edgeless commands`
+      * `无界命令`
       */
     ["com.affine.cmdk.affine.category.editor.edgeless"](): string;
     /**
-      * `Insert object`
+      * `插入对象`
       */
     ["com.affine.cmdk.affine.category.editor.insert-object"](): string;
     /**
-      * `Doc Commands`
+      * `文档命令`
       */
     ["com.affine.cmdk.affine.category.editor.page"](): string;
     /**
-      * `Results`
+      * `结果`
       */
     ["com.affine.cmdk.affine.category.results"](): string;
     /**
-      * `Change client border style to`
+      * `更改客户端边框样式为`
       */
     ["com.affine.cmdk.affine.client-border-style.to"](): string;
     /**
-      * `Change colour mode to`
+      * `更改颜色模式为`
       */
     ["com.affine.cmdk.affine.color-mode.to"](): string;
     /**
-      * `Contact us`
+      * `联系我们`
       */
     ["com.affine.cmdk.affine.contact-us"](): string;
     /**
-      * `Create "{{keyWord}}" doc and insert`
+      * `创建并插入文档 "{{keyWord}}" `
       */
     ["com.affine.cmdk.affine.create-new-doc-and-insert"](options: {
         readonly keyWord: string;
     }): string;
     /**
-      * `New "{{keyWord}}" edgeless`
+      * `新建 “{{keyWord}}” 为标题的无界页面`
       */
     ["com.affine.cmdk.affine.create-new-edgeless-as"](options: {
         readonly keyWord: string;
     }): string;
     /**
-      * `New "{{keyWord}}" page`
+      * `新建 “{{keyWord}}” 为标题的文档`
       */
     ["com.affine.cmdk.affine.create-new-page-as"](options: {
         readonly keyWord: string;
     }): string;
     /**
-      * `Change display language to`
+      * `更改显示语言为`
       */
     ["com.affine.cmdk.affine.display-language.to"](): string;
     /**
-      * `Add to favourites`
+      * `加入收藏`
       */
     ["com.affine.cmdk.affine.editor.add-to-favourites"](): string;
     /**
-      * `Start presentation`
+      * `开始演示`
       */
     ["com.affine.cmdk.affine.editor.edgeless.presentation-start"](): string;
     /**
-      * `Remove from favourites`
+      * `从收藏中移除`
       */
     ["com.affine.cmdk.affine.editor.remove-from-favourites"](): string;
     /**
-      * `Restore from trash`
+      * `从垃圾箱恢复`
       */
     ["com.affine.cmdk.affine.editor.restore-from-trash"](): string;
     /**
-      * `Reveal doc history modal`
+      * `显示文档历史模式`
       */
     ["com.affine.cmdk.affine.editor.reveal-page-history-modal"](): string;
     /**
-      * `This doc has been moved to the trash, you can either restore or permanently delete it.`
+      * `该文档已移至回收站，您可以恢复或永久删除它。`
       */
     ["com.affine.cmdk.affine.editor.trash-footer-hint"](): string;
     /**
-      * `Change font style to`
+      * `更改字体样式为`
       */
     ["com.affine.cmdk.affine.font-style.to"](): string;
     /**
-      * `Change full width layout to`
+      * `更改全宽布局为`
       */
     ["com.affine.cmdk.affine.full-width-layout.to"](): string;
     /**
-      * `Change default width for new pages in to standard`
+      * `将新页面的默认宽度更改为标准`
       */
     ["com.affine.cmdk.affine.default-page-width-layout.standard"](): string;
     /**
-      * `Change default width for new pages in to full width`
+      * `将新页面的默认宽度更改为全宽`
       */
     ["com.affine.cmdk.affine.default-page-width-layout.full-width"](): string;
     /**
-      * `Change current page width to standard`
+      * `将当前页面宽度更改为标准`
       */
     ["com.affine.cmdk.affine.current-page-width-layout.standard"](): string;
     /**
-      * `Change current page width to full width`
+      * `将当前页面宽度更改为全宽`
       */
     ["com.affine.cmdk.affine.current-page-width-layout.full-width"](): string;
     /**
-      * `Getting started`
+      * `开始使用`
       */
     ["com.affine.cmdk.affine.getting-started"](): string;
     /**
-      * `Import workspace`
+      * `导入工作区`
       */
     ["com.affine.cmdk.affine.import-workspace"](): string;
     /**
-      * `Insert this link to the current doc`
+      * `将这个链接插入到当前文档`
       */
     ["com.affine.cmdk.affine.insert-link"](): string;
     /**
-      * `Collapse left sidebar`
+      * `折叠左侧边栏`
       */
     ["com.affine.cmdk.affine.left-sidebar.collapse"](): string;
     /**
-      * `Expand left sidebar`
+      * `展开左侧边栏`
       */
     ["com.affine.cmdk.affine.left-sidebar.expand"](): string;
     /**
-      * `Go to all docs`
+      * `前往所有文档`
       */
     ["com.affine.cmdk.affine.navigation.goto-all-pages"](): string;
     /**
-      * `Go to edgeless list`
+      * `前往无界列表`
       */
     ["com.affine.cmdk.affine.navigation.goto-edgeless-list"](): string;
     /**
-      * `Go to page list`
+      * `前往页面列表`
       */
     ["com.affine.cmdk.affine.navigation.goto-page-list"](): string;
     /**
-      * `Go to trash`
+      * `前往垃圾箱`
       */
     ["com.affine.cmdk.affine.navigation.goto-trash"](): string;
     /**
-      * `Go to workspace`
+      * `前往工作区`
       */
     ["com.affine.cmdk.affine.navigation.goto-workspace"](): string;
     /**
-      * `Go to account settings`
+      * `前往账户设置`
       */
     ["com.affine.cmdk.affine.navigation.open-account-settings"](): string;
     /**
-      * `Go to Settings`
+      * `前往设置`
       */
     ["com.affine.cmdk.affine.navigation.open-settings"](): string;
     /**
-      * `New edgeless`
+      * `新建无界页面`
       */
     ["com.affine.cmdk.affine.new-edgeless-page"](): string;
     /**
-      * `New page`
+      * `新建文档`
       */
     ["com.affine.cmdk.affine.new-page"](): string;
     /**
-      * `New workspace`
+      * `新建工作区`
       */
     ["com.affine.cmdk.affine.new-workspace"](): string;
     /**
-      * `Change noise background on the sidebar to`
+      * `更改侧边栏噪声背景为`
       */
     ["com.affine.cmdk.affine.noise-background-on-the-sidebar.to"](): string;
     /**
-      * `Restart to upgrade`
+      * `重启以升级`
       */
     ["com.affine.cmdk.affine.restart-to-upgrade"](): string;
     /**
-      * `OFF`
+      * `关`
       */
     ["com.affine.cmdk.affine.switch-state.off"](): string;
     /**
-      * `ON`
+      * `开`
       */
     ["com.affine.cmdk.affine.switch-state.on"](): string;
     /**
-      * `Change translucent UI on the sidebar to`
+      * `更改侧边栏半透明界面为`
       */
     ["com.affine.cmdk.affine.translucent-ui-on-the-sidebar.to"](): string;
     /**
-      * `What's new`
+      * `新内容`
       */
     ["com.affine.cmdk.affine.whats-new"](): string;
     /**
-      * `Search docs or paste link...`
+      * `搜索文档或粘贴链接...`
       */
     ["com.affine.cmdk.docs.placeholder"](): string;
     /**
-      * `Insert links`
+      * `插入链接`
       */
     ["com.affine.cmdk.insert-links"](): string;
     /**
-      * `No results found`
+      * `找到 0 个结果`
       */
     ["com.affine.cmdk.no-results"](): string;
     /**
-      * `No results found for`
+      * `找到 0 个结果`
       */
     ["com.affine.cmdk.no-results-for"](): string;
     /**
-      * `Type a command or search anything...`
+      * `输入命令或搜索任何内容...`
       */
     ["com.affine.cmdk.placeholder"](): string;
     /**
-      * `Switch to $t(com.affine.edgelessMode)`
+      * `切换到$t(com.affine.edgelessMode)`
       */
     ["com.affine.cmdk.switch-to-edgeless"](): string;
     /**
-      * `Switch to $t(com.affine.pageMode)`
+      * `切换到$t(com.affine.pageMode)`
       */
     ["com.affine.cmdk.switch-to-page"](): string;
     /**
-      * `Delete`
+      * `删除`
       */
     ["com.affine.collection-bar.action.tooltip.delete"](): string;
     /**
-      * `Edit`
+      * `编辑`
       */
     ["com.affine.collection-bar.action.tooltip.edit"](): string;
     /**
-      * `Pin to sidebar`
+      * `固定到侧边栏`
       */
     ["com.affine.collection-bar.action.tooltip.pin"](): string;
     /**
-      * `Unpin`
+      * `取消固定`
       */
     ["com.affine.collection-bar.action.tooltip.unpin"](): string;
     /**
-      * `Do you want to add a document to the current collection? If it is filtered based on rules, this will add a set of included rules.`
+      * `您想添加一篇文档到当前精选吗？如果根据规则进行过滤，这将添加一组包含这篇文档的规则。`
       */
     ["com.affine.collection.add-doc.confirm.description"](): string;
     /**
-      * `Add new doc to this collection`
+      * `添加新的文档到精选`
       */
     ["com.affine.collection.add-doc.confirm.title"](): string;
     /**
-      * `Doc already exists`
+      * `文档已存在`
       */
     ["com.affine.collection.addPage.alreadyExists"](): string;
     /**
-      * `Added successfully`
+      * `页面添加成功`
       */
     ["com.affine.collection.addPage.success"](): string;
     /**
-      * `Add docs`
+      * `添加文档`
       */
     ["com.affine.collection.addPages"](): string;
     /**
-      * `Add rules`
+      * `添加规则`
       */
     ["com.affine.collection.addRules"](): string;
     /**
-      * `All collections`
+      * `所有精选`
       */
     ["com.affine.collection.allCollections"](): string;
     /**
-      * `Empty collection`
+      * `空的精选`
       */
     ["com.affine.collection.emptyCollection"](): string;
     /**
-      * `Collection is a smart folder where you can manually add docs or automatically add docs through rules.`
+      * `精选是一个智能文件夹，您可以手动添加文档或通过规则自动添加文档。`
       */
     ["com.affine.collection.emptyCollectionDescription"](): string;
     /**
-      * `HELP INFO`
+      * `帮助信息`
       */
     ["com.affine.collection.helpInfo"](): string;
     /**
-      * `Edit collection`
+      * `编辑精选`
       */
     ["com.affine.collection.menu.edit"](): string;
     /**
-      * `Rename`
+      * `重命名`
       */
     ["com.affine.collection.menu.rename"](): string;
     /**
-      * `Removed successfully`
+      * `成功移除`
       */
     ["com.affine.collection.removePage.success"](): string;
     /**
-      * `No collections`
+      * `精选为空`
       */
     ["com.affine.collections.empty.message"](): string;
     /**
-      * `New collection`
+      * `新建精选`
       */
     ["com.affine.collections.empty.new-collection-button"](): string;
     /**
-      * `Collections`
+      * `精选`
       */
     ["com.affine.collections.header"](): string;
     /**
-      * `Couldn't copy image`
+      * `无法复制图片`
       */
     ["com.affine.copy.asImage.notAvailable.title"](): string;
     /**
-      * `The 'Copy as image' feature is only available on our desktop app. Please download and install the client to access this feature.`
+      * `“复制为图片”功能仅在客户端中可用，请下载并安装客户端来使用此功能。`
       */
     ["com.affine.copy.asImage.notAvailable.message"](): string;
     /**
-      * `Download Client`
+      * `下载客户端`
       */
     ["com.affine.copy.asImage.notAvailable.action"](): string;
     /**
-      * `Image copied`
+      * `图片已复制`
       */
     ["com.affine.copy.asImage.success"](): string;
     /**
-      * `Image copy failed`
+      * `图片复制失败`
       */
     ["com.affine.copy.asImage.failed"](): string;
     /**
-      * `Copy as Markdown`
+      * `复制为 Markdown`
       */
     ["com.affine.export.copy-markdown"](): string;
     /**
-      * `Copied as Markdown`
+      * `已复制为 Markdown`
       */
     ["com.affine.export.copied-as-markdown"](): string;
     /**
-      * `Cancel`
+      * `取消`
       */
     ["com.affine.confirmModal.button.cancel"](): string;
     /**
-      * `Ok`
+      * `确认`
       */
     ["com.affine.confirmModal.button.ok"](): string;
     /**
-      * `Current year`
+      * `今年`
       */
     ["com.affine.currentYear"](): string;
     /**
-      * `Deleting {{count}} tags cannot be undone, please proceed with caution.`
+      * `正在删除 {{count}} 个标签，此操作无法撤销，所有内容将会丢失。`
       */
     ["com.affine.delete-tags.confirm.multi-tag-description"](options: {
         readonly count: string;
     }): string;
     /**
-      * `Delete tag?`
+      * `删除标签？`
       */
     ["com.affine.delete-tags.confirm.title"](): string;
     /**
-      * `{{count}} tag deleted`
+      * `已删除 {{count}} 个标签`
     
-      * - com.affine.delete-tags.count_one: `{{count}} tag deleted`
+      * - com.affine.delete-tags.count_one: `已删除 {{count}} 个标签`
     
-      * - com.affine.delete-tags.count_other: `{{count}} tags deleted`
+      * - com.affine.delete-tags.count_other: `已删除 {{count}} 个标签`
       */
     ["com.affine.delete-tags.count"](options: {
         readonly count: string | number | bigint;
     }): string;
     /**
-      * `{{count}} tag deleted`
+      * `已删除 {{count}} 个标签`
       */
     ["com.affine.delete-tags.count_one"](options: {
         readonly count: string | number | bigint;
     }): string;
     /**
-      * `{{count}} tags deleted`
+      * `已删除 {{count}} 个标签`
       */
     ["com.affine.delete-tags.count_other"](options: {
         readonly count: string | number | bigint;
     }): string;
     /**
-      * `Delete workspace from this device and optionally delete all data.`
+      * `从此设备删除工作区，并可选择删除所有数据。`
       */
     ["com.affine.deleteLeaveWorkspace.description"](): string;
     /**
-      * `Leave workspace`
+      * `退出工作区`
       */
     ["com.affine.deleteLeaveWorkspace.leave"](): string;
     /**
-      * `After you leave, you will not be able to access content within this workspace.`
+      * `退出后，您将无法再访问此工作区的内容。`
       */
     ["com.affine.deleteLeaveWorkspace.leaveDescription"](): string;
     /**
-      * `Docs`
+      * `文档`
       */
     ["com.affine.docs.header"](): string;
     /**
-      * `Draw with a blank whiteboard`
+      * `在空白白板画画`
       */
     ["com.affine.draw_with_a_blank_whiteboard"](): string;
     /**
-      * `Earlier`
+      * `更早`
       */
     ["com.affine.earlier"](): string;
     /**
-      * `Edgeless mode`
+      * `无界模式`
       */
     ["com.affine.edgelessMode"](): string;
     /**
-      * `Cancel`
+      * `取消`
       */
     ["com.affine.editCollection.button.cancel"](): string;
     /**
-      * `Create`
+      * `创建`
       */
     ["com.affine.editCollection.button.create"](): string;
     /**
-      * `Create collection`
+      * `创建精选`
       */
     ["com.affine.editCollection.createCollection"](): string;
     /**
-      * `Filters`
+      * `过滤`
       */
     ["com.affine.editCollection.filters"](): string;
     /**
-      * `Docs`
+      * `文档`
       */
     ["com.affine.editCollection.pages"](): string;
     /**
-      * `Clear selected`
+      * `清除页面`
       */
     ["com.affine.editCollection.pages.clear"](): string;
     /**
-      * `Rename collection`
+      * `重命名精选`
       */
     ["com.affine.editCollection.renameCollection"](): string;
     /**
-      * `Rules`
+      * `规则`
       */
     ["com.affine.editCollection.rules"](): string;
     /**
-      * `No results`
+      * `显示 1 篇文档。`
+      */
+    ["com.affine.editCollection.rules.countTips.one"](): string;
+    /**
+      * `显示 0 篇文档。`
+      */
+    ["com.affine.editCollection.rules.countTips.zero"](): string;
+    /**
+      * `没有结果`
       */
     ["com.affine.editCollection.rules.empty.noResults"](): string;
     /**
-      * `No docs meet the filtering rules`
+      * `没有文档符合过滤规则`
       */
     ["com.affine.editCollection.rules.empty.noResults.tips"](): string;
     /**
-      * `No rules`
+      * `没有规则`
       */
     ["com.affine.editCollection.rules.empty.noRules"](): string;
     /**
-      * `Add selected doc`
+      * `添加被选中的文档`
       */
     ["com.affine.editCollection.rules.include.add"](): string;
     /**
-      * `is`
+      * `是`
       */
     ["com.affine.editCollection.rules.include.is"](): string;
     /**
-      * `is-not`
+      * `不是`
       */
     ["com.affine.editCollection.rules.include.is-not"](): string;
     /**
-      * `Doc`
+      * `文档`
       */
     ["com.affine.editCollection.rules.include.page"](): string;
     /**
-      * `“Selected docs” refers to manually adding docs rather than automatically adding them through rule matching. You can manually add docs through the “Add selected docs” option or by dragging and dropping.`
+      * `“选定文档”是指手动添加文档，而不是通过规则匹配自动添加文档。 您可以通过“添加所选文档”选项或通过拖放来手动添加文档。`
       */
     ["com.affine.editCollection.rules.include.tips"](): string;
     /**
-      * `What is "Selected docs"？`
+      * `什么是“选定文档”？`
       */
     ["com.affine.editCollection.rules.include.tipsTitle"](): string;
     /**
-      * `Selected docs`
+      * `选中的文档`
       */
     ["com.affine.editCollection.rules.include.title"](): string;
     /**
-      * `Preview`
+      * `预览`
       */
     ["com.affine.editCollection.rules.preview"](): string;
     /**
-      * `Reset`
+      * `重置`
       */
     ["com.affine.editCollection.rules.reset"](): string;
     /**
-      * `automatically`
+      * `自动`
       */
     ["com.affine.editCollection.rules.tips.highlight"](): string;
     /**
-      * `Save`
+      * `保存`
       */
     ["com.affine.editCollection.save"](): string;
     /**
-      * `Save as new collection`
+      * `保存精选`
       */
     ["com.affine.editCollection.saveCollection"](): string;
     /**
-      * `Search doc...`
+      * `搜索文档...`
       */
     ["com.affine.editCollection.search.placeholder"](): string;
     /**
-      * `Untitled collection`
+      * `未命名精选`
       */
     ["com.affine.editCollection.untitledCollection"](): string;
     /**
-      * `Update collection`
+      * `更新精选`
       */
     ["com.affine.editCollection.updateCollection"](): string;
     /**
-      * `Collection is a smart folder where you can manually add docs or automatically add docs through rules.`
+      * `精选是一个智能文件夹，您可以手动添加页面或通过规则自动添加文档。`
       */
     ["com.affine.editCollectionName.createTips"](): string;
     /**
-      * `Name`
+      * `名称`
       */
     ["com.affine.editCollectionName.name"](): string;
     /**
-      * `Collection name`
+      * `精选名称`
       */
     ["com.affine.editCollectionName.name.placeholder"](): string;
     /**
-      * `Default to Edgeless mode`
+      * `默认为无界模式`
       */
     ["com.affine.editorDefaultMode.edgeless"](): string;
     /**
-      * `Default to Page mode`
+      * `默认为文档模式`
       */
     ["com.affine.editorDefaultMode.page"](): string;
     /**
-      * `Add docs`
+      * `添加文档`
       */
     ["com.affine.empty.collection-detail.action.add-doc"](): string;
     /**
-      * `Add rules`
+      * `添加规则`
       */
     ["com.affine.empty.collection-detail.action.add-rule"](): string;
     /**
-      * `Collection is a smart folder where you can manually add docs or automatically add docs through rules.`
+      * `精选是一个智能文件夹，您可以手动添加文档或通过规则自动添加文档。`
       */
     ["com.affine.empty.collection-detail.description"](): string;
     /**
-      * `Empty collection`
+      * `空的精选`
       */
     ["com.affine.empty.collection-detail.title"](): string;
     /**
-      * `Add collection`
+      * `添加精选`
       */
     ["com.affine.empty.collections.action.new-collection"](): string;
     /**
-      * `Create your first collection here.`
+      * `在这里创建您的第一个精选。`
       */
     ["com.affine.empty.collections.description"](): string;
     /**
-      * `Collection management`
+      * `精选管理`
       */
     ["com.affine.empty.collections.title"](): string;
     /**
-      * `New doc`
+      * `新建文档`
       */
     ["com.affine.empty.docs.action.new-doc"](): string;
     /**
-      * `Create your first doc here.`
+      * `在这里创建你的第一个文档。`
       */
     ["com.affine.empty.docs.all-description"](): string;
     /**
-      * `Docs management`
+      * `文档管理`
       */
     ["com.affine.empty.docs.title"](): string;
     /**
-      * `Deleted docs will appear here.`
+      * `已删除的文档将显示在此处。`
       */
     ["com.affine.empty.docs.trash-description"](): string;
     /**
-      * `Create a new tag for your documents.`
+      * `为您的文档创建一个新标签。`
       */
     ["com.affine.empty.tags.description"](): string;
     /**
-      * `Tag management`
+      * `标签管理`
       */
     ["com.affine.empty.tags.title"](): string;
     /**
-      * `There's no doc here yet`
+      * `这里还没有文档`
       */
     ["com.affine.emptyDesc"](): string;
     /**
-      * `Cancel`
+      * `取消`
       */
     ["com.affine.enableAffineCloudModal.button.cancel"](): string;
     /**
-      * `Enable 识光 Sync for {{workspaceName}}`
+      * `为 {{workspaceName}} 启用 识光 同步`
       */
     ["com.affine.enableAffineCloudModal.custom-server.title"](options: {
         readonly workspaceName: string;
     }): string;
     /**
-      * `Choose where this workspace will sync.`
+      * `选择这个工作区要同步到的位置。`
       */
     ["com.affine.enableAffineCloudModal.custom-server.description"](): string;
     /**
-      * `Enable 识光 Sync`
+      * `启用 识光 同步`
       */
     ["com.affine.enableAffineCloudModal.custom-server.enable"](): string;
     /**
-      * `Hide error`
+      * `隐藏错误详情`
       */
     ["com.affine.error.hide-error"](): string;
     /**
-      * `Doc content is missing`
+      * `文档内容丢失`
       */
     ["com.affine.error.no-page-root.title"](): string;
     /**
-      * `It takes longer to load the doc content.`
+      * `加载文档内容需要稍长的时间。`
       */
     ["com.affine.error.loading-timeout-error"](): string;
     /**
-      * `Refetch`
+      * `重新连接`
       */
     ["com.affine.error.refetch"](): string;
     /**
-      * `Reload 识光`
+      * `重新加载 识光`
       */
     ["com.affine.error.reload"](): string;
     /**
-      * `Refresh`
+      * `刷新`
       */
     ["com.affine.error.retry"](): string;
     /**
-      * `Something is wrong...`
+      * `出了点问题...`
       */
     ["com.affine.error.unexpected-error.title"](): string;
     /**
-      * `Please request a new reset password link.`
+      * `请重新请求重置密码链接。`
       */
     ["com.affine.expired.page.subtitle"](): string;
     /**
-      * `Please request a new link.`
+      * `请获取新的邀请链接`
       */
     ["com.affine.expired.page.new-subtitle"](): string;
     /**
-      * `This link has expired...`
+      * `链接已失效...`
       */
     ["com.affine.expired.page.title"](): string;
     /**
-      * `Please try it again later.`
+      * `请稍后再试。`
       */
     ["com.affine.export.error.message"](): string;
     /**
-      * `Export failed due to an unexpected error`
+      * `未知错误引发导出失败`
       */
     ["com.affine.export.error.title"](): string;
     /**
-      * `Print`
+      * `打印`
       */
     ["com.affine.export.print"](): string;
     /**
-      * `Please open the download folder to check.`
+      * `请打开下载文件夹以查看。`
       */
     ["com.affine.export.success.message"](): string;
     /**
-      * `Exported successfully`
+      * `导出成功`
       */
     ["com.affine.export.success.title"](): string;
     /**
-      * `Add to favourites`
+      * `加入收藏`
       */
     ["com.affine.favoritePageOperation.add"](): string;
     /**
-      * `Remove from favourites`
+      * `从收藏中移除`
       */
     ["com.affine.favoritePageOperation.remove"](): string;
     /**
-      * `Filter`
+      * `筛选`
       */
     ["com.affine.filter"](): string;
     /**
-      * `Add Filter Rule`
+      * `添加筛选规则`
       */
     ["com.affine.filter.add-filter"](): string;
     /**
-      * `after`
+      * `晚于`
       */
     ["com.affine.filter.after"](): string;
     /**
-      * `before`
+      * `早于`
       */
     ["com.affine.filter.before"](): string;
     /**
-      * `contains all`
+      * `包含以下所有`
       */
     ["com.affine.filter.contains all"](): string;
     /**
-      * `contains one of`
+      * `包含以下之一`
       */
     ["com.affine.filter.contains one of"](): string;
     /**
-      * `does not contains all`
+      * `不包含以下所有`
       */
     ["com.affine.filter.does not contains all"](): string;
     /**
-      * `does not contains one of`
+      * `不包含以下之一`
       */
     ["com.affine.filter.does not contains one of"](): string;
     /**
-      * `Empty`
+      * `空`
       */
     ["com.affine.filter.empty-tag"](): string;
     /**
-      * `Empty`
+      * `空`
       */
     ["com.affine.filter.empty"](): string;
     /**
-      * `false`
+      * `否`
       */
     ["com.affine.filter.false"](): string;
     /**
-      * `is`
+      * `为`
       */
     ["com.affine.filter.is"](): string;
     /**
-      * `is empty`
+      * `为空`
       */
     ["com.affine.filter.is empty"](): string;
     /**
-      * `is not empty`
+      * `不为空`
       */
     ["com.affine.filter.is not empty"](): string;
     /**
-      * `Favourited`
+      * `已收藏`
       */
     ["com.affine.filter.is-favourited"](): string;
     /**
-      * `Shared`
+      * `已分享`
       */
     ["com.affine.filter.is-public"](): string;
     /**
-      * `between`
+      * `介于`
       */
     ["com.affine.filter.between"](): string;
     /**
-      * `last 3 days`
+      * `过去 3 天`
       */
     ["com.affine.filter.last 3 days"](): string;
     /**
-      * `last 7 days`
+      * `过去 7 天`
       */
     ["com.affine.filter.last 7 days"](): string;
     /**
-      * `last 15 days`
+      * `过去 15 天`
       */
     ["com.affine.filter.last 15 days"](): string;
     /**
-      * `last 30 days`
+      * `过去 30 天`
       */
     ["com.affine.filter.last 30 days"](): string;
     /**
-      * `this week`
+      * `本周`
       */
     ["com.affine.filter.this week"](): string;
     /**
-      * `this month`
+      * `本月`
       */
     ["com.affine.filter.this month"](): string;
     /**
-      * `this quarter`
+      * `本季度`
       */
     ["com.affine.filter.this quarter"](): string;
     /**
-      * `this year`
+      * `今年`
       */
     ["com.affine.filter.this year"](): string;
     /**
-      * `last`
+      * `最近`
       */
     ["com.affine.filter.last"](): string;
     /**
-      * `Save view`
+      * `保存视图`
       */
     ["com.affine.filter.save-view"](): string;
     /**
-      * `true`
+      * `是`
       */
     ["com.affine.filter.true"](): string;
     /**
-      * `Add filter`
+      * `添加筛选条件`
       */
     ["com.affine.filterList.button.add"](): string;
     /**
-      * `Display`
+      * `显示`
       */
     ["com.affine.explorer.display-menu.button"](): string;
     /**
-      * `Grouping`
+      * `分组`
       */
     ["com.affine.explorer.display-menu.grouping"](): string;
     /**
-      * `Remove group`
+      * `移除分组`
       */
     ["com.affine.explorer.display-menu.grouping.remove"](): string;
     /**
-      * `Ordering`
+      * `排序`
       */
     ["com.affine.explorer.display-menu.ordering"](): string;
     /**
-      * `View in Page mode`
+      * `以页面模式查看`
       */
     ["com.affine.header.mode-switch.page"](): string;
     /**
-      * `View in Edgeless Canvas`
+      * `以无界画布查看`
       */
     ["com.affine.header.mode-switch.edgeless"](): string;
     /**
-      * `Add tag`
+      * `添加标签`
       */
     ["com.affine.header.option.add-tag"](): string;
     /**
-      * `Duplicate`
+      * `复制`
       */
     ["com.affine.header.option.duplicate"](): string;
     /**
-      * `Open in desktop app`
+      * `在客户端中打开`
       */
     ["com.affine.header.option.open-in-desktop"](): string;
     /**
-      * `View all frames`
+      * `查看所有的 Frames`
       */
     ["com.affine.header.option.view-frame"](): string;
     /**
-      * `View table of contents`
+      * `查看目录`
       */
     ["com.affine.header.option.view-toc"](): string;
     /**
-      * `Table of contents`
+      * `目录`
       */
     ["com.affine.header.menu.toc"](): string;
     /**
-      * `Contact us`
+      * `联系我们`
       */
     ["com.affine.helpIsland.contactUs"](): string;
     /**
-      * `Getting started`
+      * `开始使用`
       */
     ["com.affine.helpIsland.gettingStarted"](): string;
     /**
-      * `Help and feedback`
+      * `帮助与反馈`
       */
     ["com.affine.helpIsland.helpAndFeedback"](): string;
     /**
-      * `Cancel`
+      * `取消`
       */
     ["com.affine.history-vision.tips-modal.cancel"](): string;
     /**
-      * `Enable 识光 Sync`
+      * `启用 识光 同步`
       */
     ["com.affine.history-vision.tips-modal.confirm"](): string;
     /**
-      * `Version history can't work with local workspace. Enable 识光 Sync for this workspace to use version history.`
+      * `历史版本功能不支持本地工作区。启用 识光 同步后，就可以为这个工作区使用历史版本。`
       */
     ["com.affine.history-vision.tips-modal.description"](): string;
     /**
-      * `Version history needs 识光 Sync`
+      * `历史版本需要 识光 同步`
       */
     ["com.affine.history-vision.tips-modal.title"](): string;
     /**
-      * `Back to doc`
+      * `返回文档`
       */
     ["com.affine.history.back-to-page"](): string;
     /**
-      * `You are about to restore the current version of the doc to the latest version available. This action will overwrite any changes made prior to the latest version.`
+      * `您即将将文档的当前版本恢复到可用的最新版本。 此操作将覆盖最新版本之前所做的任何更改。`
       */
     ["com.affine.history.confirm-restore-modal.hint"](): string;
     /**
-      * `Load more`
+      * `加载更多`
       */
     ["com.affine.history.confirm-restore-modal.load-more"](): string;
     /**
-      * `LIMITED DOC HISTORY`
+      * `有限的文档历史`
       */
     ["com.affine.history.confirm-restore-modal.plan-prompt.limited-title"](): string;
     /**
-      * `HELP INFO`
+      * `帮助信息`
       */
     ["com.affine.history.confirm-restore-modal.plan-prompt.title"](): string;
     /**
-      * `Upgrade`
+      * `升级`
       */
     ["com.affine.history.confirm-restore-modal.pro-plan-prompt.upgrade"](): string;
     /**
-      * `Restore`
+      * `恢复`
       */
     ["com.affine.history.confirm-restore-modal.restore"](): string;
     /**
-      * `This document is such a spring chicken, it hasn't sprouted a single historical sprig yet!`
+      * `这篇文档尚未孕育出一丝历史的枝芽！`
       */
     ["com.affine.history.empty-prompt.description"](): string;
     /**
-      * `Empty`
+      * `历史记录为空`
       */
     ["com.affine.history.empty-prompt.title"](): string;
     /**
-      * `Restore current version`
+      * `恢复当前版本`
       */
     ["com.affine.history.restore-current-version"](): string;
     /**
-      * `Version history`
+      * `历史版本`
       */
     ["com.affine.history.version-history"](): string;
     /**
-      * `View history version`
+      * `查看历史版本`
       */
     ["com.affine.history.view-history-version"](): string;
     /**
-      * `Create into a New Workspace`
+      * `创建至新的工作区`
       */
     ["com.affine.import-template.dialog.createDocToNewWorkspace"](): string;
     /**
-      * `Create doc to "{{workspace}}"`
+      * `在"{{workspace}}"中新建文档`
       */
     ["com.affine.import-template.dialog.createDocToWorkspace"](options: {
         readonly workspace: string;
     }): string;
     /**
-      * `Create doc with "{{templateName}}" template`
+      * `使用"{{templateName}}"模版创建文档`
       */
     ["com.affine.import-template.dialog.createDocWithTemplate"](options: {
         readonly templateName: string;
     }): string;
     /**
-      * `Failed to import template, please try again.`
+      * `插入模板失败，请重试。`
       */
     ["com.affine.import-template.dialog.errorImport"](): string;
     /**
-      * `Failed to load template, please try again.`
+      * `读取模版失败，请重试。`
       */
     ["com.affine.import-template.dialog.errorLoad"](): string;
     /**
-      * `Create into a New Workspace`
+      * `创建至新的工作区`
       */
     ["com.affine.import-clipper.dialog.createDocToNewWorkspace"](): string;
     /**
-      * `Create doc to "{{workspace}}"`
+      * `在"{{workspace}}"中新建文档`
       */
     ["com.affine.import-clipper.dialog.createDocToWorkspace"](options: {
         readonly workspace: string;
     }): string;
     /**
-      * `Create doc from Web Clipper`
+      * `从Web Clipper创建文档`
       */
     ["com.affine.import-clipper.dialog.createDocFromClipper"](): string;
     /**
-      * `Failed to import content, please try again.`
+      * `导入内容失败，请重试。`
       */
     ["com.affine.import-clipper.dialog.errorImport"](): string;
     /**
-      * `Failed to load content, please try again.`
+      * `读取内容失败，请重试。`
       */
     ["com.affine.import-clipper.dialog.errorLoad"](): string;
     /**
-      * `Support Markdown/Notion`
+      * `支持 Markdown/Notion`
       */
     ["com.affine.import_file"](): string;
     /**
-      * `识光 workspace data`
+      * `识光 工作区数据`
       */
     ["com.affine.import.affine-workspace-data"](): string;
     /**
-      * `Bear (.bear2bk) (Experimental)`
+      * `Bear（.bear2bk，实验性）`
       */
     ["com.affine.import.bear"](): string;
     /**
-      * `Import your Bear note backup. Tags will be converted to 识光 tags and folders.`
+      * `导入你的 Bear 笔记备份。标签将转换为 识光 标签和文件夹。`
       */
     ["com.affine.import.bear.tooltip"](): string;
     /**
-      * `Docx`
+      * `Microsoft Word (.docx)`
       */
     ["com.affine.import.docx"](): string;
     /**
-      * `Import your .docx file.`
+      * `导入你的 .docx 文件。`
       */
     ["com.affine.import.docx.tooltip"](): string;
     /**
@@ -2648,115 +2656,115 @@ export function useLumiBookI18N(): {
       */
     ["com.affine.import.html-files"](): string;
     /**
-      * `This is an experimental feature that is not perfect and may cause your data to be missing after import.`
+      * `这是一个实验性功能，可能不完全完美，导入后可能会导致数据丢失。`
       */
     ["com.affine.import.html-files.tooltip"](): string;
     /**
-      * `Markdown files (.md)`
+      * `Markdown 文件 (.md)`
       */
     ["com.affine.import.markdown-files"](): string;
     /**
-      * `Markdown with media files (.zip)`
+      * `Markdown 文件（带媒体文件） (.zip)`
       */
     ["com.affine.import.markdown-with-media-files"](): string;
     /**
-      * `Please upload a markdown zip file with attachments, experimental function, there may be data loss.`
+      * `请上传带有附件的 Markdown 压缩包，这是一个实验性功能，可能不完全完美，导入后可能会导致数据丢失。`
       */
     ["com.affine.import.markdown-with-media-files.tooltip"](): string;
     /**
-      * `If you'd like to request support for additional file types, feel free to let us know on`
+      * `如果您希望请求支持其他文件类型，请随时告诉我们`
       */
     ["com.affine.import.modal.tip"](): string;
     /**
-      * `Notion (Experimental)`
+      * `Notion`
       */
     ["com.affine.import.notion"](): string;
     /**
-      * `Import your Notion data. Supported import formats: HTML with subpages.`
+      * `导入您的 Notion 数据。支持导入格式：HTML 带子页面。`
       */
     ["com.affine.import.notion.tooltip"](): string;
     /**
-      * `OneNote (Experimental)`
+      * `OneNote（实验性）`
       */
     ["com.affine.import.onenote"](): string;
     /**
-      * `Import a OneNote .one, .onetoc2, or .onepkg file. Available in the desktop app.`
+      * `导入 OneNote .one、.onetoc2 或 .onepkg 文件。仅桌面客户端可用。`
       */
     ["com.affine.import.onenote.tooltip"](): string;
     /**
-      * `This format importer is available in the 识光 desktop app.`
+      * `该格式导入器仅在 识光 桌面客户端可用。`
       */
     ["com.affine.import.onenote.desktop-only"](): string;
     /**
-      * `Obsidian Vault (Experimental)`
+      * `Obsidian 仓库（实验性）`
       */
     ["com.affine.import.obsidian"](): string;
     /**
-      * `Import an Obsidian vault. Select a folder to import all notes, images, and assets with wikilinks resolved.`
+      * `导入 Obsidian 仓库。选择一个文件夹以导入所有笔记、图片和资源，并解析 wiki 链接。`
       */
     ["com.affine.import.obsidian.tooltip"](): string;
     /**
-      * `Snapshot`
+      * `快照`
       */
     ["com.affine.import.snapshot"](): string;
     /**
-      * `Import your 识光 workspace and page snapshot file.`
+      * `导入您的 识光 工作区和页面快照文件。`
       */
     ["com.affine.import.snapshot.tooltip"](): string;
     /**
-      * `.affine file`
+      * `.affine 文件`
       */
     ["com.affine.import.dotaffinefile"](): string;
     /**
-      * `Import your 识光 db file (.affine)`
+      * `导入您的识光数据库文件 (.affine)`
       */
     ["com.affine.import.dotaffinefile.tooltip"](): string;
     /**
-      * `Import failed, please try again.`
+      * `导入失败，请重试。`
       */
     ["com.affine.import.status.failed.message"](): string;
     /**
-      * `No file selected`
+      * `未选择文件`
       */
     ["com.affine.import.status.failed.message.no-file-selected"](): string;
     /**
-      * `Import failure`
+      * `导入失败`
       */
     ["com.affine.import.status.failed.title"](): string;
     /**
-      * `Importing your workspace data, please wait patiently.`
+      * `正在导入您的数据，请耐心等待。`
       */
     ["com.affine.import.status.importing.message"](): string;
     /**
-      * `Importing...`
+      * `导入中...`
       */
     ["com.affine.import.status.importing.title"](): string;
     /**
-      * `Your document has been imported successfully, thank you for choosing 识光. Any questions please feel free to feedback to us`
+      * `您的文档已成功导入，感谢选择 识光。有任何问题请随时反馈给我们`
       */
     ["com.affine.import.status.success.message"](): string;
     /**
-      * `Import completed`
+      * `导入完成`
       */
     ["com.affine.import.status.success.title"](): string;
     /**
-      * `Cancel`
+      * `取消`
       */
     ["com.affine.inviteModal.button.cancel"](): string;
     /**
-      * `Maybe later`
+      * `稍后`
       */
     ["com.affine.issue-feedback.cancel"](): string;
     /**
-      * `Create issue on GitHub`
+      * `在 GitHUb 分享反馈`
       */
     ["com.affine.issue-feedback.confirm"](): string;
     /**
-      * `Got feedback? We're all ears! Create an issue on GitHub to let us know your thoughts and suggestions`
+      * `有任何反馈？ 我们都洗耳恭听！ 在 GitHub 分享反馈，让我们了解您的想法和建议。`
       */
     ["com.affine.issue-feedback.description"](): string;
     /**
-      * `Share your feedback on GitHub`
+      * `在 GitHub 分享您的反馈`
       */
     ["com.affine.issue-feedback.title"](): string;
     /**
@@ -2764,363 +2772,363 @@ export function useLumiBookI18N(): {
       */
     ["com.affine.journal.app-sidebar-title"](): string;
     /**
-      * `{{count}} more articles`
+      * `还有 {{count}} 篇文章`
       */
     ["com.affine.journal.conflict-show-more"](options: {
         readonly count: string;
     }): string;
     /**
-      * `Created`
+      * `创建`
       */
     ["com.affine.journal.created-today"](): string;
     /**
-      * `You haven't created anything yet`
+      * `你还没有创建任何东西`
       */
     ["com.affine.journal.daily-count-created-empty-tips"](): string;
     /**
-      * `You haven't updated anything yet`
+      * `你还没有任何更新`
       */
     ["com.affine.journal.daily-count-updated-empty-tips"](): string;
     /**
-      * `Updated`
+      * `更新`
       */
     ["com.affine.journal.updated-today"](): string;
     /**
-      * `No journal for this day`
+      * `暂无日程`
       */
     ["com.affine.journal.placeholder.title"](): string;
     /**
-      * `Create one to start writing.`
+      * `创建一篇日记，开始记录吧。`
       */
     ["com.affine.journal.placeholder.description"](): string;
     /**
-      * `Create journal`
+      * `创建日记`
       */
     ["com.affine.journal.placeholder.create"](): string;
     /**
-      * `Just now`
+      * `就是现在`
       */
     ["com.affine.just-now"](): string;
     /**
-      * `Align center`
+      * `居中对齐`
       */
     ["com.affine.keyboardShortcuts.alignCenter"](): string;
     /**
-      * `Align left`
+      * `左对齐`
       */
     ["com.affine.keyboardShortcuts.alignLeft"](): string;
     /**
-      * `Align right`
+      * `右对齐`
       */
     ["com.affine.keyboardShortcuts.alignRight"](): string;
     /**
-      * `Append to daily note`
+      * `添加日常笔记快捷键`
       */
     ["com.affine.keyboardShortcuts.appendDailyNote"](): string;
     /**
-      * `Body text`
+      * `正文`
       */
     ["com.affine.keyboardShortcuts.bodyText"](): string;
     /**
-      * `Bold`
+      * `粗体`
       */
     ["com.affine.keyboardShortcuts.bold"](): string;
     /**
-      * `Cancel`
+      * `取消`
       */
     ["com.affine.keyboardShortcuts.cancel"](): string;
     /**
-      * `Code block`
+      * `代码块`
       */
     ["com.affine.keyboardShortcuts.codeBlock"](): string;
     /**
-      * `Copy private link`
+      * `复制私有链接`
       */
     ["com.affine.keyboardShortcuts.copy-private-link"](): string;
     /**
-      * `Connector`
+      * `连接`
       */
     ["com.affine.keyboardShortcuts.connector"](): string;
     /**
-      * `Divider`
+      * `分割线`
       */
     ["com.affine.keyboardShortcuts.divider"](): string;
     /**
-      * `Expand/collapse sidebar`
+      * `展开/折叠侧边栏`
       */
     ["com.affine.keyboardShortcuts.expandOrCollapseSidebar"](): string;
     /**
-      * `Go back`
+      * `返回`
       */
     ["com.affine.keyboardShortcuts.goBack"](): string;
     /**
-      * `Go forward`
+      * `前进`
       */
     ["com.affine.keyboardShortcuts.goForward"](): string;
     /**
-      * `Group`
+      * `组快捷键`
       */
     ["com.affine.keyboardShortcuts.group"](): string;
     /**
-      * `Group as database`
+      * `组数据库快捷键`
       */
     ["com.affine.keyboardShortcuts.groupDatabase"](): string;
     /**
-      * `Hand`
+      * `抓手快捷键`
       */
     ["com.affine.keyboardShortcuts.hand"](): string;
     /**
-      * `Heading {{number}}`
+      * `标题 {{number}}`
       */
     ["com.affine.keyboardShortcuts.heading"](options: {
         readonly number: string;
     }): string;
     /**
-      * `Image`
+      * `图像`
       */
     ["com.affine.keyboardShortcuts.image"](): string;
     /**
-      * `Increase indent`
+      * `增加缩进`
       */
     ["com.affine.keyboardShortcuts.increaseIndent"](): string;
     /**
-      * `Inline code`
+      * `行内代码`
       */
     ["com.affine.keyboardShortcuts.inlineCode"](): string;
     /**
-      * `Italic`
+      * `斜体`
       */
     ["com.affine.keyboardShortcuts.italic"](): string;
     /**
-      * `Hyperlink (with selected text)`
+      * `超链接（选定文本）`
       */
     ["com.affine.keyboardShortcuts.link"](): string;
     /**
-      * `Move down`
+      * `下移`
       */
     ["com.affine.keyboardShortcuts.moveDown"](): string;
     /**
-      * `Move up`
+      * `上移`
       */
     ["com.affine.keyboardShortcuts.moveUp"](): string;
     /**
-      * `New doc`
+      * `新建文档`
       */
     ["com.affine.keyboardShortcuts.newPage"](): string;
     /**
-      * `Note`
+      * `笔记快捷键`
       */
     ["com.affine.keyboardShortcuts.note"](): string;
     /**
-      * `Pen`
+      * `笔`
       */
     ["com.affine.keyboardShortcuts.pen"](): string;
     /**
-      * `Quick search`
+      * `快速搜索`
       */
     ["com.affine.keyboardShortcuts.quickSearch"](): string;
     /**
-      * `Redo`
+      * `重做快捷键`
       */
     ["com.affine.keyboardShortcuts.redo"](): string;
     /**
-      * `Reduce indent`
+      * `减少缩进`
       */
     ["com.affine.keyboardShortcuts.reduceIndent"](): string;
     /**
-      * `Select`
+      * `选择`
       */
     ["com.affine.keyboardShortcuts.select"](): string;
     /**
-      * `Select all`
+      * `全选`
       */
     ["com.affine.keyboardShortcuts.selectAll"](): string;
     /**
-      * `Shape`
+      * `形状快捷键`
       */
     ["com.affine.keyboardShortcuts.shape"](): string;
     /**
-      * `Strikethrough`
+      * `删除线`
       */
     ["com.affine.keyboardShortcuts.strikethrough"](): string;
     /**
-      * `Check keyboard shortcuts quickly`
+      * `快速查看快捷键`
       */
     ["com.affine.keyboardShortcuts.subtitle"](): string;
     /**
-      * `Switch view`
+      * `切换视图快捷键`
       */
     ["com.affine.keyboardShortcuts.switch"](): string;
     /**
-      * `Text`
+      * `文本`
       */
     ["com.affine.keyboardShortcuts.text"](): string;
     /**
-      * `Keyboard shortcuts`
+      * `键盘快捷键`
       */
     ["com.affine.keyboardShortcuts.title"](): string;
     /**
-      * `Ungroup`
+      * `取消分组`
       */
     ["com.affine.keyboardShortcuts.unGroup"](): string;
     /**
-      * `Underline`
+      * `下划线`
       */
     ["com.affine.keyboardShortcuts.underline"](): string;
     /**
-      * `Undo`
+      * `撤销`
       */
     ["com.affine.keyboardShortcuts.undo"](): string;
     /**
-      * `Zoom in`
+      * `放大`
       */
     ["com.affine.keyboardShortcuts.zoomIn"](): string;
     /**
-      * `Zoom out`
+      * `缩小`
       */
     ["com.affine.keyboardShortcuts.zoomOut"](): string;
     /**
-      * `Zoom to 100%`
+      * `缩放至 100%`
       */
     ["com.affine.keyboardShortcuts.zoomTo100"](): string;
     /**
-      * `Zoom to fit`
+      * `自适应缩放`
       */
     ["com.affine.keyboardShortcuts.zoomToFit"](): string;
     /**
-      * `Zoom to selection`
+      * `缩放至选中元素`
       */
     ["com.affine.keyboardShortcuts.zoomToSelection"](): string;
     /**
-      * `Last 30 days`
+      * `过去 30 天`
       */
     ["com.affine.last30Days"](): string;
     /**
-      * `Last 7 days`
+      * `过去 7 天`
       */
     ["com.affine.last7Days"](): string;
     /**
-      * `Last month`
+      * `上个月`
       */
     ["com.affine.lastMonth"](): string;
     /**
-      * `Last week`
+      * `上周`
       */
     ["com.affine.lastWeek"](): string;
     /**
-      * `Last year`
+      * `去年`
       */
     ["com.affine.lastYear"](): string;
     /**
-      * `Loading`
+      * `加载中`
       */
     ["com.affine.loading"](): string;
     /**
-      * `Loading document content, please wait a moment.`
+      * `正在加载文档内容，请稍等片刻。`
       */
     ["com.affine.loading.description"](): string;
     /**
-      * `Rename`
+      * `重命名`
       */
     ["com.affine.menu.rename"](): string;
     /**
-      * `No results found`
+      * `找到 0 个结果`
       */
     ["com.affine.mobile.search.empty"](): string;
     /**
-      * `App version`
+      * `应用版本`
       */
     ["com.affine.mobile.setting.about.appVersion"](): string;
     /**
-      * `Editor version`
+      * `编辑器版本`
       */
     ["com.affine.mobile.setting.about.editorVersion"](): string;
     /**
-      * `About`
+      * `关于`
       */
     ["com.affine.mobile.setting.about.title"](): string;
     /**
-      * `Log In / Sign Up`
+      * `登录 / 注册`
       */
     ["com.affine.mobile.setting.account.sign-in"](): string;
     /**
-      * `Account & Data`
+      * `账户与数据`
       */
     ["com.affine.mobile.setting.account.title"](): string;
     /**
-      * `Font style`
+      * `字体样式`
       */
     ["com.affine.mobile.setting.appearance.font"](): string;
     /**
-      * `Display language`
+      * `显示语言`
       */
     ["com.affine.mobile.setting.appearance.language"](): string;
     /**
-      * `Color mode`
+      * `配色方案`
       */
     ["com.affine.mobile.setting.appearance.theme"](): string;
     /**
-      * `Appearance`
+      * `外观`
       */
     ["com.affine.mobile.setting.appearance.title"](): string;
     /**
-      * `Experimental features`
+      * `实验性功能`
       */
     ["com.affine.mobile.setting.experimental.features"](): string;
     /**
-      * `Experimental`
+      * `实验室`
       */
     ["com.affine.mobile.setting.experimental.title"](): string;
     /**
-      * `Settings`
+      * `设置`
       */
     ["com.affine.mobile.setting.header-title"](): string;
     /**
-      * `Star us on GitHub`
+      * `在 GitHub 为我们点亮星标`
       */
     ["com.affine.mobile.setting.others.github"](): string;
     /**
-      * `Discord group`
+      * `Discord群组`
       */
     ["com.affine.mobile.setting.others.discord"](): string;
     /**
-      * `Privacy`
+      * `隐私`
       */
     ["com.affine.mobile.setting.others.privacy"](): string;
     /**
-      * `Terms of use`
+      * `使用条款`
       */
     ["com.affine.mobile.setting.others.terms"](): string;
     /**
-      * `Privacy & others`
+      * `隐私 & 其他`
       */
     ["com.affine.mobile.setting.others.title"](): string;
     /**
-      * `Official website`
+      * `官网`
       */
     ["com.affine.mobile.setting.others.website"](): string;
     /**
-      * `Delete Account`
+      * `删除账号`
       */
     ["com.affine.mobile.setting.others.delete-account"](): string;
     /**
-      * `Danger Zone`
+      * `危险操作`
       */
     ["com.affine.mobile.setting.danger-zone.title"](): string;
     /**
-      * `Plans`
+      * `方案`
       */
     ["com.affine.mobile.setting.plans.title"](): string;
     /**
-      * `Collaborate in Cloud or Self-Hosted.`
+      * `云端协作或自主部署，随意选择。`
       */
     ["com.affine.mobile.setting.promo.description"](): string;
     /**
-      * `识光 for teams`
+      * `团队版识光`
       */
     ["com.affine.mobile.setting.promo.title"](): string;
     /**
-      * `More cloud storage and advanced features.`
+      * `更多云存储与进阶功能。`
       */
     ["com.affine.mobile.setting.subscription.description"](): string;
     /**
@@ -3128,309 +3136,309 @@ export function useLumiBookI18N(): {
       */
     ["com.affine.mobile.setting.subscription.title"](): string;
     /**
-      * `Invite a friend`
+      * `邀请好友`
       */
     ["com.affine.mobile.setting.support.invite"](): string;
     /**
-      * `Check out 识光 for notes, whiteboards, docs, and AI.`
+      * `来试试识光——笔记、白板、文档与 AI 一气呵成。`
       */
     ["com.affine.mobile.setting.support.invite-message"](): string;
     /**
-      * `Rate 识光`
+      * `为识光评分`
       */
     ["com.affine.mobile.setting.support.rate"](): string;
     /**
-      * `Support us`
+      * `支持我们`
       */
     ["com.affine.mobile.setting.support.title"](): string;
     /**
-      * `Want to keep data local?`
+      * `想要将数据保留在本地吗？`
       */
     ["com.affine.mobile.sign-in.skip.hint"](): string;
     /**
-      * `Start 识光 without an account`
+      * `略过登录直接启动识光`
       */
     ["com.affine.mobile.sign-in.skip.link"](): string;
     /**
-      * `Older than a month`
+      * `超过30天`
       */
     ["com.affine.moreThan30Days"](): string;
     /**
-      * `Cancel`
+      * `取消`
       */
     ["com.affine.moveToTrash.confirmModal.cancel"](): string;
     /**
-      * `Delete`
+      * `删除`
       */
     ["com.affine.moveToTrash.confirmModal.confirm"](): string;
     /**
-      * `{{title}} will be moved to trash`
+      * `{{title}} 将被移动到回收站`
       */
     ["com.affine.moveToTrash.confirmModal.description"](options: {
         readonly title: string;
     }): string;
     /**
-      * `{{ number }} docs will be moved to Trash`
+      * `{{ number }} 篇文档将移至回收站`
       */
     ["com.affine.moveToTrash.confirmModal.description.multiple"](options: {
         readonly number: string;
     }): string;
     /**
-      * `Delete doc?`
+      * `确定要删除文档？`
       */
     ["com.affine.moveToTrash.confirmModal.title"](): string;
     /**
-      * `Delete {{ number }} docs?`
+      * `确认删除 {{ number }} 篇文档吗？`
       */
     ["com.affine.moveToTrash.confirmModal.title.multiple"](options: {
         readonly number: string;
     }): string;
     /**
-      * `Move to trash`
+      * `移动到回收站`
       */
     ["com.affine.moveToTrash.title"](): string;
     /**
-      * `New tab`
+      * `新建标签页`
       */
     ["com.affine.multi-tab.new-tab"](): string;
     /**
-      * `识光 Sync keeps your workspace backed up, available across devices, and ready for collaboration and publishing.`
+      * `识光 同步可以帮你备份数据、跨设备使用，也支持多人协作和内容发布。`
       */
     ["com.affine.nameWorkspace.affine-cloud.description"](): string;
     /**
-      * `Sync across devices with 识光 Sync`
+      * `使用 识光 同步跨设备同步`
       */
     ["com.affine.nameWorkspace.affine-cloud.title"](): string;
     /**
-      * `In the web app, workspaces are saved in this browser. If disk space runs low, the browser may remove them automatically. For fully local storage, use the desktop app.`
+      * `网页版工作区保存在当前浏览器中。磁盘空间不足时，浏览器可能会自动移除它。如需完全本地保存，可以下载桌面客户端。`
       */
     ["com.affine.nameWorkspace.affine-cloud.web-tips"](): string;
     /**
-      * `Cancel`
+      * `取消`
       */
     ["com.affine.nameWorkspace.button.cancel"](): string;
     /**
-      * `Create`
+      * `创建`
       */
     ["com.affine.nameWorkspace.button.create"](): string;
     /**
-      * `A workspace is your virtual space to capture, create and plan as just one person or together as a team.`
+      * `工作区是为个人和团队进行引用、创建和规划的虚拟空间。`
       */
     ["com.affine.nameWorkspace.description"](): string;
     /**
-      * `Set a workspace name`
+      * `设置工作区名称`
       */
     ["com.affine.nameWorkspace.placeholder"](): string;
     /**
-      * `Workspace name`
+      * `工作区名称`
       */
     ["com.affine.nameWorkspace.subtitle.workspace-name"](): string;
     /**
-      * `Workspace type`
+      * `工作区类型`
       */
     ["com.affine.nameWorkspace.subtitle.workspace-type"](): string;
     /**
-      * `Name your workspace`
+      * `命名您的工作区`
       */
     ["com.affine.nameWorkspace.title"](): string;
     /**
-      * `New page`
+      * `创建新的页面`
       */
     ["com.affine.new.page-mode"](): string;
     /**
-      * `New edgeless`
+      * `新的无界页面`
       */
     ["com.affine.new_edgeless"](): string;
     /**
-      * `Import`
+      * `导入`
       */
     ["com.affine.new_import"](): string;
     /**
-      * `Next week`
+      * `下星期`
       */
     ["com.affine.nextWeek"](): string;
     /**
-      * `Back home`
+      * `返回首页`
       */
     ["com.affine.notFoundPage.backButton"](): string;
     /**
-      * `Page not found`
+      * `404 - 页面未找到`
       */
     ["com.affine.notFoundPage.title"](): string;
     /**
-      * `识光 Community`
+      * `识光 社区`
       */
     ["com.affine.other-page.nav.affine-community"](): string;
     /**
-      * `Blog`
+      * `博客`
       */
     ["com.affine.other-page.nav.blog"](): string;
     /**
-      * `Contact us`
+      * `联系我们`
       */
     ["com.affine.other-page.nav.contact-us"](): string;
     /**
-      * `Download app`
+      * `下载应用`
       */
     ["com.affine.other-page.nav.download-app"](): string;
     /**
-      * `Official website`
+      * `官方网站`
       */
     ["com.affine.other-page.nav.official-website"](): string;
     /**
-      * `Open 识光`
+      * `打开 识光`
       */
     ["com.affine.other-page.nav.open-affine"](): string;
     /**
-      * `Add linked doc`
+      * `添加链接文档`
       */
     ["com.affine.page-operation.add-linked-page"](): string;
     /**
-      * `{{ count }} more properties`
+      * `还有 {{ count }} 个属性`
       */
     ["com.affine.page-properties.more-property.more"](options: {
         readonly count: string;
     }): string;
     /**
-      * `{{ count }} more property`
+      * `还有 {{ count }} 个属性`
       */
     ["com.affine.page-properties.more-property.one"](options: {
         readonly count: string;
     }): string;
     /**
-      * `hide {{ count }} property`
+      * `隐藏了 {{ count }} 个属性`
       */
     ["com.affine.page-properties.hide-property.one"](options: {
         readonly count: string;
     }): string;
     /**
-      * `hide {{ count }} properties`
+      * `隐藏了 {{ count }} 个属性`
       */
     ["com.affine.page-properties.hide-property.more"](options: {
         readonly count: string;
     }): string;
     /**
-      * `Add property`
+      * `添加属性`
       */
     ["com.affine.page-properties.add-property"](): string;
     /**
-      * `Create property`
+      * `创建属性`
       */
     ["com.affine.page-properties.add-property.menu.create"](): string;
     /**
-      * `Properties`
+      * `属性`
       */
     ["com.affine.page-properties.add-property.menu.header"](): string;
     /**
-      * `Config properties`
+      * `编辑属性`
       */
     ["com.affine.page-properties.config-properties"](): string;
     /**
-      * `Backlinks`
+      * `反向链接`
       */
     ["com.affine.page-properties.backlinks"](): string;
     /**
-      * `Type`
+      * `类型`
       */
     ["com.affine.page-properties.create-property.menu.header"](): string;
     /**
-      * `Added`
+      * `已添加`
       */
     ["com.affine.page-properties.create-property.added"](): string;
     /**
-      * `Icons`
+      * `图标`
       */
     ["com.affine.page-properties.icons"](): string;
     /**
-      * `Local user`
+      * `本地用户`
       */
     ["com.affine.page-properties.local-user"](): string;
     /**
-      * `Outgoing links`
+      * `外链`
       */
     ["com.affine.page-properties.outgoing-links"](): string;
     /**
-      * `Info`
+      * `信息`
       */
     ["com.affine.page-properties.page-info"](): string;
     /**
-      * `View Info`
+      * `查看信息`
       */
     ["com.affine.page-properties.page-info.view"](): string;
     /**
-      * `No Record`
+      * `暂无记录`
       */
     ["com.affine.page-properties.property-user-avatar-no-record"](): string;
     /**
-      * `Local User`
+      * `本地用户`
       */
     ["com.affine.page-properties.property-user-local"](): string;
     /**
-      * `Empty`
+      * `属性为空`
       */
     ["com.affine.page-properties.property-value-placeholder"](): string;
     /**
-      * `Always hide`
+      * `始终隐藏`
       */
     ["com.affine.page-properties.property.always-hide"](): string;
     /**
-      * `Always show`
+      * `始终显示`
       */
     ["com.affine.page-properties.property.always-show"](): string;
     /**
-      * `Checkbox`
+      * `复选框`
       */
     ["com.affine.page-properties.property.checkbox"](): string;
     /**
-      * `Created by`
+      * `创建者`
       */
     ["com.affine.page-properties.property.createdBy"](): string;
     /**
-      * `Date`
+      * `日期`
       */
     ["com.affine.page-properties.property.date"](): string;
     /**
-      * `Hide in view`
+      * `在视图中隐藏`
       */
     ["com.affine.page-properties.property.hide-in-view"](): string;
     /**
-      * `Hide in view when empty`
+      * `当属性为空时在视图中隐藏`
       */
     ["com.affine.page-properties.property.hide-in-view-when-empty"](): string;
     /**
-      * `Hide when empty`
+      * `当属性为空时隐藏`
       */
     ["com.affine.page-properties.property.hide-when-empty"](): string;
     /**
-      * `Number`
+      * `数字`
       */
     ["com.affine.page-properties.property.number"](): string;
     /**
-      * `Progress`
+      * `进程`
       */
     ["com.affine.page-properties.property.progress"](): string;
     /**
-      * `Remove property`
+      * `删除属性`
       */
     ["com.affine.page-properties.property.remove-property"](): string;
     /**
-      * `Required`
+      * `必选`
       */
     ["com.affine.page-properties.property.required"](): string;
     /**
-      * `Show in view`
+      * `在视图中显示`
       */
     ["com.affine.page-properties.property.show-in-view"](): string;
     /**
-      * `Tags`
+      * `标签`
       */
     ["com.affine.page-properties.property.tags"](): string;
     /**
-      * `Doc mode`
+      * `文档模式`
       */
     ["com.affine.page-properties.property.docPrimaryMode"](): string;
     /**
-      * `Text`
+      * `文本`
       */
     ["com.affine.page-properties.property.text"](): string;
     /**
@@ -3438,355 +3446,355 @@ export function useLumiBookI18N(): {
       */
     ["com.affine.page-properties.property.journal"](): string;
     /**
-      * `Duplicated`
+      * `重复`
       */
     ["com.affine.page-properties.property.journal-duplicated"](): string;
     /**
-      * `Remove journal mark`
+      * `移除 Journal 标签`
       */
     ["com.affine.page-properties.property.journal-remove"](): string;
     /**
-      * `Last edited by`
+      * `最后编辑者`
       */
     ["com.affine.page-properties.property.updatedBy"](): string;
     /**
-      * `Created`
+      * `创建时间`
       */
     ["com.affine.page-properties.property.createdAt"](): string;
     /**
-      * `Updated`
+      * `更新时间`
       */
     ["com.affine.page-properties.property.updatedAt"](): string;
     /**
-      * `Edgeless theme`
+      * `无界配色方案`
       */
     ["com.affine.page-properties.property.edgelessTheme"](): string;
     /**
-      * `Page width`
+      * `页面宽度`
       */
     ["com.affine.page-properties.property.pageWidth"](): string;
     /**
-      * `Template`
+      * `模板`
       */
     ["com.affine.page-properties.property.template"](): string;
     /**
-      * `Add relevant identifiers or categories to the doc. Useful for organizing content, improving searchability, and grouping related docs together.`
+      * `为文档添加相关标识或类别，有助于组织内容、提高搜索效率并将相关文档归类。`
       */
     ["com.affine.page-properties.property.tags.tooltips"](): string;
     /**
-      * `Indicates that this doc is a journal entry or daily note. Facilitates easy capture of ideas, quick logging of thoughts, and ongoing personal reflection.`
+      * `标识此文档为日志条目或日记，方便捕捉灵感、快速记录或自我反省。`
       */
     ["com.affine.page-properties.property.journal.tooltips"](): string;
     /**
-      * `Use a checkbox to indicate whether a condition is true or false. Useful for confirming options, toggling features, or tracking task states.`
+      * `用于标记该条目完成与否，适合确认选项、切换功能或跟踪任务状态。`
       */
     ["com.affine.page-properties.property.checkbox.tooltips"](): string;
     /**
-      * `Use a date field to select or display a specific date. Useful for scheduling, setting deadlines, or recording important events.`
+      * `选择或显示特定日期，适用于安排计划、设定截止日期或记录重要事件。`
       */
     ["com.affine.page-properties.property.date.tooltips"](): string;
     /**
-      * `Upload images to display or manage them. Useful for showcasing visual content, adding illustrations, or organizing a gallery.`
+      * `上传和管理图片，用于展示视觉内容、插图或创建画廊。`
       */
     ["com.affine.page-properties.property.image.tooltips"](): string;
     /**
-      * `Select one or more options. Useful for categorizing items, filtering data, or managing tags.`
+      * `可选择多个选项，适合分类、数据筛选或管理标签。`
       */
     ["com.affine.page-properties.property.multiSelect.tooltips"](): string;
     /**
-      * `Enter a numeric value. Useful for quantities, measurements, or ranking items.`
+      * `输入数值，用于数量、测量或排名。`
       */
     ["com.affine.page-properties.property.number.tooltips"](): string;
     /**
-      * `Set a progress value between 0 and 100. Useful for tracking completion status, visualizing progress, or managing goals.`
+      * `设置0到100之间的进度值，适合跟踪完成度、可视化进展或管理目标。`
       */
     ["com.affine.page-properties.property.progress.tooltips"](): string;
     /**
-      * `Choose one option. Useful for selecting a single preference, categorizing items, or making decisions.`
+      * `选择一个选项，适用于单项选择、分类或决策。`
       */
     ["com.affine.page-properties.property.select.tooltips"](): string;
     /**
-      * `Enter a link to websites or 识光 docs. Useful for connecting to external resources and referencing internal docs.`
+      * `输入网站或 识光 文档链接，用于连接资源或引用内部文档。`
       */
     ["com.affine.page-properties.property.link.tooltips"](): string;
     /**
-      * `Enter text. Useful for descriptions, comments, notes, or any other free-form text input.`
+      * `输入文字，用于描述、评论或记录笔记。`
       */
     ["com.affine.page-properties.property.text.tooltips"](): string;
     /**
-      * `Displays the author of the current doc. Useful for tracking doc ownership, accountability, and collaboration.`
+      * `显示当前文档的作者，用于跟踪所有权和协作情况。`
       */
     ["com.affine.page-properties.property.createdBy.tooltips"](): string;
     /**
-      * `Displays the last editor of the current doc. Useful for tracking recent changes.`
+      * `显示文档的最后编辑者，方便跟踪最新更改。`
       */
     ["com.affine.page-properties.property.updatedBy.tooltips"](): string;
     /**
-      * `Record the last modification timestamp. Useful for tracking changes, identifying recent updates, or monitoring content freshness.`
+      * `记录最后修改的时间戳。用于跟踪变更、识别最近的更新或监测内容的新鲜度。`
       */
     ["com.affine.page-properties.property.updatedAt.tooltips"](): string;
     /**
-      * `Track when a doc was first created. Useful for maintaining record history, sorting by creation date, or auditing content chronologically.`
+      * `跟踪文档首次创建的时间。用于维护记录历史、按创建日期排序或按时间顺序审核内容。`
       */
     ["com.affine.page-properties.property.createdAt.tooltips"](): string;
     /**
-      * `Select the doc mode from Page Mode, Edgeless Mode, or Auto. Useful for choosing the best display for your content.`
+      * `选择页面模式、无边界模式或自动模式，适合根据内容选择最佳显示方式。`
       */
     ["com.affine.page-properties.property.docPrimaryMode.tooltips"](): string;
     /**
-      * `Select the doc theme from Light, Dark, or System. Useful for precise control over content viewing style.`
+      * `选择浅色、深色或系统主题，精确控制内容的查看样式。`
       */
     ["com.affine.page-properties.property.edgelessTheme.tooltips"](): string;
     /**
-      * `Control the width of this page to fit content display needs.`
+      * `控制此页面的宽度以适合内容显示需要。`
       */
     ["com.affine.page-properties.property.pageWidth.tooltips"](): string;
     /**
-      * `Mark this doc as a template, which can be used to create new docs.`
+      * `将此文档标记为模板，可用于创建新文档。`
       */
     ["com.affine.page-properties.property.template.tooltips"](): string;
     /**
-      * `Created by {{userName}}`
+      * `由 {{userName}} 创建`
       */
     ["com.affine.page-properties.property.createdBy.tip"](options: {
         readonly userName: string;
     }): string;
     /**
-      * `Last edited by {{userName}}`
+      * `最后由 {{userName}} 编辑`
       */
     ["com.affine.page-properties.property.updatedBy.tip"](options: {
         readonly userName: string;
     }): string;
     /**
-      * `Properties`
+      * `属性`
       */
     ["com.affine.propertySidebar.property-list.section"](): string;
     /**
-      * `Add more properties`
+      * `添加更多属性`
       */
     ["com.affine.propertySidebar.add-more.section"](): string;
     /**
-      * `customize properties`
+      * `自定义属性`
       */
     ["com.affine.page-properties.settings.title"](): string;
     /**
-      * `Open tag page`
+      * `打开标签页面`
       */
     ["com.affine.page-properties.tags.open-tags-page"](): string;
     /**
-      * `Select tag or create one`
+      * `选择或者创建一个标签`
       */
     ["com.affine.page-properties.tags.selector-header-title"](): string;
     /**
-      * `Display`
+      * `显示`
       */
     ["com.affine.page.display"](): string;
     /**
-      * `Display properties`
+      * `显示属性`
       */
     ["com.affine.page.display.display-properties"](): string;
     /**
-      * `Body notes`
+      * `内容预览`
       */
     ["com.affine.page.display.display-properties.body-notes"](): string;
     /**
-      * `Grouping`
+      * `分组`
       */
     ["com.affine.page.display.grouping"](): string;
     /**
-      * `Favourites`
+      * `收藏`
       */
     ["com.affine.page.display.grouping.group-by-favourites"](): string;
     /**
-      * `Tag`
+      * `标签`
       */
     ["com.affine.page.display.grouping.group-by-tag"](): string;
     /**
-      * `Untagged`
+      * `未有标签`
       */
     ["com.affine.page.display.grouping.group-by-tag.untagged"](): string;
     /**
-      * `No grouping`
+      * `不分组`
       */
     ["com.affine.page.display.grouping.no-grouping"](): string;
     /**
-      * `List option`
+      * `选项列表`
       */
     ["com.affine.page.display.list-option"](): string;
     /**
-      * `Clear selection`
+      * `清除选择`
       */
     ["com.affine.page.group-header.clear"](): string;
     /**
-      * `Favourited`
+      * `已收藏`
       */
     ["com.affine.page.group-header.favourited"](): string;
     /**
-      * `Not favourited`
+      * `未收藏`
       */
     ["com.affine.page.group-header.not-favourited"](): string;
     /**
-      * `Select all`
+      * `全选`
       */
     ["com.affine.page.group-header.select-all"](): string;
     /**
-      * `Created by {{name}}`
+      * `由 {{name}} 创建`
       */
     ["com.affine.page.toolbar.created_by"](options: {
         readonly name: string;
     }): string;
     /**
-      * `Doc mode`
+      * `文档模式`
       */
     ["com.affine.pageMode"](): string;
     /**
-      * `all`
+      * `全部`
       */
     ["com.affine.pageMode.all"](): string;
     /**
-      * `Edgeless`
+      * `无界`
       */
     ["com.affine.pageMode.edgeless"](): string;
     /**
-      * `Page`
+      * `页面`
       */
     ["com.affine.pageMode.page"](): string;
     /**
-      * `Congratulations on your successful purchase of 识光 AI! You're now empowered to refine your content, generate images, and craft comprehensive mindmaps directly within 识光 AI, dramatically enhancing your productivity.`
+      * `恭喜您成功购买 识光 AI！现在，您可以直接在 识光 AI 中精炼内容、生成图像并制作全面的思维导图，从而显着提高您的工作效率。`
       */
     ["com.affine.payment.ai-upgrade-success-page.text"](): string;
     /**
-      * `Purchase successful!`
+      * `购买成功！`
       */
     ["com.affine.payment.ai-upgrade-success-page.title"](): string;
     /**
-      * `Cancel subscription`
+      * `取消订阅`
       */
     ["com.affine.payment.ai.action.cancel.button-label"](): string;
     /**
-      * `Keep 识光 AI`
+      * `保留 识光 AI`
       */
     ["com.affine.payment.ai.action.cancel.confirm.cancel-text"](): string;
     /**
-      * `Cancel subscription`
+      * `取消订阅`
       */
     ["com.affine.payment.ai.action.cancel.confirm.confirm-text"](): string;
     /**
-      * `If you end your subscription now, you can still use 识光 AI until the end of this billing period.`
+      * `如果您现在终止订阅，则在此计费周期结束之前您仍然可以使用 识光 AI。`
       */
     ["com.affine.payment.ai.action.cancel.confirm.description"](): string;
     /**
-      * `Cancel subscription`
+      * `取消订阅`
       */
     ["com.affine.payment.ai.action.cancel.confirm.title"](): string;
     /**
-      * `Login`
+      * `登录`
       */
     ["com.affine.payment.ai.action.login.button-label"](): string;
     /**
-      * `Resume`
+      * `恢复`
       */
     ["com.affine.payment.ai.action.resume.button-label"](): string;
     /**
-      * `Cancel`
+      * `取消`
       */
     ["com.affine.payment.ai.action.resume.confirm.cancel-text"](): string;
     /**
-      * `Confirm`
+      * `确认`
       */
     ["com.affine.payment.ai.action.resume.confirm.confirm-text"](): string;
     /**
-      * `Are you sure you want to resume the subscription for 识光 AI? This means your payment method will be charged automatically at the end of each billing cycle, starting from the next billing cycle.`
+      * `您确定要恢复 识光 AI 的订阅吗？这意味着您的付款方式将在每个计费周期结束时自动扣费，从下一个计费周期开始。`
       */
     ["com.affine.payment.ai.action.resume.confirm.description"](): string;
     /**
-      * `You will be charged in the next billing cycle.`
+      * `我们将在下一个计费周期向您收费。`
       */
     ["com.affine.payment.ai.action.resume.confirm.notify.msg"](): string;
     /**
-      * `Subscription updated`
+      * `订阅已更新`
       */
     ["com.affine.payment.ai.action.resume.confirm.notify.title"](): string;
     /**
-      * `Resume auto-renewal?`
+      * `恢复自动续费？`
       */
     ["com.affine.payment.ai.action.resume.confirm.title"](): string;
     /**
-      * `Write with you`
+      * `与您一起写作`
       */
     ["com.affine.payment.ai.benefit.g1"](): string;
     /**
-      * `Create quality content from sentences to articles on topics you need`
+      * `根据您需要的主题创建从句子到文章的优质内容`
       */
     ["com.affine.payment.ai.benefit.g1-1"](): string;
     /**
-      * `Rewrite like the professionals`
+      * `像专业人士一样进行改写`
       */
     ["com.affine.payment.ai.benefit.g1-2"](): string;
     /**
-      * `Change the tones / fix spelling & grammar`
+      * `切换语气 / 修复拼写和语法`
       */
     ["com.affine.payment.ai.benefit.g1-3"](): string;
     /**
-      * `Draw with you`
+      * `与您一起画画`
       */
     ["com.affine.payment.ai.benefit.g2"](): string;
     /**
-      * `Visualize your mind, magically`
+      * `魔幻般地描绘您的思维`
       */
     ["com.affine.payment.ai.benefit.g2-1"](): string;
     /**
-      * `Turn your outline into beautiful, engaging presentations`
+      * `将您的大纲转化为美丽而吸引人的演示文稿`
       */
     ["com.affine.payment.ai.benefit.g2-2"](): string;
     /**
-      * `Summarize your content into structured mind-map`
+      * `将您的内容总结为结构化的思维导图`
       */
     ["com.affine.payment.ai.benefit.g2-3"](): string;
     /**
-      * `Plan with you`
+      * `与您一起规划`
       */
     ["com.affine.payment.ai.benefit.g3"](): string;
     /**
-      * `Memorize and tidy up your knowledge`
+      * `记忆并整理您的知识`
       */
     ["com.affine.payment.ai.benefit.g3-1"](): string;
     /**
-      * `Auto-sorting and auto-tagging`
+      * `自动排序和自动标记`
       */
     ["com.affine.payment.ai.benefit.g3-2"](): string;
     /**
-      * `Open source & Privacy ensured`
+      * `开源和隐私保证`
       */
     ["com.affine.payment.ai.benefit.g3-3"](): string;
     /**
-      * `You have purchased 识光 AI. The expiration date is {{end}}.`
+      * `您已购买 识光 AI。到期日期为{{end}}。`
       */
     ["com.affine.payment.ai.billing-tip.end-at"](options: {
         readonly end: string;
     }): string;
     /**
-      * `You have purchased 识光 AI. The next payment date is {{due}}.`
+      * `您已购买 识光 AI。下一次付款日期是 {{due}}。`
       */
     ["com.affine.payment.ai.billing-tip.next-bill-at"](options: {
         readonly due: string;
     }): string;
     /**
-      * `Your recent payment failed, the next payment date is {{due}}.`
+      * `您此次付款失败，下一次付款时间是 {{due}}。`
       */
     ["com.affine.payment.billing-tip.past-due"](options: {
         readonly due: string;
     }): string;
     /**
-      * `You are currently on the Free plan.`
+      * `您当前处于 Free 计划。`
       */
     ["com.affine.payment.ai.pricing-plan.caption-free"](): string;
     /**
-      * `You have purchased 识光 AI`
+      * `您已购买 识光 AI`
       */
     ["com.affine.payment.ai.pricing-plan.caption-purchased"](): string;
     /**
-      * `Learn about 识光 AI`
+      * `了解 识光 AI`
       */
     ["com.affine.payment.ai.pricing-plan.learn"](): string;
     /**
@@ -3794,88 +3802,88 @@ export function useLumiBookI18N(): {
       */
     ["com.affine.payment.ai.pricing-plan.title"](): string;
     /**
-      * `Turn all your ideas into reality`
+      * `将您的所有想法变成现实`
       */
     ["com.affine.payment.ai.pricing-plan.title-caption-1"](): string;
     /**
-      * `A true multimodal AI copilot.`
+      * `真正的多模态 AI copilot。`
       */
     ["com.affine.payment.ai.pricing-plan.title-caption-2"](): string;
     /**
-      * `Billed annually`
+      * `按年计费`
       */
     ["com.affine.payment.ai.subscribe.billed-annually"](): string;
     /**
-      * `You have purchased 识光 AI.`
+      * `您已购买 识光 AI。`
       */
     ["com.affine.payment.ai.usage-description-purchased"](): string;
     /**
-      * `识光 AI usage`
+      * `识光 AI 用量`
       */
     ["com.affine.payment.ai.usage-title"](): string;
     /**
-      * `Change plan`
+      * `更改计划`
       */
     ["com.affine.payment.ai.usage.change-button-label"](): string;
     /**
-      * `Purchase`
+      * `购买`
       */
     ["com.affine.payment.ai.usage.purchase-button-label"](): string;
     /**
-      * `Times used`
+      * `使用次数`
       */
     ["com.affine.payment.ai.usage.used-caption"](): string;
     /**
-      * `{{used}}/{{limit}} times`
+      * `{{used}}/{{limit}} 次数`
       */
     ["com.affine.payment.ai.usage.used-detail"](options: Readonly<{
         used: string;
         limit: string;
     }>): string;
     /**
-      * `Active`
+      * `激活`
       */
     ["com.affine.payment.subscription-status.active"](): string;
     /**
-      * `Past-due bill`
+      * `逾期账单`
       */
     ["com.affine.payment.subscription-status.past-due"](): string;
     /**
-      * `Trialing`
+      * `试用`
       */
     ["com.affine.payment.subscription-status.trialing"](): string;
     /**
-      * `Unlimited local workspaces`
+      * `无限制的本地工作区`
       */
     ["com.affine.payment.benefit-1"](): string;
     /**
-      * `Unlimited login devices`
+      * `无限制的登录设备`
       */
     ["com.affine.payment.benefit-2"](): string;
     /**
-      * `Unlimited blocks`
+      * `无限制的区块`
       */
     ["com.affine.payment.benefit-3"](): string;
     /**
-      * `{{capacity}} of cloud storage`
+      * `{{capacity}} 的云存储`
       */
     ["com.affine.payment.benefit-4"](options: {
         readonly capacity: string;
     }): string;
     /**
-      * `{{capacity}} of maximum file size`
+      * `{{capacity}} 的最大文件大小`
       */
     ["com.affine.payment.benefit-5"](options: {
         readonly capacity: string;
     }): string;
     /**
-      * `Number of members per workspace ≤ {{capacity}}`
+      * `每个工作区的成员数量 ≤ {{capacity}}`
       */
     ["com.affine.payment.benefit-6"](options: {
         readonly capacity: string;
     }): string;
     /**
-      * `{{capacity}}-days version history`
+      * `{{capacity}} 日的历史版本记录`
       */
     ["com.affine.payment.benefit-7"](options: {
         readonly capacity: string;
@@ -3885,15 +3893,15 @@ export function useLumiBookI18N(): {
       */
     ["com.affine.payment.billing-setting.ai-plan"](): string;
     /**
-      * `Purchase`
+      * `购买`
       */
     ["com.affine.payment.billing-setting.ai.purchase"](): string;
     /**
-      * `Start free trial`
+      * `开始免费试用`
       */
     ["com.affine.payment.billing-setting.ai.start-free-trial"](): string;
     /**
-      * `One-time payment`
+      * `一次性支付`
       */
     ["com.affine.payment.billing-setting.believer.price-caption"](): string;
     /**
@@ -3901,15 +3909,15 @@ export function useLumiBookI18N(): {
       */
     ["com.affine.payment.billing-setting.believer.title"](): string;
     /**
-      * `Cancel subscription`
+      * `取消订阅`
       */
     ["com.affine.payment.billing-setting.cancel-subscription"](): string;
     /**
-      * `Once you canceled subscription you will no longer enjoy the plan benefits.`
+      * `一旦您取消订阅，您将不再享受该计划的福利。`
       */
     ["com.affine.payment.billing-setting.cancel-subscription.description"](): string;
     /**
-      * `Change plan`
+      * `更改计划`
       */
     ["com.affine.payment.billing-setting.change-plan"](): string;
     /**
@@ -3917,249 +3925,249 @@ export function useLumiBookI18N(): {
       */
     ["com.affine.payment.billing-setting.current-plan"](): string;
     /**
-      * `Expiration date`
+      * `到期日期`
       */
     ["com.affine.payment.billing-setting.expiration-date"](): string;
     /**
-      * `Your subscription is valid until {{expirationDate}}`
+      * `您的订阅有效期至 {{expirationDate}}`
       */
     ["com.affine.payment.billing-setting.expiration-date.description"](options: {
         readonly expirationDate: string;
     }): string;
     /**
-      * `Billing history`
+      * `计费历史`
       */
     ["com.affine.payment.billing-setting.history"](): string;
     /**
-      * `Information`
+      * `信息`
       */
     ["com.affine.payment.billing-setting.information"](): string;
     /**
-      * `month`
+      * `月`
       */
     ["com.affine.payment.billing-setting.month"](): string;
     /**
-      * `There are no invoices to display.`
+      * `没有要显示的发票。`
       */
     ["com.affine.payment.billing-setting.no-invoice"](): string;
     /**
-      * `Paid`
+      * `已支付`
       */
     ["com.affine.payment.billing-setting.paid"](): string;
     /**
-      * `Manage payment details`
+      * `支付方式`
       */
     ["com.affine.payment.billing-setting.payment-method"](): string;
     /**
-      * `View future and past invoices, update billing information, and change payment methods. Provided by Stripe.`
+      * `由Stripe提供。`
       */
     ["com.affine.payment.billing-setting.payment-method.description"](): string;
     /**
-      * `Go`
+      * `前往`
       */
     ["com.affine.payment.billing-setting.payment-method.go"](): string;
     /**
-      * `Renew date`
+      * `续费日期`
       */
     ["com.affine.payment.billing-setting.renew-date"](): string;
     /**
-      * `Next billing date: {{renewDate}}`
+      * `下次计费日期: {{renewDate}}`
       */
     ["com.affine.payment.billing-setting.renew-date.description"](options: {
         readonly renewDate: string;
     }): string;
     /**
-      * `Due date`
+      * `到期日期`
       */
     ["com.affine.payment.billing-setting.due-date"](): string;
     /**
-      * `Your subscription will end on {{dueDate}}`
+      * `你的订阅将于 {{dueDate}} 到期`
       */
     ["com.affine.payment.billing-setting.due-date.description"](options: {
         readonly dueDate: string;
     }): string;
     /**
-      * `Resume`
+      * `恢复`
       */
     ["com.affine.payment.billing-setting.resume-subscription"](): string;
     /**
-      * `Manage your billing information and invoices`
+      * `管理您的计费信息和发票。`
       */
     ["com.affine.payment.billing-setting.subtitle"](): string;
     /**
-      * `Billing`
+      * `计费`
       */
     ["com.affine.payment.billing-setting.title"](): string;
     /**
-      * `Update`
+      * `更新`
       */
     ["com.affine.payment.billing-setting.update"](): string;
     /**
-      * `Upgrade`
+      * `升级`
       */
     ["com.affine.payment.billing-setting.upgrade"](): string;
     /**
-      * `View invoice`
+      * `查看发票`
       */
     ["com.affine.payment.billing-setting.view-invoice"](): string;
     /**
-      * `year`
+      * `年`
       */
     ["com.affine.payment.billing-setting.year"](): string;
     /**
-      * `Please tell us more about your use case, to make 识光 better.`
+      * `请告诉我们更多关于您的使用案例，以使 识光 变得更好。`
       */
     ["com.affine.payment.billing-type-form.description"](): string;
     /**
-      * `Go`
+      * `前往`
       */
     ["com.affine.payment.billing-type-form.go"](): string;
     /**
-      * `Tell us your use case`
+      * `请告诉我们您的使用案例`
       */
     ["com.affine.payment.billing-type-form.title"](): string;
     /**
-      * `You have reached the limit`
+      * `您已达到存储极限`
       */
     ["com.affine.payment.blob-limit.title"](): string;
     /**
-      * `Book a demo`
+      * `预订 Demo`
       */
     ["com.affine.payment.book-a-demo"](): string;
     /**
-      * `Buy Pro`
+      * `购买专业版`
       */
     ["com.affine.payment.buy-pro"](): string;
     /**
-      * `Change to {{to}} Billing`
+      * `切换到 {{to}} 计费`
       */
     ["com.affine.payment.change-to"](options: {
         readonly to: string;
     }): string;
     /**
-      * `Include in FOSS`
+      * `包含在 FOSS`
       */
     ["com.affine.payment.cloud.free.benefit.g1"](): string;
     /**
-      * `Unlimited local workspaces`
+      * `无限制的本地工作区`
       */
     ["com.affine.payment.cloud.free.benefit.g1-1"](): string;
     /**
-      * `Unlimited use and customization`
+      * `无限制地使用和定制`
       */
     ["com.affine.payment.cloud.free.benefit.g1-2"](): string;
     /**
-      * `Unlimited doc and edgeless editing`
+      * `无限制地编辑文档和无界`
       */
     ["com.affine.payment.cloud.free.benefit.g1-3"](): string;
     /**
-      * `Include in Basic`
+      * `包含在 Basic`
       */
     ["com.affine.payment.cloud.free.benefit.g2"](): string;
     /**
-      * `10 GB of cloud storage.`
+      * `10GB 的云存储。`
       */
     ["com.affine.payment.cloud.free.benefit.g2-1"](): string;
     /**
-      * `10 MB of maximum file size.`
+      * `10MB 的最大文件大小。`
       */
     ["com.affine.payment.cloud.free.benefit.g2-2"](): string;
     /**
-      * `Up to 3 members per workspace.`
+      * `每个工作区最多 3 名成员。`
       */
     ["com.affine.payment.cloud.free.benefit.g2-3"](): string;
     /**
-      * `7-days cloud time machine file version history.`
+      * `7 天 Cloud Time Machine 文件版本历史记录。`
       */
     ["com.affine.payment.cloud.free.benefit.g2-4"](): string;
     /**
-      * `Up to 3 login devices.`
+      * `最多 3 个登录设备。`
       */
     ["com.affine.payment.cloud.free.benefit.g2-5"](): string;
     /**
-      * `Local Editor under MIT license.`
+      * `MIT 许可本地编辑器。`
       */
     ["com.affine.payment.cloud.free.description"](): string;
     /**
-      * `Local FOSS + Cloud Basic`
+      * `本地 FOSS + 云基础`
       */
     ["com.affine.payment.cloud.free.name"](): string;
     /**
-      * `Free forever`
+      * `永远免费`
       */
     ["com.affine.payment.cloud.free.title"](): string;
     /**
-      * `Included in Pro plan`
+      * `包括在 Pro 计划中`
       */
     ["com.affine.payment.cloud.onetime.included"](): string;
     /**
-      * `Included in Believer plan`
+      * `包含在 Believer 计划`
       */
     ["com.affine.payment.cloud.lifetime.included"](): string;
     /**
-      * `We host, no technical setup required.`
+      * `由我们托管，无需任何技术设置。`
       */
     ["com.affine.payment.cloud.pricing-plan.select.caption"](): string;
     /**
-      * `Hosted by 识光.Pro`
+      * `由 识光.Pro 托管`
       */
     ["com.affine.payment.cloud.pricing-plan.select.title"](): string;
     /**
-      * `Billed annually`
+      * `按年计费`
       */
     ["com.affine.payment.cloud.pricing-plan.toggle-billed-yearly"](): string;
     /**
-      * `Saving {{discount}}%`
+      * `立省 {{discount}}%`
       */
     ["com.affine.payment.cloud.pricing-plan.toggle-discount"](options: {
         readonly discount: string;
     }): string;
     /**
-      * `Annually`
+      * `年付`
       */
     ["com.affine.payment.cloud.pricing-plan.toggle-yearly"](): string;
     /**
-      * `Include in Pro`
+      * `包含在 Pro`
       */
     ["com.affine.payment.cloud.pro.benefit.g1"](): string;
     /**
-      * `Everything in 识光 FOSS & Basic.`
+      * `识光 FOSS & Basic 中的所有权益。`
       */
     ["com.affine.payment.cloud.pro.benefit.g1-1"](): string;
     /**
-      * `100 GB of cloud storage.`
+      * `100GB 的云存储。`
       */
     ["com.affine.payment.cloud.pro.benefit.g1-2"](): string;
     /**
-      * `100 MB of maximum file size.`
+      * `100MB 的最大文件大小。`
       */
     ["com.affine.payment.cloud.pro.benefit.g1-3"](): string;
     /**
-      * `Up to 10 members per workspace.`
+      * `每个工作区最多 10 名成员。`
       */
     ["com.affine.payment.cloud.pro.benefit.g1-4"](): string;
     /**
-      * `30-days cloud time machine file version history.`
+      * `30 天 Cloud Time Machine 文件版本历史记录。`
       */
     ["com.affine.payment.cloud.pro.benefit.g1-5"](): string;
     /**
-      * `Add comments on Doc and Edgeless.`
+      * `在文档和无界中添加评论。`
       */
     ["com.affine.payment.cloud.pro.benefit.g1-6"](): string;
     /**
-      * `Community support.`
+      * `社区支持。`
       */
     ["com.affine.payment.cloud.pro.benefit.g1-7"](): string;
     /**
-      * `Real-time syncing & collaboration for more people.`
+      * `为更多人提供实时同步和协作。`
       */
     ["com.affine.payment.cloud.pro.benefit.g1-8"](): string;
     /**
-      * `Granular edit access to docs.`
+      * `文档细粒度权限控制。`
       */
     ["com.affine.payment.cloud.pro.benefit.g1-9"](): string;
     /**
-      * `For family and small teams.`
+      * `为了家庭或者小型团队。`
       */
     ["com.affine.payment.cloud.pro.description"](): string;
     /**
@@ -4167,1555 +4175,1555 @@ export function useLumiBookI18N(): {
       */
     ["com.affine.payment.cloud.pro.name"](): string;
     /**
-      * `annually`
+      * `按年计费`
       */
     ["com.affine.payment.cloud.pro.title.billed-yearly"](): string;
     /**
-      * `{{price}} per month`
+      * `{{price}} 每月`
       */
     ["com.affine.payment.cloud.pro.title.price-monthly"](options: {
         readonly price: string;
     }): string;
     /**
-      * `Include in Team Workspace`
+      * `包含在团队工作区中`
       */
     ["com.affine.payment.cloud.team-workspace.benefit.g1"](): string;
     /**
-      * `Everything in 识光 Pro.`
+      * `识光 Pro 中的所有权益。`
       */
     ["com.affine.payment.cloud.team-workspace.benefit.g1-1"](): string;
     /**
-      * `100 GB initial storage + 20 GB per seat.`
+      * `100 GB 初始存储空间 + 20 GB / 每人。`
       */
     ["com.affine.payment.cloud.team-workspace.benefit.g1-2"](): string;
     /**
-      * `500 MB of maximum file size.`
+      * `最大文件尺寸限制为500MB。`
       */
     ["com.affine.payment.cloud.team-workspace.benefit.g1-3"](): string;
     /**
-      * `Unlimited team members (10+ seats).`
+      * `无限团队成员（10+席位）。`
       */
     ["com.affine.payment.cloud.team-workspace.benefit.g1-4"](): string;
     /**
-      * `Multiple admin roles.`
+      * `多管理员。`
       */
     ["com.affine.payment.cloud.team-workspace.benefit.g1-5"](): string;
     /**
-      * `Priority customer support.`
+      * `优先客户支持。`
       */
     ["com.affine.payment.cloud.team-workspace.benefit.g1-6"](): string;
     /**
-      * `Best for scalable teams.`
+      * `最适合扩展中的团队。`
       */
     ["com.affine.payment.cloud.team-workspace.description"](): string;
     /**
-      * `Team`
+      * `团队`
       */
     ["com.affine.payment.cloud.team-workspace.name"](): string;
     /**
-      * `annually`
+      * `按年计费`
       */
     ["com.affine.payment.cloud.team-workspace.title.billed-yearly"](): string;
     /**
-      * `{{price}} per seat/month`
+      * `月付 {{price}} / 每人`
       */
     ["com.affine.payment.cloud.team-workspace.title.price-monthly"](options: {
         readonly price: string;
     }): string;
     /**
-      * `Contact sales`
+      * `联系销售`
       */
     ["com.affine.payment.contact-sales"](): string;
     /**
-      * `Current plan`
+      * `当前计划`
       */
     ["com.affine.payment.current-plan"](): string;
     /**
-      * `Start 14-day free trial`
+      * `开始 14 天免费试用`
       */
     ["com.affine.payment.start-free-trial"](): string;
     /**
-      * `{{amount}}% off`
+      * `{{amount}}% 折扣`
       */
     ["com.affine.payment.discount-amount"](options: {
         readonly amount: string;
     }): string;
     /**
-      * `Downgrade`
+      * `降级`
       */
     ["com.affine.payment.downgrade"](): string;
     /**
-      * `We'd like to hear more about where we fall short, so that we can make 识光 better.`
+      * `我们希望听到更多关于我们不足之处的意见，这可以让 识光 变得更好。`
       */
     ["com.affine.payment.downgraded-notify.content"](): string;
     /**
-      * `Later`
+      * `稍后`
       */
     ["com.affine.payment.downgraded-notify.later"](): string;
     /**
-      * `Sure, Open in browser`
+      * `好的，在浏览器中打开`
       */
     ["com.affine.payment.downgraded-notify.ok-client"](): string;
     /**
-      * `Sure, Open in new tab`
+      * `好的，在新标签页打开`
       */
     ["com.affine.payment.downgraded-notify.ok-web"](): string;
     /**
-      * `Sorry to see you go`
+      * `很遗憾看见您离开`
       */
     ["com.affine.payment.downgraded-notify.title"](): string;
     /**
-      * `You have successfully downgraded. After the current billing period ends, your account will automatically switch to the Free plan.`
+      * `您已成功降级。当前计费周期结束后，您的账户将自动切换到免费计划。`
       */
     ["com.affine.payment.downgraded-tooltip"](): string;
     /**
-      * `Best team workspace for collaboration and knowledge distilling.`
+      * `最佳团队协作和知识提炼工作区。`
       */
     ["com.affine.payment.dynamic-benefit-1"](): string;
     /**
-      * `Focusing on what really matters with team project management and automation.`
+      * `专注于真正重要的事情，用团队项目管理和自动化。`
       */
     ["com.affine.payment.dynamic-benefit-2"](): string;
     /**
-      * `Pay for seats, fits all team size.`
+      * `按座位付费，适应所有团队规模。`
       */
     ["com.affine.payment.dynamic-benefit-3"](): string;
     /**
-      * `Solutions & best practices for dedicated needs.`
+      * `针对专门需求的解决方案和最佳实践。`
       */
     ["com.affine.payment.dynamic-benefit-4"](): string;
     /**
-      * `Embedable & interrogations with IT support.`
+      * `嵌入式与IT支持的询问。`
       */
     ["com.affine.payment.dynamic-benefit-5"](): string;
     /**
-      * `Everything in 识光 Pro`
+      * `识光 Pro 中的所有权益`
       */
     ["com.affine.payment.lifetime.benefit-1"](): string;
     /**
-      * `Life-time personal usage`
+      * `终身个人使用`
       */
     ["com.affine.payment.lifetime.benefit-2"](): string;
     /**
-      * `{{capacity}} Cloud Storage`
+      * `{{capacity}} 云存储`
       */
     ["com.affine.payment.lifetime.benefit-3"](options: {
         readonly capacity: string;
     }): string;
     /**
-      * `Dedicated Discord support with 识光 makers`
+      * `识光 团队专属 Discord 支持`
       */
     ["com.affine.payment.lifetime.benefit-4"](): string;
     /**
-      * `Become a Life-time supporter?`
+      * `成为终身支持者？`
       */
     ["com.affine.payment.lifetime.caption-1"](): string;
     /**
-      * `Purchase`
+      * `购买`
       */
     ["com.affine.payment.lifetime.purchase"](): string;
     /**
-      * `Purchased`
+      * `已购买`
       */
     ["com.affine.payment.lifetime.purchased"](): string;
     /**
-      * `Believer Plan`
+      * `Believer 计划`
       */
     ["com.affine.payment.lifetime.title"](): string;
     /**
-      * `Upgrade`
+      * `升级`
       */
     ["com.affine.payment.member-limit.free.confirm"](): string;
     /**
-      * `Workspaces created by {{planName}} users are limited to {{quota}} members. To add more collaborators, you can:`
+      * `由 {{planName}} 用户创建的工作区限制至多 {{quota}} 名成员。如需添加更多协作者，您可以：`
       */
     ["com.affine.payment.member-limit.description"](options: Readonly<{
         planName: string;
         quota: string;
     }>): string;
     /**
-      * `Upgrade to 识光 Pro for expanded member capacity`
+      * `升级至 识光 Pro 以扩大会员容量`
       */
     ["com.affine.payment.member-limit.description.tips-for-free-plan"](): string;
     /**
-      * `Convert to a Team Workspace for unlimited collaboration`
+      * `转换为团队空间以实现无限协作`
       */
     ["com.affine.payment.member-limit.description.tips-1"](): string;
     /**
-      * `Or create a new workspace`
+      * `或创建一个新的工作区`
       */
     ["com.affine.payment.member-limit.description.tips-2"](): string;
     /**
-      * `Got it`
+      * `知道了`
       */
     ["com.affine.payment.member-limit.pro.confirm"](): string;
     /**
-      * `You have reached the limit`
+      * `成员数量已达到极限`
       */
     ["com.affine.payment.member-limit.title"](): string;
     /**
-      * `Manage members here. {{planName}} users can invite up to {{memberLimit}}`
+      * `在此处管理成员。{{planName}} 用户可以邀请最多 {{memberLimit}} 人`
       */
     ["com.affine.payment.member.description"](options: Readonly<{
         planName: string;
         memberLimit: string;
     }>): string;
     /**
-      * `Choose your plan`
+      * `选择您的计划`
       */
     ["com.affine.payment.member.description.choose-plan"](): string;
     /**
-      * `go upgrade`
+      * `前往升级`
       */
     ["com.affine.payment.member.description.go-upgrade"](): string;
     /**
-      * `Looking to collaborate with more people?`
+      * `你想与更多的人进行合作吗？`
       */
     ["com.affine.payment.member.description2"](): string;
     /**
-      * `Work together with unlimited team members.`
+      * `与不限人数的团队成员一起工作。`
       */
     ["com.affine.payment.member.team.description"](): string;
     /**
-      * `Invite team members`
+      * `邀请团队成员`
       */
     ["com.affine.payment.member.team.invite.title"](): string;
     /**
-      * `Invite new members to join your workspace via email or share an invite link`
+      * `通过邮件或分享链接来邀请新成员加入您的工作区`
       */
     ["com.affine.payment.member.team.invite.description"](): string;
     /**
-      * `Email Invite`
+      * `邮件邀请`
       */
     ["com.affine.payment.member.team.invite.email-invite"](): string;
     /**
-      * `Invite Link`
+      * `邀请链接`
       */
     ["com.affine.payment.member.team.invite.invite-link"](): string;
     /**
-      * `Email addresses`
+      * `邮件地址`
       */
     ["com.affine.payment.member.team.invite.email-addresses"](): string;
     /**
-      * `Enter email addresses (separated by commas)`
+      * `输入邮件地址（以逗号分隔）`
       */
     ["com.affine.payment.member.team.invite.email-placeholder"](): string;
     /**
-      * `Import CSV`
+      * `导入CSV`
       */
     ["com.affine.payment.member.team.invite.import-csv"](): string;
     /**
-      * `Send Invites`
+      * `发送邀请`
       */
     ["com.affine.payment.member.team.invite.send-invites"](): string;
     /**
-      * `Link expiration`
+      * `链接已过期`
       */
     ["com.affine.payment.member.team.invite.link-expiration"](): string;
     /**
-      * `{{number}} days`
+      * `{{number}} 天`
       */
     ["com.affine.payment.member.team.invite.expiration-date"](options: {
         readonly number: string;
     }): string;
     /**
-      * `To expire at: {{expireTime}}`
+      * `超时时间为: {{expireTime}}`
       */
     ["com.affine.payment.member.team.invite.expire-at"](options: {
         readonly expireTime: string;
     }): string;
     /**
-      * `Invitation link`
+      * `邀请链接`
       */
     ["com.affine.payment.member.team.invite.invitation-link"](): string;
     /**
-      * `Generate a link to invite members to your workspace`
+      * `生成链接以邀请成员加入您的工作区`
       */
     ["com.affine.payment.member.team.invite.invitation-link.description"](): string;
     /**
-      * `Generate`
+      * `生成`
       */
     ["com.affine.payment.member.team.invite.generate"](): string;
     /**
-      * `Copy`
+      * `复制`
       */
     ["com.affine.payment.member.team.invite.copy"](): string;
     /**
-      * `Done`
+      * `完成`
       */
     ["com.affine.payment.member.team.invite.done"](): string;
     /**
-      * `Invitations sent: {{count}}`
+      * `邀请已发送 {{count}} 条`
       */
     ["com.affine.payment.member.team.invite.notify.title"](options: {
         readonly count: string;
     }): string;
     /**
-      * `These email addresses have already been invited:`
+      * `这些电子邮件地址已被邀请：`
       */
     ["com.affine.payment.member.team.invite.notify.fail-message"](): string;
     /**
-      * `Revoke invitation`
+      * `撤回邀请`
       */
     ["com.affine.payment.member.team.revoke"](): string;
     /**
-      * `Approve`
+      * `批准`
       */
     ["com.affine.payment.member.team.approve"](): string;
     /**
-      * `Decline`
+      * `拒绝`
       */
     ["com.affine.payment.member.team.decline"](): string;
     /**
-      * `Remove member`
+      * `移除成员`
       */
     ["com.affine.payment.member.team.remove"](): string;
     /**
-      * `Retry payment`
+      * `重试付款`
       */
     ["com.affine.payment.member.team.retry-payment"](): string;
     /**
-      * `Change role to admin`
+      * `将角色更改为管理员`
       */
     ["com.affine.payment.member.team.change.admin"](): string;
     /**
-      * `Change role to collaborator`
+      * `将角色更改为协作者`
       */
     ["com.affine.payment.member.team.change.collaborator"](): string;
     /**
-      * `Assign as owner`
+      * `指定为所有者`
       */
     ["com.affine.payment.member.team.assign"](): string;
     /**
-      * `Insufficient Team Seats`
+      * `团队席位不足`
       */
     ["com.affine.payment.member.team.retry-payment.title"](): string;
     /**
-      * `The payment for adding new team members has failed. To add more seats, please update your payment method and process unpaid invoices.`
+      * `添加新团队成员的付款失败。要添加更多席位，请更新您的付款方式并处理未付发票。`
       */
     ["com.affine.payment.member.team.retry-payment.owner.description"](): string;
     /**
-      * `The payment for adding new team members has failed. Please contact your workspace owner to update the payment method and process unpaid invoices.`
+      * `添加新团队成员的付款失败。请联系您的工作区所有者更新付款方式并处理未付发票。`
       */
     ["com.affine.payment.member.team.retry-payment.admin.description"](): string;
     /**
-      * `Update Payment`
+      * `更新付款方式`
       */
     ["com.affine.payment.member.team.retry-payment.update-payment"](): string;
     /**
-      * `Subscription has been disabled for your team workspace. To add more seats, you'll need to resume subscription first.`
+      * `您的团队工作区的订阅已被停用。要添加更多席位，您需要先恢复订阅。`
       */
     ["com.affine.payment.member.team.disabled-subscription.owner.description"](): string;
     /**
-      * `Your team workspace has subscription disabled, which prevents adding more seats. Please contact your workspace owner to enable subscription.`
+      * `您的团队工作区已禁用订阅，无法添加更多席位。请联系您的工作区所有者以启用订阅。`
       */
     ["com.affine.payment.member.team.disabled-subscription.admin.description"](): string;
     /**
-      * `Resume Subscription`
+      * `恢复订阅`
       */
     ["com.affine.payment.member.team.disabled-subscription.resume-subscription"](): string;
     /**
-      * `Invitation Revoked`
+      * `邀请已撤销`
       */
     ["com.affine.payment.member.team.revoke.notify.title"](): string;
     /**
-      * `You have canceled the invitation for {{name}}`
+      * `您已取消 {{name}}的邀请`
       */
     ["com.affine.payment.member.team.revoke.notify.message"](options: {
         readonly name: string;
     }): string;
     /**
-      * `Request approved`
+      * `请求已批准`
       */
     ["com.affine.payment.member.team.approve.notify.title"](): string;
     /**
-      * `You have approved the {{name}}’s request to join this workspace`
+      * `您已批准 {{name}} 加入此工作区`
       */
     ["com.affine.payment.member.team.approve.notify.message"](options: {
         readonly name: string;
     }): string;
     /**
-      * `Request declined`
+      * `请求被拒绝`
       */
     ["com.affine.payment.member.team.decline.notify.title"](): string;
     /**
-      * `You have declined the {{name}}’s request to join this workspace`
+      * `您已拒绝 {{name}} 加入此工作区`
       */
     ["com.affine.payment.member.team.decline.notify.message"](options: {
         readonly name: string;
     }): string;
     /**
-      * `Member removed`
+      * `成员已移除`
       */
     ["com.affine.payment.member.team.remove.notify.title"](): string;
     /**
-      * `You have removed {{name}} from this workspace`
+      * `您已将 {{name}} 从工作区中移除`
       */
     ["com.affine.payment.member.team.remove.notify.message"](options: {
         readonly name: string;
     }): string;
     /**
-      * `Role Updated`
+      * `角色已更新`
       */
     ["com.affine.payment.member.team.change.notify.title"](): string;
     /**
-      * `You have successfully promoted {{name}} to Admin.`
+      * `您已成功将 {{name}} 晋升为管理员。`
       */
     ["com.affine.payment.member.team.change.admin.notify.message"](options: {
         readonly name: string;
     }): string;
     /**
-      * `You have successfully changed {{name}} s role to collaborator.`
+      * `您已成功将 {{name}} 调整为协作者。`
       */
     ["com.affine.payment.member.team.change.collaborator.notify.message"](options: {
         readonly name: string;
     }): string;
     /**
-      * `Owner assigned`
+      * `所有者已指定`
       */
     ["com.affine.payment.member.team.assign.notify.title"](): string;
     /**
-      * `You have successfully assigned {{name}} as the owner of this workspace.`
+      * `您已成功指定 {{name}} 作为该工作区的所有者。`
       */
     ["com.affine.payment.member.team.assign.notify.message"](options: {
         readonly name: string;
     }): string;
     /**
-      * `Confirm new workspace owner`
+      * `确认新工作区所有者`
       */
     ["com.affine.payment.member.team.assign.confirm.title"](): string;
     /**
-      * `You are about to transfer workspace ownership to {{name}}. Please review the following changes carefully:`
+      * `您即将把工作区所有权转移给 {{name}}。请仔细查看以下变更：`
       */
     ["com.affine.payment.member.team.assign.confirm.description"](options: {
         readonly name: string;
     }): string;
     /**
-      * `This action cannot be undone`
+      * `此操作无法撤消`
       */
     ["com.affine.payment.member.team.assign.confirm.description-1"](): string;
     /**
-      * `Your role will be changed to Admin`
+      * `您的角色将更改为管理员`
       */
     ["com.affine.payment.member.team.assign.confirm.description-2"](): string;
     /**
-      * `You will lose ownership rights to the entire workspace`
+      * `您将失去该工作区的所有权`
       */
     ["com.affine.payment.member.team.assign.confirm.description-3"](): string;
     /**
-      * `To confirm this transfer, please type the workspace name`
+      * `输入工作区名称以确认转移`
       */
     ["com.affine.payment.member.team.assign.confirm.description-4"](): string;
     /**
-      * `Type workspace name to confirm`
+      * `请输入工作区名称以确认`
       */
     ["com.affine.payment.member.team.assign.confirm.placeholder"](): string;
     /**
-      * `Transfer Ownership`
+      * `转移所有权`
       */
     ["com.affine.payment.member.team.assign.confirm.button"](): string;
     /**
-      * `Remove member from workspace?`
+      * `从工作区中删除此成员？`
       */
     ["com.affine.payment.member.team.remove.confirm.title"](): string;
     /**
-      * `This action will revoke their access to all workspace resources immediately.`
+      * `此操作将立即撤销他们对所有工作区资源的访问权限。`
       */
     ["com.affine.payment.member.team.remove.confirm.description"](): string;
     /**
-      * `Remove Member`
+      * `移除成员`
       */
     ["com.affine.payment.member.team.remove.confirm.confirm-button"](): string;
     /**
-      * `Cancel`
+      * `取消`
       */
     ["com.affine.payment.member.team.remove.confirm.cancel"](): string;
     /**
-      * `Cancel`
+      * `取消`
       */
     ["com.affine.payment.modal.change.cancel"](): string;
     /**
-      * `Change`
+      * `更改`
       */
     ["com.affine.payment.modal.change.confirm"](): string;
     /**
-      * `Change your subscription`
+      * `更改您的订阅`
       */
     ["com.affine.payment.modal.change.title"](): string;
     /**
-      * `Cancel subscription`
+      * `取消订阅`
       */
     ["com.affine.payment.modal.downgrade.cancel"](): string;
     /**
-      * `You can still use 识光 Cloud Pro until the end of this billing period :)`
+      * `您可以继续使用 识光 Cloud 专业版，直到本计费周期结束:)`
       */
     ["com.affine.payment.modal.downgrade.caption"](): string;
     /**
-      * `Keep 识光 Cloud Pro`
+      * `保持 识光 Cloud 专业版`
       */
     ["com.affine.payment.modal.downgrade.confirm"](): string;
     /**
-      * `Keep Team plan`
+      * `保持团队计划`
       */
     ["com.affine.payment.modal.downgrade.team-confirm"](): string;
     /**
-      * `We're sorry to see you go, but we're always working to improve, and your feedback is welcome. We hope to see you return in the future.`
+      * `很遗憾看到您离开，但我们一直在努力改进，欢迎您的反馈。我们希望在未来能再次看到您。`
       */
     ["com.affine.payment.modal.downgrade.content"](): string;
     /**
-      * `Are you sure?`
+      * `您确定吗？`
       */
     ["com.affine.payment.modal.downgrade.title"](): string;
     /**
-      * `Cancel`
+      * `取消`
       */
     ["com.affine.payment.modal.resume.cancel"](): string;
     /**
-      * `Confirm`
+      * `确认`
       */
     ["com.affine.payment.modal.resume.confirm"](): string;
     /**
-      * `Are you sure you want to resume the subscription for your pro account? This means your payment method will be charged automatically at the end of each billing cycle, starting from the next billing cycle.`
+      * `您确定要恢复 Pro 账户的订阅吗？这意味着您的支付方式将在每个计费周期结束时自动扣费，从下一个计费周期开始。`
       */
     ["com.affine.payment.modal.resume.content"](): string;
     /**
-      * `Resume auto-renewal?`
+      * `恢复自动续费？`
       */
     ["com.affine.payment.modal.resume.title"](): string;
     /**
-      * `Refresh`
+      * `刷新`
       */
     ["com.affine.payment.plans-error-retry"](): string;
     /**
-      * `Unable to load pricing plans, please check your network. `
+      * `无法加载定价计划，请检查您的网络。`
       */
     ["com.affine.payment.plans-error-tip"](): string;
     /**
-      * `monthly`
+      * `每月`
       */
     ["com.affine.payment.recurring-monthly"](): string;
     /**
-      * `annually`
+      * `每年`
       */
     ["com.affine.payment.recurring-yearly"](): string;
     /**
-      * `Resume`
+      * `恢复`
       */
     ["com.affine.payment.resume"](): string;
     /**
-      * `Subscription Resumed`
+      * `订阅已恢复`
       */
     ["com.affine.payment.resume.success.title"](): string;
     /**
-      * `Your team workspace subscription has been enabled successfully. Changes will take effect immediately.`
+      * `您的团队工作区订阅已成功启用。更改将立即生效。`
       */
     ["com.affine.payment.resume.success.team.message"](): string;
     /**
-      * `Resume auto-renewal`
+      * `恢复自动续费`
       */
     ["com.affine.payment.resume-renewal"](): string;
     /**
-      * `See all plans`
+      * `查看所有计划`
       */
     ["com.affine.payment.see-all-plans"](): string;
     /**
-      * `Sign up free`
+      * `免费注册`
       */
     ["com.affine.payment.sign-up-free"](): string;
     /**
-      * `Cloud storage is insufficient. Please contact the owner of that workspace.`
+      * `云存储空间不足。 请联系该工作区的所有者。`
       */
     ["com.affine.payment.storage-limit.description.member"](): string;
     /**
-      * `Cloud storage is insufficient. You can upgrade your account to unlock more cloud storage.`
+      * `云存储空间不足。 您可以升级您的帐户以解锁更多云存储空间。`
       */
     ["com.affine.payment.storage-limit.description.owner"](): string;
     /**
-      * `Unable to sync due to insufficient storage space. You can remove excess content, upgrade your account, or increase your workspace storage to resolve this issue.`
+      * `同步失败，存储空间不足。您可以通过删除多余的内容、升级您的帐户或增加您的工作区存储空间来解决此问题。`
       */
     ["com.affine.payment.storage-limit.new-description.owner"](): string;
     /**
-      * `Sync failed due to storage space limit`
+      * `同步失败，存储空间限制。`
       */
     ["com.affine.payment.storage-limit.new-title"](): string;
     /**
-      * `View`
+      * `查看`
       */
     ["com.affine.payment.storage-limit.view"](): string;
     /**
-      * `You are currently on the {{plan}} plan. After the current billing period ends, your account will automatically switch to the Free plan.`
+      * `您目前处于 {{plan}} 计划。当前计费周期结束后，您的账户将自动切换到免费计划。`
       */
     ["com.affine.payment.subtitle-canceled"](options: {
         readonly plan: string;
     }): string;
     /**
-      * `This is the pricing plans of 识光 Cloud. You can sign up or sign in to your account first.`
+      * `这是 识光 Cloud 的定价计划。您可以先注册或登录您的账户。`
       */
     ["com.affine.payment.subtitle-not-signed-in"](): string;
     /**
-      * `See all plans`
+      * `查看所有计划`
       */
     ["com.affine.payment.tag-tooltips"](): string;
     /**
-      * `Tell us your use case`
+      * `请告诉我们您的使用案例`
       */
     ["com.affine.payment.tell-us-use-case"](): string;
     /**
-      * `Pricing plans`
+      * `定价计划`
       */
     ["com.affine.payment.title"](): string;
     /**
-      * `You have changed your plan to {{plan}} billing.`
+      * `您已更改您的计划为 {{plan}} 计费。`
       */
     ["com.affine.payment.updated-notify-msg"](options: {
         readonly plan: string;
     }): string;
     /**
-      * `Subscription updated`
+      * `订阅已更新`
       */
     ["com.affine.payment.updated-notify-title"](): string;
     /**
-      * `Upgrade`
+      * `升级`
       */
     ["com.affine.payment.upgrade"](): string;
     /**
-      * `Redeem code`
+      * `兑换码`
       */
     ["com.affine.payment.redeem-code"](): string;
     /**
-      * `We'd like to hear more about your use case, so that we can make 识光 better.`
+      * `我们希望听到更多关于我们不足之处的意见，这可以让 识光 变得更好。`
       */
     ["com.affine.payment.upgrade-success-notify.content"](): string;
     /**
-      * `Later`
+      * `稍后`
       */
     ["com.affine.payment.upgrade-success-notify.later"](): string;
     /**
-      * `Sure, open in browser`
+      * `好的，在浏览器中打开`
       */
     ["com.affine.payment.upgrade-success-notify.ok-client"](): string;
     /**
-      * `Sure, open in new tab`
+      * `好的，在新标签页打开`
       */
     ["com.affine.payment.upgrade-success-notify.ok-web"](): string;
     /**
-      * `Thanks for subscribing!`
+      * `感谢您的订阅！`
       */
     ["com.affine.payment.upgrade-success-notify.title"](): string;
     /**
-      * `Congratulations! Your 识光 account has been successfully upgraded to a Pro account.`
+      * `恭喜！您的识光账户已成功升级为 Pro 账户。`
       */
     ["com.affine.payment.upgrade-success-page.text"](): string;
     /**
-      * `Upgrade successful!`
+      * `升级成功！`
       */
     ["com.affine.payment.upgrade-success-page.title"](): string;
     /**
-      * `Congratulations! Your workspace has been successfully upgraded to a Team Workspace. Now you can invite unlimited members to collaborate in this workspace.`
+      * `恭喜！您的工作区已成功升级为团队工作区。现在您可以邀请无限多的成员在此工作区中进行协作。`
       */
     ["com.affine.payment.upgrade-success-page.team.text-1"](): string;
     /**
-      * `Thank you for your purchase!`
+      * `感谢您的购买！`
       */
     ["com.affine.payment.license-success.title"](): string;
     /**
-      * `Thank you for purchasing the 识光 self-hosted license.`
+      * `感谢您购买 识光 自托管许可。`
       */
     ["com.affine.payment.license-success.text-1"](): string;
     /**
-      * `You can use this key to upgrade in Settings > Workspace > License > Use purchased key`
+      * `您可以在 设置 > 工作区 > 许可证 > 使用已购买的密钥 中使用此密钥进行升级`
       */
     ["com.affine.payment.license-success.hint"](): string;
     /**
-      * `Open 识光`
+      * `打开 识光`
       */
     ["com.affine.payment.license-success.open-affine"](): string;
     /**
-      * `Copied key to clipboard`
+      * `复制密钥到剪贴板`
       */
     ["com.affine.payment.license-success.copy"](): string;
     /**
-      * `View analytics`
+      * `查看访问分析`
       */
     ["com.affine.doc.analytics.title"](): string;
     /**
-      * `({{count}} total)`
+      * `（共 {{count}} 次）`
       */
     ["com.affine.doc.analytics.summary.total"](options: {
         readonly count: string;
     }): string;
     /**
-      * `Last {{days}} days`
+      * `最近 {{days}} 天`
       */
     ["com.affine.doc.analytics.window.last-days"](options: {
         readonly days: string;
     }): string;
     /**
-      * `Total`
+      * `总计`
       */
     ["com.affine.doc.analytics.metric.total"](): string;
     /**
-      * `Unique`
+      * `独立`
       */
     ["com.affine.doc.analytics.metric.unique"](): string;
     /**
-      * `Guest`
+      * `访客`
       */
     ["com.affine.doc.analytics.metric.guest"](): string;
     /**
-      * `Total views`
+      * `总浏览量`
       */
     ["com.affine.doc.analytics.chart.total-views"](): string;
     /**
-      * `Unique views`
+      * `独立浏览量`
       */
     ["com.affine.doc.analytics.chart.unique-views"](): string;
     /**
-      * `Unable to load analytics.`
+      * `无法加载分析数据。`
       */
     ["com.affine.doc.analytics.error.load-analytics"](): string;
     /**
-      * `Unable to load viewers.`
+      * `无法加载查看者。`
       */
     ["com.affine.doc.analytics.error.load-viewers"](): string;
     /**
-      * `No page views in this window.`
+      * `此时间范围内没有页面浏览。`
       */
     ["com.affine.doc.analytics.empty.no-page-views"](): string;
     /**
-      * `No viewers in this window.`
+      * `此时间范围内没有查看者。`
       */
     ["com.affine.doc.analytics.empty.no-viewers"](): string;
     /**
-      * `Viewers`
+      * `查看者`
       */
     ["com.affine.doc.analytics.viewers.title"](): string;
     /**
-      * `Show all viewers`
+      * `显示所有查看者`
       */
     ["com.affine.doc.analytics.viewers.show-all"](): string;
     /**
-      * `Open pricing plans`
+      * `打开定价方案`
       */
     ["com.affine.doc.analytics.paywall.open-pricing"](): string;
     /**
-      * `Doc analytics over 7 days require an 识光 Team subscription.`
+      * `超过 7 天的文档分析需要 识光 Team 订阅。`
       */
     ["com.affine.doc.analytics.paywall.toast"](): string;
     /**
-      * `Close`
+      * `关闭`
       */
     ["com.affine.peek-view-controls.close"](): string;
     /**
-      * `Open this doc`
+      * `打开这篇文档`
       */
     ["com.affine.peek-view-controls.open-doc"](): string;
     /**
-      * `Open in edgeless`
+      * `在无界中打开`
       */
     ["com.affine.peek-view-controls.open-doc-in-edgeless"](): string;
     /**
-      * `Open in new tab`
+      * `在新标签页打开`
       */
     ["com.affine.peek-view-controls.open-doc-in-new-tab"](): string;
     /**
-      * `Open in split view`
+      * `在分割视图中打开`
       */
     ["com.affine.peek-view-controls.open-doc-in-split-view"](): string;
     /**
-      * `Open doc info`
+      * `打开文档详情`
       */
     ["com.affine.peek-view-controls.open-info"](): string;
     /**
-      * `Open this attachment`
+      * `打开此附件`
       */
     ["com.affine.peek-view-controls.open-attachment"](): string;
     /**
-      * `Open in new tab`
+      * `在新标签页打开`
       */
     ["com.affine.peek-view-controls.open-attachment-in-new-tab"](): string;
     /**
-      * `Open in split view`
+      * `在分割视图中打开`
       */
     ["com.affine.peek-view-controls.open-attachment-in-split-view"](): string;
     /**
-      * `Open in center peek`
+      * `在中心预览打开`
       */
     ["com.affine.peek-view-controls.open-doc-in-center-peek"](): string;
     /**
-      * `Copy link`
+      * `复制链接`
       */
     ["com.affine.peek-view-controls.copy-link"](): string;
     /**
-      * `Click or drag`
+      * `点击或拖动`
       */
     ["com.affine.split-view-drag-handle.tooltip"](): string;
     /**
-      * `Split view does not support folders.`
+      * `拆分视图不支持文件夹。`
       */
     ["com.affine.split-view-folder-warning.description"](): string;
     /**
-      * `Do not show this again`
+      * `不再显示此内容`
       */
     ["do-not-show-this-again"](): string;
     /**
-      * `New`
+      * `新建`
       */
     ["com.affine.quicksearch.group.creation"](): string;
     /**
-      * `Search locally`
+      * `本地搜索`
       */
     ["com.affine.quicksearch.search-locally"](): string;
     /**
-      * `Search for "{{query}}"`
+      * `搜索 "{{query}}"`
       */
     ["com.affine.quicksearch.group.searchfor"](options: {
         readonly query: string;
     }): string;
     /**
-      * `Search for "{{query}}" (locally)`
+      * `搜索 "{{query}}" （本地）`
       */
     ["com.affine.quicksearch.group.searchfor-locally"](options: {
         readonly query: string;
     }): string;
     /**
-      * `Reset sync`
+      * `重置同步`
       */
     ["com.affine.resetSyncStatus.button"](): string;
     /**
-      * `This operation may fix some synchronization issues.`
+      * `此操作可能会修复一些同步问题。`
       */
     ["com.affine.resetSyncStatus.description"](): string;
     /**
-      * `Collections`
+      * `精选`
       */
     ["com.affine.rootAppSidebar.collections"](): string;
     /**
-      * `Notifications`
+      * `提醒`
       */
     ["com.affine.rootAppSidebar.notifications"](): string;
     /**
-      * `Only doc can be placed on here`
+      * `此处只能放置文档`
       */
     ["com.affine.rootAppSidebar.doc.link-doc-only"](): string;
     /**
-      * `No linked docs`
+      * `没有链接文档`
       */
     ["com.affine.rootAppSidebar.docs.no-subdoc"](): string;
     /**
-      * `Loading linked docs...`
+      * `链接文档加载中...`
       */
     ["com.affine.rootAppSidebar.docs.references-loading"](): string;
     /**
-      * `New doc`
+      * `新建文档`
       */
     ["com.affine.rootAppSidebar.explorer.collection-add-tooltip"](): string;
     /**
-      * `New collection`
+      * `新建精选`
       */
     ["com.affine.rootAppSidebar.explorer.collection-section-add-tooltip"](): string;
     /**
-      * `New linked doc`
+      * `添加链接文档`
       */
     ["com.affine.rootAppSidebar.explorer.doc-add-tooltip"](): string;
     /**
-      * `Copy`
+      * `复制`
       */
     ["com.affine.rootAppSidebar.explorer.drop-effect.copy"](): string;
     /**
-      * `Link`
+      * `链接`
       */
     ["com.affine.rootAppSidebar.explorer.drop-effect.link"](): string;
     /**
-      * `Move`
+      * `移动`
       */
     ["com.affine.rootAppSidebar.explorer.drop-effect.move"](): string;
     /**
-      * `New doc`
+      * `新建文档`
       */
     ["com.affine.rootAppSidebar.explorer.fav-section-add-tooltip"](): string;
     /**
-      * `New doc`
+      * `新建文档`
       */
     ["com.affine.rootAppSidebar.explorer.organize-add-tooltip"](): string;
     /**
-      * `New folder`
+      * `新建文件夹`
       */
     ["com.affine.rootAppSidebar.explorer.organize-section-add-tooltip"](): string;
     /**
-      * `New doc`
+      * `新建文档`
       */
     ["com.affine.rootAppSidebar.explorer.tag-add-tooltip"](): string;
     /**
-      * `New tag`
+      * `新建标签`
       */
     ["com.affine.rootAppSidebar.explorer.tag-section-add-tooltip"](): string;
     /**
-      * `Favorites`
+      * `收藏夹`
       */
     ["com.affine.rootAppSidebar.favorites"](): string;
     /**
-      * `No favorites`
+      * `您可以将文档添加到您的收藏`
       */
     ["com.affine.rootAppSidebar.favorites.empty"](): string;
     /**
-      * `Migration data`
+      * `迁移数据`
       */
     ["com.affine.rootAppSidebar.migration-data"](): string;
     /**
-      * `Empty the old favorites`
+      * `清空旧收藏夹`
       */
     ["com.affine.rootAppSidebar.migration-data.clean-all"](): string;
     /**
-      * `Cancel`
+      * `取消`
       */
     ["com.affine.rootAppSidebar.migration-data.clean-all.cancel"](): string;
     /**
-      * `OK`
+      * `好的`
       */
     ["com.affine.rootAppSidebar.migration-data.clean-all.confirm"](): string;
     /**
-      * `The old "Favorites" will be replaced`
+      * `“收藏夹”将被改为个人收藏夹`
       */
     ["com.affine.rootAppSidebar.migration-data.help"](): string;
     /**
-      * `Empty the old favorites`
+      * `清空旧收藏夹`
       */
     ["com.affine.rootAppSidebar.migration-data.help.clean-all"](): string;
     /**
-      * `OK`
+      * `好的`
       */
     ["com.affine.rootAppSidebar.migration-data.help.confirm"](): string;
     /**
-      * `Organize`
+      * `组织`
       */
     ["com.affine.rootAppSidebar.organize"](): string;
     /**
-      * `Delete`
+      * `删除`
       */
     ["com.affine.rootAppSidebar.organize.delete"](): string;
     /**
-      * `Remove from folder`
+      * `从文件夹移出`
       */
     ["com.affine.rootAppSidebar.organize.delete-from-folder"](): string;
     /**
-      * `Delete the folder will not delete any docs, tags, or collections.`
+      * `删除文件夹不会删除任何文档、标签或精选。`
       */
     ["com.affine.rootAppSidebar.organize.delete.notify-message"](): string;
     /**
-      * `Delete {{name}}`
+      * `删除 {{name}}`
       */
     ["com.affine.rootAppSidebar.organize.delete.notify-title"](options: {
         readonly name: string;
     }): string;
     /**
-      * `No folders`
+      * `没有文件夹`
       */
     ["com.affine.rootAppSidebar.organize.empty"](): string;
     /**
-      * `Empty folder`
+      * `空文件夹`
       */
     ["com.affine.rootAppSidebar.organize.empty-folder"](): string;
     /**
-      * `Add pages`
+      * `添加文档`
       */
     ["com.affine.rootAppSidebar.organize.empty-folder.add-pages"](): string;
     /**
-      * `New folder`
+      * `新建文件夹`
       */
     ["com.affine.rootAppSidebar.organize.empty.new-folders-button"](): string;
     /**
-      * `Add to favorites`
+      * `加入收藏夹`
       */
     ["com.affine.rootAppSidebar.organize.folder-add-favorite"](): string;
     /**
-      * `Remove from favorites`
+      * `从收藏夹中移除`
       */
     ["com.affine.rootAppSidebar.organize.folder-rm-favorite"](): string;
     /**
-      * `Add Collections`
+      * `添加精选`
       */
     ["com.affine.rootAppSidebar.organize.folder.add-collections"](): string;
     /**
-      * `New doc`
+      * `新建文档`
       */
     ["com.affine.rootAppSidebar.organize.folder.new-doc"](): string;
     /**
-      * `Add docs`
+      * `添加文档`
       */
     ["com.affine.rootAppSidebar.organize.folder.add-docs"](): string;
     /**
-      * `Add others`
+      * `添加其他`
       */
     ["com.affine.rootAppSidebar.organize.folder.add-others"](): string;
     /**
-      * `Add tags`
+      * `添加标签`
       */
     ["com.affine.rootAppSidebar.organize.folder.add-tags"](): string;
     /**
-      * `Create a subfolder`
+      * `创建子文件夹`
       */
     ["com.affine.rootAppSidebar.organize.folder.create-subfolder"](): string;
     /**
-      * `New folder`
+      * `新建文件夹`
       */
     ["com.affine.rootAppSidebar.organize.new-folders"](): string;
     /**
-      * `Only folder can be placed on here`
+      * `此处只能放置文件夹`
       */
     ["com.affine.rootAppSidebar.organize.root-folder-only"](): string;
     /**
-      * `Add More`
+      * `添加更多`
       */
     ["com.affine.rootAppSidebar.organize.add-more"](): string;
     /**
-      * `Add Folder`
+      * `创建文件夹`
       */
     ["com.affine.rootAppSidebar.organize.add-folder"](): string;
     /**
-      * `New Collection`
+      * `新建精选`
       */
     ["com.affine.rootAppSidebar.collection.new"](): string;
     /**
-      * `Others`
+      * `其他`
       */
     ["com.affine.rootAppSidebar.others"](): string;
     /**
-      * `Only doc can be placed on here`
+      * `此处只能放置文档`
       */
     ["com.affine.rootAppSidebar.tag.doc-only"](): string;
     /**
-      * `Tags`
+      * `标签`
       */
     ["com.affine.rootAppSidebar.tags"](): string;
     /**
-      * `No tags`
+      * `没有标签`
       */
     ["com.affine.rootAppSidebar.tags.empty"](): string;
     /**
-      * `New tag`
+      * `新建标签`
       */
     ["com.affine.rootAppSidebar.tags.empty.new-tag-button"](): string;
     /**
-      * `New tag`
+      * `新建标签`
       */
     ["com.affine.rootAppSidebar.tags.new-tag"](): string;
     /**
-      * `No docs`
+      * `没有文档`
       */
     ["com.affine.rootAppSidebar.tags.no-doc"](): string;
     /**
-      * `Drag to resize`
+      * `拖动调整宽度`
       */
     ["com.affine.rootAppSidebar.resize-handle.tooltip.drag"](): string;
     /**
-      * `Click to collapse`
+      * `点击收起侧栏`
       */
     ["com.affine.rootAppSidebar.resize-handle.tooltip.click"](): string;
     /**
-      * `Type here ...`
+      * `在这输入...`
       */
     ["com.affine.search-tags.placeholder"](): string;
     /**
-      * `Empty`
+      * `选择页面为空`
       */
     ["com.affine.selectPage.empty"](): string;
     /**
-      * `Selected`
+      * `已选中的文档`
       */
     ["com.affine.selectPage.selected"](): string;
     /**
-      * `Add include doc`
+      * `添加选中的文档`
       */
     ["com.affine.selectPage.title"](): string;
     /**
-      * `Search collections...`
+      * `搜索精选...`
       */
     ["com.affine.selector-collection.search.placeholder"](): string;
     /**
-      * `Search tags...`
+      * `搜索标签...`
       */
     ["com.affine.selector-tag.search.placeholder"](): string;
     /**
-      * `Notifications`
+      * `通知`
       */
     ["com.affine.setting.notifications"](): string;
     /**
-      * `Notifications`
+      * `通知`
       */
     ["com.affine.setting.notifications.header.title"](): string;
     /**
-      * `Choose the types of updates you want to receive and where to get them.`
+      * `选择您想要接收的更新类型以及获取更新的位置。`
       */
     ["com.affine.setting.notifications.header.description"](): string;
     /**
-      * `Email notifications`
+      * `邮件通知`
       */
     ["com.affine.setting.notifications.email.title"](): string;
     /**
-      * `Mention`
+      * `提醒`
       */
     ["com.affine.setting.notifications.email.mention.title"](): string;
     /**
-      * `You will be notified through email when other members of the workspace @ you.`
+      * `当工作空间的其他成员@你时，你将通过电子邮件收到通知。`
       */
     ["com.affine.setting.notifications.email.mention.subtitle"](): string;
     /**
-      * `Invites`
+      * `邀请`
       */
     ["com.affine.setting.notifications.email.invites.title"](): string;
     /**
-      * `Invitation related messages will be sent through emails.`
+      * `邀请消息将通过电子邮件发送。`
       */
     ["com.affine.setting.notifications.email.invites.subtitle"](): string;
     /**
-      * `Comments`
+      * `评论`
       */
     ["com.affine.setting.notifications.email.comments.title"](): string;
     /**
-      * `You will be notified through email when other members of the workspace comment on your docs.`
+      * `当工作区的其他成员评论你的文档时，你将通过电子邮件收到通知。`
       */
     ["com.affine.setting.notifications.email.comments.subtitle"](): string;
     /**
-      * `Account settings`
+      * `账号设置`
       */
     ["com.affine.setting.account"](): string;
     /**
-      * `Delete your account from {{server}}`
+      * `从{{server}}删除您的账户`
       */
     ["com.affine.setting.account.delete-from-server"](options: {
         readonly server: string;
     }): string;
     /**
-      * `Once deleted, your account will no longer be accessible, and all data in your personal space on the server will be permanently deleted.`
+      * `一旦删除，您的账户将无法访问，您在服务器上的个人空间数据将被永久删除。`
       */
     ["com.affine.setting.account.delete.message"](): string;
     /**
-      * `Cannot delete account`
+      * `无法删除帐户`
       */
     ["com.affine.setting.account.delete.team-warning-title"](): string;
     /**
-      * `You’re the owner of a team workspace. To delete your account, please delete the workspace or transfer ownership first.`
+      * `您是团队工作区的拥有者。要删除您的帐户，请先删除工作区或转移所有权。`
       */
     ["com.affine.setting.account.delete.team-warning-description"](): string;
     /**
-      * `Delete your account?`
+      * `删除您的账户？`
       */
     ["com.affine.setting.account.delete.confirm-title"](): string;
     /**
-      * `Confirm your email`
+      * `确认你的邮箱`
       */
     ["com.affine.setting.account.delete.email-confirm-title"](): string;
     /**
-      * `Please type your email to confirm`
+      * `请输入您的电子邮件以确认`
       */
     ["com.affine.setting.account.delete.input-placeholder"](): string;
     /**
-      * `Delete`
+      * `删除`
       */
     ["com.affine.setting.account.delete.confirm-button"](): string;
     /**
-      * `Account deleted`
+      * `账户已删除`
       */
     ["com.affine.setting.account.delete.success-title"](): string;
     /**
-      * `Your account and server-side data have been deleted.`
+      * `您的账户和服务器上的数据已被删除。`
       */
     ["com.affine.setting.account.delete.success-description-1"](): string;
     /**
-      * `Local data can be deleted by uninstalling app and clearing browser data.`
+      * `可以通过卸载应用程序和清除浏览器数据来删除本地数据。`
       */
     ["com.affine.setting.account.delete.success-description-2"](): string;
     /**
-      * `Your personal information`
+      * `个人信息`
       */
     ["com.affine.setting.account.message"](): string;
     /**
-      * `Sync with 识光`
+      * `通过 识光 同步`
       */
     ["com.affine.setting.sign.message"](): string;
     /**
-      * `Securely sign out of your account.`
+      * `安全登出账户`
       */
     ["com.affine.setting.sign.out.message"](): string;
     /**
-      * `General`
+      * `常规`
       */
     ["com.affine.settingSidebar.settings.general"](): string;
     /**
-      * `Workspace`
+      * `工作区`
       */
     ["com.affine.settingSidebar.settings.workspace"](): string;
     /**
-      * `Settings`
+      * `设置`
       */
     ["com.affine.settingSidebar.title"](): string;
     /**
-      * `Appearance`
+      * `外观`
       */
     ["com.affine.settings.appearance"](): string;
     /**
-      * `Customise the appearance of the client.`
+      * `自定义客户端外观。`
       */
     ["com.affine.settings.appearance.border-style-description"](): string;
     /**
-      * `Customise your date style.`
+      * `定制您的日期格式。`
       */
     ["com.affine.settings.appearance.date-format-description"](): string;
     /**
-      * `Maximum display of content within a doc.`
+      * `文档内容的最大显示量。`
       */
     ["com.affine.settings.appearance.full-width-description"](): string;
     /**
-      * `Select the language for the interface.`
+      * `选择界面语言。`
       */
     ["com.affine.settings.appearance.language-description"](): string;
     /**
-      * `By default, the week starts on Sunday.`
+      * `默认情况下，一周从星期日开始。`
       */
     ["com.affine.settings.appearance.start-week-description"](): string;
     /**
-      * `Customise appearance of Windows Client.`
+      * `自定义 Windows 客户端外观。`
       */
     ["com.affine.settings.appearance.window-frame-description"](): string;
     /**
-      * `Links`
+      * `链接`
       */
     ["com.affine.setting.appearance.links"](): string;
     /**
-      * `Open 识光 links`
+      * `打开 识光 链接`
       */
     ["com.affine.setting.appearance.open-in-app"](): string;
     /**
-      * `You can choose to open the link in the desktop app or directly in the browser.`
+      * `您可以选择在客户端或浏览器中打开此链接`
       */
     ["com.affine.setting.appearance.open-in-app.hint"](): string;
     /**
-      * `Ask me each time`
+      * `每次询问`
       */
     ["com.affine.setting.appearance.open-in-app.always-ask"](): string;
     /**
-      * `Open links in desktop app`
+      * `在客户端中打开该链接`
       */
     ["com.affine.setting.appearance.open-in-app.open-in-desktop-app"](): string;
     /**
-      * `Open links in browser`
+      * `在浏览器中打开该链接`
       */
     ["com.affine.setting.appearance.open-in-app.open-in-web"](): string;
     /**
-      * `Open 识光 links`
+      * `打开 识光 链接`
       */
     ["com.affine.setting.appearance.open-in-app.title"](): string;
     /**
-      * `Open this doc in 识光 app`
+      * `在 识光 客户端中打开`
       */
     ["com.affine.open-in-app.card.title"](): string;
     /**
-      * `Open in app`
+      * `在客户端中打开`
       */
     ["com.affine.open-in-app.card.button.open"](): string;
     /**
-      * `Dismiss`
+      * `忽略`
       */
     ["com.affine.open-in-app.card.button.dismiss"](): string;
     /**
-      * `Remember choice`
+      * `记住我的选择`
       */
     ["com.affine.open-in-app.card.remember"](): string;
     /**
-      * `Download desktop app`
+      * `下载客户端`
       */
     ["com.affine.open-in-app.card.download"](): string;
     /**
-      * `If enabled, it will automatically check for new versions at regular intervals.`
+      * `如果启用，它将定期自动检查新版本。`
       */
     ["com.affine.settings.auto-check-description"](): string;
     /**
-      * `If enabled, new versions will be automatically downloaded to the current device.`
+      * `如果启用，新版本将自动下载到当前设备。`
       */
     ["com.affine.settings.auto-download-description"](): string;
     /**
-      * `Editor`
+      * `编辑器`
       */
     ["com.affine.settings.editorSettings"](): string;
     /**
-      * `Edgeless`
+      * `无界`
       */
     ["com.affine.settings.editorSettings.edgeless"](): string;
     /**
-      * `Connector`
+      * `连线`
       */
     ["com.affine.settings.editorSettings.edgeless.connecter"](): string;
     /**
-      * `Border style`
+      * `边框样式`
       */
     ["com.affine.settings.editorSettings.edgeless.connecter.border-style"](): string;
     /**
-      * `Border thickness`
+      * `边框厚度`
       */
     ["com.affine.settings.editorSettings.edgeless.connecter.border-thickness"](): string;
     /**
-      * `Color`
+      * `颜色`
       */
     ["com.affine.settings.editorSettings.edgeless.connecter.color"](): string;
     /**
-      * `Connector shape`
+      * `连线形状`
       */
     ["com.affine.settings.editorSettings.edgeless.connecter.connector-shape"](): string;
     /**
-      * `Curve`
+      * `曲线`
       */
     ["com.affine.settings.editorSettings.edgeless.connecter.connector-shape.curve"](): string;
     /**
-      * `Elbowed`
+      * `折线`
       */
     ["com.affine.settings.editorSettings.edgeless.connecter.connector-shape.elbowed"](): string;
     /**
-      * `Straight`
+      * `直线`
       */
     ["com.affine.settings.editorSettings.edgeless.connecter.connector-shape.straight"](): string;
     /**
-      * `End endpoint`
+      * `结束端点`
       */
     ["com.affine.settings.editorSettings.edgeless.connecter.end-endpoint"](): string;
     /**
-      * `Start endpoint`
+      * `起始端点`
       */
     ["com.affine.settings.editorSettings.edgeless.connecter.start-endpoint"](): string;
     /**
-      * `Custom`
+      * `自定义`
       */
     ["com.affine.settings.editorSettings.edgeless.custom"](): string;
     /**
-      * `Mind Map`
+      * `思维导图`
       */
     ["com.affine.settings.editorSettings.edgeless.mind-map"](): string;
     /**
-      * `Layout`
+      * `布局`
       */
     ["com.affine.settings.editorSettings.edgeless.mind-map.layout"](): string;
     /**
-      * `Left`
+      * `左侧`
       */
     ["com.affine.settings.editorSettings.edgeless.mind-map.layout.left"](): string;
     /**
-      * `Radial`
+      * `居中`
       */
     ["com.affine.settings.editorSettings.edgeless.mind-map.layout.radial"](): string;
     /**
-      * `Right`
+      * `右侧`
       */
     ["com.affine.settings.editorSettings.edgeless.mind-map.layout.right"](): string;
     /**
-      * `Note`
+      * `笔记`
       */
     ["com.affine.settings.editorSettings.edgeless.note"](): string;
     /**
-      * `Background`
+      * `背景`
       */
     ["com.affine.settings.editorSettings.edgeless.note.background"](): string;
     /**
-      * `Border style`
+      * `边框样式`
       */
     ["com.affine.settings.editorSettings.edgeless.note.border"](): string;
     /**
-      * `Border thickness`
+      * `边框厚度`
       */
     ["com.affine.settings.editorSettings.edgeless.note.border-thickness"](): string;
     /**
-      * `Dash`
+      * `虚线`
       */
     ["com.affine.settings.editorSettings.edgeless.note.border.dash"](): string;
     /**
-      * `None`
+      * `无边框`
       */
     ["com.affine.settings.editorSettings.edgeless.note.border.none"](): string;
     /**
-      * `Solid`
+      * `实线`
       */
     ["com.affine.settings.editorSettings.edgeless.note.border.solid"](): string;
     /**
-      * `Corners`
+      * `圆角`
       */
     ["com.affine.settings.editorSettings.edgeless.note.corners"](): string;
     /**
-      * `Shadow style`
+      * `阴影样式`
       */
     ["com.affine.settings.editorSettings.edgeless.note.shadow"](): string;
     /**
-      * `Pen`
+      * `笔`
       */
     ["com.affine.settings.editorSettings.edgeless.pen"](): string;
     /**
-      * `Color`
+      * `颜色`
       */
     ["com.affine.settings.editorSettings.edgeless.pen.color"](): string;
     /**
-      * `Thickness`
+      * `画笔粗细`
       */
     ["com.affine.settings.editorSettings.edgeless.pen.thickness"](): string;
     /**
-      * `Shape`
+      * `图形`
       */
     ["com.affine.settings.editorSettings.edgeless.shape"](): string;
     /**
-      * `Border color`
+      * `边框颜色`
       */
     ["com.affine.settings.editorSettings.edgeless.shape.border-color"](): string;
     /**
-      * `Border style`
+      * `边框样式`
       */
     ["com.affine.settings.editorSettings.edgeless.shape.border-style"](): string;
     /**
-      * `Border thickness`
+      * `边框厚度`
       */
     ["com.affine.settings.editorSettings.edgeless.shape.border-thickness"](): string;
     /**
-      * `Diamond`
+      * `菱形`
       */
     ["com.affine.settings.editorSettings.edgeless.shape.diamond"](): string;
     /**
-      * `Ellipse`
+      * `圆形`
       */
     ["com.affine.settings.editorSettings.edgeless.shape.ellipse"](): string;
     /**
-      * `Fill color`
+      * `填充颜色`
       */
     ["com.affine.settings.editorSettings.edgeless.shape.fill-color"](): string;
     /**
-      * `Flow`
+      * `流程图`
       */
     ["com.affine.settings.editorSettings.edgeless.shape.flow"](): string;
     /**
-      * `Font`
+      * `字体`
       */
     ["com.affine.settings.editorSettings.edgeless.shape.font"](): string;
     /**
-      * `Font size`
+      * `字体大小`
       */
     ["com.affine.settings.editorSettings.edgeless.shape.font-size"](): string;
     /**
-      * `Font style`
+      * `字体样式`
       */
     ["com.affine.settings.editorSettings.edgeless.shape.font-style"](): string;
     /**
-      * `List`
+      * `列表`
       */
     ["com.affine.settings.editorSettings.edgeless.shape.list"](): string;
     /**
-      * `Rounded Rectangle`
+      * `圆角矩形`
       */
     ["com.affine.settings.editorSettings.edgeless.shape.rounded-rectangle"](): string;
     /**
-      * `Square`
+      * `正方形`
       */
     ["com.affine.settings.editorSettings.edgeless.shape.square"](): string;
     /**
-      * `Text alignment`
+      * `文本对齐`
       */
     ["com.affine.settings.editorSettings.edgeless.shape.text-alignment"](): string;
     /**
-      * `Text color`
+      * `文本颜色`
       */
     ["com.affine.settings.editorSettings.edgeless.shape.text-color"](): string;
     /**
-      * `Triangle`
+      * `三角形`
       */
     ["com.affine.settings.editorSettings.edgeless.shape.triangle"](): string;
     /**
-      * `Frame`
+      * `框架`
       */
     ["com.affine.settings.editorSettings.edgeless.frame"](): string;
     /**
-      * `Background`
+      * `背景`
       */
     ["com.affine.settings.editorSettings.edgeless.frame.background"](): string;
     /**
-      * `Style`
+      * `样式`
       */
     ["com.affine.settings.editorSettings.edgeless.style"](): string;
     /**
-      * `General`
+      * `常规`
       */
     ["com.affine.settings.editorSettings.edgeless.style.general"](): string;
     /**
-      * `Scribbled`
+      * `涂鸦`
       */
     ["com.affine.settings.editorSettings.edgeless.style.scribbled"](): string;
     /**
-      * `Text`
+      * `文本`
       */
     ["com.affine.settings.editorSettings.edgeless.text"](): string;
     /**
-      * `Alignment`
+      * `对齐方式`
       */
     ["com.affine.settings.editorSettings.edgeless.text.alignment"](): string;
     /**
-      * `Center`
+      * `居中`
       */
     ["com.affine.settings.editorSettings.edgeless.text.alignment.center"](): string;
     /**
-      * `Left`
+      * `左侧`
       */
     ["com.affine.settings.editorSettings.edgeless.text.alignment.left"](): string;
     /**
-      * `Right`
+      * `右侧`
       */
     ["com.affine.settings.editorSettings.edgeless.text.alignment.right"](): string;
     /**
-      * `Text color`
+      * `文本颜色`
       */
     ["com.affine.settings.editorSettings.edgeless.text.color"](): string;
     /**
-      * `Font`
+      * `字体`
       */
     ["com.affine.settings.editorSettings.edgeless.text.font"](): string;
     /**
-      * `Font family`
+      * `字体`
       */
     ["com.affine.settings.editorSettings.edgeless.text.font-family"](): string;
     /**
-      * `Font size`
+      * `字体大小`
       */
     ["com.affine.settings.editorSettings.edgeless.text.font-size"](): string;
     /**
-      * `Font style`
+      * `字体样式`
       */
     ["com.affine.settings.editorSettings.edgeless.text.font-style"](): string;
     /**
-      * `Font weight`
+      * `字重`
       */
     ["com.affine.settings.editorSettings.edgeless.text.font-weight"](): string;
     /**
-      * `General`
+      * `常规`
       */
     ["com.affine.settings.editorSettings.general"](): string;
     /**
-      * `Enable the powerful AI assistant, 识光 AI.`
+      * `启用卓越的 AI 助手，识光 AI。`
       */
     ["com.affine.settings.editorSettings.general.ai.description"](): string;
     /**
-      * `Disable AI and Reload`
+      * `禁用 AI 并重新加载`
       */
     ["com.affine.settings.editorSettings.general.ai.disable.confirm"](): string;
     /**
-      * `Are you sure you want to disable AI? We value your productivity and our AI can enhance it. Please think again!`
+      * `您确定要禁用 AI 吗？我们重视您的工作效率，而我们的 AI 可以提高它。请再考虑一下！`
       */
     ["com.affine.settings.editorSettings.general.ai.disable.description"](): string;
     /**
-      * `Disable AI?`
+      * `禁用 AI ？`
       */
     ["com.affine.settings.editorSettings.general.ai.disable.title"](): string;
     /**
-      * `Enable AI and Reload`
+      * `启用 AI 并重新加载`
       */
     ["com.affine.settings.editorSettings.general.ai.enable.confirm"](): string;
     /**
-      * `Do you want to enable AI? Our AI assistant is ready to enhance your productivity and provide smart assistance. Let's get started! We need reload page to make this change.`
+      * `您想启用 AI 吗？我们的 AI 助手已准备好提高您的工作效率并提供智能帮助。让我们开始吧！我们需要重新加载页面以进行此更改。`
       */
     ["com.affine.settings.editorSettings.general.ai.enable.description"](): string;
     /**
-      * `Enable AI?`
+      * `启用 AI ？`
       */
     ["com.affine.settings.editorSettings.general.ai.enable.title"](): string;
     /**
@@ -5723,51 +5731,51 @@ export function useLumiBookI18N(): {
       */
     ["com.affine.settings.editorSettings.general.ai.title"](): string;
     /**
-      * `Set a default programming language.`
+      * `设置默认编程语言。`
       */
     ["com.affine.settings.editorSettings.general.default-code-block.language.description"](): string;
     /**
-      * `Code blocks default language`
+      * `代码块默认语言`
       */
     ["com.affine.settings.editorSettings.general.default-code-block.language.title"](): string;
     /**
-      * `Show line numbers in all code blocks by default.`
+      * `默认在所有代码块中显示行号。`
       */
     ["com.affine.settings.editorSettings.general.default-code-block.line-numbers.description"](): string;
     /**
-      * `Show line numbers in code blocks`
+      * `代码块显示行号`
       */
     ["com.affine.settings.editorSettings.general.default-code-block.line-numbers.title"](): string;
     /**
-      * `Encapsulate code snippets for better readability.`
+      * `自动换行代码片段以提高可读性。`
       */
     ["com.affine.settings.editorSettings.general.default-code-block.wrap.description"](): string;
     /**
-      * `Wrap code in code blocks`
+      * `在代码块中自动换行`
       */
     ["com.affine.settings.editorSettings.general.default-code-block.wrap.title"](): string;
     /**
-      * `Default mode for new doc.`
+      * `创建文档的预设模式`
       */
     ["com.affine.settings.editorSettings.general.default-new-doc.description"](): string;
     /**
-      * `New doc default mode`
+      * `创建文档的预设模式`
       */
     ["com.affine.settings.editorSettings.general.default-new-doc.title"](): string;
     /**
-      * `Auto-title new docs with current date`
+      * `用当前日期自动命名新文档`
       */
     ["com.affine.settings.editorSettings.general.auto-date-title.title"](): string;
     /**
-      * `Automatically title blank new docs with today's date.`
+      * `自动用今天的日期命名空白新文档。`
       */
     ["com.affine.settings.editorSettings.general.auto-date-title.description"](): string;
     /**
-      * `New doc date format`
+      * `新文档日期格式`
       */
     ["com.affine.settings.editorSettings.general.auto-date-title.format.title"](): string;
     /**
-      * `Choose the date format used for automatic new doc titles.`
+      * `选择自动新文档标题使用的日期格式。`
       */
     ["com.affine.settings.editorSettings.general.auto-date-title.format.description"](): string;
     /**
@@ -5783,546 +5791,546 @@ export function useLumiBookI18N(): {
       */
     ["com.affine.settings.editorSettings.general.auto-date-title.format.yyyy-mm-dd"](): string;
     /**
-      * `Journal style (localized)`
+      * `日记样式（本地化）`
       */
     ["com.affine.settings.editorSettings.general.auto-date-title.format.journal"](): string;
     /**
-      * `Display add icon option`
+      * `显示添加图标选项`
       */
     ["com.affine.settings.editorSettings.general.add-icon-option.title"](): string;
     /**
-      * `Show or hide the add icon option for docs without an icon.`
+      * `显示或隐藏无图标文档的添加图标选项。`
       */
     ["com.affine.settings.editorSettings.general.add-icon-option.description"](): string;
     /**
-      * `Customize your text experience.`
+      * `自定义您的文本体验。`
       */
     ["com.affine.settings.editorSettings.general.font-family.custom.description"](): string;
     /**
-      * `Custom font family`
+      * `自定义字体`
       */
     ["com.affine.settings.editorSettings.general.font-family.custom.title"](): string;
     /**
-      * `Choose your editor's font family.`
+      * `选择编辑器使用的字体。`
       */
     ["com.affine.settings.editorSettings.general.font-family.description"](): string;
     /**
-      * `Font family`
+      * `字体`
       */
     ["com.affine.settings.editorSettings.general.font-family.title"](): string;
     /**
-      * `Adjust the base font size for better readability.`
+      * `调整基础字号以提升可读性。`
       */
     ["com.affine.settings.editorSettings.general.font-size.description"](): string;
     /**
-      * `Font size`
+      * `字号`
       */
     ["com.affine.settings.editorSettings.general.font-size.title"](): string;
     /**
-      * `Automatically detect and correct spelling errors.`
+      * `自动检测并纠正拼写错误。`
       */
     ["com.affine.settings.editorSettings.general.spell-check.description"](): string;
     /**
-      * `Spell check`
+      * `拼写检查`
       */
     ["com.affine.settings.editorSettings.general.spell-check.title"](): string;
     /**
-      * `Page`
+      * `页面`
       */
     ["com.affine.settings.editorSettings.page"](): string;
     /**
-      * `Middle click paste`
+      * `单击鼠标中键粘贴`
       */
     ["com.affine.settings.editorSettings.general.middle-click-paste.title"](): string;
     /**
-      * `Enable default middle click paste behavior on Linux.`
+      * `在 Linux 上默认启用鼠标中键粘贴功能。`
       */
     ["com.affine.settings.editorSettings.general.middle-click-paste.description"](): string;
     /**
-      * `Display bi-directional links on the doc.`
+      * `在文档上显示双向链接。`
       */
     ["com.affine.settings.editorSettings.page.display-bi-link.description"](): string;
     /**
-      * `Display bi-directional links`
+      * `显示双向链接`
       */
     ["com.affine.settings.editorSettings.page.display-bi-link.title"](): string;
     /**
-      * `Display document information on the doc.`
+      * `在文档中显示文档信息。`
       */
     ["com.affine.settings.editorSettings.page.display-doc-info.description"](): string;
     /**
-      * `Display doc info`
+      * `显示文档信息`
       */
     ["com.affine.settings.editorSettings.page.display-doc-info.title"](): string;
     /**
-      * `Maximise display of content within a page.`
+      * `文档内容的最大显示量。`
       */
     ["com.affine.settings.editorSettings.page.full-width.description"](): string;
     /**
-      * `Full width layout`
+      * `全宽布局`
       */
     ["com.affine.settings.editorSettings.page.full-width.title"](): string;
     /**
-      * `Default page width`
+      * `默认文档页面宽度`
       */
     ["com.affine.settings.editorSettings.page.default-page-width.title"](): string;
     /**
-      * `Set default width for new pages, individual pages can override.`
+      * `设置新页面的默认宽度，单独在页面中设置页面宽度属性可以覆盖默认设置。`
       */
     ["com.affine.settings.editorSettings.page.default-page-width.description"](): string;
     /**
-      * `Standard`
+      * `标准`
       */
     ["com.affine.settings.editorSettings.page.default-page-width.standard"](): string;
     /**
-      * `Full width`
+      * `全宽`
       */
     ["com.affine.settings.editorSettings.page.default-page-width.full-width"](): string;
     /**
-      * `Set edgeless default color scheme.`
+      * `设置默认的无界配色方案。`
       */
     ["com.affine.settings.editorSettings.page.edgeless-default-theme.description"](): string;
     /**
-      * `Edgeless default theme`
+      * `无界默认配色方案`
       */
     ["com.affine.settings.editorSettings.page.edgeless-default-theme.title"](): string;
     /**
-      * `Specified by current color mode`
+      * `由当前应用的配色方案指定`
       */
     ["com.affine.settings.editorSettings.page.edgeless-default-theme.specified"](): string;
     /**
-      * `Scroll wheel zoom`
+      * `滚轮缩放`
       */
     ["com.affine.settings.editorSettings.page.edgeless-scroll-wheel-zoom.title"](): string;
     /**
-      * `Use the scroll wheel to zoom in and out.`
+      * `使用鼠标滚轮来调整缩放比例`
       */
     ["com.affine.settings.editorSettings.page.edgeless-scroll-wheel-zoom.description"](): string;
     /**
-      * `Preferences`
+      * `首选项`
       */
     ["com.affine.settings.editorSettings.preferences"](): string;
     /**
-      * `You can export the entire preferences data for backup, and the exported data can be re-imported.`
+      * `您可以导出整个首选项数据进行备份，然后可以重新导入导出的数据。`
       */
     ["com.affine.settings.editorSettings.preferences.export.description"](): string;
     /**
-      * `Export Settings`
+      * `导出设置`
       */
     ["com.affine.settings.editorSettings.preferences.export.title"](): string;
     /**
-      * `You can import previously exported preferences data for restoration.`
+      * `您可以导入以前导出的首选项数据进行恢复。`
       */
     ["com.affine.settings.editorSettings.preferences.import.description"](): string;
     /**
-      * `Import Settings`
+      * `导入设置`
       */
     ["com.affine.settings.editorSettings.preferences.import.title"](): string;
     /**
-      * `Configure your own editor`
+      * `配置您自己的编辑器。`
       */
     ["com.affine.settings.editorSettings.subtitle"](): string;
     /**
-      * `Editor settings`
+      * `编辑器设置`
       */
     ["com.affine.settings.editorSettings.title"](): string;
     /**
-      * `Ask me every time`
+      * `每次询问`
       */
     ["com.affine.settings.editorSettings.ask-me-every-time"](): string;
     /**
-      * `Email`
+      * `电子邮件`
       */
     ["com.affine.settings.email"](): string;
     /**
-      * `Change email`
+      * `更改邮箱`
       */
     ["com.affine.settings.email.action"](): string;
     /**
-      * `Change email`
+      * `更改邮箱`
       */
     ["com.affine.settings.email.action.change"](): string;
     /**
-      * `Verify email`
+      * `验证邮箱`
       */
     ["com.affine.settings.email.action.verify"](): string;
     /**
-      * `Enable 识光 Sync to collaborate with others`
+      * `启用 识光 同步以与他人协作`
       */
     ["com.affine.settings.member-tooltip"](): string;
     /**
-      * `Loading member list...`
+      * `读取成员列表中...`
       */
     ["com.affine.settings.member.loading"](): string;
     /**
-      * `Noise background on the sidebar`
+      * `侧边栏的噪点背景`
       */
     ["com.affine.settings.noise-style"](): string;
     /**
-      * `Use background noise effect on the sidebar.`
+      * `在侧边栏使用噪点背景效果。`
       */
     ["com.affine.settings.noise-style-description"](): string;
     /**
-      * `Password`
+      * `密码`
       */
     ["com.affine.settings.password"](): string;
     /**
-      * `Change password`
+      * `更改密码`
       */
     ["com.affine.settings.password.action.change"](): string;
     /**
-      * `Set password`
+      * `设置密码`
       */
     ["com.affine.settings.password.action.set"](): string;
     /**
-      * `Set a password to sign in to your account`
+      * `设置密码以登录您的账号`
       */
     ["com.affine.settings.password.message"](): string;
     /**
-      * `My profile`
+      * `个人资料`
       */
     ["com.affine.settings.profile"](): string;
     /**
-      * `Your account profile will be displayed to everyone.`
+      * `您的账户个人资料将向所有人显示。`
       */
     ["com.affine.settings.profile.message"](): string;
     /**
-      * `Display name`
+      * `显示名称`
       */
     ["com.affine.settings.profile.name"](): string;
     /**
-      * `Input account name`
+      * `输入账号名称`
       */
     ["com.affine.settings.profile.placeholder"](): string;
     /**
-      * `Remove workspace`
+      * `删除工作区`
       */
     ["com.affine.settings.remove-workspace"](): string;
     /**
-      * `Remove workspace from this device and optionally delete all data.`
+      * `从此设备中删除工作区，并可选择删除所有数据。`
       */
     ["com.affine.settings.remove-workspace-description"](): string;
     /**
-      * `Sign in / Sign up`
+      * `登录 / 注册`
       */
     ["com.affine.settings.sign"](): string;
     /**
-      * `Need more customization options? Tell us in the community.`
+      * `需要更多定制选项？您可以在社区中向我们推荐它们。`
       */
     ["com.affine.settings.suggestion"](): string;
     /**
-      * `Translucent UI on the sidebar`
+      * `侧边栏的透明效果`
       */
     ["com.affine.settings.translucent-style"](): string;
     /**
-      * `Use transparency effect on the sidebar.`
+      * `在侧边栏使用半透明效果。`
       */
     ["com.affine.settings.translucent-style-description"](): string;
     /**
-      * `Meetings`
+      * `会议`
       */
     ["com.affine.settings.meetings"](): string;
     /**
-      * `Beyond Recording
-    Your AI Meeting Assistant is Here`
+      * `优于录音功能
+    你的 AI 会议助手就在这里`
       */
     ["com.affine.settings.meetings.setting.welcome"](): string;
     /**
-      * `Native Audio Capture, No Bots Required - Direct from Your Mac to Meeting Intelligence.`
+      * `原生音频捕获，无需机器人 - 直接从您的Mac传输到会议智能体。`
       */
     ["com.affine.settings.meetings.setting.prompt"](): string;
     /**
-      * `Learn more`
+      * `了解更多`
       */
     ["com.affine.settings.meetings.setting.welcome.learn-more"](): string;
     /**
-      * `Enable meeting notes`
+      * `启用会议记录`
       */
     ["com.affine.settings.meetings.enable.title"](): string;
     /**
-      * `Meeting recording`
+      * `会议记录`
       */
     ["com.affine.settings.meetings.record.header"](): string;
     /**
-      * `When meeting starts`
+      * `会议开始时`
       */
     ["com.affine.settings.meetings.record.recording-mode"](): string;
     /**
-      * `Choose the behavior when the meeting starts.`
+      * `选择会议开始时的行为。`
       */
     ["com.affine.settings.meetings.record.recording-mode.description"](): string;
     /**
-      * `Open saved recordings`
+      * `打开已保存的录制`
       */
     ["com.affine.settings.meetings.record.open-saved-file"](): string;
     /**
-      * `Open the locally stored recording files.`
+      * `打开本地存储的录制文件。`
       */
     ["com.affine.settings.meetings.record.open-saved-file.description"](): string;
     /**
-      * `Transcription with AI`
+      * `AI转录`
       */
     ["com.affine.settings.meetings.transcription.header"](): string;
     /**
-      * `AI auto summary`
+      * `AI自动总结`
       */
     ["com.affine.settings.meetings.transcription.auto-summary"](): string;
     /**
-      * `Automatically generate a summary of the meeting notes.`
+      * `自动生成会议记录的摘要。`
       */
     ["com.affine.settings.meetings.transcription.auto-summary.description"](): string;
     /**
-      * `AI auto todo list`
+      * `AI自动待办事项清单`
       */
     ["com.affine.settings.meetings.transcription.auto-todo"](): string;
     /**
-      * `Automatically generate a todo list of the meeting notes.`
+      * `自动生成会议记录的待办事项清单。`
       */
     ["com.affine.settings.meetings.transcription.auto-todo.description"](): string;
     /**
-      * `Privacy & Security`
+      * `隐私 & 安全`
       */
     ["com.affine.settings.meetings.privacy.header"](): string;
     /**
-      * `Screen & System audio recording`
+      * `屏幕和系统音频录制`
       */
     ["com.affine.settings.meetings.privacy.screen-system-audio-recording"](): string;
     /**
-      * `The Meeting feature requires permission to be used.`
+      * `会议功能需要权限才能使用。`
       */
     ["com.affine.settings.meetings.privacy.screen-system-audio-recording.description"](): string;
     /**
-      * `Click to allow`
+      * `点击允许`
       */
     ["com.affine.settings.meetings.privacy.screen-system-audio-recording.permission-setting"](): string;
     /**
-      * `Microphone`
+      * `麦克风`
       */
     ["com.affine.settings.meetings.privacy.microphone"](): string;
     /**
-      * `The Meeting feature requires permission to be used.`
+      * `会议功能需要获得权限才能使用。`
       */
     ["com.affine.settings.meetings.privacy.microphone.description"](): string;
     /**
-      * `Click to allow`
+      * `点击确认`
       */
     ["com.affine.settings.meetings.privacy.microphone.permission-setting"](): string;
     /**
-      * `Permission issues`
+      * `权限问题`
       */
     ["com.affine.settings.meetings.privacy.issues"](): string;
     /**
-      * `Permissions are granted but the status isn't updated? Restart the app to refresh permissions.`
+      * `权限已授予，但状态未更新？重新启动应用以刷新权限。`
       */
     ["com.affine.settings.meetings.privacy.issues.description"](): string;
     /**
-      * `Restart App`
+      * `重启应用`
       */
     ["com.affine.settings.meetings.privacy.issues.restart"](): string;
     /**
-      * `Do nothing`
+      * `不执行任何操作`
       */
     ["com.affine.settings.meetings.record.recording-mode.none"](): string;
     /**
-      * `Auto start recording`
+      * `自动开始录制`
       */
     ["com.affine.settings.meetings.record.recording-mode.auto-start"](): string;
     /**
-      * `Show a recording prompt`
+      * `显示录制提示`
       */
     ["com.affine.settings.meetings.record.recording-mode.prompt"](): string;
     /**
-      * `Screen & System Audio Recording`
+      * `屏幕和系统音频录制`
       */
     ["com.affine.settings.meetings.record.permission-modal.title"](): string;
     /**
-      * `识光 will generate meeting notes by recording your meetings. Authorization to "Screen & System Audio Recording" is necessary.`
+      * `识光 将通过录制您的会议来生成会议记录。需要获得“屏幕和系统音频录制”的授权。`
       */
     ["com.affine.settings.meetings.record.permission-modal.description"](): string;
     /**
-      * `Save meeting's recording block to`
+      * `保存会议记录块至`
       */
     ["com.affine.settings.meetings.record.save-mode"](): string;
     /**
-      * `Open System Settings`
+      * `打开系统设置`
       */
     ["com.affine.settings.meetings.record.permission-modal.open-setting"](): string;
     /**
-      * `Workspace`
+      * `工作区`
       */
     ["com.affine.settings.workspace"](): string;
     /**
-      * `You can view current workspace's information here.`
+      * `您可以在此处自定义您的工作区。`
       */
     ["com.affine.settings.workspace.description"](): string;
     /**
-      * `AI BYOK (Beta)`
+      * `AI BYOK（测试版）`
       */
     ["com.affine.settings.workspace.byok.title"](): string;
     /**
-      * `Loading provider keys.`
+      * `正在加载服务商密钥。`
       */
     ["com.affine.settings.workspace.byok.loading"](): string;
     /**
-      * `Use your own provider keys for this workspace.`
+      * `为此工作区使用您自己的服务商密钥。`
       */
     ["com.affine.settings.workspace.byok.subtitle"](): string;
     /**
-      * `Use workspace provider keys before 识光 AI plan routes.`
+      * `优先使用工作区服务商密钥，再回退到 识光 AI 套餐通道。`
       */
     ["com.affine.settings.workspace.byok.header"](): string;
     /**
-      * `BYOK requires Pro, Team, or Believer`
+      * `BYOK 需要 Pro、Team 或 Believer`
       */
     ["com.affine.settings.workspace.byok.locked.title"](): string;
     /**
-      * `Upgrade this workspace to add provider keys and route 识光 AI through your own OpenAI, Anthropic, Gemini, or FAL account.`
+      * `升级此工作区后，可添加服务商密钥，并通过您自己的 OpenAI、Anthropic、Gemini 或 FAL 账号路由 识光 AI。`
       */
     ["com.affine.settings.workspace.byok.locked.description"](): string;
     /**
-      * `Provider keys`
+      * `服务商密钥`
       */
     ["com.affine.settings.workspace.byok.keys.title"](): string;
     /**
-      * `List order controls fallback within each storage group.`
+      * `列表顺序控制每个存储分组内的回退顺序。`
       */
     ["com.affine.settings.workspace.byok.keys.description"](): string;
     /**
-      * `No provider keys`
+      * `暂无服务商密钥`
       */
     ["com.affine.settings.workspace.byok.empty.title"](): string;
     /**
-      * `Add a key to create the first route for this workspace. Provider rows are not shown until a key exists.`
+      * `添加密钥后，将为此工作区创建第一条路由。创建前不会显示服务商行。`
       */
     ["com.affine.settings.workspace.byok.empty.description"](): string;
     /**
-      * `Local`
+      * `本地`
       */
     ["com.affine.settings.workspace.byok.storage.local"](): string;
     /**
-      * `Server`
+      * `服务端`
       */
     ["com.affine.settings.workspace.byok.storage.server"](): string;
     /**
-      * `Available to workspace members.`
+      * `工作区成员均可使用。`
       */
     ["com.affine.settings.workspace.byok.storage.server.description"](): string;
     /**
-      * `Kept in this desktop device’s secure storage.`
+      * `保存在此桌面设备的安全存储中。`
       */
     ["com.affine.settings.workspace.byok.storage.local.description"](): string;
     /**
-      * `Available in the 识光 desktop app.`
+      * `仅识光桌面端可用。`
       */
     ["com.affine.settings.workspace.byok.storage.local.desktop-only"](): string;
     /**
-      * `Secure local storage is not available on this device.`
+      * `此设备不支持安全本地存储。`
       */
     ["com.affine.settings.workspace.byok.storage.local.unavailable"](): string;
     /**
-      * `Testing sends this key to the workspace server for this request only; it is not stored there.`
+      * `测试会将该密钥临时发送至工作区服务器，服务器不会保存。`
       */
     ["com.affine.settings.workspace.byok.storage.local.test-disclosure"](): string;
     /**
-      * `Disabled after failure`
+      * `失败后已禁用`
       */
     ["com.affine.settings.workspace.byok.status.disabled-after-failure"](): string;
     /**
-      * `Key verified`
+      * `密钥已验证`
       */
     ["com.affine.settings.workspace.byok.status.key-verified"](): string;
     /**
-      * `Text`
+      * `文本`
       */
     ["com.affine.settings.workspace.byok.capability.text"](): string;
     /**
-      * `Image input`
+      * `图片输入`
       */
     ["com.affine.settings.workspace.byok.capability.image-input"](): string;
     /**
-      * `Actions`
+      * `动作`
       */
     ["com.affine.settings.workspace.byok.capability.actions"](): string;
     /**
-      * `Image generate`
+      * `图片生成`
       */
     ["com.affine.settings.workspace.byok.capability.image-generate"](): string;
     /**
-      * `Transcript`
+      * `转录`
       */
     ["com.affine.settings.workspace.byok.capability.transcript"](): string;
     /**
-      * `Indexing`
+      * `索引`
       */
     ["com.affine.settings.workspace.byok.capability.indexing"](): string;
     /**
-      * `failed {{date}}`
+      * `{{date}} 失败`
       */
     ["com.affine.settings.workspace.byok.row.activity.failed"](options: {
         readonly date: string;
     }): string;
     /**
-      * `not used yet`
+      * `尚未使用`
       */
     ["com.affine.settings.workspace.byok.row.activity.unused"](): string;
     /**
-      * `Feature coverage`
+      * `功能覆盖`
       */
     ["com.affine.settings.workspace.byok.coverage.title"](): string;
     /**
-      * `Writing and chat`
+      * `写作与聊天`
       */
     ["com.affine.settings.workspace.byok.feature.chat.title"](): string;
     /**
-      * `Covered when an OpenAI, Anthropic, or Gemini BYOK key exists.`
+      * `存在 OpenAI、Anthropic 或 Gemini BYOK 密钥时覆盖。`
       */
     ["com.affine.settings.workspace.byok.feature.chat.fallback"](): string;
     /**
-      * `Actions and structured output`
+      * `动作与结构化输出`
       */
     ["com.affine.settings.workspace.byok.feature.action.title"](): string;
     /**
-      * `Covered when an OpenAI or Gemini BYOK key exists.`
+      * `存在 OpenAI 或 Gemini BYOK 密钥时覆盖。`
       */
     ["com.affine.settings.workspace.byok.feature.action.fallback"](): string;
     /**
-      * `Image generation`
+      * `图片生成`
       */
     ["com.affine.settings.workspace.byok.feature.image.title"](): string;
     /**
-      * `Covered when an OpenAI, Gemini, or FAL BYOK key exists.`
+      * `存在 OpenAI、Gemini 或 FAL BYOK 密钥时覆盖。`
       */
     ["com.affine.settings.workspace.byok.feature.image.fallback"](): string;
     /**
-      * `Transcript`
+      * `转录`
       */
     ["com.affine.settings.workspace.byok.feature.transcript.title"](): string;
     /**
-      * `Covered when a server Gemini BYOK key exists.`
+      * `存在服务端 Gemini BYOK 密钥时覆盖。`
       */
     ["com.affine.settings.workspace.byok.feature.transcript.fallback"](): string;
     /**
-      * `Workspace indexing`
+      * `工作区索引`
       */
     ["com.affine.settings.workspace.byok.feature.workspace-indexing.title"](): string;
     /**
-      * `Covered when a server Gemini BYOK key exists.`
+      * `存在服务端 Gemini BYOK 密钥时覆盖。`
       */
     ["com.affine.settings.workspace.byok.feature.workspace-indexing.fallback"](): string;
     /**
-      * `Transcript and workspace indexing require a server Gemini BYOK key or 识光 AI plan fallback.`
+      * `转录和工作区索引需要服务端 Gemini BYOK 密钥，或回退到 识光 AI 套餐。`
       */
     ["com.affine.settings.workspace.byok.warning.transcript"](): string;
     /**
-      * `Workspace indexing requires a server Gemini BYOK key or 识光 AI plan fallback.`
+      * `工作区索引需要服务端 Gemini BYOK 密钥，或回退到 识光 AI 套餐。`
       */
     ["com.affine.settings.workspace.byok.warning.workspace-indexing"](): string;
     /**
-      * `BYOK usage`
+      * `BYOK 用量`
       */
     ["com.affine.settings.workspace.byok.usage.title"](): string;
     /**
-      * `Last 30 days`
+      * `最近 30 天`
       */
     ["com.affine.settings.workspace.byok.usage.period"](): string;
     /**
@@ -6332,83 +6340,83 @@ export function useLumiBookI18N(): {
         readonly count: string;
     }): string;
     /**
-      * `Connect AI provider`
+      * `连接 AI 服务商`
       */
     ["com.affine.settings.workspace.byok.modal.connect-title"](): string;
     /**
-      * `Manage provider`
+      * `管理服务商`
       */
     ["com.affine.settings.workspace.byok.modal.manage-title"](): string;
     /**
-      * `Choose where the key is stored, then select the models 识光 may use.`
+      * `选择密钥的存放位置，并挑选识光可调用的模型。`
       */
     ["com.affine.settings.workspace.byok.modal.connect-description"](): string;
     /**
-      * `Add models`
+      * `添加模型`
       */
     ["com.affine.settings.workspace.byok.modal.add-model-title"](): string;
     /**
-      * `Add custom model`
+      * `添加自定义模型`
       */
     ["com.affine.settings.workspace.byok.modal.add-custom-model-title"](): string;
     /**
-      * `Edit model`
+      * `编辑模型`
       */
     ["com.affine.settings.workspace.byok.modal.edit-model-title"](): string;
     /**
-      * `Choose one or more models this key may use.`
+      * `选择一个或多个该密钥可调用的模型。`
       */
     ["com.affine.settings.workspace.byok.modal.catalog-model-description"](): string;
     /**
-      * `Enter the endpoint model ID and choose its uses.`
+      * `填写接口模型 ID，并选择它的用途。`
       */
     ["com.affine.settings.workspace.byok.modal.custom-model-description"](): string;
     /**
-      * `Connection`
+      * `连接`
       */
     ["com.affine.settings.workspace.byok.section.connection"](): string;
     /**
-      * `Models`
+      * `模型`
       */
     ["com.affine.settings.workspace.byok.section.models"](): string;
     /**
-      * `Advanced details`
+      * `高级信息`
       */
     ["com.affine.settings.workspace.byok.section.advanced"](): string;
     /**
-      * `Models this key may use.`
+      * `该密钥可调用的模型。`
       */
     ["com.affine.settings.workspace.byok.models.description.selected"](): string;
     /**
-      * `Among compatible models, enabled models are tried from top to bottom.`
+      * `在兼容模型中，已启用的模型按自上而下顺序依次尝试。`
       */
     ["com.affine.settings.workspace.byok.models.description.order"](): string;
     /**
-      * `No models added yet.`
+      * `还没有添加任何模型。`
       */
     ["com.affine.settings.workspace.byok.models.empty"](): string;
     /**
-      * `All available models have been added.`
+      * `所有可用模型均已添加。`
       */
     ["com.affine.settings.workspace.byok.models.all-added"](): string;
     /**
-      * `No matching models.`
+      * `没有匹配的模型。`
       */
     ["com.affine.settings.workspace.byok.models.no-search-results"](): string;
     /**
-      * `Provider`
+      * `服务商`
       */
     ["com.affine.settings.workspace.byok.field.provider"](): string;
     /**
-      * `Key name`
+      * `密钥名称`
       */
     ["com.affine.settings.workspace.byok.field.key-name"](): string;
     /**
-      * `Description`
+      * `描述`
       */
     ["com.affine.settings.workspace.byok.field.description"](): string;
     /**
-      * `Provider enabled`
+      * `启用该服务商`
       */
     ["com.affine.settings.workspace.byok.field.provider-enabled"](): string;
     /**
@@ -6420,892 +6428,892 @@ export function useLumiBookI18N(): {
       */
     ["com.affine.settings.workspace.byok.field.endpoint"](): string;
     /**
-      * `API dialect`
+      * `接口类型`
       */
     ["com.affine.settings.workspace.byok.field.dialect"](): string;
     /**
-      * `Model ID`
+      * `模型 ID`
       */
     ["com.affine.settings.workspace.byok.field.model-id"](): string;
     /**
-      * `Custom endpoints are disabled by the server administrator. In Self-hosted Admin, enable copilot.byok.allowCustomEndpoint.`
+      * `服务器管理员已禁用自定义端点。请在自托管管理后台启用 copilot.byok.allowCustomEndpoint。`
       */
     ["com.affine.settings.workspace.byok.endpoint.custom-disabled"](): string;
     /**
-      * `Private network endpoints additionally require the server administrator to enable copilot.byok.allowPrivateEndpoint.`
+      * `私有网络端点还需要服务器管理员启用 copilot.byok.allowPrivateEndpoint。`
       */
     ["com.affine.settings.workspace.byok.endpoint.private-disabled"](): string;
     /**
-      * `Leave blank to keep the current key`
+      * `留空则保留当前密钥`
       */
     ["com.affine.settings.workspace.byok.placeholder.keep-current-key"](): string;
     /**
-      * `Model ID`
+      * `模型 ID`
       */
     ["com.affine.settings.workspace.byok.placeholder.model-id"](): string;
     /**
-      * `Search models…`
+      * `搜索模型…`
       */
     ["com.affine.settings.workspace.byok.placeholder.search-models"](): string;
     /**
-      * `Select an API dialect`
+      * `选择接口类型`
       */
     ["com.affine.settings.workspace.byok.placeholder.dialect"](): string;
     /**
-      * `Use a custom API-compatible endpoint`
+      * `使用自定义兼容接口`
       */
     ["com.affine.settings.workspace.byok.endpoint.use-custom"](): string;
     /**
-      * `Responses API`
+      * `Responses 接口`
       */
     ["com.affine.settings.workspace.byok.dialect.responses"](): string;
     /**
-      * `Chat Completions API`
+      * `Chat Completions 接口`
       */
     ["com.affine.settings.workspace.byok.dialect.chat-completions"](): string;
     /**
-      * `Include an image generation request when testing (provider charges may apply)`
+      * `测试时同时发起一次图像生成请求（可能产生服务商费用）`
       */
     ["com.affine.settings.workspace.byok.probe.include-image"](): string;
     /**
-      * `Connection verified`
+      * `连接验证通过`
       */
     ["com.affine.settings.workspace.byok.probe.verified"](): string;
     /**
-      * `Connection failed`
+      * `连接失败`
       */
     ["com.affine.settings.workspace.byok.probe.failed"](): string;
     /**
-      * `Recommended`
+      * `推荐`
       */
     ["com.affine.settings.workspace.byok.model.recommended"](): string;
     /**
-      * `This model has already been added.`
+      * `该模型已添加。`
       */
     ["com.affine.settings.workspace.byok.model.duplicate-id"](): string;
     /**
-      * `Not tested`
+      * `未测试`
       */
     ["com.affine.settings.workspace.byok.model.status.not-tested"](): string;
     /**
-      * `Verified`
+      * `已验证`
       */
     ["com.affine.settings.workspace.byok.model.status.verified"](): string;
     /**
-      * `Failed`
+      * `验证失败`
       */
     ["com.affine.settings.workspace.byok.model.status.failed"](): string;
     /**
-      * `Partially verified · {{verified}} of {{total}}`
+      * `部分验证通过 · {{verified}}/{{total}}`
       */
     ["com.affine.settings.workspace.byok.model.status.partially-verified"](options: Readonly<{
         verified: string;
         total: string;
     }>): string;
     /**
-      * `Disabled`
+      * `已停用`
       */
     ["com.affine.settings.workspace.byok.model.status.disabled"](): string;
     /**
-      * `Use this model for`
+      * `模型用途`
       */
     ["com.affine.settings.workspace.byok.model.use-this-for"](): string;
     /**
-      * `Chat & writing`
+      * `对话与写作`
       */
     ["com.affine.settings.workspace.byok.model.use.chat"](): string;
     /**
-      * `Actions`
+      * `快捷操作`
       */
     ["com.affine.settings.workspace.byok.model.use.actions"](): string;
     /**
-      * `Structured output`
+      * `结构化输出`
       */
     ["com.affine.settings.workspace.byok.model.use.structured"](): string;
     /**
-      * `Image understanding`
+      * `图像理解`
       */
     ["com.affine.settings.workspace.byok.model.use.vision"](): string;
     /**
-      * `Image generation`
+      * `图像生成`
       */
     ["com.affine.settings.workspace.byok.model.use.image"](): string;
     /**
-      * `Transcription`
+      * `语音转写`
       */
     ["com.affine.settings.workspace.byok.model.use.transcript"](): string;
     /**
-      * `Workspace indexing`
+      * `工作区索引`
       */
     ["com.affine.settings.workspace.byok.model.use.embedding"](): string;
     /**
-      * `Search reranking`
+      * `搜索重排`
       */
     ["com.affine.settings.workspace.byok.model.use.rerank"](): string;
     /**
-      * `Add key`
+      * `添加密钥`
       */
     ["com.affine.settings.workspace.byok.action.add-key"](): string;
     /**
-      * `Test connection`
+      * `测试连接`
       */
     ["com.affine.settings.workspace.byok.action.test-connection"](): string;
     /**
-      * `Test`
+      * `测试`
       */
     ["com.affine.settings.workspace.byok.action.test"](): string;
     /**
-      * `Testing…`
+      * `测试中…`
       */
     ["com.affine.settings.workspace.byok.action.testing"](): string;
     /**
-      * `Cancel`
+      * `取消`
       */
     ["com.affine.settings.workspace.byok.action.cancel"](): string;
     /**
-      * `Connect`
+      * `连接`
       */
     ["com.affine.settings.workspace.byok.action.connect"](): string;
     /**
-      * `Connecting…`
+      * `连接中…`
       */
     ["com.affine.settings.workspace.byok.action.connecting"](): string;
     /**
-      * `Save changes`
+      * `保存修改`
       */
     ["com.affine.settings.workspace.byok.action.save-changes"](): string;
     /**
-      * `Add model`
+      * `添加模型`
       */
     ["com.affine.settings.workspace.byok.action.add-model"](): string;
     /**
-      * `Add {{count}} models`
+      * `添加 {{count}} 个模型`
       */
     ["com.affine.settings.workspace.byok.action.add-selected-models"](options: {
         readonly count: string;
     }): string;
     /**
-      * `Save model`
+      * `保存模型`
       */
     ["com.affine.settings.workspace.byok.action.save-model"](): string;
     /**
-      * `Enable {{model}}`
+      * `启用 {{model}}`
       */
     ["com.affine.settings.workspace.byok.action.enable-model"](options: {
         readonly model: string;
     }): string;
     /**
-      * `Disable {{model}}`
+      * `停用 {{model}}`
       */
     ["com.affine.settings.workspace.byok.action.disable-model"](options: {
         readonly model: string;
     }): string;
     /**
-      * `Options for {{model}}`
+      * `{{model}} 的选项`
       */
     ["com.affine.settings.workspace.byok.action.model-options"](options: {
         readonly model: string;
     }): string;
     /**
-      * `Move up`
+      * `上移`
       */
     ["com.affine.settings.workspace.byok.action.move-up"](): string;
     /**
-      * `Move down`
+      * `下移`
       */
     ["com.affine.settings.workspace.byok.action.move-down"](): string;
     /**
-      * `Remove`
+      * `移除`
       */
     ["com.affine.settings.workspace.byok.action.remove"](): string;
     /**
-      * `Clear all BYOK keys`
+      * `清空所有 BYOK 密钥`
       */
     ["com.affine.settings.workspace.byok.action.clear-all"](): string;
     /**
-      * `Reorder`
+      * `重新排序`
       */
     ["com.affine.settings.workspace.byok.action.reorder"](): string;
     /**
-      * `Edit`
+      * `编辑`
       */
     ["com.affine.settings.workspace.byok.action.edit"](): string;
     /**
-      * `Delete`
+      * `删除`
       */
     ["com.affine.settings.workspace.byok.action.delete"](): string;
     /**
-      * `Key test failed`
+      * `密钥测试失败`
       */
     ["com.affine.settings.workspace.byok.notify.test-failed.title"](): string;
     /**
-      * `Local key not saved`
+      * `本地密钥未保存`
       */
     ["com.affine.settings.workspace.byok.notify.local-save-failed.title"](): string;
     /**
-      * `Secure device storage is unavailable.`
+      * `安全设备存储不可用。`
       */
     ["com.affine.settings.workspace.byok.notify.local-save-failed.message"](): string;
     /**
-      * `BYOK settings not loaded`
+      * `BYOK 设置未加载`
       */
     ["com.affine.settings.workspace.byok.notify.load-failed.title"](): string;
     /**
-      * `BYOK key not saved`
+      * `BYOK 密钥未保存`
       */
     ["com.affine.settings.workspace.byok.notify.save-failed.title"](): string;
     /**
-      * `BYOK key not deleted`
+      * `BYOK 密钥未删除`
       */
     ["com.affine.settings.workspace.byok.notify.delete-failed.title"](): string;
     /**
-      * `BYOK keys not reordered`
+      * `BYOK 密钥未重新排序`
       */
     ["com.affine.settings.workspace.byok.notify.reorder-failed.title"](): string;
     /**
-      * `BYOK keys not cleared`
+      * `BYOK 密钥未清空`
       */
     ["com.affine.settings.workspace.byok.notify.clear-failed.title"](): string;
     /**
-      * `BYOK settings changed`
+      * `BYOK 设置已变化`
       */
     ["com.affine.settings.workspace.byok.notify.reload-required.title"](): string;
     /**
-      * `Reload the settings and try again.`
+      * `请重新加载设置后再试。`
       */
     ["com.affine.settings.workspace.byok.notify.reload-required.message"](): string;
     /**
-      * `Please try again.`
+      * `请稍后重试。`
       */
     ["com.affine.settings.workspace.byok.notify.operation-failed.message"](): string;
     /**
-      * `Cannot reorder across storage`
+      * `不能跨存储排序`
       */
     ["com.affine.settings.workspace.byok.notify.cross-storage-reorder.title"](): string;
     /**
-      * `Local keys and server keys keep separate fallback order.`
+      * `本地密钥和服务端密钥会保留各自独立的回退顺序。`
       */
     ["com.affine.settings.workspace.byok.notify.cross-storage-reorder.message"](): string;
     /**
-      * `Experimental features`
+      * `实验性功能`
       */
     ["com.affine.settings.workspace.experimental-features"](): string;
     /**
-      * `Get started`
+      * `开始使用`
       */
     ["com.affine.settings.workspace.experimental-features.get-started"](): string;
     /**
-      * `Experimental features`
+      * `实验性功能`
       */
     ["com.affine.settings.workspace.experimental-features.header.plugins"](): string;
     /**
-      * `Some features available for early access`
+      * `部分功能可供抢先体验`
       */
     ["com.affine.settings.workspace.experimental-features.header.subtitle"](): string;
     /**
-      * `I am aware of the risks, and I am willing to continue to use it.`
+      * `我已明确风险，并且愿意继续使用它。`
       */
     ["com.affine.settings.workspace.experimental-features.prompt-disclaimer"](): string;
     /**
-      * `Do you want to use the plugin system that is in an experimental stage?`
+      * `您想使用处于实验阶段的插件系统吗？`
       */
     ["com.affine.settings.workspace.experimental-features.prompt-header"](): string;
     /**
-      * `You are about to enable an experimental feature. This feature is still in development and may contain errors or behave unpredictably. Please proceed with caution and at your own risk.`
+      * `您即将启用一项实验性功能。 此功能仍在开发中，可能包含错误或行为不可预测。 请谨慎行事并自行承担风险。`
       */
     ["com.affine.settings.workspace.experimental-features.prompt-warning"](): string;
     /**
-      * `WARNING MESSAGE`
+      * `警告`
       */
     ["com.affine.settings.workspace.experimental-features.prompt-warning-title"](): string;
     /**
-      * `Enable AI`
+      * `启用 AI`
       */
     ["com.affine.settings.workspace.experimental-features.enable-ai.name"](): string;
     /**
-      * `Enable or disable ALL AI features.`
+      * `启用或禁用所有 AI 功能。`
       */
     ["com.affine.settings.workspace.experimental-features.enable-ai.description"](): string;
     /**
-      * `Enable AI Network Search`
+      * `启用 AI 网络搜索`
       */
     ["com.affine.settings.workspace.experimental-features.enable-ai-network-search.name"](): string;
     /**
-      * `Enable or disable AI Network Search feature.`
+      * `启用或禁用 AI 网络搜索功能。`
       */
     ["com.affine.settings.workspace.experimental-features.enable-ai-network-search.description"](): string;
     /**
-      * `Enable AI Model Switch`
+      * `启用AI模型切换`
       */
     ["com.affine.settings.workspace.experimental-features.enable-ai-model-switch.name"](): string;
     /**
-      * `Enable or disable AI model switch feature.`
+      * `启用或禁用 AI 模型切换功能。`
       */
     ["com.affine.settings.workspace.experimental-features.enable-ai-model-switch.description"](): string;
     /**
-      * `Enable AI Playground`
+      * `启用 AI Playground`
       */
     ["com.affine.settings.workspace.experimental-features.enable-ai-playground.name"](): string;
     /**
-      * `Enable or disable AI playground feature.`
+      * `启用或禁用 AI Playground 功能。`
       */
     ["com.affine.settings.workspace.experimental-features.enable-ai-playground.description"](): string;
     /**
-      * `Database Full Width`
+      * `文档数据库全宽`
       */
     ["com.affine.settings.workspace.experimental-features.enable-database-full-width.name"](): string;
     /**
-      * `The database will be displayed in full-width mode.`
+      * `文档中的数据库将以全宽模式显示。`
       */
     ["com.affine.settings.workspace.experimental-features.enable-database-full-width.description"](): string;
     /**
-      * `Database Attachment Note`
+      * `文档数据库附件备注`
       */
     ["com.affine.settings.workspace.experimental-features.enable-database-attachment-note.name"](): string;
     /**
-      * `Allows adding notes to database attachments.`
+      * `允许为文档的数据库附件添加备注。`
       */
     ["com.affine.settings.workspace.experimental-features.enable-database-attachment-note.description"](): string;
     /**
-      * `Todo Block Query`
+      * `Todo 块查询`
       */
     ["com.affine.settings.workspace.experimental-features.enable-block-query.name"](): string;
     /**
-      * `Enables querying of todo blocks.`
+      * `启用 todo 块的查询。`
       */
     ["com.affine.settings.workspace.experimental-features.enable-block-query.description"](): string;
     /**
-      * `Synced Doc Block`
+      * `同步文档块`
       */
     ["com.affine.settings.workspace.experimental-features.enable-synced-doc-block.name"](): string;
     /**
-      * `Enables syncing of doc blocks.`
+      * `启用文档块同步。`
       */
     ["com.affine.settings.workspace.experimental-features.enable-synced-doc-block.description"](): string;
     /**
-      * `Edgeless Text`
+      * `无界文本`
       */
     ["com.affine.settings.workspace.experimental-features.enable-edgeless-text.name"](): string;
     /**
-      * `Enables edgeless text blocks.`
+      * `启用无界文本块。`
       */
     ["com.affine.settings.workspace.experimental-features.enable-edgeless-text.description"](): string;
     /**
-      * `Color Picker`
+      * `颜色选择器`
       */
     ["com.affine.settings.workspace.experimental-features.enable-color-picker.name"](): string;
     /**
-      * `Enables color picker blocks.`
+      * `启用颜色选择器块。`
       */
     ["com.affine.settings.workspace.experimental-features.enable-color-picker.description"](): string;
     /**
-      * `AI Chat Block`
+      * `AI聊天块`
       */
     ["com.affine.settings.workspace.experimental-features.enable-ai-chat-block.name"](): string;
     /**
-      * `Enables AI chat blocks.`
+      * `启用 AI 聊天块。`
       */
     ["com.affine.settings.workspace.experimental-features.enable-ai-chat-block.description"](): string;
     /**
-      * `AI Onboarding`
+      * `AI 入门`
       */
     ["com.affine.settings.workspace.experimental-features.enable-ai-onboarding.name"](): string;
     /**
-      * `Enables AI onboarding.`
+      * `启用AI入门。`
       */
     ["com.affine.settings.workspace.experimental-features.enable-ai-onboarding.description"](): string;
     /**
-      * `Mind Map Import`
+      * `思维导图导入`
       */
     ["com.affine.settings.workspace.experimental-features.enable-mind-map-import.name"](): string;
     /**
-      * `Enables mind map import.`
+      * `启用思维导图导入。`
       */
     ["com.affine.settings.workspace.experimental-features.enable-mind-map-import.description"](): string;
     /**
-      * `Block Meta`
+      * `块元数据`
       */
     ["com.affine.settings.workspace.experimental-features.enable-block-meta.name"](): string;
     /**
-      * `Once enabled, all blocks will have created time, updated time, created by and updated by.`
+      * `启用后，所有块将具有创建时间、更新时间、创建者和更新者。`
       */
     ["com.affine.settings.workspace.experimental-features.enable-block-meta.description"](): string;
     /**
-      * `Callout`
+      * `标注`
       */
     ["com.affine.settings.workspace.experimental-features.enable-callout.name"](): string;
     /**
-      * `Let your words stand out. This also include the callout in the transcription block.`
+      * `让您的文字脱颖而出。这也包括转录块中的标注。`
       */
     ["com.affine.settings.workspace.experimental-features.enable-callout.description"](): string;
     /**
-      * `Embed Iframe Block`
+      * `嵌入 Iframe 块`
       */
     ["com.affine.settings.workspace.experimental-features.enable-embed-iframe-block.name"](): string;
     /**
-      * `Enables Embed Iframe Block.`
+      * `启用嵌入Iframe块。`
       */
     ["com.affine.settings.workspace.experimental-features.enable-embed-iframe-block.description"](): string;
     /**
-      * `Emoji Folder Icon`
+      * `Emoji 文件夹图标`
       */
     ["com.affine.settings.workspace.experimental-features.enable-emoji-folder-icon.name"](): string;
     /**
-      * `Once enabled, you can use an emoji as the folder icon. When the first character of the folder name is an emoji, it will be extracted and used as its icon.`
+      * `启用后，您可以将表情符号用作文件夹图标。当文件夹名称的第一个字符是表情符号时，该表情符号将被提取并用作其图标。`
       */
     ["com.affine.settings.workspace.experimental-features.enable-emoji-folder-icon.description"](): string;
     /**
-      * `Emoji Doc Icon`
+      * `Emoji 文档图标`
       */
     ["com.affine.settings.workspace.experimental-features.enable-emoji-doc-icon.name"](): string;
     /**
-      * `Once enabled, you can use an emoji as the doc icon. When the first character of the doc name is an emoji, it will be extracted and used as its icon.`
+      * `启用后，您可以使用表情符号作为文档图标。当文档名称的第一个字符是表情符号时，它将被提取并用作其图标。`
       */
     ["com.affine.settings.workspace.experimental-features.enable-emoji-doc-icon.description"](): string;
     /**
-      * `Editor Settings`
+      * `编辑器设置`
       */
     ["com.affine.settings.workspace.experimental-features.enable-editor-settings.name"](): string;
     /**
-      * `Enables editor settings.`
+      * `启用编辑器设置。`
       */
     ["com.affine.settings.workspace.experimental-features.enable-editor-settings.description"](): string;
     /**
-      * `Theme Editor`
+      * `主题编辑器`
       */
     ["com.affine.settings.workspace.experimental-features.enable-theme-editor.name"](): string;
     /**
-      * `Enables theme editor.`
+      * `启用主题编辑器功能。`
       */
     ["com.affine.settings.workspace.experimental-features.enable-theme-editor.description"](): string;
     /**
-      * `Allow create local workspace`
+      * `允许创建本地工作区`
       */
     ["com.affine.settings.workspace.experimental-features.enable-local-workspace.name"](): string;
     /**
-      * `Allow create local workspace`
+      * `允许创建本地工作区`
       */
     ["com.affine.settings.workspace.experimental-features.enable-local-workspace.description"](): string;
     /**
-      * `Advanced block visibility control`
+      * `高级块可见性控制`
       */
     ["com.affine.settings.workspace.experimental-features.enable-advanced-block-visibility.name"](): string;
     /**
-      * `To provide detailed control over which edgeless blocks are visible in page mode.`
+      * `提供详细的控制，以决定在页面模式下哪些无界块可见。`
       */
     ["com.affine.settings.workspace.experimental-features.enable-advanced-block-visibility.description"](): string;
     /**
-      * `Mobile Keyboard Toolbar`
+      * `移动键盘工具栏`
       */
     ["com.affine.settings.workspace.experimental-features.enable-mobile-keyboard-toolbar.name"](): string;
     /**
-      * `Enables the mobile keyboard toolbar.`
+      * `启用移动端键盘工具栏。`
       */
     ["com.affine.settings.workspace.experimental-features.enable-mobile-keyboard-toolbar.description"](): string;
     /**
-      * `Mobile Linked Doc Widget`
+      * `移动端链接文档小部件`
       */
     ["com.affine.settings.workspace.experimental-features.enable-mobile-linked-doc-menu.name"](): string;
     /**
-      * `Enables the mobile linked doc menu.`
+      * `启用移动端关联文档菜单。`
       */
     ["com.affine.settings.workspace.experimental-features.enable-mobile-linked-doc-menu.description"](): string;
     /**
-      * `Enable Snapshot Import Export`
+      * `启用快照导入导出`
       */
     ["com.affine.settings.workspace.experimental-features.enable-snapshot-import-export.name"](): string;
     /**
-      * `Once enabled, users can import and export blocksuite snapshots.`
+      * `启用后，用户可以导入和导出 blocksuite 快照。`
       */
     ["com.affine.settings.workspace.experimental-features.enable-snapshot-import-export.description"](): string;
     /**
-      * `Enable Edgeless Editing`
+      * `启用无界`
       */
     ["com.affine.settings.workspace.experimental-features.enable-mobile-edgeless-editing.name"](): string;
     /**
-      * `Once enabled, users can edit edgeless canvas.`
+      * `一旦启用，用户就可以编辑无界。`
       */
     ["com.affine.settings.workspace.experimental-features.enable-mobile-edgeless-editing.description"](): string;
     /**
-      * `PDF embed preview`
+      * `PDF 嵌入式预览`
       */
     ["com.affine.settings.workspace.experimental-features.enable-pdf-embed-preview.name"](): string;
     /**
-      * `Once enabled, you can preview PDF in embed view.`
+      * `一旦启用，您可以在嵌入视图中预览 PDF。`
       */
     ["com.affine.settings.workspace.experimental-features.enable-pdf-embed-preview.description"](): string;
     /**
-      * `Audio block`
+      * `音频块`
       */
     ["com.affine.settings.workspace.experimental-features.enable-audio-block.name"](): string;
     /**
-      * `Audio block allows you to play audio files globally and add notes to them.`
+      * `音频块允许您在全球播放音频文件并向其添加注释。`
       */
     ["com.affine.settings.workspace.experimental-features.enable-audio-block.description"](): string;
     /**
-      * `Meetings`
+      * `会议`
       */
     ["com.affine.settings.workspace.experimental-features.enable-meetings.name"](): string;
     /**
-      * `Meetings allows you to record and transcribe meetings. Don't forget to enable it in 识光 settings.`
+      * `会议功能允许您录制和转录会议内容。别忘了在 识光 设置中启用此功能。`
       */
     ["com.affine.settings.workspace.experimental-features.enable-meetings.description"](): string;
     /**
-      * `Editor RTL`
+      * `编辑器 RTL 模式`
       */
     ["com.affine.settings.workspace.experimental-features.enable-editor-rtl.name"](): string;
     /**
-      * `Once enabled, the editor will be displayed in RTL mode.`
+      * `启用后，编辑器将以 RTL 模式显示。`
       */
     ["com.affine.settings.workspace.experimental-features.enable-editor-rtl.description"](): string;
     /**
-      * `Edgeless scribbled style`
+      * `无界涂鸦风格`
       */
     ["com.affine.settings.workspace.experimental-features.enable-edgeless-scribbled-style.name"](): string;
     /**
-      * `Once enabled, you can use scribbled style in edgeless mode.`
+      * `启用后，您可以在无界模式下使用涂鸦风格。`
       */
     ["com.affine.settings.workspace.experimental-features.enable-edgeless-scribbled-style.description"](): string;
     /**
-      * `Database block table view virtual scroll`
+      * `数据库块的表视图和虚拟滚动`
       */
     ["com.affine.settings.workspace.experimental-features.enable-table-virtual-scroll.name"](): string;
     /**
-      * `Once enabled, switch table view to virtual scroll mode in Database Block.`
+      * `启用后，将数据库块中的表视图切换为虚拟滚动模式。`
       */
     ["com.affine.settings.workspace.experimental-features.enable-table-virtual-scroll.description"](): string;
     /**
-      * `Code block HTML preview`
+      * `代码块 HTML 预览`
       */
     ["com.affine.settings.workspace.experimental-features.enable-code-block-html-preview.name"](): string;
     /**
-      * `Once enabled, you can preview HTML in code block.`
+      * `一旦启用，您可以在代码块中预览 HTML。`
       */
     ["com.affine.settings.workspace.experimental-features.enable-code-block-html-preview.description"](): string;
     /**
-      * `Adapter Panel`
+      * `适配器面板`
       */
     ["com.affine.settings.workspace.experimental-features.enable-adapter-panel.name"](): string;
     /**
-      * `Once enabled, you can preview adapter export content in the right side bar.`
+      * `启用后，您可以在右侧栏中预览适配器导出内容。`
       */
     ["com.affine.settings.workspace.experimental-features.enable-adapter-panel.description"](): string;
     /**
-      * `Send detailed object information to AI`
+      * `发送详细的对象信息给AI`
       */
     ["com.affine.settings.workspace.experimental-features.enable-ai-send-detailed-object.name"](): string;
     /**
-      * `When toggled off, every time you choose "Continue with AI", AI only got a screenshot.`
+      * `关闭此选项后，每次选择“继续使用 AI”，AI 只会获取屏幕截图。`
       */
     ["com.affine.settings.workspace.experimental-features.enable-ai-send-detailed-object.description"](): string;
     /**
-      * `Only an owner can edit the workspace avatar and name. Changes will be shown for everyone.`
+      * `只有所有者才能编辑工作区头像和名称。更改将向所有人显示。`
       */
     ["com.affine.settings.workspace.not-owner"](): string;
     /**
-      * `Preference`
+      * `偏好设置`
       */
     ["com.affine.settings.workspace.preferences"](): string;
     /**
-      * `Team's Billing`
+      * `团队账单`
       */
     ["com.affine.settings.workspace.billing"](): string;
     /**
-      * `Team Workspace`
+      * `团队空间`
       */
     ["com.affine.settings.workspace.billing.team-workspace"](): string;
     /**
-      * `Your workspace is in a free trail period.`
+      * `您的工作区正处于免费试用期。`
       */
     ["com.affine.settings.workspace.billing.team-workspace.description.free-trail"](): string;
     /**
-      * `Your workspace is billed annually.`
+      * `您的工作空间将按年计费。`
       */
     ["com.affine.settings.workspace.billing.team-workspace.description.billed.annually"](): string;
     /**
-      * `Your workspace is billed monthly.`
+      * `您的工作空间将按月计费。`
       */
     ["com.affine.settings.workspace.billing.team-workspace.description.billed.monthly"](): string;
     /**
-      * `Your subscription will end on {{date}}`
+      * `您的订阅将于 {{date}} 到期`
       */
     ["com.affine.settings.workspace.billing.team-workspace.not-renewed"](options: {
         readonly date: string;
     }): string;
     /**
-      * `Next billing date: {{date}}`
+      * `下次计费日期为：{{date}}`
       */
     ["com.affine.settings.workspace.billing.team-workspace.next-billing-date"](options: {
         readonly date: string;
     }): string;
     /**
-      * `Cancel Plan`
+      * `取消计划`
       */
     ["com.affine.settings.workspace.billing.team-workspace.cancel-plan"](): string;
     /**
-      * `License`
+      * `许可证`
       */
     ["com.affine.settings.workspace.license"](): string;
     /**
-      * `Manage license information and invoices for the self host team workspace.`
+      * `管理自托管团队工作区的许可证信息和发票。`
       */
     ["com.affine.settings.workspace.license.description"](): string;
     /**
-      * `Get teams plan for your self hosted workspace.`
+      * `为您的自托管工作区购买团队计划。`
       */
     ["com.affine.settings.workspace.license.benefit.team.title"](): string;
     /**
-      * `Need more seats? Best for scalable teams.`
+      * `需要更多座位吗？最适合可扩展的团队。`
       */
     ["com.affine.settings.workspace.license.benefit.team.subtitle"](): string;
     /**
-      * `Everything in Self Hosted FOSS`
+      * `一切都在自托管 FOSS 中`
       */
     ["com.affine.settings.workspace.license.benefit.team.g1"](): string;
     /**
-      * `{{initialQuota}} initial storage + {{quotaPerSeat}} per seat`
+      * `{{initialQuota}} 初始存储 + {{quotaPerSeat}} 每个席位`
       */
     ["com.affine.settings.workspace.license.benefit.team.g2"](options: Readonly<{
         initialQuota: string;
         quotaPerSeat: string;
     }>): string;
     /**
-      * `{{quota}} of maximum file size`
+      * `{{quota}} 的最大文件大小`
       */
     ["com.affine.settings.workspace.license.benefit.team.g3"](options: {
         readonly quota: string;
     }): string;
     /**
-      * `Unlimited team members (10+ seats)`
+      * `无限团队成员（10+席位）`
       */
     ["com.affine.settings.workspace.license.benefit.team.g4"](): string;
     /**
-      * `Multiple admin roles`
+      * `多个管理员`
       */
     ["com.affine.settings.workspace.license.benefit.team.g5"](): string;
     /**
-      * `Priority customer support`
+      * `优先客户支持`
       */
     ["com.affine.settings.workspace.license.benefit.team.g6"](): string;
     /**
-      * `Learn more`
+      * `了解更多`
       */
     ["com.affine.settings.workspace.license.learn-more"](): string;
     /**
-      * `Selfhosted workspace`
+      * `自托管工作区`
       */
     ["com.affine.settings.workspace.license.self-host"](): string;
     /**
-      * `Self-host Team Workspace`
+      * `自托管团队工作区`
       */
     ["com.affine.settings.workspace.license.self-host-team"](): string;
     /**
-      * `This license will expire on {{expirationDate}}, with {{leftDays}} days remaining.`
+      * `该许可证将于 {{expirationDate}} 到期，剩余 {{leftDays}} 天。`
       */
     ["com.affine.settings.workspace.license.self-host-team.team.description"](options: Readonly<{
         expirationDate: string;
         leftDays: string;
     }>): string;
     /**
-      * `Basic version: {{memberCount}} seats. For more, purchase or use activation key.`
+      * `基础版本：{{memberCount}} 个席位。更多信息，请购买或使用激活码。`
       */
     ["com.affine.settings.workspace.license.self-host-team.free.description"](options: {
         readonly memberCount: string;
     }): string;
     /**
-      * `Seats`
+      * `席位`
       */
     ["com.affine.settings.workspace.license.self-host-team.seats"](): string;
     /**
-      * `Use purchased key`
+      * `使用已购密钥`
       */
     ["com.affine.settings.workspace.license.self-host-team.use-purchased-key"](): string;
     /**
-      * `Upload license file`
+      * `上传许可证文件`
       */
     ["com.affine.settings.workspace.license.self-host-team.upload-license-file"](): string;
     /**
-      * `Upload license file locally and verify the license information.`
+      * `在本地上传许可证文件并验证许可证信息。`
       */
     ["com.affine.settings.workspace.license.self-host-team.upload-license-file.description"](): string;
     /**
-      * `To purchase a license:`
+      * `要购买许可证：`
       */
     ["com.affine.settings.workspace.license.self-host-team.upload-license-file.tips.title"](): string;
     /**
-      * `Workspace id`
+      * `工作区 ID`
       */
     ["com.affine.settings.workspace.license.self-host-team.upload-license-file.tips.workspace-id"](): string;
     /**
-      * `Click to upload`
+      * `点击上传`
       */
     ["com.affine.settings.workspace.license.self-host-team.upload-license-file.click-to-upload"](): string;
     /**
-      * `Activation failed`
+      * `激活失败`
       */
     ["com.affine.settings.workspace.license.self-host-team.upload-license-file.failed"](): string;
     /**
-      * `Activation Success`
+      * `激活成功`
       */
     ["com.affine.settings.workspace.license.self-host-team.upload-license-file.success.title"](): string;
     /**
-      * `License has been successfully applied`
+      * `许可证已成功应用`
       */
     ["com.affine.settings.workspace.license.self-host-team.upload-license-file.success.description"](): string;
     /**
-      * `If you encounter any issues, contact support@toeverything.info.`
+      * `如果您遇到任何问题，请联系 support@toeverything.info。`
       */
     ["com.affine.settings.workspace.license.self-host-team.upload-license-file.help"](): string;
     /**
-      * `Deactivate`
+      * `停用`
       */
     ["com.affine.settings.workspace.license.self-host-team.deactivate-license"](): string;
     /**
-      * `Replace your license file`
+      * `替换您的许可证文件`
       */
     ["com.affine.settings.workspace.license.self-host-team.replace-license.title"](): string;
     /**
-      * `Replace the existing license file with a new, updated version.`
+      * `将现有的许可证文件替换为一个更新的版本。`
       */
     ["com.affine.settings.workspace.license.self-host-team.replace-license.description"](): string;
     /**
-      * `Upload license file`
+      * `上传许可证文件`
       */
     ["com.affine.settings.workspace.license.self-host-team.replace-license.upload"](): string;
     /**
-      * `Buy more seat`
+      * `购买更多席位`
       */
     ["com.affine.settings.workspace.license.buy-more-seat"](): string;
     /**
-      * `Activate License`
+      * `激活许可证`
       */
     ["com.affine.settings.workspace.license.activate-modal.title"](): string;
     /**
-      * `Enter license key to activate this self host workspace.`
+      * `输入许可证密钥以激活此自托管工作区。`
       */
     ["com.affine.settings.workspace.license.activate-modal.description"](): string;
     /**
-      * `License activated successfully.`
+      * `许可证激活成功。`
       */
     ["com.affine.settings.workspace.license.activate-success"](): string;
     /**
-      * `Confirm deactivation?`
+      * `确认停用？`
       */
     ["com.affine.settings.workspace.license.deactivate-modal.title"](): string;
     /**
-      * `After deactivation, you will need to upload a new license to continue using team feature`
+      * `停用后，您需要上传新许可证以继续使用团队功能`
       */
     ["com.affine.settings.workspace.license.deactivate-modal.description-license"](): string;
     /**
-      * `Manage Payment`
+      * `管理付款`
       */
     ["com.affine.settings.workspace.license.deactivate-modal.manage-payment"](): string;
     /**
-      * `License deactivated successfully.`
+      * `许可证已成功停用。`
       */
     ["com.affine.settings.workspace.license.deactivate-success"](): string;
     /**
-      * `Local`
+      * `本地`
       */
     ["com.affine.settings.workspace.state.local"](): string;
     /**
-      * `Sync with 识光 Cloud`
+      * `通过 识光 Cloud 同步`
       */
     ["com.affine.settings.workspace.state.sync-affine-cloud"](): string;
     /**
-      * `Self-Hosted Server`
+      * `自托管服务器`
       */
     ["com.affine.settings.workspace.state.self-hosted"](): string;
     /**
-      * `Joined Workspace`
+      * `加入的工作区`
       */
     ["com.affine.settings.workspace.state.joined"](): string;
     /**
-      * `Available Offline`
+      * `离线可用`
       */
     ["com.affine.settings.workspace.state.available-offline"](): string;
     /**
-      * `Published to Web`
+      * `公开到互联网`
       */
     ["com.affine.settings.workspace.state.published"](): string;
     /**
-      * `Team Workspace`
+      * `团队空间`
       */
     ["com.affine.settings.workspace.state.team"](): string;
     /**
-      * `Properties`
+      * `属性`
       */
     ["com.affine.settings.workspace.properties"](): string;
     /**
-      * `Add property`
+      * `添加属性`
       */
     ["com.affine.settings.workspace.properties.add_property"](): string;
     /**
-      * `All`
+      * `全部`
       */
     ["com.affine.settings.workspace.properties.all"](): string;
     /**
-      * `Delete property`
+      * `删除属性`
       */
     ["com.affine.settings.workspace.properties.delete-property"](): string;
     /**
-      * `Edit property`
+      * `编辑属性`
       */
     ["com.affine.settings.workspace.properties.edit-property"](): string;
     /**
-      * `General properties`
+      * `通用属性`
       */
     ["com.affine.settings.workspace.properties.general-properties"](): string;
     /**
-      * `Properties`
+      * `属性`
       */
     ["com.affine.settings.workspace.properties.header.title"](): string;
     /**
-      * `In use`
+      * `使用中`
       */
     ["com.affine.settings.workspace.properties.in-use"](): string;
     /**
-      * `Readonly properties`
+      * `只读属性`
       */
     ["com.affine.settings.workspace.properties.readonly-properties"](): string;
     /**
-      * `Required properties`
+      * `必选属性`
       */
     ["com.affine.settings.workspace.properties.required-properties"](): string;
     /**
-      * `Set as required property`
+      * `设置为必选属性`
       */
     ["com.affine.settings.workspace.properties.set-as-required"](): string;
     /**
-      * `Unused`
+      * `未使用`
       */
     ["com.affine.settings.workspace.properties.unused"](): string;
     /**
-      * `You can view current workspace's storage and files here.`
+      * `您可以在此处查看当前工作区的存储和文件。`
       */
     ["com.affine.settings.workspace.storage.subtitle"](): string;
     /**
-      * `Enable 识光 Sync to publish this workspace`
+      * `启用 识光 同步以发布此工作区`
       */
     ["com.affine.settings.workspace.publish-tooltip"](): string;
     /**
-      * `Sharing`
+      * `分享`
       */
     ["com.affine.settings.workspace.sharing.title"](): string;
     /**
-      * `Allow URL unfurling by Slack & other social apps, even if a doc is only accessible by workspace members.`
+      * `允许 Slack 和其他社交应用程序展开 URL，即使文档仅由工作区成员访问。`
       */
     ["com.affine.settings.workspace.sharing.url-preview.description"](): string;
     /**
-      * `Always enable url preview`
+      * `始终启用 URL 预览`
       */
     ["com.affine.settings.workspace.sharing.url-preview.title"](): string;
     /**
-      * `Control whether pages in this workspace can be shared publicly. Turn off to block new shares and external access for existing shares.`
+      * `控制此工作区中的页面是否可以公开分享。关闭后将阻止新的分享，并禁止外部访问现有分享。`
       */
     ["com.affine.settings.workspace.sharing.workspace-sharing.description"](): string;
     /**
-      * `Allow workspace page sharing`
+      * `允许工作区页面分享`
       */
     ["com.affine.settings.workspace.sharing.workspace-sharing.title"](): string;
     /**
@@ -7313,313 +7321,313 @@ export function useLumiBookI18N(): {
       */
     ["com.affine.settings.workspace.affine-ai.title"](): string;
     /**
-      * `Allow 识光 AI Assistant`
+      * `启用 识光 AI 助手`
       */
     ["com.affine.settings.workspace.affine-ai.label"](): string;
     /**
-      * `Allow workspace members to use 识光 AI features. This setting doesn't affect billing. Workspace members use 识光 AI through their personal accounts.`
+      * `允许工作区成员使用 识光 AI 功能。此设置不会影响计费。工作区成员通过个人帐户使用 识光 AI。`
       */
     ["com.affine.settings.workspace.affine-ai.description"](): string;
     /**
-      * `Archived workspaces`
+      * `归档工作区`
       */
     ["com.affine.settings.workspace.backup"](): string;
     /**
-      * `Manage archived local workspace files`
+      * `管理已归档的本地工作区文件`
       */
     ["com.affine.settings.workspace.backup.subtitle"](): string;
     /**
-      * `No archived workspace files found`
+      * `未找到已归档的工作区文件`
       */
     ["com.affine.settings.workspace.backup.empty"](): string;
     /**
-      * `Delete archived workspace`
+      * `删除已归档工作区`
       */
     ["com.affine.settings.workspace.backup.delete"](): string;
     /**
-      * `Are you sure you want to delete this workspace. This action cannot be undone. Make sure you no longer need them before proceeding.`
+      * `您确定要删除此工作区吗？此操作无法撤销。在继续之前，请确保您不再需要它们。`
       */
     ["com.affine.settings.workspace.backup.delete.warning"](): string;
     /**
-      * `Workspace backup deleted successfully`
+      * `工作区备份删除成功`
       */
     ["com.affine.settings.workspace.backup.delete.success"](): string;
     /**
-      * `Workspace enabled successfully`
+      * `工作区启用成功`
       */
     ["com.affine.settings.workspace.backup.import.success"](): string;
     /**
-      * `Enable local workspace`
+      * `启用本地工作区`
       */
     ["com.affine.settings.workspace.backup.import"](): string;
     /**
-      * `Open`
+      * `打开`
       */
     ["com.affine.settings.workspace.backup.import.success.action"](): string;
     /**
-      * `Deleted on {{date}} at {{time}}`
+      * `已于{{date}} {{time}}删除`
       */
     ["com.affine.settings.workspace.backup.delete-at"](options: Readonly<{
         date: string;
         time: string;
     }>): string;
     /**
-      * `Indexer & Embedding`
+      * `索引器与嵌入`
       */
     ["com.affine.settings.workspace.indexer-embedding.title"](): string;
     /**
-      * `Manage 识光 indexing and 识光 AI Embedding for local content processing`
+      * `管理识光索引和识光 AI嵌入，用于本地内容处理`
       */
     ["com.affine.settings.workspace.indexer-embedding.description"](): string;
     /**
-      * `Embedding`
+      * `嵌入`
       */
     ["com.affine.settings.workspace.indexer-embedding.embedding.title"](): string;
     /**
-      * `Embedding allows AI to retrieve your content. If the indexer uses local settings, it may affect some of the results of the Embedding.`
+      * `嵌入允许AI检索您的内容。如果索引器使用本地设置，它可能会影响嵌入的一些结果。`
       */
     ["com.affine.settings.workspace.indexer-embedding.embedding.description"](): string;
     /**
-      * `Only the workspace owner can enable Workspace Embedding.`
+      * `只有工作区所有者可以启用工作区嵌入。`
       */
     ["com.affine.settings.workspace.indexer-embedding.embedding.disabled-tooltip"](): string;
     /**
-      * `Select doc`
+      * `选择文档`
       */
     ["com.affine.settings.workspace.indexer-embedding.embedding.select-doc"](): string;
     /**
-      * `Upload file`
+      * `上传文件`
       */
     ["com.affine.settings.workspace.indexer-embedding.embedding.upload-file"](): string;
     /**
-      * `Workspace Embedding`
+      * `工作区嵌入`
       */
     ["com.affine.settings.workspace.indexer-embedding.embedding.switch.title"](): string;
     /**
-      * `AI can call files embedded in the workspace.`
+      * `AI可以调用嵌入在工作区中的文件。`
       */
     ["com.affine.settings.workspace.indexer-embedding.embedding.switch.description"](): string;
     /**
-      * `Failed to update workspace doc embedding enabled`
+      * `启用工作区文档嵌入失败`
       */
     ["com.affine.settings.workspace.indexer-embedding.embedding.switch.error"](): string;
     /**
-      * `Failed to remove attachment from embedding`
+      * `从嵌入中移除附件失败`
       */
     ["com.affine.settings.workspace.indexer-embedding.embedding.remove-attachment.error"](): string;
     /**
-      * `Failed to update ignored docs`
+      * `更新已忽略的文档失败`
       */
     ["com.affine.settings.workspace.indexer-embedding.embedding.update-ignored-docs.error"](): string;
     /**
-      * `Embedding progress`
+      * `嵌入进度`
       */
     ["com.affine.settings.workspace.indexer-embedding.embedding.progress.title"](): string;
     /**
-      * `Syncing`
+      * `同步中`
       */
     ["com.affine.settings.workspace.indexer-embedding.embedding.progress.syncing"](): string;
     /**
-      * `Synced`
+      * `已同步`
       */
     ["com.affine.settings.workspace.indexer-embedding.embedding.progress.synced"](): string;
     /**
-      * `Loading sync status...`
+      * `正在加载同步状态...`
       */
     ["com.affine.settings.workspace.indexer-embedding.embedding.progress.loading-sync-status"](): string;
     /**
-      * `Ignore Docs`
+      * `忽略文档`
       */
     ["com.affine.settings.workspace.indexer-embedding.embedding.ignore-docs.title"](): string;
     /**
-      * `The Ignored docs will not be embedded into the current workspace.`
+      * `被忽略的文档将不会嵌入到当前工作区。`
       */
     ["com.affine.settings.workspace.indexer-embedding.embedding.ignore-docs.description"](): string;
     /**
-      * `Additional attachments`
+      * `附加附件`
       */
     ["com.affine.settings.workspace.indexer-embedding.embedding.additional-attachments.title"](): string;
     /**
-      * `The uploaded file will be embedded in the current workspace.`
+      * `上传的文件将嵌入到当前工作区中。`
       */
     ["com.affine.settings.workspace.indexer-embedding.embedding.additional-attachments.description"](): string;
     /**
-      * `Remove the attachment from embedding?`
+      * `要从嵌入中移除附件吗？`
       */
     ["com.affine.settings.workspace.indexer-embedding.embedding.additional-attachments.remove-attachment.title"](): string;
     /**
-      * `Attachment will be removed. AI will not continue to extract content from this attachment.`
+      * `附件将被移除。AI 将不会继续从该附件提取内容。`
       */
     ["com.affine.settings.workspace.indexer-embedding.embedding.additional-attachments.remove-attachment.description"](): string;
     /**
-      * `Delete File`
+      * `删除文件`
       */
     ["com.affine.settings.workspace.indexer-embedding.embedding.additional-attachments.remove-attachment.tooltip"](): string;
     /**
-      * `Sharing docs requires 识光 Sync.`
+      * `共享文档需要开启 识光 同步。`
       */
     ["com.affine.share-menu.EnableCloudDescription"](): string;
     /**
-      * `Share mode`
+      * `分享模式`
       */
     ["com.affine.share-menu.ShareMode"](): string;
     /**
-      * `Share doc`
+      * `分享文档`
       */
     ["com.affine.share-menu.SharePage"](): string;
     /**
-      * `General access`
+      * `通用控制`
       */
     ["com.affine.share-menu.generalAccess"](): string;
     /**
-      * `Share via export`
+      * `通过导出分享`
       */
     ["com.affine.share-menu.ShareViaExport"](): string;
     /**
-      * `Download a static copy of your doc to share with others`
+      * `下载文档的静态副本以与他人分享。`
       */
     ["com.affine.share-menu.ShareViaExportDescription"](): string;
     /**
-      * `Print a paper copy`
+      * `打印副本`
       */
     ["com.affine.share-menu.ShareViaPrintDescription"](): string;
     /**
-      * `Share with link`
+      * `通过链接分享`
       */
     ["com.affine.share-menu.ShareWithLink"](): string;
     /**
-      * `Create a link you can easily share with anyone. The visitors will open your doc in the form od a document`
+      * `创建一个链接，便于与任何人分享。访问者将以文档形式打开您的文档。`
       */
     ["com.affine.share-menu.ShareWithLinkDescription"](): string;
     /**
-      * `Shared doc`
+      * `已分享文档`
       */
     ["com.affine.share-menu.SharedPage"](): string;
     /**
-      * `Copy Link`
+      * `复制链接`
       */
     ["com.affine.share-menu.copy"](): string;
     /**
-      * `Copy private link`
+      * `复制私密链接`
       */
     ["com.affine.share-menu.copy-private-link"](): string;
     /**
-      * `Copy Link to Selected Block`
+      * `复制所选块的链接`
       */
     ["com.affine.share-menu.copy.block"](): string;
     /**
-      * `Copy Link to Edgeless Mode`
+      * `复制无界模式链接`
       */
     ["com.affine.share-menu.copy.edgeless"](): string;
     /**
-      * `Copy Link to Selected Frame`
+      * `复制选定框架链接`
       */
     ["com.affine.share-menu.copy.frame"](): string;
     /**
-      * `Copy Link to Page Mode`
+      * `复制页面模式链接`
       */
     ["com.affine.share-menu.copy.page"](): string;
     /**
-      * `You can share this document with link.`
+      * `您可以通过链接分享这份文档。`
       */
     ["com.affine.share-menu.create-public-link.notification.success.message"](): string;
     /**
-      * `Public link created`
+      * `已创建公开分享链接`
       */
     ["com.affine.share-menu.create-public-link.notification.success.title"](): string;
     /**
-      * `Please try again later.`
+      * `请稍后再试。`
       */
     ["com.affine.share-menu.disable-publish-link.notification.fail.message"](): string;
     /**
-      * `Failed to disable public link`
+      * `禁用公开分享链接失败`
       */
     ["com.affine.share-menu.disable-publish-link.notification.fail.title"](): string;
     /**
-      * `This doc is no longer shared publicly.`
+      * `这篇文档不再公开分享了。`
       */
     ["com.affine.share-menu.disable-publish-link.notification.success.message"](): string;
     /**
-      * `Public link disabled`
+      * `已禁用公开分享链接`
       */
     ["com.affine.share-menu.disable-publish-link.notification.success.title"](): string;
     /**
-      * `Manage workspace members`
+      * `管理工作区成员`
       */
     ["com.affine.share-menu.navigate.workspace"](): string;
     /**
-      * `Anyone with the link`
+      * `任何人`
       */
     ["com.affine.share-menu.option.link.label"](): string;
     /**
-      * `No access`
+      * `禁止访问`
       */
     ["com.affine.share-menu.option.link.no-access"](): string;
     /**
-      * `Only workspace members can access this link`
+      * `只有此工作区的成员可以打开此链接。`
       */
     ["com.affine.share-menu.option.link.no-access.description"](): string;
     /**
-      * `Read only`
+      * `只读`
       */
     ["com.affine.share-menu.option.link.readonly"](): string;
     /**
-      * `Anyone can access this link`
+      * `任何人可以访问该链接`
       */
     ["com.affine.share-menu.option.link.readonly.description"](): string;
     /**
-      * `Sharing for this workspace is turned off. Please contact an admin to enable it.`
+      * `此工作区已关闭分享。请联系管理员启用。`
       */
     ["com.affine.share-menu.workspace-sharing.disabled.tooltip"](): string;
     /**
-      * `Can manage`
+      * `可管理`
       */
     ["com.affine.share-menu.option.permission.can-manage"](): string;
     /**
-      * `Can edit`
+      * `可编辑`
       */
     ["com.affine.share-menu.option.permission.can-edit"](): string;
     /**
-      * `Can read`
+      * `可阅读`
       */
     ["com.affine.share-menu.option.permission.can-read"](): string;
     /**
-      * `No access`
+      * `禁止访问`
       */
     ["com.affine.share-menu.option.permission.no-access"](): string;
     /**
-      * `Members in workspace`
+      * `工作区中的成员`
       */
     ["com.affine.share-menu.option.permission.label"](): string;
     /**
-      * `Workspace admins and owner automatically have Can manage permissions.`
+      * `工作区管理员和所有者自动拥有管理权限。`
       */
     ["com.affine.share-menu.option.permission.tips"](): string;
     /**
-      * `Publish to web`
+      * `发布至网页`
       */
     ["com.affine.share-menu.publish-to-web"](): string;
     /**
-      * `Share privately`
+      * `私密分享`
       */
     ["com.affine.share-menu.share-privately"](): string;
     /**
-      * `Share`
+      * `分享`
       */
     ["com.affine.share-menu.shareButton"](): string;
     /**
-      * `Shared`
+      * `已分享`
       */
     ["com.affine.share-menu.sharedButton"](): string;
     /**
-      * `{{member1}} and {{member2}} are in this doc`
+      * `{{member1}} 和 {{member2}}`
       */
     ["com.affine.share-menu.member-management.member-count-2"](options: Readonly<{
         member1: string;
         member2: string;
     }>): string;
     /**
-      * `{{member1}}, {{member2}} and {{member3}} are in this doc`
+      * `{{member1}}、{{member2}} 和 {{member3}}`
       */
     ["com.affine.share-menu.member-management.member-count-3"](options: Readonly<{
         member1: string;
@@ -7627,7 +7635,7 @@ export function useLumiBookI18N(): {
         member3: string;
     }>): string;
     /**
-      * `{{member1}}, {{member2}} and {{memberCount}} others`
+      * `{{member1}}、{{member2}} 和 {{memberCount}} 人`
       */
     ["com.affine.share-menu.member-management.member-count-more"](options: Readonly<{
         member1: string;
@@ -7635,569 +7643,569 @@ export function useLumiBookI18N(): {
         memberCount: string;
     }>): string;
     /**
-      * `Remove`
+      * `移除`
       */
     ["com.affine.share-menu.member-management.remove"](): string;
     /**
-      * `Set as owner`
+      * `设置为所有者`
       */
     ["com.affine.share-menu.member-management.set-as-owner"](): string;
     /**
-      * `Make this person the owner?`
+      * `将此人设置为所有者？`
       */
     ["com.affine.share-menu.member-management.set-as-owner.confirm.title"](): string;
     /**
-      * `The new owner will be effective immediately, and you might lose access to this doc if other users remove you, please confirm.`
+      * `新所有者将立即生效，如果其他用户将您移除，您可能会失去对此文档的访问权限，请确认。`
       */
     ["com.affine.share-menu.member-management.set-as-owner.confirm.description"](): string;
     /**
-      * `Permission updated`
+      * `权限已更新`
       */
     ["com.affine.share-menu.member-management.update-success"](): string;
     /**
-      * `Failed to update permission`
+      * `权限更新失败`
       */
     ["com.affine.share-menu.member-management.update-fail"](): string;
     /**
-      * `{{memberCount}} collaborators in the doc`
+      * `文档中有{{memberCount}}位协作者`
       */
     ["com.affine.share-menu.member-management.header"](options: {
         readonly memberCount: string;
     }): string;
     /**
-      * `Add collaborators`
+      * `添加协作者`
       */
     ["com.affine.share-menu.member-management.add-collaborators"](): string;
     /**
-      * `Send invite`
+      * `发送邀请`
       */
     ["com.affine.share-menu.invite-editor.header"](): string;
     /**
-      * `Manage members`
+      * `管理成员`
       */
     ["com.affine.share-menu.invite-editor.manage-members"](): string;
     /**
-      * `Invite`
+      * `邀请`
       */
     ["com.affine.share-menu.invite-editor.invite"](): string;
     /**
-      * `No results found`
+      * `未找到结果`
       */
     ["com.affine.share-menu.invite-editor.no-found"](): string;
     /**
-      * `Invite other members`
+      * `邀请其他成员`
       */
     ["com.affine.share-menu.invite-editor.placeholder"](): string;
     /**
-      * `Notify via Email`
+      * `通过电子邮件通知`
       */
     ["com.affine.share-menu.invite-editor.sent-email"](): string;
     /**
-      * `Permission not available in Free plan`
+      * `免费计划中不提供权限`
       */
     ["com.affine.share-menu.paywall.owner.title"](): string;
     /**
-      * `Upgrade to Pro or higher to unlock permission settings for this doc.`
+      * `升级到 Pro 或更高版本以解锁此文档的权限设置。`
       */
     ["com.affine.share-menu.paywall.owner.description"](): string;
     /**
-      * `Upgrade`
+      * `升级`
       */
     ["com.affine.share-menu.paywall.owner.confirm"](): string;
     /**
-      * `Permission requires a workspace upgrade`
+      * `需要升级工作区`
       */
     ["com.affine.share-menu.paywall.member.title"](): string;
     /**
-      * `Ask your workspace owner to upgrade to Pro or higher to enable permissions.`
+      * `请询问您的工作区所有者升级到 Pro 或更高版本以启用权限管理。`
       */
     ["com.affine.share-menu.paywall.member.description"](): string;
     /**
-      * `Got it`
+      * `知道了`
       */
     ["com.affine.share-menu.paywall.member.confirm"](): string;
     /**
-      * `Built with`
+      * `构建于`
       */
     ["com.affine.share-page.footer.built-with"](): string;
     /**
-      * `Create with`
+      * `创建于`
       */
     ["com.affine.share-page.footer.create-with"](): string;
     /**
-      * `Empower your sharing with 识光 Cloud: One-click doc sharing`
+      * `使用 识光 Cloud 增强您的共享能力：一键文档共享`
       */
     ["com.affine.share-page.footer.description"](): string;
     /**
-      * `Get started for free`
+      * `免费开始使用`
       */
     ["com.affine.share-page.footer.get-started"](): string;
     /**
-      * `Use This Template`
+      * `使用此模板`
       */
     ["com.affine.share-page.header.import-template"](): string;
     /**
-      * `Login or Sign Up`
+      * `注册或登录`
       */
     ["com.affine.share-page.header.login"](): string;
     /**
-      * `Present`
+      * `演示`
       */
     ["com.affine.share-page.header.present"](): string;
     /**
-      * `Edgeless`
+      * `无界`
       */
     ["com.affine.shortcutsTitle.edgeless"](): string;
     /**
-      * `General`
+      * `常规`
       */
     ["com.affine.shortcutsTitle.general"](): string;
     /**
-      * `Markdown syntax`
+      * `Markdown 语法`
       */
     ["com.affine.shortcutsTitle.markdownSyntax"](): string;
     /**
-      * `Page`
+      * `页面`
       */
     ["com.affine.shortcutsTitle.page"](): string;
     /**
-      * `Collapse sidebar`
+      * `折叠侧边栏`
       */
     ["com.affine.sidebarSwitch.collapse"](): string;
     /**
-      * `Expand sidebar`
+      * `展开侧边栏`
       */
     ["com.affine.sidebarSwitch.expand"](): string;
     /**
-      * `Snapshot Imp. & Exp.`
+      * `启用快照导入导出`
       */
     ["com.affine.snapshot.import-export.enable"](): string;
     /**
-      * `Once enabled you can find the Snapshot Export Import option in the document's More menu.`
+      * `启用后，您可以在文档的更多菜单中找到快照导出导入选项。`
       */
     ["com.affine.snapshot.import-export.enable.desc"](): string;
     /**
-      * `Maybe later`
+      * `稍后`
       */
     ["com.affine.star-affine.cancel"](): string;
     /**
-      * `Star on GitHub`
+      * `在 GitHub 点亮星标`
       */
     ["com.affine.star-affine.confirm"](): string;
     /**
-      * `Are you finding our app useful and enjoyable? We'd love your support to keep improving! A great way to help us out is by giving us a star on GitHub. This simple action can make a big difference and helps us continue to deliver the best experience for you.`
+      * `您觉得我们的应用程序有用且有趣吗？ 我们希望得到您的支持，以不断进步！ 帮助我们的一个好方法是在 GitHub 给我们一颗星。 这个简单的行动可以给我们很大的激励，并帮助我们继续为您提供最佳体验。`
       */
     ["com.affine.star-affine.description"](): string;
     /**
-      * `Star us on GitHub`
+      * `在 GitHub 为我们点亮星标`
       */
     ["com.affine.star-affine.title"](): string;
     /**
-      * `Change plan`
+      * `更改`
       */
     ["com.affine.storage.change-plan"](): string;
     /**
-      * `You have reached the maximum capacity limit for your current account`
+      * `您已达到当前账户的最大容量限制`
       */
     ["com.affine.storage.maximum-tips"](): string;
     /**
-      * `Pro users will have unlimited storage capacity during the alpha test period of the team version`
+      * `Pro 用户在团队版 alpha 测试期间将拥有无限存储容量`
       */
     ["com.affine.storage.maximum-tips.pro"](): string;
     /**
-      * `Plan`
+      * `计划`
       */
     ["com.affine.storage.plan"](): string;
     /**
-      * `识光 Sync storage`
+      * `识光 云端存储`
       */
     ["com.affine.storage.title"](): string;
     /**
-      * `Upgrade`
+      * `升级`
       */
     ["com.affine.storage.upgrade"](): string;
     /**
-      * `Space used`
+      * `已使用空间`
       */
     ["com.affine.storage.used.hint"](): string;
     /**
-      * `Syncing`
+      * `同步中`
       */
     ["com.affine.syncing"](): string;
     /**
-      * `{{count}} doc`
+      * `{{count}} 篇文档`
     
-      * - com.affine.tags.count_one: `{{count}} doc`
+      * - com.affine.tags.count_one: `{{count}} 篇文档`
     
-      * - com.affine.tags.count_other: `{{count}} docs`
+      * - com.affine.tags.count_other: `{{count}} 篇文档`
     
-      * - com.affine.tags.count_zero: `{{count}} doc`
+      * - com.affine.tags.count_zero: `{{count}} 篇文档`
       */
     ["com.affine.tags.count"](options: {
         readonly count: string | number | bigint;
     }): string;
     /**
-      * `{{count}} doc`
+      * `{{count}} 篇文档`
       */
     ["com.affine.tags.count_one"](options: {
         readonly count: string | number | bigint;
     }): string;
     /**
-      * `{{count}} docs`
+      * `{{count}} 篇文档`
       */
     ["com.affine.tags.count_other"](options: {
         readonly count: string | number | bigint;
     }): string;
     /**
-      * `{{count}} doc`
+      * `{{count}} 篇文档`
       */
     ["com.affine.tags.count_zero"](options: {
         readonly count: string | number | bigint;
     }): string;
     /**
-      * `Type tag name here...`
+      * `在这输入标签名称...`
       */
     ["com.affine.tags.create-tag.placeholder"](): string;
     /**
-      * `Tag already exists`
+      * `标签已存在`
       */
     ["com.affine.tags.create-tag.toast.exist"](): string;
     /**
-      * `Tag created`
+      * `已创建标签`
       */
     ["com.affine.tags.create-tag.toast.success"](): string;
     /**
-      * `Tag deleted`
+      * `标签已删除`
       */
     ["com.affine.tags.delete-tags.toast"](): string;
     /**
-      * `Tag updated`
+      * `标签已更新`
       */
     ["com.affine.tags.edit-tag.toast.success"](): string;
     /**
-      * `New tag`
+      * `新建标签`
       */
     ["com.affine.tags.empty.new-tag-button"](): string;
     /**
-      * `Enable telemetry`
+      * `启用遥测`
       */
     ["com.affine.telemetry.enable"](): string;
     /**
-      * `Telemetry is a feature that allows us to collect data on how you use the app. This data helps us improve the app and provide better features.`
+      * `遥测功能使我们能够收集有关您如何使用该应用程序的数据。 这些数据有助于我们改进应用程序并提供更好的功能。`
       */
     ["com.affine.telemetry.enable.desc"](): string;
     /**
-      * `Dark`
+      * `深色`
       */
     ["com.affine.themeSettings.dark"](): string;
     /**
-      * `Light`
+      * `浅色`
       */
     ["com.affine.themeSettings.light"](): string;
     /**
-      * `System`
+      * `跟随系统`
       */
     ["com.affine.themeSettings.system"](): string;
     /**
-      * `Auto`
+      * `自动`
       */
     ["com.affine.themeSettings.auto"](): string;
     /**
-      * `now`
+      * `刚刚`
       */
     ["com.affine.time.now"](): string;
     /**
-      * `this month`
+      * `本月`
       */
     ["com.affine.time.this-mouth"](): string;
     /**
-      * `this week`
+      * `本周`
       */
     ["com.affine.time.this-week"](): string;
     /**
-      * `this year`
+      * `今年`
       */
     ["com.affine.time.this-year"](): string;
     /**
-      * `today`
+      * `今天`
       */
     ["com.affine.time.today"](): string;
     /**
-      * `Successfully added linked doc`
+      * `已成功添加链接文档`
       */
     ["com.affine.toastMessage.addLinkedPage"](): string;
     /**
-      * `Added to favorites`
+      * `已添加到收藏夹`
       */
     ["com.affine.toastMessage.addedFavorites"](): string;
     /**
-      * `Edgeless mode`
+      * `无界模式`
       */
     ["com.affine.toastMessage.edgelessMode"](): string;
     /**
-      * `Moved to trash`
+      * `已移动到垃圾箱`
       */
     ["com.affine.toastMessage.movedTrash"](): string;
     /**
-      * `Page Mode`
+      * `页面模式`
       */
     ["com.affine.toastMessage.pageMode"](): string;
     /**
-      * `Default mode has changed`
+      * `默认模式已更改`
       */
     ["com.affine.toastMessage.defaultMode.page.title"](): string;
     /**
-      * `The default mode for this document has been changed to Page mode`
+      * `该文档的默认模式已更改为页面模式`
       */
     ["com.affine.toastMessage.defaultMode.page.message"](): string;
     /**
-      * `Default mode has changed`
+      * `默认模式已更改`
       */
     ["com.affine.toastMessage.defaultMode.edgeless.title"](): string;
     /**
-      * `The default mode for this document has been changed to Edgeless mode`
+      * `该文档的默认模式已更改为无界模式`
       */
     ["com.affine.toastMessage.defaultMode.edgeless.message"](): string;
     /**
-      * `Permanently deleted`
+      * `已永久删除`
       */
     ["com.affine.toastMessage.permanentlyDeleted"](): string;
     /**
-      * `Removed from favourites`
+      * `已从收藏中移除`
       */
     ["com.affine.toastMessage.removedFavorites"](): string;
     /**
-      * `Successfully renamed`
+      * `更名成功`
       */
     ["com.affine.toastMessage.rename"](): string;
     /**
-      * `{{title}} restored`
+      * `{{title}} 已恢复`
       */
     ["com.affine.toastMessage.restored"](options: {
         readonly title: string;
     }): string;
     /**
-      * `Successfully deleted`
+      * `删除成功`
       */
     ["com.affine.toastMessage.successfullyDeleted"](): string;
     /**
-      * `Today`
+      * `今天`
       */
     ["com.affine.today"](): string;
     /**
-      * `Tomorrow`
+      * `明日`
       */
     ["com.affine.tomorrow"](): string;
     /**
-      * `Last {{weekday}}`
+      * `上一个 {{weekday}}`
       */
     ["com.affine.last-week"](options: {
         readonly weekday: string;
     }): string;
     /**
-      * `Next {{weekday}}`
+      * `下一个 {{weekday}}`
       */
     ["com.affine.next-week"](options: {
         readonly weekday: string;
     }): string;
     /**
-      * `Limited to view-only on mobile.`
+      * `在移动设备上仅限于查看。`
       */
     ["com.affine.top-tip.mobile"](): string;
     /**
-      * `Delete`
+      * `删除`
       */
     ["com.affine.trashOperation.delete"](): string;
     /**
-      * `Once deleted, you can't undo this action. Do you confirm?`
+      * `一旦删除，您将无法撤销此操作。您确定吗？`
       */
     ["com.affine.trashOperation.delete.description"](): string;
     /**
-      * `Permanently delete`
+      * `永久删除`
       */
     ["com.affine.trashOperation.delete.title"](): string;
     /**
-      * `Once deleted, you can't undo this action. Do you confirm?`
+      * `一旦删除，您将无法撤销此操作。您确定吗？`
       */
     ["com.affine.trashOperation.deleteDescription"](): string;
     /**
-      * `Delete permanently`
+      * `永久删除`
       */
     ["com.affine.trashOperation.deletePermanently"](): string;
     /**
-      * `Restore it`
+      * `恢复`
       */
     ["com.affine.trashOperation.restoreIt"](): string;
     /**
-      * `Refresh current page`
+      * `刷新当前页面`
       */
     ["com.affine.upgrade.button-text.done"](): string;
     /**
-      * `Data upgrade error`
+      * `数据升级错误`
       */
     ["com.affine.upgrade.button-text.error"](): string;
     /**
-      * `Upgrade workspace data`
+      * `升级工作区数据`
       */
     ["com.affine.upgrade.button-text.pending"](): string;
     /**
-      * `Upgrading`
+      * `正在升级`
       */
     ["com.affine.upgrade.button-text.upgrading"](): string;
     /**
-      * `After upgrading the workspace data, please refresh the page to see the changes.`
+      * `升级工作区数据后，请刷新页面以查看更改。`
       */
     ["com.affine.upgrade.tips.done"](): string;
     /**
-      * `We encountered some errors while upgrading the workspace data.`
+      * `在升级工作区数据时遇到了一些错误。`
       */
     ["com.affine.upgrade.tips.error"](): string;
     /**
-      * `To ensure compatibility with the updated 识光 client, please upgrade your data by clicking the "Upgrade workspace data" button below.`
+      * `为确保与更新后的 识光 客户端兼容，请点击下方的“升级工作区数据”按钮进行数据升级。`
       */
     ["com.affine.upgrade.tips.normal"](): string;
     /**
-      * `AI usage`
+      * `AI 用量`
       */
     ["com.affine.user-info.usage.ai"](): string;
     /**
-      * `Sync storage`
+      * `云存储`
       */
     ["com.affine.user-info.usage.cloud"](): string;
     /**
-      * `Close`
+      * `关闭`
       */
     ["com.affine.workbench.split-view-menu.close"](): string;
     /**
-      * `Full screen`
+      * `全屏`
       */
     ["com.affine.workbench.split-view-menu.full-screen"](): string;
     /**
-      * `Solo view`
+      * `单独视窗`
       */
     ["com.affine.workbench.split-view-menu.keep-this-one"](): string;
     /**
-      * `Move left`
+      * `移至左侧`
       */
     ["com.affine.workbench.split-view-menu.move-left"](): string;
     /**
-      * `Move right`
+      * `移至右侧`
       */
     ["com.affine.workbench.split-view-menu.move-right"](): string;
     /**
-      * `Open in split view`
+      * `在分割视图中打开`
       */
     ["com.affine.workbench.split-view.page-menu-open"](): string;
     /**
-      * `Open in new tab`
+      * `在新标签页打开`
       */
     ["com.affine.workbench.tab.page-menu-open"](): string;
     /**
-      * `You cannot delete the last workspace`
+      * `您无法删除最后一个工作区`
       */
     ["com.affine.workspace.cannot-delete"](): string;
     /**
-      * `Synced workspaces`
+      * `云工作区`
       */
     ["com.affine.workspace.cloud"](): string;
     /**
-      * `Sign out`
+      * `退出登录`
       */
     ["com.affine.workspace.cloud.account.logout"](): string;
     /**
-      * `Account settings`
+      * `账户设置`
       */
     ["com.affine.workspace.cloud.account.settings"](): string;
     /**
-      * `Admin panel`
+      * `管理面板`
       */
     ["com.affine.workspace.cloud.account.admin"](): string;
     /**
-      * `Team owner`
+      * `团队所有者`
       */
     ["com.affine.workspace.cloud.account.team.owner"](): string;
     /**
-      * `Team member`
+      * `团队成员`
       */
     ["com.affine.workspace.cloud.account.team.member"](): string;
     /**
-      * `Multiple teams`
+      * `多个团队`
       */
     ["com.affine.workspace.cloud.account.team.multi"](): string;
     /**
-      * `Click to open workspace`
+      * `点击打开工作区`
       */
     ["com.affine.workspace.cloud.account.team.tips-1"](): string;
     /**
-      * `Click to open workspace list`
+      * `点击以打开工作区列表`
       */
     ["com.affine.workspace.cloud.account.team.tips-2"](): string;
     /**
-      * `Sign in / Sign up to 识光`
+      * `登录 / 注册 识光`
       */
     ["com.affine.workspace.cloud.auth"](): string;
     /**
-      * `Sync with 识光`
+      * `通过 识光 同步`
       */
     ["com.affine.workspace.cloud.description"](): string;
     /**
-      * `Join workspace`
+      * `加入工作区`
       */
     ["com.affine.workspace.cloud.join"](): string;
     /**
-      * `识光 Sync`
+      * `识光 同步`
       */
     ["com.affine.workspace.cloud.sync"](): string;
     /**
-      * `Failed to turn on 识光 Sync. Please try again.`
+      * `开启 识光 同步失败，请稍后重试。`
       */
     ["com.affine.workspace.enable-cloud.failed"](): string;
     /**
-      * `Local workspaces`
+      * `本地工作区`
       */
     ["com.affine.workspace.local"](): string;
     /**
-      * `Import workspace`
+      * `导入工作区`
       */
     ["com.affine.workspace.local.import"](): string;
     /**
-      * `Cancel`
+      * `取消`
       */
     ["com.affine.workspaceDelete.button.cancel"](): string;
     /**
-      * `Delete`
+      * `删除`
       */
     ["com.affine.workspaceDelete.button.delete"](): string;
     /**
-      * `Please type workspace name to confirm`
+      * `请输入工作区名称以确认`
       */
     ["com.affine.workspaceDelete.placeholder"](): string;
     /**
-      * `Delete workspace`
+      * `删除工作区`
       */
     ["com.affine.workspaceDelete.title"](): string;
     /**
-      * `Create workspace`
+      * `创建工作区`
       */
     ["com.affine.workspaceList.addWorkspace.create"](): string;
     /**
-      * `Create synced workspace`
+      * `创建同步工作区`
       */
     ["com.affine.workspaceList.addWorkspace.create-cloud"](): string;
     /**
-      * `Cloud sync`
+      * `识光 同步`
       */
     ["com.affine.workspaceList.workspaceListType.cloud"](): string;
     /**
-      * `Local storage`
+      * `本地储存`
       */
     ["com.affine.workspaceList.workspaceListType.local"](): string;
     /**
-      * `Add Server`
+      * `添加服务器`
       */
     ["com.affine.workspaceList.addServer"](): string;
     /**
-      * `All docs`
+      * `全部文档`
       */
     ["com.affine.workspaceSubPath.all"](): string;
     /**
@@ -8205,425 +8213,425 @@ export function useLumiBookI18N(): {
       */
     ["com.affine.workspaceSubPath.chat"](): string;
     /**
-      * `Trash`
+      * `回收站`
       */
     ["com.affine.workspaceSubPath.trash"](): string;
     /**
-      * `Deleted docs will appear here.`
+      * `已删除的文档将显示在此处。`
       */
     ["com.affine.workspaceSubPath.trash.empty-description"](): string;
     /**
-      * `Write with a blank page`
+      * `在空白页面书写`
       */
     ["com.affine.write_with_a_blank_page"](): string;
     /**
-      * `Yesterday`
+      * `昨天`
       */
     ["com.affine.yesterday"](): string;
     /**
-      * `Inactive`
+      * `不活跃`
       */
     ["com.affine.inactive"](): string;
     /**
-      * `Inactive member`
+      * `不活跃的成员`
       */
     ["com.affine.inactive-member"](): string;
     /**
-      * `Inactive workspace`
+      * `不活跃的工作区`
       */
     ["com.affine.inactive-workspace"](): string;
     /**
-      * `Display Properties`
+      * `显示属性`
       */
     ["com.affine.all-docs.display.properties"](): string;
     /**
-      * `List view options`
+      * `列表视图选项`
       */
     ["com.affine.all-docs.display.list-view"](): string;
     /**
-      * `Icon`
+      * `图标`
       */
     ["com.affine.all-docs.display.list-view.icon"](): string;
     /**
-      * `Body`
+      * `正文`
       */
     ["com.affine.all-docs.display.list-view.body"](): string;
     /**
-      * `Quick actions`
+      * `快捷操作`
       */
     ["com.affine.all-docs.quick-actions"](): string;
     /**
-      * `Favorite`
+      * `收藏`
       */
     ["com.affine.all-docs.quick-action.favorite"](): string;
     /**
-      * `Move to trash`
+      * `移动到回收站`
       */
     ["com.affine.all-docs.quick-action.trash"](): string;
     /**
-      * `Open in split view`
+      * `在拆分视图中打开`
       */
     ["com.affine.all-docs.quick-action.split"](): string;
     /**
-      * `Open in new tab`
+      * `在新标签页打开`
       */
     ["com.affine.all-docs.quick-action.tab"](): string;
     /**
-      * `Select checkbox`
+      * `选择复选框`
       */
     ["com.affine.all-docs.quick-action.select"](): string;
     /**
-      * `Delete permanently`
+      * `永久删除`
       */
     ["com.affine.all-docs.quick-action.delete-permanently"](): string;
     /**
-      * `Restore`
+      * `恢复`
       */
     ["com.affine.all-docs.quick-action.restore"](): string;
     /**
-      * `All`
+      * `全部`
       */
     ["com.affine.all-docs.pinned-collection.all"](): string;
     /**
-      * `Edit collection rules`
+      * `编辑精选规则`
       */
     ["com.affine.all-docs.pinned-collection.edit"](): string;
     /**
-      * `Template`
+      * `模板`
       */
     ["com.affine.all-docs.group.is-template"](): string;
     /**
-      * `Not Template`
+      * `不是模板`
       */
     ["com.affine.all-docs.group.is-not-template"](): string;
     /**
-      * `Journal`
+      * `是 Journal`
       */
     ["com.affine.all-docs.group.is-journal"](): string;
     /**
-      * `Not Journal`
+      * `非 Journal`
       */
     ["com.affine.all-docs.group.is-not-journal"](): string;
     /**
-      * `Checked`
+      * `已勾选`
       */
     ["com.affine.all-docs.group.is-checked"](): string;
     /**
-      * `Unchecked`
+      * `未勾选`
       */
     ["com.affine.all-docs.group.is-not-checked"](): string;
     /**
-      * `Never updated`
+      * `从未更新`
       */
     ["com.affine.all-docs.group.updated-at.never-updated"](): string;
     /**
-      * `core`
+      * `核心`
       */
     core(): string;
     /**
-      * `Dark`
+      * `深色`
       */
     dark(): string;
     /**
-      * `invited you to join`
+      * `邀请您加入`
       */
     ["invited you to join"](): string;
     /**
-      * `Light`
+      * `浅色`
       */
     light(): string;
     /**
-      * `Others`
+      * `其他`
       */
     others(): string;
     /**
-      * `System`
+      * `跟随系统`
       */
     system(): string;
     /**
-      * `unnamed`
+      * `未命名`
       */
     unnamed(): string;
     /**
-      * `Please upgrade to the latest version of Chrome for the best experience.`
+      * `请升级至最新版Chrome浏览器以获得最佳体验。`
       */
     upgradeBrowser(): string;
     /**
-      * `Workspace properties`
+      * `工作区属性`
       */
     ["com.affine.workspace.properties"](): string;
     /**
-      * `Rename to "{{name}}"`
+      * `重命名为 “{{name}}”`
       */
     ["com.affine.m.rename-to"](options: {
         readonly name: string;
     }): string;
     /**
-      * `Rename`
+      * `重命名`
       */
     ["com.affine.m.explorer.folder.rename"](): string;
     /**
-      * `Create Folder`
+      * `创建文件夹`
       */
     ["com.affine.m.explorer.folder.new-dialog-title"](): string;
     /**
-      * `Organize`
+      * `组织`
       */
     ["com.affine.m.explorer.folder.root"](): string;
     /**
-      * `Create a folder in the {{parent}}.`
+      * `在 {{parent}} 中创建文件夹`
       */
     ["com.affine.m.explorer.folder.new-tip-empty"](options: {
         readonly parent: string;
     }): string;
     /**
-      * `Create "{{value}}" in the {{parent}}.`
+      * `在 {{parent}} 中创建 {{value}}`
       */
     ["com.affine.m.explorer.folder.new-tip-not-empty"](options: Readonly<{
-        value: string;
         parent: string;
+        value: string;
     }>): string;
     /**
-      * `Done`
+      * `已完成`
       */
     ["com.affine.m.explorer.folder.rename-confirm"](): string;
     /**
-      * `Rename`
+      * `重命名`
       */
     ["com.affine.m.explorer.tag.rename"](): string;
     /**
-      * `Rename Tag`
+      * `修改标签`
       */
     ["com.affine.m.explorer.tag.rename-menu-title"](): string;
     /**
-      * `Create Tag`
+      * `新建标签`
       */
     ["com.affine.m.explorer.tag.new-dialog-title"](): string;
     /**
-      * `Done`
+      * `修改成功`
       */
     ["com.affine.m.explorer.tag.rename-confirm"](): string;
     /**
-      * `Create a tag in this workspace.`
+      * `为此工作区新建一个标签。`
       */
     ["com.affine.m.explorer.tag.new-tip-empty"](): string;
     /**
-      * `Create "{{value}}" tag in this workspace.`
+      * `为此工作区新建 “{{value}}” 标签。`
       */
     ["com.affine.m.explorer.tag.new-tip-not-empty"](options: {
         readonly value: string;
     }): string;
     /**
-      * `Manage Doc(s)`
+      * `管理文档`
       */
     ["com.affine.m.explorer.tag.manage-docs"](): string;
     /**
-      * `Rename`
+      * `重命名`
       */
     ["com.affine.m.explorer.collection.rename"](): string;
     /**
-      * `Rename Collection`
+      * `重命名精选`
       */
     ["com.affine.m.explorer.collection.rename-menu-title"](): string;
     /**
-      * `Create Collection`
+      * `新建精选`
       */
     ["com.affine.m.explorer.collection.new-dialog-title"](): string;
     /**
-      * `No documents yet`
+      * `还没有文档`
       */
     ["com.affine.m.explorer.empty.docs.title"](): string;
     /**
-      * `Create your first document to start capturing ideas and organizing knowledge.`
+      * `创建第一篇文档，开始记录灵感、整理知识。`
       */
     ["com.affine.m.explorer.empty.docs.description"](): string;
     /**
-      * `New Document`
+      * `新建文档`
       */
     ["com.affine.m.explorer.empty.docs.action"](): string;
     /**
-      * `No collections yet`
+      * `还没有合集`
       */
     ["com.affine.m.explorer.empty.collections.title"](): string;
     /**
-      * `Create a collection to organize related content in one place.`
+      * `创建合集，把相关内容归拢在一处。`
       */
     ["com.affine.m.explorer.empty.collections.description"](): string;
     /**
-      * `New Collection`
+      * `新建合集`
       */
     ["com.affine.m.explorer.empty.collections.action"](): string;
     /**
-      * `No tags yet`
+      * `还没有标签`
       */
     ["com.affine.m.explorer.empty.tags.title"](): string;
     /**
-      * `Add tags to your documents for easier organization and discovery.`
+      * `为文档添加标签，方便整理与查找。`
       */
     ["com.affine.m.explorer.empty.tags.description"](): string;
     /**
-      * `New Tag`
+      * `新建标签`
       */
     ["com.affine.m.explorer.empty.tags.action"](): string;
     /**
-      * `Rename`
+      * `重命名`
       */
     ["com.affine.m.explorer.doc.rename"](): string;
     /**
-      * `Doc`
+      * `文档`
       */
     ["com.affine.m.selector.type-doc"](): string;
     /**
-      * `Tag`
+      * `标签`
       */
     ["com.affine.m.selector.type-tag"](): string;
     /**
-      * `Collection`
+      * `精选`
       */
     ["com.affine.m.selector.type-collection"](): string;
     /**
-      * `Folder`
+      * `文件夹`
       */
     ["com.affine.m.selector.where-folder"](): string;
     /**
-      * `Tag`
+      * `标签`
       */
     ["com.affine.m.selector.where-tag"](): string;
     /**
-      * `Collection`
+      * `精选`
       */
     ["com.affine.m.selector.where-collection"](): string;
     /**
-      * `Apply`
+      * `应用`
       */
     ["com.affine.m.selector.confirm-default"](): string;
     /**
-      * `Manage {{type}}(s)`
+      * `管理 {{type}}`
       */
     ["com.affine.m.selector.title"](options: {
         readonly type: string;
     }): string;
     /**
-      * `{{total}} item(s)`
+      * `{{total}} 件项目`
       */
     ["com.affine.m.selector.info-total"](options: {
         readonly total: string;
     }): string;
     /**
-      * `Add {{count}} {{type}}(s)`
+      * `添加 {{count}} 个 {{type}}`
       */
     ["com.affine.m.selector.info-added"](options: Readonly<{
         count: string;
         type: string;
     }>): string;
     /**
-      * `Remove {{count}} {{type}}(s)`
+      * `删除 {{count}} 个 {{type}}`
       */
     ["com.affine.m.selector.info-removed"](options: Readonly<{
         count: string;
         type: string;
     }>): string;
     /**
-      * `Remove items`
+      * `删除项目`
       */
     ["com.affine.m.selector.remove-warning.title"](): string;
     /**
-      * `You unchecked {{type}} that already exist in the current {{where}}, which means you will remove them from this {{where}}. The item will not be deleted.`
+      * `您取消选中了当前 {{where}} 中已存在的 {{type}}，这意味着您将从此 {{where}} 中移除它们。该项目不会被删除。`
       */
     ["com.affine.m.selector.remove-warning.message"](options: Readonly<{
-        type: string;
         where: string;
+        type: string;
     }>): string;
     /**
-      * `Do not ask again`
+      * `不再询问`
       */
     ["com.affine.m.selector.remove-warning.confirm"](): string;
     /**
-      * `Cancel`
+      * `取消`
       */
     ["com.affine.m.selector.remove-warning.cancel"](): string;
     /**
-      * `tag`
+      * `标签`
       */
     ["com.affine.m.selector.remove-warning.where-tag"](): string;
     /**
-      * `folder`
+      * `文件夹`
       */
     ["com.affine.m.selector.remove-warning.where-folder"](): string;
     /**
-      * `Today's activity`
+      * `今日活动`
       */
     ["com.affine.m.selector.journal-menu.today-activity"](): string;
     /**
-      * `Duplicate Entries in Today's Journal`
+      * `今日 Journal 中有重复条目`
       */
     ["com.affine.m.selector.journal-menu.conflicts"](): string;
     /**
-      * `Unable to preview this file`
+      * `无法预览此文件`
       */
     ["com.affine.attachment.preview.error.title"](): string;
     /**
-      * `file type not supported.`
+      * `文件类型不支持。`
       */
     ["com.affine.attachment.preview.error.subtitle"](): string;
     /**
-      * `Failed to render page.`
+      * `无法渲染页面。`
       */
     ["com.affine.pdf.page.render.error"](): string;
     /**
-      * `Duplicate Entries in Today's Journal`
+      * `今日 Journal 中有重复条目`
       */
     ["com.affine.editor.journal-conflict.title"](): string;
     /**
-      * `Search for "{{query}}"`
+      * `搜索 "{{query}}"`
       */
     ["com.affine.editor.at-menu.link-to-doc"](options: {
         readonly query: string;
     }): string;
     /**
-      * `Recent`
+      * `最近`
       */
     ["com.affine.editor.at-menu.recent-docs"](): string;
     /**
-      * `Tags`
+      * `标签`
       */
     ["com.affine.editor.at-menu.tags"](): string;
     /**
-      * `Collections`
+      * `精选`
       */
     ["com.affine.editor.at-menu.collections"](): string;
     /**
-      * `Loading...`
+      * `加载中...`
       */
     ["com.affine.editor.at-menu.loading"](): string;
     /**
-      * `New`
+      * `新建`
       */
     ["com.affine.editor.at-menu.new-doc"](): string;
     /**
-      * `New "{{name}}" page`
+      * `新建 “{{name}}” 页面`
       */
     ["com.affine.editor.at-menu.create-page"](options: {
         readonly name: string;
     }): string;
     /**
-      * `New "{{name}}" edgeless`
+      * `新建 “{{name}}” 无界`
       */
     ["com.affine.editor.at-menu.create-edgeless"](options: {
         readonly name: string;
     }): string;
     /**
-      * `Import`
+      * `导入`
       */
     ["com.affine.editor.at-menu.import"](): string;
     /**
-      * `{{count}} more docs`
+      * `还有 {{count}} 篇文档`
       */
     ["com.affine.editor.at-menu.more-docs-hint"](options: {
         readonly count: string;
     }): string;
     /**
-      * `{{count}} more members`
+      * `还有 {{count}} 位成员`
       */
     ["com.affine.editor.at-menu.more-members-hint"](options: {
         readonly count: string;
@@ -8633,129 +8641,129 @@ export function useLumiBookI18N(): {
       */
     ["com.affine.editor.at-menu.journal"](): string;
     /**
-      * `Select a specific date`
+      * `选择具体日期`
       */
     ["com.affine.editor.at-menu.date-picker"](): string;
     /**
-      * `Mention Members`
+      * `提及成员`
       */
     ["com.affine.editor.at-menu.mention-members"](): string;
     /**
-      * `Member not notified`
+      * `成员未收到通知`
       */
     ["com.affine.editor.at-menu.member-not-notified"](): string;
     /**
-      * `This member does not have access to this doc, they are not notified.`
+      * `该成员没有访问此文档的权限，他们不会收到通知。`
       */
     ["com.affine.editor.at-menu.member-not-notified-message"](): string;
     /**
-      * `Invited and notified`
+      * `已邀请并发出通知`
       */
     ["com.affine.editor.at-menu.invited-and-notified"](): string;
     /**
-      * `Access needed`
+      * `需要访问权限`
       */
     ["com.affine.editor.at-menu.access-needed"](): string;
     /**
-      * `{{username}} does not have access to this doc, do you want to invite and notify them?`
+      * `{{username}} 无权访问该文档，您是否要邀请并通知他们？`
       */
     ["com.affine.editor.at-menu.access-needed-message"](options: {
         readonly username: string;
     }): string;
     /**
-      * `Show`
+      * `展示`
       */
     ["com.affine.editor.bi-directional-link-panel.show"](): string;
     /**
-      * `Hide`
+      * `隐藏`
       */
     ["com.affine.editor.bi-directional-link-panel.hide"](): string;
     /**
-      * `Fold page block`
+      * `折叠页面块`
       */
     ["com.affine.editor.edgeless-note-header.fold-page-block"](): string;
     /**
-      * `Open in Page`
+      * `在页面中打开`
       */
     ["com.affine.editor.edgeless-note-header.open-in-page"](): string;
     /**
-      * `Fold`
+      * `折叠`
       */
     ["com.affine.editor.edgeless-embed-synced-doc-header.fold"](): string;
     /**
-      * `Unfold`
+      * `展开`
       */
     ["com.affine.editor.edgeless-embed-synced-doc-header.unfold"](): string;
     /**
-      * `Open`
+      * `打开`
       */
     ["com.affine.editor.edgeless-embed-synced-doc-header.open"](): string;
     /**
-      * `Empower Your Team with Seamless Collaboration`
+      * `通过无缝协作来为您的团队赋能`
       */
     ["com.affine.upgrade-to-team-page.title"](): string;
     /**
-      * `Select an existing workspace or create a new one`
+      * `选择现有工作区或创建新工作区`
       */
     ["com.affine.upgrade-to-team-page.workspace-selector.placeholder"](): string;
     /**
-      * `Create Workspace`
+      * `创建工作区`
       */
     ["com.affine.upgrade-to-team-page.workspace-selector.create-workspace"](): string;
     /**
-      * `Upgrade to Team Workspace`
+      * `升级为团队空间`
       */
     ["com.affine.upgrade-to-team-page.upgrade-button"](): string;
     /**
-      * `Team Workspace gives you everything you need for seamless team collaboration:`
+      * `团队空间为您提供无缝协作所需的一切：`
       */
     ["com.affine.upgrade-to-team-page.benefit.title"](): string;
     /**
-      * `Invite unlimited members to your workspace`
+      * `邀请无限数量的成员加入您的工作区`
       */
     ["com.affine.upgrade-to-team-page.benefit.g1"](): string;
     /**
-      * `Set custom roles and permissions for better control`
+      * `设置自定义角色和权限以实现更好的控制`
       */
     ["com.affine.upgrade-to-team-page.benefit.g2"](): string;
     /**
-      * `Access advanced team management features`
+      * `访问高级团队管理功能`
       */
     ["com.affine.upgrade-to-team-page.benefit.g3"](): string;
     /**
-      * `Get priority customer support`
+      * `优先客户支持`
       */
     ["com.affine.upgrade-to-team-page.benefit.g4"](): string;
     /**
-      * `Perfect for growing teams and organizations that need professional collaboration tools.`
+      * `非常适合需要专业协作工具的成长型团队和组织。`
       */
     ["com.affine.upgrade-to-team-page.benefit.description"](): string;
     /**
-      * `Upgrade to Team Workspace`
+      * `升级为团队空间`
       */
     ["com.affine.upgrade-to-team-page.upgrade-confirm.title"](): string;
     /**
-      * `Name Your Workspace`
+      * `给您的工作区命名`
       */
     ["com.affine.upgrade-to-team-page.create-and-upgrade-confirm.title"](): string;
     /**
-      * `A workspace is your virtual space to capture, create and plan as just one person or together as a team.`
+      * `工作区是为个人和团队进行引用、创建和规划的虚拟空间。`
       */
     ["com.affine.upgrade-to-team-page.create-and-upgrade-confirm.description"](): string;
     /**
-      * `Set a workspace name`
+      * `设置工作区名称`
       */
     ["com.affine.upgrade-to-team-page.create-and-upgrade-confirm.placeholder"](): string;
     /**
-      * `Continue to Pricing`
+      * `继续`
       */
     ["com.affine.upgrade-to-team-page.create-and-upgrade-confirm.confirm"](): string;
     /**
-      * `No workspace available`
+      * `无可用的工作区`
       */
     ["com.affine.upgrade-to-team-page.no-workspace-available"](): string;
     /**
-      * `Workspace storage`
+      * `工作区存储`
       */
     ["com.affine.workspace.storage"](): string;
     /**
@@ -8763,235 +8771,235 @@ export function useLumiBookI18N(): {
       */
     ["com.affine.cmdk.affine.category.affine.journal"](): string;
     /**
-      * `Select a specific date`
+      * `选择具体日期`
       */
     ["com.affine.cmdk.affine.category.affine.date-picker"](): string;
     /**
-      * `Workspace sync paused`
+      * `工作区已暂停同步`
       */
     ["com.affine.payment.sync-paused.title"](): string;
     /**
-      * `Your workspace has exceeded both storage and member limits, causing synchronization to pause. To resume syncing, please either:`
+      * `您的工作区已超出存储和成员限制，同步已暂停。要恢复同步，您可以：`
       */
     ["com.affine.payment.sync-paused.owner.both.description"](): string;
     /**
-      * `Reduce storage usage and remove some team members`
+      * `减少存储使用量并删除一些团队成员`
       */
     ["com.affine.payment.sync-paused.owner.both.tips-1"](): string;
     /**
-      * `Upgrade your plan for increased capacity`
+      * `升级您的计划以增加容量`
       */
     ["com.affine.payment.sync-paused.owner.both.tips-2"](): string;
     /**
-      * `Your workspace has exceeded its storage limit and synchronization has been paused. To resume syncing, please either:`
+      * `您的工作区已超出其存储限制，同步已暂停。要恢复同步，您可以：`
       */
     ["com.affine.payment.sync-paused.owner.storage.description"](): string;
     /**
-      * `Remove unnecessary files or content to reduce storage usage`
+      * `删除不必要的文件或内容以减少存储空间使用量`
       */
     ["com.affine.payment.sync-paused.owner.storage.tips-1"](): string;
     /**
-      * `Upgrade your plan for increased storage capacity`
+      * `升级您的计划以增加存储容量`
       */
     ["com.affine.payment.sync-paused.owner.storage.tips-2"](): string;
     /**
-      * `Your workspace has reached its maximum member capacity and synchronization has been paused. To resume syncing, you can either`
+      * `您的工作区已达到其最大成员容量，同步已暂停。要恢复同步，您可以：`
       */
     ["com.affine.payment.sync-paused.owner.member.description"](): string;
     /**
-      * `Remove some team members from the workspace`
+      * `从工作区中移除一些团队成员`
       */
     ["com.affine.payment.sync-paused.owner.member.tips-1"](): string;
     /**
-      * `Upgrade your plan to accommodate more members`
+      * `升级您的计划以容纳更多团队成员`
       */
     ["com.affine.payment.sync-paused.owner.member.tips-2"](): string;
     /**
-      * `This workspace has exceeded both storage and member limits, causing synchronization to pause. Please contact your workspace owner to address these limits and resume syncing.`
+      * `此工作区已超出存储和成员限制，同步已暂停。请联系您的工作区所有者解决这些限制并恢复同步。`
       */
     ["com.affine.payment.sync-paused.member.both.description"](): string;
     /**
-      * `This workspace has exceeded its storage limit and synchronization has been paused. Please contact your workspace owner to either reduce storage usage or upgrade the plan to resume syncing.`
+      * `此工作区已超出其存储限制，同步已暂停。请联系您的工作区所有者以减少存储使用量或升级计划以恢复同步。`
       */
     ["com.affine.payment.sync-paused.member.storage.description"](): string;
     /**
-      * `This workspace has reached its maximum member capacity and synchronization has been paused. Please contact your workspace owner to either adjust team membership or upgrade the plan to resume syncing.`
+      * `此工作区已达到其最大成员容量，同步已暂停。请联系您的工作区所有者以调整团队成员资格或升级计划以恢复同步。`
       */
     ["com.affine.payment.sync-paused.member.member.description"](): string;
     /**
-      * `Got It`
+      * `知道了`
       */
     ["com.affine.payment.sync-paused.member.member.confirm"](): string;
     /**
-      * `Delete Server`
+      * `删除服务器`
       */
     ["com.affine.server.delete"](): string;
     /**
-      * `Start`
+      * `开始`
       */
     ["com.affine.page-starter-bar.start"](): string;
     /**
-      * `Template`
+      * `模板`
       */
     ["com.affine.page-starter-bar.template"](): string;
     /**
-      * `With AI`
+      * `以 AI`
       */
     ["com.affine.page-starter-bar.ai"](): string;
     /**
-      * `Edgeless`
+      * `无界`
       */
     ["com.affine.page-starter-bar.edgeless"](): string;
     /**
-      * `Unsupported message`
+      * `不支持的消息`
       */
     ["com.affine.notification.unsupported"](): string;
     /**
-      * `What are your thoughts?`
+      * `你有什么想法？`
       */
     ["com.affine.notification.comment-prompt"](): string;
     /**
-      * `No new notifications`
+      * `没有新通知`
       */
     ["com.affine.notification.empty"](): string;
     /**
-      * `Loading more...`
+      * `加载更多……`
       */
     ["com.affine.notification.loading-more"](): string;
     /**
-      * `You'll be notified here for @mentions and workspace invites.`
+      * `您将在这里收到 @提及 和工作区邀请的通知。`
       */
     ["com.affine.notification.empty.description"](): string;
     /**
-      * `Open workspace`
+      * `打开工作区`
       */
     ["com.affine.notification.invitation-review-approved.open-workspace"](): string;
     /**
-      * `Accept & Join`
+      * `接受并加入`
       */
     ["com.affine.notification.invitation.accept"](): string;
     /**
-      * `Delete all notifications`
+      * `删除所有通知`
       */
     ["com.affine.notification.delete-all"](): string;
     /**
-      * `Tips`
+      * `提示`
       */
     tips(): string;
     /**
-      * `Template`
+      * `模板`
       */
     Template(): string;
     /**
-      * `Delete Template`
+      * `删除模板`
       */
     ["com.affine.template-list.delete"](): string;
     /**
-      * `No template`
+      * `无模板`
       */
     ["com.affine.template-list.empty"](): string;
     /**
-      * `Create new template`
+      * `创建新模板`
       */
     ["com.affine.template-list.create-new"](): string;
     /**
-      * `Set a Template for the Journal`
+      * `为 Journal 设置模板`
       */
     ["com.affine.template-journal-onboarding.title"](): string;
     /**
-      * `Select`
+      * `选择`
       */
     ["com.affine.template-journal-onboarding.select"](): string;
     /**
-      * `My Templates`
+      * `我的模板`
       */
     ["com.affine.settings.workspace.template.title"](): string;
     /**
-      * `Template for journal`
+      * `Journal 模板`
       */
     ["com.affine.settings.workspace.template.journal"](): string;
     /**
-      * `Select a template for your journal`
+      * `为你的 Journal 选择一个模板`
       */
     ["com.affine.settings.workspace.template.journal-desc"](): string;
     /**
-      * `Keep empty`
+      * `保持为空`
       */
     ["com.affine.settings.workspace.template.keep-empty"](): string;
     /**
-      * `New doc with template`
+      * `使用模板创建新文档`
       */
     ["com.affine.settings.workspace.template.page"](): string;
     /**
-      * `New docs will use the specified template, ignoring default settings.`
+      * `新文档将使用指定模板，忽略默认设置。`
       */
     ["com.affine.settings.workspace.template.page-desc"](): string;
     /**
-      * `Template for new doc`
+      * `新文档模板`
       */
     ["com.affine.settings.workspace.template.page-select"](): string;
     /**
-      * `Remove template`
+      * `移除模板`
       */
     ["com.affine.settings.workspace.template.remove"](): string;
     /**
-      * `You don't have permission to do this`
+      * `您没有执行此操作的权限`
       */
     ["com.affine.no-permission"](): string;
     /**
-      * `Unused blobs`
+      * `未使用的 blob`
       */
     ["com.affine.settings.workspace.storage.unused-blobs"](): string;
     /**
-      * `No unused blobs`
+      * `没有未使用的 blobs`
       */
     ["com.affine.settings.workspace.storage.unused-blobs.empty"](): string;
     /**
-      * `Selected`
+      * `已选中`
       */
     ["com.affine.settings.workspace.storage.unused-blobs.selected"](): string;
     /**
-      * `Delete blob files`
+      * `删除 blob 文件`
       */
     ["com.affine.settings.workspace.storage.unused-blobs.delete.title"](): string;
     /**
-      * `Are you sure you want to delete these blob files? This action cannot be undone. Make sure you no longer need them before proceeding.`
+      * `您确定要删除这些 blob 文件吗？此操作无法撤销。在继续之前，请确保您不再需要它们。`
       */
     ["com.affine.settings.workspace.storage.unused-blobs.delete.warning"](): string;
     /**
-      * `Join Failed`
+      * `加入失败`
       */
     ["com.affine.fail-to-join-workspace.title"](): string;
     /**
-      * `This invitation is for another account`
+      * `该邀请属于另一个账户`
       */
     ["com.affine.invitation.account-mismatch.title"](): string;
     /**
-      * `You're signed in with an account that wasn't invited. Sign in with the account that received this invitation to continue.`
+      * `你当前登录的账户不在邀请名单中。请使用收到邀请的账户登录后继续。`
       */
     ["com.affine.invitation.account-mismatch.description"](): string;
     /**
-      * `Sign in with another account`
+      * `换个账户登录`
       */
     ["com.affine.invitation.account-mismatch.switch-account"](): string;
     /**
-      * `Back to 识光`
+      * `返回识光`
       */
     ["com.affine.invitation.account-mismatch.back-to-affine"](): string;
     /**
-      * `Please contact your workspace owner to add more seats.`
+      * `请联系您的工作区所有者以添加更多席位。`
       */
     ["com.affine.fail-to-join-workspace.description-2"](): string;
     /**
-      * `Request to join`
+      * `请求加入`
       */
     ["com.affine.request-to-join-workspace.button"](): string;
     /**
-      * `Request Sent successfully`
+      * `请求发送成功`
       */
     ["com.affine.sent-request-to-join-workspace.title"](): string;
     /**
-      * `Request failed to send`
+      * `请求发送失败`
       */
     ["com.affine.failed-to-send-request.title"](): string;
     /**
@@ -8999,23 +9007,23 @@ export function useLumiBookI18N(): {
       */
     ["com.affine.integration.name.readwise"](): string;
     /**
-      * `Integrations`
+      * `集成`
       */
     ["com.affine.integration.integrations"](): string;
     /**
-      * `Web Clipper`
+      * `网页裁剪`
       */
     ["com.affine.integration.web-clipper.name"](): string;
     /**
-      * `Import web pages to 识光`
+      * `将网页导入 识光`
       */
     ["com.affine.integration.web-clipper.desc"](): string;
     /**
-      * `Elevate your 识光 experience with diverse add-ons and seamless integrations.`
+      * `通过多样化的附加组件和无缝集成提升您的 识光 体验。`
       */
     ["com.affine.integration.setting.description"](): string;
     /**
-      * `Learn how to develop a integration for 识光`
+      * `了解如何为 识光 开发集成`
       */
     ["com.affine.integration.setting.learn"](): string;
     /**
@@ -9023,293 +9031,293 @@ export function useLumiBookI18N(): {
       */
     ["com.affine.integration.readwise.name"](): string;
     /**
-      * `Manually import your content to 识光 from Readwise`
+      * `手动从 Readwise 导入您的内容到 识光`
       */
     ["com.affine.integration.readwise.desc"](): string;
     /**
-      * `Connect`
+      * `连接`
       */
     ["com.affine.integration.readwise.connect"](): string;
     /**
-      * `Connect to Readwise`
+      * `连接到 Readwise`
       */
     ["com.affine.integration.readwise.connect.title"](): string;
     /**
-      * `Paste your access token here`
+      * `在此处粘贴您的访问令牌`
       */
     ["com.affine.integration.readwise.connect.placeholder"](): string;
     /**
-      * `Please enter a valid access token.`
+      * `请输入有效的访问令牌。`
       */
     ["com.affine.integration.readwise.connect.input-error"](): string;
     /**
-      * `Access Token failed validation`
+      * `访问令牌验证失败`
       */
     ["com.affine.integration.readwise.connect.error-notify-title"](): string;
     /**
-      * `The token could not access Readwise. Please verify access and try again.`
+      * `令牌无法访问 Readwise。 请验证访问权限并重试。`
       */
     ["com.affine.integration.readwise.connect.error-notify-desc"](): string;
     /**
-      * `Import`
+      * `导入`
       */
     ["com.affine.integration.readwise.import"](): string;
     /**
-      * `Disconnect`
+      * `断开连接`
       */
     ["com.affine.integration.readwise.disconnect"](): string;
     /**
-      * `Disconnect Readwise?`
+      * `断开 Readwise？`
       */
     ["com.affine.integration.readwise.disconnect.title"](): string;
     /**
-      * `Once disconnected, content will no longer be imported. Do you want to keep your existing highlights in 识光?`
+      * `断开连接后，内容将不再导入。您想保留现有的高亮内容在 识光 中吗？`
       */
     ["com.affine.integration.readwise.disconnect.desc"](): string;
     /**
-      * `Keep`
+      * `保持`
       */
     ["com.affine.integration.readwise.disconnect.keep"](): string;
     /**
-      * `Delete`
+      * `删除`
       */
     ["com.affine.integration.readwise.disconnect.delete"](): string;
     /**
-      * `Highlights to be imported this time`
+      * `本次将导入的高亮内容`
       */
     ["com.affine.integration.readwise.import.title"](): string;
     /**
-      * `Importing everything from the start`
+      * `从头开始导入所有内容`
       */
     ["com.affine.integration.readwise.import.desc-from-start"](): string;
     /**
-      * `Content`
+      * `内容`
       */
     ["com.affine.integration.readwise.import.cell-h-content"](): string;
     /**
-      * `Todo`
+      * `待办事项`
       */
     ["com.affine.integration.readwise.import.cell-h-todo"](): string;
     /**
-      * `Last update on Readwise`
+      * `最后更新于 Readwise`
       */
     ["com.affine.integration.readwise.import.cell-h-time"](): string;
     /**
-      * `New`
+      * `新建`
       */
     ["com.affine.integration.readwise.import.todo-new"](): string;
     /**
-      * `Skip`
+      * `跳过`
       */
     ["com.affine.integration.readwise.import.todo-skip"](): string;
     /**
-      * `Updated`
+      * `已更新`
       */
     ["com.affine.integration.readwise.import.todo-update"](): string;
     /**
-      * `No highlights needs to be imported`
+      * `没有需要导入的高亮内容`
       */
     ["com.affine.integration.readwise.import.empty"](): string;
     /**
-      * `Importing...`
+      * `导入中……`
       */
     ["com.affine.integration.readwise.import.importing"](): string;
     /**
-      * `Please keep this app active until it's finished`
+      * `请保持此应用程序处于活动状态，直到完成`
       */
     ["com.affine.integration.readwise.import.importing-desc"](): string;
     /**
-      * `Stop Importing`
+      * `停止导入`
       */
     ["com.affine.integration.readwise.import.importing-stop"](): string;
     /**
-      * `Importing aborted`
+      * `导入已中止`
       */
     ["com.affine.integration.readwise.import.abort-notify-title"](): string;
     /**
-      * `Import aborted, with {{finished}} highlights processed`
+      * `导入中止，已处理 {{finished}} 个高亮内容`
       */
     ["com.affine.integration.readwise.import.abort-notify-desc"](options: {
         readonly finished: string;
     }): string;
     /**
-      * `Configuration`
+      * `配置`
       */
     ["com.affine.integration.readwise.setting.caption"](): string;
     /**
-      * `New Readwise highlights will be imported to 识光 `
+      * `新的 Readwise 高亮内容将导入 识光 `
       */
     ["com.affine.integration.readwise.setting.sync-new-name"](): string;
     /**
-      * `New highlights in Readwise will be synced to 识光 `
+      * `在 Readwise 中的新高亮内容将同步到 识光 `
       */
     ["com.affine.integration.readwise.setting.sync-new-desc"](): string;
     /**
-      * `Updates to Readwise highlights will be imported`
+      * `将导入 Readwise 高亮内容的更新`
       */
     ["com.affine.integration.readwise.setting.update-name"](): string;
     /**
-      * `Enable this, so that we will process updates of existing highlights from Readwise `
+      * `启用此选项，以便我们处理来自 Readwise 的现有高亮内容的更新 `
       */
     ["com.affine.integration.readwise.setting.update-desc"](): string;
     /**
-      * `How do we handle updates`
+      * `我们如何处理更新`
       */
     ["com.affine.integration.readwise.setting.update-strategy"](): string;
     /**
-      * `Append new version to the end`
+      * `将新版本附加到末尾`
       */
     ["com.affine.integration.readwise.setting.update-append-name"](): string;
     /**
-      * `Cited or modified highlights will have future versions added to the end of them`
+      * `引用或修改的高亮内容将在末尾添加未来的版本`
       */
     ["com.affine.integration.readwise.setting.update-append-desc"](): string;
     /**
-      * `Overwrite with new version`
+      * `用新版本覆盖`
       */
     ["com.affine.integration.readwise.setting.update-override-name"](): string;
     /**
-      * `Cited or modified highlights will be overwritten if there are future updates`
+      * `未来更新时，已引用或修改的高亮内容将被覆盖`
       */
     ["com.affine.integration.readwise.setting.update-override-desc"](): string;
     /**
-      * `Start Importing`
+      * `开始导入`
       */
     ["com.affine.integration.readwise.setting.start-import-name"](): string;
     /**
-      * `Using the settings above`
+      * `使用上述设置`
       */
     ["com.affine.integration.readwise.setting.start-import-desc"](): string;
     /**
-      * `Import`
+      * `导入`
       */
     ["com.affine.integration.readwise.setting.start-import-button"](): string;
     /**
-      * `Apply tags to highlight imports`
+      * `应用标签以突出显示导入内容`
       */
     ["com.affine.integration.readwise.setting.tags-label"](): string;
     /**
-      * `Click to add tags`
+      * `点击添加标签`
       */
     ["com.affine.integration.readwise.setting.tags-placeholder"](): string;
     /**
-      * `Author`
+      * `作者`
       */
     ["com.affine.integration.readwise-prop.author"](): string;
     /**
-      * `Source`
+      * `来源`
       */
     ["com.affine.integration.readwise-prop.source"](): string;
     /**
-      * `Created`
+      * `创建时间`
       */
     ["com.affine.integration.readwise-prop.created"](): string;
     /**
-      * `Updated`
+      * `更新时间`
       */
     ["com.affine.integration.readwise-prop.updated"](): string;
     /**
-      * `Integration properties`
+      * `集成属性`
       */
     ["com.affine.integration.properties"](): string;
     /**
-      * `Calendar`
+      * `日历`
       */
     ["com.affine.integration.calendar.name"](): string;
     /**
-      * `New events will be scheduled in 识光’s journal`
+      * `事件将显示在 识光 的 Journal 中`
       */
     ["com.affine.integration.calendar.desc"](): string;
     /**
-      * `Subscribe`
+      * `订阅`
       */
     ["com.affine.integration.calendar.new-subscription"](): string;
     /**
-      * `Unsubscribe`
+      * `取消订阅`
       */
     ["com.affine.integration.calendar.unsubscribe"](): string;
     /**
-      * `Add a calendar by URL`
+      * `添加日历订阅的链接`
       */
     ["com.affine.integration.calendar.new-title"](): string;
     /**
-      * `Calendar URL`
+      * `日历订阅链接`
       */
     ["com.affine.integration.calendar.new-url-label"](): string;
     /**
-      * `An error occurred while saving the calendar settings`
+      * `保存日历设置时出错`
       */
     ["com.affine.integration.calendar.save-error"](): string;
     /**
-      * `All day`
+      * `全天`
       */
     ["com.affine.integration.calendar.all-day"](): string;
     /**
-      * `Failed to load calendar accounts`
+      * `加载日历账户失败`
       */
     ["com.affine.integration.calendar.account.load-error"](): string;
     /**
-      * `Failed to load calendar providers`
+      * `加载日历提供商失败`
       */
     ["com.affine.integration.calendar.provider.load-error"](): string;
     /**
-      * `Failed to start calendar authorization`
+      * `启动日历授权失败`
       */
     ["com.affine.integration.calendar.auth.start-error"](): string;
     /**
-      * `Failed to unlink calendar account`
+      * `取消关联日历账户失败`
       */
     ["com.affine.integration.calendar.account.unlink-error"](): string;
     /**
-      * `Unlink`
+      * `取消关联`
       */
     ["com.affine.integration.calendar.account.unlink"](): string;
     /**
-      * `Link`
+      * `关联`
       */
     ["com.affine.integration.calendar.account.link"](): string;
     /**
-      * `No calendar accounts linked yet.`
+      * `尚未关联日历账户。`
       */
     ["com.affine.integration.calendar.account.linked-empty"](): string;
     /**
-      * `Authorization failed: {{error}}`
+      * `授权失败：{{error}}`
       */
     ["com.affine.integration.calendar.account.status.failed"](options: {
         readonly error: string;
     }): string;
     /**
-      * `Authorization failed. Please reconnect your account.`
+      * `授权失败。请重新关联你的账户。`
       */
     ["com.affine.integration.calendar.account.status.failed-reconnect"](): string;
     /**
-      * `{{count}} calendar`
+      * `{{count}} 个日历`
       */
     ["com.affine.integration.calendar.account.count"](options: {
         readonly count: string;
     }): string;
     /**
-      * `Link CalDAV account`
+      * `关联 CalDAV 账户`
       */
     ["com.affine.integration.calendar.caldav.link.title"](): string;
     /**
-      * `Failed to link CalDAV account`
+      * `关联 CalDAV 账户失败`
       */
     ["com.affine.integration.calendar.caldav.link.failed"](): string;
     /**
-      * `Provider`
+      * `提供商`
       */
     ["com.affine.integration.calendar.caldav.field.provider"](): string;
     /**
-      * `Select provider`
+      * `选择提供商`
       */
     ["com.affine.integration.calendar.caldav.field.provider.placeholder"](): string;
     /**
-      * `Please select a provider.`
+      * `请选择提供商。`
       */
     ["com.affine.integration.calendar.caldav.field.provider.error"](): string;
     /**
-      * `Username`
+      * `用户名`
       */
     ["com.affine.integration.calendar.caldav.field.username"](): string;
     /**
@@ -9317,503 +9325,503 @@ export function useLumiBookI18N(): {
       */
     ["com.affine.integration.calendar.caldav.field.username.placeholder"](): string;
     /**
-      * `Username is required.`
+      * `用户名为必填项。`
       */
     ["com.affine.integration.calendar.caldav.field.username.error"](): string;
     /**
-      * `Password`
+      * `密码`
       */
     ["com.affine.integration.calendar.caldav.field.password"](): string;
     /**
-      * `Password or app-specific password`
+      * `密码或应用专用密码`
       */
     ["com.affine.integration.calendar.caldav.field.password.placeholder"](): string;
     /**
-      * `Password is required.`
+      * `密码为必填项。`
       */
     ["com.affine.integration.calendar.caldav.field.password.error"](): string;
     /**
-      * `Display name (optional)`
+      * `显示名称（可选）`
       */
     ["com.affine.integration.calendar.caldav.field.displayName"](): string;
     /**
-      * `My CalDAV`
+      * `我的 CalDAV`
       */
     ["com.affine.integration.calendar.caldav.field.displayName.placeholder"](): string;
     /**
-      * `App-specific password required.`
+      * `需要应用专用密码。`
       */
     ["com.affine.integration.calendar.caldav.hint.app-password"](): string;
     /**
-      * `Learn more`
+      * `了解更多`
       */
     ["com.affine.integration.calendar.caldav.hint.learn-more"](): string;
     /**
-      * `Provider setup guide`
+      * `提供商设置指南`
       */
     ["com.affine.integration.calendar.caldav.hint.guide"](): string;
     /**
-      * `New doc`
+      * `新建文档`
       */
     ["com.affine.integration.calendar.new-doc"](): string;
     /**
-      * `Show calendar events`
+      * `显示日历事件`
       */
     ["com.affine.integration.calendar.show-events"](): string;
     /**
-      * `Enabling this setting allows you to connect your calendar events to your Journal in 识光`
+      * `启用此设置后，您可以将日历事件关联到 识光 的 Journal 中`
       */
     ["com.affine.integration.calendar.show-events-desc"](): string;
     /**
-      * `Show all day event`
+      * `显示全天事件`
       */
     ["com.affine.integration.calendar.show-all-day-events"](): string;
     /**
-      * `Are you sure you want to unsubscribe "{{name}}"? Unsubscribing this account will remove its data from Journal.`
+      * `您确定要取消订阅“{{name}}”吗？取消订阅此帐户将从 Journal 中删除其数据。`
       */
     ["com.affine.integration.calendar.unsubscribe-content"](options: {
         readonly name: string;
     }): string;
     /**
-      * `No journal page found for {{date}}. Please create a journal page first.`
+      * `未找到 {{date}} 的日记页面。请先创建日记页面。`
       */
     ["com.affine.integration.calendar.no-journal"](options: {
         readonly date: string;
     }): string;
     /**
-      * `No subscribed calendars yet.`
+      * `尚未订阅日历。`
       */
     ["com.affine.integration.calendar.no-calendar"](): string;
     /**
-      * `MCP Server`
+      * `MCP服务器`
       */
     ["com.affine.integration.mcp-server.name"](): string;
     /**
-      * `Enable other MCP Client to search and read the doc of 识光.`
+      * `允许其他 MCP 客户端搜索和 识光 的文档。`
       */
     ["com.affine.integration.mcp-server.desc"](): string;
     /**
-      * `The MCP token is shown only once. Delete and recreate it to copy the JSON configuration.`
+      * `MCP token 仅显示一次。请删除并重新创建，以复制 JSON 配置。`
       */
     ["com.affine.integration.mcp-server.copy-json.disabled-hint"](): string;
     /**
-      * `Credentials`
+      * `凭证`
       */
     ["com.affine.integration.mcp-server.credentials.title"](): string;
     /**
-      * `Use a separate credential for each MCP client so it can be revoked independently.`
+      * `为每个 MCP 客户端使用独立凭证，以便单独吊销。`
       */
     ["com.affine.integration.mcp-server.credentials.description"](): string;
     /**
-      * `Create credential`
+      * `创建凭证`
       */
     ["com.affine.integration.mcp-server.action.create"](): string;
     /**
-      * `Rotate`
+      * `轮换`
       */
     ["com.affine.integration.mcp-server.action.rotate"](): string;
     /**
-      * `Revoke credential`
+      * `吊销凭证`
       */
     ["com.affine.integration.mcp-server.action.revoke"](): string;
     /**
-      * `Copy token`
+      * `复制 token`
       */
     ["com.affine.integration.mcp-server.action.copy-token"](): string;
     /**
-      * `Copy JSON`
+      * `复制 JSON`
       */
     ["com.affine.integration.mcp-server.action.copy-json"](): string;
     /**
-      * `Done`
+      * `完成`
       */
     ["com.affine.integration.mcp-server.action.done"](): string;
     /**
-      * `Failed to load MCP credentials.`
+      * `加载 MCP 凭证失败。`
       */
     ["com.affine.integration.mcp-server.load-error"](): string;
     /**
-      * `No MCP credentials`
+      * `暂无 MCP 凭证`
       */
     ["com.affine.integration.mcp-server.empty.title"](): string;
     /**
-      * `Create a workspace-bound credential to connect an MCP client.`
+      * `创建绑定当前工作区的凭证以连接 MCP 客户端。`
       */
     ["com.affine.integration.mcp-server.empty.description"](): string;
     /**
-      * `Read only`
+      * `只读`
       */
     ["com.affine.integration.mcp-server.access.read-only"](): string;
     /**
-      * `Can read and search documents in this workspace using your current permissions.`
+      * `可按你的当前权限读取和搜索此工作区的文档。`
       */
     ["com.affine.integration.mcp-server.access.read-only-desc"](): string;
     /**
-      * `Read and write`
+      * `读写`
       */
     ["com.affine.integration.mcp-server.access.read-write"](): string;
     /**
-      * `Expires {{date}}`
+      * `{{date}} 到期`
       */
     ["com.affine.integration.mcp-server.meta.expires"](options: {
         readonly date: string;
     }): string;
     /**
-      * `Created {{date}}`
+      * `创建于 {{date}}`
       */
     ["com.affine.integration.mcp-server.meta.created"](options: {
         readonly date: string;
     }): string;
     /**
-      * `Last used {{date}}`
+      * `最近使用于 {{date}}`
       */
     ["com.affine.integration.mcp-server.meta.last-used"](options: {
         readonly date: string;
     }): string;
     /**
-      * `Never used`
+      * `从未使用`
       */
     ["com.affine.integration.mcp-server.meta.never-used"](): string;
     /**
-      * `Old token valid until {{date}}`
+      * `旧 token 有效至 {{date}}`
       */
     ["com.affine.integration.mcp-server.meta.grace-until"](options: {
         readonly date: string;
     }): string;
     /**
-      * `Active`
+      * `有效`
       */
     ["com.affine.integration.mcp-server.status.active"](): string;
     /**
-      * `Rotating`
+      * `轮换中`
       */
     ["com.affine.integration.mcp-server.status.rotating"](): string;
     /**
-      * `Expiring`
+      * `即将到期`
       */
     ["com.affine.integration.mcp-server.status.expiring"](): string;
     /**
-      * `Expired`
+      * `已到期`
       */
     ["com.affine.integration.mcp-server.status.expired"](): string;
     /**
-      * `Revoked`
+      * `已吊销`
       */
     ["com.affine.integration.mcp-server.status.revoked"](): string;
     /**
-      * `Create MCP credential`
+      * `创建 MCP 凭证`
       */
     ["com.affine.integration.mcp-server.create.title"](): string;
     /**
-      * `This credential will only work with this workspace's MCP endpoint.`
+      * `此凭证只能用于当前工作区的 MCP endpoint。`
       */
     ["com.affine.integration.mcp-server.create.description"](): string;
     /**
-      * `Label`
+      * `名称`
       */
     ["com.affine.integration.mcp-server.field.label"](): string;
     /**
-      * `Access`
+      * `权限`
       */
     ["com.affine.integration.mcp-server.field.access"](): string;
     /**
-      * `Expires in`
+      * `有效期`
       */
     ["com.affine.integration.mcp-server.field.expiry"](): string;
     /**
-      * `{{days}} days`
+      * `{{days}} 天`
       */
     ["com.affine.integration.mcp-server.expiry.days"](options: {
         readonly days: string;
     }): string;
     /**
-      * `MCP credential created`
+      * `MCP 凭证已创建`
       */
     ["com.affine.integration.mcp-server.reveal.title"](): string;
     /**
-      * `Copy this credential now. You won’t be able to see it again.`
+      * `请立即复制此凭证，关闭后将无法再次查看。`
       */
     ["com.affine.integration.mcp-server.reveal.warning"](): string;
     /**
-      * `The old token remains valid until {{date}}.`
+      * `旧 token 在 {{date}} 前仍然有效。`
       */
     ["com.affine.integration.mcp-server.reveal.old-valid-until"](options: {
         readonly date: string;
     }): string;
     /**
-      * `Credential`
+      * `凭证`
       */
     ["com.affine.integration.mcp-server.reveal.token"](): string;
     /**
-      * `MCP configuration`
+      * `MCP 配置`
       */
     ["com.affine.integration.mcp-server.reveal.config"](): string;
     /**
-      * `Rotate this credential?`
+      * `轮换此凭证？`
       */
     ["com.affine.integration.mcp-server.rotate.title"](): string;
     /**
-      * `A new token will be created immediately. The old token remains valid for up to 24 hours so you can update the MCP client.`
+      * `系统将立即创建新 token；旧 token 最多保留 24 小时，以便更新 MCP 客户端。`
       */
     ["com.affine.integration.mcp-server.rotate.description"](): string;
     /**
-      * `Revoke “{{name}}”?`
+      * `吊销“{{name}}”？`
       */
     ["com.affine.integration.mcp-server.revoke.title"](options: {
         readonly name: string;
     }): string;
     /**
-      * `All generations of this credential will stop working immediately. This cannot be undone.`
+      * `此凭证的所有世代会立即失效，且无法恢复。`
       */
     ["com.affine.integration.mcp-server.revoke.description"](): string;
     /**
-      * `Supported capabilities`
+      * `支持的能力`
       */
     ["com.affine.integration.mcp-server.capabilities.title"](): string;
     /**
-      * `Read documents`
+      * `读取文档`
       */
     ["com.affine.integration.mcp-server.capabilities.read"](): string;
     /**
-      * `Keyword search`
+      * `关键词搜索`
       */
     ["com.affine.integration.mcp-server.capabilities.keyword-search"](): string;
     /**
-      * `Semantic search`
+      * `语义搜索`
       */
     ["com.affine.integration.mcp-server.capabilities.semantic-search"](): string;
     /**
-      * `Create and update documents`
+      * `创建和更新文档`
       */
     ["com.affine.integration.mcp-server.capabilities.write"](): string;
     /**
-      * `Notes`
+      * `笔记`
       */
     ["com.affine.audio.notes"](): string;
     /**
-      * `Transcribing`
+      * `转录`
       */
     ["com.affine.audio.transcribing"](): string;
     /**
-      * `Transcription failed`
+      * `转录失败`
       */
     ["com.affine.audio.transcription-failed"](): string;
     /**
-      * `Unable to retrieve AI results for others`
+      * `无法检索他人的 AI 结果`
       */
     ["com.affine.audio.transcribe.non-owner.confirm.title"](): string;
     /**
-      * `Audio activity`
+      * `音频活动中`
       */
     ["com.affine.recording.new"](): string;
     /**
-      * `Importing...`
+      * `正在导入...`
       */
     ["com.affine.recording.importing.prompt"](): string;
     /**
-      * `Finished`
+      * `已完成`
       */
     ["com.affine.recording.success.prompt"](): string;
     /**
-      * `Open app`
+      * `打开应用`
       */
     ["com.affine.recording.success.button"](): string;
     /**
-      * `Failed to save`
+      * `保存失败`
       */
     ["com.affine.recording.failed.prompt"](): string;
     /**
-      * `Open file`
+      * `打开文件`
       */
     ["com.affine.recording.failed.button"](): string;
     /**
-      * `{{appName}}'s audio`
+      * `{{appName}} 的音频`
       */
     ["com.affine.recording.recording"](options: {
         readonly appName: string;
     }): string;
     /**
-      * `Audio recording`
+      * `音频录制`
       */
     ["com.affine.recording.recording.unnamed"](): string;
     /**
-      * `Start`
+      * `开始`
       */
     ["com.affine.recording.start"](): string;
     /**
-      * `Dismiss`
+      * `忽略`
       */
     ["com.affine.recording.dismiss"](): string;
     /**
-      * `Stop`
+      * `停止`
       */
     ["com.affine.recording.stop"](): string;
     /**
-      * `Migrate Data to Enhance User Experience`
+      * `迁移数据以提升用户体验`
       */
     ["com.affine.migration-all-docs-notification.header"](): string;
     /**
-      * `We are updating the local data to facilitate the recording and filtering of created by and Last edited by information. Please click the “Migrate Data” button and ensure a stable network connection during the process.`
+      * `我们正在更新本地数据以便记录和筛选 “创建者” 和 “最后编辑者” 信息。请点击“迁移数据”按钮，并确保在此过程中的网络连接稳定。`
       */
     ["com.affine.migration-all-docs-notification.desc"](): string;
     /**
-      * `Migration failed: {{errorMessage}}`
+      * `迁移失败：{{errorMessage}}`
       */
     ["com.affine.migration-all-docs-notification.error"](options: {
         readonly errorMessage: string;
     }): string;
     /**
-      * `Migrate data`
+      * `迁移数据`
       */
     ["com.affine.migration-all-docs-notification.button"](): string;
     /**
-      * `Comments`
+      * `评论`
       */
     ["com.affine.comment.comments"](): string;
     /**
-      * `No comments yet, select content to add comment to`
+      * `尚无评论，请选择要添加评论的内容`
       */
     ["com.affine.comment.no-comments"](): string;
     /**
-      * `Delete the thread?`
+      * `删除该主题？`
       */
     ["com.affine.comment.delete.confirm.title"](): string;
     /**
-      * `All comments will also be deleted, and this action cannot be undone.`
+      * `所有评论也将被删除，此操作无法撤销。`
       */
     ["com.affine.comment.delete.confirm.description"](): string;
     /**
-      * `Delete this reply?`
+      * `是否删除此回复？`
       */
     ["com.affine.comment.reply.delete.confirm.title"](): string;
     /**
-      * `Delete this reply? This action cannot be undone.`
+      * `是否删除此回复？此操作无法撤消。`
       */
     ["com.affine.comment.reply.delete.confirm.description"](): string;
     /**
-      * `Show {{count}} more replies`
+      * `显示 {{count}} 条更多回复`
       */
     ["com.affine.comment.reply.show-more"](options: {
         readonly count: string;
     }): string;
     /**
-      * `Show resolved comments`
+      * `显示已解决的评论`
       */
     ["com.affine.comment.filter.show-resolved"](): string;
     /**
-      * `Only my replies and mentions`
+      * `仅限我的回复和提及`
       */
     ["com.affine.comment.filter.only-my-replies"](): string;
     /**
-      * `Only current mode`
+      * `仅限当前模式`
       */
     ["com.affine.comment.filter.only-current-mode"](): string;
     /**
-      * `Unlock more features`
+      * `解锁更多功能`
       */
     ["com.affine.payment.subscription.title"](): string;
     /**
-      * `The universal editor that lets you work, play, present or create just about anything.`
+      * `一款让您可以用来工作、娱乐、展示或创作任意内容的通用编辑器。`
       */
     ["com.affine.payment.subscription.description"](): string;
     /**
-      * `Upgrade`
+      * `升级`
       */
     ["com.affine.payment.subscription.button"](): string;
     /**
-      * `Reply`
+      * `回复`
       */
     ["com.affine.comment.reply"](): string;
     /**
-      * `Copy link`
+      * `复制链接`
       */
     ["com.affine.comment.copy-link"](): string;
     /**
-      * `Copy`
+      * `复制`
       */
     ["com.affine.context-menu.copy"](): string;
     /**
-      * `Paste`
+      * `粘贴`
       */
     ["com.affine.context-menu.paste"](): string;
     /**
-      * `Cut`
+      * `剪切`
       */
     ["com.affine.context-menu.cut"](): string;
     /**
-      * `Add icon`
+      * `添加图标`
       */
     ["com.affine.docIconPicker.placeholder"](): string;
     /**
-      * `Devices`
+      * `设备管理`
       */
     ["com.affine.settings.devices.title"](): string;
     /**
-      * `Devices with an active sign-in session`
+      * `已登录且处于活动状态的设备`
       */
     ["com.affine.settings.devices.description"](): string;
     /**
-      * `current`
+      * `当前设备`
       */
     ["com.affine.settings.devices.current"](): string;
     /**
-      * `Last used {{time}}`
+      * `最近使用于 {{time}}`
       */
     ["com.affine.settings.devices.last-used"](options: {
         readonly time: string;
     }): string;
     /**
-      * `Loading…`
+      * `加载中…`
       */
     ["com.affine.settings.devices.loading"](): string;
     /**
-      * `Sign out`
+      * `退出登录`
       */
     ["com.affine.settings.devices.sign-out"](): string;
     /**
-      * `Sign out all devices`
+      * `退出所有设备`
       */
     ["com.affine.settings.devices.sign-out-all"](): string;
     /**
-      * `Sign out {{device}}?`
+      * `确定退出 {{device}}？`
       */
     ["com.affine.settings.devices.confirm"](options: {
         readonly device: string;
     }): string;
     /**
-      * `Sign out every device?`
+      * `确定退出所有设备？`
       */
     ["com.affine.settings.devices.confirm-all"](): string;
     /**
-      * `Failed to load devices`
+      * `设备列表加载失败`
       */
     ["com.affine.settings.devices.load-failed"](): string;
     /**
-      * `Failed to sign out device`
+      * `设备退出失败`
       */
     ["com.affine.settings.devices.sign-out-failed"](): string;
     /**
-      * `Failed to sign out devices`
+      * `批量退出设备失败`
       */
     ["com.affine.settings.devices.sign-out-all-failed"](): string;
     /**
-      * `Real-time connection failed`
+      * `实时同步连接失败`
       */
     ["com.affine.realtime.connection-error.title"](): string;
     /**
-      * `The real-time connection could not authenticate your session. Sign in again if the problem continues.`
+      * `实时连接无法验证你的会话，若问题持续请重新登录。`
       */
     ["com.affine.realtime.connection-error.authentication"](): string;
     /**
-      * `The server cannot be reached. Check your network connection and server proxy.`
+      * `无法连接服务器，请检查网络与代理设置。`
       */
     ["com.affine.realtime.connection-error.network"](): string;
     /**
-      * `The server rejected the real-time request. Try again later.`
+      * `服务器拒绝了此次实时连接请求，请稍后再试。`
       */
     ["com.affine.realtime.connection-error.server"](): string;
     /**
-      * `The server did not respond in time. 识光 will keep trying to reconnect.`
+      * `服务器响应超时，识光会自动尝试重连。`
       */
     ["com.affine.realtime.connection-error.timeout"](): string;
     /**
@@ -10592,7 +10600,7 @@ function createComponent(i18nKey: string) {
 }
 export const TypedTrans: {
     /**
-      * `Go to <a>{{link}}</a> for learn more details about 识光 AI.`
+      * `请访问<a>{{link}}</a>了解有关 识光 AI 的更多详细信息。`
       */
     ["com.affine.ai-onboarding.general.5.description"]: ComponentType<TypedTransProps<{
         readonly link: string;
@@ -10600,25 +10608,26 @@ export const TypedTrans: {
         a: JSX.Element;
     }>>;
     /**
-      * `By continuing, you are agreeing to our <a>AI Terms</a>.`
+      * `继续操作即表示您同意我们的<a>识光 AI 服务条款</a>。`
       */
     ["com.affine.ai-onboarding.general.privacy"]: ComponentType<TypedTransProps<Readonly<{}>, {
         a: JSX.Element;
     }>>;
     /**
-      * `Opening <1>识光</1> app now`
+      * `正在打开 <1>识光</1> 应用
+    `
       */
     ["com.affine.auth.open.affine.prompt"]: ComponentType<TypedTransProps<Readonly<{}>, {
         ["1"]: JSX.Element;
     }>>;
     /**
-      * `This doc is now opened in <1>识光</1> app`
+      * `已在 <1>识光</1> 客户端中打开此文档`
       */
     ["com.affine.auth.open.affine.open-doc-prompt"]: ComponentType<TypedTransProps<Readonly<{}>, {
         ["1"]: JSX.Element;
     }>>;
     /**
-      * `To continue signing in, please enter the code that was sent to <a>{{email}}</a>.`
+      * `要继续登录，请输入发送到 <a>{{email}}</a> 的验证码。`
       */
     ["com.affine.auth.sign.auth.code.hint"]: ComponentType<TypedTransProps<{
         readonly email: string;
@@ -10626,36 +10635,36 @@ export const TypedTrans: {
         a: JSX.Element;
     }>>;
     /**
-      * `Or <1>sign in with password</1> instead.`
+      * `或者使用<1>密码登录</1>。`
       */
     ["com.affine.auth.sign.auth.code.message.password"]: ComponentType<TypedTransProps<Readonly<{}>, {
         ["1"]: JSX.Element;
     }>>;
     /**
-      * `This is an 识光 server hosted by you or your team. After signing in, workspace data is saved to the 识光 server you enter, not to 识光 Cloud. <1>Learn more about self-hosting.</1>`
+      * `这是你或团队自己部署的 识光。登录后，工作区数据会保存到你填写的 识光 服务器，而不是 识光 官方云。<1>了解有关自托管的更多信息。</1>`
       */
     ["com.affine.auth.sign.add-selfhosted.description"]: ComponentType<TypedTransProps<Readonly<{}>, {
         ["1"]: JSX.Element;
     }>>;
     /**
-      * `By clicking “Continue with Google/Email” above, you acknowledge that you agree to 识光's <1>Terms of Conditions</1> and <3>Privacy Policy</3>.`
+      * `点击上面的“谷歌登录以继续”，即表示您确认同意 识光 的<1>条件条款</1>和<3>隐私政策</3>。`
       */
     ["com.affine.auth.sign.message"]: ComponentType<TypedTransProps<Readonly<{}>, {
         ["1"]: JSX.Element;
         ["3"]: JSX.Element;
     }>>;
     /**
-      * `This demo is limited. <1>Download the 识光 Client</1> for the latest features and Performance.`
+      * `此演示有限。<1>下载 识光 客户端</1>以获取最新功能和表现。`
       */
     ["com.affine.banner.content"]: ComponentType<TypedTransProps<Readonly<{}>, {
         ["1"]: JSX.Element;
     }>>;
     /**
-      * `<0>{{count}}</0> selected`
+      * `已选择 <0>{{count}}</0> 个精选`
     
-      * - com.affine.collection.toolbar.selected_one: `<0>{{count}}</0> collection selected`
+      * - com.affine.collection.toolbar.selected_one: `已选择 <0>{{count}}</0> 个精选`
     
-      * - com.affine.collection.toolbar.selected_other: `<0>{{count}}</0> collection(s) selected`
+      * - com.affine.collection.toolbar.selected_other: `已选择 <0>{{count}}</0> 个精选`
       */
     ["com.affine.collection.toolbar.selected"]: ComponentType<TypedTransProps<{
         readonly count: string | number | bigint;
@@ -10663,7 +10672,7 @@ export const TypedTrans: {
         ["0"]: JSX.Element;
     }>>;
     /**
-      * `<0>{{count}}</0> collection selected`
+      * `已选择 <0>{{count}}</0> 个精选`
       */
     ["com.affine.collection.toolbar.selected_one"]: ComponentType<TypedTransProps<{
         readonly count: string | number | bigint;
@@ -10671,7 +10680,7 @@ export const TypedTrans: {
         ["0"]: JSX.Element;
     }>>;
     /**
-      * `<0>{{count}}</0> collection(s) selected`
+      * `已选择 <0>{{count}}</0> 个精选`
       */
     ["com.affine.collection.toolbar.selected_other"]: ComponentType<TypedTransProps<{
         readonly count: string | number | bigint;
@@ -10679,7 +10688,7 @@ export const TypedTrans: {
         ["0"]: JSX.Element;
     }>>;
     /**
-      * `<0>{{count}}</0> collection(s) selected`
+      * `已选择 <0>{{count}}</0> 个精选`
       */
     ["com.affine.collection.toolbar.selected_others"]: ComponentType<TypedTransProps<{
         readonly count: string;
@@ -10687,7 +10696,7 @@ export const TypedTrans: {
         ["0"]: JSX.Element;
     }>>;
     /**
-      * `Deleting <1>{{tag}}</1> cannot be undone, please proceed with caution.`
+      * `正在删除 <1>{{tag}}</1> ，此操作无法撤销，所有内容将会丢失。`
       */
     ["com.affine.delete-tags.confirm.description"]: ComponentType<TypedTransProps<{
         readonly tag: string;
@@ -10695,7 +10704,7 @@ export const TypedTrans: {
         ["1"]: JSX.Element;
     }>>;
     /**
-      * `Selected <1>{{selectedCount}}</1>, filtered <3>{{filteredCount}}</3>`
+      * `已选择 <1>{{selectedCount}}</1>，已过滤 <3>{{filteredCount}}</3>`
       */
     ["com.affine.editCollection.rules.countTips"]: ComponentType<TypedTransProps<Readonly<{
         selectedCount: string;
@@ -10705,7 +10714,7 @@ export const TypedTrans: {
         ["3"]: JSX.Element;
     }>>;
     /**
-      * `Showing <1>{{count}}</1> docs.`
+      * `显示 <1>{{count}}</1> 篇文档。`
       */
     ["com.affine.editCollection.rules.countTips.more"]: ComponentType<TypedTransProps<{
         readonly count: string;
@@ -10713,30 +10722,14 @@ export const TypedTrans: {
         ["1"]: JSX.Element;
     }>>;
     /**
-      * `Showing <1>{{count}}</1> doc.`
-      */
-    ["com.affine.editCollection.rules.countTips.one"]: ComponentType<TypedTransProps<{
-        readonly count: string;
-    }, {
-        ["1"]: JSX.Element;
-    }>>;
-    /**
-      * `Showing <1>{{count}}</1> docs.`
-      */
-    ["com.affine.editCollection.rules.countTips.zero"]: ComponentType<TypedTransProps<{
-        readonly count: string;
-    }, {
-        ["1"]: JSX.Element;
-    }>>;
-    /**
-      * `Please <1>add rules</1> to save this collection or switch to <3>Docs</3>, use manual selection mode`
+      * `请<1>添加规则</1>保存此精选或切换到<3>文档</3>，使用手动选择模式`
       */
     ["com.affine.editCollection.rules.empty.noRules.tips"]: ComponentType<TypedTransProps<Readonly<{}>, {
         ["1"]: JSX.Element;
         ["3"]: JSX.Element;
     }>>;
     /**
-      * `Docs that meet the rules will be added to the current collection <2>{{highlight}}</2>`
+      * `符合规则的文档将 <2>{{highlight}}</2> 被添加到当前精选`
       */
     ["com.affine.editCollection.rules.tips"]: ComponentType<TypedTransProps<{
         readonly highlight: string;
@@ -10744,29 +10737,29 @@ export const TypedTrans: {
         ["2"]: JSX.Element;
     }>>;
     /**
-      * `If you are still experiencing this issue, please <1>contact us through the community</1>.`
+      * `如果您仍然遇到此问题，请通过<1>社区</1>与我们联系。`
       */
     ["com.affine.error.contact-us"]: ComponentType<TypedTransProps<Readonly<{}>, {
         ["1"]: JSX.Element;
     }>>;
     /**
-      * `With the workspace creator's free account, every member can access up to <1>7 days<1> of version history.`
+      * `通过工作区创建者的免费帐户，每个成员都可以访问最多 <1>7 天<1> 的版本历史记录。`
       */
     ["com.affine.history.confirm-restore-modal.free-plan-prompt.description"]: ComponentType<TypedTransProps<Readonly<{}>, {
         ["1"]: JSX.Element;
     }>>;
     /**
-      * `With the workspace creator's Pro account, every member enjoys the privilege of accessing up to <1>30 days<1> of version history.`
+      * `通过工作区创建者的 Pro 帐户，每个成员都享有访问最多<1>30 天<1>版本历史记录的特权。`
       */
     ["com.affine.history.confirm-restore-modal.pro-plan-prompt.description"]: ComponentType<TypedTransProps<Readonly<{}>, {
         ["1"]: JSX.Element;
     }>>;
     /**
-      * `<0>{{count}}</0> selected`
+      * `已选择 <0>{{count}}</0> 篇文档`
     
-      * - com.affine.page.toolbar.selected_one: `<0>{{count}}</0> doc selected`
+      * - com.affine.page.toolbar.selected_one: `已选中 <0>{{count}}</0> 篇文档`
     
-      * - com.affine.page.toolbar.selected_other: `<0>{{count}}</0> doc(s) selected`
+      * - com.affine.page.toolbar.selected_other: `已选中 <0>{{count}}</0> 篇文档`
       */
     ["com.affine.page.toolbar.selected"]: ComponentType<TypedTransProps<{
         readonly count: string | number | bigint;
@@ -10774,7 +10767,7 @@ export const TypedTrans: {
         ["0"]: JSX.Element;
     }>>;
     /**
-      * `<0>{{count}}</0> doc selected`
+      * `已选中 <0>{{count}}</0> 篇文档`
       */
     ["com.affine.page.toolbar.selected_one"]: ComponentType<TypedTransProps<{
         readonly count: string | number | bigint;
@@ -10782,7 +10775,7 @@ export const TypedTrans: {
         ["0"]: JSX.Element;
     }>>;
     /**
-      * `<0>{{count}}</0> doc(s) selected`
+      * `已选中 <0>{{count}}</0> 篇文档`
       */
     ["com.affine.page.toolbar.selected_other"]: ComponentType<TypedTransProps<{
         readonly count: string | number | bigint;
@@ -10790,7 +10783,7 @@ export const TypedTrans: {
         ["0"]: JSX.Element;
     }>>;
     /**
-      * `<0>{{count}}</0> doc(s) selected`
+      * `已选中 <0>{{count}}</0> 篇文档`
       */
     ["com.affine.page.toolbar.selected_others"]: ComponentType<TypedTransProps<{
         readonly count: string;
@@ -10798,19 +10791,19 @@ export const TypedTrans: {
         ["0"]: JSX.Element;
     }>>;
     /**
-      * `You are currently on the <a>free plan</a>.`
+      * `您当前处于<a> Free 计划</a>.`
       */
     ["com.affine.payment.billing-setting.ai.free-desc"]: ComponentType<TypedTransProps<Readonly<{}>, {
         a: JSX.Element;
     }>>;
     /**
-      * `You have purchased <a>Believer plan</a>. Enjoy with your benefits!`
+      * `您已购买<a>Believer 计划</a>。尽情享受您的福利吧！`
       */
     ["com.affine.payment.billing-setting.believer.description"]: ComponentType<TypedTransProps<Readonly<{}>, {
         a: JSX.Element;
     }>>;
     /**
-      * `You are currently on the <1>{{planName}} plan</1>.`
+      * `您目前处于<1> {{planName}} 计划</1>。`
       */
     ["com.affine.payment.billing-setting.current-plan.description"]: ComponentType<TypedTransProps<{
         readonly planName: string;
@@ -10818,7 +10811,7 @@ export const TypedTrans: {
         ["1"]: JSX.Element;
     }>>;
     /**
-      * `You are currently on the believer <1>{{planName}} plan</1>.`
+      * `您目前处于 believer <1>{{planName}} 计划</1>。`
       */
     ["com.affine.payment.billing-setting.current-plan.description.lifetime"]: ComponentType<TypedTransProps<{
         readonly planName: string;
@@ -10826,7 +10819,7 @@ export const TypedTrans: {
         ["1"]: JSX.Element;
     }>>;
     /**
-      * `You are currently on the monthly <1>{{planName}} plan</1>.`
+      * `您目前处于每月<1> {{planName}} 计划</1>。`
       */
     ["com.affine.payment.billing-setting.current-plan.description.monthly"]: ComponentType<TypedTransProps<{
         readonly planName: string;
@@ -10834,7 +10827,7 @@ export const TypedTrans: {
         ["1"]: JSX.Element;
     }>>;
     /**
-      * `You are currently on the annually <1>{{planName}} plan</1>.`
+      * `您目前处于每年<1> {{planName}} 计划</1>。`
       */
     ["com.affine.payment.billing-setting.current-plan.description.yearly"]: ComponentType<TypedTransProps<{
         readonly planName: string;
@@ -10842,13 +10835,13 @@ export const TypedTrans: {
         ["1"]: JSX.Element;
     }>>;
     /**
-      * `One-time Purchase. Personal use rights for up to 150 years. <a>Fair Usage Policies</a> may apply.`
+      * `一次性购买。个人使用权最长可达 150 年。适用<a>公平使用政策</a>。`
       */
     ["com.affine.payment.lifetime.caption-2"]: ComponentType<TypedTransProps<Readonly<{}>, {
         a: JSX.Element;
     }>>;
     /**
-      * `You are currently on the {{currentPlan}} plan. If you have any questions, please contact our <3>customer support</3>.`
+      * `您目前处于 {{currentPlan}} 计划。如果您有任何问题，请联系我们的<3>客户支持</3>。`
       */
     ["com.affine.payment.subtitle-active"]: ComponentType<TypedTransProps<{
         readonly currentPlan: string;
@@ -10856,37 +10849,37 @@ export const TypedTrans: {
         ["3"]: JSX.Element;
     }>>;
     /**
-      * `If you have any questions, please contact our <1> customer support</1>.`
+      * `如果您有任何问题，请联系我们的<1>客户支持</1>。`
       */
     ["com.affine.payment.upgrade-success-page.support"]: ComponentType<TypedTransProps<Readonly<{}>, {
         ["1"]: JSX.Element;
     }>>;
     /**
-      * `If you have any questions, please contact our <1>customer support</1>.`
+      * `如果您有任何问题，请联系我们的<1>客户支持</1>。`
       */
     ["com.affine.payment.upgrade-success-page.team.text-2"]: ComponentType<TypedTransProps<Readonly<{}>, {
         ["1"]: JSX.Element;
     }>>;
     /**
-      * `If you have any questions, please contact our <1>customer support</1>.`
+      * `如果您有任何问题，请联系我们的<1>客户支持</1>。`
       */
     ["com.affine.payment.license-success.text-2"]: ComponentType<TypedTransProps<Readonly<{}>, {
         ["1"]: JSX.Element;
     }>>;
     /**
-      * `This action deletes the old Favorites section. <b>Your documents are safe</b>, ensure you've moved your frequently accessed documents to the new personal Favorites section.`
+      * `此操作将删除旧的收藏夹部分。<b>您的文档是安全的</b>，请确保您已将经常访问的文档移动到新的个人收藏夹。`
       */
     ["com.affine.rootAppSidebar.migration-data.clean-all.description"]: ComponentType<TypedTransProps<Readonly<{}>, {
         b: JSX.Element;
     }>>;
     /**
-      * `<b>Your documents are safe</b>, but you'll need to re-pin your most-used ones. "Favorites" are now personal. Move items from the old shared section to your new personal section or remove the old one by clicking "Empty the old favorites" now.`
+      * `<b>您的文档是安全的</b>，但您需要重新收藏最常用的文档。“收藏夹”现在属于个人。现在将文档从旧收藏夹移动到新的个人收藏夹，或通过单击“清空旧收藏夹”删除旧收藏夹。`
       */
     ["com.affine.rootAppSidebar.migration-data.help.description"]: ComponentType<TypedTransProps<Readonly<{}>, {
         b: JSX.Element;
     }>>;
     /**
-      * `No doc titles contain <1>{{search}}</1>`
+      * `没有文档标题包含 <1>{{search}}</1>`
       */
     ["com.affine.selectPage.empty.tips"]: ComponentType<TypedTransProps<{
         readonly search: string;
@@ -10894,7 +10887,7 @@ export const TypedTrans: {
         ["1"]: JSX.Element;
     }>>;
     /**
-      * `Are you sure you want to delete your account from <1>{{server}}</1>?`
+      * `您确定要从<1>{{server}}</1> 中删除您的账户吗？`
       */
     ["com.affine.setting.account.delete.confirm-delete-description-1"]: ComponentType<TypedTransProps<{
         readonly server: string;
@@ -10902,13 +10895,13 @@ export const TypedTrans: {
         ["1"]: JSX.Element;
     }>>;
     /**
-      * `Your account will be inaccessible, and your personal space on the server will be permanently deleted. You can remove local data by uninstalling the app or clearing your browser storage. <1>This action is irreversible.</1>`
+      * `您的账号将无法访问，您在服务器上的个人空间将被永久删除。您可以通过卸载应用程序或清除浏览器存储来移除本地数据。<1>此操作不可逆。</1>`
       */
     ["com.affine.setting.account.delete.confirm-delete-description-2"]: ComponentType<TypedTransProps<Readonly<{}>, {
         ["1"]: JSX.Element;
     }>>;
     /**
-      * `Type <1>{{email}}</1> to confirm account deletion.`
+      * `请输入 <1>{{email}}</1> 以确认删除账户。`
       */
     ["com.affine.setting.account.delete.email-confirm-description"]: ComponentType<TypedTransProps<{
         readonly email: string;
@@ -10916,33 +10909,33 @@ export const TypedTrans: {
         ["1"]: JSX.Element;
     }>>;
     /**
-      * `Don't have the app? <1>Click to download</1>.`
+      * `还未安装该应用？<1>点此下载</1>。`
       */
     ["com.affine.open-in-app.card.subtitle"]: ComponentType<TypedTransProps<Readonly<{}>, {
         ["1"]: JSX.Element;
     }>>;
     /**
-      * `Settings changed; please restart the app. <1>Restart</1>`
+      * `设置已更改；请重新启动应用程序。<1>重新启动</1>`
       */
     ["com.affine.settings.editorSettings.general.spell-check.restart-hint"]: ComponentType<TypedTransProps<Readonly<{}>, {
         ["1"]: JSX.Element;
     }>>;
     /**
-      * `Love our app? <1>Star us on GitHub</1> and <2>create issues</2> for your valuable feedback!`
+      * `喜欢我们的应用程序吗？ <1>在 GitHub 给我们加星标</1>并<2>分享您的宝贵反馈</2>！`
       */
     ["com.affine.settings.suggestion-2"]: ComponentType<TypedTransProps<Readonly<{}>, {
         ["1"]: JSX.Element;
         ["2"]: JSX.Element;
     }>>;
     /**
-      * `Meeting Features Available <strong>Free</strong> in Beta Phase`
+      * `会议功能可在测试阶段<strong>免费</strong>使用`
       */
     ["com.affine.settings.meetings.setting.prompt.2"]: ComponentType<TypedTransProps<Readonly<{}>, {
         strong: JSX.Element;
     }>>;
     /**
-      * `<strong>Where AI meets your meetings - affine your collaboration.</strong>
-    <ul><li>Extract Action Items & Key Insights Instantly</li><li>Smart Auto-Capture Starts With Your Meeting</li><li>Seamless Integration Across All Meeting Platforms</li><li>One Unified Space for All Your Meeting's Context</li><li>Your AI Assistant with Every Meeting Context Preserved</li></ul>`
+      * `<strong> 在会议中结合使用AI功能 - 有助于改善您的协作。</strong>
+    <ul><li>及时提取行动项和关键见解</li><li>从会议开始就能智能自动捕获</li><li>可无缝集成到所有会议平台</li><li>为您的会议提供统一空间</li><li>您的人工智能助手会保存每次会议的上下文</li></ul>`
       */
     ["com.affine.settings.meetings.setting.welcome.hints"]: ComponentType<TypedTransProps<Readonly<{}>, {
         strong: JSX.Element;
@@ -10950,37 +10943,37 @@ export const TypedTrans: {
         li: JSX.Element;
     }>>;
     /**
-      * `Utilize the meeting notes and AI summarization features provided by 识光. <1>Discuss more in the community</1>.`
+      * `利用 识光 提供的会议记录和 AI 总结功能。 <1>在社区中讨论更多</1>。`
       */
     ["com.affine.settings.meetings.enable.description"]: ComponentType<TypedTransProps<Readonly<{}>, {
         ["1"]: JSX.Element;
     }>>;
     /**
-      * `Activate using the local key from <1>Toeverything.Inc</1>`
+      * `使用<1>Toeverything.Inc</1>提供的本地密钥激活`
       */
     ["com.affine.settings.workspace.license.self-host-team.team.license"]: ComponentType<TypedTransProps<Readonly<{}>, {
         ["1"]: JSX.Element;
     }>>;
     /**
-      * `Copy your workspace id and <1>reach out to us</1>.`
+      * `复制您的工作区ID并<1>联系我们</1>。`
       */
     ["com.affine.settings.workspace.license.self-host-team.upload-license-file.tips.content"]: ComponentType<TypedTransProps<Readonly<{}>, {
         ["1"]: JSX.Element;
     }>>;
     /**
-      * `If you encounter any issues, contact support@toeverything.info. No license yet? <1>Click to purchase</1>.`
+      * `如果您遇到任何问题，请联系 support@toeverything.info。未获得许可？<1>点击购买</1>。`
       */
     ["com.affine.settings.workspace.license.activate-modal.tips"]: ComponentType<TypedTransProps<Readonly<{}>, {
         ["1"]: JSX.Element;
     }>>;
     /**
-      * `This will make the workspace read-only. Your key remains usable elsewhere. Deactivation doesn't cancel your Team plan. To cancel, go to <1>Manage Payment</1>.`
+      * `这将使工作区变为只读。您的密钥在其他地方仍然可用。停用不会取消您的团队计划。要取消，请转到<1>管理支付</1>。`
       */
     ["com.affine.settings.workspace.license.deactivate-modal.description"]: ComponentType<TypedTransProps<Readonly<{}>, {
         ["1"]: JSX.Element;
     }>>;
     /**
-      * `The "<1>{{ name }}</1>" property will be removed. This action cannot be undone.`
+      * `属性 “<1>{{ name }}</1>” 将被移除，该操作无法撤销。`
       */
     ["com.affine.settings.workspace.properties.delete-property-desc"]: ComponentType<TypedTransProps<{
         readonly name: string;
@@ -10988,7 +10981,7 @@ export const TypedTrans: {
         ["1"]: JSX.Element;
     }>>;
     /**
-      * `<0>{{count}}</0> doc`
+      * `<0>{{count}}</0> 篇文档`
       */
     ["com.affine.settings.workspace.properties.doc"]: ComponentType<TypedTransProps<{
         readonly count: string;
@@ -10996,7 +10989,7 @@ export const TypedTrans: {
         ["0"]: JSX.Element;
     }>>;
     /**
-      * `<0>{{count}}</0> docs`
+      * `<0>{{count}}</0>  篇文档`
       */
     ["com.affine.settings.workspace.properties.doc_others"]: ComponentType<TypedTransProps<{
         readonly count: string;
@@ -11004,7 +10997,7 @@ export const TypedTrans: {
         ["0"]: JSX.Element;
     }>>;
     /**
-      * `Manage workspace <1>{{name}}</1> properties`
+      * `管理工作区 <1>{{name}}</1> 属性`
       */
     ["com.affine.settings.workspace.properties.header.subtitle"]: ComponentType<TypedTransProps<{
         readonly name: string;
@@ -11012,11 +11005,11 @@ export const TypedTrans: {
         ["1"]: JSX.Element;
     }>>;
     /**
-      * `<0>{{count}}</0> selected`
+      * `已选择 <0>{{count}}</0> 个标签`
     
-      * - com.affine.tag.toolbar.selected_one: `<0>{{count}}</0> tag selected`
+      * - com.affine.tag.toolbar.selected_one: `已选择 <0>{{count}}</0> 个标签`
     
-      * - com.affine.tag.toolbar.selected_other: `<0>{{count}}</0> tag(s) selected`
+      * - com.affine.tag.toolbar.selected_other: `已选择 <0>{{count}}</0> 个标签`
       */
     ["com.affine.tag.toolbar.selected"]: ComponentType<TypedTransProps<{
         readonly count: string | number | bigint;
@@ -11024,7 +11017,7 @@ export const TypedTrans: {
         ["0"]: JSX.Element;
     }>>;
     /**
-      * `<0>{{count}}</0> tag selected`
+      * `已选择 <0>{{count}}</0> 个标签`
       */
     ["com.affine.tag.toolbar.selected_one"]: ComponentType<TypedTransProps<{
         readonly count: string | number | bigint;
@@ -11032,7 +11025,7 @@ export const TypedTrans: {
         ["0"]: JSX.Element;
     }>>;
     /**
-      * `<0>{{count}}</0> tag(s) selected`
+      * `已选择 <0>{{count}}</0> 个标签`
       */
     ["com.affine.tag.toolbar.selected_other"]: ComponentType<TypedTransProps<{
         readonly count: string | number | bigint;
@@ -11040,7 +11033,7 @@ export const TypedTrans: {
         ["0"]: JSX.Element;
     }>>;
     /**
-      * `<0>{{count}}</0> tag(s) selected`
+      * `已选择 <0>{{count}}</0> 个标签`
       */
     ["com.affine.tag.toolbar.selected_others"]: ComponentType<TypedTransProps<{
         readonly count: string;
@@ -11048,7 +11041,7 @@ export const TypedTrans: {
         ["0"]: JSX.Element;
     }>>;
     /**
-      * `Deleting <1>{{workspace}}</1> cannot be undone, please proceed with caution. All contents will be lost.`
+      * `删除<1>{{workspace}}</1>后无法撤销，请谨慎操作。所有内容都将丢失。`
       */
     ["com.affine.workspaceDelete.description"]: ComponentType<TypedTransProps<{
         readonly workspace: string;
@@ -11056,7 +11049,7 @@ export const TypedTrans: {
         ["1"]: JSX.Element;
     }>>;
     /**
-      * `Deleting <1>{{workspace}}</1> will delete both local data and synced server data. This cannot be undone, so please proceed with caution.`
+      * `删除<1>{{workspace}}</1>将删除本地数据和已同步到服务器的数据，此操作无法撤销，请谨慎操作。`
       */
     ["com.affine.workspaceDelete.description2"]: ComponentType<TypedTransProps<{
         readonly workspace: string;
@@ -11064,13 +11057,13 @@ export const TypedTrans: {
         ["1"]: JSX.Element;
     }>>;
     /**
-      * ` We recommend the <1>Chrome</1> browser for optimal experience.`
+      * `我们推荐使用<1>Chrome</1>浏览器获得最佳体验。`
       */
     recommendBrowser: ComponentType<TypedTransProps<Readonly<{}>, {
         ["1"]: JSX.Element;
     }>>;
     /**
-      * `Are you sure you want to upgrade <1>{{workspaceName}}</1> to a Team Workspace? This will allow unlimited members to collaborate in this workspace.`
+      * `确定将<1>{{workspaceName}}</1>升级为团队空间？这将允许无限数量的成员在此工作区中协作。`
       */
     ["com.affine.upgrade-to-team-page.upgrade-confirm.description"]: ComponentType<TypedTransProps<{
         readonly workspaceName: string;
@@ -11078,7 +11071,7 @@ export const TypedTrans: {
         ["1"]: JSX.Element;
     }>>;
     /**
-      * `<1>{{username}}</1> mentioned you in <2>{{docTitle}}</2>`
+      * `<1>{{username}}</1> 在 <2>{{docTitle}}</2> 中提到您`
       */
     ["com.affine.notification.mention"]: ComponentType<TypedTransProps<Readonly<{
         username: string;
@@ -11088,7 +11081,7 @@ export const TypedTrans: {
         ["2"]: JSX.Element;
     }>>;
     /**
-      * `<1>{{username}}</1> commented in <2>{{docTitle}}</2>`
+      * `<1>{{username}}</1> 在 <2>{{docTitle}}</2> 中添加了评论`
       */
     ["com.affine.notification.comment"]: ComponentType<TypedTransProps<Readonly<{
         username: string;
@@ -11098,7 +11091,7 @@ export const TypedTrans: {
         ["2"]: JSX.Element;
     }>>;
     /**
-      * `<1>{{username}}</1> mentioned you in a comment in <2>{{docTitle}}</2>`
+      * `<1>{{username}}</1>在 <2> {{docTitle}} </2>的评论中提到了你`
       */
     ["com.affine.notification.comment-mention"]: ComponentType<TypedTransProps<Readonly<{
         username: string;
@@ -11108,7 +11101,7 @@ export const TypedTrans: {
         ["2"]: JSX.Element;
     }>>;
     /**
-      * `<1>{{username}}</1> has accepted your invitation`
+      * `<1>{{username}}</1> 接受了您的邀请`
       */
     ["com.affine.notification.invitation-accepted"]: ComponentType<TypedTransProps<{
         readonly username: string;
@@ -11116,7 +11109,7 @@ export const TypedTrans: {
         ["1"]: JSX.Element;
     }>>;
     /**
-      * `<1>{{username}}</1> has requested to join <2>{{workspaceName}}</2>`
+      * `<1>{{username}}</1> 请求加入 <2>{{workspaceName}}</2>`
       */
     ["com.affine.notification.invitation-review-request"]: ComponentType<TypedTransProps<Readonly<{
         username: string;
@@ -11126,7 +11119,7 @@ export const TypedTrans: {
         ["2"]: JSX.Element;
     }>>;
     /**
-      * `<1>{{username}}</1> has declined your request to join <2>{{workspaceName}}</2>`
+      * `<1>{{username}}</1> 已拒绝您加入 <2>{{workspaceName}}</2> 的请求`
       */
     ["com.affine.notification.invitation-review-declined"]: ComponentType<TypedTransProps<Readonly<{
         username: string;
@@ -11136,7 +11129,7 @@ export const TypedTrans: {
         ["2"]: JSX.Element;
     }>>;
     /**
-      * `<1>{{username}}</1> has approved your request to join <2>{{workspaceName}}</2>`
+      * `<1>{{username}}</1> 已批准您加入 <2>{{workspaceName}}</2> 的请求`
       */
     ["com.affine.notification.invitation-review-approved"]: ComponentType<TypedTransProps<Readonly<{
         username: string;
@@ -11146,7 +11139,7 @@ export const TypedTrans: {
         ["2"]: JSX.Element;
     }>>;
     /**
-      * `There is an issue regarding your invitation to <1>{{workspaceName}}</1> `
+      * `关于您邀请加入 <1>{{workspaceName}}</1> 存在某些问题 `
       */
     ["com.affine.notification.invitation-blocked"]: ComponentType<TypedTransProps<{
         readonly workspaceName: string;
@@ -11154,7 +11147,7 @@ export const TypedTrans: {
         ["1"]: JSX.Element;
     }>>;
     /**
-      * `<1>{{username}}</1> invited you to join <2>{{workspaceName}}</2>`
+      * `<1>{{username}}</1> 邀请您加入 <2>{{workspaceName}}</2>`
       */
     ["com.affine.notification.invitation"]: ComponentType<TypedTransProps<Readonly<{
         username: string;
@@ -11164,7 +11157,7 @@ export const TypedTrans: {
         ["2"]: JSX.Element;
     }>>;
     /**
-      * `Unable to join <1/> <2>{{workspaceName}}</2> due to insufficient seats available.`
+      * `由于可用席位不足，无法加入<1/> <2>{{workspaceName}}</2>。`
       */
     ["com.affine.fail-to-join-workspace.description-1"]: ComponentType<TypedTransProps<{
         readonly workspaceName: string;
@@ -11173,36 +11166,36 @@ export const TypedTrans: {
         ["2"]: JSX.Element;
     }>>;
     /**
-      * `You requested to join <1/> <2>{{workspaceName}}</2> with <3>{{userEmail}}</3>, the workspace owner and team admins will review your request.`
+      * `您（<3>{{userEmail}}</3> ）已请求加入 <1/> <2>{{workspaceName}}</2> ，工作区所有者和团队管理员将审核您的请求。`
       */
     ["com.affine.sent-request-to-join-workspace.description"]: ComponentType<TypedTransProps<Readonly<{
-        workspaceName: string;
         userEmail: string;
+        workspaceName: string;
     }>, {
+        ["3"]: JSX.Element;
         ["1"]: JSX.Element;
         ["2"]: JSX.Element;
-        ["3"]: JSX.Element;
     }>>;
     /**
-      * `Unable to process your request to join <1/> <2>{{workspaceName}}</2> with <3>{{userEmail}}</3>, the workspace has reached its member limit. Please contact the workspace owner for available seats.`
+      * `无法处理您（<3>{{userEmail}}</3>）加入<1/> <2>{{workspaceName}}</2>的请求，该工作区已达到成员上限。请联系工作区所有者以获取更多席位。`
       */
     ["com.affine.failed-to-send-request.description"]: ComponentType<TypedTransProps<Readonly<{
-        workspaceName: string;
         userEmail: string;
+        workspaceName: string;
     }>, {
+        ["3"]: JSX.Element;
         ["1"]: JSX.Element;
         ["2"]: JSX.Element;
-        ["3"]: JSX.Element;
     }>>;
     /**
-      * `Import your Readwise highlights to 识光. Please visit Readwise, <br />click <a>"Get Access Token"</a>, and paste the token below.`
+      * `将您的 Readwise 高亮内容导入 识光。请访问 Readwise，<br />点击 <a>"获取访问令牌"</a>，然后在下面粘贴该令牌。`
       */
     ["com.affine.integration.readwise.connect.desc"]: ComponentType<TypedTransProps<Readonly<{}>, {
         br: JSX.Element;
         a: JSX.Element;
     }>>;
     /**
-      * `Updates to be imported since last successful import on {{lastImportedAt}} <a>Import everything instead</a>`
+      * `自上次成功导入至 {{lastImportedAt}} 以来的更新 <a>改为导入所有内容</a>`
       */
     ["com.affine.integration.readwise.import.desc-from-last"]: ComponentType<TypedTransProps<{
         readonly lastImportedAt: string;
@@ -11210,7 +11203,7 @@ export const TypedTrans: {
         a: JSX.Element;
     }>>;
     /**
-      * `Please contact <1>{{user}}</1> to upgrade AI rights or resend the attachment.`
+      * `请联系 <1>{{user}}</1> 提升 AI 权限或重新发送附件。`
       */
     ["com.affine.audio.transcribe.non-owner.confirm.message"]: ComponentType<TypedTransProps<{
         readonly user: string;
