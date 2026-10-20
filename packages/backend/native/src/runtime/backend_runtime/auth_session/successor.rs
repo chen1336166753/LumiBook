@@ -11,7 +11,7 @@ use zeroize::{Zeroize, Zeroizing};
 use super::{RuntimeError, RuntimeResult};
 
 const PREFIX: &str = "auth-successor:v1:";
-const INFO: &[u8] = b"识光/Auth/RefreshSuccessor/v1";
+const INFO: &[u8] = b"LumiBook/Auth/RefreshSuccessor/v1";
 const NONCE_LEN: usize = 12;
 const TAG_LEN: usize = 16;
 

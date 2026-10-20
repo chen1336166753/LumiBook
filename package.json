@@ -94,13 +94,13 @@
     }
   },
   "devDependencies": {
-    "@lumibook/cli": "workspace:*",
     "@capacitor/cli": "^8.4.2",
     "@faker-js/faker": "^10.5.0",
     "@istanbuljs/schema": "^0.1.3",
+    "@lumibook/cli": "workspace:*",
+    "@lumibook/infra": "workspace:*",
     "@playwright/test": "=1.58.2",
     "@taplo/cli": "^0.7.0",
-    "@lumibook/infra": "workspace:*",
     "@types/node": "^22.0.0",
     "@typescript/native": "npm:typescript@7.0.2",
     "@vanilla-extract/vite-plugin": "~5.1.5",
