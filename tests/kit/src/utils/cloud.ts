@@ -359,8 +359,7 @@ export async function enableShare(page: Page) {
   // wait for the menu to be visible
   await page.waitForTimeout(500);
   await page.getByTestId('share-link-menu-enable-share').click();
-  await expect(page.getByTestId('share-link-menu-trigger')).toHaveText(
-    'Read only',
-    { timeout: 30_000 }
-  );
+  await expect(page.getByTestId('share-link-menu-trigger')).toHaveText('只读', {
+    timeout: 30_000,
+  });
 }

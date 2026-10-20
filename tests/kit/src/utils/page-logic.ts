@@ -74,7 +74,7 @@ export const createLinkedPage = async (page: Page, pageName?: string) => {
 
   await linkedPagePopover
     .locator(`icon-button`)
-    .filter({ hasText: `New "${pageName}" page` })
+    .filter({ hasText: `新建 “${pageName}” 页面` })
     .click();
 };
 

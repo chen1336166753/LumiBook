@@ -101,7 +101,7 @@ test.describe('comments', () => {
     await page.waitForTimeout(500);
 
     // Verify the comment appears in the sidebar
-    await expect(page.locator('text=Comments')).toBeVisible();
+    await expect(page.locator('text=评论')).toBeVisible();
     await expect(
       page.locator('text=This is my first comment on this text')
     ).toBeVisible();
@@ -115,7 +115,7 @@ test.describe('comments', () => {
     // This text should appear in the sidebar as the preview of what was commented on
 
     // Verify the comment is successfully created by checking the sidebar content
-    const commentSidebar = page.locator('text=Comments').locator('..');
+    const commentSidebar = page.locator('text=评论').locator('..');
     await expect(commentSidebar).toBeVisible();
   });
 });

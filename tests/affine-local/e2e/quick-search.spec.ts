@@ -148,7 +148,7 @@ test('Create a new page with keyword', async ({ page }) => {
   await openQuickSearchByShortcut(page);
   await insertInputText(page, '"test123456"');
   const addNewPage = page.locator(
-    '[cmdk-item] >> text=New ""test123456"" Page'
+    '[cmdk-item] >> text=新建 “test123456” 为标题的文档'
   );
   await addNewPage.click();
   await page.waitForTimeout(300);
@@ -171,7 +171,9 @@ test('Create a new page and search this page', async ({ page }) => {
   // input title and create new page
   await insertInputText(page, 'test123456');
   await page.waitForTimeout(300);
-  const addNewPage = page.locator('[cmdk-item] >> text=New "test123456" Page');
+  const addNewPage = page.locator(
+    '[cmdk-item] >> text=新建 “test123456” 为标题的文档'
+  );
   await addNewPage.click();
 
   await page.waitForTimeout(300);
