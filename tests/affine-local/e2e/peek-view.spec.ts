@@ -69,7 +69,7 @@ test('can open peek view via db+click link card', async ({ page }) => {
   const toolbar = page.locator('affine-toolbar-widget editor-toolbar');
   await expect(toolbar).toBeVisible();
 
-  await toolbar.getByLabel('切换视图').click();
+  await toolbar.getByLabel('Switch view').click();
   await toolbar.getByLabel('Card view').click();
 
   await expect(

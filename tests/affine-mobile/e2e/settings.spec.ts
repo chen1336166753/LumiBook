@@ -4,7 +4,7 @@ import { expect, type Page } from '@playwright/test';
 const openSettings = async (page: Page) => {
   await page.getByTestId('settings-button').click();
   await expect(page.getByRole('dialog')).toBeVisible();
-  await expect(page.locator('header:has-text("Settings")')).toBeVisible();
+  await expect(page.locator('header:has-text("设置")')).toBeVisible();
 };
 
 test('can open settings', async ({ page }) => {

@@ -24,6 +24,6 @@ export async function openJournalsPage(page: Page) {
   await page.getByTestId('slider-bar-journals-button').click();
   await confirmCreateJournal(page);
   await expect(
-    page.locator('.doc-title-container:has-text("Today")')
+    page.locator('.doc-title-container:has-text("今天")')
   ).toBeVisible();
 }

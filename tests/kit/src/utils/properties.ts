@@ -11,7 +11,7 @@ export const ensurePagePropertiesVisible = async (page: Page) => {
   if (
     await page
       .getByRole('button', {
-        name: 'Add property',
+        name: '添加属性',
       })
       .isVisible()
   ) {
@@ -61,7 +61,7 @@ export const searchAndCreateTag = async (page: Page, name: string) => {
   await filterTags(page, name);
   await page
     .locator(
-      '[data-testid="tags-editor-popup"] [data-testid="tag-selector-item"]:has-text("Create ")'
+      '[data-testid="tags-editor-popup"] [data-testid="tag-selector-item"]:has-text("创建 ")'
     )
     .click();
 };
@@ -88,7 +88,7 @@ export const expectTagsVisible = async (
 export const clickAddPropertyButton = async (root: Locator | Page) => {
   await root
     .getByRole('button', {
-      name: 'Add property',
+      name: '添加属性',
     })
     .click();
 };
@@ -100,7 +100,7 @@ export const ensureAddPropertyButtonVisible = async (
   if (
     await root
       .getByRole('button', {
-        name: 'Add property',
+        name: '添加属性',
       })
       .isVisible()
   ) {
@@ -109,7 +109,7 @@ export const ensureAddPropertyButtonVisible = async (
   await togglePropertyListVisibility(page);
   await page.waitForTimeout(500);
   await expect(
-    root.getByRole('button', { name: 'Add property' })
+    root.getByRole('button', { name: '添加属性' })
   ).toBeVisible();
 };
 

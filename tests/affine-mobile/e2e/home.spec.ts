@@ -75,7 +75,7 @@ test('app tabs is visible', async ({ page }) => {
   await expect(tabs).toBeVisible();
 
   await expect(tabs.getByRole('tab', { name: 'home' })).toBeVisible();
-  await expect(tabs.getByRole('tab', { name: '全部' })).toBeVisible();
+  await expect(tabs.getByRole('tab', { name: 'all' })).toBeVisible();
   await expect(tabs.getByRole('tab', { name: 'journal' })).toBeVisible();
   await expect(tabs.getByRole('tab', { name: 'new' })).toBeVisible();
 });
@@ -91,7 +91,7 @@ test('notifications prompt unauthenticated users to sign in', async ({
 });
 
 test('recent docs', async ({ page }) => {
-  const recentSection = await expandCollapsibleSection(page, 'recent');
+  const recentSection = await expandCollapsibleSection(page, '最近');
 
   const docs = recentSection.getByTestId('doc-card');
   const firstDoc = docs.first();
@@ -106,7 +106,7 @@ test('recent docs', async ({ page }) => {
   // when click favorite icon, will show in the favorites section
   await docs.getByRole('button', { name: 'favorite' }).first().click();
 
-  const favList = await expandCollapsibleSection(page, 'favorites');
+  const favList = await expandCollapsibleSection(page, '收藏夹');
   await expect(favList).toBeVisible();
 
   if (title) {
@@ -115,7 +115,7 @@ test('recent docs', async ({ page }) => {
 });
 
 test('all tab', async ({ page }) => {
-  const docsTab = page.locator('#app-tabs').getByRole('tab', { name: '全部' });
+  const docsTab = page.locator('#app-tabs').getByRole('tab', { name: 'all' });
   await expect(docsTab).toBeVisible();
 
   await docsTab.click();
@@ -128,7 +128,7 @@ test('all tab', async ({ page }) => {
 test('search restores query and results without reopening the keyboard', async ({
   page,
 }) => {
-  await expandCollapsibleSection(page, 'recent');
+  await expandCollapsibleSection(page, '最近');
   const title = await page
     .getByTestId('doc-card')
     .first()

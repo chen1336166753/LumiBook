@@ -13,9 +13,7 @@ import { expect, type Page } from '@playwright/test';
 const movePageToTrash = async (page: Page, docId: string) => {
   await getPageOperationButton(page, docId).click();
   await page.getByTestId('doc-list-operation-trash').click();
-  await expect(
-    page.getByRole('dialog', { name: '确定要删除文档？' })
-  ).toBeVisible();
+  await expect(page.getByRole('dialog', { name: '确定要删除文档？' })).toBeVisible();
   await page.getByRole('button', { name: '删除' }).click();
 };
 
@@ -69,13 +67,13 @@ test('select all trashed pages from the Trash title', async ({ page }) => {
   await expect(selectAllButton).toHaveText('全选');
   await selectAllButton.click();
   await expect(page.getByTestId('floating-toolbar')).toHaveText(
-    '已选中 2 篇文档'
+    '已选择 <0>2</0> 篇文档'
   );
   await expect(selectAllButton).toHaveText('清除选择');
 
   await selectAllButton.click();
   await expect(page.getByTestId('floating-toolbar')).toHaveText(
-    '已选中 0 篇文档'
+    '已选择 <0>0</0> 篇文档'
   );
   await expect(selectAllButton).toHaveText('全选');
 });

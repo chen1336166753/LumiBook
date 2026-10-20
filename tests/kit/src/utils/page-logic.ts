@@ -102,7 +102,7 @@ export const createTodayPage = async (page: Page) => {
 
   await linkedPagePopover
     .locator(`icon-button`)
-    .filter({ hasText: 'Today' })
+    .filter({ hasText: '今天' })
     .nth(0)
     .click();
 };

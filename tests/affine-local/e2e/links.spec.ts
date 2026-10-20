@@ -425,7 +425,7 @@ test('@ popover with input=dec should create a reference with a December date', 
   await page.keyboard.type('dc');
 
   const decemberMenuItem = page.locator(
-    '.linked-doc-popover icon-button:has-text("Dec")'
+    '.linked-doc-popover icon-button:has-text("十二月")'
   );
   await expect(decemberMenuItem).toBeVisible();
 
@@ -453,7 +453,7 @@ test('@ popover with click "select a specific date" should show a date picker', 
   const textContent = await todayMenuItem.locator('span').textContent();
   const date = textContent?.trim();
 
-  await page.locator('icon-button:has-text("Select a specific date")').click();
+  await page.locator('icon-button:has-text("选择具体日期")').click();
   await expect(
     page.locator('[data-is-date-cell][data-is-today=true]')
   ).toBeVisible();
@@ -546,7 +546,7 @@ test('the viewport should be fit when the linked document is with edgeless mode'
 
   // Inline
   await page.locator('affine-reference').hover();
-  await page.getByLabel('切换视图').click();
+  await page.getByLabel('Switch view').click();
   await page.getByTestId('link-to-embed').click();
 
   const viewport = await page
@@ -617,7 +617,7 @@ test('should show edgeless content when switching card view of linked mode doc i
   // Inline
   const embed = page.locator('affine-embed-edgeless-linked-doc-block');
   await expect(embed).toBeVisible();
-  await page.getByLabel('切换视图').click();
+  await page.getByLabel('Switch view').click();
   await page.getByTestId('link-to-embed').click();
 
   const viewport = await page
@@ -659,7 +659,7 @@ test.describe('Customize linked doc title and description', () => {
     await expect(toolbar).toBeVisible();
 
     // Copies link
-    await toolbar.getByRole('button', { name: '复制链接' }).click();
+    await toolbar.getByRole('button', { name: 'Copy link' }).click();
     await expect(toolbar).toBeHidden();
 
     const url0 = await link.locator('a').getAttribute('href');
@@ -673,7 +673,7 @@ test.describe('Customize linked doc title and description', () => {
 
     // Edits title
     await link.hover();
-    await toolbar.getByRole('button', { name: '编辑' }).click();
+    await toolbar.getByRole('button', { name: 'Edit' }).click();
 
     // Title alias
     await page.keyboard.type('Test Page Alias');
@@ -689,7 +689,7 @@ test.describe('Customize linked doc title and description', () => {
     await expect(docTitle).toHaveText('Test Page', { useInnerText: true });
 
     // Edits title
-    await toolbar.getByRole('button', { name: '编辑' }).click();
+    await toolbar.getByRole('button', { name: 'Edit' }).click();
 
     const aliasPopup = page.locator('reference-popup');
 
@@ -719,7 +719,7 @@ test.describe('Customize linked doc title and description', () => {
     await inlineLink.hover();
 
     // Copies link
-    await toolbar.getByRole('button', { name: '复制链接' }).click();
+    await toolbar.getByRole('button', { name: 'Copy link' }).click();
     const url0 = await (
       await page.evaluateHandle(() => navigator.clipboard.readText())
     ).jsonValue();
@@ -729,7 +729,7 @@ test.describe('Customize linked doc title and description', () => {
     await inlineLink.hover();
 
     // Edits title
-    await toolbar.getByRole('button', { name: '编辑' }).click();
+    await toolbar.getByRole('button', { name: 'Edit' }).click();
 
     // Title alias
     await page.keyboard.type('Test Page Alias');
@@ -755,7 +755,7 @@ test.describe('Customize linked doc title and description', () => {
     await cardLink.click();
 
     // Copies link
-    await toolbar.getByRole('button', { name: '复制链接' }).click();
+    await toolbar.getByRole('button', { name: 'Copy link' }).click();
     const url1 = await (
       await page.evaluateHandle(() => navigator.clipboard.readText())
     ).jsonValue();
@@ -769,7 +769,7 @@ test.describe('Customize linked doc title and description', () => {
     await expect(cardTitle).toHaveText('Test Page Alias');
 
     // Edits title & description
-    await toolbar.getByRole('button', { name: '编辑' }).click();
+    await toolbar.getByRole('button', { name: 'Edit' }).click();
 
     const cardEditPopup = page.locator('embed-card-edit-modal');
 
@@ -813,7 +813,7 @@ test.describe('Customize linked doc title and description', () => {
     await cardLink.click();
     await cardLink.click();
 
-    await toolbar.getByRole('button', { name: '编辑' }).click();
+    await toolbar.getByRole('button', { name: 'Edit' }).click();
 
     // Resets
     await cardEditPopup.getByRole('button', { name: '重置' }).click();
@@ -838,7 +838,7 @@ test.describe('Customize linked doc title and description', () => {
   //   await inlineLink.hover();
 
   //   // Edits title
-  //   await toolbar.getByRole('button', { name: '编辑' }).click();
+  //   await toolbar.getByRole('button', { name: 'Edit' }).click();
 
   //   // Title alias
   //   await page.keyboard.type('🦀hello');
@@ -867,7 +867,7 @@ test.describe('Customize linked doc title and description', () => {
   //     await inlineLink.hover();
 
   //     // Edits title
-  //     await toolbar.getByRole('button', { name: '编辑' }).click();
+  //     await toolbar.getByRole('button', { name: 'Edit' }).click();
 
   //     // Title alias
   //     await page.keyboard.type('🦀');
@@ -901,7 +901,10 @@ test('should save open doc mode of internal links', async ({ page }) => {
   const recentOpenModeBtn = toolbar.locator(
     'editor-icon-button:has-text("Open")'
   );
-  await expect(recentOpenModeBtn).toHaveAttribute('aria-label', '打开这篇文档');
+  await expect(recentOpenModeBtn).toHaveAttribute(
+    'aria-label',
+    '打开这篇文档'
+  );
   await expect(
     recentOpenModeBtn.locator('span.label:has-text("Open")')
   ).toBeVisible();
@@ -1083,7 +1086,7 @@ test('should display date as the original title of journal', async ({
   await expect(linkedDocTitle).toBeHidden();
 
   // Edits title & description
-  await toolbar.getByRole('button', { name: '编辑' }).click();
+  await toolbar.getByRole('button', { name: 'Edit' }).click();
 
   await expect(toolbar).toBeHidden();
 
@@ -1118,7 +1121,7 @@ test('should display date as the original title of journal', async ({
   expect(cardViewTitleText).toBe(inlineTitleText);
 
   // Edits title & description
-  await toolbar.getByRole('button', { name: '编辑' }).click();
+  await toolbar.getByRole('button', { name: 'Edit' }).click();
 
   await expect(toolbar).toBeHidden();
 

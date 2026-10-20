@@ -32,7 +32,7 @@ test('page delete -> refresh page -> it should be disappear', async ({
   await page.getByRole('button', { name: '删除' }).click();
   await page.getByTestId('trash-page').click();
   await page.getByTestId('delete-page-button').click();
-  await page.getByText('Delete permanently?').dblclick();
+  await page.getByText('永久删除?').dblclick();
   await page.getByRole('button', { name: '删除' }).click();
   await expect(page.getByText('已删除的文档将显示在此处。')).toBeVisible();
   await page.getByTestId('all-pages').click();
@@ -64,7 +64,7 @@ test('page delete -> create new page -> refresh page -> new page should be appea
   await page.getByRole('button', { name: '删除' }).click();
   await page.getByTestId('trash-page').click();
   await page.getByTestId('delete-page-button').click();
-  await page.getByText('Delete permanently?').dblclick();
+  await page.getByText('永久删除?').dblclick();
   await page.getByRole('button', { name: '删除' }).click();
   await expect(page.getByText('Deleted docs will appear here')).toBeVisible();
   await page.getByTestId('all-pages').click();
@@ -121,7 +121,7 @@ test('delete multiple pages -> create multiple pages -> refresh', async ({
   await page.getByRole('button', { name: '删除' }).click();
   await page.getByTestId('trash-page').click();
   await page.getByTestId('delete-page-button').click();
-  await page.getByText('Delete permanently?').dblclick();
+  await page.getByText('永久删除?').dblclick();
   await page.getByRole('button', { name: '删除' }).click();
   await page.getByTestId('all-pages').click();
 
@@ -136,7 +136,7 @@ test('delete multiple pages -> create multiple pages -> refresh', async ({
   await page.getByRole('button', { name: '删除' }).click();
   await page.getByTestId('trash-page').click();
   await page.getByTestId('delete-page-button').click();
-  await page.getByText('Delete permanently?').dblclick();
+  await page.getByText('永久删除?').dblclick();
   await page.getByRole('button', { name: '删除' }).click();
   await page.getByTestId('all-pages').click();
 

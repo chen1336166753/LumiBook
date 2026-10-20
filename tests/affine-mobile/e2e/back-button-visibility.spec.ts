@@ -13,7 +13,7 @@ test('new doc returns to its source without creating a New destination', async (
   await pageBack(page);
   await expect(page).toHaveURL(/\/home$/);
 
-  await expandCollapsibleSection(page, 'recent');
+  await expandCollapsibleSection(page, '最近');
   const docCard = page.getByTestId('doc-card').first();
   await expect(docCard).toBeVisible();
   await docCard.click();

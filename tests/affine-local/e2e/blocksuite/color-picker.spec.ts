@@ -30,7 +30,7 @@ test('should keep color on custom color button', async ({ page }) => {
     'editor-option-menu-import-snapshot'
   );
 
-  const completeButton = importDialog.getByRole('button', { name: 'Complete' });
+  const completeButton = importDialog.getByRole('button', { name: '完成' });
 
   await importFile(page, 'v1-color-palettes-snapshot.zip', async () => {
     await importSnapshot.click();

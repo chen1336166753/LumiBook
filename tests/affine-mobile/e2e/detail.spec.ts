@@ -17,7 +17,7 @@ const openDocInfoModal = async (page: Page) => {
 };
 
 test.beforeEach(async ({ page }) => {
-  const docsTab = page.locator('#app-tabs').getByRole('tab', { name: '全部' });
+  const docsTab = page.locator('#app-tabs').getByRole('tab', { name: 'all' });
   await expect(docsTab).toBeVisible();
   await docsTab.click();
   await page.getByTestId('doc-list-item').first().click();
@@ -55,7 +55,9 @@ test('can show doc info', async ({ page }) => {
 test('can add text property', async ({ page }) => {
   await openDocInfoModal(page);
 
-  await expect(page.getByRole('button', { name: '添加属性' })).toBeVisible();
+  await expect(
+    page.getByRole('button', { name: '添加属性' })
+  ).toBeVisible();
 
   await page.getByRole('button', { name: '添加属性' }).click();
   await page.getByRole('button', { name: '文本' }).click();

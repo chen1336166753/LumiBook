@@ -22,7 +22,7 @@ const isRenameInputFocused = async (page: Page) => {
 };
 
 const createRootFolder = async (page: Page, name: string) => {
-  const section = await expandCollapsibleSection(page, 'organize');
+  const section = await expandCollapsibleSection(page, '组织');
   await section.getByTestId('navigation-panel-bar-add-organize-button').tap();
   const dialog = page.getByRole('dialog');
   await expect(dialog).toBeVisible();

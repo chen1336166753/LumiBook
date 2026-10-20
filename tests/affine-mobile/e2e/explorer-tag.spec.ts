@@ -34,7 +34,7 @@ async function createRootTag(
   name: string,
   color = 'var(--affine-palette-line-red)'
 ) {
-  const section = await expandCollapsibleSection(page, 'tags');
+  const section = await expandCollapsibleSection(page, '标签');
   await section.getByTestId('navigation-panel-add-tag-button').tap();
   const dialog = page.getByRole('dialog');
   await expect(dialog).toBeVisible();

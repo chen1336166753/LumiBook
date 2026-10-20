@@ -47,7 +47,7 @@ test('should delete unused blobs after permanently deleting a doc', async ({
     .getByTestId('delete-page-button')
     .click();
   const confirmDelete = page.getByRole('dialog', {
-    name: 'Delete permanently?',
+    name: '永久删除?',
   });
   await expect(confirmDelete).toBeVisible();
   await confirmDelete

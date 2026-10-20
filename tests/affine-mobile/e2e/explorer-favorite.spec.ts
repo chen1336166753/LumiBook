@@ -10,7 +10,7 @@ import {
 } from './utils';
 
 test('Create new doc in favorites', async ({ page }) => {
-  const section = await expandCollapsibleSection(page, 'favorites');
+  const section = await expandCollapsibleSection(page, '收藏夹');
   const newButton = section.getByTestId(
     'navigation-panel-bar-add-favorite-button'
   );
@@ -24,7 +24,7 @@ test('Create new doc in favorites', async ({ page }) => {
   const docId = getCurrentDocIdFromUrl(page);
 
   await pageBack(page);
-  const section2 = await expandCollapsibleSection(page, 'favorites');
+  const section2 = await expandCollapsibleSection(page, '收藏夹');
   const node = section2.getByTestId(`navigation-panel-doc-${docId}`);
   await expect(node).toBeVisible();
 

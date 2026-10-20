@@ -23,7 +23,7 @@ const searchAndCreateTag = async (page: Page, name: string) => {
   await filterTags(page, name);
   await page
     .locator(
-      '[data-testid="tags-editor-popup"] [data-testid="tag-selector-item"]:has-text("Create ")'
+      '[data-testid="tags-editor-popup"] [data-testid="tag-selector-item"]:has-text("创建 ")'
     )
     .click();
 };

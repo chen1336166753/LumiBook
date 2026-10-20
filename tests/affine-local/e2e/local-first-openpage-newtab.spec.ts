@@ -127,7 +127,7 @@ test('ctrl click embedded doc link and open in new tab', async ({ page }) => {
   const toolbar = page.locator('affine-toolbar-widget editor-toolbar');
 
   await expect(toolbar).toBeVisible();
-  await toolbar.getByRole('button', { name: '切换视图' }).click();
+  await toolbar.getByRole('button', { name: 'Switch view' }).click();
   await page.getByRole('button', { name: 'Card view' }).click();
 
   const embededDocBlock = page.locator('affine-embed-linked-doc-block');
