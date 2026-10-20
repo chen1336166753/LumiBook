@@ -211,7 +211,7 @@ test('should preview PDF in embed view', async ({ page }) => {
     await page.keyboard.type('PDF embed preview');
     await page.keyboard.press('Enter');
 
-    await expect(inlineTitle).toHaveText('PDF 嵌入式预览');
+    await expect(inlineTitle).toHaveText('PDF embed preview');
   }
 
   // PDF embed view should not be re-rendered
