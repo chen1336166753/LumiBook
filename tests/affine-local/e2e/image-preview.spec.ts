@@ -628,7 +628,7 @@ test('tooltips for all buttons should be visible when hovering', async ({
   await page.waitForTimeout(1000);
   {
     const element = page.getByRole('tooltip');
-    const zoomOutToolTip = await element.getByText('缩小').count();
+    const zoomOutToolTip = await element.getByText('Zoom out').count();
     expect(zoomOutToolTip).toBe(1);
   }
 
@@ -644,7 +644,7 @@ test('tooltips for all buttons should be visible when hovering', async ({
   await page.waitForTimeout(1000);
   {
     const element = page.getByRole('tooltip');
-    const zoominToolTip = await element.getByText('放大').count();
+    const zoominToolTip = await element.getByText('Zoom in').count();
     expect(zoominToolTip).toBe(1);
   }
 
@@ -670,7 +670,7 @@ test('tooltips for all buttons should be visible when hovering', async ({
   await page.waitForTimeout(500);
   {
     const element = page.getByRole('tooltip');
-    const downloadTooltip = await element.getByText('删除').count();
+    const downloadTooltip = await element.getByText('Delete').count();
     expect(downloadTooltip).toBe(1);
   }
 });
