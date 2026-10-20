@@ -1,3 +1,9 @@
+import {
+  AppleIcon,
+  GithubIcon,
+  GoogleIcon,
+  LockIcon,
+} from '@blocksuite/icons/rc';
 import { Button } from '@lumibook/component/ui/button';
 import { notify } from '@lumibook/component/ui/notification';
 import { useAsyncCallback } from '@lumibook/core/components/hooks/affine-async-hooks';
@@ -5,14 +11,8 @@ import { AuthService, ServerService } from '@lumibook/core/modules/cloud';
 import { UrlService } from '@lumibook/core/modules/url';
 import { UserFriendlyError } from '@lumibook/error';
 import { OAuthProviderType } from '@lumibook/graphql';
-import track from '@lumibook/track';
-import {
-  AppleIcon,
-  GithubIcon,
-  GoogleIcon,
-  LockIcon,
-} from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
+import track from '@lumibook/track';
 import { type ReactElement, type SVGAttributes, useCallback } from 'react';
 
 const OAuthProviderMap: Record<

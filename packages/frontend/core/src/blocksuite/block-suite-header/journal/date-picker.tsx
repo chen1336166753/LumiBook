@@ -1,3 +1,4 @@
+import type { Store } from '@blocksuite/affine/store';
 import type { WeekDatePickerHandle } from '@lumibook/component';
 import { WeekDatePicker } from '@lumibook/component';
 import {
@@ -5,7 +6,6 @@ import {
   JournalService,
 } from '@lumibook/core/modules/journal';
 import { WorkbenchService } from '@lumibook/core/modules/workbench';
-import type { Store } from '@blocksuite/affine/store';
 import { useLiveData, useService } from '@lumibook/infra';
 import dayjs from 'dayjs';
 import { useCallback, useEffect, useRef, useState } from 'react';

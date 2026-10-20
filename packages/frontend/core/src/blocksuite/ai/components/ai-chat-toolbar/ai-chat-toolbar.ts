@@ -1,4 +1,3 @@
-import type { CopilotChatHistoryFragment } from '@lumibook/graphql';
 import { createLitPortal } from '@blocksuite/affine/components/portal';
 import { WithDisposable } from '@blocksuite/affine/global/lit';
 import type { NotificationService } from '@blocksuite/affine/shared/services';
@@ -11,6 +10,7 @@ import {
   PlusIcon,
 } from '@blocksuite/icons/lit';
 import { flip, offset } from '@floating-ui/dom';
+import type { CopilotChatHistoryFragment } from '@lumibook/graphql';
 import { css, html } from 'lit';
 import { property, query } from 'lit/decorators.js';
 

@@ -1,5 +1,5 @@
-import { cn } from '@lumibook/admin/utils';
 import { CloseIcon } from '@blocksuite/icons/rc';
+import { cn } from '@lumibook/admin/utils';
 import * as DialogPrimitive from '@radix-ui/react-dialog';
 import { cssVarV2 } from '@toeverything/theme/v2';
 import * as React from 'react';

@@ -1,6 +1,6 @@
+import { AiIcon, Logo1Icon, TodayIcon } from '@blocksuite/icons/rc';
 import { IntegrationTypeIcon } from '@lumibook/core/modules/integration';
 import type { I18nString } from '@lumibook/i18n';
-import { AiIcon, Logo1Icon, TodayIcon } from '@blocksuite/icons/rc';
 import type { ReactNode } from 'react';
 
 import { WorkspaceByokSetting } from '../byok';

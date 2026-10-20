@@ -1,5 +1,5 @@
-import { useI18n } from '@lumibook/i18n';
 import { CloseIcon, InformationFillDuotoneIcon } from '@blocksuite/icons/rc';
+import { useI18n } from '@lumibook/i18n';
 import { useCallback, useState } from 'react';
 
 import { Button, IconButton } from '../../button';

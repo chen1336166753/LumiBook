@@ -1,3 +1,6 @@
+import { RefNodeSlotsProvider } from '@blocksuite/affine/inlines/reference';
+import { BlockStdScope } from '@blocksuite/affine/std';
+import type { Workspace } from '@blocksuite/affine/store';
 import { observeResize, useConfirmModal } from '@lumibook/component';
 import {
   AIChatRuntime,
@@ -43,11 +46,8 @@ import {
 } from '@lumibook/core/modules/workbench';
 import { WorkspaceService } from '@lumibook/core/modules/workspace';
 import { useI18n } from '@lumibook/i18n';
-import { RefNodeSlotsProvider } from '@blocksuite/affine/inlines/reference';
-import { BlockStdScope } from '@blocksuite/affine/std';
-import type { Workspace } from '@blocksuite/affine/store';
-import { type Signal, signal } from '@preact/signals-core';
 import { useFramework, useService } from '@lumibook/infra';
+import { type Signal, signal } from '@preact/signals-core';
 import { nanoid } from 'nanoid';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 

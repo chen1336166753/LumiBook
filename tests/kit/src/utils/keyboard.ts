@@ -1,5 +1,5 @@
-import { type Page } from '@playwright/test';
 import { AsyncLock } from '@lumibook/infra/utils';
+import { type Page } from '@playwright/test';
 
 const IS_MAC = process.platform === 'darwin';
 

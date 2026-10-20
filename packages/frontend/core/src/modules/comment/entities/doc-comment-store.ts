@@ -11,11 +11,11 @@ import {
   updateReplyMutation,
   uploadCommentAttachmentMutation,
 } from '@lumibook/graphql';
+import { Entity } from '@lumibook/infra';
 import type {
   RealtimeSubscriptionReady,
   RealtimeTopicEventOf,
 } from '@lumibook/realtime';
-import { Entity } from '@lumibook/infra';
 import type { Observable } from 'rxjs';
 
 import type { DefaultServerService, WorkspaceServerService } from '../../cloud';

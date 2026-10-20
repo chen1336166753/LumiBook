@@ -1,12 +1,12 @@
-import { WorkspaceDialogService } from '@lumibook/core/modules/dialogs';
-import track from '@lumibook/track';
 import type { Container } from '@blocksuite/affine/global/di';
 import {
   FileSizeLimitProvider,
   type IFileSizeLimitService,
 } from '@blocksuite/affine/shared/services';
 import { Extension } from '@blocksuite/affine/store';
+import { WorkspaceDialogService } from '@lumibook/core/modules/dialogs';
 import type { FrameworkProvider } from '@lumibook/infra';
+import track from '@lumibook/track';
 
 export function patchFileSizeLimitExtension(framework: FrameworkProvider) {
   const workspaceDialogService = framework.get(WorkspaceDialogService);

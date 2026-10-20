@@ -1,3 +1,4 @@
+import { CameraIcon } from '@blocksuite/icons/rc';
 import { FlexWrapper, Input, notify, Wrapper } from '@lumibook/component';
 import { Button } from '@lumibook/component/ui/button';
 import { useCatchEventCallback } from '@lumibook/core/components/hooks/use-catch-event-hook';
@@ -8,7 +9,6 @@ import { WorkspaceService } from '@lumibook/core/modules/workspace';
 import { validateAndReduceImage } from '@lumibook/core/utils/reduce-image';
 import { UNTITLED_WORKSPACE_NAME } from '@lumibook/env/constant';
 import { useI18n } from '@lumibook/i18n';
-import { CameraIcon } from '@blocksuite/icons/rc';
 import { LiveData, useLiveData, useService } from '@lumibook/infra';
 import type { KeyboardEvent } from 'react';
 import { useCallback, useEffect, useMemo, useState } from 'react';

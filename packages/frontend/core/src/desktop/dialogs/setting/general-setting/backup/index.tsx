@@ -1,4 +1,9 @@
 import {
+  DeleteIcon,
+  LocalWorkspaceIcon,
+  MoreVerticalIcon,
+} from '@blocksuite/icons/rc';
+import {
   IconButton,
   Loading,
   Menu,
@@ -17,13 +22,8 @@ import { useNavigateHelper } from '@lumibook/core/components/hooks/use-navigate-
 import { BackupService } from '@lumibook/core/modules/backup/services';
 import { toArrayBuffer } from '@lumibook/core/utils/array-buffer';
 import { i18nTime, useI18n } from '@lumibook/i18n';
-import track from '@lumibook/track';
-import {
-  DeleteIcon,
-  LocalWorkspaceIcon,
-  MoreVerticalIcon,
-} from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
+import track from '@lumibook/track';
 import bytes from 'bytes';
 import { useCallback, useEffect, useMemo, useState } from 'react';
 

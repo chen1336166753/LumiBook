@@ -1,6 +1,3 @@
-import type { TagMeta } from '@lumibook/core/components/page-list';
-import { UserFriendlyError } from '@lumibook/error';
-import { I18n } from '@lumibook/i18n';
 import { createSignalFromObservable } from '@blocksuite/affine/shared/utils';
 import type { DocMeta } from '@blocksuite/affine/store';
 import type {
@@ -9,8 +6,11 @@ import type {
 } from '@blocksuite/affine/widgets/linked-doc';
 import { unsafeHTML } from '@blocksuite/affine-shared/utils';
 import { CollectionsIcon, WarningIcon } from '@blocksuite/icons/lit';
-import { computed, signal } from '@preact/signals-core';
+import type { TagMeta } from '@lumibook/core/components/page-list';
+import { UserFriendlyError } from '@lumibook/error';
+import { I18n } from '@lumibook/i18n';
 import { Service } from '@lumibook/infra';
+import { computed, signal } from '@preact/signals-core';
 import { cssVarV2 } from '@toeverything/theme/v2';
 import Fuse, { type FuseResultMatch } from 'fuse.js';
 import { html } from 'lit';

@@ -1,7 +1,7 @@
+import { TodayIcon } from '@blocksuite/icons/rc';
 import { DocDisplayMetaService } from '@lumibook/core/modules/doc-display-meta';
 import { JournalService } from '@lumibook/core/modules/journal';
 import { WorkbenchService } from '@lumibook/core/modules/workbench';
-import { TodayIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
 import { useCallback } from 'react';
 

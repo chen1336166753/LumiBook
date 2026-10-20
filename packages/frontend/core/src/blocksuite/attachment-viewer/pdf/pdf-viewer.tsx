@@ -1,3 +1,8 @@
+import {
+  CollapseIcon,
+  ExpandIcon,
+  InformationIcon,
+} from '@blocksuite/icons/rc';
 import { IconButton, Menu, observeResize } from '@lumibook/component';
 import type { PDF, PDFMeta, PDFRendererState } from '@lumibook/core/modules/pdf';
 import { PDFService, PDFStatus } from '@lumibook/core/modules/pdf';
@@ -14,13 +19,8 @@ import {
   Scroller,
   ScrollSeekPlaceholder,
 } from '@lumibook/core/modules/pdf/views';
-import track from '@lumibook/track';
-import {
-  CollapseIcon,
-  ExpandIcon,
-  InformationIcon,
-} from '@blocksuite/icons/rc';
 import { LiveData, useLiveData, useService } from '@lumibook/infra';
+import track from '@lumibook/track';
 import { cssVar } from '@toeverything/theme';
 import clsx from 'clsx';
 import { nanoid } from 'nanoid';

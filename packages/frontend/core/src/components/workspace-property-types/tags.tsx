@@ -1,10 +1,10 @@
+import { TagsIcon } from '@blocksuite/icons/rc';
 import { type MenuRef, PropertyValue } from '@lumibook/component';
 import type { FilterParams } from '@lumibook/core/modules/collection-rules';
 import { type DocRecord, DocService } from '@lumibook/core/modules/doc';
 import { type Tag, TagService } from '@lumibook/core/modules/tag';
 import { WorkspaceService } from '@lumibook/core/modules/workspace';
 import { useI18n } from '@lumibook/i18n';
-import { TagsIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
 import { cssVarV2 } from '@toeverything/theme/v2';
 import { useCallback, useEffect, useMemo, useRef } from 'react';

@@ -1,3 +1,4 @@
+import { DeleteIcon, DoneIcon, TagsIcon } from '@blocksuite/icons/rc';
 import {
   Input,
   Menu,
@@ -7,7 +8,6 @@ import {
   Scrollable,
 } from '@lumibook/component';
 import { useI18n } from '@lumibook/i18n';
-import { DeleteIcon, DoneIcon, TagsIcon } from '@blocksuite/icons/rc';
 import type { MouseEventHandler, PropsWithChildren } from 'react';
 import { useCallback, useEffect, useMemo, useState } from 'react';
 

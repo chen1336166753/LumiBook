@@ -1,6 +1,6 @@
+import { DoneIcon } from '@blocksuite/icons/rc';
 import { Menu, MenuItem, MenuTrigger } from '@lumibook/component/ui/menu';
 import { type I18n, I18nService } from '@lumibook/core/modules/i18n';
-import { DoneIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
 import type { ReactElement } from 'react';
 import { memo } from 'react';

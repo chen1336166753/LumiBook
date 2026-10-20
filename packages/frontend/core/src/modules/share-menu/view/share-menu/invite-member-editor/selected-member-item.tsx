@@ -1,5 +1,5 @@
-import type { Member } from '@lumibook/core/modules/permissions';
 import { CloseIcon } from '@blocksuite/icons/rc';
+import type { Member } from '@lumibook/core/modules/permissions';
 import { type MouseEventHandler, useCallback } from 'react';
 
 import * as styles from './selected-member-item.css';

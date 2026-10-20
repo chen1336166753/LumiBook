@@ -1,4 +1,10 @@
 import {
+  DeleteIcon,
+  FolderIcon,
+  PlusIcon,
+  SplitViewIcon,
+} from '@blocksuite/icons/rc';
+import {
   IconButton,
   MenuItem,
   MenuSeparator,
@@ -16,14 +22,8 @@ import { TagService } from '@lumibook/core/modules/tag';
 import { WorkbenchService } from '@lumibook/core/modules/workbench';
 import { WorkspaceService } from '@lumibook/core/modules/workspace';
 import { useI18n } from '@lumibook/i18n';
-import { track } from '@lumibook/track';
-import {
-  DeleteIcon,
-  FolderIcon,
-  PlusIcon,
-  SplitViewIcon,
-} from '@blocksuite/icons/rc';
 import { useLiveData, useServices } from '@lumibook/infra';
+import { track } from '@lumibook/track';
 import { useCallback, useMemo } from 'react';
 
 import { MobileNavigationMenuItems } from '../../menu-host';

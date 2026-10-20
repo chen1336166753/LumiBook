@@ -14,12 +14,12 @@ import graphqlUploadExpress from 'graphql-upload/graphqlUploadExpress.mjs';
 import supertest from 'supertest';
 
 import {
-  LumiBookLogger,
   CacheInterceptor,
   CloudThrottlerGuard,
   ConfigFactory,
   EventBus,
   GlobalExceptionFilter,
+  LumiBookLogger,
   OneMB,
 } from '../../base';
 import { OVERRIDE_CONFIG_TOKEN } from '../../base/config/factory';

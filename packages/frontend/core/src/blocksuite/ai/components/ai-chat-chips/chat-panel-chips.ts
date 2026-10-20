@@ -1,10 +1,10 @@
-import type { TagMeta } from '@lumibook/core/components/page-list';
 import { createLitPortal } from '@blocksuite/affine/components/portal';
 import { SignalWatcher, WithDisposable } from '@blocksuite/affine/global/lit';
 import { unsafeCSSVarV2 } from '@blocksuite/affine/shared/theme';
 import { ShadowlessElement } from '@blocksuite/affine/std';
 import { MoreVerticalIcon } from '@blocksuite/icons/lit';
 import { flip, offset } from '@floating-ui/dom';
+import type { TagMeta } from '@lumibook/core/components/page-list';
 import { computed, type Signal, signal } from '@preact/signals-core';
 import { css, html, nothing, type PropertyValues } from 'lit';
 import { property, query, state } from 'lit/decorators.js';

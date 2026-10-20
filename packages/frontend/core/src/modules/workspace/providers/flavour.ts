@@ -1,3 +1,5 @@
+import type { Workspace as BSWorkspace } from '@blocksuite/affine/store';
+import { createIdentifier, type LiveData } from '@lumibook/infra';
 import type {
   BlobSource,
   BlobStorage,
@@ -5,8 +7,6 @@ import type {
   ListedBlobRecord,
 } from '@lumibook/nbstore';
 import type { WorkerInitOptions } from '@lumibook/nbstore/worker/client';
-import type { Workspace as BSWorkspace } from '@blocksuite/affine/store';
-import { createIdentifier, type LiveData } from '@lumibook/infra';
 
 import type { WorkspaceProfileInfo } from '../entities/profile';
 import type { Workspace } from '../entities/workspace';

@@ -1,6 +1,3 @@
-import { Divider, Loading, toast } from '@lumibook/component';
-import { Button, IconButton } from '@lumibook/component/ui/button';
-import { useAsyncCallback } from '@lumibook/core/components/hooks/affine-async-hooks';
 import type { ImageBlockModel } from '@blocksuite/affine/model';
 import type { BlockModel, Workspace } from '@blocksuite/affine/store';
 import {
@@ -14,6 +11,9 @@ import {
   PlusIcon,
   ViewBarIcon,
 } from '@blocksuite/icons/rc';
+import { Divider, Loading, toast } from '@lumibook/component';
+import { Button, IconButton } from '@lumibook/component/ui/button';
+import { useAsyncCallback } from '@lumibook/core/components/hooks/affine-async-hooks';
 import { useService } from '@lumibook/infra';
 import clsx from 'clsx';
 import type { ImgHTMLAttributes, ReactElement } from 'react';

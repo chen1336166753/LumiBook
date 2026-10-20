@@ -1,7 +1,7 @@
+import { DualLinkIcon } from '@blocksuite/icons/rc';
 import { Button } from '@lumibook/component';
 import { MeetingSettingsService } from '@lumibook/core/modules/media/services/meeting-settings';
 import { Trans, useI18n } from '@lumibook/i18n';
-import { DualLinkIcon } from '@blocksuite/icons/rc';
 import { useService } from '@lumibook/infra';
 import { useTheme } from 'next-themes';
 import { useCallback } from 'react';

@@ -1,7 +1,7 @@
+import { PlusIcon } from '@blocksuite/icons/rc';
 import { IconButton } from '@lumibook/component';
 import { ExplorerNavigation } from '@lumibook/core/components/explorer/header/navigation';
 import { Header } from '@lumibook/core/components/pure/header';
-import { PlusIcon } from '@blocksuite/icons/rc';
 import clsx from 'clsx';
 
 import * as styles from './header.css';

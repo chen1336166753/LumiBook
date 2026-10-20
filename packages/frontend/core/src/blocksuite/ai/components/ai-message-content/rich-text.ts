@@ -1,8 +1,8 @@
-import type { FeatureFlagService } from '@lumibook/core/modules/feature-flag';
 import { WithDisposable } from '@blocksuite/affine/global/lit';
 import type { ColorScheme } from '@blocksuite/affine/model';
 import { ShadowlessElement } from '@blocksuite/affine/std';
 import type { ExtensionType } from '@blocksuite/affine/store';
+import type { FeatureFlagService } from '@lumibook/core/modules/feature-flag';
 import type { Signal } from '@preact/signals-core';
 import { html } from 'lit';
 import { property } from 'lit/decorators.js';

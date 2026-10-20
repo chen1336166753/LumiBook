@@ -1,5 +1,5 @@
-import { useI18n } from '@lumibook/i18n';
 import { SignOutIcon } from '@blocksuite/icons/rc';
+import { useI18n } from '@lumibook/i18n';
 import type { JSX } from 'react';
 
 import { Avatar } from '../../ui/avatar';

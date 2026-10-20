@@ -1,8 +1,8 @@
+import { Entity } from '@lumibook/infra';
 import type {
   StoreClient,
   WorkerInitOptions,
 } from '@lumibook/nbstore/worker/client';
-import { Entity } from '@lumibook/infra';
 
 import type { FeatureFlagService } from '../../feature-flag';
 import type { NbstoreService } from '../../storage';

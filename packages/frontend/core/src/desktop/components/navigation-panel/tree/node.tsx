@@ -1,4 +1,9 @@
 import {
+  ArrowDownSmallIcon,
+  EditIcon,
+  MoreHorizontalIcon,
+} from '@blocksuite/icons/rc';
+import {
   ContextMenu,
   DropIndicator,
   type DropTargetDropEvent,
@@ -21,13 +26,8 @@ import type { DocPermissionActions } from '@lumibook/core/modules/permissions';
 import { WorkbenchLink } from '@lumibook/core/modules/workbench';
 import type { AffineDNDData } from '@lumibook/core/types/dnd';
 import { useI18n } from '@lumibook/i18n';
-import {
-  ArrowDownSmallIcon,
-  EditIcon,
-  MoreHorizontalIcon,
-} from '@blocksuite/icons/rc';
-import * as Collapsible from '@radix-ui/react-collapsible';
 import { useLiveData, useService } from '@lumibook/infra';
+import * as Collapsible from '@radix-ui/react-collapsible';
 import { assignInlineVars } from '@vanilla-extract/dynamic';
 import clsx from 'clsx';
 import type { To } from 'history';

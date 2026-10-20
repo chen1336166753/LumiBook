@@ -1,5 +1,6 @@
 import { randomUUID } from 'node:crypto';
 
+import { faker } from '@faker-js/faker';
 import {
   acceptInviteByInviteIdMutation,
   approveWorkspaceTeamMemberMutation,
@@ -13,7 +14,6 @@ import {
   WorkspaceInviteLinkExpireTime,
   WorkspaceMemberStatus,
 } from '@lumibook/graphql';
-import { faker } from '@faker-js/faker';
 import {
   WorkspaceMemberSource,
   WorkspaceMemberStatus as PrismaWorkspaceMemberStatus,

@@ -8,6 +8,7 @@ import {
   WorkspacesService,
 } from '@lumibook/core/modules/workspace';
 import { ServerDeploymentType } from '@lumibook/graphql';
+import * as Infra from '@lumibook/infra';
 import {
   cleanup,
   fireEvent,
@@ -15,7 +16,6 @@ import {
   screen,
   waitFor,
 } from '@testing-library/react';
-import * as Infra from '@lumibook/infra';
 import { afterEach, describe, expect, test, vi } from 'vitest';
 
 import { ShareImportController } from './index';

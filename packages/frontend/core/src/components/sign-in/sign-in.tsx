@@ -1,3 +1,8 @@
+import {
+  ArrowRightBigIcon,
+  LocalWorkspaceIcon,
+  PublishIcon,
+} from '@blocksuite/icons/rc';
 import { Button, notify } from '@lumibook/component';
 import {
   AuthContainer,
@@ -16,11 +21,6 @@ import {
 import type { AuthSessionStatus } from '@lumibook/core/modules/cloud/entities/session';
 import { ServerDeploymentType } from '@lumibook/graphql';
 import { Trans, useI18n } from '@lumibook/i18n';
-import {
-  ArrowRightBigIcon,
-  LocalWorkspaceIcon,
-  PublishIcon,
-} from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
 import { cssVar } from '@toeverything/theme';
 import {

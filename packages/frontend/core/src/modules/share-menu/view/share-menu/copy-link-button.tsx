@@ -1,3 +1,5 @@
+import type { DocMode } from '@blocksuite/affine/model';
+import { BlockIcon, EdgelessIcon, PageIcon } from '@blocksuite/icons/rc';
 import { Button, Menu, MenuItem, MenuTrigger } from '@lumibook/component';
 import {
   getSelectedNodes,
@@ -6,8 +8,6 @@ import {
 import { getDefaultShareMode } from '@lumibook/core/components/hooks/affine/use-share-url.utils';
 import { EditorService } from '@lumibook/core/modules/editor';
 import { useI18n } from '@lumibook/i18n';
-import type { DocMode } from '@blocksuite/affine/model';
-import { BlockIcon, EdgelessIcon, PageIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
 import clsx from 'clsx';
 import { useCallback, useMemo } from 'react';

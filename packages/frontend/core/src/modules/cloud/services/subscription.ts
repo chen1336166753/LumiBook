@@ -1,6 +1,6 @@
 import { type CreateCheckoutSessionInput } from '@lumibook/graphql';
-import { tracker } from '@lumibook/track';
 import { OnEvent, Service } from '@lumibook/infra';
+import { tracker } from '@lumibook/track';
 
 import { Subscription } from '../entities/subscription';
 import { SubscriptionPrices } from '../entities/subscription-prices';

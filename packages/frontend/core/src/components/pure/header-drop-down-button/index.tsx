@@ -1,6 +1,6 @@
+import { MoreHorizontalIcon } from '@blocksuite/icons/rc';
 import type { IconButtonProps } from '@lumibook/component/ui/button';
 import { IconButton } from '@lumibook/component/ui/button';
-import { MoreHorizontalIcon } from '@blocksuite/icons/rc';
 import { forwardRef } from 'react';
 
 import { headerMenuTrigger } from './styles.css';

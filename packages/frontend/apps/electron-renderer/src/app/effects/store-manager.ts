@@ -1,9 +1,9 @@
 import { NbstoreProvider } from '@lumibook/core/modules/storage';
 import { apis } from '@lumibook/electron-api';
-import { StoreManagerClient } from '@lumibook/nbstore/worker/client';
-import { setTelemetryTransport } from '@lumibook/track';
 import type { Framework } from '@lumibook/infra';
 import { OpClient } from '@lumibook/infra/op';
+import { StoreManagerClient } from '@lumibook/nbstore/worker/client';
+import { setTelemetryTransport } from '@lumibook/track';
 import { v4 as uuid } from 'uuid';
 
 function createStoreManagerClient() {

@@ -1,9 +1,9 @@
+import { ViewLayersIcon } from '@blocksuite/icons/rc';
 import { usePromptModal } from '@lumibook/component';
 import { useNavigateHelper } from '@lumibook/core/components/hooks/use-navigate-helper';
 import { CollectionService } from '@lumibook/core/modules/collection';
 import { WorkspaceService } from '@lumibook/core/modules/workspace';
 import { useI18n } from '@lumibook/i18n';
-import { ViewLayersIcon } from '@blocksuite/icons/rc';
 import { useService } from '@lumibook/infra';
 import { useCallback } from 'react';
 

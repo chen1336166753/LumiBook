@@ -7,8 +7,8 @@ import {
 } from '@lumibook/core/modules/cloud';
 import { SubscriptionPlan } from '@lumibook/graphql';
 import { useI18n } from '@lumibook/i18n';
-import { track } from '@lumibook/track';
 import { useLiveData, useService } from '@lumibook/infra';
+import { track } from '@lumibook/track';
 import { cssVar } from '@toeverything/theme';
 import { useCallback, useEffect } from 'react';
 

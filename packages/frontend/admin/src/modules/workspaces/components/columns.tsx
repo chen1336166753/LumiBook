@@ -1,9 +1,9 @@
+import { AccountIcon, LinkIcon } from '@blocksuite/icons/rc';
 import {
   Avatar,
   AvatarFallback,
   AvatarImage,
 } from '@lumibook/admin/components/ui/avatar';
-import { AccountIcon, LinkIcon } from '@blocksuite/icons/rc';
 import type { ColumnDef } from '@tanstack/react-table';
 import { useMemo } from 'react';
 

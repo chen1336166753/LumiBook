@@ -11,8 +11,8 @@ import { WorkbenchService } from '@lumibook/core/modules/workbench';
 import { WorkspaceService } from '@lumibook/core/modules/workspace';
 import { inferOpenMode } from '@lumibook/core/utils';
 import { useI18n } from '@lumibook/i18n';
-import track from '@lumibook/track';
 import { useService } from '@lumibook/infra';
+import track from '@lumibook/track';
 import { useCallback } from 'react';
 
 import * as styles from './all-page-header.css';

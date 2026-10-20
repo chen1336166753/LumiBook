@@ -1,3 +1,5 @@
+import { getAttachmentFileIcon } from '@blocksuite/affine/components/icons';
+import { DeleteIcon } from '@blocksuite/icons/rc';
 import {
   Button,
   Checkbox,
@@ -8,11 +10,9 @@ import {
 import { Pagination } from '@lumibook/component/setting-components';
 import { BlobManagementService } from '@lumibook/core/modules/blob-management/services';
 import { useI18n } from '@lumibook/i18n';
+import { useLiveData, useService } from '@lumibook/infra';
 import type { ListedBlobRecord } from '@lumibook/nbstore';
 import track from '@lumibook/track';
-import { getAttachmentFileIcon } from '@blocksuite/affine/components/icons';
-import { DeleteIcon } from '@blocksuite/icons/rc';
-import { useLiveData, useService } from '@lumibook/infra';
 import bytes from 'bytes';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 

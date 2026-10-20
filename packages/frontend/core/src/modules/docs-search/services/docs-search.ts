@@ -1,10 +1,10 @@
-import { toDocSearchParams } from '@lumibook/core/modules/navigation';
-import type { IndexerPreferOptions, IndexerSyncState } from '@lumibook/nbstore';
 import {
   type ReferenceParams,
   ReferenceParamsSchema,
 } from '@blocksuite/affine/model';
+import { toDocSearchParams } from '@lumibook/core/modules/navigation';
 import { fromPromise, LiveData, Service } from '@lumibook/infra';
+import type { IndexerPreferOptions, IndexerSyncState } from '@lumibook/nbstore';
 import { isEmpty, omit } from 'lodash-es';
 import {
   distinctUntilChanged,

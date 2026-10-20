@@ -1,6 +1,6 @@
+import { CloseIcon, PropertyIcon } from '@blocksuite/icons/rc';
 import { IconButton } from '@lumibook/component/ui/button';
 import { Menu, MenuItem } from '@lumibook/component/ui/menu';
-import { CloseIcon, PropertyIcon } from '@blocksuite/icons/rc';
 import { useState } from 'react';
 
 import * as styles from './index.css';

@@ -1,7 +1,7 @@
+import { DateTimeIcon } from '@blocksuite/icons/rc';
 import { PropertyName, PropertyRoot, PropertyValue } from '@lumibook/component';
 import { DocsService } from '@lumibook/core/modules/doc';
 import { i18nTime, useI18n } from '@lumibook/i18n';
-import { DateTimeIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
 import clsx from 'clsx';
 import type { ConfigType } from 'dayjs';

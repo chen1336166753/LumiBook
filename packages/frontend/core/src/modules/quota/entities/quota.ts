@@ -1,9 +1,9 @@
 import { DebugLogger } from '@lumibook/debug';
+import { Entity, LiveData } from '@lumibook/infra';
 import type {
   RealtimeTopicEventOf,
   WorkspaceQuotaStateSnapshot,
 } from '@lumibook/realtime';
-import { Entity, LiveData } from '@lumibook/infra';
 import { cssVarV2 } from '@toeverything/theme/v2';
 import bytes from 'bytes';
 

@@ -1,9 +1,9 @@
+import { TodayIcon } from '@blocksuite/icons/rc';
 import { MenuLinkItem } from '@lumibook/core/modules/app-sidebar/views';
 import { DocDisplayMetaService } from '@lumibook/core/modules/doc-display-meta';
 import { JournalService } from '@lumibook/core/modules/journal';
 import { WorkbenchService } from '@lumibook/core/modules/workbench';
 import { useI18n } from '@lumibook/i18n';
-import { TodayIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
 
 export const AppSidebarJournalButton = () => {

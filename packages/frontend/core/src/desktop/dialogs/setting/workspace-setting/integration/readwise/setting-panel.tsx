@@ -1,3 +1,4 @@
+import { PlusIcon } from '@blocksuite/icons/rc';
 import { Button } from '@lumibook/component';
 import { WorkspaceTagsInlineEditor } from '@lumibook/core/components/tags';
 import {
@@ -7,7 +8,6 @@ import {
 import type { ReadwiseConfig } from '@lumibook/core/modules/integration/type';
 import { TagService } from '@lumibook/core/modules/tag';
 import { useI18n } from '@lumibook/i18n';
-import { PlusIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
 import { type ReactNode, useCallback, useMemo, useState } from 'react';
 

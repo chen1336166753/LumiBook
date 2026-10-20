@@ -1,9 +1,9 @@
+import type { LinkedMenuGroup } from '@blocksuite/affine/widgets/linked-doc';
 import type {
   SearchCollectionMenuAction,
   SearchDocMenuAction,
   SearchTagMenuAction,
 } from '@lumibook/core/modules/search-menu/services';
-import type { LinkedMenuGroup } from '@blocksuite/affine/widgets/linked-doc';
 
 export interface SearchMenuConfig {
   addContextAvailable: boolean;

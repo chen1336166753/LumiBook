@@ -1,4 +1,3 @@
-import { Avatar, uniReactRoot } from '@lumibook/component';
 import {
   type CellRenderProps,
   createIcon,
@@ -10,6 +9,7 @@ import {
   type UserService,
 } from '@blocksuite/affine/shared/services';
 import { css } from '@emotion/css';
+import { Avatar, uniReactRoot } from '@lumibook/component';
 import {
   forwardRef,
   type ForwardRefRenderFunction,

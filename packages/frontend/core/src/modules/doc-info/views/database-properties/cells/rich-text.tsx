@@ -1,10 +1,10 @@
-import { PropertyValue } from '@lumibook/component';
-import { ConfigModal } from '@lumibook/core/components/mobile';
 import { DefaultInlineManagerExtension } from '@blocksuite/affine/inlines/preset';
 import { RichText } from '@blocksuite/affine/rich-text';
 import type { BlockStdScope } from '@blocksuite/affine/std';
 import type { Store } from '@blocksuite/affine/store';
 import { TextIcon } from '@blocksuite/icons/rc';
+import { PropertyValue } from '@lumibook/component';
+import { ConfigModal } from '@lumibook/core/components/mobile';
 import { type LiveData, useLiveData } from '@lumibook/infra';
 import { type CSSProperties, useEffect, useRef, useState } from 'react';
 import type * as Y from 'yjs';

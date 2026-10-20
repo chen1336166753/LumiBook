@@ -1,13 +1,3 @@
-import { notify } from '@lumibook/component';
-import {
-  pushGlobalLoadingEventAtom,
-  resolveGlobalLoadingEventAtom,
-} from '@lumibook/component/global-loading';
-import type { AffineEditorContainer } from '@lumibook/core/blocksuite/block-suite-editor/blocksuite-editor';
-import { EditorService } from '@lumibook/core/modules/editor';
-import { getLumiBookWorkspaceSchema } from '@lumibook/core/modules/workspace/global-schema';
-import { useI18n } from '@lumibook/i18n';
-import { track } from '@lumibook/track';
 import { ExportManager } from '@blocksuite/affine/blocks/surface';
 import {
   docLinkBaseURLMiddleware,
@@ -27,7 +17,17 @@ import {
   PdfTransformer,
   ZipTransformer,
 } from '@blocksuite/affine/widgets/linked-doc';
+import { notify } from '@lumibook/component';
+import {
+  pushGlobalLoadingEventAtom,
+  resolveGlobalLoadingEventAtom,
+} from '@lumibook/component/global-loading';
+import type { AffineEditorContainer } from '@lumibook/core/blocksuite/block-suite-editor/blocksuite-editor';
+import { EditorService } from '@lumibook/core/modules/editor';
+import { getLumiBookWorkspaceSchema } from '@lumibook/core/modules/workspace/global-schema';
+import { useI18n } from '@lumibook/i18n';
 import { useLiveData, useService } from '@lumibook/infra';
+import { track } from '@lumibook/track';
 import { useSetAtom } from 'jotai';
 import { nanoid } from 'nanoid';
 

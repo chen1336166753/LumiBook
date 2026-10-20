@@ -1,4 +1,3 @@
-import { CopilotTool } from '@lumibook/core/blocksuite/ai/tool/copilot-tool';
 import { EdgelessLegacySlotIdentifier } from '@blocksuite/affine/blocks/surface';
 import {
   Bound,
@@ -20,6 +19,7 @@ import {
   shift,
   size,
 } from '@floating-ui/dom';
+import { CopilotTool } from '@lumibook/core/blocksuite/ai/tool/copilot-tool';
 import { effect } from '@preact/signals-core';
 import { css, html, nothing } from 'lit';
 import { query, state } from 'lit/decorators.js';

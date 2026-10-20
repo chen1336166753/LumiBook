@@ -1,6 +1,6 @@
-import { useAutoFocus } from '@lumibook/component';
 import { getFigmaSquircleSvgPath } from '@blocksuite/affine/shared/utils';
 import { SearchIcon } from '@blocksuite/icons/rc';
+import { useAutoFocus } from '@lumibook/component';
 import clsx from 'clsx';
 import { debounce } from 'lodash-es';
 import {

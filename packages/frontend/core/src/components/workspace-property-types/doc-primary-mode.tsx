@@ -1,3 +1,5 @@
+import type { DocMode } from '@blocksuite/affine/model';
+import { EdgelessIcon, PageIcon } from '@blocksuite/icons/rc';
 import {
   MenuItem,
   notify,
@@ -7,8 +9,6 @@ import {
 import type { FilterParams } from '@lumibook/core/modules/collection-rules';
 import { DocService } from '@lumibook/core/modules/doc';
 import { useI18n } from '@lumibook/i18n';
-import type { DocMode } from '@blocksuite/affine/model';
-import { EdgelessIcon, PageIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
 import { useCallback, useMemo } from 'react';
 

@@ -1,9 +1,9 @@
-import { getFeatureFlagSyncer } from '@lumibook/core/blocksuite/store-extensions/feature-flag/feature-flag-syncer';
-import { FeatureFlagService } from '@lumibook/core/modules/feature-flag';
 import {
   type StoreExtensionContext,
   StoreExtensionProvider,
 } from '@blocksuite/affine/ext-loader';
+import { getFeatureFlagSyncer } from '@lumibook/core/blocksuite/store-extensions/feature-flag/feature-flag-syncer';
+import { FeatureFlagService } from '@lumibook/core/modules/feature-flag';
 import { z } from 'zod';
 
 const optionsSchema = z.object({

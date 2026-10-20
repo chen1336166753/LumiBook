@@ -1,3 +1,19 @@
+import type { Store } from '@blocksuite/affine/store';
+import {
+  DuplicateIcon,
+  EdgelessIcon,
+  EditIcon,
+  FrameIcon,
+  HistoryIcon,
+  ImportIcon,
+  InformationIcon,
+  LocalWorkspaceIcon,
+  OpenInNewIcon,
+  PageIcon,
+  ShareIcon,
+  SplitViewIcon,
+  TocIcon,
+} from '@blocksuite/icons/rc';
 import { notify, toast, useConfirmModal } from '@lumibook/component';
 import {
   Menu,
@@ -22,28 +38,12 @@ import { WorkbenchService } from '@lumibook/core/modules/workbench';
 import { ViewService } from '@lumibook/core/modules/workbench/services/view';
 import { WorkspaceService } from '@lumibook/core/modules/workspace';
 import { useI18n } from '@lumibook/i18n';
-import { track } from '@lumibook/track';
-import type { Store } from '@blocksuite/affine/store';
-import {
-  DuplicateIcon,
-  EdgelessIcon,
-  EditIcon,
-  FrameIcon,
-  HistoryIcon,
-  ImportIcon,
-  InformationIcon,
-  LocalWorkspaceIcon,
-  OpenInNewIcon,
-  PageIcon,
-  ShareIcon,
-  SplitViewIcon,
-  TocIcon,
-} from '@blocksuite/icons/rc';
 import {
   useLiveData,
   useService,
   useServiceOptional,
 } from '@lumibook/infra';
+import { track } from '@lumibook/track';
 import { useCallback, useState } from 'react';
 
 import { HeaderDropDownButton } from '../../../components/pure/header-drop-down-button';

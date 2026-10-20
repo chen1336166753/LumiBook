@@ -1,11 +1,11 @@
 import { ServerDeploymentType } from '@lumibook/graphql';
+import { Entity } from '@lumibook/infra';
 import {
   IndexedDBDocStorage,
   IndexedDBDocSyncStorage,
 } from '@lumibook/nbstore/idb';
 import { SqliteDocStorage, SqliteDocSyncStorage } from '@lumibook/nbstore/sqlite';
 import type { StoreClient } from '@lumibook/nbstore/worker/client';
-import { Entity } from '@lumibook/infra';
 
 import type { ServerService } from '../../cloud';
 import { assertSupportedServerVersion } from '../../cloud/stores/server-config';

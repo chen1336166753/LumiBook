@@ -1,8 +1,8 @@
-import { getStoreManager } from '@lumibook/core/blocksuite/manager/store';
-import { createBlockStdScope } from '@lumibook/core/blocksuite/manager/view';
 import { EmbedOptionProvider } from '@blocksuite/affine/shared/services';
 import { Text } from '@blocksuite/affine/store';
 import { MarkdownTransformer } from '@blocksuite/affine/widgets/linked-doc';
+import { getStoreManager } from '@lumibook/core/blocksuite/manager/store';
+import { createBlockStdScope } from '@lumibook/core/blocksuite/manager/view';
 import { Service } from '@lumibook/infra';
 
 import { CollectionService } from '../../collection';

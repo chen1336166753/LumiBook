@@ -1,3 +1,4 @@
+import { InformationFillDuotoneIcon } from '@blocksuite/icons/rc';
 import {
   Button,
   Checkbox,
@@ -10,7 +11,6 @@ import {
 import { IntegrationService } from '@lumibook/core/modules/integration';
 import type { ReadwiseHighlight } from '@lumibook/core/modules/integration/type';
 import { i18nTime, Trans, useI18n } from '@lumibook/i18n';
-import { InformationFillDuotoneIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
 import clsx from 'clsx';
 import {

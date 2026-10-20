@@ -1,10 +1,10 @@
 import 'fake-indexeddb/auto';
 
-import { getStoreManager } from '@lumibook/core/blocksuite/manager/store';
-import { getLumiBookWorkspaceSchema } from '@lumibook/core/modules/workspace';
 import type { DocSnapshot } from '@blocksuite/affine/store';
 import { TestWorkspace } from '@blocksuite/affine/store/test';
 import type { ImportBatch } from '@blocksuite/affine/widgets/linked-doc';
+import { getStoreManager } from '@lumibook/core/blocksuite/manager/store';
+import { getLumiBookWorkspaceSchema } from '@lumibook/core/modules/workspace';
 import { describe, expect, test, vi } from 'vitest';
 
 import { ImportCommitService } from './commit-service';

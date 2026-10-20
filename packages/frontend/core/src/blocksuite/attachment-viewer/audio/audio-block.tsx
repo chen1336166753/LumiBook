@@ -1,3 +1,5 @@
+import type { AttachmentBlockModel } from '@blocksuite/affine/model';
+import { ResetIcon } from '@blocksuite/icons/rc';
 import {
   AnimatedTranscribeIcon,
   Button,
@@ -14,10 +16,8 @@ import { GlobalDialogService } from '@lumibook/core/modules/dialogs';
 import type { AudioAttachmentBlock } from '@lumibook/core/modules/media/entities/audio-attachment-block';
 import { AudioAttachmentService } from '@lumibook/core/modules/media/services/audio-attachment';
 import { Trans, useI18n } from '@lumibook/i18n';
-import track from '@lumibook/track';
-import type { AttachmentBlockModel } from '@blocksuite/affine/model';
-import { ResetIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
+import track from '@lumibook/track';
 import bytes from 'bytes';
 import { useCallback, useEffect, useMemo, useState } from 'react';
 

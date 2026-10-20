@@ -1,5 +1,5 @@
-import type { ShareInboxProvider } from '@lumibook/core/mobile/components/share-import-controller';
 import { Capacitor, registerPlugin } from '@capacitor/core';
+import type { ShareInboxProvider } from '@lumibook/core/mobile/components/share-import-controller';
 
 import type { ShareInboxPlugin } from './definitions';
 

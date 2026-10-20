@@ -1,6 +1,6 @@
+import { ArrowRightSmallIcon } from '@blocksuite/icons/rc';
 import type { QuickSearchItem } from '@lumibook/core/modules/quicksearch';
 import { WorkbenchLink } from '@lumibook/core/modules/workbench';
-import { ArrowRightSmallIcon } from '@blocksuite/icons/rc';
 
 import { SearchResLabel } from './search-res-label';
 import * as styles from './universal-item.css';

@@ -1,3 +1,4 @@
+import { CopyIcon, FileIcon } from '@blocksuite/icons/rc';
 import { Button, Modal, notify, useConfirmModal } from '@lumibook/component';
 import { useAsyncCallback } from '@lumibook/core/components/hooks/affine-async-hooks';
 import { Upload } from '@lumibook/core/components/pure/file-upload';
@@ -11,7 +12,6 @@ import { WorkspaceService } from '@lumibook/core/modules/workspace';
 import { copyTextToClipboard } from '@lumibook/core/utils/clipboard';
 import { UserFriendlyError } from '@lumibook/error';
 import { Trans, useI18n } from '@lumibook/i18n';
-import { CopyIcon, FileIcon } from '@blocksuite/icons/rc';
 import { useService } from '@lumibook/infra';
 import { useCallback, useEffect, useState } from 'react';
 

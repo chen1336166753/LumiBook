@@ -1,5 +1,5 @@
-import { NavigationPanelService } from '@lumibook/core/modules/navigation-panel';
 import { ToggleRightIcon } from '@blocksuite/icons/rc';
+import { NavigationPanelService } from '@lumibook/core/modules/navigation-panel';
 import { useLiveData, useService } from '@lumibook/infra';
 import clsx from 'clsx';
 import {

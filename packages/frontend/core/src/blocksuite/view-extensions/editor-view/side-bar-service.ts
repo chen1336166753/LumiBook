@@ -1,5 +1,5 @@
-import { WorkbenchService } from '@lumibook/core/modules/workbench';
 import { SidebarExtension } from '@blocksuite/affine/shared/services';
+import { WorkbenchService } from '@lumibook/core/modules/workbench';
 import type { FrameworkProvider } from '@lumibook/infra';
 
 export function patchSideBarService(framework: FrameworkProvider) {

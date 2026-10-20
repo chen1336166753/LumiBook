@@ -1,5 +1,5 @@
-import { channelToScheme } from '@lumibook/core/utils';
 import type { ReferenceParams } from '@blocksuite/affine/model';
+import { channelToScheme } from '@lumibook/core/utils';
 import { isNil, pick, pickBy } from 'lodash-es';
 import type { ParsedQuery, ParseOptions } from 'query-string';
 import queryString from 'query-string';

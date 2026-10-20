@@ -3,8 +3,8 @@ import { AuthService, ServerService } from '@lumibook/core/modules/cloud';
 import { WorkspacesService } from '@lumibook/core/modules/workspace';
 import { UserFriendlyError } from '@lumibook/error';
 import { Trans, useI18n } from '@lumibook/i18n';
-import { track } from '@lumibook/track';
 import { LiveData, useLiveData, useService } from '@lumibook/infra';
+import { track } from '@lumibook/track';
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import { combineLatest, map, of, switchMap } from 'rxjs';
 

@@ -1,3 +1,6 @@
+import type { AttachmentBlockModel } from '@blocksuite/affine/model';
+import type { Store } from '@blocksuite/affine/store';
+import type { BlobEngine } from '@blocksuite/affine/sync';
 import type { DocProps } from '@lumibook/core/blocksuite/initialization';
 import { DocsService } from '@lumibook/core/modules/doc';
 import { AudioAttachmentService } from '@lumibook/core/modules/media/services/audio-attachment';
@@ -5,11 +8,8 @@ import { WorkbenchService } from '@lumibook/core/modules/workbench';
 import { DebugLogger } from '@lumibook/debug';
 import { apis, events } from '@lumibook/electron-api';
 import { i18nTime } from '@lumibook/i18n';
-import track from '@lumibook/track';
-import type { AttachmentBlockModel } from '@blocksuite/affine/model';
-import type { Store } from '@blocksuite/affine/store';
-import type { BlobEngine } from '@blocksuite/affine/sync';
 import type { FrameworkProvider } from '@lumibook/infra';
+import track from '@lumibook/track';
 
 import { getCurrentWorkspace, isAiEnabled } from './utils';
 

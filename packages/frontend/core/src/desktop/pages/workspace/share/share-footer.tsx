@@ -1,5 +1,5 @@
-import { useI18n } from '@lumibook/i18n';
 import { ArrowRightBigIcon } from '@blocksuite/icons/rc';
+import { useI18n } from '@lumibook/i18n';
 
 import * as styles from './share-footer.css';
 

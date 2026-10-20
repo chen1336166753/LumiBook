@@ -1,7 +1,7 @@
-import { getLumiBookWorkspaceSchema } from '@lumibook/core/modules/workspace';
-import { WorkspaceImpl } from '@lumibook/core/modules/workspace/impls/workspace';
 import type { DocSnapshot, Store } from '@blocksuite/affine/store';
 import { Transformer } from '@blocksuite/affine/store';
+import { getLumiBookWorkspaceSchema } from '@lumibook/core/modules/workspace';
+import { WorkspaceImpl } from '@lumibook/core/modules/workspace/impls/workspace';
 import { Doc as YDoc } from 'yjs';
 export const getCollection = (() => {
   let collection: WorkspaceImpl | null = null;

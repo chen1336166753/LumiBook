@@ -1,3 +1,4 @@
+import { Logo1Icon } from '@blocksuite/icons/rc';
 import { ScrollableContainer } from '@lumibook/component';
 import { MenuItem } from '@lumibook/component/ui/menu';
 import { AuthService, DefaultServerService } from '@lumibook/core/modules/cloud';
@@ -5,9 +6,8 @@ import { GlobalDialogService } from '@lumibook/core/modules/dialogs';
 import { type WorkspaceMetadata } from '@lumibook/core/modules/workspace';
 import { ServerFeature } from '@lumibook/graphql';
 import { useI18n } from '@lumibook/i18n';
-import { track } from '@lumibook/track';
-import { Logo1Icon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
+import { track } from '@lumibook/track';
 import { useCallback } from 'react';
 
 import { AddWorkspace } from './add-workspace';

@@ -1,3 +1,4 @@
+import { MoreHorizontalIcon } from '@blocksuite/icons/rc';
 import {
   Button,
   DragHandle,
@@ -7,7 +8,6 @@ import {
   Switch,
 } from '@lumibook/component';
 import { useI18n } from '@lumibook/i18n';
-import { MoreHorizontalIcon } from '@blocksuite/icons/rc';
 import { useState } from 'react';
 
 import * as styles from './index.css';

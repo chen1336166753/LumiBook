@@ -1,5 +1,5 @@
-import { getStoreManager } from '@lumibook/core/blocksuite/manager/store';
 import { MarkdownTransformer } from '@blocksuite/affine/widgets/linked-doc';
+import { getStoreManager } from '@lumibook/core/blocksuite/manager/store';
 import { Entity } from '@lumibook/infra';
 
 import type { TagService } from '../../tag';

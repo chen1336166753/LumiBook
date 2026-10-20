@@ -1,7 +1,7 @@
+import { DoneIcon } from '@blocksuite/icons/rc';
 import { Button } from '@lumibook/component';
 import { WorkspacePermissionService } from '@lumibook/core/modules/permissions';
 import { useI18n } from '@lumibook/i18n';
-import { DoneIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
 import { useCallback } from 'react';
 

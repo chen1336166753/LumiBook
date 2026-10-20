@@ -1,7 +1,7 @@
+import { PresentationIcon } from '@blocksuite/icons/rc';
 import { Button } from '@lumibook/component/ui/button';
 import { EditorService } from '@lumibook/core/modules/editor';
 import { useI18n } from '@lumibook/i18n';
-import { PresentationIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
 
 import * as styles from './styles.css';

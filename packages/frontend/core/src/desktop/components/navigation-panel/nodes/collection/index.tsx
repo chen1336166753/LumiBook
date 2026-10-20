@@ -1,3 +1,4 @@
+import { FilterMinusIcon } from '@blocksuite/icons/rc';
 import {
   AnimatedCollectionsIcon,
   type DropTargetDropEvent,
@@ -14,9 +15,8 @@ import { GlobalContextService } from '@lumibook/core/modules/global-context';
 import { NavigationPanelService } from '@lumibook/core/modules/navigation-panel';
 import type { AffineDNDData } from '@lumibook/core/types/dnd';
 import { useI18n } from '@lumibook/i18n';
-import { track } from '@lumibook/track';
-import { FilterMinusIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService, useServices } from '@lumibook/infra';
+import { track } from '@lumibook/track';
 import { useCallback, useEffect, useMemo, useState } from 'react';
 
 import {

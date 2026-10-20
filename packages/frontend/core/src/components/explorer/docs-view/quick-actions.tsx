@@ -1,4 +1,10 @@
 import {
+  DeleteIcon,
+  OpenInNewIcon,
+  ResetIcon,
+  SplitViewIcon,
+} from '@blocksuite/icons/rc';
+import {
   Checkbox,
   IconButton,
   type IconButtonProps,
@@ -11,14 +17,8 @@ import { GuardService } from '@lumibook/core/modules/permissions';
 import { WorkbenchService } from '@lumibook/core/modules/workbench';
 import { UserFriendlyError } from '@lumibook/error';
 import { useI18n } from '@lumibook/i18n';
-import track from '@lumibook/track';
-import {
-  DeleteIcon,
-  OpenInNewIcon,
-  ResetIcon,
-  SplitViewIcon,
-} from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
+import track from '@lumibook/track';
 import { memo, useCallback, useContext } from 'react';
 
 import { useBlockSuiteMetaHelper } from '../../hooks/affine/use-block-suite-meta-helper';

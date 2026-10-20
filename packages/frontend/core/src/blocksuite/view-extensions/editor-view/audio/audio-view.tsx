@@ -1,7 +1,7 @@
-import type { ReactToLit } from '@lumibook/component';
-import { AttachmentEmbedPreview } from '@lumibook/core/blocksuite/attachment-viewer/attachment-embed-preview';
 import { AttachmentEmbedConfigIdentifier } from '@blocksuite/affine/blocks/attachment';
 import type { ExtensionType } from '@blocksuite/store';
+import type { ReactToLit } from '@lumibook/component';
+import { AttachmentEmbedPreview } from '@lumibook/core/blocksuite/attachment-viewer/attachment-embed-preview';
 
 export function patchForAudioEmbedView(reactToLit: ReactToLit): ExtensionType {
   return {

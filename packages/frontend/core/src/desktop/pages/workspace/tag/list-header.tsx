@@ -1,3 +1,4 @@
+import { ArrowDownSmallIcon, DoneIcon, SearchIcon } from '@blocksuite/icons/rc';
 import {
   Divider,
   Menu,
@@ -9,7 +10,6 @@ import {
 import { type Tag, TagService } from '@lumibook/core/modules/tag';
 import { WorkbenchLink } from '@lumibook/core/modules/workbench';
 import { useI18n } from '@lumibook/i18n';
-import { ArrowDownSmallIcon, DoneIcon, SearchIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
 import clsx from 'clsx';
 import {

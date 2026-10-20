@@ -1,5 +1,5 @@
-import { ConfigModal } from '@lumibook/core/components/mobile';
 import { ArrowRightSmallIcon } from '@blocksuite/icons/rc';
+import { ConfigModal } from '@lumibook/core/components/mobile';
 import clsx from 'clsx';
 import type { KeyboardEvent, PropsWithChildren, ReactNode } from 'react';
 import { useCallback } from 'react';

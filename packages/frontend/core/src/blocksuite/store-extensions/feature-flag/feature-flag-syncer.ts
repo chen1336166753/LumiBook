@@ -1,9 +1,9 @@
+import { FeatureFlagService as BSFeatureFlagService } from '@blocksuite/affine/shared/services';
+import { type ExtensionType, StoreExtension } from '@blocksuite/affine/store';
 import {
   AFFINE_FLAGS,
   type FeatureFlagService,
 } from '@lumibook/core/modules/feature-flag';
-import { FeatureFlagService as BSFeatureFlagService } from '@blocksuite/affine/shared/services';
-import { type ExtensionType, StoreExtension } from '@blocksuite/affine/store';
 
 export function getFeatureFlagSyncer(
   featureFlagService: FeatureFlagService

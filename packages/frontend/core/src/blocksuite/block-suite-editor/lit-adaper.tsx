@@ -1,6 +1,9 @@
 // oxlint-disable-next-line no-restricted-imports
 import 'katex/dist/katex.min.css';
 
+import type { DocTitle } from '@blocksuite/affine/fragments/doc-title';
+import type { DocMode } from '@blocksuite/affine/model';
+import type { Store } from '@blocksuite/affine/store';
 import { useConfirmModal, useLitPortalFactory } from '@lumibook/component';
 import {
   type EdgelessEditor,
@@ -23,16 +26,13 @@ import { JournalService } from '@lumibook/core/modules/journal';
 import { useInsidePeekView } from '@lumibook/core/modules/peek-view';
 import { WorkspaceService } from '@lumibook/core/modules/workspace';
 import { ServerFeature } from '@lumibook/graphql';
-import track from '@lumibook/track';
-import type { DocTitle } from '@blocksuite/affine/fragments/doc-title';
-import type { DocMode } from '@blocksuite/affine/model';
-import type { Store } from '@blocksuite/affine/store';
 import {
   useFramework,
   useLiveData,
   useService,
   useServices,
 } from '@lumibook/infra';
+import track from '@lumibook/track';
 import type React from 'react';
 import {
   forwardRef,

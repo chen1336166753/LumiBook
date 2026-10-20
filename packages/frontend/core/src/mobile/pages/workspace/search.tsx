@@ -1,3 +1,5 @@
+import { sleep } from '@blocksuite/affine/global/utils';
+import { ViewLayersIcon } from '@blocksuite/icons/rc';
 import {
   Button,
   SafeArea,
@@ -12,8 +14,6 @@ import {
 import { TagService } from '@lumibook/core/modules/tag';
 import { UserFriendlyError } from '@lumibook/error';
 import { useI18n } from '@lumibook/i18n';
-import { sleep } from '@blocksuite/affine/global/utils';
-import { ViewLayersIcon } from '@blocksuite/icons/rc';
 import {
   LiveData,
   useLiveData,

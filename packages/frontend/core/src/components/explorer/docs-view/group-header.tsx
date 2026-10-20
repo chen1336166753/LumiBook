@@ -1,6 +1,6 @@
+import { ToggleRightIcon } from '@blocksuite/icons/rc';
 import { Button, IconButton } from '@lumibook/component';
 import { useI18n } from '@lumibook/i18n';
-import { ToggleRightIcon } from '@blocksuite/icons/rc';
 import { useLiveData } from '@lumibook/infra';
 import clsx from 'clsx';
 import {

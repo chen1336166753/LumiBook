@@ -1,3 +1,11 @@
+import {
+  DeleteIcon,
+  EdgelessIcon,
+  InformationIcon,
+  MoreHorizontalIcon,
+  PageIcon,
+  TocIcon,
+} from '@blocksuite/icons/rc';
 import { IconButton, notify, toast, useConfirmModal } from '@lumibook/component';
 import {
   MenuSeparator,
@@ -15,16 +23,8 @@ import { EditorService } from '@lumibook/core/modules/editor';
 import { ViewService } from '@lumibook/core/modules/workbench/services/view';
 import { preventDefault } from '@lumibook/core/utils';
 import { useI18n } from '@lumibook/i18n';
-import { track } from '@lumibook/track';
-import {
-  DeleteIcon,
-  EdgelessIcon,
-  InformationIcon,
-  MoreHorizontalIcon,
-  PageIcon,
-  TocIcon,
-} from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
+import { track } from '@lumibook/track';
 import { truncate } from 'lodash-es';
 import { useCallback, useEffect, useState } from 'react';
 

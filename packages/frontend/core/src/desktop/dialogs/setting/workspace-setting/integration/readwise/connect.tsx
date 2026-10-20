@@ -1,3 +1,4 @@
+import { ReadwiseLogoDuotoneIcon } from '@blocksuite/icons/rc';
 import {
   Button,
   type ButtonProps,
@@ -8,7 +9,6 @@ import {
 import { useAsyncCallback } from '@lumibook/core/components/hooks/affine-async-hooks';
 import { IntegrationService } from '@lumibook/core/modules/integration';
 import { Trans, useI18n } from '@lumibook/i18n';
-import { ReadwiseLogoDuotoneIcon } from '@blocksuite/icons/rc';
 import { useService } from '@lumibook/infra';
 import clsx from 'clsx';
 import {

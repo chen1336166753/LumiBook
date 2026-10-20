@@ -1,6 +1,6 @@
-import { IconPicker, uniReactRoot } from '@lumibook/component';
 // Import the identifier for internal use
 import { type IconPickerService as IIconPickerService } from '@blocksuite/affine-shared/services';
+import { IconPicker, uniReactRoot } from '@lumibook/component';
 import { Service } from '@lumibook/infra';
 
 // Re-export types from BlockSuite shared services

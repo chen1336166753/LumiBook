@@ -1,3 +1,6 @@
+import type { AttachmentBlockModel } from '@blocksuite/affine/model';
+import type { AffineTextAttributes } from '@blocksuite/affine/shared/types';
+import { type DeltaInsert, Text } from '@blocksuite/affine/store';
 import {
   TranscriptionBlockFlavour,
   type TranscriptionBlockModel,
@@ -5,12 +8,9 @@ import {
 import { insertFromMarkdown } from '@lumibook/core/blocksuite/utils';
 import { preprocessAudioBlobForTranscription } from '@lumibook/core/utils/opus-encoding';
 import { DebugLogger } from '@lumibook/debug';
-import track from '@lumibook/track';
-import type { AttachmentBlockModel } from '@blocksuite/affine/model';
-import type { AffineTextAttributes } from '@blocksuite/affine/shared/types';
-import { type DeltaInsert, Text } from '@blocksuite/affine/store';
-import { computed } from '@preact/signals-core';
 import { Entity, LiveData } from '@lumibook/infra';
+import track from '@lumibook/track';
+import { computed } from '@preact/signals-core';
 import { cssVarV2 } from '@toeverything/theme/v2';
 
 import type { WorkspaceService } from '../../workspace';

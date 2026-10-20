@@ -2,8 +2,8 @@ import { useConfirmModal } from '@lumibook/component';
 import { useAsyncCallback } from '@lumibook/core/components/hooks/affine-async-hooks';
 import { MeetingSettingsService } from '@lumibook/core/modules/media/services/meeting-settings';
 import { useI18n } from '@lumibook/i18n';
-import track from '@lumibook/track';
 import { useService } from '@lumibook/infra';
+import track from '@lumibook/track';
 
 export const useEnableRecording = () => {
   const meetingSettingsService = useService(MeetingSettingsService);

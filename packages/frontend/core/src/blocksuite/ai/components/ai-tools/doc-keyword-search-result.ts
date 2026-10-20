@@ -1,7 +1,7 @@
-import type { PeekViewService } from '@lumibook/core/modules/peek-view';
 import { WithDisposable } from '@blocksuite/global/lit';
 import { PageIcon, SearchIcon } from '@blocksuite/icons/lit';
 import { ShadowlessElement } from '@blocksuite/std';
+import type { PeekViewService } from '@lumibook/core/modules/peek-view';
 import type { Signal } from '@preact/signals-core';
 import { html, nothing } from 'lit';
 import { property } from 'lit/decorators.js';

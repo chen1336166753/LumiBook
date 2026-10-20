@@ -1,12 +1,12 @@
+import type { DocMode } from '@blocksuite/affine/model';
 import {
   RadioGroup,
   type RadioItem,
   useMobileMenuController,
 } from '@lumibook/component';
 import { EditorService } from '@lumibook/core/modules/editor';
-import track from '@lumibook/track';
-import type { DocMode } from '@blocksuite/affine/model';
 import { useLiveData, useService } from '@lumibook/infra';
+import track from '@lumibook/track';
 import { useCallback } from 'react';
 
 import * as styles from './mode-switch.css';

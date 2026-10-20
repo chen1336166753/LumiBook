@@ -1,9 +1,9 @@
 import type { DocRole, PublicDocMode } from '@lumibook/graphql';
+import { Entity, LiveData } from '@lumibook/infra';
 import type {
   DocShareStateSnapshot,
   RealtimeTopicEventOf,
 } from '@lumibook/realtime';
-import { Entity, LiveData } from '@lumibook/infra';
 
 import { RealtimeLiveQuery } from '../../cloud/realtime/live-query';
 import type { DocService } from '../../doc';

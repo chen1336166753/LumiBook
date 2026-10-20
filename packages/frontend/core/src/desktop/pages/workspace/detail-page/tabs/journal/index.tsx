@@ -1,3 +1,4 @@
+import { CalendarXmarkIcon, EditIcon } from '@blocksuite/icons/rc';
 import type { DateCell } from '@lumibook/component';
 import {
   DatePicker,
@@ -25,7 +26,6 @@ import {
   WorkbenchService,
 } from '@lumibook/core/modules/workbench';
 import { useI18n } from '@lumibook/i18n';
-import { CalendarXmarkIcon, EditIcon } from '@blocksuite/icons/rc';
 import {
   useLiveData,
   useService,

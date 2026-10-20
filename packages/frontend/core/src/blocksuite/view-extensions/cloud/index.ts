@@ -1,9 +1,9 @@
-import { AuthService, PublicUserService } from '@lumibook/core/modules/cloud';
-import { MemberSearchService } from '@lumibook/core/modules/permissions';
 import {
   type ViewExtensionContext,
   ViewExtensionProvider,
 } from '@blocksuite/affine/ext-loader';
+import { AuthService, PublicUserService } from '@lumibook/core/modules/cloud';
+import { MemberSearchService } from '@lumibook/core/modules/permissions';
 import { FrameworkProvider } from '@lumibook/infra';
 import { z } from 'zod';
 

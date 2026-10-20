@@ -1,7 +1,7 @@
+import { InformationFillDuotoneIcon } from '@blocksuite/icons/rc';
 import { useConfirmModal } from '@lumibook/component';
 import { WorkspaceDialogService } from '@lumibook/core/modules/dialogs';
 import { type I18nString, useI18n } from '@lumibook/i18n';
-import { InformationFillDuotoneIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
 import { useCallback, useEffect } from 'react';
 

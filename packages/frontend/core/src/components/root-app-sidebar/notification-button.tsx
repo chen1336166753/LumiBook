@@ -1,10 +1,10 @@
+import { NotificationIcon } from '@blocksuite/icons/rc';
 import { Menu } from '@lumibook/component';
 import { MenuItem } from '@lumibook/core/modules/app-sidebar/views';
 import { NotificationCountService } from '@lumibook/core/modules/notification';
 import { useI18n } from '@lumibook/i18n';
-import { track } from '@lumibook/track';
-import { NotificationIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
+import { track } from '@lumibook/track';
 import { useCallback, useState } from 'react';
 
 import { NotificationList } from '../notification/list';

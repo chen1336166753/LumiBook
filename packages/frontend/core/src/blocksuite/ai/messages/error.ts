@@ -1,9 +1,9 @@
-import { I18n } from '@lumibook/i18n';
 import { SignalWatcher, WithDisposable } from '@blocksuite/affine/global/lit';
 import { scrollbarStyle } from '@blocksuite/affine/shared/styles';
 import { unsafeCSSVarV2 } from '@blocksuite/affine/shared/theme';
 import { type EditorHost } from '@blocksuite/affine/std';
 import { InformationIcon, ToggleDownIcon } from '@blocksuite/icons/lit';
+import { I18n } from '@lumibook/i18n';
 import { signal } from '@preact/signals-core';
 import { baseTheme } from '@toeverything/theme';
 import { css, html, LitElement, nothing, unsafeCSS } from 'lit';

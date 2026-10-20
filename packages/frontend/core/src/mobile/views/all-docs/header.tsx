@@ -1,5 +1,5 @@
-import { IconButton, MobileMenu, SafeArea } from '@lumibook/component';
 import { MoreHorizontalIcon } from '@blocksuite/icons/rc';
+import { IconButton, MobileMenu, SafeArea } from '@lumibook/component';
 
 import { header, headerContent, headerSpace } from './style.css';
 import { AllDocsTabs } from './tabs';

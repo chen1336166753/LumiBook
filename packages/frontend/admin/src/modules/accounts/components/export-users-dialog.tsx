@@ -1,3 +1,4 @@
+import { CopyIcon } from '@blocksuite/icons/rc';
 import { Button } from '@lumibook/admin/components/ui/button';
 import { Checkbox } from '@lumibook/admin/components/ui/checkbox';
 import {
@@ -9,7 +10,6 @@ import {
 } from '@lumibook/admin/components/ui/dialog';
 import { Label } from '@lumibook/admin/components/ui/label';
 import { useAsyncCallback } from '@lumibook/core/components/hooks/affine-async-hooks';
-import { CopyIcon } from '@blocksuite/icons/rc';
 import { useCallback, useState } from 'react';
 import { toast } from 'sonner';
 

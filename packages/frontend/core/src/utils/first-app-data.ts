@@ -1,10 +1,10 @@
 // the following import is used to ensure the block suite editor effects are run
 import '../blocksuite/block-suite-editor';
 
+import { ZipTransformer } from '@blocksuite/affine/widgets/linked-doc';
 import { DebugLogger } from '@lumibook/debug';
 import { DEFAULT_WORKSPACE_NAME } from '@lumibook/env/constant';
 import onboardingUrl from '@lumibook/templates/onboarding.zip';
-import { ZipTransformer } from '@blocksuite/affine/widgets/linked-doc';
 
 import { DocsService } from '../modules/doc';
 import { OrganizeService } from '../modules/organize';

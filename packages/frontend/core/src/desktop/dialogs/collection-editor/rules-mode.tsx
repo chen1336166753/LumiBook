@@ -1,4 +1,10 @@
 import {
+  CloseIcon,
+  EdgelessIcon,
+  PageIcon,
+  ToggleRightIcon,
+} from '@blocksuite/icons/rc';
+import {
   Button,
   IconButton,
   Masonry,
@@ -17,12 +23,6 @@ import { CollectionRulesService } from '@lumibook/core/modules/collection-rules'
 import { DocsService } from '@lumibook/core/modules/doc';
 import { DocDisplayMetaService } from '@lumibook/core/modules/doc-display-meta';
 import { Trans, useI18n } from '@lumibook/i18n';
-import {
-  CloseIcon,
-  EdgelessIcon,
-  PageIcon,
-  ToggleRightIcon,
-} from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
 import { cssVar } from '@toeverything/theme';
 import clsx from 'clsx';

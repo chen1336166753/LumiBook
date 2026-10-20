@@ -1,4 +1,10 @@
 import {
+  CloseIcon,
+  ExpandFullIcon,
+  InsertLeftIcon,
+  InsertRightIcon,
+} from '@blocksuite/icons/rc';
+import {
   type DropTargetDragEvent,
   MenuItem,
   shallowUpdater,
@@ -7,14 +13,8 @@ import {
 } from '@lumibook/component';
 import type { AffineDNDData } from '@lumibook/core/types/dnd';
 import { useI18n } from '@lumibook/i18n';
-import track from '@lumibook/track';
-import {
-  CloseIcon,
-  ExpandFullIcon,
-  InsertLeftIcon,
-  InsertRightIcon,
-} from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
+import track from '@lumibook/track';
 import { assignInlineVars } from '@vanilla-extract/dynamic';
 import { useAtom } from 'jotai';
 import type { HTMLAttributes, PropsWithChildren } from 'react';

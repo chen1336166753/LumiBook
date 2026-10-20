@@ -1,3 +1,4 @@
+import { SignOutIcon } from '@blocksuite/icons/rc';
 import {
   AuthPageContainer,
   type User,
@@ -7,7 +8,6 @@ import {
   WorkspaceMemberStatus,
 } from '@lumibook/graphql';
 import { useI18n } from '@lumibook/i18n';
-import { SignOutIcon } from '@blocksuite/icons/rc';
 
 import { Avatar } from '../../ui/avatar';
 import { Button, IconButton } from '../../ui/button';

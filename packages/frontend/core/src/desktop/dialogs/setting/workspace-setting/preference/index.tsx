@@ -1,3 +1,4 @@
+import { ArrowRightSmallIcon } from '@blocksuite/icons/rc';
 import {
   SettingHeader,
   SettingRow,
@@ -8,7 +9,6 @@ import { WorkspaceServerService } from '@lumibook/core/modules/cloud';
 import { WorkspaceService } from '@lumibook/core/modules/workspace';
 import { UNTITLED_WORKSPACE_NAME } from '@lumibook/env/constant';
 import { useI18n } from '@lumibook/i18n';
-import { ArrowRightSmallIcon } from '@blocksuite/icons/rc';
 import { FrameworkScope, useService } from '@lumibook/infra';
 import { useCallback } from 'react';
 

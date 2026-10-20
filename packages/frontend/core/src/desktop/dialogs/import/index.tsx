@@ -1,3 +1,22 @@
+import { openDirectory, openFilesWith } from '@blocksuite/affine/shared/utils';
+import type { Workspace } from '@blocksuite/affine/store';
+import {
+  DocxTransformer,
+  HtmlTransformer,
+  type ImportWarning,
+  MarkdownTransformer,
+  ZipTransformer,
+} from '@blocksuite/affine/widgets/linked-doc';
+import {
+  ExportToHtmlIcon,
+  ExportToMarkdownIcon,
+  FileIcon,
+  HelpIcon,
+  NotionIcon,
+  PageIcon,
+  SaveIcon,
+  ZipIcon,
+} from '@blocksuite/icons/rc';
 import {
   Button,
   IconButton,
@@ -24,27 +43,8 @@ import {
 } from '@lumibook/core/modules/workspace';
 import { DebugLogger } from '@lumibook/debug';
 import { useI18n } from '@lumibook/i18n';
-import track from '@lumibook/track';
-import { openDirectory, openFilesWith } from '@blocksuite/affine/shared/utils';
-import type { Workspace } from '@blocksuite/affine/store';
-import {
-  DocxTransformer,
-  HtmlTransformer,
-  type ImportWarning,
-  MarkdownTransformer,
-  ZipTransformer,
-} from '@blocksuite/affine/widgets/linked-doc';
-import {
-  ExportToHtmlIcon,
-  ExportToMarkdownIcon,
-  FileIcon,
-  HelpIcon,
-  NotionIcon,
-  PageIcon,
-  SaveIcon,
-  ZipIcon,
-} from '@blocksuite/icons/rc';
 import { useService } from '@lumibook/infra';
+import track from '@lumibook/track';
 import { cssVar } from '@toeverything/theme';
 import { cssVarV2 } from '@toeverything/theme/v2';
 import {

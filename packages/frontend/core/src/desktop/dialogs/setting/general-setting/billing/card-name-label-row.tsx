@@ -1,9 +1,9 @@
-import { SubscriptionStatus } from '@lumibook/graphql';
-import { useI18n } from '@lumibook/i18n';
 import {
   InformationFillDuotoneIcon,
   SingleSelectCheckSolidIcon,
 } from '@blocksuite/icons/rc';
+import { SubscriptionStatus } from '@lumibook/graphql';
+import { useI18n } from '@lumibook/i18n';
 import clsx from 'clsx';
 import { useMemo } from 'react';
 

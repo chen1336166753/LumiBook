@@ -1,12 +1,12 @@
+import { AiIcon } from '@blocksuite/icons/rc';
 import { notify } from '@lumibook/component';
 import { type Notification } from '@lumibook/component/ui/notification';
 import { SubscriptionService } from '@lumibook/core/modules/cloud';
 import { WorkspaceDialogService } from '@lumibook/core/modules/dialogs';
 import { EditorService } from '@lumibook/core/modules/editor';
 import { useI18n } from '@lumibook/i18n';
-import { track } from '@lumibook/track';
-import { AiIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService, useServices } from '@lumibook/infra';
+import { track } from '@lumibook/track';
 import { cssVar } from '@toeverything/theme';
 import Lottie from 'lottie-react';
 import { useTheme } from 'next-themes';

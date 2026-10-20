@@ -1,5 +1,3 @@
-import { getStoreManager } from '@lumibook/core/blocksuite/manager/store';
-import { toArrayBuffer } from '@lumibook/core/utils/array-buffer';
 import { Container } from '@blocksuite/affine/global/di';
 import {
   customImageProxyMiddleware,
@@ -13,6 +11,8 @@ import {
   Text,
   Transformer,
 } from '@blocksuite/affine/store';
+import { getStoreManager } from '@lumibook/core/blocksuite/manager/store';
+import { toArrayBuffer } from '@lumibook/core/utils/array-buffer';
 import { Service } from '@lumibook/infra';
 import { Doc as YDoc } from 'yjs';
 

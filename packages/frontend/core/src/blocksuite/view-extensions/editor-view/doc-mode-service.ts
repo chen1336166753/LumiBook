@@ -1,11 +1,11 @@
-import type { DocService, DocsService } from '@lumibook/core/modules/doc';
-import type { EditorService } from '@lumibook/core/modules/editor';
 import type { DocMode } from '@blocksuite/affine/model';
 import {
   DocModeExtension,
   type DocModeProvider,
 } from '@blocksuite/affine/shared/services';
 import type { ExtensionType } from '@blocksuite/affine/store';
+import type { DocService, DocsService } from '@lumibook/core/modules/doc';
+import type { EditorService } from '@lumibook/core/modules/editor';
 
 export function patchDocModeService(
   docService: DocService,

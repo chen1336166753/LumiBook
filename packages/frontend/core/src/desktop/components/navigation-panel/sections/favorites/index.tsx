@@ -1,3 +1,4 @@
+import { PlusIcon } from '@blocksuite/icons/rc';
 import {
   type DropTargetDropEvent,
   IconButton,
@@ -14,9 +15,8 @@ import { WorkspaceService } from '@lumibook/core/modules/workspace';
 import type { AffineDNDData } from '@lumibook/core/types/dnd';
 import { inferOpenMode } from '@lumibook/core/utils';
 import { useI18n } from '@lumibook/i18n';
-import { track } from '@lumibook/track';
-import { PlusIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useServices } from '@lumibook/infra';
+import { track } from '@lumibook/track';
 import { type MouseEventHandler, useCallback, useMemo } from 'react';
 
 import { CollapsibleSection } from '../../layouts/collapsible-section';

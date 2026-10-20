@@ -1,3 +1,7 @@
+import type {
+  ImportBatch,
+  ImportCommitResult,
+} from '@blocksuite/affine/widgets/linked-doc';
 import {
   getNativeImportSessionHandlers,
   type NativeImportSessionHandlers,
@@ -6,10 +10,6 @@ import type {
   NativeImportBrowserSource,
   NativeImportFormat,
 } from '@lumibook/electron-api';
-import type {
-  ImportBatch,
-  ImportCommitResult,
-} from '@blocksuite/affine/widgets/linked-doc';
 
 import type { ImportCommitService } from './commit-service';
 

@@ -1,9 +1,9 @@
+import { CloseIcon } from '@blocksuite/icons/rc';
 import {
   type InviteLink,
   WorkspaceInviteLinkExpireTime,
 } from '@lumibook/graphql';
 import { useI18n } from '@lumibook/i18n';
-import { CloseIcon } from '@blocksuite/icons/rc';
 import { cssVar } from '@toeverything/theme';
 import { cssVarV2 } from '@toeverything/theme/v2';
 import { useCallback, useMemo, useState } from 'react';

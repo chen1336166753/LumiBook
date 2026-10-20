@@ -1,14 +1,3 @@
-import { notify } from '@lumibook/component';
-import {
-  generateUrl,
-  type UseSharingUrl,
-} from '@lumibook/core/components/hooks/affine/use-share-url';
-import { WorkspaceServerService } from '@lumibook/core/modules/cloud';
-import { EditorService } from '@lumibook/core/modules/editor';
-import type { EditorSettingExt } from '@lumibook/core/modules/editor-setting/entities/editor-setting';
-import { copyLinkToBlockStdScopeClipboard } from '@lumibook/core/utils/clipboard';
-import { I18n, i18nTime } from '@lumibook/i18n';
-import { track } from '@lumibook/track';
 import { BookmarkBlockComponent } from '@blocksuite/affine/blocks/bookmark';
 import {
   EmbedFigmaBlockComponent,
@@ -83,8 +72,19 @@ import {
   LinkIcon,
   OpenInNewIcon,
 } from '@blocksuite/icons/lit';
-import { computed } from '@preact/signals-core';
+import { notify } from '@lumibook/component';
+import {
+  generateUrl,
+  type UseSharingUrl,
+} from '@lumibook/core/components/hooks/affine/use-share-url';
+import { WorkspaceServerService } from '@lumibook/core/modules/cloud';
+import { EditorService } from '@lumibook/core/modules/editor';
+import type { EditorSettingExt } from '@lumibook/core/modules/editor-setting/entities/editor-setting';
+import { copyLinkToBlockStdScopeClipboard } from '@lumibook/core/utils/clipboard';
+import { I18n, i18nTime } from '@lumibook/i18n';
 import type { FrameworkProvider } from '@lumibook/infra';
+import { track } from '@lumibook/track';
+import { computed } from '@preact/signals-core';
 import { html } from 'lit';
 import { ifDefined } from 'lit/directives/if-defined.js';
 import { keyed } from 'lit/directives/keyed.js';

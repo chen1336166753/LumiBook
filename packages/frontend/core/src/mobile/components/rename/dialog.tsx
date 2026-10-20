@@ -1,5 +1,5 @@
-import { IconButton, Modal } from '@lumibook/component';
 import { CloseIcon } from '@blocksuite/icons/rc';
+import { IconButton, Modal } from '@lumibook/component';
 import { useCallback } from 'react';
 
 import { RenameContent } from './content';

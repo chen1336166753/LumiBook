@@ -1,12 +1,12 @@
-import { CALENDAR_INTEGRATION_SCROLL_ANCHOR } from '@lumibook/core/desktop/dialogs/setting/navigation-constants';
-import { WorkspaceServerService } from '@lumibook/core/modules/cloud';
-import { WorkspaceDialogService } from '@lumibook/core/modules/dialogs';
-import { IntegrationService } from '@lumibook/core/modules/integration';
 import type {
   CalendarEntryRange,
   CalendarExternalEntry,
   CalendarViewData,
 } from '@blocksuite/data-view/view-presets';
+import { CALENDAR_INTEGRATION_SCROLL_ANCHOR } from '@lumibook/core/desktop/dialogs/setting/navigation-constants';
+import { WorkspaceServerService } from '@lumibook/core/modules/cloud';
+import { WorkspaceDialogService } from '@lumibook/core/modules/dialogs';
+import { IntegrationService } from '@lumibook/core/modules/integration';
 import type { FrameworkProvider } from '@lumibook/infra';
 import dayjs from 'dayjs';
 

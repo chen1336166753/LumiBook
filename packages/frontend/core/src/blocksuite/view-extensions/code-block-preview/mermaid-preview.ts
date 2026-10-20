@@ -1,10 +1,10 @@
-import { renderMermaidSvg } from '@lumibook/core/modules/code-block-preview-renderer/bridge';
-import type { MermaidRenderTheme } from '@lumibook/core/modules/mermaid/renderer';
 import { CodeBlockPreviewExtension } from '@blocksuite/affine/blocks/code';
 import { SignalWatcher, WithDisposable } from '@blocksuite/affine/global/lit';
 import type { CodeBlockModel } from '@blocksuite/affine/model';
 import { unsafeCSSVarV2 } from '@blocksuite/affine/shared/theme';
 import { ShadowlessElement } from '@blocksuite/std';
+import { renderMermaidSvg } from '@lumibook/core/modules/code-block-preview-renderer/bridge';
+import type { MermaidRenderTheme } from '@lumibook/core/modules/mermaid/renderer';
 import { css, html, nothing, type PropertyValues } from 'lit';
 import { property, query, state } from 'lit/decorators.js';
 import { choose } from 'lit/directives/choose.js';

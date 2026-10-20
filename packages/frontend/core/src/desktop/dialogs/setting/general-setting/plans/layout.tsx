@@ -1,7 +1,7 @@
+import { ArrowRightBigIcon } from '@blocksuite/icons/rc';
 import { Divider } from '@lumibook/component';
 import { SettingHeader } from '@lumibook/component/setting-components';
 import { useI18n } from '@lumibook/i18n';
-import { ArrowRightBigIcon } from '@blocksuite/icons/rc';
 import * as ScrollArea from '@radix-ui/react-scroll-area';
 import { type ReactNode, useRef } from 'react';
 

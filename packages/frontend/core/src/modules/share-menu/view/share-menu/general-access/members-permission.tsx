@@ -1,3 +1,4 @@
+import { InformationIcon } from '@blocksuite/icons/rc';
 import {
   Menu,
   MenuItem,
@@ -11,9 +12,8 @@ import { ShareInfoService } from '@lumibook/core/modules/share-doc';
 import { UserFriendlyError } from '@lumibook/error';
 import { DocRole } from '@lumibook/graphql';
 import { useI18n } from '@lumibook/i18n';
-import { track } from '@lumibook/track';
-import { InformationIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
+import { track } from '@lumibook/track';
 import clsx from 'clsx';
 import { useCallback, useMemo } from 'react';
 

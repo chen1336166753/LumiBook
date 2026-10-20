@@ -1,3 +1,4 @@
+import { AiIcon } from '@blocksuite/icons/rc';
 import { type Notification, notify } from '@lumibook/component';
 import {
   RouteLogic,
@@ -5,7 +6,6 @@ import {
 } from '@lumibook/core/components/hooks/use-navigate-helper';
 import { AuthService } from '@lumibook/core/modules/cloud';
 import { useI18n } from '@lumibook/i18n';
-import { AiIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
 import { cssVar } from '@toeverything/theme';
 import { useEffect, useMemo, useRef } from 'react';

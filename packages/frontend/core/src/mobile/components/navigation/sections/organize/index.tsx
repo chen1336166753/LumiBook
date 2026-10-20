@@ -1,11 +1,11 @@
+import { AddOrganizeIcon } from '@blocksuite/icons/rc';
 import { Skeleton } from '@lumibook/component';
 import { NavigationPanelTreeRoot } from '@lumibook/core/desktop/components/navigation-panel';
 import { NavigationPanelService } from '@lumibook/core/modules/navigation-panel';
 import { OrganizeService } from '@lumibook/core/modules/organize';
 import { useI18n } from '@lumibook/i18n';
-import track from '@lumibook/track';
-import { AddOrganizeIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useServices } from '@lumibook/infra';
+import track from '@lumibook/track';
 import { useCallback, useMemo, useState } from 'react';
 
 import { AddItemPlaceholder } from '../../layouts/add-item-placeholder';

@@ -1,8 +1,8 @@
+import { AllDocsIcon } from '@blocksuite/icons/rc';
 import { TagService } from '@lumibook/core/modules/tag';
 import { WorkspaceService } from '@lumibook/core/modules/workspace';
 import { inferOpenMode } from '@lumibook/core/utils';
 import { useI18n } from '@lumibook/i18n';
-import { AllDocsIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
 import { type MouseEvent, useCallback } from 'react';
 

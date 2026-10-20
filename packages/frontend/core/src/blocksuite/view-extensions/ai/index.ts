@@ -1,3 +1,9 @@
+import {
+  type ViewExtensionContext,
+  ViewExtensionProvider,
+} from '@blocksuite/affine/ext-loader';
+import { ToolbarModuleExtension } from '@blocksuite/affine/shared/services';
+import { BlockFlavourIdentifier } from '@blocksuite/affine/std';
 import { toolbarAIEntryConfig } from '@lumibook/core/blocksuite/ai';
 import { AIChatBlockSpec } from '@lumibook/core/blocksuite/ai/blocks';
 import { AITranscriptionBlockSpec } from '@lumibook/core/blocksuite/ai/blocks/ai-chat-block/ai-transcription-block';
@@ -10,12 +16,6 @@ import { AiSlashMenuConfigExtension } from '@lumibook/core/blocksuite/ai/extensi
 import { CopilotTool } from '@lumibook/core/blocksuite/ai/tool/copilot-tool';
 import { aiPanelWidget } from '@lumibook/core/blocksuite/ai/widgets/ai-panel/ai-panel';
 import { edgelessCopilotWidget } from '@lumibook/core/blocksuite/ai/widgets/edgeless-copilot';
-import {
-  type ViewExtensionContext,
-  ViewExtensionProvider,
-} from '@blocksuite/affine/ext-loader';
-import { ToolbarModuleExtension } from '@blocksuite/affine/shared/services';
-import { BlockFlavourIdentifier } from '@blocksuite/affine/std';
 import { FrameworkProvider } from '@lumibook/infra';
 import { z } from 'zod';
 

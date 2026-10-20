@@ -1,6 +1,6 @@
-import track from '@lumibook/track';
 import { SignalWatcher, WithDisposable } from '@blocksuite/affine/global/lit';
 import { ShadowlessElement } from '@blocksuite/affine/std';
+import track from '@lumibook/track';
 import { Signal } from '@preact/signals-core';
 import { html } from 'lit';
 import { property } from 'lit/decorators.js';

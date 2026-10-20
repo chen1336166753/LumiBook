@@ -1,6 +1,6 @@
+import type { ReferenceParams } from '@blocksuite/affine/model';
 import { toDocSearchParams } from '@lumibook/core/modules/navigation/utils';
 import { Unreachable } from '@lumibook/env/constant';
-import type { ReferenceParams } from '@blocksuite/affine/model';
 import { Entity, LiveData } from '@lumibook/infra';
 import { type To } from 'history';
 import { omit } from 'lodash-es';

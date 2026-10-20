@@ -1,3 +1,16 @@
+import {
+  ArrowDownSmallIcon,
+  CloudWorkspaceIcon,
+  CollaborationIcon,
+  DoneIcon,
+  InformationFillDuotoneIcon,
+  LocalWorkspaceIcon,
+  NoNetworkIcon,
+  SelfhostIcon,
+  SettingsIcon,
+  TeamWorkspaceIcon,
+  UnsyncIcon,
+} from '@blocksuite/icons/rc';
 import { Button, notify, Skeleton, Tooltip } from '@lumibook/component';
 import { Loading } from '@lumibook/component/ui/loading';
 import { useSystemOnline } from '@lumibook/core/components/hooks/use-system-online';
@@ -15,19 +28,6 @@ import {
 import { UNTITLED_WORKSPACE_NAME } from '@lumibook/env/constant';
 import { ServerDeploymentType } from '@lumibook/graphql';
 import { useI18n } from '@lumibook/i18n';
-import {
-  ArrowDownSmallIcon,
-  CloudWorkspaceIcon,
-  CollaborationIcon,
-  DoneIcon,
-  InformationFillDuotoneIcon,
-  LocalWorkspaceIcon,
-  NoNetworkIcon,
-  SelfhostIcon,
-  SettingsIcon,
-  TeamWorkspaceIcon,
-  UnsyncIcon,
-} from '@blocksuite/icons/rc';
 import { LiveData, useLiveData, useService } from '@lumibook/infra';
 import { cssVar } from '@toeverything/theme';
 import clsx from 'clsx';

@@ -1,6 +1,6 @@
+import type { ByteKVBehavior } from '@lumibook/infra/storage';
 import type { InsertRow } from '@lumibook/native';
 import { SqliteConnection } from '@lumibook/native';
-import type { ByteKVBehavior } from '@lumibook/infra/storage';
 
 import { logger } from '../../logger';
 

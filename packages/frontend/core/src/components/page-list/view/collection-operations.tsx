@@ -1,10 +1,3 @@
-import type { MenuItemProps } from '@lumibook/component';
-import { Menu, MenuItem, usePromptModal } from '@lumibook/component';
-import { WorkspaceDialogService } from '@lumibook/core/modules/dialogs';
-import { CompatibleFavoriteItemsAdapter } from '@lumibook/core/modules/favorite';
-import { WorkbenchService } from '@lumibook/core/modules/workbench';
-import { useI18n } from '@lumibook/i18n';
-import track from '@lumibook/track';
 import {
   DeleteIcon,
   EditIcon,
@@ -13,7 +6,14 @@ import {
   PlusIcon,
   SplitViewIcon,
 } from '@blocksuite/icons/rc';
+import type { MenuItemProps } from '@lumibook/component';
+import { Menu, MenuItem, usePromptModal } from '@lumibook/component';
+import { WorkspaceDialogService } from '@lumibook/core/modules/dialogs';
+import { CompatibleFavoriteItemsAdapter } from '@lumibook/core/modules/favorite';
+import { WorkbenchService } from '@lumibook/core/modules/workbench';
+import { useI18n } from '@lumibook/i18n';
 import { useLiveData, useService, useServices } from '@lumibook/infra';
+import track from '@lumibook/track';
 import type { PropsWithChildren, ReactElement } from 'react';
 import { useCallback, useMemo } from 'react';
 

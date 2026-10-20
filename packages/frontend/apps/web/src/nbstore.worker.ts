@@ -1,5 +1,6 @@
 import '@lumibook/core/bootstrap/browser';
 
+import { type MessageCommunicapable, OpConsumer } from '@lumibook/infra/op';
 import { broadcastChannelStorages } from '@lumibook/nbstore/broadcast-channel';
 import { cloudStorages } from '@lumibook/nbstore/cloud';
 import { idbStorages } from '@lumibook/nbstore/idb';
@@ -8,7 +9,6 @@ import {
   StoreManagerConsumer,
   type WorkerManagerOps,
 } from '@lumibook/nbstore/worker/consumer';
-import { type MessageCommunicapable, OpConsumer } from '@lumibook/infra/op';
 
 const consumer = new StoreManagerConsumer([
   ...idbStorages,

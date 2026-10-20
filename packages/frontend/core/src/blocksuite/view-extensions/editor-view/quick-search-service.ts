@@ -1,14 +1,3 @@
-import { DocsService } from '@lumibook/core/modules/doc';
-import {
-  CreationQuickSearchSession,
-  DocsQuickSearchSession,
-  LinksQuickSearchSession,
-  QuickSearchService,
-  RecentDocsQuickSearchSession,
-} from '@lumibook/core/modules/quicksearch';
-import { ExternalLinksQuickSearchSession } from '@lumibook/core/modules/quicksearch/impls/external-links';
-import { JournalsQuickSearchSession } from '@lumibook/core/modules/quicksearch/impls/journals';
-import { track } from '@lumibook/track';
 import {
   BookmarkSlashMenuConfigIdentifier,
   insertLinkByQuickSearchCommand,
@@ -24,7 +13,18 @@ import type {
   SlashMenuConfig,
   SlashMenuItem,
 } from '@blocksuite/affine/widgets/slash-menu';
+import { DocsService } from '@lumibook/core/modules/doc';
+import {
+  CreationQuickSearchSession,
+  DocsQuickSearchSession,
+  LinksQuickSearchSession,
+  QuickSearchService,
+  RecentDocsQuickSearchSession,
+} from '@lumibook/core/modules/quicksearch';
+import { ExternalLinksQuickSearchSession } from '@lumibook/core/modules/quicksearch/impls/external-links';
+import { JournalsQuickSearchSession } from '@lumibook/core/modules/quicksearch/impls/journals';
 import type { FrameworkProvider } from '@lumibook/infra';
+import { track } from '@lumibook/track';
 import { pick } from 'lodash-es';
 
 export function patchQuickSearchService(framework: FrameworkProvider) {

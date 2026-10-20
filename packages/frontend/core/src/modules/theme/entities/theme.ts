@@ -1,7 +1,7 @@
 import { ColorScheme } from '@blocksuite/affine/model';
 import { createSignalFromObservable } from '@blocksuite/affine-shared/utils';
-import type { Signal } from '@preact/signals-core';
 import { Entity, LiveData } from '@lumibook/infra';
+import type { Signal } from '@preact/signals-core';
 
 export class AppTheme extends Entity {
   theme$ = new LiveData<string | undefined>(undefined);

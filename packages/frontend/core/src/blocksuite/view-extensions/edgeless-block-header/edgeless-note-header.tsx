@@ -1,10 +1,3 @@
-import { IconButton } from '@lumibook/component';
-import { DocService } from '@lumibook/core/modules/doc';
-import { EditorService } from '@lumibook/core/modules/editor';
-import { useInsidePeekView } from '@lumibook/core/modules/peek-view/view/modal-container';
-import { extractEmojiIcon } from '@lumibook/core/utils';
-import { useI18n } from '@lumibook/i18n';
-import { track } from '@lumibook/track';
 import { Bound } from '@blocksuite/affine/global/gfx';
 import { type NoteBlockModel } from '@blocksuite/affine/model';
 import { GfxControllerIdentifier } from '@blocksuite/affine/std/gfx';
@@ -13,7 +6,14 @@ import {
   ToggleDownIcon,
   ToggleRightIcon,
 } from '@blocksuite/icons/rc';
+import { IconButton } from '@lumibook/component';
+import { DocService } from '@lumibook/core/modules/doc';
+import { EditorService } from '@lumibook/core/modules/editor';
+import { useInsidePeekView } from '@lumibook/core/modules/peek-view/view/modal-container';
+import { extractEmojiIcon } from '@lumibook/core/utils';
+import { useI18n } from '@lumibook/i18n';
 import { useLiveData, useService } from '@lumibook/infra';
+import { track } from '@lumibook/track';
 import { useCallback, useEffect, useMemo, useState } from 'react';
 
 import { CopyLinkButton, DocInfoButton } from './common';

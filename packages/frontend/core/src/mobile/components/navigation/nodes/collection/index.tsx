@@ -1,3 +1,4 @@
+import { FilterMinusIcon, ViewLayersIcon } from '@blocksuite/icons/rc';
 import { MenuItem, notify } from '@lumibook/component';
 import type { NodeOperation } from '@lumibook/core/desktop/components/navigation-panel';
 import {
@@ -9,9 +10,8 @@ import { GlobalContextService } from '@lumibook/core/modules/global-context';
 import { NavigationPanelService } from '@lumibook/core/modules/navigation-panel';
 import { ShareDocsListService } from '@lumibook/core/modules/share-doc';
 import { useI18n } from '@lumibook/i18n';
-import track from '@lumibook/track';
-import { FilterMinusIcon, ViewLayersIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService, useServices } from '@lumibook/infra';
+import track from '@lumibook/track';
 import { useCallback, useEffect, useMemo, useState } from 'react';
 
 import { AddItemPlaceholder } from '../../layouts/add-item-placeholder';

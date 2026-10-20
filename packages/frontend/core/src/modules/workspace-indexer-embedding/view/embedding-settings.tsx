@@ -10,8 +10,8 @@ import { WorkspaceDialogService } from '@lumibook/core/modules/dialogs';
 import { UserFriendlyError } from '@lumibook/error';
 import { ServerFeature } from '@lumibook/graphql';
 import { useI18n } from '@lumibook/i18n';
-import track from '@lumibook/track';
 import { useLiveData, useService } from '@lumibook/infra';
+import track from '@lumibook/track';
 import type React from 'react';
 import { useCallback, useEffect } from 'react';
 

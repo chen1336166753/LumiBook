@@ -1,5 +1,5 @@
-import { track } from '@lumibook/track';
 import { Service } from '@lumibook/infra';
+import { track } from '@lumibook/track';
 
 import type { DocsService } from '../../doc';
 import type { WorkbenchService } from '../../workbench';

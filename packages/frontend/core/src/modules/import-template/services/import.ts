@@ -1,6 +1,6 @@
-import { toArrayBuffer } from '@lumibook/core/utils/array-buffer';
 import type { DocMode } from '@blocksuite/affine/model';
 import { ZipTransformer } from '@blocksuite/affine/widgets/linked-doc';
+import { toArrayBuffer } from '@lumibook/core/utils/array-buffer';
 import { Service } from '@lumibook/infra';
 
 import { DocsService } from '../../doc';

@@ -13,8 +13,8 @@ import {
 import { WorkspacesService } from '@lumibook/core/modules/workspace';
 import { buildShowcaseWorkspace } from '@lumibook/core/utils/first-app-data';
 import { useI18n } from '@lumibook/i18n';
-import track from '@lumibook/track';
 import { FrameworkScope, useLiveData, useService } from '@lumibook/infra';
+import track from '@lumibook/track';
 import { useCallback, useState } from 'react';
 
 import * as styles from './index.css';

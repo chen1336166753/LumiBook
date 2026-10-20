@@ -1,7 +1,7 @@
 import { MobileMenu } from '@lumibook/component';
 import { WorkspacesService } from '@lumibook/core/modules/workspace';
-import { track } from '@lumibook/track';
 import { useServiceOptional } from '@lumibook/infra';
+import { track } from '@lumibook/track';
 import {
   forwardRef,
   type HTMLAttributes,

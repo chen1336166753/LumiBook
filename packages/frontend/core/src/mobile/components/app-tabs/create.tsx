@@ -1,12 +1,12 @@
+import { EditIcon } from '@blocksuite/icons/rc';
 import { usePageHelper } from '@lumibook/core/blocksuite/block-suite-page-list/utils';
 import { useAsyncCallback } from '@lumibook/core/components/hooks/affine-async-hooks';
 import { DocsService } from '@lumibook/core/modules/doc';
 import { TemplateDocService } from '@lumibook/core/modules/template-doc';
 import { WorkbenchService } from '@lumibook/core/modules/workbench';
 import { WorkspaceService } from '@lumibook/core/modules/workspace';
-import track from '@lumibook/track';
-import { EditIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
+import track from '@lumibook/track';
 
 import { TabItem } from './tab-item';
 import type { AppTabCustomFCProps } from './type';

@@ -1,4 +1,9 @@
 import {
+  ArrowDownSmallIcon,
+  CalendarPanelIcon,
+  LockIcon,
+} from '@blocksuite/icons/rc';
+import {
   Avatar,
   Button,
   Loading,
@@ -14,11 +19,6 @@ import {
   getDocPageAnalyticsQuery,
 } from '@lumibook/graphql';
 import { i18nTime, useI18n } from '@lumibook/i18n';
-import {
-  ArrowDownSmallIcon,
-  CalendarPanelIcon,
-  LockIcon,
-} from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
 import { cssVar } from '@toeverything/theme';
 import { useCallback, useEffect, useMemo, useState } from 'react';

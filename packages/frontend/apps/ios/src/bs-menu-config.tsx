@@ -1,5 +1,5 @@
-import { MobileBackCoordinator } from '@lumibook/core/mobile/modules/back-coordinator';
 import { onMenuOpen } from '@blocksuite/affine/components/context-menu';
+import { MobileBackCoordinator } from '@lumibook/core/mobile/modules/back-coordinator';
 import { useService } from '@lumibook/infra';
 import { type PropsWithChildren, useEffect } from 'react';
 

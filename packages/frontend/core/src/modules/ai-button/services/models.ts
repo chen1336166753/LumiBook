@@ -1,6 +1,6 @@
 import { getCopilotRouteOptionsQuery } from '@lumibook/graphql';
-import { signal } from '@preact/signals-core';
 import { Service } from '@lumibook/infra';
+import { signal } from '@preact/signals-core';
 
 import type { GraphQLService, SubscriptionService } from '../../cloud';
 import type { GlobalStateService } from '../../storage';

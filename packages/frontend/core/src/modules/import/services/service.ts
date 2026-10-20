@@ -1,11 +1,3 @@
-import { getStoreManager } from '@lumibook/core/blocksuite/manager/store';
-import { ImportCommitService } from '@lumibook/core/desktop/dialogs/import/commit-service';
-import { commitNativeImport } from '@lumibook/core/desktop/dialogs/import/native-backend';
-import {
-  preflightWebFilesImport,
-  preflightWebZipImport,
-} from '@lumibook/core/desktop/dialogs/import/web-limits';
-import { DebugLogger } from '@lumibook/debug';
 import { snapshotFile } from '@blocksuite/affine/shared/utils';
 import {
   BearTransformer,
@@ -15,6 +7,14 @@ import {
   ObsidianTransformer,
   Unzip,
 } from '@blocksuite/affine/widgets/linked-doc';
+import { getStoreManager } from '@lumibook/core/blocksuite/manager/store';
+import { ImportCommitService } from '@lumibook/core/desktop/dialogs/import/commit-service';
+import { commitNativeImport } from '@lumibook/core/desktop/dialogs/import/native-backend';
+import {
+  preflightWebFilesImport,
+  preflightWebZipImport,
+} from '@lumibook/core/desktop/dialogs/import/web-limits';
+import { DebugLogger } from '@lumibook/debug';
 import { Service } from '@lumibook/infra';
 
 import type { ExplorerIconService } from '../../explorer-icon/services/explorer-icon';

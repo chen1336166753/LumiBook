@@ -1,4 +1,8 @@
 import {
+  NotificationExtension,
+  type NotificationService,
+} from '@blocksuite/affine/shared/services';
+import {
   type ConfirmModalProps,
   Input,
   type Notification,
@@ -8,10 +12,6 @@ import {
   toReactNode,
   type useConfirmModal,
 } from '@lumibook/component';
-import {
-  NotificationExtension,
-  type NotificationService,
-} from '@blocksuite/affine/shared/services';
 
 export class NotificationServiceImpl implements NotificationService {
   constructor(

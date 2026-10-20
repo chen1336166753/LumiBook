@@ -1,6 +1,3 @@
-import { Menu, MenuItem } from '@lumibook/component';
-import { type Server, ServersService } from '@lumibook/core/modules/cloud';
-import { useI18n } from '@lumibook/i18n';
 import {
   ArrowDownSmallIcon,
   CloudWorkspaceIcon,
@@ -8,6 +5,9 @@ import {
   LocalWorkspaceIcon,
   SelfhostIcon,
 } from '@blocksuite/icons/rc';
+import { Menu, MenuItem } from '@lumibook/component';
+import { type Server, ServersService } from '@lumibook/core/modules/cloud';
+import { useI18n } from '@lumibook/i18n';
 import { useLiveData, useService } from '@lumibook/infra';
 import clsx from 'clsx';
 import {

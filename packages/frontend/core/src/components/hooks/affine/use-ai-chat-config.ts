@@ -1,4 +1,5 @@
 // packages/frontend/core/src/blocksuite/ai/hooks/useChatPanelConfig.ts
+import { createSignalFromObservable } from '@blocksuite/affine/shared/utils';
 import { AIPlaygroundService } from '@lumibook/core/modules/ai-button/services/playground';
 import { AIReasoningService } from '@lumibook/core/modules/ai-button/services/reasoning';
 import { CollectionService } from '@lumibook/core/modules/collection';
@@ -13,7 +14,6 @@ import {
 } from '@lumibook/core/modules/search-menu/services';
 import { TagService } from '@lumibook/core/modules/tag';
 import { WorkspaceService } from '@lumibook/core/modules/workspace';
-import { createSignalFromObservable } from '@blocksuite/affine/shared/utils';
 import { useFramework } from '@lumibook/infra';
 
 export function useAIChatConfig() {

@@ -1,10 +1,10 @@
+import { BroomIcon, HelpIcon } from '@blocksuite/icons/rc';
 import { IconButton, useConfirmModal } from '@lumibook/component';
 import { DocsService } from '@lumibook/core/modules/doc';
 import { MigrationFavoriteItemsAdapter } from '@lumibook/core/modules/favorite';
 import { Trans, useI18n } from '@lumibook/i18n';
-import { track } from '@lumibook/track';
-import { BroomIcon, HelpIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useServices } from '@lumibook/infra';
+import { track } from '@lumibook/track';
 import { useCallback, useMemo } from 'react';
 
 import { CollapsibleSection } from '../../layouts/collapsible-section';

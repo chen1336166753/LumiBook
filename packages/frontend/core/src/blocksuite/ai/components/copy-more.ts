@@ -1,4 +1,3 @@
-import type { CopilotChatHistoryFragment } from '@lumibook/graphql';
 import { Tooltip } from '@blocksuite/affine/components/tooltip';
 import { WithDisposable } from '@blocksuite/affine/global/lit';
 import { noop } from '@blocksuite/affine/global/utils';
@@ -11,6 +10,7 @@ import type {
 } from '@blocksuite/affine/std';
 import type { NotificationService } from '@blocksuite/affine-shared/services';
 import { CopyIcon, MoreHorizontalIcon, ResetIcon } from '@blocksuite/icons/lit';
+import type { CopilotChatHistoryFragment } from '@lumibook/graphql';
 import { css, html, LitElement, nothing, type PropertyValues } from 'lit';
 import { property, query, state } from 'lit/decorators.js';
 import { repeat } from 'lit/directives/repeat.js';

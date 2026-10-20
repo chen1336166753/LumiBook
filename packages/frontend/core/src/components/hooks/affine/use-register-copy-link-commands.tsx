@@ -7,8 +7,8 @@ import { getDefaultShareMode } from '@lumibook/core/components/hooks/affine/use-
 import { EditorService } from '@lumibook/core/modules/editor';
 import { useIsActiveView } from '@lumibook/core/modules/workbench';
 import type { WorkspaceMetadata } from '@lumibook/core/modules/workspace';
-import { track } from '@lumibook/track';
 import { useLiveData, useService } from '@lumibook/infra';
+import { track } from '@lumibook/track';
 import { useEffect } from 'react';
 
 export function useRegisterCopyLinkCommands({

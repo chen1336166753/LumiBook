@@ -1,6 +1,5 @@
 import path from 'node:path';
 
-import type { apis } from '@lumibook/electron-api';
 import { cleanupElectronApp, test } from '@affine-test/kit/electron';
 import {
   addDatabase,
@@ -14,6 +13,7 @@ import {
   createLocalWorkspace,
   openWorkspaceListModal,
 } from '@affine-test/kit/utils/workspace';
+import type { apis } from '@lumibook/electron-api';
 import { expect, type Page } from '@playwright/test';
 import fs from 'fs-extra';
 import { _electron as electron } from 'playwright';

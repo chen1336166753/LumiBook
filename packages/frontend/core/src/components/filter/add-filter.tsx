@@ -1,4 +1,10 @@
 import {
+  ArrowLeftBigIcon,
+  CloudWorkspaceIcon,
+  FavoriteIcon,
+  PlusIcon,
+} from '@blocksuite/icons/rc';
+import {
   Button,
   IconButton,
   Menu,
@@ -8,12 +14,6 @@ import {
 import type { FilterParams } from '@lumibook/core/modules/collection-rules';
 import { WorkspacePropertyService } from '@lumibook/core/modules/workspace-property';
 import { useI18n } from '@lumibook/i18n';
-import {
-  ArrowLeftBigIcon,
-  CloudWorkspaceIcon,
-  FavoriteIcon,
-  PlusIcon,
-} from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
 import { useMemo } from 'react';
 

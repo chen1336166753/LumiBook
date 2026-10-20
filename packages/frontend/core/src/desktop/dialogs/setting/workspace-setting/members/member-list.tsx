@@ -1,3 +1,4 @@
+import { MoreVerticalIcon } from '@blocksuite/icons/rc';
 import { Avatar, IconButton, Loading, Menu, notify } from '@lumibook/component';
 import { Pagination } from '@lumibook/component/setting-components';
 import { type AuthAccountInfo, AuthService } from '@lumibook/core/modules/cloud';
@@ -9,7 +10,6 @@ import { WorkspaceService } from '@lumibook/core/modules/workspace';
 import { UserFriendlyError } from '@lumibook/error';
 import { Permission, WorkspaceMemberStatus } from '@lumibook/graphql';
 import { type I18nString, useI18n } from '@lumibook/i18n';
-import { MoreVerticalIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
 import clsx from 'clsx';
 import { clamp } from 'lodash-es';

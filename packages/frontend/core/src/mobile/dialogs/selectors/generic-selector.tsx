@@ -1,3 +1,4 @@
+import { ArrowRightSmallIcon } from '@blocksuite/icons/rc';
 import {
   Button,
   Checkbox,
@@ -7,7 +8,6 @@ import {
 } from '@lumibook/component';
 import { PageHeader } from '@lumibook/core/mobile/components';
 import { useI18n } from '@lumibook/i18n';
-import { ArrowRightSmallIcon } from '@blocksuite/icons/rc';
 import { cssVarV2 } from '@toeverything/theme/v2';
 import {
   type ReactNode,

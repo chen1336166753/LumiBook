@@ -1,5 +1,5 @@
-import { toReactNode } from '@lumibook/component';
 import { BlockComponent } from '@blocksuite/affine/std';
+import { toReactNode } from '@lumibook/component';
 import { useLiveData, useService } from '@lumibook/infra';
 import { useCallback, useEffect, useMemo, useState } from 'react';
 

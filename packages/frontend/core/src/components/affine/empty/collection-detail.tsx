@@ -1,7 +1,7 @@
+import { AllDocsIcon, FilterIcon } from '@blocksuite/icons/rc';
 import type { Collection } from '@lumibook/core/modules/collection';
 import { WorkspaceDialogService } from '@lumibook/core/modules/dialogs';
 import { useI18n } from '@lumibook/i18n';
-import { AllDocsIcon, FilterIcon } from '@blocksuite/icons/rc';
 import { useService } from '@lumibook/infra';
 import { useCallback } from 'react';
 

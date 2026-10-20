@@ -1,3 +1,9 @@
+import {
+  ArrowDownSmallIcon,
+  ArrowUpSmallIcon,
+  AttachmentIcon,
+  CenterPeekIcon,
+} from '@blocksuite/icons/rc';
 import { IconButton, observeIntersection } from '@lumibook/component';
 import {
   type PDF,
@@ -10,12 +16,6 @@ import type { PageSize } from '@lumibook/core/modules/pdf/renderer/types';
 import { LoadingSvg, PDFPageCanvas } from '@lumibook/core/modules/pdf/views';
 import { PeekViewService } from '@lumibook/core/modules/peek-view/services/peek-view';
 import { stopPropagation } from '@lumibook/core/utils';
-import {
-  ArrowDownSmallIcon,
-  ArrowUpSmallIcon,
-  AttachmentIcon,
-  CenterPeekIcon,
-} from '@blocksuite/icons/rc';
 import { LiveData, useLiveData, useService } from '@lumibook/infra';
 import clsx from 'clsx';
 import { debounce } from 'lodash-es';

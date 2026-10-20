@@ -1,3 +1,4 @@
+import { NotificationIcon, SettingsIcon } from '@blocksuite/icons/rc';
 import {
   IconButton,
   Menu,
@@ -9,7 +10,6 @@ import { WorkspaceDialogService } from '@lumibook/core/modules/dialogs';
 import { NotificationCountService } from '@lumibook/core/modules/notification';
 import { WorkbenchService } from '@lumibook/core/modules/workbench';
 import { useI18n } from '@lumibook/i18n';
-import { NotificationIcon, SettingsIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
 import { cssVarV2 } from '@toeverything/theme/v2';
 import clsx from 'clsx';

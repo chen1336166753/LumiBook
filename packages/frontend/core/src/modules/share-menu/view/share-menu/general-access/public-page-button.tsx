@@ -1,3 +1,8 @@
+import {
+  LockIcon,
+  SingleSelectCheckSolidIcon,
+  ViewIcon,
+} from '@blocksuite/icons/rc';
 import { Menu, MenuItem, MenuTrigger, notify } from '@lumibook/component';
 import { useAsyncCallback } from '@lumibook/core/components/hooks/affine-async-hooks';
 import { EditorService } from '@lumibook/core/modules/editor';
@@ -5,13 +10,8 @@ import { ShareInfoService } from '@lumibook/core/modules/share-doc';
 import { UserFriendlyError } from '@lumibook/error';
 import { PublicDocMode } from '@lumibook/graphql';
 import { useI18n } from '@lumibook/i18n';
-import track from '@lumibook/track';
-import {
-  LockIcon,
-  SingleSelectCheckSolidIcon,
-  ViewIcon,
-} from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
+import track from '@lumibook/track';
 import { cssVar } from '@toeverything/theme';
 import clsx from 'clsx';
 import { useEffect } from 'react';

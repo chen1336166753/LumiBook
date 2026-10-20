@@ -1,15 +1,3 @@
-import type {
-  AIDraftService,
-  AIModelService,
-  AIToolsConfigService,
-} from '@lumibook/core/modules/ai-button';
-import type {
-  ServerService,
-  SubscriptionService,
-} from '@lumibook/core/modules/cloud';
-import type { WorkspaceDialogService } from '@lumibook/core/modules/dialogs';
-import type { FeatureFlagService } from '@lumibook/core/modules/feature-flag';
-import type { CopilotChatHistoryFragment } from '@lumibook/graphql';
 import {
   CanvasElementType,
   EdgelessCRUDIdentifier,
@@ -23,6 +11,18 @@ import {
   TelemetryProvider,
 } from '@blocksuite/affine/shared/services';
 import type { EditorHost } from '@blocksuite/affine/std';
+import type {
+  AIDraftService,
+  AIModelService,
+  AIToolsConfigService,
+} from '@lumibook/core/modules/ai-button';
+import type {
+  ServerService,
+  SubscriptionService,
+} from '@lumibook/core/modules/cloud';
+import type { WorkspaceDialogService } from '@lumibook/core/modules/dialogs';
+import type { FeatureFlagService } from '@lumibook/core/modules/feature-flag';
+import type { CopilotChatHistoryFragment } from '@lumibook/graphql';
 import { html, LitElement, nothing, type PropertyValues } from 'lit';
 import { property, query, state } from 'lit/decorators.js';
 import { classMap } from 'lit/directives/class-map.js';

@@ -2,8 +2,8 @@ import { FavoriteTag } from '@lumibook/core/components/page-list';
 import { CompatibleFavoriteItemsAdapter } from '@lumibook/core/modules/favorite';
 import { toast } from '@lumibook/core/utils';
 import { useI18n } from '@lumibook/i18n';
-import { track } from '@lumibook/track';
 import { useLiveData, useService } from '@lumibook/infra';
+import { track } from '@lumibook/track';
 import { useCallback } from 'react';
 
 export interface FavoriteButtonProps {

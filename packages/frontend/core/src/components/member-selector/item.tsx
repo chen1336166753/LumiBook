@@ -1,7 +1,7 @@
+import { CloseIcon } from '@blocksuite/icons/rc';
 import { Avatar, Skeleton } from '@lumibook/component';
 import { PublicUserService } from '@lumibook/core/modules/cloud';
 import { useI18n } from '@lumibook/i18n';
-import { CloseIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
 import { type MouseEventHandler, useCallback, useEffect } from 'react';
 

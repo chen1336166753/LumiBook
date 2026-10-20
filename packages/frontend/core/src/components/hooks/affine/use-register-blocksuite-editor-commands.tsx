@@ -1,3 +1,9 @@
+import {
+  EdgelessIcon,
+  HistoryIcon,
+  LocalWorkspaceIcon,
+  PageIcon,
+} from '@blocksuite/icons/rc';
 import { toast, useConfirmModal } from '@lumibook/component';
 import {
   PreconditionStrategy,
@@ -13,18 +19,12 @@ import { GuardService } from '@lumibook/core/modules/permissions';
 import { WorkspaceService } from '@lumibook/core/modules/workspace';
 import { UserFriendlyError } from '@lumibook/error';
 import { useI18n } from '@lumibook/i18n';
-import { track } from '@lumibook/track';
-import {
-  EdgelessIcon,
-  HistoryIcon,
-  LocalWorkspaceIcon,
-  PageIcon,
-} from '@blocksuite/icons/rc';
 import {
   useLiveData,
   useService,
   useServiceOptional,
 } from '@lumibook/infra';
+import { track } from '@lumibook/track';
 import { useSetAtom } from 'jotai';
 import { useCallback, useEffect } from 'react';
 

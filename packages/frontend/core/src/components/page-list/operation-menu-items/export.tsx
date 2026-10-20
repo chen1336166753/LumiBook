@@ -1,7 +1,3 @@
-import { MenuItem, MenuSeparator, MenuSub } from '@lumibook/component';
-import { FeatureFlagService } from '@lumibook/core/modules/feature-flag';
-import { useI18n } from '@lumibook/i18n';
-import { track } from '@lumibook/track';
 import {
   ExportIcon,
   ExportToHtmlIcon,
@@ -10,7 +6,11 @@ import {
   PageIcon,
   PrinterIcon,
 } from '@blocksuite/icons/rc';
+import { MenuItem, MenuSeparator, MenuSub } from '@lumibook/component';
+import { FeatureFlagService } from '@lumibook/core/modules/feature-flag';
+import { useI18n } from '@lumibook/i18n';
 import { useLiveData, useService } from '@lumibook/infra';
+import { track } from '@lumibook/track';
 import type { ReactNode } from 'react';
 import { useCallback } from 'react';
 

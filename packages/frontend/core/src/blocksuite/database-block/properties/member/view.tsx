@@ -1,4 +1,3 @@
-import { Avatar, Popover, uniReactRoot } from '@lumibook/component';
 import {
   type Cell,
   type CellRenderProps,
@@ -12,6 +11,7 @@ import {
   UserProvider,
   type UserService,
 } from '@blocksuite/affine/shared/services';
+import { Avatar, Popover, uniReactRoot } from '@lumibook/component';
 import { computed, type ReadonlySignal } from '@preact/signals-core';
 import {
   forwardRef,

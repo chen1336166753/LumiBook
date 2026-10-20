@@ -1,6 +1,6 @@
+import { TodayIcon } from '@blocksuite/icons/rc';
 import { Scrollable } from '@lumibook/component';
 import { ViewSidebarTab } from '@lumibook/core/modules/workbench';
-import { TodayIcon } from '@blocksuite/icons/rc';
 
 import { sidebarScrollArea } from '../detail-page/detail-page.css';
 import { EditorJournalPanel } from '../detail-page/tabs/journal';

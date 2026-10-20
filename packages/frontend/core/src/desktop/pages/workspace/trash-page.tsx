@@ -1,3 +1,4 @@
+import { DeleteIcon } from '@blocksuite/icons/rc';
 import { Button, toast, useConfirmModal } from '@lumibook/component';
 import {
   createDocExplorerContext,
@@ -10,7 +11,6 @@ import { CollectionRulesService } from '@lumibook/core/modules/collection-rules'
 import { GlobalContextService } from '@lumibook/core/modules/global-context';
 import { WorkspacePermissionService } from '@lumibook/core/modules/permissions';
 import { useI18n } from '@lumibook/i18n';
-import { DeleteIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
 import { useCallback, useContext, useEffect, useMemo, useState } from 'react';
 

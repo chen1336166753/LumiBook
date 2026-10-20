@@ -1,7 +1,7 @@
+import { isImageProxyURL } from '@blocksuite/affine/shared/adapters';
 import type { Server } from '@lumibook/core/modules/cloud';
 import type { WorkspaceMetadata } from '@lumibook/core/modules/workspace';
 import { ServerDeploymentType } from '@lumibook/graphql';
-import { isImageProxyURL } from '@blocksuite/affine/shared/adapters';
 
 import { readShareLinkPreview } from './preview';
 import type { PendingShareItem, ShareLinkPreview } from './types';

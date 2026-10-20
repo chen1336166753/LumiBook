@@ -1,8 +1,8 @@
+import { TemplateIcon } from '@blocksuite/icons/rc';
 import { Checkbox, MenuItem, PropertyValue } from '@lumibook/component';
 import type { FilterParams } from '@lumibook/core/modules/collection-rules';
 import { type DocRecord, DocService } from '@lumibook/core/modules/doc';
 import { useI18n } from '@lumibook/i18n';
-import { TemplateIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
 import { type ChangeEvent, useCallback } from 'react';
 

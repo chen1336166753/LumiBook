@@ -1,6 +1,6 @@
+import { RightSidebarIcon } from '@blocksuite/icons/rc';
 import { IconButton } from '@lumibook/component';
 import { AffineErrorBoundary } from '@lumibook/core/components/affine/affine-error-boundary';
-import { RightSidebarIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
 import { Suspense, useCallback } from 'react';
 import { Outlet } from 'react-router-dom';

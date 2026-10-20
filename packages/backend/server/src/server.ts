@@ -8,7 +8,6 @@ import { raw } from 'express';
 import graphqlUploadExpress from 'graphql-upload/graphqlUploadExpress.mjs';
 
 import {
-  LumiBookLogger,
   buildCorsAllowedOrigins,
   CacheInterceptor,
   CloudThrottlerGuard,
@@ -18,6 +17,7 @@ import {
   CORS_EXPOSED_HEADERS,
   corsOriginCallback,
   GlobalExceptionFilter,
+  LumiBookLogger,
   URLHelper,
 } from './base';
 import { SocketIoAdapter } from './base/websocket';

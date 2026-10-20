@@ -18,8 +18,8 @@ import {
 } from 'vitest';
 
 import {
-  LumiBookUpdateProvider,
   availableForMyPlatformAndInstaller,
+  LumiBookUpdateProvider,
 } from '../../src/main/updater/affine-update-provider';
 import { MockedAppAdapter, MockedUpdater } from './mocks';
 

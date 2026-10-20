@@ -1,7 +1,7 @@
+import { ToggleRightIcon, ViewLayersIcon } from '@blocksuite/icons/rc';
 import { shallowEqual } from '@lumibook/component';
 import type { CollectionMeta } from '@lumibook/core/modules/collection';
 import { useI18n } from '@lumibook/i18n';
-import { ToggleRightIcon, ViewLayersIcon } from '@blocksuite/icons/rc';
 import { selectAtom } from 'jotai/utils';
 import type { MouseEventHandler } from 'react';
 import { memo, useCallback, useMemo } from 'react';

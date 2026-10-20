@@ -1,3 +1,9 @@
+import {
+  menu,
+  type MenuOptions,
+} from '@blocksuite/affine/components/context-menu';
+import type { DatabaseBlockModel } from '@blocksuite/affine/model';
+import { LinkIcon } from '@blocksuite/icons/lit';
 import { notify } from '@lumibook/component';
 import {
   generateUrl,
@@ -7,14 +13,8 @@ import { ServerService } from '@lumibook/core/modules/cloud';
 import { EditorService } from '@lumibook/core/modules/editor';
 import { copyLinkToBlockStdScopeClipboard } from '@lumibook/core/utils/clipboard';
 import { I18n } from '@lumibook/i18n';
-import { track } from '@lumibook/track';
-import {
-  menu,
-  type MenuOptions,
-} from '@blocksuite/affine/components/context-menu';
-import type { DatabaseBlockModel } from '@blocksuite/affine/model';
-import { LinkIcon } from '@blocksuite/icons/lit';
 import type { FrameworkProvider } from '@lumibook/infra';
+import { track } from '@lumibook/track';
 
 export function createDatabaseOptionsConfig(framework: FrameworkProvider) {
   return {

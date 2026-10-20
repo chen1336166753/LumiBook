@@ -1,10 +1,10 @@
+import { DoneIcon } from '@blocksuite/icons/rc';
 import { Divider, MenuItem } from '@lumibook/component';
 import type { GroupByParams } from '@lumibook/core/modules/collection-rules/types';
 import { WorkspacePropertyService } from '@lumibook/core/modules/workspace-property';
 import { useI18n } from '@lumibook/i18n';
-import track from '@lumibook/track';
-import { DoneIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
+import track from '@lumibook/track';
 import { cssVarV2 } from '@toeverything/theme/v2';
 import { useMemo } from 'react';
 

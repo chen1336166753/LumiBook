@@ -1,8 +1,8 @@
+import { SmileSolidIcon } from '@blocksuite/icons/rc';
 import { IconEditor, IconRenderer } from '@lumibook/component';
 import { EditorSettingService } from '@lumibook/core/modules/editor-setting';
 import { ExplorerIconService } from '@lumibook/core/modules/explorer-icon/services/explorer-icon';
 import { useI18n } from '@lumibook/i18n';
-import { SmileSolidIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
 
 import * as styles from './doc-icon-picker.css';

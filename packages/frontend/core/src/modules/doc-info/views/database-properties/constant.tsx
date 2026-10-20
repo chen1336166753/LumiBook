@@ -1,4 +1,3 @@
-import type { I18nString } from '@lumibook/i18n';
 import {
   CheckBoxCheckLinearIcon,
   DateTimeIcon,
@@ -9,6 +8,7 @@ import {
   SingleSelectIcon,
   TextIcon,
 } from '@blocksuite/icons/rc';
+import type { I18nString } from '@lumibook/i18n';
 
 import type { DatabaseCellRendererProps } from '../../types';
 import { CheckboxCell } from './cells/checkbox';

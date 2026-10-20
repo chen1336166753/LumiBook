@@ -1,10 +1,10 @@
+import { DeleteIcon, TemplateIcon } from '@blocksuite/icons/rc';
 import { Button, Menu, MenuItem, MenuSeparator } from '@lumibook/component';
 import { DocsService } from '@lumibook/core/modules/doc';
 import { DocDisplayMetaService } from '@lumibook/core/modules/doc-display-meta';
 import { TemplateDocService } from '@lumibook/core/modules/template-doc';
 import { TemplateListMenuContentScrollable } from '@lumibook/core/modules/template-doc/view/template-list-menu';
 import { useI18n } from '@lumibook/i18n';
-import { DeleteIcon, TemplateIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
 import clsx from 'clsx';
 import { useCallback, useMemo } from 'react';

@@ -6,12 +6,12 @@ import {
   type WorkspaceMetadata,
   WorkspacesService,
 } from '@lumibook/core/modules/workspace';
-import { track } from '@lumibook/track';
 import {
   useLiveData,
   useServiceOptional,
   useServices,
 } from '@lumibook/infra';
+import { track } from '@lumibook/track';
 import { useCallback, useEffect, useState } from 'react';
 
 import { UserWithWorkspaceList } from './user-with-workspace-list';

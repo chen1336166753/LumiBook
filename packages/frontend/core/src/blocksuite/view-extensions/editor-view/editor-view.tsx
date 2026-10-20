@@ -1,3 +1,7 @@
+import {
+  type ViewExtensionContext,
+  ViewExtensionProvider,
+} from '@blocksuite/affine/ext-loader';
 import type { ConfirmModalProps, ElementOrFactory } from '@lumibook/component';
 import {
   AffinePageReference,
@@ -7,10 +11,6 @@ import { DocService, DocsService } from '@lumibook/core/modules/doc';
 import { EditorService } from '@lumibook/core/modules/editor';
 import { toDocSearchParams } from '@lumibook/core/modules/navigation';
 import { WorkspaceService } from '@lumibook/core/modules/workspace';
-import {
-  type ViewExtensionContext,
-  ViewExtensionProvider,
-} from '@blocksuite/affine/ext-loader';
 import { FrameworkProvider } from '@lumibook/infra';
 import type { TemplateResult } from 'lit';
 import { z } from 'zod';

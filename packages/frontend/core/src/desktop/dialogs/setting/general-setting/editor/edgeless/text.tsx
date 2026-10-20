@@ -1,13 +1,4 @@
 import {
-  MenuItem,
-  MenuTrigger,
-  RadioGroup,
-  type RadioItem,
-} from '@lumibook/component';
-import { SettingRow } from '@lumibook/component/setting-components';
-import { EditorSettingService } from '@lumibook/core/modules/editor-setting';
-import { useI18n } from '@lumibook/i18n';
-import {
   DefaultTheme,
   FontFamily,
   FontFamilyMap,
@@ -16,6 +7,15 @@ import {
   TextAlign,
 } from '@blocksuite/affine/model';
 import type { Store } from '@blocksuite/affine/store';
+import {
+  MenuItem,
+  MenuTrigger,
+  RadioGroup,
+  type RadioItem,
+} from '@lumibook/component';
+import { SettingRow } from '@lumibook/component/setting-components';
+import { EditorSettingService } from '@lumibook/core/modules/editor-setting';
+import { useI18n } from '@lumibook/i18n';
 import { useFramework, useLiveData } from '@lumibook/infra';
 import { isEqual } from 'lodash-es';
 import { useCallback, useMemo } from 'react';

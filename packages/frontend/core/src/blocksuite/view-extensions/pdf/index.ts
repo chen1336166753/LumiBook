@@ -1,8 +1,8 @@
-import type { ElementOrFactory } from '@lumibook/component';
 import {
   type ViewExtensionContext,
   ViewExtensionProvider,
 } from '@blocksuite/affine/ext-loader';
+import type { ElementOrFactory } from '@lumibook/component';
 import type { TemplateResult } from 'lit';
 import { z } from 'zod';
 

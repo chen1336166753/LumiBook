@@ -1,9 +1,3 @@
-import { notify } from '@lumibook/component';
-import { ServerService } from '@lumibook/core/modules/cloud';
-import { toDocSearchParams } from '@lumibook/core/modules/navigation';
-import { copyTextToClipboard } from '@lumibook/core/utils/clipboard';
-import { useI18n } from '@lumibook/i18n';
-import { track } from '@lumibook/track';
 import type { SerializedXYWH } from '@blocksuite/affine/global/gfx';
 import { type DocMode } from '@blocksuite/affine/model';
 import {
@@ -17,7 +11,13 @@ import {
   GfxBlockElementModel,
   GfxControllerIdentifier,
 } from '@blocksuite/affine/std/gfx';
+import { notify } from '@lumibook/component';
+import { ServerService } from '@lumibook/core/modules/cloud';
+import { toDocSearchParams } from '@lumibook/core/modules/navigation';
+import { copyTextToClipboard } from '@lumibook/core/utils/clipboard';
+import { useI18n } from '@lumibook/i18n';
 import { useService } from '@lumibook/infra';
+import { track } from '@lumibook/track';
 import { useCallback } from 'react';
 
 export type UseSharingUrl = {

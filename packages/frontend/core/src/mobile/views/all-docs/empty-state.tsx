@@ -1,6 +1,6 @@
+import { PlusIcon } from '@blocksuite/icons/rc';
 import { Button, ThemedImg } from '@lumibook/component';
 import { useI18n } from '@lumibook/i18n';
-import { PlusIcon } from '@blocksuite/icons/rc';
 import type { MouseEventHandler } from 'react';
 
 import collectionIllustrationDark from '../../../components/affine/empty/assets/collection-list.dark.png';

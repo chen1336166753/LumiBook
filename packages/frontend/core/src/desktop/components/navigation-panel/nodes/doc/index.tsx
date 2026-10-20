@@ -19,7 +19,6 @@ import { GuardService } from '@lumibook/core/modules/permissions';
 import { WorkspaceService } from '@lumibook/core/modules/workspace';
 import type { AffineDNDData } from '@lumibook/core/types/dnd';
 import { useI18n } from '@lumibook/i18n';
-import { track } from '@lumibook/track';
 import {
   LiveData,
   MANUALLY_STOP,
@@ -27,6 +26,7 @@ import {
   useService,
   useServices,
 } from '@lumibook/infra';
+import { track } from '@lumibook/track';
 import { useCallback, useLayoutEffect, useMemo, useState } from 'react';
 import { NEVER } from 'rxjs';
 

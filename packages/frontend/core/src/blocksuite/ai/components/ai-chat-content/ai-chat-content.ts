@@ -1,3 +1,7 @@
+import { SignalWatcher, WithDisposable } from '@blocksuite/affine/global/lit';
+import { type EditorHost, ShadowlessElement } from '@blocksuite/affine/std';
+import type { ExtensionType } from '@blocksuite/affine/store';
+import type { NotificationService } from '@blocksuite/affine-shared/services';
 import type {
   AIDraftService,
   AIModelService,
@@ -13,10 +17,6 @@ import type { FeatureFlagService } from '@lumibook/core/modules/feature-flag';
 import type { PeekViewService } from '@lumibook/core/modules/peek-view';
 import type { AppThemeService } from '@lumibook/core/modules/theme';
 import type { CopilotChatHistoryFragment } from '@lumibook/graphql';
-import { SignalWatcher, WithDisposable } from '@blocksuite/affine/global/lit';
-import { type EditorHost, ShadowlessElement } from '@blocksuite/affine/std';
-import type { ExtensionType } from '@blocksuite/affine/store';
-import type { NotificationService } from '@blocksuite/affine-shared/services';
 import { type Signal } from '@preact/signals-core';
 import { css, html, type PropertyValues, type TemplateResult } from 'lit';
 import { property, state } from 'lit/decorators.js';

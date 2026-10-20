@@ -2,8 +2,8 @@
 import { UrlService } from '@lumibook/core/modules/url';
 import type { UpdateMeta } from '@lumibook/electron-api';
 import { apis, events } from '@lumibook/electron-api';
-import { track } from '@lumibook/track';
 import { appSettingAtom, useService } from '@lumibook/infra';
+import { track } from '@lumibook/track';
 import { atom, useAtom, useAtomValue } from 'jotai';
 import { atomWithObservable, atomWithStorage } from 'jotai/utils';
 import { useCallback, useState } from 'react';

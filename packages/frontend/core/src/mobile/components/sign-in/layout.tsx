@@ -1,5 +1,5 @@
-import { IconButton } from '@lumibook/component';
 import { CloseIcon } from '@blocksuite/icons/rc';
+import { IconButton } from '@lumibook/component';
 import type { PropsWithChildren } from 'react';
 
 import { SignInBackground } from './background';

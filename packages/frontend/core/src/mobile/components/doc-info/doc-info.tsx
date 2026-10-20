@@ -1,3 +1,4 @@
+import { PlusIcon } from '@blocksuite/icons/rc';
 import {
   Button,
   Divider,
@@ -19,7 +20,6 @@ import { DocDatabaseBacklinkInfo } from '@lumibook/core/modules/doc-info';
 import { DocLinksService } from '@lumibook/core/modules/doc-link';
 import { WorkspacePropertyService } from '@lumibook/core/modules/workspace-property';
 import { useI18n } from '@lumibook/i18n';
-import { PlusIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useServices } from '@lumibook/infra';
 import { Suspense, useCallback, useEffect, useState } from 'react';
 

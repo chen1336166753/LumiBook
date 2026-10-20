@@ -1,6 +1,6 @@
 import { DebugLogger } from '@lumibook/debug';
-import type { WorkerInitOptions } from '@lumibook/nbstore/worker/client';
 import { ObjectPool, Service } from '@lumibook/infra';
+import type { WorkerInitOptions } from '@lumibook/nbstore/worker/client';
 
 import type { Workspace } from '../entities/workspace';
 import { WorkspaceInitialized } from '../events';

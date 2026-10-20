@@ -1,11 +1,11 @@
 import { execSync } from 'node:child_process';
 import fs from 'node:fs';
 
-import { Package } from '@lumibook/utils/workspace';
 import {
   androidpublisher_v3,
   auth as google_auth,
 } from '@googleapis/androidpublisher';
+import { Package } from '@lumibook/utils/workspace';
 
 export async function fetchVersionCode(applicationId: string): Promise<number> {
   const auth = new google_auth.GoogleAuth({

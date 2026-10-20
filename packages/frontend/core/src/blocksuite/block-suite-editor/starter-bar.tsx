@@ -1,3 +1,10 @@
+import { PageRootBlockComponent } from '@blocksuite/affine/blocks/root';
+import type { Store } from '@blocksuite/affine/store';
+import {
+  AiIcon,
+  EdgelessIcon,
+  TemplateColoredIcon,
+} from '@blocksuite/icons/rc';
 import { MenuSeparator } from '@lumibook/component';
 import {
   handleInlineAskAIAction,
@@ -12,15 +19,8 @@ import {
   TemplateListMenuAdd,
 } from '@lumibook/core/modules/template-doc/view/template-list-menu';
 import { useI18n } from '@lumibook/i18n';
-import track from '@lumibook/track';
-import { PageRootBlockComponent } from '@blocksuite/affine/blocks/root';
-import type { Store } from '@blocksuite/affine/store';
-import {
-  AiIcon,
-  EdgelessIcon,
-  TemplateColoredIcon,
-} from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
+import track from '@lumibook/track';
 import clsx from 'clsx';
 import {
   forwardRef,

@@ -1,7 +1,3 @@
-import type { AIToolsConfigService } from '@lumibook/core/modules/ai-button';
-import type { PeekViewService } from '@lumibook/core/modules/peek-view';
-import type { AppThemeService } from '@lumibook/core/modules/theme';
-import type { CopilotChatHistoryFragment } from '@lumibook/graphql';
 import { WithDisposable } from '@blocksuite/affine/global/lit';
 import {
   DocModeProvider,
@@ -11,6 +7,10 @@ import {
 import { type EditorHost, ShadowlessElement } from '@blocksuite/affine/std';
 import type { BaseSelection, ExtensionType } from '@blocksuite/affine/store';
 import { ArrowDownBigIcon as ArrowDownIcon } from '@blocksuite/icons/lit';
+import type { AIToolsConfigService } from '@lumibook/core/modules/ai-button';
+import type { PeekViewService } from '@lumibook/core/modules/peek-view';
+import type { AppThemeService } from '@lumibook/core/modules/theme';
+import type { CopilotChatHistoryFragment } from '@lumibook/graphql';
 import type { Signal } from '@preact/signals-core';
 import { css, html, nothing, type PropertyValues } from 'lit';
 import { property, state } from 'lit/decorators.js';

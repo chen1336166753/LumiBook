@@ -1,3 +1,4 @@
+import { DoneIcon, SearchIcon } from '@blocksuite/icons/rc';
 import {
   Loading,
   Menu,
@@ -35,7 +36,6 @@ import {
   SystemFontFamilyService,
 } from '@lumibook/core/modules/system-font-family';
 import { Trans, useI18n } from '@lumibook/i18n';
-import { DoneIcon, SearchIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService, useServices } from '@lumibook/infra';
 import clsx from 'clsx';
 import {

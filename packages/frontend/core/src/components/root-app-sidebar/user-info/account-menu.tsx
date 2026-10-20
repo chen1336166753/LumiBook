@@ -1,10 +1,10 @@
+import { AccountIcon, AdminIcon, SignOutIcon } from '@blocksuite/icons/rc';
 import { MenuItem } from '@lumibook/component';
 import { ServerService, UserFeatureService } from '@lumibook/core/modules/cloud';
 import { WorkspaceDialogService } from '@lumibook/core/modules/dialogs';
 import { useI18n } from '@lumibook/i18n';
-import { track } from '@lumibook/track';
-import { AccountIcon, AdminIcon, SignOutIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
+import { track } from '@lumibook/track';
 import { useCallback, useEffect } from 'react';
 
 import { useSignOut } from '../../hooks/affine/use-sign-out';

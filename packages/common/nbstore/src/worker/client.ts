@@ -1,3 +1,4 @@
+import { OpClient, transfer } from '@lumibook/infra/op';
 import type {
   RealtimeConfigureInput,
   RealtimeRequestInputOf,
@@ -9,7 +10,6 @@ import type {
   RealtimeTopicInputOf,
   RealtimeTopicName,
 } from '@lumibook/realtime';
-import { OpClient, transfer } from '@lumibook/infra/op';
 import type { Observable } from 'rxjs';
 import { v4 as uuid } from 'uuid';
 

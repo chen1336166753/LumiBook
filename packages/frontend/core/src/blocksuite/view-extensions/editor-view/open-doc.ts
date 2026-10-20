@@ -1,5 +1,3 @@
-import { EditorSettingSchema } from '@lumibook/core/modules/editor-setting';
-import { I18n } from '@lumibook/i18n';
 import {
   type OpenDocConfig,
   type OpenDocConfigItem,
@@ -11,6 +9,8 @@ import {
   OpenInNewIcon,
   SplitViewIcon,
 } from '@blocksuite/icons/lit';
+import { EditorSettingSchema } from '@lumibook/core/modules/editor-setting';
+import { I18n } from '@lumibook/i18n';
 
 type OpenDocAction = OpenDocConfigItem & {
   enabled: boolean;

@@ -1,5 +1,3 @@
-import { VirtualKeyboardProvider } from '@lumibook/core/mobile/modules/virtual-keyboard';
-import { globalVars } from '@lumibook/core/mobile/styles/variables.css';
 import type { Container } from '@blocksuite/affine/global/di';
 import { DisposableGroup } from '@blocksuite/affine/global/disposable';
 import {
@@ -8,8 +6,10 @@ import {
 } from '@blocksuite/affine/shared/services';
 import { LifeCycleWatcher } from '@blocksuite/affine/std';
 import type { ExtensionType } from '@blocksuite/affine/store';
-import { batch, signal } from '@preact/signals-core';
+import { VirtualKeyboardProvider } from '@lumibook/core/mobile/modules/virtual-keyboard';
+import { globalVars } from '@lumibook/core/mobile/styles/variables.css';
 import type { FrameworkProvider } from '@lumibook/infra';
+import { batch, signal } from '@preact/signals-core';
 
 export function KeyboardToolbarExtension(
   framework: FrameworkProvider

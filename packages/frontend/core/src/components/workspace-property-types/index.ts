@@ -1,9 +1,3 @@
-import type { FilterParams } from '@lumibook/core/modules/collection-rules';
-import type {
-  WorkspacePropertyFilter,
-  WorkspacePropertyType,
-} from '@lumibook/core/modules/workspace-property';
-import type { I18nString } from '@lumibook/i18n';
 import {
   CheckBoxCheckLinearIcon,
   DateTimeIcon,
@@ -19,6 +13,12 @@ import {
   TextIcon,
   TodayIcon,
 } from '@blocksuite/icons/rc';
+import type { FilterParams } from '@lumibook/core/modules/collection-rules';
+import type {
+  WorkspacePropertyFilter,
+  WorkspacePropertyType,
+} from '@lumibook/core/modules/workspace-property';
+import type { I18nString } from '@lumibook/i18n';
 
 import type { DocListPropertyProps, GroupHeaderProps } from '../explorer/types';
 import type { PropertyValueProps } from '../properties/types';

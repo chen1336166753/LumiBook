@@ -1,3 +1,4 @@
+import { ZipTransformer } from '@blocksuite/affine/widgets/linked-doc';
 import { DNDContext } from '@lumibook/component';
 import { AffineOtherPageLayout } from '@lumibook/component/affine-other-page-layout';
 import { workbenchRoutes } from '@lumibook/core/desktop/workbench-router';
@@ -15,7 +16,6 @@ import {
   type WorkspaceMetadata,
   WorkspacesService,
 } from '@lumibook/core/modules/workspace';
-import { ZipTransformer } from '@blocksuite/affine/widgets/linked-doc';
 import {
   FrameworkScope,
   LiveData,

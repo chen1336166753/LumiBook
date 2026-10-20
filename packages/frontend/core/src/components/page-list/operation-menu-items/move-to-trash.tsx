@@ -1,7 +1,7 @@
+import { DeleteIcon } from '@blocksuite/icons/rc';
 import type { ConfirmModalProps, MenuItemProps } from '@lumibook/component';
 import { ConfirmModal, MenuItem } from '@lumibook/component';
 import { useI18n } from '@lumibook/i18n';
-import { DeleteIcon } from '@blocksuite/icons/rc';
 
 export const MoveToTrash = (props: MenuItemProps) => {
   const t = useI18n();

@@ -9,8 +9,8 @@ import type { Tag } from '@lumibook/core/modules/tag';
 import { TagService } from '@lumibook/core/modules/tag';
 import type { AffineDNDData } from '@lumibook/core/types/dnd';
 import { useI18n } from '@lumibook/i18n';
-import { track } from '@lumibook/track';
 import { useLiveData, useService, useServices } from '@lumibook/infra';
+import { track } from '@lumibook/track';
 import clsx from 'clsx';
 import { useCallback, useMemo } from 'react';
 

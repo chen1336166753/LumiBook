@@ -1,5 +1,5 @@
-import type { DefaultOpenProperty } from '@lumibook/core/components/properties';
 import type { DocMode } from '@blocksuite/affine/model';
+import type { DefaultOpenProperty } from '@lumibook/core/components/properties';
 import { useLiveData, useService } from '@lumibook/infra';
 import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 

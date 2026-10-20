@@ -1,5 +1,5 @@
-import { createReactComponentFromLit } from '@lumibook/component';
 import { DocTitle } from '@blocksuite/affine/fragments/doc-title';
+import { createReactComponentFromLit } from '@lumibook/component';
 import React from 'react';
 
 import { EdgelessEditor } from './edgeless-editor';

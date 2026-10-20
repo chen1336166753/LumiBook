@@ -1,4 +1,3 @@
-import { DocDisplayMetaService } from '@lumibook/core/modules/doc-display-meta';
 import type { Container } from '@blocksuite/affine/global/di';
 import type {
   DocDisplayMetaExtension,
@@ -11,8 +10,9 @@ import {
 } from '@blocksuite/affine/shared/utils';
 import { LifeCycleWatcher, StdIdentifier } from '@blocksuite/affine/std';
 import { LinkedPageIcon, PageIcon } from '@blocksuite/icons/lit';
-import { computed, type ReadonlySignal } from '@preact/signals-core';
+import { DocDisplayMetaService } from '@lumibook/core/modules/doc-display-meta';
 import { type FrameworkProvider } from '@lumibook/infra';
+import { computed, type ReadonlySignal } from '@preact/signals-core';
 import type { TemplateResult } from 'lit';
 
 export function buildDocDisplayMetaExtension(framework: FrameworkProvider) {

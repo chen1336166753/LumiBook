@@ -1,8 +1,3 @@
-import { Button, IconButton, Menu, MenuItem } from '@lumibook/component';
-import { DocDisplayMetaService } from '@lumibook/core/modules/doc-display-meta';
-import { WorkbenchService } from '@lumibook/core/modules/workbench';
-import { stopPropagation } from '@lumibook/core/utils';
-import { useI18n } from '@lumibook/i18n';
 import { EmbedSyncedDocBlockComponent } from '@blocksuite/affine/blocks/embed-doc';
 import { isPeekable, peek } from '@blocksuite/affine/components/peek';
 import type { EmbedSyncedDocModel } from '@blocksuite/affine-model';
@@ -17,8 +12,13 @@ import {
   ToggleRightIcon,
 } from '@blocksuite/icons/rc';
 import type { BlockStdScope } from '@blocksuite/std';
-import { batch } from '@preact/signals-core';
+import { Button, IconButton, Menu, MenuItem } from '@lumibook/component';
+import { DocDisplayMetaService } from '@lumibook/core/modules/doc-display-meta';
+import { WorkbenchService } from '@lumibook/core/modules/workbench';
+import { stopPropagation } from '@lumibook/core/utils';
+import { useI18n } from '@lumibook/i18n';
 import { useLiveData, useService } from '@lumibook/infra';
+import { batch } from '@preact/signals-core';
 import { useCallback, useEffect, useMemo, useState } from 'react';
 
 import { CopyLinkButton, DocInfoButton } from './common';

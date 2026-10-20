@@ -1,14 +1,14 @@
-import { Tooltip } from '@lumibook/component';
-import { useCatchEventCallback } from '@lumibook/core/components/hooks/use-catch-event-hook';
-import { UrlService } from '@lumibook/core/modules/url';
-import { Unreachable } from '@lumibook/env/constant';
-import { useI18n } from '@lumibook/i18n';
 import {
   CloseIcon,
   DownloadIcon,
   NewIcon,
   ResetIcon,
 } from '@blocksuite/icons/rc';
+import { Tooltip } from '@lumibook/component';
+import { useCatchEventCallback } from '@lumibook/core/components/hooks/use-catch-event-hook';
+import { UrlService } from '@lumibook/core/modules/url';
+import { Unreachable } from '@lumibook/env/constant';
+import { useI18n } from '@lumibook/i18n';
 import { useService } from '@lumibook/infra';
 import clsx from 'clsx';
 import { useCallback, useMemo } from 'react';

@@ -1,10 +1,10 @@
+import { CopyIcon } from '@blocksuite/icons/rc';
 import { Button, IconButton, Loading, notify } from '@lumibook/component';
 import { AuthPageContainer } from '@lumibook/component/auth-components';
 import { SelfhostGenerateLicenseService } from '@lumibook/core/modules/cloud';
 import { OpenInAppService } from '@lumibook/core/modules/open-in-app';
 import { copyTextToClipboard } from '@lumibook/core/utils/clipboard';
 import { Trans, useI18n } from '@lumibook/i18n';
-import { CopyIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
 import { useCallback, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';

@@ -1,5 +1,5 @@
-import { tracker } from '@lumibook/track';
 import { OnEvent, Service } from '@lumibook/infra';
+import { tracker } from '@lumibook/track';
 
 import { UserQuota } from '../entities/user-quota';
 import { AccountChanged } from '../events/account-changed';

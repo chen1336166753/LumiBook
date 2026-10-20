@@ -4,9 +4,9 @@
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 
-import { UserFriendlyError } from '@lumibook/error';
 import type { EditorHost } from '@blocksuite/affine/std';
 import type { GfxModel } from '@blocksuite/affine/std/gfx';
+import { UserFriendlyError } from '@lumibook/error';
 import { BehaviorSubject, Subject } from 'rxjs';
 import { beforeEach, describe, expect, test, vi } from 'vitest';
 

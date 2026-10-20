@@ -1,11 +1,11 @@
+import { ArrowLeftSmallIcon } from '@blocksuite/icons/rc';
 import { Button, IconButton, Modal } from '@lumibook/component';
 import { useBlurRoot } from '@lumibook/core/components/hooks/use-blur-root';
 import { AuthService, SubscriptionService } from '@lumibook/core/modules/cloud';
 import { WorkspaceDialogService } from '@lumibook/core/modules/dialogs';
 import { Trans, useI18n } from '@lumibook/i18n';
-import { track } from '@lumibook/track';
-import { ArrowLeftSmallIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService, useServices } from '@lumibook/infra';
+import { track } from '@lumibook/track';
 import type { ReactNode } from 'react';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 

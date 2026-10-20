@@ -4,8 +4,8 @@ import { useGuard } from '@lumibook/core/components/guard';
 import { useAsyncCallback } from '@lumibook/core/components/hooks/affine-async-hooks';
 import { DocService, DocsService } from '@lumibook/core/modules/doc';
 import { WorkspaceService } from '@lumibook/core/modules/workspace';
-import { track } from '@lumibook/track';
 import { useLiveData, useService } from '@lumibook/infra';
+import { track } from '@lumibook/track';
 import clsx from 'clsx';
 import type { HTMLAttributes } from 'react';
 

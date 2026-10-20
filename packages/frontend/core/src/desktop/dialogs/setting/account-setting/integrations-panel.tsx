@@ -1,3 +1,4 @@
+import { GoogleIcon, LinkIcon, TodayIcon } from '@blocksuite/icons/rc';
 import {
   Button,
   Input,
@@ -27,7 +28,6 @@ import {
   unlinkCalendarAccountMutation,
 } from '@lumibook/graphql';
 import { useI18n } from '@lumibook/i18n';
-import { GoogleIcon, LinkIcon, TodayIcon } from '@blocksuite/icons/rc';
 import { useService } from '@lumibook/infra';
 import {
   type FormEvent,

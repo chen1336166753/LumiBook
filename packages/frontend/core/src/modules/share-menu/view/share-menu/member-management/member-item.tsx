@@ -19,8 +19,8 @@ import {
 import { UserFriendlyError } from '@lumibook/error';
 import { DocRole } from '@lumibook/graphql';
 import { useI18n } from '@lumibook/i18n';
-import track from '@lumibook/track';
 import { useLiveData, useService } from '@lumibook/infra';
+import track from '@lumibook/track';
 import clsx from 'clsx';
 import { useCallback, useMemo } from 'react';
 

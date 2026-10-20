@@ -1,4 +1,13 @@
 import {
+  DeleteIcon,
+  FolderIcon,
+  PageIcon,
+  PlusIcon,
+  PlusThickIcon,
+  RemoveFolderIcon,
+  TagsIcon,
+} from '@blocksuite/icons/rc';
+import {
   AnimatedCollectionsIcon,
   AnimatedFolderIcon,
   type DropTargetDropEvent,
@@ -22,17 +31,8 @@ import { WorkspaceService } from '@lumibook/core/modules/workspace';
 import type { AffineDNDData } from '@lumibook/core/types/dnd';
 import { Unreachable } from '@lumibook/env/constant';
 import { useI18n } from '@lumibook/i18n';
-import { track } from '@lumibook/track';
-import {
-  DeleteIcon,
-  FolderIcon,
-  PageIcon,
-  PlusIcon,
-  PlusThickIcon,
-  RemoveFolderIcon,
-  TagsIcon,
-} from '@blocksuite/icons/rc';
 import { useLiveData, useService, useServices } from '@lumibook/infra';
+import { track } from '@lumibook/track';
 import { difference } from 'lodash-es';
 import { useCallback, useMemo, useState } from 'react';
 

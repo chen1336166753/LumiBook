@@ -1,10 +1,3 @@
-import { useWorkspaceInfo } from '@lumibook/core/components/hooks/use-workspace-info';
-import { ServerService } from '@lumibook/core/modules/cloud';
-import type { SettingTab } from '@lumibook/core/modules/dialogs/constant';
-import { WorkspaceService } from '@lumibook/core/modules/workspace';
-import { EmbeddingSettings } from '@lumibook/core/modules/workspace-indexer-embedding';
-import { ServerDeploymentType } from '@lumibook/graphql';
-import { useI18n } from '@lumibook/i18n';
 import {
   AiEmbeddingIcon,
   CollaborationIcon,
@@ -14,6 +7,13 @@ import {
   SaveIcon,
   SettingsIcon,
 } from '@blocksuite/icons/rc';
+import { useWorkspaceInfo } from '@lumibook/core/components/hooks/use-workspace-info';
+import { ServerService } from '@lumibook/core/modules/cloud';
+import type { SettingTab } from '@lumibook/core/modules/dialogs/constant';
+import { WorkspaceService } from '@lumibook/core/modules/workspace';
+import { EmbeddingSettings } from '@lumibook/core/modules/workspace-indexer-embedding';
+import { ServerDeploymentType } from '@lumibook/graphql';
+import { useI18n } from '@lumibook/i18n';
 import { useLiveData, useService } from '@lumibook/infra';
 import { useMemo } from 'react';
 

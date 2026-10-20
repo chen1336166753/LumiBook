@@ -1,5 +1,5 @@
-import type { FilterParams } from '@lumibook/core/modules/collection-rules';
 import { WarningIcon } from '@blocksuite/icons/rc';
+import type { FilterParams } from '@lumibook/core/modules/collection-rules';
 import { useEffect } from 'react';
 
 import { Condition } from './condition';

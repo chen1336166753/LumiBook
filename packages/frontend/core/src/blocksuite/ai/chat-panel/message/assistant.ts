@@ -1,7 +1,3 @@
-import type { FeatureFlagService } from '@lumibook/core/modules/feature-flag';
-import type { PeekViewService } from '@lumibook/core/modules/peek-view';
-import type { AppThemeService } from '@lumibook/core/modules/theme';
-import type { CopilotChatHistoryFragment } from '@lumibook/graphql';
 import { WithDisposable } from '@blocksuite/affine/global/lit';
 import { isInsidePageEditor } from '@blocksuite/affine/shared/utils';
 import {
@@ -11,6 +7,10 @@ import {
 } from '@blocksuite/affine/std';
 import type { ExtensionType } from '@blocksuite/affine/store';
 import type { NotificationService } from '@blocksuite/affine-shared/services';
+import type { FeatureFlagService } from '@lumibook/core/modules/feature-flag';
+import type { PeekViewService } from '@lumibook/core/modules/peek-view';
+import type { AppThemeService } from '@lumibook/core/modules/theme';
+import type { CopilotChatHistoryFragment } from '@lumibook/graphql';
 import type { Signal } from '@preact/signals-core';
 import { css, html, nothing } from 'lit';
 import { property } from 'lit/decorators.js';

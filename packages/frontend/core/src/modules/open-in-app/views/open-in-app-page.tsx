@@ -1,8 +1,8 @@
+import { LocalWorkspaceIcon, Logo1Icon } from '@blocksuite/icons/rc';
 import { Button } from '@lumibook/component/ui/button';
 import { WorkspaceDialogService } from '@lumibook/core/modules/dialogs';
 import { appIconMap, appNames } from '@lumibook/core/utils/channel';
 import { Trans, useI18n } from '@lumibook/i18n';
-import { LocalWorkspaceIcon, Logo1Icon } from '@blocksuite/icons/rc';
 import { useServiceOptional } from '@lumibook/infra';
 import type { MouseEvent } from 'react';
 import { useCallback } from 'react';

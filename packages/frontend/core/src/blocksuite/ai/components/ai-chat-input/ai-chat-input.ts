@@ -1,3 +1,11 @@
+import { combine } from '@atlaskit/pragmatic-drag-and-drop/combine';
+import { dropTargetForElements } from '@atlaskit/pragmatic-drag-and-drop/element/adapter';
+import { SignalWatcher, WithDisposable } from '@blocksuite/affine/global/lit';
+import { unsafeCSSVar, unsafeCSSVarV2 } from '@blocksuite/affine/shared/theme';
+import type { EditorHost } from '@blocksuite/affine/std';
+import { ShadowlessElement } from '@blocksuite/affine/std';
+import type { NotificationService } from '@blocksuite/affine-shared/services';
+import { ArrowUpBigIcon, CloseIcon } from '@blocksuite/icons/lit';
 import type {
   AIDraftService,
   AIModelService,
@@ -10,14 +18,6 @@ import type {
 import type { FeatureFlagService } from '@lumibook/core/modules/feature-flag';
 import type { CopilotChatHistoryFragment } from '@lumibook/graphql';
 import track, { type EventArgs } from '@lumibook/track';
-import { combine } from '@atlaskit/pragmatic-drag-and-drop/combine';
-import { dropTargetForElements } from '@atlaskit/pragmatic-drag-and-drop/element/adapter';
-import { SignalWatcher, WithDisposable } from '@blocksuite/affine/global/lit';
-import { unsafeCSSVar, unsafeCSSVarV2 } from '@blocksuite/affine/shared/theme';
-import type { EditorHost } from '@blocksuite/affine/std';
-import { ShadowlessElement } from '@blocksuite/affine/std';
-import type { NotificationService } from '@blocksuite/affine-shared/services';
-import { ArrowUpBigIcon, CloseIcon } from '@blocksuite/icons/lit';
 import { css, html, nothing, type PropertyValues } from 'lit';
 import { property, query, state } from 'lit/decorators.js';
 import { repeat } from 'lit/directives/repeat.js';

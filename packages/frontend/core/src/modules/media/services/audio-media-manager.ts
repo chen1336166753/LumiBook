@@ -1,5 +1,5 @@
-import { generateUrl } from '@lumibook/core/components/hooks/affine/use-share-url';
 import { AttachmentBlockModel } from '@blocksuite/affine/model';
+import { generateUrl } from '@lumibook/core/components/hooks/affine/use-share-url';
 import {
   attachmentBlockAudioMediaKey,
   type AudioMediaDescriptor,

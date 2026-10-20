@@ -1,7 +1,7 @@
-import type { useI18n } from '@lumibook/i18n';
-import { track } from '@lumibook/track';
 import { SettingsIcon } from '@blocksuite/icons/rc';
+import type { useI18n } from '@lumibook/i18n';
 import { appSettingAtom } from '@lumibook/infra';
+import { track } from '@lumibook/track';
 import type { createStore } from 'jotai';
 import type { useTheme } from 'next-themes';
 

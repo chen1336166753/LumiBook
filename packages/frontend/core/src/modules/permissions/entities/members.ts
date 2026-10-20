@@ -1,9 +1,9 @@
 import type { WorkspaceMemberStatus } from '@lumibook/graphql';
+import { Entity, LiveData } from '@lumibook/infra';
 import type {
   RealtimeTopicEventOf,
   WorkspaceMemberSnapshot,
 } from '@lumibook/realtime';
-import { Entity, LiveData } from '@lumibook/infra';
 
 import { RealtimeLiveQuery } from '../../cloud/realtime/live-query';
 import type { WorkspaceService } from '../../workspace';

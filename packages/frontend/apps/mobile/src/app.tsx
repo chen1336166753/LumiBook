@@ -15,10 +15,10 @@ import { PopupWindowProvider } from '@lumibook/core/modules/url';
 import { configureBrowserWorkbenchModule } from '@lumibook/core/modules/workbench';
 import { configureBrowserWorkspaceFlavours } from '@lumibook/core/modules/workspace-engine';
 import { getWorkerUrl } from '@lumibook/env/worker';
-import { StoreManagerClient } from '@lumibook/nbstore/worker/client';
-import { setTelemetryTransport } from '@lumibook/track';
 import { Framework, FrameworkRoot, getCurrentStore } from '@lumibook/infra';
 import { OpClient } from '@lumibook/infra/op';
+import { StoreManagerClient } from '@lumibook/nbstore/worker/client';
+import { setTelemetryTransport } from '@lumibook/track';
 import { Suspense } from 'react';
 import { RouterProvider } from 'react-router-dom';
 

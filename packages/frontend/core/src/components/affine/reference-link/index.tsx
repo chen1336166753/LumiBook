@@ -1,13 +1,13 @@
+import type { DocMode } from '@blocksuite/affine/model';
+import type { Workspace } from '@blocksuite/affine/store';
 import { DocsService } from '@lumibook/core/modules/doc';
 import { DocDisplayMetaService } from '@lumibook/core/modules/doc-display-meta';
 import { JournalService } from '@lumibook/core/modules/journal';
 import { PeekViewService } from '@lumibook/core/modules/peek-view/services/peek-view';
 import { useInsidePeekView } from '@lumibook/core/modules/peek-view/view/modal-container';
 import { WorkbenchLink } from '@lumibook/core/modules/workbench';
-import { track } from '@lumibook/track';
-import type { DocMode } from '@blocksuite/affine/model';
-import type { Workspace } from '@blocksuite/affine/store';
 import { LiveData, useLiveData, useService } from '@lumibook/infra';
+import { track } from '@lumibook/track';
 import clsx from 'clsx';
 import { nanoid } from 'nanoid';
 import {

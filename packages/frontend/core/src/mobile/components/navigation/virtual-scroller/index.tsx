@@ -1,3 +1,13 @@
+import {
+  AddCollectionIcon,
+  AddOrganizeIcon,
+  AddTagIcon,
+  FolderIcon,
+  PageIcon,
+  RemoveFolderIcon,
+  ToggleRightIcon,
+  ViewLayersIcon,
+} from '@blocksuite/icons/rc';
 import { MenuItem, SafeArea, usePromptModal } from '@lumibook/component';
 import { usePageHelper } from '@lumibook/core/blocksuite/block-suite-page-list/utils';
 import { NavigationPanelTreeRoot } from '@lumibook/core/desktop/components/navigation-panel';
@@ -10,18 +20,8 @@ import { TagService } from '@lumibook/core/modules/tag';
 import { WorkbenchService } from '@lumibook/core/modules/workbench';
 import { WorkspaceService } from '@lumibook/core/modules/workspace';
 import { useI18n } from '@lumibook/i18n';
-import { track } from '@lumibook/track';
-import {
-  AddCollectionIcon,
-  AddOrganizeIcon,
-  AddTagIcon,
-  FolderIcon,
-  PageIcon,
-  RemoveFolderIcon,
-  ToggleRightIcon,
-  ViewLayersIcon,
-} from '@blocksuite/icons/rc';
 import { useLiveData, useService, useServices } from '@lumibook/infra';
+import { track } from '@lumibook/track';
 import {
   forwardRef,
   type HTMLAttributes,

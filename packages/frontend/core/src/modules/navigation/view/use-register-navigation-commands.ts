@@ -2,8 +2,8 @@ import {
   PreconditionStrategy,
   registerAffineCommand,
 } from '@lumibook/core/commands';
-import { track } from '@lumibook/track';
 import { useService } from '@lumibook/infra';
+import { track } from '@lumibook/track';
 import { useEffect } from 'react';
 
 import { NavigatorService } from '../services/navigator';

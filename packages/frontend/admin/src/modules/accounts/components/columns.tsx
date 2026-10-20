@@ -1,17 +1,17 @@
 import {
-  Avatar,
-  AvatarFallback,
-  AvatarImage,
-} from '@lumibook/admin/components/ui/avatar';
-import { cn } from '@lumibook/admin/utils';
-import { FeatureType } from '@lumibook/graphql';
-import {
   AccountIcon,
   EmailIcon,
   EmailWarningIcon,
   LockIcon,
   UnlockIcon,
 } from '@blocksuite/icons/rc';
+import {
+  Avatar,
+  AvatarFallback,
+  AvatarImage,
+} from '@lumibook/admin/components/ui/avatar';
+import { cn } from '@lumibook/admin/utils';
+import { FeatureType } from '@lumibook/graphql';
 import type { ColumnDef } from '@tanstack/react-table';
 import {
   type Dispatch,

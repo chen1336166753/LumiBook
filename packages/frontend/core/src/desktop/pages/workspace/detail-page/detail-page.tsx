@@ -1,3 +1,17 @@
+import { DisposableGroup } from '@blocksuite/affine/global/disposable';
+import { RefNodeSlotsProvider } from '@blocksuite/affine/inlines/reference';
+import { focusBlockEnd } from '@blocksuite/affine/shared/commands';
+import { getLastNoteBlock } from '@blocksuite/affine/shared/utils';
+import {
+  AiIcon,
+  ChartPanelIcon,
+  CommentIcon,
+  ExportIcon,
+  FrameIcon,
+  PropertyIcon,
+  TocIcon,
+  TodayIcon,
+} from '@blocksuite/icons/rc';
 import { Scrollable } from '@lumibook/component';
 import { PageDetailLoading } from '@lumibook/component/page-detail-skeleton';
 import { AIAppEvents, type AIChatParams } from '@lumibook/core/blocksuite/ai';
@@ -35,27 +49,13 @@ import {
 import { WorkspaceService } from '@lumibook/core/modules/workspace';
 import { isNewTabTrigger } from '@lumibook/core/utils';
 import { ServerFeature } from '@lumibook/graphql';
-import track from '@lumibook/track';
-import { DisposableGroup } from '@blocksuite/affine/global/disposable';
-import { RefNodeSlotsProvider } from '@blocksuite/affine/inlines/reference';
-import { focusBlockEnd } from '@blocksuite/affine/shared/commands';
-import { getLastNoteBlock } from '@blocksuite/affine/shared/utils';
-import {
-  AiIcon,
-  ChartPanelIcon,
-  CommentIcon,
-  ExportIcon,
-  FrameIcon,
-  PropertyIcon,
-  TocIcon,
-  TodayIcon,
-} from '@blocksuite/icons/rc';
 import {
   FrameworkScope,
   useLiveData,
   useService,
   useServices,
 } from '@lumibook/infra';
+import track from '@lumibook/track';
 import clsx from 'clsx';
 import { nanoid } from 'nanoid';
 import { memo, useCallback, useEffect, useRef, useState } from 'react';

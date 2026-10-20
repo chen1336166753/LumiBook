@@ -1,3 +1,12 @@
+import {
+  AccountIcon,
+  CloseIcon,
+  CollaborationIcon,
+  DeleteIcon,
+  MoreHorizontalIcon,
+  SelfhostIcon,
+  SignOutIcon,
+} from '@blocksuite/icons/rc';
 import { Divider, IconButton, Menu, MenuItem } from '@lumibook/component';
 import { useAsyncCallback } from '@lumibook/core/components/hooks/affine-async-hooks';
 import {
@@ -19,15 +28,6 @@ import {
   WorkspacesService,
 } from '@lumibook/core/modules/workspace';
 import { useI18n } from '@lumibook/i18n';
-import {
-  AccountIcon,
-  CloseIcon,
-  CollaborationIcon,
-  DeleteIcon,
-  MoreHorizontalIcon,
-  SelfhostIcon,
-  SignOutIcon,
-} from '@blocksuite/icons/rc';
 import { FrameworkScope, useLiveData, useService } from '@lumibook/infra';
 import clsx from 'clsx';
 import { type HTMLAttributes, useCallback, useMemo } from 'react';

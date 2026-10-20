@@ -1,7 +1,7 @@
-import type { useI18n } from '@lumibook/i18n';
-import { track } from '@lumibook/track';
 import type { Workspace } from '@blocksuite/affine/store';
 import { ArrowRightBigIcon } from '@blocksuite/icons/rc';
+import type { useI18n } from '@lumibook/i18n';
+import { track } from '@lumibook/track';
 
 import type { useNavigateHelper } from '../components/hooks/use-navigate-helper';
 import type { WorkspaceDialogService } from '../modules/dialogs';

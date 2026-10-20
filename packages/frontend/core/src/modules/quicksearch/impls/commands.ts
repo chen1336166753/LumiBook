@@ -1,10 +1,10 @@
+import type { DocMode } from '@blocksuite/affine/model';
 import {
   type AffineCommand,
   AffineCommandRegistry,
   type CommandCategory,
   PreconditionStrategy,
 } from '@lumibook/core/commands';
-import type { DocMode } from '@blocksuite/affine/model';
 import { Entity, LiveData } from '@lumibook/infra';
 import Fuse from 'fuse.js';
 

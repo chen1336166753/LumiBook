@@ -1,6 +1,6 @@
-import type { BlobStorage, DocStorage } from '@lumibook/nbstore';
 import type { Workspace } from '@blocksuite/affine/store';
 import { Service } from '@lumibook/infra';
+import type { BlobStorage, DocStorage } from '@lumibook/nbstore';
 
 import type { WorkspaceFlavoursService } from './flavours';
 

@@ -1,16 +1,3 @@
-import { EditorLoading } from '@lumibook/component/page-detail-skeleton';
-import type {
-  EdgelessEditor,
-  PageEditor,
-} from '@lumibook/core/blocksuite/editors';
-import { ServerService } from '@lumibook/core/modules/cloud';
-import {
-  EditorSettingService,
-  fontStyleOptions,
-} from '@lumibook/core/modules/editor-setting';
-import { FeatureFlagService } from '@lumibook/core/modules/feature-flag';
-import { WorkspaceService } from '@lumibook/core/modules/workspace';
-import track from '@lumibook/track';
 import { appendParagraphCommand } from '@blocksuite/affine/blocks/paragraph';
 import type { DocTitle } from '@blocksuite/affine/fragments/doc-title';
 import { DisposableGroup } from '@blocksuite/affine/global/disposable';
@@ -24,8 +11,21 @@ import { focusBlockEnd } from '@blocksuite/affine/shared/commands';
 import { getLastNoteBlock } from '@blocksuite/affine/shared/utils';
 import type { BlockStdScope, EditorHost } from '@blocksuite/affine/std';
 import type { Store } from '@blocksuite/affine/store';
-import { Slot } from '@radix-ui/react-slot';
+import { EditorLoading } from '@lumibook/component/page-detail-skeleton';
+import type {
+  EdgelessEditor,
+  PageEditor,
+} from '@lumibook/core/blocksuite/editors';
+import { ServerService } from '@lumibook/core/modules/cloud';
+import {
+  EditorSettingService,
+  fontStyleOptions,
+} from '@lumibook/core/modules/editor-setting';
+import { FeatureFlagService } from '@lumibook/core/modules/feature-flag';
+import { WorkspaceService } from '@lumibook/core/modules/workspace';
 import { useLiveData, useService } from '@lumibook/infra';
+import track from '@lumibook/track';
+import { Slot } from '@radix-ui/react-slot';
 import { cssVar } from '@toeverything/theme';
 import clsx from 'clsx';
 import type { CSSProperties, HTMLAttributes } from 'react';

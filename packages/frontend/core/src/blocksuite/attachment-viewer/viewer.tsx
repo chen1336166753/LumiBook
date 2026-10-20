@@ -1,4 +1,3 @@
-import { IconButton, Menu, MenuItem } from '@lumibook/component';
 import type { AttachmentBlockModel } from '@blocksuite/affine/model';
 import {
   //EditIcon,
@@ -7,6 +6,7 @@ import {
   ZoomDownIcon,
   ZoomUpIcon,
 } from '@blocksuite/icons/rc';
+import { IconButton, Menu, MenuItem } from '@lumibook/component';
 import clsx from 'clsx';
 import { useState } from 'react';
 

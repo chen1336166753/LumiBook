@@ -1,3 +1,6 @@
+import type { EditorHost } from '@blocksuite/affine/std';
+import type { GfxModel } from '@blocksuite/affine/std/gfx';
+import type { BlockModel } from '@blocksuite/affine/store';
 import type { AIToolsConfig } from '@lumibook/core/modules/ai-button';
 import type {
   CopilotChatHistoryFragment,
@@ -8,9 +11,6 @@ import type {
   StreamObject,
   UpdateChatSessionInput,
 } from '@lumibook/graphql';
-import type { EditorHost } from '@blocksuite/affine/std';
-import type { GfxModel } from '@blocksuite/affine/std/gfx';
-import type { BlockModel } from '@blocksuite/affine/store';
 
 import type { AIEmbeddingStatus } from '../provider';
 import type { PromptKey } from '../provider/prompt';

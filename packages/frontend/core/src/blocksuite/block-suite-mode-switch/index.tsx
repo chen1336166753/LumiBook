@@ -1,16 +1,16 @@
+import type { DocMode } from '@blocksuite/affine/model';
+import { EdgelessIcon, PageIcon } from '@blocksuite/icons/rc';
 import { RadioGroup, type RadioItem } from '@lumibook/component';
 import { registerAffineCommand } from '@lumibook/core/commands';
 import { EditorService } from '@lumibook/core/modules/editor';
 import { ViewService, WorkbenchService } from '@lumibook/core/modules/workbench';
 import { useI18n } from '@lumibook/i18n';
-import { track } from '@lumibook/track';
-import type { DocMode } from '@blocksuite/affine/model';
-import { EdgelessIcon, PageIcon } from '@blocksuite/icons/rc';
 import {
   useLiveData,
   useService,
   useServiceOptional,
 } from '@lumibook/infra';
+import { track } from '@lumibook/track';
 import { useCallback, useEffect, useMemo } from 'react';
 
 import { switchItem } from './style.css';

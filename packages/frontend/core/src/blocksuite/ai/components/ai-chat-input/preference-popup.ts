@@ -1,5 +1,3 @@
-import type { AIToolsConfigService } from '@lumibook/core/modules/ai-button';
-import type { AIModelService } from '@lumibook/core/modules/ai-button/services/models';
 import {
   menu,
   popMenu,
@@ -18,6 +16,8 @@ import {
 } from '@blocksuite/icons/lit';
 import { ShadowlessElement } from '@blocksuite/std';
 import { autoPlacement, offset, shift } from '@floating-ui/dom';
+import type { AIToolsConfigService } from '@lumibook/core/modules/ai-button';
+import type { AIModelService } from '@lumibook/core/modules/ai-button/services/models';
 import { computed } from '@preact/signals-core';
 import { css, html } from 'lit';
 import { property } from 'lit/decorators.js';

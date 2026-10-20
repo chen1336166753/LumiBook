@@ -1,8 +1,8 @@
-import { getEditorConfigExtension } from '@lumibook/core/blocksuite/view-extensions/editor-config/get-config';
 import {
   type ViewExtensionContext,
   ViewExtensionProvider,
 } from '@blocksuite/affine/ext-loader';
+import { getEditorConfigExtension } from '@lumibook/core/blocksuite/view-extensions/editor-config/get-config';
 import { FrameworkProvider } from '@lumibook/infra';
 import { z } from 'zod';
 

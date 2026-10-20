@@ -1,5 +1,5 @@
-import { Button } from '@lumibook/admin/components/ui/button';
 import { EditIcon, LinkIcon } from '@blocksuite/icons/rc';
+import { Button } from '@lumibook/admin/components/ui/button';
 import { useCallback, useState } from 'react';
 
 import { DiscardChanges } from '../../../components/shared/discard-changes';

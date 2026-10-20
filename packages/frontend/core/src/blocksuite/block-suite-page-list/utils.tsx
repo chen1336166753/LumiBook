@@ -1,3 +1,5 @@
+import { type DocMode } from '@blocksuite/affine/model';
+import type { Workspace } from '@blocksuite/affine/store';
 import { toast } from '@lumibook/component';
 import { getStoreManager } from '@lumibook/core/blocksuite/manager/store';
 import { AppSidebarService } from '@lumibook/core/modules/app-sidebar';
@@ -8,8 +10,6 @@ import {
 } from '@lumibook/core/modules/editor-setting';
 import { WorkbenchService } from '@lumibook/core/modules/workbench';
 import { getLumiBookWorkspaceSchema } from '@lumibook/core/modules/workspace';
-import { type DocMode } from '@blocksuite/affine/model';
-import type { Workspace } from '@blocksuite/affine/store';
 import { LiveData, useLiveData, useServices } from '@lumibook/infra';
 import { useCallback, useMemo } from 'react';
 

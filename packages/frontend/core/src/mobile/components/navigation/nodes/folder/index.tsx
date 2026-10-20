@@ -1,4 +1,13 @@
 import {
+  DeleteIcon,
+  FolderIcon,
+  LayerIcon,
+  PageIcon,
+  PlusThickIcon,
+  RemoveFolderIcon,
+  TagsIcon,
+} from '@blocksuite/icons/rc';
+import {
   AnimatedFolderIcon,
   MenuItem,
   MenuSeparator,
@@ -19,17 +28,8 @@ import {
 } from '@lumibook/core/modules/organize';
 import { WorkspaceService } from '@lumibook/core/modules/workspace';
 import { useI18n } from '@lumibook/i18n';
-import track from '@lumibook/track';
-import {
-  DeleteIcon,
-  FolderIcon,
-  LayerIcon,
-  PageIcon,
-  PlusThickIcon,
-  RemoveFolderIcon,
-  TagsIcon,
-} from '@blocksuite/icons/rc';
 import { useLiveData, useService, useServices } from '@lumibook/infra';
+import track from '@lumibook/track';
 import { difference } from 'lodash-es';
 import { type ReactNode, useCallback, useMemo } from 'react';
 

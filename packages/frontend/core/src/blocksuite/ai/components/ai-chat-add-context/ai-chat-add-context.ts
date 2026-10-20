@@ -1,9 +1,9 @@
-import { I18n } from '@lumibook/i18n';
 import { createLitPortal } from '@blocksuite/affine/components/portal';
 import { SignalWatcher, WithDisposable } from '@blocksuite/affine/global/lit';
 import { ShadowlessElement } from '@blocksuite/affine/std';
 import { PlusIcon } from '@blocksuite/icons/lit';
 import { flip, offset } from '@floating-ui/dom';
+import { I18n } from '@lumibook/i18n';
 import { css, html } from 'lit';
 import { property, query } from 'lit/decorators.js';
 

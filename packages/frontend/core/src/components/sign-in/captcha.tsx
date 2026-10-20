@@ -1,6 +1,6 @@
 import { CaptchaService } from '@lumibook/core/modules/cloud';
-import { Turnstile } from '@marsidev/react-turnstile';
 import { useLiveData, useService } from '@lumibook/infra';
+import { Turnstile } from '@marsidev/react-turnstile';
 import { useCallback, useEffect } from 'react';
 
 import * as style from './style.css';

@@ -1,8 +1,8 @@
+import { MultiSelectIcon } from '@blocksuite/icons/rc';
 import type { CheckboxProps } from '@lumibook/component';
 import { Checkbox } from '@lumibook/component';
 import { useCatchEventCallback } from '@lumibook/core/components/hooks/use-catch-event-hook';
 import { useI18n } from '@lumibook/i18n';
-import { MultiSelectIcon } from '@blocksuite/icons/rc';
 import clsx from 'clsx';
 import { selectAtom } from 'jotai/utils';
 import type { MouseEventHandler } from 'react';

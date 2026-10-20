@@ -1,7 +1,7 @@
-import { AIStoreExtension } from '@lumibook/core/blocksuite/store-extensions/ai';
-import type { FeatureFlagService } from '@lumibook/core/modules/feature-flag';
 import { StoreExtensionManager } from '@blocksuite/affine/ext-loader';
 import { getInternalStoreExtensions } from '@blocksuite/affine/extensions/store';
+import { AIStoreExtension } from '@lumibook/core/blocksuite/store-extensions/ai';
+import type { FeatureFlagService } from '@lumibook/core/modules/feature-flag';
 
 import { FeatureFlagStoreExtension } from '../store-extensions/feature-flag';
 

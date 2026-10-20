@@ -1,3 +1,4 @@
+import { ArrowRightSmallIcon } from '@blocksuite/icons/rc';
 import { Switch } from '@lumibook/component';
 import {
   AFFINE_FLAGS,
@@ -5,7 +6,6 @@ import {
   type Flag,
 } from '@lumibook/core/modules/feature-flag';
 import { useI18n } from '@lumibook/i18n';
-import { ArrowRightSmallIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
 import { useCallback, useState } from 'react';
 

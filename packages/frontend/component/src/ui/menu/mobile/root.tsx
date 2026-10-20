@@ -1,5 +1,5 @@
-import { useI18n } from '@lumibook/i18n';
 import { ArrowLeftSmallIcon } from '@blocksuite/icons/rc';
+import { useI18n } from '@lumibook/i18n';
 import { Slot } from '@radix-ui/react-slot';
 import clsx from 'clsx';
 import {

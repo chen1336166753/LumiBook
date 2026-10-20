@@ -1,3 +1,4 @@
+import { ArrowRightSmallIcon } from '@blocksuite/icons/rc';
 import { notify } from '@lumibook/component';
 import { SettingRow } from '@lumibook/component/setting-components';
 import {
@@ -11,7 +12,6 @@ import { UrlService } from '@lumibook/core/modules/url';
 import { UserFriendlyError } from '@lumibook/error';
 import { createCustomerPortalMutation } from '@lumibook/graphql';
 import { useI18n } from '@lumibook/i18n';
-import { ArrowRightSmallIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
 import { useCallback, useEffect, useState } from 'react';
 

@@ -1,6 +1,6 @@
+import { PresentationIcon } from '@blocksuite/icons/rc';
 import { IconButton } from '@lumibook/component';
 import { EditorService } from '@lumibook/core/modules/editor';
-import { PresentationIcon } from '@blocksuite/icons/rc';
 import { useService } from '@lumibook/infra';
 
 export const DetailPageHeaderPresentButton = () => {

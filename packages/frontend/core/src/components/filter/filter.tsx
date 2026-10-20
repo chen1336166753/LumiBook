@@ -1,5 +1,5 @@
-import type { FilterParams } from '@lumibook/core/modules/collection-rules';
 import { CloseIcon } from '@blocksuite/icons/rc';
+import type { FilterParams } from '@lumibook/core/modules/collection-rules';
 
 import { PropertyFilterCondition } from './conditions/property';
 import { SystemFilterCondition } from './conditions/system';

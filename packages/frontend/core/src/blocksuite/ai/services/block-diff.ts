@@ -1,9 +1,9 @@
-import { sourceScopedBlobUrl } from '@lumibook/nbstore/cloud';
-import { parsePageDoc } from '@lumibook/reader';
 import { LifeCycleWatcher } from '@blocksuite/affine/std';
 import { Extension, type Store } from '@blocksuite/affine/store';
 import { type Container, createIdentifier } from '@blocksuite/global/di';
 import { LiveData } from '@lumibook/infra';
+import { sourceScopedBlobUrl } from '@lumibook/nbstore/cloud';
+import { parsePageDoc } from '@lumibook/reader';
 import type { Subscription } from 'rxjs';
 
 import { applyPatchToDoc } from '../utils/apply-model/apply-patch-to-doc';

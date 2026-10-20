@@ -7,8 +7,8 @@ import {
   waitForEditorLoad,
 } from '@affine-test/kit/utils/page-logic';
 import { clickSideBarSettingButton } from '@affine-test/kit/utils/sidebar';
-import { Package } from '@lumibook/utils/workspace';
 import { faker } from '@faker-js/faker';
+import { Package } from '@lumibook/utils/workspace';
 import { hash } from '@node-rs/argon2';
 import type { BrowserContext, Cookie, Page } from '@playwright/test';
 import { expect } from '@playwright/test';

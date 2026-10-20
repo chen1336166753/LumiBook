@@ -1,5 +1,5 @@
-import { useI18n } from '@lumibook/i18n';
 import { CloseIcon, InformationFillDuotoneIcon } from '@blocksuite/icons/rc';
+import { useI18n } from '@lumibook/i18n';
 import clsx from 'clsx';
 import { useCallback } from 'react';
 

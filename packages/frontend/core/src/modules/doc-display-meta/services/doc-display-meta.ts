@@ -1,4 +1,3 @@
-import { i18nTime } from '@lumibook/i18n';
 import {
   AliasIcon as LitAliasIcon,
   BlockLinkIcon as LitBlockLinkIcon,
@@ -21,6 +20,7 @@ import {
   TomorrowIcon,
   YesterdayIcon,
 } from '@blocksuite/icons/rc';
+import { i18nTime } from '@lumibook/i18n';
 import { LiveData, Service } from '@lumibook/infra';
 import type { Dayjs } from 'dayjs';
 import dayjs from 'dayjs';

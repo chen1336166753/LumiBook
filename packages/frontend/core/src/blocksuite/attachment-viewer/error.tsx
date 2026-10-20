@@ -1,7 +1,7 @@
-import { Button } from '@lumibook/component';
-import { useI18n } from '@lumibook/i18n';
 import type { AttachmentBlockModel } from '@blocksuite/affine/model';
 import { ArrowDownBigIcon } from '@blocksuite/icons/rc';
+import { Button } from '@lumibook/component';
+import { useI18n } from '@lumibook/i18n';
 import clsx from 'clsx';
 import type { PropsWithChildren, ReactElement } from 'react';
 import { Suspense } from 'react';

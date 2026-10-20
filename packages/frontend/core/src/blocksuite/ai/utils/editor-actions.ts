@@ -1,4 +1,3 @@
-import { WorkspaceImpl } from '@lumibook/core/modules/workspace/impls/workspace';
 import { clipboardConfigs } from '@blocksuite/affine/foundation/clipboard';
 import { defaultImageProxyMiddleware } from '@blocksuite/affine/shared/adapters';
 import { replaceSelectedTextWithBlocksCommand } from '@blocksuite/affine/shared/commands';
@@ -17,6 +16,7 @@ import {
   type BlockSnapshot,
   Slice,
 } from '@blocksuite/affine/store';
+import { WorkspaceImpl } from '@lumibook/core/modules/workspace/impls/workspace';
 import { Doc as YDoc } from 'yjs';
 
 import {

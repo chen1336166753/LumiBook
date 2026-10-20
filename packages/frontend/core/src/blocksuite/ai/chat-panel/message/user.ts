@@ -1,6 +1,6 @@
-import { I18n } from '@lumibook/i18n';
 import { WithDisposable } from '@blocksuite/affine/global/lit';
 import { ShadowlessElement } from '@blocksuite/affine/std';
+import { I18n } from '@lumibook/i18n';
 import { css, html, nothing } from 'lit';
 import { property } from 'lit/decorators.js';
 

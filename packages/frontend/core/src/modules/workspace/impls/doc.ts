@@ -1,4 +1,3 @@
-import { getStoreManager } from '@lumibook/core/blocksuite/manager/store';
 import {
   AwarenessStore,
   type Doc,
@@ -7,6 +6,7 @@ import {
   StoreContainer,
   type YBlock,
 } from '@blocksuite/affine/store';
+import { getStoreManager } from '@lumibook/core/blocksuite/manager/store';
 import { Awareness } from 'y-protocols/awareness.js';
 import * as Y from 'yjs';
 

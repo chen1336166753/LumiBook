@@ -1,5 +1,3 @@
-import type { FeatureFlagService } from '@lumibook/core/modules/feature-flag';
-import { WorkspaceImpl } from '@lumibook/core/modules/workspace/impls/workspace';
 import {
   defaultImageProxyMiddleware,
   embedSyncedDocMiddleware,
@@ -24,6 +22,8 @@ import type {
   TransformerMiddleware,
 } from '@blocksuite/affine/store';
 import { toDraftModel, Transformer } from '@blocksuite/affine/store';
+import type { FeatureFlagService } from '@lumibook/core/modules/feature-flag';
+import { WorkspaceImpl } from '@lumibook/core/modules/workspace/impls/workspace';
 import { Doc as YDoc } from 'yjs';
 
 import { getStoreManager } from '../manager/store';

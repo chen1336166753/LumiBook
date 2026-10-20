@@ -1,7 +1,3 @@
-import { Skeleton } from '@lumibook/component';
-import { getViewManager } from '@lumibook/core/blocksuite/manager/view';
-import type { EditorSettingSchema } from '@lumibook/core/modules/editor-setting';
-import { EditorSettingService } from '@lumibook/core/modules/editor-setting';
 import { EdgelessCRUDIdentifier } from '@blocksuite/affine/blocks/surface';
 import { Bound } from '@blocksuite/affine/global/gfx';
 import { ViewportElementExtension } from '@blocksuite/affine/shared/services';
@@ -12,6 +8,10 @@ import {
   type GfxPrimitiveElementModel,
 } from '@blocksuite/affine/std/gfx';
 import type { Block, Store } from '@blocksuite/affine/store';
+import { Skeleton } from '@lumibook/component';
+import { getViewManager } from '@lumibook/core/blocksuite/manager/view';
+import type { EditorSettingSchema } from '@lumibook/core/modules/editor-setting';
+import { EditorSettingService } from '@lumibook/core/modules/editor-setting';
 import { useFramework } from '@lumibook/infra';
 import clsx from 'clsx';
 import { isEqual } from 'lodash-es';

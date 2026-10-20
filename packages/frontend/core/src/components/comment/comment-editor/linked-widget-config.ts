@@ -1,7 +1,3 @@
-import { MemberSearchService } from '@lumibook/core/modules/permissions';
-import { highlighter } from '@lumibook/core/modules/quicksearch/utils/highlighter';
-import { I18n } from '@lumibook/i18n';
-import track from '@lumibook/track';
 import type { AffineInlineEditor } from '@blocksuite/affine/shared/types';
 import type {
   LinkedMenuItem,
@@ -10,8 +6,12 @@ import type {
 import { unsafeHTML } from '@blocksuite/affine-shared/utils';
 import { UserIcon } from '@blocksuite/icons/lit';
 import { BLOCK_ID_ATTR, type BlockComponent } from '@blocksuite/std';
-import { computed } from '@preact/signals-core';
+import { MemberSearchService } from '@lumibook/core/modules/permissions';
+import { highlighter } from '@lumibook/core/modules/quicksearch/utils/highlighter';
+import { I18n } from '@lumibook/i18n';
 import type { FrameworkProvider } from '@lumibook/infra';
+import track from '@lumibook/track';
+import { computed } from '@preact/signals-core';
 import { cssVarV2 } from '@toeverything/theme/v2';
 import Fuse, { type FuseResultMatch } from 'fuse.js';
 import { html } from 'lit';

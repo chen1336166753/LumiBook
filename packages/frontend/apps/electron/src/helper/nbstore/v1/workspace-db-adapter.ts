@@ -1,5 +1,5 @@
-import type { SpaceType } from '@lumibook/nbstore';
 import { AsyncLock } from '@lumibook/infra/utils';
+import type { SpaceType } from '@lumibook/nbstore';
 import { Subject } from 'rxjs';
 import { applyUpdate, Doc as YDoc } from 'yjs';
 

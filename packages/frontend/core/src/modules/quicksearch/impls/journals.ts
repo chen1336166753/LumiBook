@@ -1,5 +1,5 @@
-import { I18n, i18nTime } from '@lumibook/i18n';
 import { DateTimeIcon } from '@blocksuite/icons/rc';
+import { I18n, i18nTime } from '@lumibook/i18n';
 import { Entity, LiveData } from '@lumibook/infra';
 
 import type { WorkspaceDialogService } from '../../dialogs';

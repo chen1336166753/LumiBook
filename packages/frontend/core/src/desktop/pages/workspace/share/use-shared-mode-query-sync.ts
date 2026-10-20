@@ -1,5 +1,5 @@
-import type { Editor } from '@lumibook/core/modules/editor';
 import type { DocMode } from '@blocksuite/affine/model';
+import type { Editor } from '@lumibook/core/modules/editor';
 import { useLiveData } from '@lumibook/infra';
 import { useEffect, useRef } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';

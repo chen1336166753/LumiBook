@@ -1,3 +1,7 @@
+import { DisposableGroup } from '@blocksuite/affine/global/disposable';
+import { RefNodeSlotsProvider } from '@blocksuite/affine/inlines/reference';
+import { type DocMode, DocModes } from '@blocksuite/affine/model';
+import { Logo1Icon } from '@blocksuite/icons/rc';
 import { Scrollable, uniReactRoot } from '@lumibook/component';
 import type { AffineEditorContainer } from '@lumibook/core/blocksuite/block-suite-editor';
 import { EditorOutlineViewer } from '@lumibook/core/blocksuite/outline-viewer';
@@ -24,10 +28,6 @@ import {
   WorkspacesService,
 } from '@lumibook/core/modules/workspace';
 import { useI18n } from '@lumibook/i18n';
-import { DisposableGroup } from '@blocksuite/affine/global/disposable';
-import { RefNodeSlotsProvider } from '@blocksuite/affine/inlines/reference';
-import { type DocMode, DocModes } from '@blocksuite/affine/model';
-import { Logo1Icon } from '@blocksuite/icons/rc';
 import { FrameworkScope, useLiveData, useService } from '@lumibook/infra';
 import clsx from 'clsx';
 import { useCallback, useEffect, useMemo, useState } from 'react';

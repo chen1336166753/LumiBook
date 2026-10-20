@@ -1,3 +1,11 @@
+import type { DocMode } from '@blocksuite/affine/model';
+import {
+  ArrowDownSmallIcon,
+  EdgelessIcon,
+  PageIcon,
+  PlusIcon,
+  TemplateIcon,
+} from '@blocksuite/icons/rc';
 import { Button, IconButton, Menu, MenuItem, MenuSub } from '@lumibook/component';
 import { usePageHelper } from '@lumibook/core/blocksuite/block-suite-page-list/utils';
 import { useAsyncCallback } from '@lumibook/core/components/hooks/affine-async-hooks';
@@ -9,16 +17,8 @@ import { WorkbenchService } from '@lumibook/core/modules/workbench';
 import { WorkspaceService } from '@lumibook/core/modules/workspace';
 import { inferOpenMode } from '@lumibook/core/utils';
 import { useI18n } from '@lumibook/i18n';
-import track from '@lumibook/track';
-import type { DocMode } from '@blocksuite/affine/model';
-import {
-  ArrowDownSmallIcon,
-  EdgelessIcon,
-  PageIcon,
-  PlusIcon,
-  TemplateIcon,
-} from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
+import track from '@lumibook/track';
 import clsx from 'clsx';
 import type React from 'react';
 import { type MouseEvent, useCallback } from 'react';

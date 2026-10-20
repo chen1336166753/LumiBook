@@ -1,6 +1,6 @@
+import { ArrowLeftSmallIcon, ArrowRightSmallIcon } from '@blocksuite/icons/rc';
 import { IconButton } from '@lumibook/component';
 import { useI18n } from '@lumibook/i18n';
-import { ArrowLeftSmallIcon, ArrowRightSmallIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
 import { useCallback, useEffect } from 'react';
 

@@ -1,9 +1,9 @@
+import { ShareiOsIcon } from '@blocksuite/icons/rc';
 import { IconButton, MobileMenu } from '@lumibook/component';
 import { useEnableCloud } from '@lumibook/core/components/hooks/affine/use-enable-cloud';
 import { DocService } from '@lumibook/core/modules/doc';
 import { ShareMenuContent } from '@lumibook/core/modules/share-menu';
 import { WorkspaceService } from '@lumibook/core/modules/workspace';
-import { ShareiOsIcon } from '@blocksuite/icons/rc';
 import { useServices } from '@lumibook/infra';
 
 import * as styles from './page-header-share-button.css';

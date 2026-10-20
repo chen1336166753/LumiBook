@@ -1,8 +1,8 @@
 // @vitest-environment happy-dom
 
 import type { BlobSource } from '@blocksuite/affine/sync';
-import { renderHook } from '@testing-library/react';
 import type * as Infra from '@lumibook/infra';
+import { renderHook } from '@testing-library/react';
 import { afterEach, expect, test, vi } from 'vitest';
 import { Doc as YDoc } from 'yjs';
 

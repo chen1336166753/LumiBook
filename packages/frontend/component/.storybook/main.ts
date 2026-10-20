@@ -1,8 +1,8 @@
-import { dirname, join } from 'path';
-import { fileURLToPath } from 'url';
 import { StorybookConfig } from '@storybook/react-vite';
 import { vanillaExtractPlugin } from '@vanilla-extract/vite-plugin';
+import { dirname, join } from 'path';
 import swc from 'unplugin-swc';
+import { fileURLToPath } from 'url';
 import { mergeConfig } from 'vite';
 
 export default {

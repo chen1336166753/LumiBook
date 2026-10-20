@@ -1,10 +1,3 @@
-import { IconButton, notify, toast } from '@lumibook/component';
-import { LitDocEditor, type PageEditor } from '@lumibook/core/blocksuite/editors';
-import { SnapshotHelper } from '@lumibook/core/modules/comment/services/snapshot-helper';
-import type { CommentAttachment } from '@lumibook/core/modules/comment/types';
-import { PeekViewService } from '@lumibook/core/modules/peek-view';
-import { downloadResourceWithUrl } from '@lumibook/core/utils/resource';
-import { DebugLogger } from '@lumibook/debug';
 import { getAttachmentFileIconRC } from '@blocksuite/affine/components/icons';
 import { type RichText, selectTextModel } from '@blocksuite/affine/rich-text';
 import { ViewportElementExtension } from '@blocksuite/affine/shared/services';
@@ -16,6 +9,13 @@ import {
   CloseIcon,
 } from '@blocksuite/icons/rc';
 import type { TextSelection } from '@blocksuite/std';
+import { IconButton, notify, toast } from '@lumibook/component';
+import { LitDocEditor, type PageEditor } from '@lumibook/core/blocksuite/editors';
+import { SnapshotHelper } from '@lumibook/core/modules/comment/services/snapshot-helper';
+import type { CommentAttachment } from '@lumibook/core/modules/comment/types';
+import { PeekViewService } from '@lumibook/core/modules/peek-view';
+import { downloadResourceWithUrl } from '@lumibook/core/utils/resource';
+import { DebugLogger } from '@lumibook/debug';
 import { useFramework, useService } from '@lumibook/infra';
 import bytes from 'bytes';
 import clsx from 'clsx';

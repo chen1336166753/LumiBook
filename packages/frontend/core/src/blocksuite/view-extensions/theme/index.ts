@@ -1,9 +1,9 @@
-import { getPreviewThemeExtension } from '@lumibook/core/blocksuite/view-extensions/theme/preview-theme';
-import { getThemeExtension } from '@lumibook/core/blocksuite/view-extensions/theme/theme';
 import {
   type ViewExtensionContext,
   ViewExtensionProvider,
 } from '@blocksuite/affine/ext-loader';
+import { getPreviewThemeExtension } from '@lumibook/core/blocksuite/view-extensions/theme/preview-theme';
+import { getThemeExtension } from '@lumibook/core/blocksuite/view-extensions/theme/theme';
 import { FrameworkProvider } from '@lumibook/infra';
 import { z } from 'zod';
 

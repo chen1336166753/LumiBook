@@ -1,5 +1,3 @@
-import type { AffineEditorContainer } from '@lumibook/core/blocksuite/block-suite-editor';
-import type { DefaultOpenProperty } from '@lumibook/core/components/properties';
 import { PresentTool } from '@blocksuite/affine/blocks/frame';
 import { DefaultTool } from '@blocksuite/affine/blocks/surface';
 import type { DocTitle } from '@blocksuite/affine/fragments/doc-title';
@@ -13,8 +11,10 @@ import {
 } from '@blocksuite/affine/shared/services';
 import { GfxControllerIdentifier } from '@blocksuite/affine/std/gfx';
 import type { InlineEditor } from '@blocksuite/std/inline';
-import { effect } from '@preact/signals-core';
+import type { AffineEditorContainer } from '@lumibook/core/blocksuite/block-suite-editor';
+import type { DefaultOpenProperty } from '@lumibook/core/components/properties';
 import { Entity, LiveData } from '@lumibook/infra';
+import { effect } from '@preact/signals-core';
 import { defaults, isEqual, omit } from 'lodash-es';
 import { skip } from 'rxjs';
 

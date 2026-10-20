@@ -1,5 +1,5 @@
-import { type IconData, IconRenderer, IconType } from '@lumibook/component';
 import * as litIcons from '@blocksuite/icons/lit';
+import { type IconData, IconRenderer, IconType } from '@lumibook/component';
 import { html } from 'lit';
 
 export const getDocIconComponent = (icon: IconData) => {

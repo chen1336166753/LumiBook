@@ -1,3 +1,4 @@
+import { IntegrationsIcon, ReadwiseIcon } from '@blocksuite/icons/rc';
 import { MenuItem } from '@lumibook/component';
 import type { FilterParams } from '@lumibook/core/modules/collection-rules';
 import type { DocRecord } from '@lumibook/core/modules/doc';
@@ -5,7 +6,6 @@ import { IntegrationTypeIcon } from '@lumibook/core/modules/integration';
 import { INTEGRATION_TYPE_NAME_MAP } from '@lumibook/core/modules/integration/constant';
 import type { IntegrationType } from '@lumibook/core/modules/integration/type';
 import { useI18n } from '@lumibook/i18n';
-import { IntegrationsIcon, ReadwiseIcon } from '@blocksuite/icons/rc';
 import { useLiveData } from '@lumibook/infra';
 
 import { PlainTextDocGroupHeader } from '../explorer/docs-view/group-header';

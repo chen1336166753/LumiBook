@@ -1,7 +1,7 @@
-import track from '@lumibook/track';
 import { WithDisposable } from '@blocksuite/affine/global/lit';
 import { unsafeCSSVar, unsafeCSSVarV2 } from '@blocksuite/affine/shared/theme';
 import { CloseIcon, DoneIcon } from '@blocksuite/icons/lit';
+import track from '@lumibook/track';
 import { css, html, LitElement } from 'lit';
 import { property } from 'lit/decorators.js';
 

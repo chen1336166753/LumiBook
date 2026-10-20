@@ -4,8 +4,8 @@ import { getDowngradeQuestionnaireLink } from '@lumibook/core/components/hooks/a
 import { useAsyncCallback } from '@lumibook/core/components/hooks/affine-async-hooks';
 import { SubscriptionPlan } from '@lumibook/graphql';
 import { useI18n } from '@lumibook/i18n';
-import { track } from '@lumibook/track';
 import { useLiveData, useService } from '@lumibook/infra';
+import { track } from '@lumibook/track';
 import { nanoid } from 'nanoid';
 import type { PropsWithChildren } from 'react';
 import { useEffect, useState } from 'react';

@@ -1,5 +1,3 @@
-import { DocService, DocsService } from '@lumibook/core/modules/doc';
-import { AppThemeService } from '@lumibook/core/modules/theme';
 import type { Container } from '@blocksuite/affine/global/di';
 import { ColorScheme } from '@blocksuite/affine/model';
 import {
@@ -11,6 +9,8 @@ import {
   type Signal,
 } from '@blocksuite/affine/shared/utils';
 import { LifeCycleWatcher, StdIdentifier } from '@blocksuite/affine/std';
+import { DocService, DocsService } from '@lumibook/core/modules/doc';
+import { AppThemeService } from '@lumibook/core/modules/theme';
 import { type FrameworkProvider } from '@lumibook/infra';
 import type { Observable } from 'rxjs';
 import { combineLatest, map } from 'rxjs';

@@ -1,6 +1,6 @@
 // the adapter is to bridge the workspace rootdoc & native js bindings
-import type { WorkspaceService } from '@lumibook/core/modules/workspace';
 import { createYProxy } from '@blocksuite/affine/store';
+import type { WorkspaceService } from '@lumibook/core/modules/workspace';
 import { LiveData, Service } from '@lumibook/infra';
 import { defaultsDeep } from 'lodash-es';
 import { Observable } from 'rxjs';

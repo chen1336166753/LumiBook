@@ -1,3 +1,8 @@
+import type {
+  ExtensionType,
+  TransformerMiddleware,
+} from '@blocksuite/affine/store';
+import { ToggleDownIcon } from '@blocksuite/icons/rc';
 import {
   Button,
   Divider,
@@ -23,19 +28,14 @@ import { GlobalSessionStateService } from '@lumibook/core/modules/storage';
 import { WorkbenchLink } from '@lumibook/core/modules/workbench';
 import { WorkspaceService } from '@lumibook/core/modules/workspace';
 import { useI18n } from '@lumibook/i18n';
-import track from '@lumibook/track';
-import type {
-  ExtensionType,
-  TransformerMiddleware,
-} from '@blocksuite/affine/store';
-import { ToggleDownIcon } from '@blocksuite/icons/rc';
-import * as Collapsible from '@radix-ui/react-collapsible';
 import {
   LiveData,
   useFramework,
   useLiveData,
   useServices,
 } from '@lumibook/infra';
+import track from '@lumibook/track';
+import * as Collapsible from '@radix-ui/react-collapsible';
 import { debounce } from 'lodash-es';
 import {
   Fragment,

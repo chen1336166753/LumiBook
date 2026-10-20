@@ -1,7 +1,7 @@
-import type { useI18n } from '@lumibook/i18n';
-import { track } from '@lumibook/track';
 import type { DocMode } from '@blocksuite/affine/model';
 import { ImportIcon, PlusIcon } from '@blocksuite/icons/rc';
+import type { useI18n } from '@lumibook/i18n';
+import { track } from '@lumibook/track';
 
 import type { usePageHelper } from '../blocksuite/block-suite-page-list/utils';
 import type { GlobalDialogService } from '../modules/dialogs';

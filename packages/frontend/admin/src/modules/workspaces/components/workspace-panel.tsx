@@ -1,3 +1,4 @@
+import { AccountIcon } from '@blocksuite/icons/rc';
 import {
   Avatar,
   AvatarFallback,
@@ -12,7 +13,6 @@ import {
   adminWorkspaceQuery,
   adminWorkspacesQuery,
 } from '@lumibook/graphql';
-import { AccountIcon } from '@blocksuite/icons/rc';
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import { toast } from 'sonner';
 

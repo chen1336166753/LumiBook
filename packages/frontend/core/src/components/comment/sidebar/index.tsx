@@ -1,3 +1,5 @@
+import type { DocSnapshot, Store } from '@blocksuite/affine/store';
+import { DoneIcon, FilterIcon, MoreHorizontalIcon } from '@blocksuite/icons/rc';
 import {
   Avatar,
   IconButton,
@@ -23,8 +25,6 @@ import { toDocSearchParams } from '@lumibook/core/modules/navigation';
 import { WorkbenchService } from '@lumibook/core/modules/workbench';
 import { copyTextToClipboard } from '@lumibook/core/utils/clipboard';
 import { i18nTime, useI18n } from '@lumibook/i18n';
-import type { DocSnapshot, Store } from '@blocksuite/affine/store';
-import { DoneIcon, FilterIcon, MoreHorizontalIcon } from '@blocksuite/icons/rc';
 import {
   useLiveData,
   useService,

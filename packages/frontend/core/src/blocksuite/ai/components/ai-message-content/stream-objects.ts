@@ -1,6 +1,3 @@
-import type { FeatureFlagService } from '@lumibook/core/modules/feature-flag';
-import type { PeekViewService } from '@lumibook/core/modules/peek-view';
-import { I18n } from '@lumibook/i18n';
 import { WithDisposable } from '@blocksuite/affine/global/lit';
 import type { ColorScheme } from '@blocksuite/affine/model';
 import {
@@ -17,6 +14,9 @@ import {
   ToolIcon,
   ViewIcon,
 } from '@blocksuite/icons/lit';
+import type { FeatureFlagService } from '@lumibook/core/modules/feature-flag';
+import type { PeekViewService } from '@lumibook/core/modules/peek-view';
+import { I18n } from '@lumibook/i18n';
 import type { Signal } from '@preact/signals-core';
 import { css, html, nothing } from 'lit';
 import { property, state } from 'lit/decorators.js';

@@ -1,7 +1,7 @@
 import { UserFriendlyError } from '@lumibook/error';
 import { type OAuthProviderType, ServerDeploymentType } from '@lumibook/graphql';
-import { track } from '@lumibook/track';
 import { OnEvent, Service } from '@lumibook/infra';
+import { track } from '@lumibook/track';
 import { nanoid } from 'nanoid';
 import { distinctUntilChanged, map, skip, type Subscription } from 'rxjs';
 

@@ -1,5 +1,5 @@
-import { Switch } from '@lumibook/component';
 import { DoneIcon } from '@blocksuite/icons/rc';
+import { Switch } from '@lumibook/component';
 import clsx from 'clsx';
 import type { HTMLAttributes, ReactNode } from 'react';
 

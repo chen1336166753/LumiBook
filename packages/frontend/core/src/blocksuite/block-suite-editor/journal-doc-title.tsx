@@ -1,6 +1,6 @@
+import type { Store } from '@blocksuite/affine/store';
 import { JournalService } from '@lumibook/core/modules/journal';
 import { i18nTime, useI18n } from '@lumibook/i18n';
-import type { Store } from '@blocksuite/affine/store';
 import { useLiveData, useService } from '@lumibook/infra';
 import dayjs from 'dayjs';
 

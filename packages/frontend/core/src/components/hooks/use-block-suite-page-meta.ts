@@ -1,5 +1,5 @@
-import { DocsService } from '@lumibook/core/modules/doc';
 import type { DocMeta, Workspace } from '@blocksuite/affine/store';
+import { DocsService } from '@lumibook/core/modules/doc';
 import { useService } from '@lumibook/infra';
 import { useCallback, useMemo } from 'react';
 

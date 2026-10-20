@@ -1,3 +1,4 @@
+import { DeleteIcon, InvisibleIcon, ViewIcon } from '@blocksuite/icons/rc';
 import {
   Input,
   MenuItem,
@@ -7,7 +8,6 @@ import {
 import type { DocCustomPropertyInfo } from '@lumibook/core/modules/db';
 import { WorkspacePropertyService } from '@lumibook/core/modules/workspace-property';
 import { Trans, useI18n } from '@lumibook/i18n';
-import { DeleteIcon, InvisibleIcon, ViewIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
 import {
   type KeyboardEventHandler,

@@ -1,10 +1,10 @@
+import { CloseIcon, NewIcon } from '@blocksuite/icons/rc';
 import { Tooltip } from '@lumibook/component/ui/tooltip';
 import { WorkspaceDialogService } from '@lumibook/core/modules/dialogs';
 import type { SettingTab } from '@lumibook/core/modules/dialogs/constant';
 import { GlobalContextService } from '@lumibook/core/modules/global-context';
 import { UrlService } from '@lumibook/core/modules/url';
 import { useI18n } from '@lumibook/i18n';
-import { CloseIcon, NewIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService, useServices } from '@lumibook/infra';
 import { useCallback, useState } from 'react';
 

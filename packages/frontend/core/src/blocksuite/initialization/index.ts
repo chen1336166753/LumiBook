@@ -1,4 +1,3 @@
-import type { DocCreateOptions } from '@lumibook/core/modules/doc/types';
 import {
   NoteDisplayMode,
   type NoteProps,
@@ -7,6 +6,7 @@ import {
 } from '@blocksuite/affine/model';
 import type { SurfaceBlockProps } from '@blocksuite/affine/std/gfx';
 import { type Store, Text } from '@blocksuite/affine/store';
+import type { DocCreateOptions } from '@lumibook/core/modules/doc/types';
 
 export interface DocProps {
   page?: Partial<RootBlockProps>;

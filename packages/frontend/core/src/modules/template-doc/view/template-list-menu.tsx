@@ -1,4 +1,9 @@
 import {
+  DualLinkIcon,
+  InformationIcon,
+  TemplateIcon,
+} from '@blocksuite/icons/rc';
+import {
   IconButton,
   Menu,
   MenuItem,
@@ -8,11 +13,6 @@ import {
 import { useAsyncCallback } from '@lumibook/core/components/hooks/affine-async-hooks';
 import { inferOpenMode } from '@lumibook/core/utils';
 import { useI18n } from '@lumibook/i18n';
-import {
-  DualLinkIcon,
-  InformationIcon,
-  TemplateIcon,
-} from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
 import { useCallback, useState } from 'react';
 

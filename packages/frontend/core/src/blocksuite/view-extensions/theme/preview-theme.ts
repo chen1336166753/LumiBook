@@ -1,4 +1,3 @@
-import { AppThemeService } from '@lumibook/core/modules/theme';
 import { ColorScheme } from '@blocksuite/affine/model';
 import {
   type ThemeExtension,
@@ -14,6 +13,7 @@ import {
   StdIdentifier,
 } from '@blocksuite/affine/std';
 import type { Container } from '@blocksuite/global/di';
+import { AppThemeService } from '@lumibook/core/modules/theme';
 import type { FrameworkProvider } from '@lumibook/infra';
 import type { Observable } from 'rxjs';
 

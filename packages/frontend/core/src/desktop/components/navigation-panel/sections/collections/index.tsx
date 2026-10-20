@@ -1,11 +1,11 @@
+import { AddCollectionIcon } from '@blocksuite/icons/rc';
 import { IconButton, usePromptModal } from '@lumibook/component';
 import { CollectionService } from '@lumibook/core/modules/collection';
 import { NavigationPanelService } from '@lumibook/core/modules/navigation-panel';
 import { WorkbenchService } from '@lumibook/core/modules/workbench';
 import { useI18n } from '@lumibook/i18n';
-import { track } from '@lumibook/track';
-import { AddCollectionIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useServices } from '@lumibook/infra';
+import { track } from '@lumibook/track';
 import { useCallback, useMemo } from 'react';
 
 import { CollapsibleSection } from '../../layouts/collapsible-section';

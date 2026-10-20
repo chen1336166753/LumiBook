@@ -1,4 +1,3 @@
-import { ServerService } from '@lumibook/core/modules/cloud';
 import { AdapterPanel } from '@blocksuite/affine/fragments/adapter-panel';
 import {
   customImageProxyMiddleware,
@@ -8,6 +7,7 @@ import {
 } from '@blocksuite/affine/shared/adapters';
 import type { EditorHost } from '@blocksuite/affine/std';
 import type { TransformerMiddleware } from '@blocksuite/affine/store';
+import { ServerService } from '@lumibook/core/modules/cloud';
 import { useService } from '@lumibook/infra';
 import { useCallback, useEffect, useRef } from 'react';
 

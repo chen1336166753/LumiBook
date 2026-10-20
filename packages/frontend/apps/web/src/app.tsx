@@ -1,3 +1,4 @@
+import { CacheProvider } from '@emotion/react';
 import { AffineContext } from '@lumibook/core/components/context';
 import { AppContainer } from '@lumibook/core/desktop/components/app-container';
 import { router } from '@lumibook/core/desktop/router';
@@ -13,11 +14,10 @@ import { configureBrowserWorkbenchModule } from '@lumibook/core/modules/workbenc
 import { configureBrowserWorkspaceFlavours } from '@lumibook/core/modules/workspace-engine';
 import createEmotionCache from '@lumibook/core/utils/create-emotion-cache';
 import { getWorkerUrl } from '@lumibook/env/worker';
-import { StoreManagerClient } from '@lumibook/nbstore/worker/client';
-import { setTelemetryTransport } from '@lumibook/track';
-import { CacheProvider } from '@emotion/react';
 import { Framework, FrameworkRoot, getCurrentStore } from '@lumibook/infra';
 import { OpClient } from '@lumibook/infra/op';
+import { StoreManagerClient } from '@lumibook/nbstore/worker/client';
+import { setTelemetryTransport } from '@lumibook/track';
 import { Suspense } from 'react';
 import { RouterProvider } from 'react-router-dom';
 

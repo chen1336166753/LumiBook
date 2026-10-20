@@ -1,8 +1,8 @@
+import { SidebarIcon } from '@blocksuite/icons/rc';
 import { IconButton } from '@lumibook/component';
 import { NotificationCountService } from '@lumibook/core/modules/notification';
-import { track } from '@lumibook/track';
-import { SidebarIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
+import { track } from '@lumibook/track';
 import clsx from 'clsx';
 import { useCallback, useRef } from 'react';
 

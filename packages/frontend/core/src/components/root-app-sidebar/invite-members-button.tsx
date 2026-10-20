@@ -1,8 +1,8 @@
+import { CollaborationIcon } from '@blocksuite/icons/rc';
 import { MenuItem } from '@lumibook/core/modules/app-sidebar/views';
 import { WorkspaceDialogService } from '@lumibook/core/modules/dialogs';
 import { WorkspaceService } from '@lumibook/core/modules/workspace';
 import { useI18n } from '@lumibook/i18n';
-import { CollaborationIcon } from '@blocksuite/icons/rc';
 import { useService } from '@lumibook/infra';
 import { useCallback } from 'react';
 

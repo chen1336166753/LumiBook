@@ -1,3 +1,4 @@
+import { ArrowLeftBigIcon } from '@blocksuite/icons/rc';
 import {
   Button,
   Loading,
@@ -17,9 +18,8 @@ import {
 import { UserFriendlyError } from '@lumibook/error';
 import { DocRole, WorkspaceMemberStatus } from '@lumibook/graphql';
 import { useI18n } from '@lumibook/i18n';
-import { track } from '@lumibook/track';
-import { ArrowLeftBigIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
+import { track } from '@lumibook/track';
 import clsx from 'clsx';
 import { debounce } from 'lodash-es';
 import {

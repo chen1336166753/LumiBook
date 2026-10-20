@@ -1,3 +1,17 @@
+import { DatabaseViewExtension } from '@blocksuite/affine/blocks/database/view';
+import { ParagraphViewExtension } from '@blocksuite/affine/blocks/paragraph/view';
+import type {
+  PeekOptions,
+  PeekViewService as BSPeekViewService,
+} from '@blocksuite/affine/components/peek';
+import { ViewExtensionManager } from '@blocksuite/affine/ext-loader';
+import { getInternalViewExtensions } from '@blocksuite/affine/extensions/view';
+import { FoundationViewExtension } from '@blocksuite/affine/foundation/view';
+import { InlineCommentViewExtension } from '@blocksuite/affine/inlines/comment';
+import { AffineCanvasTextFonts } from '@blocksuite/affine/shared/services';
+import { BlockStdScope } from '@blocksuite/affine/std';
+import type { Store } from '@blocksuite/affine/store';
+import { LinkedDocViewExtension } from '@blocksuite/affine/widgets/linked-doc/view';
 import type { ReactToLit } from '@lumibook/component';
 import { AIViewExtension } from '@lumibook/core/blocksuite/view-extensions/ai';
 import { CloudViewExtension } from '@lumibook/core/blocksuite/view-extensions/cloud';
@@ -24,22 +38,8 @@ import { AffineThemeViewExtension } from '@lumibook/core/blocksuite/view-extensi
 import { TurboRendererViewExtension } from '@lumibook/core/blocksuite/view-extensions/turbo-renderer';
 import { PeekViewService } from '@lumibook/core/modules/peek-view';
 import { DebugLogger } from '@lumibook/debug';
-import { tracker } from '@lumibook/track';
-import { DatabaseViewExtension } from '@blocksuite/affine/blocks/database/view';
-import { ParagraphViewExtension } from '@blocksuite/affine/blocks/paragraph/view';
-import type {
-  PeekOptions,
-  PeekViewService as BSPeekViewService,
-} from '@blocksuite/affine/components/peek';
-import { ViewExtensionManager } from '@blocksuite/affine/ext-loader';
-import { getInternalViewExtensions } from '@blocksuite/affine/extensions/view';
-import { FoundationViewExtension } from '@blocksuite/affine/foundation/view';
-import { InlineCommentViewExtension } from '@blocksuite/affine/inlines/comment';
-import { AffineCanvasTextFonts } from '@blocksuite/affine/shared/services';
-import { BlockStdScope } from '@blocksuite/affine/std';
-import type { Store } from '@blocksuite/affine/store';
-import { LinkedDocViewExtension } from '@blocksuite/affine/widgets/linked-doc/view';
 import type { FrameworkProvider } from '@lumibook/infra';
+import { tracker } from '@lumibook/track';
 import type { TemplateResult } from 'lit';
 
 type Configure = {

@@ -1,3 +1,4 @@
+import type { Store } from '@blocksuite/affine/store';
 import {
   Divider,
   DragHandle,
@@ -25,9 +26,8 @@ import { ViewIcon, ViewTitle } from '@lumibook/core/modules/workbench';
 import type { Workspace } from '@lumibook/core/modules/workspace';
 import type { AffineDNDData } from '@lumibook/core/types/dnd';
 import { useI18n } from '@lumibook/i18n';
-import { track } from '@lumibook/track';
-import type { Store } from '@blocksuite/affine/store';
 import { useLiveData, useService } from '@lumibook/infra';
+import { track } from '@lumibook/track';
 import clsx from 'clsx';
 import {
   forwardRef,

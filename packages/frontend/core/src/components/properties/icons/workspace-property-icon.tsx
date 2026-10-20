@@ -1,5 +1,5 @@
-import type { DocCustomPropertyInfo } from '@lumibook/core/modules/db';
 import * as icons from '@blocksuite/icons/rc';
+import type { DocCustomPropertyInfo } from '@lumibook/core/modules/db';
 import type { SVGProps } from 'react';
 
 import {

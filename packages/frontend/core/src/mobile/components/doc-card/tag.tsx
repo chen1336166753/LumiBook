@@ -1,6 +1,6 @@
+import { MoreHorizontalIcon } from '@blocksuite/icons/rc';
 import type { Tag } from '@lumibook/core/modules/tag';
 import { TagService } from '@lumibook/core/modules/tag';
-import { MoreHorizontalIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
 import { assignInlineVars } from '@vanilla-extract/dynamic';
 

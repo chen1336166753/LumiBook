@@ -1,6 +1,6 @@
+import { AccountIcon, SelfhostIcon } from '@blocksuite/icons/rc';
 import { cn } from '@lumibook/admin/utils';
 import { ROUTES } from '@lumibook/routes';
-import { AccountIcon, SelfhostIcon } from '@blocksuite/icons/rc';
 import { BarChart3Icon, LayoutDashboardIcon } from 'lucide-react';
 
 import { NavItem } from './nav-item';

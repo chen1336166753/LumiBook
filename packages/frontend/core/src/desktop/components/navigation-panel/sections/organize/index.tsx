@@ -1,3 +1,4 @@
+import { AddOrganizeIcon } from '@blocksuite/icons/rc';
 import {
   type DropTargetDropEvent,
   type DropTargetOptions,
@@ -11,9 +12,8 @@ import {
 } from '@lumibook/core/modules/organize';
 import type { AffineDNDData } from '@lumibook/core/types/dnd';
 import { useI18n } from '@lumibook/i18n';
-import { track } from '@lumibook/track';
-import { AddOrganizeIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useServices } from '@lumibook/infra';
+import { track } from '@lumibook/track';
 import { useCallback, useEffect, useMemo, useState } from 'react';
 
 import { CollapsibleSection } from '../../layouts/collapsible-section';

@@ -1,3 +1,13 @@
+import { Container } from '@blocksuite/affine/global/di';
+import {
+  docLinkBaseURLMiddleware,
+  MarkdownAdapter,
+  titleMiddleware,
+} from '@blocksuite/affine/shared/adapters';
+import { App as CapacitorApp } from '@capacitor/app';
+import { Keyboard } from '@capacitor/keyboard';
+import { StatusBar, Style } from '@capacitor/status-bar';
+import { InAppBrowser } from '@capgo/inappbrowser';
 import { notify } from '@lumibook/component';
 import { getStoreManager } from '@lumibook/core/blocksuite/manager/store';
 import { AffineContext } from '@lumibook/core/components/context';
@@ -34,19 +44,6 @@ import { WorkspacesService } from '@lumibook/core/modules/workspace';
 import { configureBrowserWorkspaceFlavours } from '@lumibook/core/modules/workspace-engine';
 import { getWorkerUrl } from '@lumibook/env/worker';
 import { I18n } from '@lumibook/i18n';
-import { serveAuthRequests } from '@lumibook/mobile-shared/auth/channel';
-import { StoreManagerClient } from '@lumibook/nbstore/worker/client';
-import { setTelemetryTransport } from '@lumibook/track';
-import { Container } from '@blocksuite/affine/global/di';
-import {
-  docLinkBaseURLMiddleware,
-  MarkdownAdapter,
-  titleMiddleware,
-} from '@blocksuite/affine/shared/adapters';
-import { App as CapacitorApp } from '@capacitor/app';
-import { Keyboard } from '@capacitor/keyboard';
-import { StatusBar, Style } from '@capacitor/status-bar';
-import { InAppBrowser } from '@capgo/inappbrowser';
 import {
   Framework,
   FrameworkRoot,
@@ -55,6 +52,9 @@ import {
   useService,
 } from '@lumibook/infra';
 import { OpClient } from '@lumibook/infra/op';
+import { serveAuthRequests } from '@lumibook/mobile-shared/auth/channel';
+import { StoreManagerClient } from '@lumibook/nbstore/worker/client';
+import { setTelemetryTransport } from '@lumibook/track';
 import { AsyncCall } from 'async-call-rpc';
 import { useTheme } from 'next-themes';
 import { Suspense, useEffect } from 'react';

@@ -1,10 +1,10 @@
+import { AddTagIcon } from '@blocksuite/icons/rc';
 import { NavigationPanelTreeRoot } from '@lumibook/core/desktop/components/navigation-panel';
 import { NavigationPanelService } from '@lumibook/core/modules/navigation-panel';
 import { TagService } from '@lumibook/core/modules/tag';
 import { useI18n } from '@lumibook/i18n';
-import { track } from '@lumibook/track';
-import { AddTagIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useServices } from '@lumibook/infra';
+import { track } from '@lumibook/track';
 import { useCallback, useMemo, useState } from 'react';
 
 import { AddItemPlaceholder } from '../../layouts/add-item-placeholder';

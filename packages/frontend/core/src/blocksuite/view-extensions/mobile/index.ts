@@ -1,9 +1,9 @@
-import { KeyboardToolbarExtension } from '@lumibook/core/blocksuite/view-extensions/mobile/keyboard-toolbar-extension';
-import { MobileFeatureFlagControl } from '@lumibook/core/blocksuite/view-extensions/mobile/mobile-feature-flag-control';
 import {
   type ViewExtensionContext,
   ViewExtensionProvider,
 } from '@blocksuite/affine/ext-loader';
+import { KeyboardToolbarExtension } from '@lumibook/core/blocksuite/view-extensions/mobile/keyboard-toolbar-extension';
+import { MobileFeatureFlagControl } from '@lumibook/core/blocksuite/view-extensions/mobile/mobile-feature-flag-control';
 import { FrameworkProvider } from '@lumibook/infra';
 import { z } from 'zod';
 

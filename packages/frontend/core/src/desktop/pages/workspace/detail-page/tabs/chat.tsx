@@ -1,3 +1,8 @@
+import { RefNodeSlotsProvider } from '@blocksuite/affine/inlines/reference';
+import { DocModeProvider } from '@blocksuite/affine/shared/services';
+import { createSignalFromObservable } from '@blocksuite/affine/shared/utils';
+import type { Store } from '@blocksuite/affine/store';
+import { CenterPeekIcon, Logo1Icon } from '@blocksuite/icons/rc';
 import { useConfirmModal } from '@lumibook/component';
 import {
   AIAppEvents,
@@ -42,13 +47,8 @@ import { AppThemeService } from '@lumibook/core/modules/theme';
 import { WorkbenchService } from '@lumibook/core/modules/workbench';
 import { WorkspaceService } from '@lumibook/core/modules/workspace';
 import { useI18n } from '@lumibook/i18n';
-import { RefNodeSlotsProvider } from '@blocksuite/affine/inlines/reference';
-import { DocModeProvider } from '@blocksuite/affine/shared/services';
-import { createSignalFromObservable } from '@blocksuite/affine/shared/utils';
-import type { Store } from '@blocksuite/affine/store';
-import { CenterPeekIcon, Logo1Icon } from '@blocksuite/icons/rc';
-import type { Signal } from '@preact/signals-core';
 import { useFramework, useService } from '@lumibook/infra';
+import type { Signal } from '@preact/signals-core';
 import { html } from 'lit';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 

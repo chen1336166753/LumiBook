@@ -1,3 +1,4 @@
+import { PlusIcon } from '@blocksuite/icons/rc';
 import { Divider, IconButton, Tooltip } from '@lumibook/component';
 import type { DocCustomPropertyInfo } from '@lumibook/core/modules/db';
 import {
@@ -6,13 +7,12 @@ import {
 } from '@lumibook/core/modules/workspace-property';
 import { generateUniqueNameInSequence } from '@lumibook/core/utils/unique-name';
 import { useI18n } from '@lumibook/i18n';
+import { useLiveData, useService } from '@lumibook/infra';
 import track from '@lumibook/track';
-import { PlusIcon } from '@blocksuite/icons/rc';
 import {
   Content as CollapsibleContent,
   Root as CollapsibleRoot,
 } from '@radix-ui/react-collapsible';
-import { useLiveData, useService } from '@lumibook/infra';
 import { useCallback, useState } from 'react';
 
 import { useGuard } from '../../guard';

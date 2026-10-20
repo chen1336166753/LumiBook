@@ -1,3 +1,12 @@
+import {
+  AccountIcon,
+  CloudWorkspaceIcon,
+  DeleteIcon,
+  LocalWorkspaceIcon,
+  MoreHorizontalIcon,
+  SelfhostIcon,
+  SignOutIcon,
+} from '@blocksuite/icons/rc';
 import { IconButton, Menu, MenuItem } from '@lumibook/component';
 import { Divider } from '@lumibook/component/ui/divider';
 import { useEnableCloud } from '@lumibook/core/components/hooks/affine/use-enable-cloud';
@@ -14,15 +23,6 @@ import {
   WorkspacesService,
 } from '@lumibook/core/modules/workspace';
 import { useI18n } from '@lumibook/i18n';
-import {
-  AccountIcon,
-  CloudWorkspaceIcon,
-  DeleteIcon,
-  LocalWorkspaceIcon,
-  MoreHorizontalIcon,
-  SelfhostIcon,
-  SignOutIcon,
-} from '@blocksuite/icons/rc';
 import {
   FrameworkScope,
   useLiveData,

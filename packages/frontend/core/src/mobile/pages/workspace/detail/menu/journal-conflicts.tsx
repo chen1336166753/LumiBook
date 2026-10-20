@@ -1,3 +1,4 @@
+import { CalendarXmarkIcon, EditIcon, TodayIcon } from '@blocksuite/icons/rc';
 import {
   IconButton,
   MobileMenu,
@@ -16,7 +17,6 @@ import { DocDisplayMetaService } from '@lumibook/core/modules/doc-display-meta';
 import { JournalService } from '@lumibook/core/modules/journal';
 import { WorkbenchLink } from '@lumibook/core/modules/workbench';
 import { useI18n } from '@lumibook/i18n';
-import { CalendarXmarkIcon, EditIcon, TodayIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
 import { type MouseEvent, useCallback, useMemo } from 'react';
 

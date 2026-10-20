@@ -1,8 +1,8 @@
+import { EdgelessIcon, ImportIcon, PageIcon } from '@blocksuite/icons/rc';
 import { DropdownButton, Menu } from '@lumibook/component';
 import { BlockCard } from '@lumibook/component/card/block-card';
 import { useI18n } from '@lumibook/i18n';
 import { track } from '@lumibook/track';
-import { EdgelessIcon, ImportIcon, PageIcon } from '@blocksuite/icons/rc';
 import type { MouseEvent, PropsWithChildren } from 'react';
 import { useCallback, useState } from 'react';
 

@@ -1,5 +1,5 @@
-import type { WorkspaceInviteLinkSnapshot } from '@lumibook/realtime';
 import { Framework } from '@lumibook/infra';
+import type { WorkspaceInviteLinkSnapshot } from '@lumibook/realtime';
 import { NEVER } from 'rxjs';
 import { afterEach, expect, test, vi } from 'vitest';
 

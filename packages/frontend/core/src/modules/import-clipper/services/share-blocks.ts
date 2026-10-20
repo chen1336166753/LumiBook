@@ -1,5 +1,5 @@
-import type { createBlockStdScope } from '@lumibook/core/blocksuite/manager/view';
 import { Text } from '@blocksuite/affine/store';
+import type { createBlockStdScope } from '@lumibook/core/blocksuite/manager/view';
 
 import {
   createShareBlockPlan,

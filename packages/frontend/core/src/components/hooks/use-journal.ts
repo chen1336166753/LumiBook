@@ -7,8 +7,8 @@ import {
 } from '@lumibook/core/modules/journal';
 import type { WorkbenchOpenOptions } from '@lumibook/core/modules/workbench/entities/workbench';
 import { i18nTime } from '@lumibook/i18n';
-import { track } from '@lumibook/track';
 import { useService, useServices } from '@lumibook/infra';
+import { track } from '@lumibook/track';
 import dayjs from 'dayjs';
 import { useCallback, useMemo } from 'react';
 

@@ -1,12 +1,12 @@
+import {
+  type AffineUserInfo,
+  UserServiceExtension,
+} from '@blocksuite/affine/shared/services';
 import type {
   AuthService,
   PublicUserService,
 } from '@lumibook/core/modules/cloud';
 import { UserFriendlyError } from '@lumibook/error';
-import {
-  type AffineUserInfo,
-  UserServiceExtension,
-} from '@blocksuite/affine/shared/services';
 
 export function patchUserExtensions(
   publicUserService: PublicUserService,

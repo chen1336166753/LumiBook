@@ -1,9 +1,9 @@
-import type { CopilotChatHistoryFragment } from '@lumibook/graphql';
 import { WithDisposable } from '@blocksuite/affine/global/lit';
 import { scrollbarStyle } from '@blocksuite/affine/shared/styles';
 import { unsafeCSSVar, unsafeCSSVarV2 } from '@blocksuite/affine/shared/theme';
 import { ShadowlessElement } from '@blocksuite/affine/std';
 import { DeleteIcon } from '@blocksuite/icons/lit';
+import type { CopilotChatHistoryFragment } from '@lumibook/graphql';
 import { css, html, nothing, type PropertyValues } from 'lit';
 import { property, state } from 'lit/decorators.js';
 

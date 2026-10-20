@@ -6,8 +6,8 @@ import { CreatePropertyMenuItems } from '@lumibook/core/components/properties/me
 import type { DocCustomPropertyInfo } from '@lumibook/core/modules/db';
 import { WorkspaceService } from '@lumibook/core/modules/workspace';
 import { Trans, useI18n } from '@lumibook/i18n';
-import track from '@lumibook/track';
 import { FrameworkScope, useService } from '@lumibook/infra';
+import track from '@lumibook/track';
 import { useCallback } from 'react';
 
 import * as styles from './styles.css';

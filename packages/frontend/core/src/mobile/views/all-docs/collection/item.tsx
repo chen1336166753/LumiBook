@@ -1,9 +1,9 @@
+import { ViewLayersIcon } from '@blocksuite/icons/rc';
 import { IconButton } from '@lumibook/component';
 import { IsFavoriteIcon } from '@lumibook/core/components/pure/icons';
 import type { CollectionMeta } from '@lumibook/core/modules/collection';
 import { CompatibleFavoriteItemsAdapter } from '@lumibook/core/modules/favorite';
 import { WorkbenchLink } from '@lumibook/core/modules/workbench';
-import { ViewLayersIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
 import { type MouseEvent, useCallback } from 'react';
 

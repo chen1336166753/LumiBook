@@ -1,3 +1,4 @@
+import { PlusIcon, PropertyIcon, ToggleDownIcon } from '@blocksuite/icons/rc';
 import {
   Button,
   Menu,
@@ -20,14 +21,13 @@ import { ViewService, WorkbenchService } from '@lumibook/core/modules/workbench'
 import { WorkspacePropertyService } from '@lumibook/core/modules/workspace-property';
 import type { AffineDNDData } from '@lumibook/core/types/dnd';
 import { useI18n } from '@lumibook/i18n';
-import { track } from '@lumibook/track';
-import { PlusIcon, PropertyIcon, ToggleDownIcon } from '@blocksuite/icons/rc';
-import * as Collapsible from '@radix-ui/react-collapsible';
 import {
   useLiveData,
   useService,
   useServiceOptional,
 } from '@lumibook/infra';
+import { track } from '@lumibook/track';
+import * as Collapsible from '@radix-ui/react-collapsible';
 import clsx from 'clsx';
 import type React from 'react';
 import { forwardRef, useCallback, useMemo, useState } from 'react';

@@ -1,10 +1,10 @@
+import { type DocMode } from '@blocksuite/affine/model';
+import { InformationIcon, LinkIcon } from '@blocksuite/icons/rc';
 import { IconButton } from '@lumibook/component';
 import { useSharingUrl } from '@lumibook/core/components/hooks/affine/use-share-url';
 import { WorkspaceDialogService } from '@lumibook/core/modules/dialogs';
 import { WorkspaceService } from '@lumibook/core/modules/workspace';
 import { useI18n } from '@lumibook/i18n';
-import { type DocMode } from '@blocksuite/affine/model';
-import { InformationIcon, LinkIcon } from '@blocksuite/icons/rc';
 import { useService } from '@lumibook/infra';
 import { useCallback } from 'react';
 

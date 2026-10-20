@@ -2,6 +2,7 @@
  * @vitest-environment happy-dom
  */
 
+import type * as Infra from '@lumibook/infra';
 import {
   cleanup,
   fireEvent,
@@ -9,7 +10,6 @@ import {
   screen,
   waitFor,
 } from '@testing-library/react';
-import type * as Infra from '@lumibook/infra';
 import type { InputHTMLAttributes, MouseEventHandler, ReactNode } from 'react';
 import { afterEach, beforeEach, describe, expect, test, vi } from 'vitest';
 

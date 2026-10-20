@@ -1,4 +1,11 @@
 import {
+  CloseIcon,
+  CollectionsIcon,
+  EditIcon,
+  FilterIcon,
+  PlusIcon,
+} from '@blocksuite/icons/rc';
+import {
   Divider,
   IconButton,
   Menu,
@@ -14,15 +21,8 @@ import {
 import type { FilterParams } from '@lumibook/core/modules/collection-rules';
 import { WorkspaceDialogService } from '@lumibook/core/modules/dialogs';
 import { useI18n } from '@lumibook/i18n';
-import track from '@lumibook/track';
-import {
-  CloseIcon,
-  CollectionsIcon,
-  EditIcon,
-  FilterIcon,
-  PlusIcon,
-} from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
+import track from '@lumibook/track';
 import { useMemo, useState } from 'react';
 
 import * as styles from './pinned-collections.css';

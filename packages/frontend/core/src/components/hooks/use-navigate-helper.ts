@@ -1,7 +1,7 @@
+import type { DocMode } from '@blocksuite/affine/model';
 import type { SettingTab } from '@lumibook/core/modules/dialogs/constant';
 import { toDocSearchParams } from '@lumibook/core/modules/navigation';
 import { getOpenUrlInDesktopAppLink } from '@lumibook/core/modules/open-in-app';
-import type { DocMode } from '@blocksuite/affine/model';
 import { nanoid } from 'nanoid';
 import { createContext, useCallback, useContext, useMemo } from 'react';
 import type { NavigateFunction, NavigateOptions, To } from 'react-router-dom';

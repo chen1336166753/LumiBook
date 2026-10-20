@@ -1,5 +1,5 @@
-import { UserFriendlyError } from '@lumibook/error';
 import { type DocMode, DocModes } from '@blocksuite/affine/model';
+import { UserFriendlyError } from '@lumibook/error';
 import { TimeoutError } from 'rxjs';
 
 export const getResolvedPublishMode = (

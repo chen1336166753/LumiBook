@@ -1,5 +1,4 @@
 import type { WorkspaceService } from '@lumibook/core/modules/workspace';
-import { logger } from '@sentry/react';
 import {
   catchErrorInto,
   effect,
@@ -10,6 +9,7 @@ import {
   onStart,
   smartRetry,
 } from '@lumibook/infra';
+import { logger } from '@sentry/react';
 import { EMPTY } from 'rxjs';
 import { exhaustMap, mergeMap } from 'rxjs/operators';
 

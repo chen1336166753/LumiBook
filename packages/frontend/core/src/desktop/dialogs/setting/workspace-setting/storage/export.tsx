@@ -1,3 +1,4 @@
+import { ExportIcon } from '@blocksuite/icons/rc';
 import { notify } from '@lumibook/component';
 import { SettingRow } from '@lumibook/component/setting-components';
 import { Button } from '@lumibook/component/ui/button';
@@ -5,10 +6,9 @@ import { useAsyncCallback } from '@lumibook/core/components/hooks/affine-async-h
 import { DesktopApiService } from '@lumibook/core/modules/desktop-api';
 import type { Workspace } from '@lumibook/core/modules/workspace';
 import { useI18n } from '@lumibook/i18n';
+import { useService } from '@lumibook/infra';
 import { universalId } from '@lumibook/nbstore';
 import track from '@lumibook/track';
-import { ExportIcon } from '@blocksuite/icons/rc';
-import { useService } from '@lumibook/infra';
 import { useState } from 'react';
 
 interface ExportPanelProps {

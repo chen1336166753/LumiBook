@@ -1,3 +1,4 @@
+import { TodayIcon } from '@blocksuite/icons/rc';
 import {
   Checkbox,
   DatePicker,
@@ -12,7 +13,6 @@ import { JournalService } from '@lumibook/core/modules/journal';
 import { WorkbenchService } from '@lumibook/core/modules/workbench';
 import { ViewService } from '@lumibook/core/modules/workbench/services/view';
 import { i18nTime, useI18n } from '@lumibook/i18n';
-import { TodayIcon } from '@blocksuite/icons/rc';
 import {
   useLiveData,
   useService,

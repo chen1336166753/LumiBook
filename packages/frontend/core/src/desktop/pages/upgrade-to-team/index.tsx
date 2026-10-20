@@ -1,3 +1,4 @@
+import { DoneIcon, NewPageIcon, SignOutIcon } from '@blocksuite/icons/rc';
 import {
   Avatar,
   Button,
@@ -26,7 +27,6 @@ import { buildShowcaseWorkspace } from '@lumibook/core/utils/first-app-data';
 import { UNTITLED_WORKSPACE_NAME } from '@lumibook/env/constant';
 import { SubscriptionPlan, SubscriptionRecurring } from '@lumibook/graphql';
 import { type I18nString, Trans, useI18n } from '@lumibook/i18n';
-import { DoneIcon, NewPageIcon, SignOutIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';

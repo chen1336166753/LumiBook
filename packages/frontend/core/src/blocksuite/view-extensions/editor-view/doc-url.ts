@@ -1,12 +1,12 @@
-import { generateUrl } from '@lumibook/core/components/hooks/affine/use-share-url';
-import { WorkspaceServerService } from '@lumibook/core/modules/cloud';
-import { resolveLinkToDoc } from '@lumibook/core/modules/navigation/utils';
-import { WorkspaceService } from '@lumibook/core/modules/workspace';
 import { type ReferenceParams } from '@blocksuite/affine/model';
 import {
   GenerateDocUrlExtension,
   ParseDocUrlExtension,
 } from '@blocksuite/affine/shared/services';
+import { generateUrl } from '@lumibook/core/components/hooks/affine/use-share-url';
+import { WorkspaceServerService } from '@lumibook/core/modules/cloud';
+import { resolveLinkToDoc } from '@lumibook/core/modules/navigation/utils';
+import { WorkspaceService } from '@lumibook/core/modules/workspace';
 import type { FrameworkProvider } from '@lumibook/infra';
 
 function patchParseDocUrlExtension(framework: FrameworkProvider) {

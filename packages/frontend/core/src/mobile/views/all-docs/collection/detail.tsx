@@ -1,3 +1,4 @@
+import { ViewLayersIcon } from '@blocksuite/icons/rc';
 import { Wrapper } from '@lumibook/component';
 import {
   EmptyCollectionDetail,
@@ -11,7 +12,6 @@ import { DocsExplorer } from '@lumibook/core/components/explorer/docs-view/docs-
 import { PageHeader } from '@lumibook/core/mobile/components';
 import { Page } from '@lumibook/core/mobile/components/page';
 import type { Collection } from '@lumibook/core/modules/collection';
-import { ViewLayersIcon } from '@blocksuite/icons/rc';
 import { useLiveData } from '@lumibook/infra';
 import { useEffect, useState } from 'react';
 

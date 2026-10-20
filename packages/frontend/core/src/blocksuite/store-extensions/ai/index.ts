@@ -1,9 +1,9 @@
-import { AIChatBlockSchemaExtension } from '@lumibook/core/blocksuite/ai/blocks';
-import { TranscriptionBlockSchemaExtension } from '@lumibook/core/blocksuite/ai/blocks/transcription-block/model';
 import {
   type StoreExtensionContext,
   StoreExtensionProvider,
 } from '@blocksuite/affine/ext-loader';
+import { AIChatBlockSchemaExtension } from '@lumibook/core/blocksuite/ai/blocks';
+import { TranscriptionBlockSchemaExtension } from '@lumibook/core/blocksuite/ai/blocks/transcription-block/model';
 
 export class AIStoreExtension extends StoreExtensionProvider {
   override name = 'affine-store-extensions';

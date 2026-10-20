@@ -1,4 +1,3 @@
-import { useI18n } from '@lumibook/i18n';
 import {
   ChatWithAiIcon,
   ImageIcon,
@@ -6,6 +5,7 @@ import {
   TocIcon,
   TranscriptWithAiIcon,
 } from '@blocksuite/icons/rc';
+import { useI18n } from '@lumibook/i18n';
 import type { ReactNode } from 'react';
 
 import * as styles from './index.css';

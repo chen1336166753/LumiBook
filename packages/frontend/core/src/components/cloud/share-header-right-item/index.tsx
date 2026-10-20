@@ -1,5 +1,5 @@
-import { AuthService } from '@lumibook/core/modules/cloud';
 import type { DocMode } from '@blocksuite/affine/model';
+import { AuthService } from '@lumibook/core/modules/cloud';
 import { useLiveData, useService } from '@lumibook/infra';
 
 import { ImportTemplateButton } from './import-template';

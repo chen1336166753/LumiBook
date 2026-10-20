@@ -1,4 +1,3 @@
-import { WorkbenchService } from '@lumibook/core/modules/workbench';
 import { getSelectedBlocksCommand } from '@blocksuite/affine/shared/commands';
 import type { CommentProvider } from '@blocksuite/affine/shared/services';
 import { CommentProviderIdentifier } from '@blocksuite/affine/shared/services';
@@ -17,6 +16,7 @@ import {
   GfxControllerIdentifier,
   GfxPrimitiveElementModel,
 } from '@blocksuite/std/gfx';
+import { WorkbenchService } from '@lumibook/core/modules/workbench';
 import type { FrameworkProvider } from '@lumibook/infra';
 
 import { DocCommentManagerService } from '../../../modules/comment/services/doc-comment-manager';

@@ -1,7 +1,7 @@
+import { ExportIcon, ImportIcon, PlusIcon } from '@blocksuite/icons/rc';
 import { Button } from '@lumibook/admin/components/ui/button';
 import { Input } from '@lumibook/admin/components/ui/input';
 import type { FeatureType } from '@lumibook/graphql';
-import { ExportIcon, ImportIcon, PlusIcon } from '@blocksuite/icons/rc';
 import type { Table } from '@tanstack/react-table';
 import {
   type ChangeEvent,

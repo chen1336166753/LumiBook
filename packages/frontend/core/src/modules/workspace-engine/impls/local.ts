@@ -1,5 +1,7 @@
 import { toArrayBuffer } from '@lumibook/core/utils/array-buffer';
 import { DebugLogger } from '@lumibook/debug';
+import type { FrameworkProvider } from '@lumibook/infra';
+import { LiveData, Service } from '@lumibook/infra';
 import {
   type BlobSource,
   type BlobStorage,
@@ -33,8 +35,6 @@ import {
   SqliteV1DocStorage,
 } from '@lumibook/nbstore/sqlite/v1';
 import type { WorkerInitOptions } from '@lumibook/nbstore/worker/client';
-import type { FrameworkProvider } from '@lumibook/infra';
-import { LiveData, Service } from '@lumibook/infra';
 import { isEqual } from 'lodash-es';
 import { nanoid } from 'nanoid';
 import { Observable } from 'rxjs';

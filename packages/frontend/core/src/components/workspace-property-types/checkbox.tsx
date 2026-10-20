@@ -1,7 +1,7 @@
+import { CheckBoxCheckLinearIcon } from '@blocksuite/icons/rc';
 import { Checkbox, MenuItem, PropertyValue } from '@lumibook/component';
 import type { FilterParams } from '@lumibook/core/modules/collection-rules';
 import { useI18n } from '@lumibook/i18n';
-import { CheckBoxCheckLinearIcon } from '@blocksuite/icons/rc';
 import { useCallback } from 'react';
 
 import { PlainTextDocGroupHeader } from '../explorer/docs-view/group-header';

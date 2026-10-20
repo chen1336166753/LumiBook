@@ -1,4 +1,12 @@
 import {
+  DeleteIcon,
+  DuplicateIcon,
+  InformationIcon,
+  MoreVerticalIcon,
+  OpenInNewIcon,
+  SplitViewIcon,
+} from '@blocksuite/icons/rc';
+import {
   IconButton,
   type IconButtonProps,
   Menu,
@@ -12,16 +20,8 @@ import { CompatibleFavoriteItemsAdapter } from '@lumibook/core/modules/favorite'
 import { GuardService } from '@lumibook/core/modules/permissions';
 import { WorkbenchService } from '@lumibook/core/modules/workbench';
 import { useI18n } from '@lumibook/i18n';
-import track from '@lumibook/track';
-import {
-  DeleteIcon,
-  DuplicateIcon,
-  InformationIcon,
-  MoreVerticalIcon,
-  OpenInNewIcon,
-  SplitViewIcon,
-} from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
+import track from '@lumibook/track';
 import { useCallback, useContext } from 'react';
 
 import { useBlockSuiteMetaHelper } from '../../hooks/affine/use-block-suite-meta-helper';

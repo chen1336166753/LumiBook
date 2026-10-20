@@ -1,8 +1,8 @@
 import { RealtimeLiveQuery } from '@lumibook/core/modules/cloud/realtime/live-query';
 import type { WorkspaceService } from '@lumibook/core/modules/workspace';
+import { Entity, LiveData } from '@lumibook/infra';
 import type { RealtimeTopicEventOf } from '@lumibook/realtime';
 import { logger } from '@sentry/react';
-import { Entity, LiveData } from '@lumibook/infra';
 
 import type { EmbeddingStore } from '../stores/embedding';
 import type { LocalAttachmentFile } from '../types';

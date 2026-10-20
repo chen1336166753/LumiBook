@@ -1,4 +1,3 @@
-import { getWorkerUrl } from '@lumibook/env/worker';
 import { CodeLayoutHandlerExtension } from '@blocksuite/affine/blocks/code';
 import { ImageLayoutHandlerExtension } from '@blocksuite/affine/blocks/image';
 import { ListLayoutHandlerExtension } from '@blocksuite/affine/blocks/list';
@@ -8,6 +7,7 @@ import {
   TurboRendererConfigFactory,
   ViewportTurboRendererExtension,
 } from '@blocksuite/affine/gfx/turbo-renderer';
+import { getWorkerUrl } from '@lumibook/env/worker';
 
 function createPainterWorker() {
   const worker = new Worker(getWorkerUrl('turbo-painter'));

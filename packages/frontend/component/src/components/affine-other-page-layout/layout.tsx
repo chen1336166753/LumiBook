@@ -1,6 +1,6 @@
+import { Logo1Icon } from '@blocksuite/icons/rc';
 import { Button } from '@lumibook/component/ui/button';
 import { useI18n } from '@lumibook/i18n';
-import { Logo1Icon } from '@blocksuite/icons/rc';
 import { useTheme } from 'next-themes';
 import { type ReactNode, useCallback } from 'react';
 

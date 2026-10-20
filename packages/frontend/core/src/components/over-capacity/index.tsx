@@ -3,8 +3,8 @@ import { WorkspaceDialogService } from '@lumibook/core/modules/dialogs';
 import { WorkspacePermissionService } from '@lumibook/core/modules/permissions';
 import { WorkspaceService } from '@lumibook/core/modules/workspace';
 import { useI18n } from '@lumibook/i18n';
-import type { BlobSyncState } from '@lumibook/nbstore';
 import { useLiveData, useService } from '@lumibook/infra';
+import type { BlobSyncState } from '@lumibook/nbstore';
 import { debounce } from 'lodash-es';
 import { useCallback, useEffect } from 'react';
 

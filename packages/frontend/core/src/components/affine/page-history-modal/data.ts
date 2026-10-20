@@ -1,3 +1,4 @@
+import type { Workspace } from '@blocksuite/affine/store';
 import { useDocMetaHelper } from '@lumibook/core/components/hooks/use-block-suite-page-meta';
 import { useDocCollectionPage } from '@lumibook/core/components/hooks/use-block-suite-workspace-page';
 import { FetchService } from '@lumibook/core/modules/cloud';
@@ -11,7 +12,6 @@ import { DebugLogger } from '@lumibook/debug';
 import type { ListHistoryQuery } from '@lumibook/graphql';
 import { listHistoryQuery, recoverDocMutation } from '@lumibook/graphql';
 import { i18nTime } from '@lumibook/i18n';
-import type { Workspace } from '@blocksuite/affine/store';
 import { useService } from '@lumibook/infra';
 import { useEffect, useMemo } from 'react';
 import useSWRImmutable from 'swr/immutable';

@@ -1,6 +1,6 @@
+import { CloseIcon, DownloadIcon } from '@blocksuite/icons/rc';
 import { useCatchEventCallback } from '@lumibook/core/components/hooks/use-catch-event-hook';
 import { track } from '@lumibook/track';
-import { CloseIcon, DownloadIcon } from '@blocksuite/icons/rc';
 import clsx from 'clsx';
 import { useCallback, useState } from 'react';
 

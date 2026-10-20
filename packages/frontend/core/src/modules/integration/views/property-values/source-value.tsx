@@ -1,5 +1,5 @@
-import { PropertyValue } from '@lumibook/component';
 import { DualLinkIcon } from '@blocksuite/icons/rc';
+import { PropertyValue } from '@lumibook/component';
 
 import { IntegrationTypeIcon } from '../icon';
 import * as styles from './styles.css';

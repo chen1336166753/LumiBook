@@ -1,3 +1,4 @@
+import { HistoryIcon } from '@blocksuite/icons/rc';
 import { MenuItem, MenuSeparator, MobileMenuSub } from '@lumibook/component';
 import { sortPagesByDate } from '@lumibook/core/desktop/pages/workspace/detail-page/tabs/journal';
 import {
@@ -9,7 +10,6 @@ import { DocDisplayMetaService } from '@lumibook/core/modules/doc-display-meta';
 import { JournalService } from '@lumibook/core/modules/journal';
 import { WorkbenchLink } from '@lumibook/core/modules/workbench';
 import { useI18n } from '@lumibook/i18n';
-import { HistoryIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
 import dayjs from 'dayjs';
 import { type ReactNode, useCallback, useMemo } from 'react';

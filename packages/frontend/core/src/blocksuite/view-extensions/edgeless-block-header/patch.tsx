@@ -1,5 +1,3 @@
-import type { ReactToLit } from '@lumibook/component';
-import { JournalService } from '@lumibook/core/modules/journal';
 import { EmbedSyncedDocConfigExtension } from '@blocksuite/affine/blocks/embed-doc';
 import { NoteConfigExtension } from '@blocksuite/affine/blocks/note';
 import { EDGELESS_BLOCK_CHILD_PADDING } from '@blocksuite/affine/blocks/root';
@@ -9,6 +7,8 @@ import {
   EditPropsStore,
 } from '@blocksuite/affine/shared/services';
 import { GfxControllerIdentifier } from '@blocksuite/affine/std/gfx';
+import type { ReactToLit } from '@lumibook/component';
+import { JournalService } from '@lumibook/core/modules/journal';
 import type { FrameworkProvider } from '@lumibook/infra';
 import { html } from 'lit';
 

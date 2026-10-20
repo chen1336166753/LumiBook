@@ -1,5 +1,5 @@
-import type { UserQuotaStateSnapshot } from '@lumibook/realtime';
 import { Framework } from '@lumibook/infra';
+import type { UserQuotaStateSnapshot } from '@lumibook/realtime';
 import { Subject } from 'rxjs';
 import { describe, expect, test, vi } from 'vitest';
 

@@ -1,4 +1,3 @@
-import { WorkspaceImpl } from '@lumibook/core/modules/workspace/impls/workspace';
 import { getSurfaceBlock } from '@blocksuite/affine/blocks/surface';
 import {
   DatabaseBlockModel,
@@ -31,6 +30,7 @@ import {
 import type { BlockModel, DocSnapshot, Store } from '@blocksuite/affine/store';
 import { Slice, toDraftModel } from '@blocksuite/affine/store';
 import { getElementProps } from '@blocksuite/affine-block-root';
+import { WorkspaceImpl } from '@lumibook/core/modules/workspace/impls/workspace';
 import { Doc as YDoc } from 'yjs';
 
 import { getStoreManager } from '../../manager/store';

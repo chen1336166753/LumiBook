@@ -1,5 +1,5 @@
-import { ROUTES } from '@lumibook/routes';
 import { SettingsIcon } from '@blocksuite/icons/rc';
+import { ROUTES } from '@lumibook/routes';
 
 import { NavItem } from './nav-item';
 

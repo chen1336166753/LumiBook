@@ -1,3 +1,4 @@
+import type { EditorHost } from '@blocksuite/affine/std';
 import { toReactNode } from '@lumibook/component';
 import { AIChatBlockPeekViewTemplate } from '@lumibook/core/blocksuite/ai';
 import type { AIChatBlockModel } from '@lumibook/core/blocksuite/ai/blocks/ai-chat-block/model/ai-chat-model';
@@ -12,7 +13,6 @@ import {
 import { ServerService, SubscriptionService } from '@lumibook/core/modules/cloud';
 import { WorkspaceDialogService } from '@lumibook/core/modules/dialogs';
 import { FeatureFlagService } from '@lumibook/core/modules/feature-flag';
-import type { EditorHost } from '@blocksuite/affine/std';
 import { useFramework } from '@lumibook/infra';
 import { useMemo } from 'react';
 

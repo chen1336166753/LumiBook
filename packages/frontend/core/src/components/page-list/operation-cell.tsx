@@ -1,3 +1,18 @@
+import type { DocMeta } from '@blocksuite/affine/store';
+import {
+  DeleteIcon,
+  DeletePermanentlyIcon,
+  DuplicateIcon,
+  EditIcon,
+  FilterIcon,
+  FilterMinusIcon,
+  InformationIcon,
+  MoreVerticalIcon,
+  OpenInNewIcon,
+  PlusIcon,
+  ResetIcon,
+  SplitViewIcon,
+} from '@blocksuite/icons/rc';
 import {
   IconButton,
   Menu,
@@ -17,23 +32,8 @@ import {
 import { WorkbenchService } from '@lumibook/core/modules/workbench';
 import { WorkspaceService } from '@lumibook/core/modules/workspace';
 import { useI18n } from '@lumibook/i18n';
-import { track } from '@lumibook/track';
-import type { DocMeta } from '@blocksuite/affine/store';
-import {
-  DeleteIcon,
-  DeletePermanentlyIcon,
-  DuplicateIcon,
-  EditIcon,
-  FilterIcon,
-  FilterMinusIcon,
-  InformationIcon,
-  MoreVerticalIcon,
-  OpenInNewIcon,
-  PlusIcon,
-  ResetIcon,
-  SplitViewIcon,
-} from '@blocksuite/icons/rc';
 import { useLiveData, useService, useServices } from '@lumibook/infra';
+import { track } from '@lumibook/track';
 import type { MouseEvent } from 'react';
 import { useCallback, useState } from 'react';
 

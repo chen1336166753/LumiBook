@@ -1,3 +1,4 @@
+import { SingleSelectCheckSolidIcon } from '@blocksuite/icons/rc';
 import {
   Button,
   type ButtonProps,
@@ -8,9 +9,8 @@ import { useAsyncCallback } from '@lumibook/core/components/hooks/affine-async-h
 import { SubscriptionService } from '@lumibook/core/modules/cloud';
 import { SubscriptionPlan } from '@lumibook/graphql';
 import { useI18n } from '@lumibook/i18n';
-import { track } from '@lumibook/track';
-import { SingleSelectCheckSolidIcon } from '@blocksuite/icons/rc';
 import { useService } from '@lumibook/infra';
+import { track } from '@lumibook/track';
 import { cssVar } from '@toeverything/theme';
 import { nanoid } from 'nanoid';
 import { useState } from 'react';

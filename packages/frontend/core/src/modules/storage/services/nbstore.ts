@@ -1,5 +1,5 @@
-import type { WorkerInitOptions } from '@lumibook/nbstore/worker/client';
 import { Service } from '@lumibook/infra';
+import type { WorkerInitOptions } from '@lumibook/nbstore/worker/client';
 
 import type { NbstoreProvider } from '../providers/nbstore';
 

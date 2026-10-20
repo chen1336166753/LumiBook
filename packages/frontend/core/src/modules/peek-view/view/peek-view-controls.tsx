@@ -1,7 +1,3 @@
-import { IconButton, notify } from '@lumibook/component';
-import { copyTextToClipboard } from '@lumibook/core/utils/clipboard';
-import { useI18n } from '@lumibook/i18n';
-import track from '@lumibook/track';
 import type { DocMode } from '@blocksuite/affine/model';
 import {
   CloseIcon,
@@ -11,7 +7,11 @@ import {
   OpenInNewIcon,
   SplitViewIcon,
 } from '@blocksuite/icons/rc';
+import { IconButton, notify } from '@lumibook/component';
+import { copyTextToClipboard } from '@lumibook/core/utils/clipboard';
+import { useI18n } from '@lumibook/i18n';
 import { useService } from '@lumibook/infra';
+import track from '@lumibook/track';
 import { clsx } from 'clsx';
 import {
   type HTMLAttributes,

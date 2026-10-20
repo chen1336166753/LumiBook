@@ -1,4 +1,3 @@
-import track from '@lumibook/track';
 import { WithDisposable } from '@blocksuite/affine/global/lit';
 import { unsafeCSSVar, unsafeCSSVarV2 } from '@blocksuite/affine/shared/theme';
 import { type EditorHost, ShadowlessElement } from '@blocksuite/affine/std';
@@ -12,6 +11,7 @@ import {
   PenIcon as EditIcon,
   PenIcon,
 } from '@blocksuite/icons/lit';
+import track from '@lumibook/track';
 import { css, html, nothing } from 'lit';
 import { property, state } from 'lit/decorators.js';
 import { repeat } from 'lit/directives/repeat.js';

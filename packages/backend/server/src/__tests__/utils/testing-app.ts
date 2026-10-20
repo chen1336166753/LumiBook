@@ -14,7 +14,7 @@ import cookieParser from 'cookie-parser';
 import graphqlUploadExpress from 'graphql-upload/graphqlUploadExpress.mjs';
 import supertest from 'supertest';
 
-import { LumiBookLogger, ApplyType, GlobalExceptionFilter } from '../../base';
+import { ApplyType, GlobalExceptionFilter,LumiBookLogger } from '../../base';
 import { SocketIoAdapter } from '../../base/websocket';
 import { AuthService, AuthSigningKeyRing } from '../../core/auth';
 import { BackendRuntimeProvider } from '../../core/backend-runtime';

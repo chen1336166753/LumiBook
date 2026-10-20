@@ -1,6 +1,6 @@
+import { LinkIcon, WaveRectangleIcon } from '@blocksuite/icons/rc';
 import type { Server } from '@lumibook/core/modules/cloud';
 import type { WorkspaceMetadata } from '@lumibook/core/modules/workspace';
-import { LinkIcon, WaveRectangleIcon } from '@blocksuite/icons/rc';
 import { useEffect, useRef, useState } from 'react';
 
 import type { SharePreviewRouteOwner } from './preview-route-owner';

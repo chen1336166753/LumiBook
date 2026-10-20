@@ -1,3 +1,4 @@
+import { sanitizeSvg as sanitizeSvgDocument } from '@blocksuite/affine-shared/utils';
 import {
   renderMermaidSvgBackend,
   renderTypstSvgBackend,
@@ -10,7 +11,6 @@ import type {
   TypstRenderRequest,
   TypstRenderResult,
 } from '@lumibook/core/modules/typst/renderer';
-import { sanitizeSvg as sanitizeSvgDocument } from '@blocksuite/affine-shared/utils';
 
 export function sanitizeSvg(svg: string): string {
   return sanitizeSvgDocument(svg);

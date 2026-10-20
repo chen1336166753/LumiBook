@@ -2,8 +2,8 @@ import {
   type UpdateUserSettingsInput,
   updateUserSettingsMutation,
 } from '@lumibook/graphql';
-import type { UserSettingsSnapshot } from '@lumibook/realtime';
 import { Store } from '@lumibook/infra';
+import type { UserSettingsSnapshot } from '@lumibook/realtime';
 
 import type { NbstoreService } from '../../storage';
 import type { GraphQLService } from '../services/graphql';

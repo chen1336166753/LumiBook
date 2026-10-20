@@ -1,7 +1,7 @@
+import { type AttachmentBlockModel } from '@blocksuite/affine/model';
 import { Skeleton } from '@lumibook/component';
 import { AttachmentViewerView } from '@lumibook/core/blocksuite/attachment-viewer';
 import { type Doc, DocsService } from '@lumibook/core/modules/doc';
-import { type AttachmentBlockModel } from '@blocksuite/affine/model';
 import { FrameworkScope, useLiveData, useService } from '@lumibook/infra';
 import { type ReactElement, useLayoutEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';

@@ -1,12 +1,3 @@
-import { notify } from '@lumibook/component';
-import { UserFriendlyError } from '@lumibook/error';
-import {
-  type DocMode as GraphqlDocMode,
-  DocRole,
-  ErrorNames,
-} from '@lumibook/graphql';
-import { I18n, i18nTime } from '@lumibook/i18n';
-import track from '@lumibook/track';
 import type { DocMode } from '@blocksuite/affine/model';
 import { DocModeProvider } from '@blocksuite/affine/shared/services';
 import type { AffineInlineEditor } from '@blocksuite/affine/shared/types';
@@ -29,8 +20,17 @@ import {
   NewXxxPageIcon,
   UserIcon,
 } from '@blocksuite/icons/lit';
-import { computed, Signal } from '@preact/signals-core';
+import { notify } from '@lumibook/component';
+import { UserFriendlyError } from '@lumibook/error';
+import {
+  type DocMode as GraphqlDocMode,
+  DocRole,
+  ErrorNames,
+} from '@lumibook/graphql';
+import { I18n, i18nTime } from '@lumibook/i18n';
 import { Service } from '@lumibook/infra';
+import track from '@lumibook/track';
+import { computed, Signal } from '@preact/signals-core';
 import { cssVarV2 } from '@toeverything/theme/v2';
 import type { FuseResultMatch } from 'fuse.js';
 import Fuse from 'fuse.js';

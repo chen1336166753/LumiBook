@@ -1,3 +1,6 @@
+import type { DocMode } from '@blocksuite/affine/model';
+import type { Store, Workspace } from '@blocksuite/affine/store';
+import { CloseIcon, ToggleRightIcon } from '@blocksuite/icons/rc';
 import { Avatar, Loading, Scrollable } from '@lumibook/component';
 import { EditorLoading } from '@lumibook/component/page-detail-skeleton';
 import { Button, IconButton } from '@lumibook/component/ui/button';
@@ -9,13 +12,10 @@ import { WorkspacePermissionService } from '@lumibook/core/modules/permissions';
 import { WorkspaceQuotaService } from '@lumibook/core/modules/quota';
 import { WorkspaceService } from '@lumibook/core/modules/workspace';
 import { i18nTime, Trans, useI18n } from '@lumibook/i18n';
+import { useLiveData, useService } from '@lumibook/infra';
 import { track } from '@lumibook/track';
-import type { DocMode } from '@blocksuite/affine/model';
-import type { Store, Workspace } from '@blocksuite/affine/store';
-import { CloseIcon, ToggleRightIcon } from '@blocksuite/icons/rc';
 import * as Collapsible from '@radix-ui/react-collapsible';
 import type { DialogContentProps } from '@radix-ui/react-dialog';
-import { useLiveData, useService } from '@lumibook/infra';
 import { atom, useAtom } from 'jotai';
 import type { PropsWithChildren } from 'react';
 import {

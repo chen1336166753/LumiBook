@@ -1,7 +1,7 @@
+import { SettingsIcon } from '@blocksuite/icons/rc';
 import type { I18n } from '@lumibook/core/modules/i18n';
 import type { useI18n } from '@lumibook/i18n';
 import { track } from '@lumibook/track';
-import { SettingsIcon } from '@blocksuite/icons/rc';
 
 import { registerAffineCommand } from './registry';
 

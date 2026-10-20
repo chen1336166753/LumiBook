@@ -1,9 +1,9 @@
+import { EmailIcon, LinkIcon } from '@blocksuite/icons/rc';
 import type {
   InviteLink,
   WorkspaceInviteLinkExpireTime,
 } from '@lumibook/graphql';
 import { useI18n } from '@lumibook/i18n';
-import { EmailIcon, LinkIcon } from '@blocksuite/icons/rc';
 
 import { RadioGroup } from '../../../ui/radio';
 import { EmailInvite } from './email-invite';

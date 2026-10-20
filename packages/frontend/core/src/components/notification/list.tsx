@@ -1,4 +1,12 @@
 import {
+  CollaborationIcon,
+  DeleteIcon,
+  EdgelessIcon,
+  MoreHorizontalIcon,
+  NotificationIcon,
+  PageIcon,
+} from '@blocksuite/icons/rc';
+import {
   Avatar,
   Button,
   IconButton,
@@ -29,16 +37,8 @@ import type {
   MentionNotificationBodyType,
 } from '@lumibook/graphql';
 import { i18nTime, Trans, useI18n } from '@lumibook/i18n';
-import track from '@lumibook/track';
-import {
-  CollaborationIcon,
-  DeleteIcon,
-  EdgelessIcon,
-  MoreHorizontalIcon,
-  NotificationIcon,
-  PageIcon,
-} from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
+import track from '@lumibook/track';
 import clsx from 'clsx';
 import {
   useCallback,

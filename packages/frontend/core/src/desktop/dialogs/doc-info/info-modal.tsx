@@ -1,3 +1,4 @@
+import { PlusIcon } from '@blocksuite/icons/rc';
 import {
   Button,
   Divider,
@@ -18,9 +19,8 @@ import { DocLinksService } from '@lumibook/core/modules/doc-link';
 import { GuardService } from '@lumibook/core/modules/permissions';
 import { WorkspacePropertyService } from '@lumibook/core/modules/workspace-property';
 import { useI18n } from '@lumibook/i18n';
-import track from '@lumibook/track';
-import { PlusIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useServices } from '@lumibook/infra';
+import track from '@lumibook/track';
 import { useCallback, useEffect, useState } from 'react';
 
 import * as styles from './info-modal.css';

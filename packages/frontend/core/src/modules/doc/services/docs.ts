@@ -1,9 +1,9 @@
-import { DebugLogger } from '@lumibook/debug';
-import { Unreachable } from '@lumibook/env/constant';
 import { replaceIdMiddleware } from '@blocksuite/affine/shared/adapters';
 import type { AffineTextAttributes } from '@blocksuite/affine/shared/types';
 import type { DeltaInsert } from '@blocksuite/affine/store';
 import { Slice, Text, Transformer } from '@blocksuite/affine/store';
+import { DebugLogger } from '@lumibook/debug';
+import { Unreachable } from '@lumibook/env/constant';
 import { ObjectPool, Service } from '@lumibook/infra';
 import { combineLatest, map } from 'rxjs';
 

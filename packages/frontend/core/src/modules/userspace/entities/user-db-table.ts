@@ -1,9 +1,9 @@
-import type { DocFrontendDocState } from '@lumibook/nbstore';
 import type {
   Table as OrmTable,
   TableSchemaBuilder,
 } from '@lumibook/infra';
 import { Entity, LiveData } from '@lumibook/infra';
+import type { DocFrontendDocState } from '@lumibook/nbstore';
 
 import type { UserDBEngine } from './user-db-engine';
 

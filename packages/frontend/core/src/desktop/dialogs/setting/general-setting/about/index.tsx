@@ -1,3 +1,4 @@
+import { ArrowRightSmallIcon, OpenInNewIcon } from '@blocksuite/icons/rc';
 import { Switch } from '@lumibook/component';
 import {
   SettingHeader,
@@ -8,7 +9,6 @@ import { useAppUpdater } from '@lumibook/core/components/hooks/use-app-updater';
 import { UrlService } from '@lumibook/core/modules/url';
 import { appIconMap, appNames } from '@lumibook/core/utils/channel';
 import { useI18n } from '@lumibook/i18n';
-import { ArrowRightSmallIcon, OpenInNewIcon } from '@blocksuite/icons/rc';
 import { useServices } from '@lumibook/infra';
 import { useCallback } from 'react';
 

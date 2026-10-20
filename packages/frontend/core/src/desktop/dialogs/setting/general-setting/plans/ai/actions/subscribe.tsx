@@ -3,8 +3,8 @@ import { generateSubscriptionCallbackLink } from '@lumibook/core/components/hook
 import { AuthService, SubscriptionService } from '@lumibook/core/modules/cloud';
 import { SubscriptionPlan, SubscriptionRecurring } from '@lumibook/graphql';
 import { useI18n } from '@lumibook/i18n';
-import { track } from '@lumibook/track';
 import { useLiveData, useService } from '@lumibook/infra';
+import { track } from '@lumibook/track';
 import { useCallback, useMemo } from 'react';
 
 import { CheckoutSlot } from '../../checkout-slot';

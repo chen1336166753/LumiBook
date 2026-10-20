@@ -1,5 +1,5 @@
-import { sentry, tracker } from '@lumibook/track';
 import { APP_SETTINGS_STORAGE_KEY } from '@lumibook/infra/atom';
+import { sentry, tracker } from '@lumibook/track';
 
 tracker.init();
 sentry.init();

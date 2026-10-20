@@ -1,3 +1,5 @@
+import type { DocMode } from '@blocksuite/affine/model';
+import { ZipTransformer } from '@blocksuite/affine/widgets/linked-doc';
 import { notify, toast } from '@lumibook/component';
 import {
   pushGlobalLoadingEventAtom,
@@ -32,9 +34,6 @@ import {
   WorkspaceService,
 } from '@lumibook/core/modules/workspace';
 import { useI18n } from '@lumibook/i18n';
-import track from '@lumibook/track';
-import type { DocMode } from '@blocksuite/affine/model';
-import { ZipTransformer } from '@blocksuite/affine/widgets/linked-doc';
 import {
   effect,
   fromPromise,
@@ -44,6 +43,7 @@ import {
   useService,
   useServices,
 } from '@lumibook/infra';
+import track from '@lumibook/track';
 import { useSetAtom } from 'jotai';
 import { useEffect } from 'react';
 import { catchError, EMPTY, finalize, switchMap, tap, timeout } from 'rxjs';

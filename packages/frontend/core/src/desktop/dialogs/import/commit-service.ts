@@ -1,7 +1,3 @@
-import type { IconData } from '@lumibook/component';
-import type { ExplorerIconService } from '@lumibook/core/modules/explorer-icon/services/explorer-icon';
-import type { OrganizeService } from '@lumibook/core/modules/organize';
-import type { TagService } from '@lumibook/core/modules/tag';
 import {
   type ExtensionType,
   type Schema,
@@ -14,6 +10,10 @@ import type {
   ImportFolder,
   ImportIconData,
 } from '@blocksuite/affine/widgets/linked-doc';
+import type { IconData } from '@lumibook/component';
+import type { ExplorerIconService } from '@lumibook/core/modules/explorer-icon/services/explorer-icon';
+import type { OrganizeService } from '@lumibook/core/modules/organize';
+import type { TagService } from '@lumibook/core/modules/tag';
 
 type Logger = {
   warn: (message: string, ...args: unknown[]) => void;

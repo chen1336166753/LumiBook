@@ -1,6 +1,7 @@
 import '@lumibook/core/bootstrap/electron';
 
 import { apis, events } from '@lumibook/electron-api';
+import { OpConsumer } from '@lumibook/infra/op';
 import { broadcastChannelStorages } from '@lumibook/nbstore/broadcast-channel';
 import {
   cloudStorages,
@@ -16,7 +17,6 @@ import {
   StoreManagerConsumer,
   type WorkerManagerOps,
 } from '@lumibook/nbstore/worker/consumer';
-import { OpConsumer } from '@lumibook/infra/op';
 
 import { createDiskSyncApis } from './disk-sync-bridge';
 

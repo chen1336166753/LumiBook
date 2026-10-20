@@ -1,6 +1,6 @@
+import { SidebarIcon } from '@blocksuite/icons/rc';
 import type { useI18n } from '@lumibook/i18n';
 import { track } from '@lumibook/track';
-import { SidebarIcon } from '@blocksuite/icons/rc';
 
 import type { AppSidebarService } from '../modules/app-sidebar';
 import { registerAffineCommand } from './registry';

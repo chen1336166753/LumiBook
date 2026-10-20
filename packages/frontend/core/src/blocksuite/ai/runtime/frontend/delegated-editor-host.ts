@@ -1,11 +1,11 @@
+import type { EditorHost } from '@blocksuite/affine/std';
+import { GfxControllerIdentifier } from '@blocksuite/affine/std/gfx';
 import type { NbstoreService } from '@lumibook/core/modules/storage';
 import type {
   DelegatedToolCancel,
   DelegatedToolName,
   DelegatedToolRequest,
 } from '@lumibook/realtime';
-import type { EditorHost } from '@blocksuite/affine/std';
-import { GfxControllerIdentifier } from '@blocksuite/affine/std/gfx';
 import type { Subscription } from 'rxjs';
 
 import {

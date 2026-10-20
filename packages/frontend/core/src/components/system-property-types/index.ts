@@ -1,6 +1,3 @@
-import type { FilterParams } from '@lumibook/core/modules/collection-rules';
-import type { DocRecord } from '@lumibook/core/modules/doc';
-import type { I18nString } from '@lumibook/i18n';
 import {
   CloudWorkspaceIcon,
   DateTimeIcon,
@@ -14,6 +11,9 @@ import {
   TemplateIcon,
   TitleIcon,
 } from '@blocksuite/icons/rc';
+import type { FilterParams } from '@lumibook/core/modules/collection-rules';
+import type { DocRecord } from '@lumibook/core/modules/doc';
+import type { I18nString } from '@lumibook/i18n';
 
 import type { GroupHeaderProps } from '../explorer/types';
 import { DateFilterMethod } from '../workspace-property-types';

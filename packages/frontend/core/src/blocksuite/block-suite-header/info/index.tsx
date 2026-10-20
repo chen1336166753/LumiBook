@@ -1,9 +1,9 @@
+import { InformationIcon } from '@blocksuite/icons/rc';
 import { IconButton } from '@lumibook/component';
 import { WorkspaceDialogService } from '@lumibook/core/modules/dialogs';
 import { useI18n } from '@lumibook/i18n';
-import { track } from '@lumibook/track';
-import { InformationIcon } from '@blocksuite/icons/rc';
 import { useService } from '@lumibook/infra';
+import { track } from '@lumibook/track';
 import { useCallback } from 'react';
 
 export const InfoButton = ({ docId }: { docId: string }) => {

@@ -1,4 +1,3 @@
-import type { ListedBlobRecord } from '@lumibook/nbstore';
 import {
   effect,
   Entity,
@@ -7,6 +6,7 @@ import {
   onComplete,
   onStart,
 } from '@lumibook/infra';
+import type { ListedBlobRecord } from '@lumibook/nbstore';
 import { switchMap, tap } from 'rxjs';
 
 import type { DocsSearchService } from '../../docs-search';

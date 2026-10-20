@@ -1,3 +1,4 @@
+import { DeleteIcon } from '@blocksuite/icons/rc';
 import {
   MenuItem,
   MenuSeparator,
@@ -13,7 +14,6 @@ import { DocDisplayMetaService } from '@lumibook/core/modules/doc-display-meta';
 import { TemplateDocService } from '@lumibook/core/modules/template-doc';
 import { TemplateListMenu } from '@lumibook/core/modules/template-doc/view/template-list-menu';
 import { useI18n } from '@lumibook/i18n';
-import { DeleteIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
 import { useCallback } from 'react';
 

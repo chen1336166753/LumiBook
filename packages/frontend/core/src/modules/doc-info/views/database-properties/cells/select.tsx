@@ -1,3 +1,6 @@
+import type { DatabaseBlockDataSource } from '@blocksuite/affine/blocks/database';
+import type { SelectTag } from '@blocksuite/data-view';
+import { MultiSelectIcon, SingleSelectIcon } from '@blocksuite/icons/rc';
 import { PropertyValue } from '@lumibook/component';
 import { type TagLike, TagsInlineEditor } from '@lumibook/core/components/tags';
 import { TagService } from '@lumibook/core/modules/tag';
@@ -5,9 +8,6 @@ import {
   affineLabelToDatabaseTagColor,
   databaseTagColorToV2,
 } from '@lumibook/core/modules/tag/entities/utils';
-import type { DatabaseBlockDataSource } from '@blocksuite/affine/blocks/database';
-import type { SelectTag } from '@blocksuite/data-view';
-import { MultiSelectIcon, SingleSelectIcon } from '@blocksuite/icons/rc';
 import { LiveData, useLiveData, useService } from '@lumibook/infra';
 import { nanoid } from 'nanoid';
 import { useCallback, useMemo } from 'react';

@@ -1,6 +1,6 @@
+import { ProgressIcon } from '@blocksuite/icons/rc';
 import { Progress, PropertyValue } from '@lumibook/component';
 import { ConfigModal } from '@lumibook/core/components/mobile';
-import { ProgressIcon } from '@blocksuite/icons/rc';
 import type { LiveData } from '@lumibook/infra';
 import { useLiveData } from '@lumibook/infra';
 import { useEffect, useState } from 'react';

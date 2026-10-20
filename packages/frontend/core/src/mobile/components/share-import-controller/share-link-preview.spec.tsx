@@ -1,16 +1,16 @@
 /** @vitest-environment happy-dom */
 
-import { type Server } from '@lumibook/core/modules/cloud';
-import type { WorkspaceMetadata } from '@lumibook/core/modules/workspace';
-import { ServerDeploymentType } from '@lumibook/graphql';
 import { LinkPreviewDetails } from '@blocksuite/affine/components/link-preview';
 import {
   type LinkPreviewCacheProvider,
   type LinkPreviewResult,
   LinkPreviewService,
 } from '@blocksuite/affine/shared/services';
-import { cleanup, render, screen, waitFor } from '@testing-library/react';
+import { type Server } from '@lumibook/core/modules/cloud';
+import type { WorkspaceMetadata } from '@lumibook/core/modules/workspace';
+import { ServerDeploymentType } from '@lumibook/graphql';
 import * as Infra from '@lumibook/infra';
+import { cleanup, render, screen, waitFor } from '@testing-library/react';
 import { afterEach, describe, expect, test, vi } from 'vitest';
 
 import {

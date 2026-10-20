@@ -1,8 +1,8 @@
+import { ResetIcon } from '@blocksuite/icons/rc';
 import { notify } from '@lumibook/component';
 import { updateReadyAtom } from '@lumibook/core/components/hooks/use-app-updater';
 import type { useI18n } from '@lumibook/i18n';
 import { track } from '@lumibook/track';
-import { ResetIcon } from '@blocksuite/icons/rc';
 import type { createStore } from 'jotai';
 
 import { registerAffineCommand } from './registry';

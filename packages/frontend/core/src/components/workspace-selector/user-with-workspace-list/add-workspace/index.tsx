@@ -1,8 +1,8 @@
+import { ImportIcon, PlusIcon } from '@blocksuite/icons/rc';
 import { MenuItem } from '@lumibook/component/ui/menu';
 import { DefaultServerService } from '@lumibook/core/modules/cloud';
 import { ServerFeature } from '@lumibook/graphql';
 import { useI18n } from '@lumibook/i18n';
-import { ImportIcon, PlusIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
 
 import * as styles from './index.css';

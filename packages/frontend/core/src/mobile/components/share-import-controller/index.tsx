@@ -1,5 +1,5 @@
-import { Button, Modal, SafeArea, Scrollable } from '@lumibook/component';
 import { ImageIcon, LinkIcon, TextIcon } from '@blocksuite/icons/rc';
+import { Button, Modal, SafeArea, Scrollable } from '@lumibook/component';
 
 import { PageHeader } from '../page-header';
 import { LinkPreview } from './link-preview';

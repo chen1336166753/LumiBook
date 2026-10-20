@@ -1,3 +1,4 @@
+import { FilterIcon } from '@blocksuite/icons/rc';
 import { IconButton, Menu } from '@lumibook/component';
 import {
   CollectionRulesService,
@@ -5,7 +6,6 @@ import {
 } from '@lumibook/core/modules/collection-rules';
 import { ShareDocsListService } from '@lumibook/core/modules/share-doc';
 import { Trans, useI18n } from '@lumibook/i18n';
-import { FilterIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useServices } from '@lumibook/infra';
 import { memo, type ReactNode, useCallback, useEffect, useState } from 'react';
 

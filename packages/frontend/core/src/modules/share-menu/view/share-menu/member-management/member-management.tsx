@@ -1,3 +1,4 @@
+import { ArrowLeftBigIcon } from '@blocksuite/icons/rc';
 import { Skeleton } from '@lumibook/component';
 import { useGuard } from '@lumibook/core/components/guard';
 import { DocService } from '@lumibook/core/modules/doc';
@@ -6,7 +7,6 @@ import {
   type GrantedUser,
 } from '@lumibook/core/modules/permissions';
 import { useI18n } from '@lumibook/i18n';
-import { ArrowLeftBigIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
 import { useCallback, useEffect } from 'react';
 import { Virtuoso } from 'react-virtuoso';

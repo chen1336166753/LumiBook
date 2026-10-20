@@ -1,5 +1,5 @@
-import { base64ToUint8Array } from '@lumibook/core/modules/workspace-engine';
 import { Capacitor } from '@capacitor/core';
+import { base64ToUint8Array } from '@lumibook/core/modules/workspace-engine';
 
 export const MOBILE_BLOB_FILE_PREFIX = '__AFFINE_BLOB_FILE__:';
 export const MOBILE_PAYLOAD_INLINE_THRESHOLD_BYTES = 1024 * 1024;

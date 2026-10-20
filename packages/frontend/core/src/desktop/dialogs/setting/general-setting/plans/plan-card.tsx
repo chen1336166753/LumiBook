@@ -1,3 +1,4 @@
+import { DoneIcon } from '@blocksuite/icons/rc';
 import { Button, type ButtonProps } from '@lumibook/component/ui/button';
 import { Tooltip } from '@lumibook/component/ui/tooltip';
 import { generateSubscriptionCallbackLink } from '@lumibook/core/components/hooks/affine/use-subscription-notify';
@@ -16,9 +17,8 @@ import {
   SubscriptionStatus,
 } from '@lumibook/graphql';
 import { Trans, useI18n } from '@lumibook/i18n';
-import { track } from '@lumibook/track';
-import { DoneIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
+import { track } from '@lumibook/track';
 import clsx from 'clsx';
 import { nanoid } from 'nanoid';
 import type { PropsWithChildren } from 'react';

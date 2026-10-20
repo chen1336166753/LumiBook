@@ -1,3 +1,4 @@
+import type { DocMeta } from '@blocksuite/affine/store';
 import { IconButton, Skeleton } from '@lumibook/component';
 import { useCatchEventCallback } from '@lumibook/core/components/hooks/use-catch-event-hook';
 import { PagePreview } from '@lumibook/core/components/page-list/page-content-preview';
@@ -8,7 +9,6 @@ import {
   WorkbenchLink,
   type WorkbenchLinkProps,
 } from '@lumibook/core/modules/workbench';
-import type { DocMeta } from '@blocksuite/affine/store';
 import { useLiveData, useService } from '@lumibook/infra';
 import clsx from 'clsx';
 import { forwardRef, type ReactNode, useMemo, useRef } from 'react';

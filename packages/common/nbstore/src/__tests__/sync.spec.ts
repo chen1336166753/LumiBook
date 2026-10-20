@@ -1,7 +1,7 @@
 import 'fake-indexeddb/auto';
 
-import * as reader from '@lumibook/reader';
 import { OpConsumer } from '@lumibook/infra/op';
+import * as reader from '@lumibook/reader';
 import { firstValueFrom, NEVER } from 'rxjs';
 import { afterEach, expect, test, vi } from 'vitest';
 import { Doc as YDoc, encodeStateAsUpdate, encodeStateVector } from 'yjs';

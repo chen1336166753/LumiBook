@@ -1,3 +1,4 @@
+import { registerPlugin } from '@capacitor/core';
 import {
   base64ToUint8Array,
   uint8ArrayToBase64,
@@ -16,7 +17,6 @@ import {
   parseUniversalId,
 } from '@lumibook/nbstore';
 import { type NativeDBApis } from '@lumibook/nbstore/sqlite';
-import { registerPlugin } from '@capacitor/core';
 
 import type { NbStorePlugin } from './definitions';
 

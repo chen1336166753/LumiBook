@@ -1,5 +1,5 @@
-import { type MenuProps, MobileMenu, MobileMenuItem } from '@lumibook/component';
 import { ArrowDownSmallIcon } from '@blocksuite/icons/rc';
+import { type MenuProps, MobileMenu, MobileMenuItem } from '@lumibook/component';
 import clsx from 'clsx';
 import {
   type CSSProperties,

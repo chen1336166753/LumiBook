@@ -1,8 +1,8 @@
+import { AfFiNeIcon } from '@blocksuite/icons/rc';
 import { Switch } from '@lumibook/component';
 import { AuthService, SubscriptionService } from '@lumibook/core/modules/cloud';
 import { SubscriptionPlan, SubscriptionRecurring } from '@lumibook/graphql';
 import { Trans, useI18n } from '@lumibook/i18n';
-import { AfFiNeIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useServices } from '@lumibook/infra';
 import {
   type ReactNode,

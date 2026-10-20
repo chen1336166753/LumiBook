@@ -1,3 +1,4 @@
+import { ArrowRightSmallIcon, CameraIcon } from '@blocksuite/icons/rc';
 import { FlexWrapper, Input, notify } from '@lumibook/component';
 import {
   SettingHeader,
@@ -13,9 +14,8 @@ import { Upload } from '@lumibook/core/components/pure/file-upload';
 import { GlobalDialogService } from '@lumibook/core/modules/dialogs';
 import { SubscriptionPlan } from '@lumibook/graphql';
 import { useI18n } from '@lumibook/i18n';
-import { track } from '@lumibook/track';
-import { ArrowRightSmallIcon, CameraIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService, useServices } from '@lumibook/infra';
+import { track } from '@lumibook/track';
 import { useCallback, useEffect, useState } from 'react';
 
 import {

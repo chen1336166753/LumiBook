@@ -1,3 +1,5 @@
+import type { DatabaseBlockDataSource } from '@blocksuite/affine/blocks/database';
+import { DatabaseTableViewIcon, PageIcon } from '@blocksuite/icons/rc';
 import {
   Divider,
   PropertyCollapsibleContent,
@@ -8,8 +10,6 @@ import { AffinePageReference } from '@lumibook/core/components/affine/reference-
 import { DocService } from '@lumibook/core/modules/doc';
 import { TemplateDocService } from '@lumibook/core/modules/template-doc';
 import { useI18n } from '@lumibook/i18n';
-import type { DatabaseBlockDataSource } from '@blocksuite/affine/blocks/database';
-import { DatabaseTableViewIcon, PageIcon } from '@blocksuite/icons/rc';
 import { LiveData, useLiveData, useService } from '@lumibook/infra';
 import { useMemo } from 'react';
 import type { Observable } from 'rxjs';

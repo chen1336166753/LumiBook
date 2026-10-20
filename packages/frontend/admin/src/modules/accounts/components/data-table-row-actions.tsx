@@ -1,3 +1,10 @@
+import {
+  AccountBanIcon,
+  DeleteIcon,
+  EditIcon,
+  LockIcon,
+  MoreHorizontalIcon,
+} from '@blocksuite/icons/rc';
 import { Button } from '@lumibook/admin/components/ui/button';
 import {
   DropdownMenu,
@@ -6,13 +13,6 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from '@lumibook/admin/components/ui/dropdown-menu';
-import {
-  AccountBanIcon,
-  DeleteIcon,
-  EditIcon,
-  LockIcon,
-  MoreHorizontalIcon,
-} from '@blocksuite/icons/rc';
 import { useCallback, useState } from 'react';
 import { toast } from 'sonner';
 

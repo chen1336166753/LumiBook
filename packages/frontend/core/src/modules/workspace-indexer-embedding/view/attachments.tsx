@@ -1,9 +1,9 @@
-import { Loading, Tooltip, useConfirmModal } from '@lumibook/component';
-import { Pagination } from '@lumibook/component/setting-components';
-import { useI18n } from '@lumibook/i18n';
 import { getAttachmentFileIconRC } from '@blocksuite/affine/components/icons';
 import { cssVarV2 } from '@blocksuite/affine/shared/theme';
 import { CloseIcon, WarningIcon } from '@blocksuite/icons/rc';
+import { Loading, Tooltip, useConfirmModal } from '@lumibook/component';
+import { Pagination } from '@lumibook/component/setting-components';
+import { useI18n } from '@lumibook/i18n';
 import clsx from 'clsx';
 import { useCallback } from 'react';
 

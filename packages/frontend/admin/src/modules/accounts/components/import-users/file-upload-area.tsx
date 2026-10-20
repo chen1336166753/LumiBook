@@ -1,5 +1,5 @@
-import { useAsyncCallback } from '@lumibook/core/components/hooks/affine-async-hooks';
 import { UploadIcon } from '@blocksuite/icons/rc';
+import { useAsyncCallback } from '@lumibook/core/components/hooks/affine-async-hooks';
 import {
   type ChangeEvent,
   type DragEvent,

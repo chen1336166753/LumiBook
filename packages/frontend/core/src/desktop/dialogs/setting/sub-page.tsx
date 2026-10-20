@@ -1,7 +1,7 @@
+import { ArrowLeftBigIcon } from '@blocksuite/icons/rc';
 import { Button, Scrollable } from '@lumibook/component';
 import { FeatureFlagService } from '@lumibook/core/modules/feature-flag';
 import { type Island } from '@lumibook/core/utils/island';
-import { ArrowLeftBigIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
 import { eases, waapi } from 'animejs';
 import clsx from 'clsx';

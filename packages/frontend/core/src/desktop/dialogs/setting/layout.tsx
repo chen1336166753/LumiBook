@@ -1,5 +1,5 @@
-import { IconButton } from '@lumibook/component';
 import { ArrowUpSmallIcon } from '@blocksuite/icons/rc';
+import { IconButton } from '@lumibook/component';
 import * as Collapsible from '@radix-ui/react-collapsible';
 import {
   type HtmlHTMLAttributes,

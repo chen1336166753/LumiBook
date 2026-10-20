@@ -1,9 +1,9 @@
+import { DiamondIcon, MultiPeopleIcon } from '@blocksuite/icons/rc';
 import { AuthService, ServerService } from '@lumibook/core/modules/cloud';
 import { GlobalDialogService } from '@lumibook/core/modules/dialogs';
 import { NativePaywallService } from '@lumibook/core/modules/paywall';
 import { UrlService } from '@lumibook/core/modules/url';
 import { useI18n } from '@lumibook/i18n';
-import { DiamondIcon, MultiPeopleIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
 import { useCallback } from 'react';
 

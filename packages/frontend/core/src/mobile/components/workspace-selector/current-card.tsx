@@ -1,9 +1,9 @@
+import { ArrowDownSmallIcon } from '@blocksuite/icons/rc';
 import { Avatar } from '@lumibook/component';
 import { useWorkspaceInfo } from '@lumibook/core/components/hooks/use-workspace-info';
 import { WorkspaceAvatar } from '@lumibook/core/components/workspace-avatar';
 import { WorkspaceService } from '@lumibook/core/modules/workspace';
 import { UNTITLED_WORKSPACE_NAME } from '@lumibook/env/constant';
-import { ArrowDownSmallIcon } from '@blocksuite/icons/rc';
 import { useServiceOptional } from '@lumibook/infra';
 import clsx from 'clsx';
 import { forwardRef, type HTMLAttributes } from 'react';

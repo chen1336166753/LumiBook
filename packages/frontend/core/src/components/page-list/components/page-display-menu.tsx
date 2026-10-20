@@ -1,3 +1,4 @@
+import { ArrowDownSmallIcon, DoneIcon } from '@blocksuite/icons/rc';
 import {
   Button,
   Menu,
@@ -6,7 +7,6 @@ import {
   MenuSub,
 } from '@lumibook/component';
 import { useI18n } from '@lumibook/i18n';
-import { ArrowDownSmallIcon, DoneIcon } from '@blocksuite/icons/rc';
 import { useCallback, useMemo } from 'react';
 
 import type { PageDisplayProperties, PageGroupByType } from '../types';

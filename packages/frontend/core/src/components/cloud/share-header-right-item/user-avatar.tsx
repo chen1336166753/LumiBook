@@ -1,8 +1,8 @@
+import { SignOutIcon } from '@blocksuite/icons/rc';
 import { Avatar } from '@lumibook/component/ui/avatar';
 import { Menu, MenuItem, MenuSeparator } from '@lumibook/component/ui/menu';
 import { useAsyncCallback } from '@lumibook/core/components/hooks/affine-async-hooks';
 import { useI18n } from '@lumibook/i18n';
-import { SignOutIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
 import { useEffect, useMemo } from 'react';
 

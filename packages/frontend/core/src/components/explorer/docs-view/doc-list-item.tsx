@@ -1,4 +1,9 @@
 import {
+  AutoTidyUpIcon,
+  PropertyIcon,
+  ResizeTidyUpIcon,
+} from '@blocksuite/icons/rc';
+import {
   Checkbox,
   ContextMenu,
   DragHandle as DragHandleIcon,
@@ -10,13 +15,8 @@ import { DocDisplayMetaService } from '@lumibook/core/modules/doc-display-meta';
 import { WorkbenchLink } from '@lumibook/core/modules/workbench';
 import type { AffineDNDData } from '@lumibook/core/types/dnd';
 import { useI18n } from '@lumibook/i18n';
-import track from '@lumibook/track';
-import {
-  AutoTidyUpIcon,
-  PropertyIcon,
-  ResizeTidyUpIcon,
-} from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
+import track from '@lumibook/track';
 import {
   type HTMLProps,
   memo,

@@ -1,7 +1,7 @@
+import { ArrowDownSmallIcon } from '@blocksuite/icons/rc';
 import { Scrollable, ThemedImg } from '@lumibook/component';
 import { useAsyncCallback } from '@lumibook/core/components/hooks/affine-async-hooks';
 import { Trans, useI18n } from '@lumibook/i18n';
-import { ArrowDownSmallIcon } from '@blocksuite/icons/rc';
 import type { FC, PropsWithChildren, ReactNode } from 'react';
 import { useCallback, useState } from 'react';
 

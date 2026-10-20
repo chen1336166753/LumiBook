@@ -1,8 +1,8 @@
+import { DoneIcon } from '@blocksuite/icons/rc';
 import { Skeleton } from '@lumibook/component';
 import { useWorkspaceInfo } from '@lumibook/core/components/hooks/use-workspace-info';
 import type { WorkspaceMetadata } from '@lumibook/core/modules/workspace';
 import { UNTITLED_WORKSPACE_NAME } from '@lumibook/env/constant';
-import { DoneIcon } from '@blocksuite/icons/rc';
 import clsx from 'clsx';
 import type { HTMLAttributes } from 'react';
 import { forwardRef } from 'react';

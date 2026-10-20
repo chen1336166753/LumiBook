@@ -1,10 +1,10 @@
-import type { CommentChangeAction, PublicUserType } from '@lumibook/graphql';
 import type { DocMode } from '@blocksuite/affine/model';
 import type {
   BaseSelection,
   DocSnapshot,
   Store,
 } from '@blocksuite/affine/store';
+import type { CommentChangeAction, PublicUserType } from '@lumibook/graphql';
 
 export type CommentId = string;
 

@@ -1,8 +1,8 @@
+import { EdgelessIcon } from '@blocksuite/icons/rc';
 import { MenuItem, PropertyValue, type RadioItem } from '@lumibook/component';
 import type { FilterParams } from '@lumibook/core/modules/collection-rules';
 import { type DocRecord, DocService } from '@lumibook/core/modules/doc';
 import { useI18n } from '@lumibook/i18n';
-import { EdgelessIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
 import { useCallback, useMemo } from 'react';
 

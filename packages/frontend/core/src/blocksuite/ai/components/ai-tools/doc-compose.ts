@@ -1,5 +1,3 @@
-import { getStoreManager } from '@lumibook/core/blocksuite/manager/store';
-import { getLumiBookWorkspaceSchema } from '@lumibook/core/modules/workspace';
 import { getEmbedLinkedDocIcons } from '@blocksuite/affine/blocks/embed-doc';
 import { RefNodeSlotsProvider } from '@blocksuite/affine/inlines/reference';
 import type { ColorScheme } from '@blocksuite/affine/model';
@@ -8,6 +6,8 @@ import { MarkdownTransformer } from '@blocksuite/affine/widgets/linked-doc';
 import type { NotificationService } from '@blocksuite/affine-shared/services';
 import { CopyIcon, PageIcon, ToolIcon } from '@blocksuite/icons/lit';
 import type { BlockStdScope } from '@blocksuite/std';
+import { getStoreManager } from '@lumibook/core/blocksuite/manager/store';
+import { getLumiBookWorkspaceSchema } from '@lumibook/core/modules/workspace';
 import { css, html } from 'lit';
 import { property } from 'lit/decorators.js';
 

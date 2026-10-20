@@ -1,5 +1,5 @@
-import { useI18n } from '@lumibook/i18n';
 import { ArrowLeftSmallIcon } from '@blocksuite/icons/rc';
+import { useI18n } from '@lumibook/i18n';
 import type { FC } from 'react';
 
 import type { ButtonProps } from '../../ui/button';

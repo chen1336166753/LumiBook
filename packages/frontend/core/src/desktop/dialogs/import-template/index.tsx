@@ -1,3 +1,5 @@
+import type { DocMode } from '@blocksuite/affine/model';
+import { AllDocsIcon } from '@blocksuite/icons/rc';
 import { Button, Modal } from '@lumibook/component';
 import { useAsyncCallback } from '@lumibook/core/components/hooks/affine-async-hooks';
 import { useNavigateHelper } from '@lumibook/core/components/hooks/use-navigate-helper';
@@ -17,8 +19,6 @@ import {
   WorkspacesService,
 } from '@lumibook/core/modules/workspace';
 import { useI18n } from '@lumibook/i18n';
-import type { DocMode } from '@blocksuite/affine/model';
-import { AllDocsIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
 import { cssVar } from '@toeverything/theme';
 import { useCallback, useEffect, useState } from 'react';

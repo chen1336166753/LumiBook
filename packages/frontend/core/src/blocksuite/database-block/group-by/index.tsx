@@ -1,4 +1,3 @@
-import { Avatar, uniReactRoot } from '@lumibook/component';
 import {
   createGroupByConfig,
   type GroupRenderProps,
@@ -6,6 +5,7 @@ import {
   ungroups,
 } from '@blocksuite/affine/blocks/database';
 import type { UserService } from '@blocksuite/affine-shared/services';
+import { Avatar, uniReactRoot } from '@lumibook/component';
 
 import { useMemberInfo } from '../hooks/use-member-info';
 import {

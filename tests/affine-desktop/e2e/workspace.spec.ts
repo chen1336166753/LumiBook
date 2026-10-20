@@ -1,6 +1,5 @@
 import path from 'node:path';
 
-import type { apis } from '@lumibook/electron-api';
 import { test } from '@affine-test/kit/electron';
 import {
   getBlockSuiteEditorTitle,
@@ -12,6 +11,7 @@ import {
   clickSideBarCurrentWorkspaceBanner,
 } from '@affine-test/kit/utils/sidebar';
 import { createLocalWorkspace } from '@affine-test/kit/utils/workspace';
+import type { apis } from '@lumibook/electron-api';
 import { expect } from '@playwright/test';
 import fs from 'fs-extra';
 import type { ElectronApplication } from 'playwright';

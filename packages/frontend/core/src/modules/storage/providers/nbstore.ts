@@ -1,9 +1,9 @@
+import { createIdentifier } from '@lumibook/infra';
 import type {
   StoreClient,
   StoreManagerClient,
   WorkerInitOptions,
 } from '@lumibook/nbstore/worker/client';
-import { createIdentifier } from '@lumibook/infra';
 
 export interface NbstoreProvider {
   readonly realtime: StoreManagerClient['realtime'];

@@ -1,3 +1,9 @@
+import { DisposableGroup } from '@blocksuite/affine/global/disposable';
+import { RefNodeSlotsProvider } from '@blocksuite/affine/inlines/reference';
+import {
+  customImageProxyMiddleware,
+  ImageProxyService,
+} from '@blocksuite/affine/shared/adapters';
 import { useThemeColorV2 } from '@lumibook/component';
 import { PageDetailLoading } from '@lumibook/component/page-detail-skeleton';
 import type { AffineEditorContainer } from '@lumibook/core/blocksuite/block-suite-editor';
@@ -20,12 +26,6 @@ import { WorkbenchService } from '@lumibook/core/modules/workbench';
 import { ViewService } from '@lumibook/core/modules/workbench/services/view';
 import { WorkspaceService } from '@lumibook/core/modules/workspace';
 import { i18nTime } from '@lumibook/i18n';
-import { DisposableGroup } from '@blocksuite/affine/global/disposable';
-import { RefNodeSlotsProvider } from '@blocksuite/affine/inlines/reference';
-import {
-  customImageProxyMiddleware,
-  ImageProxyService,
-} from '@blocksuite/affine/shared/adapters';
 import {
   FrameworkScope,
   useLiveData,

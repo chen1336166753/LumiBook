@@ -1,6 +1,6 @@
+import { CopyIcon, LinkIcon, MoveToIcon } from '@blocksuite/icons/rc';
 import type { useDropTarget } from '@lumibook/component';
 import { useI18n } from '@lumibook/i18n';
-import { CopyIcon, LinkIcon, MoveToIcon } from '@blocksuite/icons/rc';
 import { createPortal } from 'react-dom';
 
 import * as styles from './drop-effect.css';

@@ -7,6 +7,17 @@ import {
   ServerDeploymentType,
   ServerFeature,
 } from '@lumibook/graphql';
+import {
+  catchErrorInto,
+  effect,
+  exhaustMapSwitchUntilChanged,
+  fromPromise,
+  LiveData,
+  ObjectPool,
+  onComplete,
+  onStart,
+  Service,
+} from '@lumibook/infra';
 import type {
   BlobSource,
   BlobStorage,
@@ -39,17 +50,6 @@ import {
   SqliteV1DocStorage,
 } from '@lumibook/nbstore/sqlite/v1';
 import type { WorkerInitOptions } from '@lumibook/nbstore/worker/client';
-import {
-  catchErrorInto,
-  effect,
-  exhaustMapSwitchUntilChanged,
-  fromPromise,
-  LiveData,
-  ObjectPool,
-  onComplete,
-  onStart,
-  Service,
-} from '@lumibook/infra';
 import { isEqual } from 'lodash-es';
 import { map, Observable, switchMap, tap } from 'rxjs';
 import {

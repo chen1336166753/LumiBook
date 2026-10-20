@@ -1,3 +1,7 @@
+import { DisposableGroup } from '@blocksuite/affine/global/disposable';
+import { Bound } from '@blocksuite/affine/global/gfx';
+import { RefNodeSlotsProvider } from '@blocksuite/affine/inlines/reference';
+import { GfxControllerIdentifier } from '@blocksuite/affine/std/gfx';
 import { Scrollable } from '@lumibook/component';
 import { PageDetailLoading } from '@lumibook/component/page-detail-skeleton';
 import { AIAppEvents, type AIChatParams } from '@lumibook/core/blocksuite/ai';
@@ -8,10 +12,6 @@ import { useGuard } from '@lumibook/core/components/guard';
 import { PageNotFound } from '@lumibook/core/desktop/pages/404';
 import { EditorService } from '@lumibook/core/modules/editor';
 import { DebugLogger } from '@lumibook/debug';
-import { DisposableGroup } from '@blocksuite/affine/global/disposable';
-import { Bound } from '@blocksuite/affine/global/gfx';
-import { RefNodeSlotsProvider } from '@blocksuite/affine/inlines/reference';
-import { GfxControllerIdentifier } from '@blocksuite/affine/std/gfx';
 import {
   FrameworkScope,
   useLiveData,

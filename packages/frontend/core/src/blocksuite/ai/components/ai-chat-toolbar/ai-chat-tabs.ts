@@ -1,8 +1,8 @@
-import type { CopilotChatHistoryFragment } from '@lumibook/graphql';
 import { WithDisposable } from '@blocksuite/affine/global/lit';
 import { unsafeCSSVarV2 } from '@blocksuite/affine/shared/theme';
 import { ShadowlessElement } from '@blocksuite/affine/std';
 import { CloseIcon } from '@blocksuite/icons/lit';
+import type { CopilotChatHistoryFragment } from '@lumibook/graphql';
 import { css, html, type PropertyValues } from 'lit';
 import { property } from 'lit/decorators.js';
 import { repeat } from 'lit/directives/repeat.js';

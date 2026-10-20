@@ -1,6 +1,6 @@
+import { DeleteIcon, EditIcon } from '@blocksuite/icons/rc';
 import { Button, DragHandle, IconButton } from '@lumibook/component';
 import { useI18n } from '@lumibook/i18n';
-import { DeleteIcon, EditIcon } from '@blocksuite/icons/rc';
 import type { DragEvent } from 'react';
 
 import * as styles from './index.css';

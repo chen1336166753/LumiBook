@@ -1,3 +1,4 @@
+import { FavoriteIcon } from '@blocksuite/icons/rc';
 import {
   type DropTargetDropEvent,
   Skeleton,
@@ -5,7 +6,6 @@ import {
 } from '@lumibook/component';
 import type { AffineDNDData } from '@lumibook/core/types/dnd';
 import { useI18n } from '@lumibook/i18n';
-import { FavoriteIcon } from '@blocksuite/icons/rc';
 
 import { NavigationPanelEmptySection } from '../../layouts/empty-section';
 import { DropEffect } from '../../tree';

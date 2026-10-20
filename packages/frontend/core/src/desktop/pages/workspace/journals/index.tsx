@@ -1,3 +1,4 @@
+import { PlusIcon, TodayIcon } from '@blocksuite/icons/rc';
 import {
   Button,
   WeekDatePicker,
@@ -17,7 +18,6 @@ import {
   WorkbenchService,
 } from '@lumibook/core/modules/workbench';
 import { useI18n } from '@lumibook/i18n';
-import { PlusIcon, TodayIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
 import dayjs from 'dayjs';
 import type { Location } from 'history';

@@ -1,8 +1,8 @@
 import { shallowEqual } from '@lumibook/component';
 import { DebugLogger } from '@lumibook/debug';
 import { ServerDeploymentType } from '@lumibook/graphql';
-import { flushTelemetry, setTelemetryContext, tracker } from '@lumibook/track';
 import { LiveData, OnEvent, Service } from '@lumibook/infra';
+import { flushTelemetry, setTelemetryContext, tracker } from '@lumibook/track';
 
 import type { AuthAccountInfo, Server, ServersService } from '../../cloud';
 import { getOfficialTelemetryEndpoint } from '../../cloud/constant';

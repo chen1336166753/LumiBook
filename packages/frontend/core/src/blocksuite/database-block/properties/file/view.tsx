@@ -1,7 +1,3 @@
-import { Popover, uniReactRoot } from '@lumibook/component';
-import { Button } from '@lumibook/component/ui/button';
-import { Menu, MenuItem } from '@lumibook/component/ui/menu';
-import { PeekViewService } from '@lumibook/core/modules/peek-view/services/peek-view';
 import {
   type Cell,
   type CellRenderProps,
@@ -18,16 +14,20 @@ import {
   MoreHorizontalIcon,
   PlusIcon,
 } from '@blocksuite/icons/rc';
+import { Popover, uniReactRoot } from '@lumibook/component';
+import { Button } from '@lumibook/component/ui/button';
+import { Menu, MenuItem } from '@lumibook/component/ui/menu';
+import { PeekViewService } from '@lumibook/core/modules/peek-view/services/peek-view';
+import {
+  generateFractionalIndexingKeyBetween,
+  useService,
+} from '@lumibook/infra';
 import {
   computed,
   type ReadonlySignal,
   type Signal,
   signal,
 } from '@preact/signals-core';
-import {
-  generateFractionalIndexingKeyBetween,
-  useService,
-} from '@lumibook/infra';
 import { fileTypeFromBuffer, type FileTypeResult } from 'file-type';
 import { nanoid } from 'nanoid';
 import type { ForwardRefRenderFunction, MouseEvent, ReactNode } from 'react';

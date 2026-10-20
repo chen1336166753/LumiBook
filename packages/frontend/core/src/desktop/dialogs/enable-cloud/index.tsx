@@ -1,3 +1,4 @@
+import { CloudWorkspaceIcon } from '@blocksuite/icons/rc';
 import { Button, Modal, notify } from '@lumibook/component';
 import { useAsyncCallback } from '@lumibook/core/components/hooks/affine-async-hooks';
 import { useNavigateHelper } from '@lumibook/core/components/hooks/use-navigate-helper';
@@ -14,7 +15,6 @@ import {
 } from '@lumibook/core/modules/dialogs';
 import { WorkspacesService } from '@lumibook/core/modules/workspace';
 import { useI18n } from '@lumibook/i18n';
-import { CloudWorkspaceIcon } from '@blocksuite/icons/rc';
 import { FrameworkScope, useLiveData, useService } from '@lumibook/infra';
 import { useCallback, useState } from 'react';
 

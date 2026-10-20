@@ -1,9 +1,9 @@
+import { ArrowRightSmallIcon } from '@blocksuite/icons/rc';
 import { Avatar } from '@lumibook/component';
 import { useSignOut } from '@lumibook/core/components/hooks/affine/use-sign-out';
 import { AuthService } from '@lumibook/core/modules/cloud';
 import { GlobalDialogService } from '@lumibook/core/modules/dialogs';
 import { useI18n } from '@lumibook/i18n';
-import { ArrowRightSmallIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
 import { type ReactNode } from 'react';
 

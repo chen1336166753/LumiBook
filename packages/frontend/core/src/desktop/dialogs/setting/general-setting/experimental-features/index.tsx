@@ -1,3 +1,9 @@
+import {
+  ArrowRightSmallIcon,
+  DiscordIcon,
+  EmailIcon,
+  GithubIcon,
+} from '@blocksuite/icons/rc';
 import { Button, Checkbox, Loading, Switch, Tooltip } from '@lumibook/component';
 import { SettingHeader } from '@lumibook/component/setting-components';
 import { useAsyncCallback } from '@lumibook/core/components/hooks/affine-async-hooks';
@@ -7,12 +13,6 @@ import {
   type Flag,
 } from '@lumibook/core/modules/feature-flag';
 import { useI18n } from '@lumibook/i18n';
-import {
-  ArrowRightSmallIcon,
-  DiscordIcon,
-  EmailIcon,
-  GithubIcon,
-} from '@blocksuite/icons/rc';
 import { useLiveData, useServices } from '@lumibook/infra';
 import { useAtom } from 'jotai';
 import { atomWithStorage } from 'jotai/utils';

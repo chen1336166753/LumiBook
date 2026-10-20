@@ -1,4 +1,12 @@
 // Import is already correct, no changes needed
+import type { Store } from '@blocksuite/affine/store';
+import {
+  AiOutlineIcon,
+  AllDocsIcon,
+  ImportIcon,
+  JournalIcon,
+  SettingsIcon,
+} from '@blocksuite/icons/rc';
 import {
   AddPageButton,
   AppDownloadButton,
@@ -16,16 +24,8 @@ import { FeatureFlagService } from '@lumibook/core/modules/feature-flag';
 import { CMDKQuickSearchService } from '@lumibook/core/modules/quicksearch/services/cmdk';
 import type { Workspace } from '@lumibook/core/modules/workspace';
 import { useI18n } from '@lumibook/i18n';
-import { track } from '@lumibook/track';
-import type { Store } from '@blocksuite/affine/store';
-import {
-  AiOutlineIcon,
-  AllDocsIcon,
-  ImportIcon,
-  JournalIcon,
-  SettingsIcon,
-} from '@blocksuite/icons/rc';
 import { useLiveData, useService, useServices } from '@lumibook/infra';
+import { track } from '@lumibook/track';
 import type { ReactElement } from 'react';
 import { memo, useCallback } from 'react';
 

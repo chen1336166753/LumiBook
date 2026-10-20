@@ -1,19 +1,19 @@
-import FiveWTwoH from './edgeless/5W2H.json';
-import ConceptMap from './edgeless/Concept Map.json';
-import Flowchart from './edgeless/Flowchart.json';
-import SMART from './edgeless/SMART.json';
-import SWOT from './edgeless/SWOT.json';
 import FourPMarketingMatrix from './edgeless/4P Marketing Matrix.json';
-import Storyboard from './edgeless/Storyboard.json';
-import UserJourneyMap from './edgeless/User Journey Map.json';
+import FiveWTwoH from './edgeless/5W2H.json';
 import BusinessProposal from './edgeless/Business Proposal.json';
+import ConceptMap from './edgeless/Concept Map.json';
 import DataAnalysis from './edgeless/Data Analysis.json';
-import SimplePresentation from './edgeless/Simple Presentation.json';
 import FishboneDiagram from './edgeless/Fishbone Diagram.json';
+import Flowchart from './edgeless/Flowchart.json';
 import GanttChart from './edgeless/Gantt Chart.json';
 import MonthlyCalendar from './edgeless/Monthly Calendar.json';
 import ProjectPlanning from './edgeless/Project Planning.json';
 import ProjectTrackingKanban from './edgeless/Project Tracking Kanban.json';
+import SimplePresentation from './edgeless/Simple Presentation.json';
+import SMART from './edgeless/SMART.json';
+import Storyboard from './edgeless/Storyboard.json';
+import SWOT from './edgeless/SWOT.json';
+import UserJourneyMap from './edgeless/User Journey Map.json';
 
 const templates = {
   'Brainstorming': [

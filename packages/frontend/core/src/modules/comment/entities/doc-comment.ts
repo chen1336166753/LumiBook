@@ -1,5 +1,3 @@
-import { type CommentChangeAction, DocMode } from '@lumibook/graphql';
-import { track } from '@lumibook/track';
 import { InlineCommentManager } from '@blocksuite/affine/inlines/comment';
 import type {
   BaseSelection,
@@ -7,6 +5,7 @@ import type {
   Store,
 } from '@blocksuite/affine/store';
 import type { BlockStdScope } from '@blocksuite/std';
+import { type CommentChangeAction, DocMode } from '@lumibook/graphql';
 import {
   effect,
   Entity,
@@ -15,6 +14,7 @@ import {
   onComplete,
   onStart,
 } from '@lumibook/infra';
+import { track } from '@lumibook/track';
 import { nanoid } from 'nanoid';
 import { catchError, filter, first, of, Subject, switchMap, tap } from 'rxjs';
 

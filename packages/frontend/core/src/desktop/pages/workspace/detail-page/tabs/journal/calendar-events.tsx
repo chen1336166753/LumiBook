@@ -1,3 +1,4 @@
+import { FullDayIcon, PeriodIcon, PlusIcon } from '@blocksuite/icons/rc';
 import { Loading, toast, Tooltip } from '@lumibook/component';
 import { usePageHelper } from '@lumibook/core/blocksuite/block-suite-page-list/utils';
 import { useAsyncCallback } from '@lumibook/core/components/hooks/affine-async-hooks';
@@ -10,9 +11,8 @@ import { JournalService } from '@lumibook/core/modules/journal';
 import { GuardService } from '@lumibook/core/modules/permissions';
 import { WorkspaceService } from '@lumibook/core/modules/workspace';
 import { useI18n } from '@lumibook/i18n';
-import track from '@lumibook/track';
-import { FullDayIcon, PeriodIcon, PlusIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
+import track from '@lumibook/track';
 import { cssVarV2 } from '@toeverything/theme/v2';
 import { assignInlineVars } from '@vanilla-extract/dynamic';
 import type { Dayjs } from 'dayjs';

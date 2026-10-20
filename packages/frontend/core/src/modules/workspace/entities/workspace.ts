@@ -1,7 +1,7 @@
+import type { Workspace as WorkspaceInterface } from '@blocksuite/affine/store';
 import type { FeatureFlagService } from '@lumibook/core/modules/feature-flag';
 import { toArrayBuffer } from '@lumibook/core/utils/array-buffer';
 import { DebugLogger } from '@lumibook/debug';
-import type { Workspace as WorkspaceInterface } from '@blocksuite/affine/store';
 import { Entity, LiveData, yjsGetPath } from '@lumibook/infra';
 import type { Observable } from 'rxjs';
 import { Doc as YDoc, transact } from 'yjs';

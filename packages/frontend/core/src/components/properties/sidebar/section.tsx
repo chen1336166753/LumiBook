@@ -1,6 +1,6 @@
+import { ToggleRightIcon } from '@blocksuite/icons/rc';
 import { IconButton } from '@lumibook/component';
 import { useI18n } from '@lumibook/i18n';
-import { ToggleRightIcon } from '@blocksuite/icons/rc';
 import { Trigger as CollapsibleTrigger } from '@radix-ui/react-collapsible';
 
 import * as styles from './section.css';

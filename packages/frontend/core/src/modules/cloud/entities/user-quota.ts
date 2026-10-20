@@ -1,8 +1,8 @@
+import { Entity, LiveData } from '@lumibook/infra';
 import type {
   RealtimeTopicEventOf,
   UserQuotaStateSnapshot,
 } from '@lumibook/realtime';
-import { Entity, LiveData } from '@lumibook/infra';
 import { cssVarV2 } from '@toeverything/theme/v2';
 import bytes from 'bytes';
 

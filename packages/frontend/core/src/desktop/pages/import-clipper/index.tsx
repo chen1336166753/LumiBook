@@ -1,3 +1,4 @@
+import { AllDocsIcon } from '@blocksuite/icons/rc';
 import { Button } from '@lumibook/component';
 import { AuthHeader } from '@lumibook/component/auth-components';
 import { useAsyncCallback } from '@lumibook/core/components/hooks/affine-async-hooks';
@@ -13,9 +14,8 @@ import {
   WorkspacesService,
 } from '@lumibook/core/modules/workspace';
 import { useI18n } from '@lumibook/i18n';
-import track from '@lumibook/track';
-import { AllDocsIcon } from '@blocksuite/icons/rc';
 import { LiveData, useLiveData, useService } from '@lumibook/infra';
+import track from '@lumibook/track';
 import { cssVar } from '@toeverything/theme';
 import { useCallback, useEffect, useRef, useState } from 'react';
 

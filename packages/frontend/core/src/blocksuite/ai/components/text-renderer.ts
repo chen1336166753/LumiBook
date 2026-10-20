@@ -1,5 +1,3 @@
-import { createReactComponentFromLit } from '@lumibook/component';
-import type { FeatureFlagService } from '@lumibook/core/modules/feature-flag';
 import { PeekViewProvider } from '@blocksuite/affine/components/peek';
 import { SignalWatcher, WithDisposable } from '@blocksuite/affine/global/lit';
 import { RefNodeSlotsProvider } from '@blocksuite/affine/inlines/reference';
@@ -21,6 +19,8 @@ import type {
   Store,
   TransformerMiddleware,
 } from '@blocksuite/affine/store';
+import { createReactComponentFromLit } from '@lumibook/component';
+import type { FeatureFlagService } from '@lumibook/core/modules/feature-flag';
 import type { Signal } from '@preact/signals-core';
 import {
   darkCssVariablesV2,

@@ -1,3 +1,4 @@
+import { CloseIcon } from '@blocksuite/icons/rc';
 import { Button, Checkbox, IconButton } from '@lumibook/component';
 import {
   OpenInAppService,
@@ -5,7 +6,6 @@ import {
 } from '@lumibook/core/modules/open-in-app';
 import { appIconMap } from '@lumibook/core/utils';
 import { Trans, useI18n } from '@lumibook/i18n';
-import { CloseIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
 import { useCallback, useState } from 'react';
 

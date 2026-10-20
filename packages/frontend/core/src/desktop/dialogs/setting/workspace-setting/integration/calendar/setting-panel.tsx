@@ -1,8 +1,8 @@
+import { TodayIcon } from '@blocksuite/icons/rc';
 import { Button, notify } from '@lumibook/component';
 import { WorkspaceServerService } from '@lumibook/core/modules/cloud';
 import { IntegrationService } from '@lumibook/core/modules/integration';
 import { useI18n } from '@lumibook/i18n';
-import { TodayIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
 import { useCallback, useEffect, useMemo, useState } from 'react';
 

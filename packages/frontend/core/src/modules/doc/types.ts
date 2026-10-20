@@ -1,5 +1,5 @@
-import type { DocProps } from '@lumibook/core/blocksuite/initialization';
 import type { DocMode } from '@blocksuite/affine/model';
+import type { DocProps } from '@lumibook/core/blocksuite/initialization';
 
 export interface DocCreateOptions {
   id?: string;

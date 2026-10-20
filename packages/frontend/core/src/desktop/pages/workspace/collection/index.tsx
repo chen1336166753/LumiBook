@@ -1,3 +1,4 @@
+import { ViewLayersIcon } from '@blocksuite/icons/rc';
 import { FlexWrapper } from '@lumibook/component';
 import { EmptyCollectionDetail } from '@lumibook/core/components/affine/empty/collection-detail';
 import {
@@ -15,7 +16,6 @@ import { GlobalContextService } from '@lumibook/core/modules/global-context';
 import { WorkspacePermissionService } from '@lumibook/core/modules/permissions';
 import { WorkspaceService } from '@lumibook/core/modules/workspace';
 import { useI18n } from '@lumibook/i18n';
-import { ViewLayersIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService, useServices } from '@lumibook/infra';
 import { useCallback, useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';

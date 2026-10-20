@@ -1,3 +1,4 @@
+import { ArrowRightSmallIcon } from '@blocksuite/icons/rc';
 import { ConfirmModal, Input, notify } from '@lumibook/component';
 import {
   SettingRow,
@@ -7,9 +8,8 @@ import { AuthService, ServerService } from '@lumibook/core/modules/cloud';
 import { WorkspacesService } from '@lumibook/core/modules/workspace';
 import { UserFriendlyError } from '@lumibook/error';
 import { Trans, useI18n } from '@lumibook/i18n';
-import { track } from '@lumibook/track';
-import { ArrowRightSmallIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
+import { track } from '@lumibook/track';
 import { cssVarV2 } from '@toeverything/theme/v2';
 import { useCallback, useState } from 'react';
 

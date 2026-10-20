@@ -4,8 +4,8 @@ import { RealtimeLiveQuery } from '@lumibook/core/modules/cloud/realtime/live-qu
 import { DebugLogger } from '@lumibook/debug';
 import { UserFriendlyError } from '@lumibook/error';
 import { AiJobStatus, type TranscriptionResultType } from '@lumibook/graphql';
-import type { RealtimeTopicEventOf } from '@lumibook/realtime';
 import { Entity, LiveData } from '@lumibook/infra';
+import type { RealtimeTopicEventOf } from '@lumibook/realtime';
 
 import type { DefaultServerService, WorkspaceServerService } from '../../cloud';
 import { AuthService } from '../../cloud/services/auth';

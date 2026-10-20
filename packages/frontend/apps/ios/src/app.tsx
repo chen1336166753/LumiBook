@@ -1,3 +1,16 @@
+import { Container } from '@blocksuite/affine/global/di';
+import {
+  docLinkBaseURLMiddleware,
+  MarkdownAdapter,
+  titleMiddleware,
+} from '@blocksuite/affine/shared/adapters';
+import { registerNativeImageFilesPicker } from '@blocksuite/affine/shared/utils';
+import { MarkdownTransformer } from '@blocksuite/affine/widgets/linked-doc';
+import { App as CapacitorApp } from '@capacitor/app';
+import { Browser } from '@capacitor/browser';
+import { Capacitor } from '@capacitor/core';
+import { Haptics } from '@capacitor/haptics';
+import { Keyboard, KeyboardStyle } from '@capacitor/keyboard';
 import { notify } from '@lumibook/component';
 import { getStoreManager } from '@lumibook/core/blocksuite/manager/store';
 import { AffineContext } from '@lumibook/core/components/context';
@@ -51,22 +64,6 @@ import {
   requestApplySubscriptionMutation,
 } from '@lumibook/graphql';
 import { I18n } from '@lumibook/i18n';
-import { serveAuthRequests } from '@lumibook/mobile-shared/auth/channel';
-import { StoreManagerClient } from '@lumibook/nbstore/worker/client';
-import { setTelemetryTransport } from '@lumibook/track';
-import { Container } from '@blocksuite/affine/global/di';
-import {
-  docLinkBaseURLMiddleware,
-  MarkdownAdapter,
-  titleMiddleware,
-} from '@blocksuite/affine/shared/adapters';
-import { registerNativeImageFilesPicker } from '@blocksuite/affine/shared/utils';
-import { MarkdownTransformer } from '@blocksuite/affine/widgets/linked-doc';
-import { App as CapacitorApp } from '@capacitor/app';
-import { Browser } from '@capacitor/browser';
-import { Capacitor } from '@capacitor/core';
-import { Haptics } from '@capacitor/haptics';
-import { Keyboard, KeyboardStyle } from '@capacitor/keyboard';
 import {
   Framework,
   FrameworkRoot,
@@ -75,6 +72,9 @@ import {
   useService,
 } from '@lumibook/infra';
 import { OpClient } from '@lumibook/infra/op';
+import { serveAuthRequests } from '@lumibook/mobile-shared/auth/channel';
+import { StoreManagerClient } from '@lumibook/nbstore/worker/client';
+import { setTelemetryTransport } from '@lumibook/track';
 import { AsyncCall } from 'async-call-rpc';
 import { AppTrackingTransparency } from 'capacitor-plugin-app-tracking-transparency';
 import { useTheme } from 'next-themes';

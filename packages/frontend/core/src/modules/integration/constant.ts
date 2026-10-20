@@ -1,4 +1,3 @@
-import type { I18nString } from '@lumibook/i18n';
 import {
   DateTimeIcon,
   HistoryIcon,
@@ -6,6 +5,7 @@ import {
   ReadwiseLogoDuotoneIcon,
   TextIcon,
 } from '@blocksuite/icons/rc';
+import type { I18nString } from '@lumibook/i18n';
 import type { SVGProps } from 'react';
 
 import type { IntegrationProperty, IntegrationType } from './type';

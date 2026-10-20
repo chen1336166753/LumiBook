@@ -1,8 +1,8 @@
-import { UserFriendlyError } from '@lumibook/error';
 import {
   InformationFillDuotoneIcon,
   SingleSelectCheckSolidIcon,
 } from '@blocksuite/icons/rc';
+import { UserFriendlyError } from '@lumibook/error';
 import type { FC } from 'react';
 import { type ExternalToast, toast } from 'sonner';
 

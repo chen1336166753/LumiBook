@@ -1,5 +1,5 @@
-import { useI18n } from '@lumibook/i18n';
 import type { Workspace } from '@blocksuite/affine/store';
+import { useI18n } from '@lumibook/i18n';
 import { useCallback } from 'react';
 
 import {

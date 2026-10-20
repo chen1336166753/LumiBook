@@ -1,4 +1,11 @@
 import {
+  DNDAPIExtension,
+  DndApiExtensionIdentifier,
+} from '@blocksuite/affine/shared/services';
+import { BlockStdScope } from '@blocksuite/affine/std';
+import type { SliceSnapshot } from '@blocksuite/affine/store';
+import type { DragBlockPayload } from '@blocksuite/affine/widgets/drag-handle';
+import {
   type ExternalGetDataFeedbackArgs,
   type fromExternalData,
   type MonitorDragEvent,
@@ -7,13 +14,6 @@ import {
   type toExternalData,
 } from '@lumibook/component';
 import type { AffineDNDData } from '@lumibook/core/types/dnd';
-import {
-  DNDAPIExtension,
-  DndApiExtensionIdentifier,
-} from '@blocksuite/affine/shared/services';
-import { BlockStdScope } from '@blocksuite/affine/std';
-import type { SliceSnapshot } from '@blocksuite/affine/store';
-import type { DragBlockPayload } from '@blocksuite/affine/widgets/drag-handle';
 import { Service } from '@lumibook/infra';
 
 import type { DocsService } from '../../doc';

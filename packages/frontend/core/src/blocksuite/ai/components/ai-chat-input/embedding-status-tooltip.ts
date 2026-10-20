@@ -1,6 +1,6 @@
-import type { WorkspaceDialogService } from '@lumibook/core/modules/dialogs';
 import { SignalWatcher } from '@blocksuite/affine/global/lit';
 import { unsafeCSSVar } from '@blocksuite/affine/shared/theme';
+import type { WorkspaceDialogService } from '@lumibook/core/modules/dialogs';
 import { css, html, LitElement } from 'lit';
 import { property } from 'lit/decorators.js';
 import { debounce } from 'lodash-es';

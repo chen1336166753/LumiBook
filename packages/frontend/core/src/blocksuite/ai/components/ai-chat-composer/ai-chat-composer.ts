@@ -1,5 +1,13 @@
 import './ai-chat-composer-tip';
 
+import { SignalWatcher, WithDisposable } from '@blocksuite/affine/global/lit';
+import type { EditorHost } from '@blocksuite/affine/std';
+import { ShadowlessElement } from '@blocksuite/affine/std';
+import { uuidv4 } from '@blocksuite/affine/store';
+import type {
+  FeatureFlagService,
+  NotificationService,
+} from '@blocksuite/affine-shared/services';
 import type {
   AIDraftService,
   AIModelService,
@@ -11,14 +19,6 @@ import type {
 } from '@lumibook/core/modules/cloud';
 import type { WorkspaceDialogService } from '@lumibook/core/modules/dialogs';
 import type { CopilotChatHistoryFragment } from '@lumibook/graphql';
-import { SignalWatcher, WithDisposable } from '@blocksuite/affine/global/lit';
-import type { EditorHost } from '@blocksuite/affine/std';
-import { ShadowlessElement } from '@blocksuite/affine/std';
-import { uuidv4 } from '@blocksuite/affine/store';
-import type {
-  FeatureFlagService,
-  NotificationService,
-} from '@blocksuite/affine-shared/services';
 import { css, html, type PropertyValues } from 'lit';
 import { property, state } from 'lit/decorators.js';
 

@@ -1,5 +1,5 @@
-import type { Server } from '@lumibook/core/modules/cloud';
 import { CloudWorkspaceIcon } from '@blocksuite/icons/rc';
+import type { Server } from '@lumibook/core/modules/cloud';
 
 import { ServerSelector } from '../../server-selector';
 import * as styles from './enable-cloud.css';

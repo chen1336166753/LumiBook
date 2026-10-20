@@ -1,6 +1,6 @@
 import { WorkspaceService } from '@lumibook/core/modules/workspace';
-import type { WorkspaceQuotaStateSnapshot } from '@lumibook/realtime';
 import { Framework } from '@lumibook/infra';
+import type { WorkspaceQuotaStateSnapshot } from '@lumibook/realtime';
 import { Subject } from 'rxjs';
 import { describe, expect, test, vi } from 'vitest';
 

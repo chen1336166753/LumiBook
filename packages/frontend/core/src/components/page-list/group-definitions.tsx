@@ -1,9 +1,9 @@
+import type { DocMeta } from '@blocksuite/affine/store';
+import { FavoritedIcon, FavoriteIcon } from '@blocksuite/icons/rc';
 import { CompatibleFavoriteItemsAdapter } from '@lumibook/core/modules/favorite';
 import type { Tag } from '@lumibook/core/modules/tag';
 import { TagService } from '@lumibook/core/modules/tag';
 import { useI18n } from '@lumibook/i18n';
-import type { DocMeta } from '@blocksuite/affine/store';
-import { FavoritedIcon, FavoriteIcon } from '@blocksuite/icons/rc';
 import { LiveData, useLiveData, useService } from '@lumibook/infra';
 import { type ReactNode, useMemo } from 'react';
 

@@ -1,4 +1,3 @@
-import type { FeatureFlagService } from '@lumibook/core/modules/feature-flag';
 import { WithDisposable } from '@blocksuite/affine/global/lit';
 import type { ColorScheme } from '@blocksuite/affine/model';
 import { unsafeCSSVarV2 } from '@blocksuite/affine/shared/theme';
@@ -17,6 +16,7 @@ import {
   LinkedPageIcon,
   PageIcon,
 } from '@blocksuite/icons/lit';
+import type { FeatureFlagService } from '@lumibook/core/modules/feature-flag';
 import type { Signal } from '@preact/signals-core';
 import { css, html, nothing } from 'lit';
 import { property } from 'lit/decorators.js';

@@ -1,5 +1,5 @@
-import type { MemberSearchService } from '@lumibook/core/modules/permissions';
 import { UserListServiceExtension } from '@blocksuite/affine/shared/services';
+import type { MemberSearchService } from '@lumibook/core/modules/permissions';
 
 export function patchUserListExtensions(memberSearch: MemberSearchService) {
   return UserListServiceExtension({

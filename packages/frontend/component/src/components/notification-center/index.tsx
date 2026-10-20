@@ -2,8 +2,8 @@
 // License on the MIT
 // https://github.com/emilkowalski/sonner/blob/5cb703edc108a23fd74979235c2f3c4005edd2a7/src/index.tsx
 
-import { useI18n } from '@lumibook/i18n';
 import { CloseIcon, InformationFillDuotoneIcon } from '@blocksuite/icons/rc';
+import { useI18n } from '@lumibook/i18n';
 import * as Toast from '@radix-ui/react-toast';
 import clsx from 'clsx';
 import { useAtom, useAtomValue, useSetAtom } from 'jotai';

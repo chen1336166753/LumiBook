@@ -5,8 +5,8 @@ import {
 } from '@lumibook/component/setting-components';
 import { SubscriptionService } from '@lumibook/core/modules/cloud';
 import { useI18n } from '@lumibook/i18n';
-import { track } from '@lumibook/track';
 import { useLiveData, useService } from '@lumibook/infra';
+import { track } from '@lumibook/track';
 import { useCallback, useEffect } from 'react';
 
 import type { SettingState } from '../../types';

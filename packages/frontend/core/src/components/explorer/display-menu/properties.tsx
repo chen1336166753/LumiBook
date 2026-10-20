@@ -1,8 +1,8 @@
 import { Button, Divider } from '@lumibook/component';
 import { WorkspacePropertyService } from '@lumibook/core/modules/workspace-property';
 import { useI18n } from '@lumibook/i18n';
-import track from '@lumibook/track';
 import { useLiveData, useService } from '@lumibook/infra';
+import track from '@lumibook/track';
 import { useCallback, useMemo } from 'react';
 
 import { WorkspacePropertyName } from '../../properties';

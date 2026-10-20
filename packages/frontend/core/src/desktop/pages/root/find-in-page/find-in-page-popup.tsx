@@ -1,13 +1,13 @@
-import { IconButton, observeResize, RowInput } from '@lumibook/component';
-import { FindInPageService } from '@lumibook/core/modules/find-in-page';
 import {
   ArrowDownSmallIcon,
   ArrowUpSmallIcon,
   CloseIcon,
   SearchIcon,
 } from '@blocksuite/icons/rc';
-import * as Popover from '@radix-ui/react-popover';
+import { IconButton, observeResize, RowInput } from '@lumibook/component';
+import { FindInPageService } from '@lumibook/core/modules/find-in-page';
 import { useLiveData, useService } from '@lumibook/infra';
+import * as Popover from '@radix-ui/react-popover';
 import { assignInlineVars } from '@vanilla-extract/dynamic';
 import clsx from 'clsx';
 import {

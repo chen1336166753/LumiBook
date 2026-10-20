@@ -1,5 +1,5 @@
-import { ServerFeature } from '@lumibook/graphql';
 import { SearchIcon } from '@blocksuite/icons/rc';
+import { ServerFeature } from '@lumibook/graphql';
 import {
   effect,
   Entity,

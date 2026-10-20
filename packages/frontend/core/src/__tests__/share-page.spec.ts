@@ -2,9 +2,9 @@
 
 import { UserFriendlyError } from '@lumibook/error';
 import type * as AffineI18n from '@lumibook/i18n';
+import type * as Infra from '@lumibook/infra';
 import type { WorkerInitOptions } from '@lumibook/nbstore/worker/client';
 import { act, render, waitFor } from '@testing-library/react';
-import type * as Infra from '@lumibook/infra';
 import { createElement } from 'react';
 import { MemoryRouter } from 'react-router-dom';
 import { TimeoutError } from 'rxjs';

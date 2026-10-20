@@ -1,9 +1,9 @@
+import { DeleteIcon, ResetIcon } from '@blocksuite/icons/rc';
 import { Button } from '@lumibook/component/ui/button';
 import { ConfirmModal } from '@lumibook/component/ui/modal';
 import { DocService } from '@lumibook/core/modules/doc';
 import { WorkspaceService } from '@lumibook/core/modules/workspace';
 import { useI18n } from '@lumibook/i18n';
-import { DeleteIcon, ResetIcon } from '@blocksuite/icons/rc';
 import { useService } from '@lumibook/infra';
 import { useCallback, useState } from 'react';
 

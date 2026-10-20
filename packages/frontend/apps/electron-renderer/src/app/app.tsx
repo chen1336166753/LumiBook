@@ -1,10 +1,10 @@
+import { CacheProvider } from '@emotion/react';
 import { AffineContext } from '@lumibook/core/components/context';
 import { WindowsAppControls } from '@lumibook/core/components/pure/header/windows-app-controls';
 import { AppContainer } from '@lumibook/core/desktop/components/app-container';
 import { router } from '@lumibook/core/desktop/router';
 import { I18nProvider } from '@lumibook/core/modules/i18n';
 import createEmotionCache from '@lumibook/core/utils/create-emotion-cache';
-import { CacheProvider } from '@emotion/react';
 import { FrameworkRoot, getCurrentStore } from '@lumibook/infra';
 import { Suspense, useEffect } from 'react';
 import { RouterProvider } from 'react-router-dom';

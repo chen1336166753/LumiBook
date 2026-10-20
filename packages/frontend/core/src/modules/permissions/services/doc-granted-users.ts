@@ -1,5 +1,4 @@
 import { DocRole } from '@lumibook/graphql';
-import type { DocGrantedUserSnapshot } from '@lumibook/realtime';
 import {
   catchErrorInto,
   effect,
@@ -10,6 +9,7 @@ import {
   Service,
   smartRetry,
 } from '@lumibook/infra';
+import type { DocGrantedUserSnapshot } from '@lumibook/realtime';
 import type { Subscription } from 'rxjs';
 import { EMPTY, exhaustMap, tap } from 'rxjs';
 

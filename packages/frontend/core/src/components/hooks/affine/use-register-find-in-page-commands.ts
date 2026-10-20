@@ -3,8 +3,8 @@ import {
   registerAffineCommand,
 } from '@lumibook/core/commands';
 import { FindInPageService } from '@lumibook/core/modules/find-in-page/services/find-in-page';
-import { track } from '@lumibook/track';
 import { useServiceOptional } from '@lumibook/infra';
+import { track } from '@lumibook/track';
 import { useCallback, useEffect } from 'react';
 
 export function useRegisterFindInPageCommands() {

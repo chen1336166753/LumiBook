@@ -1,9 +1,9 @@
-import type { TextRendererOptions } from '@lumibook/core/blocksuite/ai/components/text-renderer';
 import type { EditorHost } from '@blocksuite/affine/std';
 import {
   NotificationProvider,
   ThemeProvider,
 } from '@blocksuite/affine-shared/services';
+import type { TextRendererOptions } from '@lumibook/core/blocksuite/ai/components/text-renderer';
 import { css, html, LitElement } from 'lit';
 import { property } from 'lit/decorators.js';
 import { classMap } from 'lit/directives/class-map.js';

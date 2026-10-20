@@ -1,7 +1,7 @@
 import { CategoryDivider } from '@lumibook/core/modules/app-sidebar/views';
 import { NavigationPanelService } from '@lumibook/core/modules/navigation-panel';
-import * as Collapsible from '@radix-ui/react-collapsible';
 import { useLiveData, useService } from '@lumibook/infra';
+import * as Collapsible from '@radix-ui/react-collapsible';
 import clsx from 'clsx';
 import {
   type CSSProperties,

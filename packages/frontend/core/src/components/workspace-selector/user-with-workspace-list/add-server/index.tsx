@@ -1,7 +1,7 @@
+import { PlusIcon } from '@blocksuite/icons/rc';
 import { Divider, MenuItem } from '@lumibook/component';
 import { GlobalDialogService } from '@lumibook/core/modules/dialogs';
 import { useI18n } from '@lumibook/i18n';
-import { PlusIcon } from '@blocksuite/icons/rc';
 import { useService } from '@lumibook/infra';
 import { useCallback } from 'react';
 

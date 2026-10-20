@@ -1,5 +1,5 @@
-import { useI18n } from '@lumibook/i18n';
 import { ViewLayersIcon } from '@blocksuite/icons/rc';
+import { useI18n } from '@lumibook/i18n';
 
 import { NavigationPanelEmptySection } from '../../layouts/empty-section';
 

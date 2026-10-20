@@ -1,3 +1,4 @@
+import { MoreVerticalIcon } from '@blocksuite/icons/rc';
 import {
   Avatar,
   AvatarFallback,
@@ -12,7 +13,6 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from '@lumibook/admin/components/ui/dropdown-menu';
-import { MoreVerticalIcon } from '@blocksuite/icons/rc';
 import { CircleUser } from 'lucide-react';
 import { useCallback } from 'react';
 import { toast } from 'sonner';

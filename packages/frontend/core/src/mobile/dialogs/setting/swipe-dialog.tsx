@@ -1,6 +1,6 @@
+import { ArrowLeftSmallIcon } from '@blocksuite/icons/rc';
 import { InsideModalContext, Scrollable } from '@lumibook/component';
 import { PageHeader } from '@lumibook/core/mobile/components';
-import { ArrowLeftSmallIcon } from '@blocksuite/icons/rc';
 import { assignInlineVars } from '@vanilla-extract/dynamic';
 import { animate } from 'animejs';
 import {

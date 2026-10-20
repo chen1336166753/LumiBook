@@ -1,6 +1,6 @@
+import { SaveIcon } from '@blocksuite/icons/rc';
 import { Button, usePromptModal } from '@lumibook/component';
 import { useI18n } from '@lumibook/i18n';
-import { SaveIcon } from '@blocksuite/icons/rc';
 import { useCallback } from 'react';
 
 import * as styles from './save-as-collection-button.css';

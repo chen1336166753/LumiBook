@@ -1,4 +1,9 @@
 import {
+  ArrowRightSmallIcon,
+  DoneIcon,
+  InformationFillDuotoneIcon,
+} from '@blocksuite/icons/rc';
+import {
   Button,
   IconButton,
   Menu,
@@ -16,11 +21,6 @@ import { DesktopApiService } from '@lumibook/core/modules/desktop-api';
 import { MeetingSettingsService } from '@lumibook/core/modules/media/services/meeting-settings';
 import type { MeetingSettingsSchema } from '@lumibook/electron/main/shared-state-schema';
 import { Trans, useI18n } from '@lumibook/i18n';
-import {
-  ArrowRightSmallIcon,
-  DoneIcon,
-  InformationFillDuotoneIcon,
-} from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
 import { useCallback, useEffect, useMemo, useState } from 'react';
 

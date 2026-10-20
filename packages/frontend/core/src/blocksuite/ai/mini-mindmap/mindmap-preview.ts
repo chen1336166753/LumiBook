@@ -1,4 +1,3 @@
-import { WorkspaceImpl } from '@lumibook/core/modules/workspace/impls/workspace.js';
 import type { SurfaceBlockModel } from '@blocksuite/affine/blocks/surface';
 import {
   MindmapStyleFour,
@@ -15,6 +14,7 @@ import {
 import { MarkdownAdapter } from '@blocksuite/affine/shared/adapters';
 import { BlockStdScope, type EditorHost } from '@blocksuite/affine/std';
 import { Schema, type Store } from '@blocksuite/affine/store';
+import { WorkspaceImpl } from '@lumibook/core/modules/workspace/impls/workspace.js';
 import { css, html, LitElement, nothing } from 'lit';
 import { property, query } from 'lit/decorators.js';
 import { repeat } from 'lit/directives/repeat.js';

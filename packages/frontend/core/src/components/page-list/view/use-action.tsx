@@ -1,6 +1,6 @@
+import { DeleteIcon, FilterIcon } from '@blocksuite/icons/rc';
 import type { Collection } from '@lumibook/core/modules/collection';
 import { useI18n } from '@lumibook/i18n';
-import { DeleteIcon, FilterIcon } from '@blocksuite/icons/rc';
 import type { ReactNode } from 'react';
 import { useMemo } from 'react';
 

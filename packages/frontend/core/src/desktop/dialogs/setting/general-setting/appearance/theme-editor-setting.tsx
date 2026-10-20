@@ -1,10 +1,10 @@
+import { DeleteIcon } from '@blocksuite/icons/rc';
 import { Button } from '@lumibook/component';
 import { SettingRow } from '@lumibook/component/setting-components';
 import { DesktopApiService } from '@lumibook/core/modules/desktop-api';
 import { ThemeEditorService } from '@lumibook/core/modules/theme-editor';
 import { UrlService } from '@lumibook/core/modules/url';
 import { useI18n } from '@lumibook/i18n';
-import { DeleteIcon } from '@blocksuite/icons/rc';
 import {
   useLiveData,
   useService,

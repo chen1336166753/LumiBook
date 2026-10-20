@@ -1,3 +1,4 @@
+import { Logo1Icon } from '@blocksuite/icons/rc';
 import { Scrollable } from '@lumibook/component';
 import { Avatar } from '@lumibook/component/ui/avatar';
 import { UserPlanButton } from '@lumibook/core/components/affine/auth/user-plan-button';
@@ -7,9 +8,8 @@ import { GlobalDialogService } from '@lumibook/core/modules/dialogs';
 import type { SettingTab } from '@lumibook/core/modules/dialogs/constant';
 import { type WorkspaceMetadata } from '@lumibook/core/modules/workspace';
 import { useI18n } from '@lumibook/i18n';
-import { track } from '@lumibook/track';
-import { Logo1Icon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
+import { track } from '@lumibook/track';
 import clsx from 'clsx';
 import {
   type HTMLAttributes,

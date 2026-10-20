@@ -6,8 +6,8 @@ import {
   updateUserProfileMutation,
   uploadAvatarMutation,
 } from '@lumibook/graphql';
-import type { CurrentUserProfileSnapshot } from '@lumibook/realtime';
 import { Store } from '@lumibook/infra';
+import type { CurrentUserProfileSnapshot } from '@lumibook/realtime';
 import { z } from 'zod';
 
 import type { GlobalState, NbstoreService } from '../../storage';

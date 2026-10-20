@@ -1,10 +1,10 @@
 import { DebugLogger } from '@lumibook/debug';
+import { Entity, LiveData } from '@lumibook/infra';
 import type {
   RealtimeTopicEventOf,
   WorkspaceConfigSnapshot,
   WorkspaceInviteLinkSnapshot,
 } from '@lumibook/realtime';
-import { Entity, LiveData } from '@lumibook/infra';
 
 import { RealtimeLiveQuery } from '../../cloud/realtime/live-query';
 import type { WorkspaceService } from '../../workspace';

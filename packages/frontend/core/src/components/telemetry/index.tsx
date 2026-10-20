@@ -1,5 +1,5 @@
-import { enableAutoTrack, sentry, tracker } from '@lumibook/track';
 import { appSettingAtom } from '@lumibook/infra';
+import { enableAutoTrack, sentry, tracker } from '@lumibook/track';
 import { useAtomValue } from 'jotai/react';
 import { useEffect } from 'react';
 

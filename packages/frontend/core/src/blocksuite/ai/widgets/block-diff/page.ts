@@ -1,4 +1,3 @@
-import { track } from '@lumibook/track';
 import { WidgetComponent, WidgetViewExtension } from '@blocksuite/affine/std';
 import { unsafeCSSVar, unsafeCSSVarV2 } from '@blocksuite/affine-shared/theme';
 import {
@@ -7,6 +6,7 @@ import {
   CloseIcon,
   DoneIcon,
 } from '@blocksuite/icons/lit';
+import { track } from '@lumibook/track';
 import { css, html, nothing } from 'lit';
 import { property } from 'lit/decorators.js';
 import { literal, unsafeStatic } from 'lit/static-html.js';

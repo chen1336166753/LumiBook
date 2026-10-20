@@ -1,9 +1,9 @@
+import { ArrowLeftSmallIcon, CloseIcon } from '@blocksuite/icons/rc';
 import {
   IconButton,
   type IconButtonProps,
   useIsInsideModal,
 } from '@lumibook/component';
-import { ArrowLeftSmallIcon, CloseIcon } from '@blocksuite/icons/rc';
 import { useService } from '@lumibook/infra';
 import { useCallback, useMemo } from 'react';
 

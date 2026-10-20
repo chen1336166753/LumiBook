@@ -1,3 +1,5 @@
+import type { Store } from '@blocksuite/affine/store';
+import { LockIcon, PublishIcon } from '@blocksuite/icons/rc';
 import { Tabs, Tooltip, useConfirmModal } from '@lumibook/component';
 import { Button } from '@lumibook/component/ui/button';
 import { Menu } from '@lumibook/component/ui/menu';
@@ -9,8 +11,6 @@ import { ShareInfoService } from '@lumibook/core/modules/share-doc';
 import type { WorkspaceMetadata } from '@lumibook/core/modules/workspace';
 import { ServerDeploymentType, SubscriptionPlan } from '@lumibook/graphql';
 import { useI18n } from '@lumibook/i18n';
-import type { Store } from '@blocksuite/affine/store';
-import { LockIcon, PublishIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
 import {
   forwardRef,

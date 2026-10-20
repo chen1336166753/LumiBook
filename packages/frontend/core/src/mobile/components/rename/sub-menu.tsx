@@ -1,6 +1,6 @@
+import { EditIcon } from '@blocksuite/icons/rc';
 import { MobileMenuSub, useMobileMenuController } from '@lumibook/component';
 import { useI18n } from '@lumibook/i18n';
-import { EditIcon } from '@blocksuite/icons/rc';
 import { useCallback } from 'react';
 
 import { RenameContent } from './content';

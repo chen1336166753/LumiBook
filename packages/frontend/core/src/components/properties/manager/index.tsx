@@ -1,3 +1,4 @@
+import { MoreHorizontalIcon } from '@blocksuite/icons/rc';
 import {
   DropIndicator,
   IconButton,
@@ -11,7 +12,6 @@ import { WorkspaceService } from '@lumibook/core/modules/workspace';
 import { WorkspacePropertyService } from '@lumibook/core/modules/workspace-property';
 import type { AffineDNDData } from '@lumibook/core/types/dnd';
 import { useI18n } from '@lumibook/i18n';
-import { MoreHorizontalIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
 import clsx from 'clsx';
 import { type HTMLProps, useCallback, useState } from 'react';

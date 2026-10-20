@@ -1,3 +1,4 @@
+import { ViewLayersIcon } from '@blocksuite/icons/rc';
 import { Modal } from '@lumibook/component';
 import { CollectionService } from '@lumibook/core/modules/collection';
 import type {
@@ -5,7 +6,6 @@ import type {
   WORKSPACE_DIALOG_SCHEMA,
 } from '@lumibook/core/modules/dialogs';
 import { useI18n } from '@lumibook/i18n';
-import { ViewLayersIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
 import { cssVarV2 } from '@toeverything/theme/v2';
 import { useMemo } from 'react';

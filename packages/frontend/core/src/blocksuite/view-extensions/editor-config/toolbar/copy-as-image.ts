@@ -1,8 +1,3 @@
-import { notify } from '@lumibook/component';
-import { isMindmapChild, isMindMapRoot } from '@lumibook/core/blocksuite/ai';
-import { EditorService } from '@lumibook/core/modules/editor';
-import { apis } from '@lumibook/electron-api';
-import { I18n } from '@lumibook/i18n';
 import type { MenuContext } from '@blocksuite/affine/components/toolbar';
 import { Bound, getCommonBound } from '@blocksuite/affine/global/gfx';
 import type { BlockStdScope } from '@blocksuite/affine/std';
@@ -14,6 +9,11 @@ import {
   isGfxGroupCompatibleModel,
 } from '@blocksuite/affine/std/gfx';
 import { CopyAsImgaeIcon } from '@blocksuite/icons/lit';
+import { notify } from '@lumibook/component';
+import { isMindmapChild, isMindMapRoot } from '@lumibook/core/blocksuite/ai';
+import { EditorService } from '@lumibook/core/modules/editor';
+import { apis } from '@lumibook/electron-api';
+import { I18n } from '@lumibook/i18n';
 import type { FrameworkProvider } from '@lumibook/infra';
 
 const snapshotStyle = `

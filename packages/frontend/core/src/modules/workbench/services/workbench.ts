@@ -1,5 +1,5 @@
-import { tracker } from '@lumibook/track';
 import { createEvent, Service } from '@lumibook/infra';
+import { tracker } from '@lumibook/track';
 import { combineLatest, distinctUntilChanged, map, skip } from 'rxjs';
 
 import { Workbench } from '../entities/workbench';

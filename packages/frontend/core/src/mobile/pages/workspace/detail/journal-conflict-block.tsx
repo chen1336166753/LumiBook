@@ -1,10 +1,10 @@
+import { EditIcon, TodayIcon } from '@blocksuite/icons/rc';
 import { IconButton, Menu } from '@lumibook/component';
 import { type DocRecord, DocsService } from '@lumibook/core/modules/doc';
 import { DocDisplayMetaService } from '@lumibook/core/modules/doc-display-meta';
 import { JournalService } from '@lumibook/core/modules/journal';
 import { WorkbenchLink } from '@lumibook/core/modules/workbench';
 import { useI18n } from '@lumibook/i18n';
-import { EditIcon, TodayIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
 import { useMemo } from 'react';
 

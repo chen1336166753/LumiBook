@@ -1,9 +1,9 @@
+import { LinkIcon } from '@blocksuite/icons/rc';
 import { PropertyValue } from '@lumibook/component';
 import { AffinePageReference } from '@lumibook/core/components/affine/reference-link';
 import { ConfigModal } from '@lumibook/core/components/mobile';
 import { resolveLinkToDoc } from '@lumibook/core/modules/navigation';
 import { useI18n } from '@lumibook/i18n';
-import { LinkIcon } from '@blocksuite/icons/rc';
 import type { LiveData } from '@lumibook/infra';
 import { useLiveData } from '@lumibook/infra';
 import {

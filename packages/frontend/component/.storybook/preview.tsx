@@ -1,16 +1,16 @@
-import { getOrCreateI18n, I18nextProvider } from '@lumibook/i18n';
-import { ThemeProvider } from 'next-themes';
-import type { ComponentType } from 'react';
 import '../src/theme';
 import './polyfill';
 import './preview.css';
 
-import type { Preview } from '@storybook/react';
-import React, { useEffect } from 'react';
-import { ConfirmModalProvider } from '../src/ui/modal/confirm-modal';
-
 import { setupGlobal } from '@lumibook/env/global';
+import { getOrCreateI18n, I18nextProvider } from '@lumibook/i18n';
+import type { Preview } from '@storybook/react';
+import { ThemeProvider } from 'next-themes';
 import { useTheme as useNextTheme } from 'next-themes';
+import type { ComponentType } from 'react';
+import React, { useEffect } from 'react';
+
+import { ConfirmModalProvider } from '../src/ui/modal/confirm-modal';
 
 setupGlobal();
 

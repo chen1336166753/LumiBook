@@ -1,10 +1,10 @@
+import { ArrowDownSmallIcon, MoreHorizontalIcon } from '@blocksuite/icons/rc';
 import {
   type BaseNavigationPanelTreeNodeProps,
   NavigationPanelTreeContext,
 } from '@lumibook/core/desktop/components/navigation-panel';
 import { WorkbenchLink } from '@lumibook/core/modules/workbench';
 import { extractEmojiIcon } from '@lumibook/core/utils';
-import { ArrowDownSmallIcon, MoreHorizontalIcon } from '@blocksuite/icons/rc';
 import { assignInlineVars } from '@vanilla-extract/dynamic';
 import {
   type AriaAttributes,

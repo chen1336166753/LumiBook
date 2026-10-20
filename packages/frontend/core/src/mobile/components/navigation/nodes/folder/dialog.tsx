@@ -1,5 +1,5 @@
-import { useI18n } from '@lumibook/i18n';
 import { EditIcon } from '@blocksuite/icons/rc';
+import { useI18n } from '@lumibook/i18n';
 
 import type { RenameDialogProps, RenameSubMenuProps } from '../../../rename';
 import { RenameDialog, RenameSubMenu } from '../../../rename';

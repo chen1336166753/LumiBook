@@ -1,9 +1,9 @@
-import { Avatar, notify } from '@lumibook/component';
 import {
   type ExistedUserInfo,
   type UserListService,
   type UserService,
 } from '@blocksuite/affine/shared/services';
+import { Avatar, notify } from '@lumibook/component';
 import { computed, type ReadonlySignal, signal } from '@preact/signals-core';
 import clsx from 'clsx';
 import {

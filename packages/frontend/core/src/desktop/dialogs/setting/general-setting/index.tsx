@@ -1,8 +1,3 @@
-import { UserFeatureService } from '@lumibook/core/modules/cloud/services/user-feature';
-import type { SettingTab } from '@lumibook/core/modules/dialogs/constant';
-import { FeatureFlagService } from '@lumibook/core/modules/feature-flag';
-import { MeetingSettingsService } from '@lumibook/core/modules/media/services/meeting-settings';
-import { useI18n } from '@lumibook/i18n';
 import {
   AppearanceIcon,
   ExperimentIcon,
@@ -13,6 +8,11 @@ import {
   NotificationIcon,
   PenIcon,
 } from '@blocksuite/icons/rc';
+import { UserFeatureService } from '@lumibook/core/modules/cloud/services/user-feature';
+import type { SettingTab } from '@lumibook/core/modules/dialogs/constant';
+import { FeatureFlagService } from '@lumibook/core/modules/feature-flag';
+import { MeetingSettingsService } from '@lumibook/core/modules/media/services/meeting-settings';
+import { useI18n } from '@lumibook/i18n';
 import { useLiveData, useServices } from '@lumibook/infra';
 import { useEffect, useMemo } from 'react';
 

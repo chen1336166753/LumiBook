@@ -1,4 +1,13 @@
 import {
+  DeleteIcon,
+  DuplicateIcon,
+  InformationIcon,
+  LinkedPageIcon,
+  OpenInNewIcon,
+  PlusIcon,
+  SplitViewIcon,
+} from '@blocksuite/icons/rc';
+import {
   IconButton,
   MenuItem,
   MenuSeparator,
@@ -17,17 +26,8 @@ import { GuardService } from '@lumibook/core/modules/permissions';
 import { WorkbenchService } from '@lumibook/core/modules/workbench';
 import { WorkspaceService } from '@lumibook/core/modules/workspace';
 import { useI18n } from '@lumibook/i18n';
-import { track } from '@lumibook/track';
-import {
-  DeleteIcon,
-  DuplicateIcon,
-  InformationIcon,
-  LinkedPageIcon,
-  OpenInNewIcon,
-  PlusIcon,
-  SplitViewIcon,
-} from '@blocksuite/icons/rc';
 import { useLiveData, useServices } from '@lumibook/infra';
+import { track } from '@lumibook/track';
 import { useCallback, useMemo, useState } from 'react';
 
 import type { NodeOperation } from '../../tree/types';

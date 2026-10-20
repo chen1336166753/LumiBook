@@ -1,3 +1,4 @@
+import { DoneIcon } from '@blocksuite/icons/rc';
 import {
   Avatar,
   Divider,
@@ -11,7 +12,6 @@ import {
   type Member,
   MemberSearchService,
 } from '@lumibook/core/modules/permissions';
-import { DoneIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@lumibook/infra';
 import clsx from 'clsx';
 import { clamp, debounce } from 'lodash-es';

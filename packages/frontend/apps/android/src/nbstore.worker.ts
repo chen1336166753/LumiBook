@@ -1,5 +1,6 @@
 import './setup-worker';
 
+import { type MessageCommunicapable, OpConsumer } from '@lumibook/infra/op';
 import { MessagePortAuthProvider } from '@lumibook/mobile-shared/auth/channel';
 import { installAuthRequestProxy } from '@lumibook/mobile-shared/auth/request';
 import { broadcastChannelStorages } from '@lumibook/nbstore/broadcast-channel';
@@ -17,7 +18,6 @@ import {
   StoreManagerConsumer,
   type WorkerManagerOps,
 } from '@lumibook/nbstore/worker/consumer';
-import { type MessageCommunicapable, OpConsumer } from '@lumibook/infra/op';
 import { AsyncCall } from 'async-call-rpc';
 
 const authProvider = new MessagePortAuthProvider();

@@ -1,7 +1,7 @@
+import type { DocMode } from '@blocksuite/affine/model';
 import { BlocksuiteHeaderTitle } from '@lumibook/core/blocksuite/block-suite-header/title';
 import { EditorModeSwitch } from '@lumibook/core/blocksuite/block-suite-mode-switch';
 import ShareHeaderRightItem from '@lumibook/core/components/cloud/share-header-right-item';
-import type { DocMode } from '@blocksuite/affine/model';
 
 import * as styles from './share-header.css';
 

@@ -1,5 +1,5 @@
-import { GlobalDialogService } from '@lumibook/core/modules/dialogs';
 import type { DocMode } from '@blocksuite/affine/model';
+import { GlobalDialogService } from '@lumibook/core/modules/dialogs';
 import { useService } from '@lumibook/infra';
 import { useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';

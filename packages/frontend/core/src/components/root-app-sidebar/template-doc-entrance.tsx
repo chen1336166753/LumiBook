@@ -1,3 +1,4 @@
+import { TemplateIcon } from '@blocksuite/icons/rc';
 import { Menu, MenuSeparator } from '@lumibook/component';
 import { MenuItem as SidebarMenuItem } from '@lumibook/core/modules/app-sidebar/views';
 import {
@@ -6,7 +7,6 @@ import {
 } from '@lumibook/core/modules/template-doc/view/template-list-menu';
 import { useI18n } from '@lumibook/i18n';
 import track from '@lumibook/track';
-import { TemplateIcon } from '@blocksuite/icons/rc';
 import { useCallback, useState } from 'react';
 
 export const TemplateDocEntrance = () => {

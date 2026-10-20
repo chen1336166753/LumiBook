@@ -1,12 +1,12 @@
+import {
+  type ViewExtensionContext,
+  ViewExtensionProvider,
+} from '@blocksuite/affine/ext-loader';
 import type { ElementOrFactory } from '@lumibook/component';
 import {
   patchForEdgelessNoteConfig,
   patchForEmbedSyncedDocConfig,
 } from '@lumibook/core/blocksuite/view-extensions/edgeless-block-header/patch';
-import {
-  type ViewExtensionContext,
-  ViewExtensionProvider,
-} from '@blocksuite/affine/ext-loader';
 import { FrameworkProvider } from '@lumibook/infra';
 import type { TemplateResult } from 'lit';
 import { z } from 'zod';

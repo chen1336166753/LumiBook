@@ -1,10 +1,10 @@
+import type { Store } from '@blocksuite/affine/store';
 import { useEnableCloud } from '@lumibook/core/components/hooks/affine/use-enable-cloud';
 import { WorkspaceShareSettingService } from '@lumibook/core/modules/share-setting';
 import type { Workspace } from '@lumibook/core/modules/workspace';
 import { useI18n } from '@lumibook/i18n';
-import { track } from '@lumibook/track';
-import type { Store } from '@blocksuite/affine/store';
 import { useLiveData, useService } from '@lumibook/infra';
+import { track } from '@lumibook/track';
 import { useCallback, useEffect } from 'react';
 
 import { ShareMenu } from './share-menu';

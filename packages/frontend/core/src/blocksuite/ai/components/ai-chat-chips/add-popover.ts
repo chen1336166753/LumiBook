@@ -1,6 +1,3 @@
-import type { TagMeta } from '@lumibook/core/components/page-list';
-import type { CollectionMeta } from '@lumibook/core/modules/collection';
-import track, { type EventArgs } from '@lumibook/track';
 import { SignalWatcher, WithDisposable } from '@blocksuite/affine/global/lit';
 import { scrollbarStyle } from '@blocksuite/affine/shared/styles';
 import { unsafeCSSVar, unsafeCSSVarV2 } from '@blocksuite/affine/shared/theme';
@@ -15,6 +12,9 @@ import {
   TagsIcon,
   UploadIcon,
 } from '@blocksuite/icons/lit';
+import type { TagMeta } from '@lumibook/core/components/page-list';
+import type { CollectionMeta } from '@lumibook/core/modules/collection';
+import track, { type EventArgs } from '@lumibook/track';
 import { Signal } from '@preact/signals-core';
 import { css, html, type TemplateResult } from 'lit';
 import { property, query, state } from 'lit/decorators.js';

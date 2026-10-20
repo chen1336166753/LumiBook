@@ -1,7 +1,3 @@
-import { CloudViewExtension } from '@lumibook/core/blocksuite/view-extensions/cloud';
-import { AffineEditorViewExtension } from '@lumibook/core/blocksuite/view-extensions/editor-view/editor-view';
-import { AffineThemeViewExtension } from '@lumibook/core/blocksuite/view-extensions/theme';
-import { I18n } from '@lumibook/i18n';
 import { CodeBlockViewExtension } from '@blocksuite/affine/blocks/code/view';
 import { DividerViewExtension } from '@blocksuite/affine/blocks/divider/view';
 import { LatexViewExtension as LatexBlockViewExtension } from '@blocksuite/affine/blocks/latex/view';
@@ -54,6 +50,10 @@ import { InlineManagerExtension } from '@blocksuite/affine/std/inline';
 import { LinkedDocViewExtension } from '@blocksuite/affine/widgets/linked-doc/view';
 import { ToolbarViewExtension } from '@blocksuite/affine/widgets/toolbar/view';
 import { ViewportOverlayViewExtension } from '@blocksuite/affine/widgets/viewport-overlay/view';
+import { CloudViewExtension } from '@lumibook/core/blocksuite/view-extensions/cloud';
+import { AffineEditorViewExtension } from '@lumibook/core/blocksuite/view-extensions/editor-view/editor-view';
+import { AffineThemeViewExtension } from '@lumibook/core/blocksuite/view-extensions/theme';
+import { I18n } from '@lumibook/i18n';
 import type { FrameworkProvider } from '@lumibook/infra';
 import { z } from 'zod';
 
