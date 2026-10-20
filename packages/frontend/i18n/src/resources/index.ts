@@ -1,4 +1,5 @@
 import en from './en.json' with { type: 'json' };
+import zhHans from './zh-Hans.json' with { type: 'json' };
 
 export type Language =
   | 'en'
@@ -62,7 +63,10 @@ export const SUPPORTED_LANGUAGES: Record<
     name: '简体中文',
     originalName: '简体中文',
     flagEmoji: '🇨🇳',
-    resource: () => import('./zh-Hans.json'),
+    // 默认语言（见 i18next.ts 的 defaultLng），必须同步可用：
+    // i18next init 的 resources 传入的是懒加载函数时，
+    // 所有 key 查找都会失败并回退到 children。
+    resource: zhHans,
   },
   'zh-Hant': {
     name: '繁体中文',
