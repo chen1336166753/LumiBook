@@ -11,6 +11,8 @@ const ASSETS_PREFIX = `/static/templates`;
 const ASSETS_PATH = join(__dirname, '../core/public/', ASSETS_PREFIX);
 const TEMPLATE_PATH = join(__dirname, './edgeless');
 
+const byName = (a, b) => a.localeCompare(b);
+
 const getZipFilesInCategroies = () => {
   return fs.readdir(ZIP_PATH).then(folders => {
     // Sort explicitly: fs.readdir order is filesystem-dependent, which made the
@@ -21,11 +23,11 @@ const getZipFilesInCategroies = () => {
         .filter(folder => {
           return statSync(join(ZIP_PATH, folder)).isDirectory();
         })
-        .sort()
+        .sort(byName)
         .map(async folder => {
           const files = (await fs.readdir(join(ZIP_PATH, folder)))
             .filter(file => path.extname(file) === '.zip')
-            .sort();
+            .sort(byName);
           return {
             category: folder,
             files,
@@ -240,7 +242,7 @@ const buildScript = async templatesInGroup => {
   // stable across filesystems (fs.readdir order is not portable). The category
   // declaration below keeps its own group order.
   const importStatements = [...templates]
-    .sort()
+    .sort(byName)
     .map(template => {
       return `import ${toVariableName(
         template
