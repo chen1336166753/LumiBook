@@ -107,7 +107,7 @@ test('select two pages and delete', async ({ page }) => {
   // the floating popover should appear
   await expect(page.locator('[data-testid="floating-toolbar"]')).toBeVisible();
   await expect(page.locator('[data-testid="floating-toolbar"]')).toHaveText(
-    '已选择 <0>2</0> 篇文档'
+    '已选中 2 篇文档'
   );
 
   // click delete button
@@ -146,7 +146,7 @@ test('select three pages with shiftKey and delete', async ({ page }) => {
   // the floating popover should appear
   await expect(page.locator('[data-testid="floating-toolbar"]')).toBeVisible();
   await expect(page.locator('[data-testid="floating-toolbar"]')).toHaveText(
-    '已选择 <0>3</0> 篇文档'
+    '已选中 3 篇文档'
   );
 
   // click delete button

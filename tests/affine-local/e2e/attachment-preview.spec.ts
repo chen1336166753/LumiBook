@@ -165,7 +165,7 @@ test('should preview PDF in embed view', async ({ page }) => {
   expect(await pageCount.textContent()).toBe('3');
 
   const prevButton = portal.getByRole('button', { name: 'Prev' });
-  const nextButton = portal.getByRole('button', { name: '下一步' });
+  const nextButton = portal.getByRole('button', { name: 'Next' });
 
   await nextButton.click();
   expect(await pageCursor.textContent()).toBe('2');

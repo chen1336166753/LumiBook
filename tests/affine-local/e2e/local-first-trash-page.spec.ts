@@ -69,13 +69,13 @@ test('select all trashed pages from the Trash title', async ({ page }) => {
   await expect(selectAllButton).toHaveText('全选');
   await selectAllButton.click();
   await expect(page.getByTestId('floating-toolbar')).toHaveText(
-    '已选择 <0>2</0> 篇文档'
+    '已选中 2 篇文档'
   );
   await expect(selectAllButton).toHaveText('清除选择');
 
   await selectAllButton.click();
   await expect(page.getByTestId('floating-toolbar')).toHaveText(
-    '已选择 <0>0</0> 篇文档'
+    '已选中 0 篇文档'
   );
   await expect(selectAllButton).toHaveText('全选');
 });

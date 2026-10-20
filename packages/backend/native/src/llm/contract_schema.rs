@@ -14,8 +14,8 @@ use super::{
 // Schema owner map:
 // - adapter-owned: prepared routes and LLM request/response transport payloads.
 // - runtime-owned: execution plan and tool-loop event contracts.
-// - 识光-native-owned: model-registry projection and transcript/action
-//   product contracts.
+// - 识光-native-owned: model-registry projection and transcript/action product
+//   contracts.
 
 fn invalid_contract(message: impl Into<String>) -> Error {
   Error::new(Status::InvalidArg, message.into())

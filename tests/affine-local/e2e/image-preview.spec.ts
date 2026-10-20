@@ -600,7 +600,7 @@ test('tooltips for all buttons should be visible when hovering', async ({
   await page.waitForTimeout(1000);
   {
     const element = page.getByRole('tooltip');
-    const nextImageTooltip = await element.getByText('下一步').count();
+    const nextImageTooltip = await element.getByText('Next').count();
     expect(nextImageTooltip).toBe(1);
   }
 
