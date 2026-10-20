@@ -17,7 +17,7 @@ const openDocInfoModal = async (page: Page) => {
 };
 
 test.beforeEach(async ({ page }) => {
-  const docsTab = page.locator('#app-tabs').getByRole('tab', { name: 'all' });
+  const docsTab = page.locator('#app-tabs').getByRole('tab', { name: '全部' });
   await expect(docsTab).toBeVisible();
   await docsTab.click();
   await page.getByTestId('doc-list-item').first().click();

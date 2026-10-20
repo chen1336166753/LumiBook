@@ -187,7 +187,7 @@ export class EmbedCardEditModal extends SignalWatcher(
 
     const title = this.title$.value.trim();
     if (title.length === 0) {
-      toast(this.host, 'Title can not be empty');
+      toast(this.host, '标题不能为空');
       return;
     }
 
@@ -235,15 +235,14 @@ export class EmbedCardEditModal extends SignalWatcher(
   get placeholders() {
     if (this.isInternalEmbedModel) {
       return {
-        title: 'Add title alias',
-        description:
-          'Add description alias (empty to inherit document content)',
+        title: '添加标题别名',
+        description: '添加描述别名（留空以继承文档内容）',
       };
     }
 
     return {
-      title: 'Write a title',
-      description: 'Write a description...',
+      title: '请输入标题',
+      description: '请输入描述...',
     };
   }
 
@@ -335,7 +334,7 @@ export class EmbedCardEditModal extends SignalWatcher(
                   .disabled=${this.resetButtonDisabled$.value}
                   @click=${this._onReset}
                 >
-                  Reset
+                  重置
                 </button>
               `,
             ],
@@ -349,7 +348,7 @@ export class EmbedCardEditModal extends SignalWatcher(
                   })}
                   @click=${this._hide}
                 >
-                  Cancel
+                  取消
                 </button>
               `,
             ],
@@ -362,7 +361,7 @@ export class EmbedCardEditModal extends SignalWatcher(
             .disabled=${this.saveButtonDisabled$.value}
             @click=${this._onSave}
           >
-            Save
+            保存
           </button>
         </div>
       </div>

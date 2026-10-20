@@ -150,7 +150,7 @@ test('not allowed to switch to embed view when linking to block', async ({
   await cardLink.click();
 
   await toolbar.getByLabel('More menu').click();
-  await toolbar.getByLabel('Copy link to block').click();
+  await toolbar.getByLabel('复制块链接').click();
 
   await page.keyboard.press('Enter');
   await pasteByKeyboard(page);
@@ -659,7 +659,7 @@ test.describe('Customize linked doc title and description', () => {
     await expect(toolbar).toBeVisible();
 
     // Copies link
-    await toolbar.getByRole('button', { name: 'Copy link' }).click();
+    await toolbar.getByRole('button', { name: '复制链接' }).click();
     await expect(toolbar).toBeHidden();
 
     const url0 = await link.locator('a').getAttribute('href');
@@ -673,7 +673,7 @@ test.describe('Customize linked doc title and description', () => {
 
     // Edits title
     await link.hover();
-    await toolbar.getByRole('button', { name: 'Edit' }).click();
+    await toolbar.getByRole('button', { name: '编辑描述' }).click();
 
     // Title alias
     await page.keyboard.type('Test Page Alias');
@@ -685,11 +685,11 @@ test.describe('Customize linked doc title and description', () => {
 
     // Original title
     await link.hover();
-    const docTitle = toolbar.getByRole('button', { name: 'Doc title' });
+    const docTitle = toolbar.getByRole('button', { name: '文档标题' });
     await expect(docTitle).toHaveText('Test Page', { useInnerText: true });
 
     // Edits title
-    await toolbar.getByRole('button', { name: 'Edit' }).click();
+    await toolbar.getByRole('button', { name: '编辑描述' }).click();
 
     const aliasPopup = page.locator('reference-popup');
 
@@ -697,7 +697,7 @@ test.describe('Customize linked doc title and description', () => {
     await expect(aliasPopup.locator('input')).toHaveValue('Test Page Alias');
 
     // Reset
-    await aliasPopup.getByRole('button', { name: 'Reset' }).click();
+    await aliasPopup.getByRole('button', { name: '重置' }).click();
 
     await expect(title).toHaveText('Test Page');
 
@@ -719,7 +719,7 @@ test.describe('Customize linked doc title and description', () => {
     await inlineLink.hover();
 
     // Copies link
-    await toolbar.getByRole('button', { name: 'Copy link' }).click();
+    await toolbar.getByRole('button', { name: '复制链接' }).click();
     const url0 = await (
       await page.evaluateHandle(() => navigator.clipboard.readText())
     ).jsonValue();
@@ -729,7 +729,7 @@ test.describe('Customize linked doc title and description', () => {
     await inlineLink.hover();
 
     // Edits title
-    await toolbar.getByRole('button', { name: 'Edit' }).click();
+    await toolbar.getByRole('button', { name: '编辑描述' }).click();
 
     // Title alias
     await page.keyboard.type('Test Page Alias');
@@ -755,7 +755,7 @@ test.describe('Customize linked doc title and description', () => {
     await cardLink.click();
 
     // Copies link
-    await toolbar.getByRole('button', { name: 'Copy link' }).click();
+    await toolbar.getByRole('button', { name: '复制链接' }).click();
     const url1 = await (
       await page.evaluateHandle(() => navigator.clipboard.readText())
     ).jsonValue();
@@ -764,12 +764,12 @@ test.describe('Customize linked doc title and description', () => {
     expect(url1).not.toBeNull();
     expect(url0).toBe(url1);
 
-    const docTitle = toolbar.getByRole('button', { name: 'Doc title' });
+    const docTitle = toolbar.getByRole('button', { name: '文档标题' });
     await expect(docTitle).toHaveText('Test Page', { useInnerText: true });
     await expect(cardTitle).toHaveText('Test Page Alias');
 
     // Edits title & description
-    await toolbar.getByRole('button', { name: 'Edit' }).click();
+    await toolbar.getByRole('button', { name: '编辑描述' }).click();
 
     const cardEditPopup = page.locator('embed-card-edit-modal');
 
@@ -780,7 +780,7 @@ test.describe('Customize linked doc title and description', () => {
     await page.keyboard.type('This is a new description');
 
     // Saves aliases
-    await cardEditPopup.getByRole('button', { name: 'Save' }).click();
+    await cardEditPopup.getByRole('button', { name: '保存' }).click();
     await expect(cardTitle).toHaveText('Test Page Alias Again');
     await expect(cardDescription).toHaveText('This is a new description');
     await expect(cardEditPopup).not.toBeVisible();
@@ -813,10 +813,10 @@ test.describe('Customize linked doc title and description', () => {
     await cardLink.click();
     await cardLink.click();
 
-    await toolbar.getByRole('button', { name: 'Edit' }).click();
+    await toolbar.getByRole('button', { name: '编辑描述' }).click();
 
     // Resets
-    await cardEditPopup.getByRole('button', { name: 'Reset' }).click();
+    await cardEditPopup.getByRole('button', { name: '重置' }).click();
 
     await expect(cardTitle).toHaveText('Test Page');
     await expect(cardDescription).toBeHidden();
@@ -838,7 +838,7 @@ test.describe('Customize linked doc title and description', () => {
   //   await inlineLink.hover();
 
   //   // Edits title
-  //   await toolbar.getByRole('button', { name: 'Edit' }).click();
+  //   await toolbar.getByRole('button', { name: '编辑描述' }).click();
 
   //   // Title alias
   //   await page.keyboard.type('🦀hello');
@@ -867,7 +867,7 @@ test.describe('Customize linked doc title and description', () => {
   //     await inlineLink.hover();
 
   //     // Edits title
-  //     await toolbar.getByRole('button', { name: 'Edit' }).click();
+  //     await toolbar.getByRole('button', { name: '编辑描述' }).click();
 
   //     // Title alias
   //     await page.keyboard.type('🦀');
@@ -1025,7 +1025,7 @@ test('should reach target block when clicking affine-link multiple times', async
   const { toolbar } = toolbarButtons(page);
 
   await toolbar.getByLabel('More menu').click();
-  await toolbar.getByLabel('Copy link to block').click();
+  await toolbar.getByLabel('复制块链接').click();
 
   const paragraph = page.locator('affine-paragraph').nth(0);
   await paragraph.click();
@@ -1083,7 +1083,7 @@ test('should display date as the original title of journal', async ({
   await expect(linkedDocTitle).toBeHidden();
 
   // Edits title & description
-  await toolbar.getByRole('button', { name: 'Edit' }).click();
+  await toolbar.getByRole('button', { name: '编辑描述' }).click();
 
   await expect(toolbar).toBeHidden();
 
@@ -1095,7 +1095,7 @@ test('should display date as the original title of journal', async ({
   // Description alias
   await page.keyboard.type('This is a new description');
 
-  await popover.getByLabel('Save').click();
+  await popover.getByLabel('保存').click();
 
   await inlineLink.hover();
   await expect(toolbar).toBeVisible();
@@ -1118,13 +1118,13 @@ test('should display date as the original title of journal', async ({
   expect(cardViewTitleText).toBe(inlineTitleText);
 
   // Edits title & description
-  await toolbar.getByRole('button', { name: 'Edit' }).click();
+  await toolbar.getByRole('button', { name: '编辑描述' }).click();
 
   await expect(toolbar).toBeHidden();
 
   const cardEditPopup = page.locator('embed-card-edit-modal');
   // Resets
-  await cardEditPopup.getByRole('button', { name: 'Reset' }).click();
+  await cardEditPopup.getByRole('button', { name: '重置' }).click();
 
   await expect(toolbar).toBeVisible();
   await expect(linkedDocTitle).toBeHidden();

@@ -32,7 +32,7 @@ export const SearchInput = forwardRef<HTMLInputElement, SearchInputProps>(
     {
       className,
       style,
-      placeholder = 'Search',
+      placeholder = '搜索',
       value = '',
       height = 44,
       cornerRadius = 10,

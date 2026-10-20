@@ -32,7 +32,7 @@ import { test } from '../utils/playwright.js';
 
 async function focusCaption(page: Page) {
   const toolbar = page.locator('affine-toolbar-widget editor-toolbar');
-  await toolbar.getByLabel('Caption').click();
+  await toolbar.getByLabel('题注').click();
 }
 
 test('can drag resize image by left menu', async ({ page }) => {

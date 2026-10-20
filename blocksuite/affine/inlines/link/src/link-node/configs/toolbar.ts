@@ -48,7 +48,7 @@ export const builtinInlineLinkToolbarConfig = {
       actions: [
         {
           id: 'copy-link',
-          tooltip: 'Copy link',
+          tooltip: '复制链接',
           icon: CopyIcon(),
           run(ctx) {
             const target = ctx.message$.peek()?.element;
@@ -62,7 +62,7 @@ export const builtinInlineLinkToolbarConfig = {
             ctx.reset();
 
             navigator.clipboard.writeText(link).catch(console.error);
-            toast(ctx.host, 'Copied link to clipboard');
+            toast(ctx.host, '复制链接到剪贴板');
 
             ctx.track('CopiedLink', {
               ...trackBaseProps,
@@ -72,7 +72,7 @@ export const builtinInlineLinkToolbarConfig = {
         },
         {
           id: 'edit',
-          tooltip: 'Edit Description',
+          tooltip: '编辑描述',
           icon: EditIcon(),
           run(ctx) {
             const target = ctx.message$.peek()?.element;

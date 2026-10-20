@@ -63,7 +63,7 @@ async function copyImageToClipboard(url: string) {
   try {
     await navigator.clipboard.write([new ClipboardItem({ [blob.type]: blob })]);
     console.log('Image copied to clipboard');
-    toast('Copied to clipboard.');
+    toast('已复制到剪贴板');
   } catch (error) {
     console.error('Error copying image to clipboard', error);
   }
@@ -187,7 +187,7 @@ export const GenericImagePreviewModal = ({
         <div className={styles.imagePreviewActionBarStyle}>
           <IconButton
             data-testid="previous-image-button"
-            tooltip="Previous"
+            tooltip="上一张"
             icon={<ArrowLeftSmallIcon />}
             disabled={!image.previous}
             onClick={image.previous}
@@ -199,7 +199,7 @@ export const GenericImagePreviewModal = ({
           )}
           <IconButton
             data-testid="next-image-button"
-            tooltip="Next"
+            tooltip="下一张"
             icon={<ArrowRightSmallIcon />}
             disabled={!image.next}
             onClick={image.next}
@@ -207,19 +207,19 @@ export const GenericImagePreviewModal = ({
           <Divider size="thinner" orientation="vertical" />
           <IconButton
             data-testid="fit-to-screen-button"
-            tooltip="Fit to screen"
+            tooltip="适应屏幕"
             icon={<ViewBarIcon />}
             onClick={() => resetZoom()}
           />
           <IconButton
             data-testid="zoom-out-button"
-            tooltip="Zoom out"
+            tooltip="缩小"
             icon={<MinusIcon />}
             onClick={zoomOut}
           />
           <Button
             data-testid="reset-scale-button"
-            tooltip="Reset scale"
+            tooltip="重置缩放"
             onClick={resetScale}
             variant="plain"
           >
@@ -227,20 +227,20 @@ export const GenericImagePreviewModal = ({
           </Button>
           <IconButton
             data-testid="zoom-in-button"
-            tooltip="Zoom in"
+            tooltip="放大"
             icon={<PlusIcon />}
             onClick={zoomIn}
           />
           <Divider size="thinner" orientation="vertical" />
           <IconButton
             data-testid="download-button"
-            tooltip="Download"
+            tooltip="下载"
             icon={<DownloadIcon />}
             onClick={downloadHandler}
           />
           <IconButton
             data-testid="copy-to-clipboard-button"
-            tooltip="Copy to clipboard"
+            tooltip="复制到剪贴板"
             icon={<CopyIcon />}
             onClick={copyHandler}
           />
@@ -249,7 +249,7 @@ export const GenericImagePreviewModal = ({
               <Divider size="thinner" orientation="vertical" />
               <IconButton
                 data-testid="delete-button"
-                tooltip="Delete"
+                tooltip="删除"
                 icon={<DeleteIcon />}
                 onClick={image.onDelete}
                 variant="danger"

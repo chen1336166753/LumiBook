@@ -371,7 +371,7 @@ test('image able to copy to clipboard', async ({ page }) => {
   await expect(locator).toBeVisible();
   await locator.getByTestId('copy-to-clipboard-button').click();
   await expect(
-    page.locator('[data-testid=affine-toast]:has-text("Copied to clipboard.")')
+    page.locator('[data-testid=affine-toast]:has-text("已复制到剪贴板")')
   ).toBeVisible();
 });
 
@@ -400,7 +400,7 @@ test('image preview should be able to copy image to clipboard on copy event', as
   await expect(locator).toBeVisible();
   await page.dispatchEvent('body', 'copy');
   await expect(
-    page.locator('[data-testid=affine-toast]:has-text("Copied to clipboard.")')
+    page.locator('[data-testid=affine-toast]:has-text("已复制到剪贴板")')
   ).toBeVisible();
 });
 
@@ -600,7 +600,7 @@ test('tooltips for all buttons should be visible when hovering', async ({
   await page.waitForTimeout(1000);
   {
     const element = page.getByRole('tooltip');
-    const nextImageTooltip = await element.getByText('Next').count();
+    const nextImageTooltip = await element.getByText('下一张').count();
     expect(nextImageTooltip).toBe(1);
   }
 
@@ -612,7 +612,7 @@ test('tooltips for all buttons should be visible when hovering', async ({
   await page.waitForTimeout(1000);
   {
     const element = page.getByRole('tooltip');
-    const previousImageTooltip = await element.getByText('Previous').count();
+    const previousImageTooltip = await element.getByText('上一张').count();
     expect(previousImageTooltip).toBe(1);
   }
 
@@ -620,7 +620,7 @@ test('tooltips for all buttons should be visible when hovering', async ({
   await page.waitForTimeout(1000);
   {
     const element = page.getByRole('tooltip');
-    const fitToScreenToolTip = await element.getByText('Fit to Screen').count();
+    const fitToScreenToolTip = await element.getByText('适应屏幕').count();
     expect(fitToScreenToolTip).toBe(1);
   }
 
@@ -628,7 +628,7 @@ test('tooltips for all buttons should be visible when hovering', async ({
   await page.waitForTimeout(1000);
   {
     const element = page.getByRole('tooltip');
-    const zoomOutToolTip = await element.getByText('Zoom out').count();
+    const zoomOutToolTip = await element.getByText('缩小').count();
     expect(zoomOutToolTip).toBe(1);
   }
 
@@ -636,7 +636,7 @@ test('tooltips for all buttons should be visible when hovering', async ({
   await page.waitForTimeout(1000);
   {
     const element = page.getByRole('tooltip');
-    const resetScaleTooltip = await element.getByText('Reset Scale').count();
+    const resetScaleTooltip = await element.getByText('重置缩放').count();
     expect(resetScaleTooltip).toBe(1);
   }
 
@@ -644,7 +644,7 @@ test('tooltips for all buttons should be visible when hovering', async ({
   await page.waitForTimeout(1000);
   {
     const element = page.getByRole('tooltip');
-    const zoominToolTip = await element.getByText('Zoom in').count();
+    const zoominToolTip = await element.getByText('放大').count();
     expect(zoominToolTip).toBe(1);
   }
 
@@ -652,7 +652,7 @@ test('tooltips for all buttons should be visible when hovering', async ({
   await page.waitForTimeout(1000);
   {
     const element = page.getByRole('tooltip');
-    const downloadTooltip = await element.getByText('Download').count();
+    const downloadTooltip = await element.getByText('下载').count();
     expect(downloadTooltip).toBe(1);
   }
 
@@ -660,9 +660,7 @@ test('tooltips for all buttons should be visible when hovering', async ({
   await page.waitForTimeout(1000);
   {
     const element = page.getByRole('tooltip');
-    const downloadTooltip = await element
-      .getByText('Copy to clipboard')
-      .count();
+    const downloadTooltip = await element.getByText('复制到剪贴板').count();
     expect(downloadTooltip).toBe(1);
   }
 
@@ -670,7 +668,7 @@ test('tooltips for all buttons should be visible when hovering', async ({
   await page.waitForTimeout(500);
   {
     const element = page.getByRole('tooltip');
-    const downloadTooltip = await element.getByText('Delete').count();
+    const downloadTooltip = await element.getByText('删除').count();
     expect(downloadTooltip).toBe(1);
   }
 });
@@ -724,8 +722,8 @@ test('caption should be visible and different styles were applied if image zoome
   await importImage(page, 'large-image.png');
   await page.locator('affine-page-image').first().hover();
   const toolbar = page.locator('affine-toolbar-widget editor-toolbar');
-  await toolbar.getByLabel('Caption').click();
-  await page.getByPlaceholder('Write a caption').fill(sampleCaption);
+  await toolbar.getByLabel('题注').click();
+  await page.getByPlaceholder('添加题注').fill(sampleCaption);
   await page.locator('affine-page-image').first().dblclick();
   const locator = page.getByTestId('image-preview-modal');
   await expect(locator).toBeVisible();

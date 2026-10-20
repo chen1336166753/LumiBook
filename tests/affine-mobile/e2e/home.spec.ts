@@ -74,10 +74,10 @@ test('app tabs is visible', async ({ page }) => {
   await expect(tabs).toHaveCount(1);
   await expect(tabs).toBeVisible();
 
-  await expect(tabs.getByRole('tab', { name: 'home' })).toBeVisible();
-  await expect(tabs.getByRole('tab', { name: 'all' })).toBeVisible();
-  await expect(tabs.getByRole('tab', { name: 'journal' })).toBeVisible();
-  await expect(tabs.getByRole('tab', { name: 'new' })).toBeVisible();
+  await expect(tabs.getByRole('tab', { name: '首页' })).toBeVisible();
+  await expect(tabs.getByRole('tab', { name: '全部' })).toBeVisible();
+  await expect(tabs.getByRole('tab', { name: '日记' })).toBeVisible();
+  await expect(tabs.getByRole('tab', { name: '新建文档' })).toBeVisible();
 });
 
 test('notifications prompt unauthenticated users to sign in', async ({
@@ -115,7 +115,7 @@ test('recent docs', async ({ page }) => {
 });
 
 test('all tab', async ({ page }) => {
-  const docsTab = page.locator('#app-tabs').getByRole('tab', { name: 'all' });
+  const docsTab = page.locator('#app-tabs').getByRole('tab', { name: '全部' });
   await expect(docsTab).toBeVisible();
 
   await docsTab.click();

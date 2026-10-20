@@ -82,7 +82,16 @@ const AppTabLink = ({ route }: { route: AppTabLink }) => {
       key={route.to}
       replaceHistory
     >
-      <TabItem id={route.key} label={route.to.slice(1)}>
+      <TabItem
+        id={route.key}
+        label={
+          route.key === 'home'
+            ? '首页'
+            : route.key === 'all'
+              ? '全部'
+              : route.to.slice(1)
+        }
+      >
         <route.Icon />
       </TabItem>
     </Link>

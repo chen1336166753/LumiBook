@@ -80,7 +80,7 @@ const captionAction = (id: string): ToolbarAction => {
   return {
     id,
     when: showWhenUrlExists,
-    tooltip: 'Caption',
+    tooltip: '题注',
     icon: CaptionIcon(),
     run(ctx) {
       const component = ctx.getCurrentBlockByType(EmbedIframeBlockComponent);

@@ -42,7 +42,7 @@ export class DocTitle extends LitElement {
 
     return html`
       <editor-icon-button
-        aria-label="Doc title"
+        aria-label="文档标题"
         .hover=${false}
         .labelHeight="${'20px'}"
         .tooltip=${title}

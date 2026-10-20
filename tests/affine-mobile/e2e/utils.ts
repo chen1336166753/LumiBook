@@ -89,7 +89,7 @@ export async function openNavigationPanelNodeSwipeMenu(
 
 export async function openTab(
   page: Page,
-  name: 'home' | 'all' | 'Journal' | 'New Page'
+  name: '首页' | '全部' | '日记' | '新建文档'
 ) {
   const tab = page.locator('#app-tabs').getByRole('tab', { name });
   await expect(tab).toBeVisible();

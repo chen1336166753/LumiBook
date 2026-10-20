@@ -42,7 +42,7 @@ const builtinToolbarConfig = {
     },
     {
       id: 'b.caption',
-      tooltip: 'Caption',
+      tooltip: '题注',
       icon: CaptionIcon(),
       run(ctx) {
         const block = ctx.getCurrentBlockByType(ImageBlockComponent);
@@ -186,7 +186,7 @@ const builtinSurfaceToolbarConfig = {
     },
     {
       id: 'b.caption',
-      tooltip: 'Caption',
+      tooltip: '题注',
       icon: CaptionIcon(),
       run(ctx) {
         const block = ctx.getCurrentBlockByType(ImageEdgelessBlockComponent);

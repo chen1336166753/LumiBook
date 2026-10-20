@@ -205,7 +205,7 @@ test('should preview PDF in embed view', async ({ page }) => {
     await inlineLink.hover();
 
     // Edits title
-    await toolbar.getByRole('button', { name: 'Edit' }).click();
+    await toolbar.getByRole('button', { name: '编辑描述' }).click();
 
     // Title alias
     await page.keyboard.type('PDF embed preview');

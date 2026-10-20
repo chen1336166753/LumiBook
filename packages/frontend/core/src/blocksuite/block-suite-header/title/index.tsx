@@ -45,7 +45,7 @@ export const BlocksuiteHeaderTitle = (props: BlockSuiteHeaderTitleProps) => {
       onChange={onChange}
       editable={!isSharedMode && canEdit}
       exitible={true}
-      placeholder="Untitled"
+      placeholder="未命名"
       data-testid="title-edit-button"
       handleRef={inputHandleRef}
       inputAttrs={inputAttrs}

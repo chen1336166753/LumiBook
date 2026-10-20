@@ -42,7 +42,7 @@ export const SearchResults = ({
       {/* Doc Res */}
       {docs?.length ? (
         <div className={styles.resBlock} data-scroll>
-          <div className={styles.resBlockTitle}>Docs</div>
+          <div className={styles.resBlockTitle}>文档</div>
           <div className={styles.resBlockScrollContent}>
             <div className={styles.scrollDocsContent}>
               {docs.map(doc => (
@@ -56,7 +56,7 @@ export const SearchResults = ({
       {/* Collection Res */}
       {collections?.length ? (
         <div className={styles.resBlock}>
-          <div className={styles.resBlockTitle}>Collections</div>
+          <div className={styles.resBlockTitle}>合集</div>
           <div className={styles.resBlockListContent}>
             {collections.map(collection => (
               <UniversalSearchResultItem
@@ -73,7 +73,7 @@ export const SearchResults = ({
       {/* Tag Res */}
       {tags?.length ? (
         <div className={styles.resBlock}>
-          <div className={styles.resBlockTitle}>Tags</div>
+          <div className={styles.resBlockTitle}>标签</div>
           <div className={styles.resBlockListContent}>
             {tags.map(tag => (
               <UniversalSearchResultItem

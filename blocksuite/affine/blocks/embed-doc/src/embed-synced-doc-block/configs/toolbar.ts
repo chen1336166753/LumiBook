@@ -207,7 +207,7 @@ const conversionsActionGroup = {
 
 const captionAction = {
   id: 'd.caption',
-  tooltip: 'Caption',
+  tooltip: '题注',
   icon: CaptionIcon(),
   run(ctx) {
     const block = ctx.getCurrentBlockByType(EmbedSyncedDocBlockComponent);
@@ -240,7 +240,7 @@ const builtinToolbarConfig = {
             const slice = Slice.fromModels(ctx.store, [model]);
             ctx.clipboard
               .copySlice(slice)
-              .then(() => toast(ctx.host, 'Copied to clipboard'))
+              .then(() => toast(ctx.host, '复制到剪贴板'))
               .catch(console.error);
           },
         },

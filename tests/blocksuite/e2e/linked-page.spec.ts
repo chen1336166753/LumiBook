@@ -727,7 +727,7 @@ test.describe.skip('Customize linked doc title and description', () => {
     const toolbar = page.locator('affine-toolbar-widget editor-toolbar');
     await expect(toolbar).toBeVisible();
 
-    const editButton = toolbar.getByRole('button', { name: 'Edit' });
+    const editButton = toolbar.getByRole('button', { name: '编辑描述' });
     await editButton.click();
 
     await waitNextFrame(page, 200);
@@ -753,7 +753,7 @@ test.describe.skip('Customize linked doc title and description', () => {
     await expect(toolbar).toBeVisible();
 
     // original title button
-    const docTitle = toolbar.getByRole('button', { name: 'Doc title' });
+    const docTitle = toolbar.getByRole('button', { name: '文档标题' });
     await expect(docTitle).toHaveText('title0', { useInnerText: true });
 
     // reedit
@@ -762,7 +762,7 @@ test.describe.skip('Customize linked doc title and description', () => {
     await waitNextFrame(page, 200);
 
     // reset
-    await popup.getByRole('button', { name: 'Reset' }).click();
+    await popup.getByRole('button', { name: '重置' }).click();
 
     await waitNextFrame(page, 200);
 
@@ -801,7 +801,7 @@ test.describe.skip('Customize linked doc title and description', () => {
     await waitNextFrame(page, 200);
     const toolbar = page.locator('affine-toolbar-widget editor-toolbar');
 
-    let editButton = toolbar.getByRole('button', { name: 'Edit' });
+    let editButton = toolbar.getByRole('button', { name: '编辑描述' });
     await editButton.click();
 
     // title alias
@@ -839,17 +839,17 @@ test.describe.skip('Customize linked doc title and description', () => {
 
     await waitNextFrame(page, 200);
     const docTitleButton = toolbar.getByRole('button', {
-      name: 'Doc title',
+      name: '文档标题',
     });
     await expect(docTitleButton).toBeVisible();
 
-    editButton = toolbar.getByRole('button', { name: 'Edit' });
+    editButton = toolbar.getByRole('button', { name: '编辑描述' });
     await editButton.click();
 
     await waitNextFrame(page, 200);
     const editModal = page.locator('embed-card-edit-modal');
-    const resetButton = editModal.getByRole('button', { name: 'Reset' });
-    const saveButton = editModal.getByRole('button', { name: 'Save' });
+    const resetButton = editModal.getByRole('button', { name: '重置' });
+    const saveButton = editModal.getByRole('button', { name: '保存' });
 
     // clears aliases
     await resetButton.click();
@@ -907,7 +907,7 @@ test.describe.skip('Customize linked doc title and description', () => {
     await waitNextFrame(page, 200);
     const referencePopup = page.locator('.affine-reference-popover-container');
 
-    let editButton = referencePopup.getByRole('button', { name: 'Edit' });
+    let editButton = referencePopup.getByRole('button', { name: '编辑描述' });
     await editButton.click();
 
     // title alias
@@ -964,13 +964,13 @@ test.describe.skip('Customize linked doc title and description', () => {
     await syncedDocBlock.click();
 
     await waitNextFrame(page, 200);
-    editButton = cardToolbar.getByRole('button', { name: 'Edit' });
+    editButton = cardToolbar.getByRole('button', { name: '编辑描述' });
     await editButton.click();
 
     await waitNextFrame(page, 200);
     const editModal = page.locator('embed-card-edit-modal');
-    const cancelButton = editModal.getByRole('button', { name: 'Cancel' });
-    const saveButton = editModal.getByRole('button', { name: 'Save' });
+    const cancelButton = editModal.getByRole('button', { name: '取消' });
+    const saveButton = editModal.getByRole('button', { name: '保存' });
 
     // closes edit-model
     await cancelButton.click();
@@ -1031,11 +1031,11 @@ test.describe.skip('Customize linked doc title and description', () => {
 
     await waitNextFrame(page);
 
-    await toolbar.getByRole('button', { name: 'Edit' }).click();
+    await toolbar.getByRole('button', { name: '编辑描述' }).click();
 
     await waitNextFrame(page);
     const editModal = page.locator('embed-card-edit-modal');
-    const saveButton = editModal.getByRole('button', { name: 'Save' });
+    const saveButton = editModal.getByRole('button', { name: '保存' });
 
     // title alias
     await type(page, 'page0-title0');

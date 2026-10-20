@@ -22,7 +22,7 @@ export function getCodeBlock(page: Page) {
   const codeToolbar = page.locator('affine-code-toolbar');
 
   const copyButton = codeToolbar.getByRole('button', { name: 'Copy code' });
-  const captionButton = codeToolbar.getByRole('button', { name: 'Caption' });
+  const captionButton = codeToolbar.getByRole('button', { name: '题注' });
   const moreButton = codeToolbar.getByRole('button', { name: 'More' });
 
   const menu = page.locator('.more-popup-menu');

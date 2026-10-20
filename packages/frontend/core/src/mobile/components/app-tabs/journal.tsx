@@ -25,7 +25,7 @@ export const AppTabJournal = ({ tab }: AppTabCustomFCProps) => {
   const Icon = journalDate ? JournalIcon : TodayIcon;
 
   return (
-    <TabItem onClick={handleOpenToday} id={tab.key} label="Journal">
+    <TabItem onClick={handleOpenToday} id={tab.key} label="日记">
       <Icon />
     </TabItem>
   );

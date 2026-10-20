@@ -122,7 +122,7 @@ const WithQueryList = () => {
 
   return (
     <SearchResults
-      title="Search result"
+      title="搜索结果"
       docs={docs}
       collections={collectionList}
       tags={tagList}
@@ -175,7 +175,7 @@ export const Component = () => {
             autoFocus={!searchInput}
             value={searchInput}
             onInput={onSearch}
-            placeholder="Search Docs, Collections"
+            placeholder="搜索文档、合集"
           />
           <NavigationBackButton>
             <Button

@@ -179,28 +179,28 @@ export class ReferencePopup extends SignalWatcher(
           <input
             id="alias-title"
             type="text"
-            placeholder="Add a custom title"
+            placeholder="添加自定义标题"
             .value=${live(this.title$.value)}
             @input=${this._updateTitle}
           />
           <editor-icon-button
-            aria-label="Reset"
+            aria-label="重置"
             class="reset"
             .iconContainerPadding=${4}
-            .tooltip=${'Reset'}
+            .tooltip=${'重置'}
             @click=${this._onReset}
           >
             ${ResetIcon({ width: '16px', height: '16px' })}
           </editor-icon-button>
           <editor-toolbar-separator></editor-toolbar-separator>
           <editor-icon-button
-            aria-label="Save"
+            aria-label="保存"
             class="save"
             .active=${true}
             @click=${this._onSave}
           >
             ${DoneIcon({ width: '16px', height: '16px' })}
-            <span class="label">Save</span>
+            <span class="label">保存</span>
           </editor-icon-button>
         </div>
       </div>

@@ -63,7 +63,7 @@ const previewAction = {
 
 const captionAction = {
   id: 'd.caption',
-  tooltip: 'Caption',
+  tooltip: '题注',
   icon: CaptionIcon(),
   run(ctx) {
     const block = ctx.getCurrentBlockByType(BookmarkBlockComponent);
