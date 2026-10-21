@@ -278,7 +278,7 @@ function createToolbarMoreMenuConfigV2(baseUrl?: string) {
         actions: [
           {
             id: 'copy-as-image',
-            label: 'Copy as Image',
+            label: '复制为图片',
             icon: CopyAsImgaeIcon(),
             when: ({ isEdgelessMode, gfx, flags }) =>
               !flags.isHovering() &&
@@ -714,7 +714,7 @@ function createSurfaceRefToolbarConfig(baseUrl?: string): ToolbarModuleConfig {
           return html`${keyed(
             surfaceRefBlock,
             html`<editor-menu-button
-              aria-label="Open"
+              aria-label="打开"
               .contentPadding=${'8px'}
               .button=${html`<editor-icon-button
                 .iconSize=${'16px'}
@@ -750,7 +750,7 @@ function createSurfaceRefToolbarConfig(baseUrl?: string): ToolbarModuleConfig {
         actions: [
           {
             id: 'copy-link-to-surface-ref',
-            label: 'Copy original link',
+            label: '复制原始链接',
             icon: LinkIcon(),
             when: ctx =>
               !!ctx.getCurrentBlockByType(SurfaceRefBlockComponent)
@@ -1049,7 +1049,7 @@ const embedIframeToolbarConfig = {
       actions: [
         {
           id: 'copy-link',
-          tooltip: 'Copy original link',
+          tooltip: '复制原始链接',
           icon: CopyIcon(),
           run(ctx) {
             const model = ctx.getCurrentBlockByType(

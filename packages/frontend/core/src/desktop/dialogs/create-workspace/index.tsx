@@ -155,8 +155,8 @@ const CustomConfirmButton = ({
     } catch (e) {
       console.error(e);
       notify.error({
-        title: 'Failed to create workspace',
-        message: 'please try again later.',
+        title: '创建工作区失败',
+        message: '请稍后再试。',
       });
     } finally {
       setLoading(false);

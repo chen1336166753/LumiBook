@@ -1,5 +1,4 @@
 import { LocalWorkspaceIcon, Logo1Icon } from '@blocksuite/icons/rc';
-import { Button } from '@lumibook/component/ui/button';
 import { WorkspaceDialogService } from '@lumibook/core/modules/dialogs';
 import { appIconMap, appNames } from '@lumibook/core/utils/channel';
 import { Trans, useI18n } from '@lumibook/i18n';
@@ -18,9 +17,6 @@ interface OpenAppProps {
   mode?: 'auth' | 'open-doc'; // default to 'auth'
 }
 const channel = BUILD_CONFIG.appBuildType;
-const url =
-  'https://github.com/chen1336166753/LumiBook/releases' +
-  (channel !== 'stable' ? '/beta-canary' : '');
 
 export const OpenInAppPage = ({
   urlToOpen,
@@ -31,10 +27,6 @@ export const OpenInAppPage = ({
   urlToOpen ??= getOpenUrlInDesktopAppLink(window.location.href, true);
   const workspaceDialogService = useServiceOptional(WorkspaceDialogService);
   const t = useI18n();
-
-  const openDownloadLink = useCallback(() => {
-    open(url, '_blank');
-  }, []);
 
   const appIcon = appIconMap[channel];
   const appName = appNames[channel];
@@ -65,36 +57,6 @@ export const OpenInAppPage = ({
           <Logo1Icon width={24} height={24} />
         </a>
 
-        <div className={styles.topNavLinks}>
-          <a
-            href="https://affine.pro"
-            target="_blank"
-            rel="noreferrer"
-            className={styles.topNavLink}
-          >
-            Official Website
-          </a>
-          <a
-            href="https://github.com/chen1336166753/LumiBook"
-            target="_blank"
-            rel="noreferrer"
-            className={styles.topNavLink}
-          >
-            Blog
-          </a>
-          <a
-            href="https://github.com/chen1336166753/LumiBook"
-            target="_blank"
-            rel="noreferrer"
-            className={styles.topNavLink}
-          >
-            Contact us
-          </a>
-        </div>
-
-        <Button onClick={openDownloadLink}>
-          {t['com.affine.auth.open.affine.download-app']()}
-        </Button>
       </div>
 
       <div className={styles.centerContent}>

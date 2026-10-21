@@ -83,7 +83,7 @@ export const IconEditor = ({
         variant={triggerVariant}
         className={clsx(styles.iconPicker, triggerClassName)}
         data-icon-type={icon?.type}
-        aria-label={icon ? 'Change Icon' : 'Select Icon'}
+        aria-label={icon ? '更换图标' : '选择图标'}
         title={icon ? 'Change Icon' : 'Select Icon'}
         contentClassName={styles.iconContent}
       >

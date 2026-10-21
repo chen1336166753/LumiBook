@@ -40,11 +40,11 @@ export const UserAvatar = () => {
       try {
         track.$.settingsPanel.accountSettings.uploadAvatar();
         await session.uploadAvatar(file);
-        notify.success({ title: 'Update user avatar success' });
+        notify.success({ title: '头像更新成功' });
       } catch (e) {
         // TODO(@catsjuice): i18n
         notify.error({
-          title: 'Update user avatar failed',
+          title: '头像更新失败',
           message: String(e),
         });
       }
@@ -100,7 +100,7 @@ export const AvatarAndName = () => {
       await session.updateLabel(input);
     } catch (e) {
       notify.error({
-        title: 'Failed to update user name.',
+        title: '更新用户名失败。',
         message: String(e),
       });
     }

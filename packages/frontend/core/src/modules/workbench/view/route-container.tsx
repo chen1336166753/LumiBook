@@ -35,7 +35,7 @@ const ToggleButton = ({
       className={className}
       data-show={show}
       data-testid="right-sidebar-toggle"
-      tooltip="Open sidebar"
+      tooltip="打开侧栏"
     >
       <RightSidebarIcon />
     </IconButton>

@@ -247,7 +247,7 @@ export const FindInPagePopup = () => {
                   <span>{result?.matches || 0}</span>
                 </>
               ) : value.length ? (
-                <span>No matches</span>
+                <span>暂无匹配项</span>
               ) : null}
             </div>
           </div>

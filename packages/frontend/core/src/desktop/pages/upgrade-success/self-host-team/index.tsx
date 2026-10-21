@@ -61,7 +61,7 @@ const Success = ({ licenseKey }: { licenseKey: string | null }) => {
 
   const onCopy = useCallback(() => {
     if (!licenseKey) {
-      notify.error({ title: 'Copy failed, please try again later' });
+      notify.error({ title: '复制失败，请稍后再试' });
       return;
     }
     copyTextToClipboard(licenseKey)
@@ -74,7 +74,7 @@ const Success = ({ licenseKey }: { licenseKey: string | null }) => {
       })
       .catch(err => {
         console.error(err);
-        notify.error({ title: 'Copy failed, please try again later' });
+        notify.error({ title: '复制失败，请稍后再试' });
       });
   }, [licenseKey, t]);
 

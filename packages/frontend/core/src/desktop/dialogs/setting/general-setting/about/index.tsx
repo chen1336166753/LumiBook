@@ -13,7 +13,6 @@ import { useServices } from '@lumibook/infra';
 import { useCallback } from 'react';
 
 import { useAppSettingHelper } from '../../../../../components/hooks/affine/use-app-setting-helper';
-import { relatedLinks } from './config';
 import * as styles from './style.css';
 import { UpdateCheckSection } from './update-check-section';
 
@@ -114,44 +113,6 @@ export const AboutAffine = () => {
             onChange={onSwitchTelemetry}
           />
         </SettingRow>
-      </SettingWrapper>
-      <SettingWrapper title={t['com.affine.aboutLumiBook.contact.title']()}>
-        <a
-          className={styles.link}
-          rel="noreferrer"
-          href="https://affine.pro"
-          target="_blank"
-        >
-          {t['com.affine.aboutLumiBook.contact.website']()}
-          <OpenInNewIcon className="icon" />
-        </a>
-        <a
-          className={styles.link}
-          rel="noreferrer"
-          href="https://github.com/chen1336166753/LumiBook"
-          target="_blank"
-        >
-          {t['com.affine.aboutLumiBook.contact.community']()}
-          <OpenInNewIcon className="icon" />
-        </a>
-      </SettingWrapper>
-      <SettingWrapper title={t['com.affine.aboutLumiBook.community.title']()}>
-        <div className={styles.communityWrapper}>
-          {relatedLinks.map(({ icon, title, link }) => {
-            return (
-              <div
-                className={styles.communityItem}
-                onClick={() => {
-                  urlService.openPopupWindow(link);
-                }}
-                key={title}
-              >
-                {icon}
-                <p>{title}</p>
-              </div>
-            );
-          })}
-        </div>
       </SettingWrapper>
       <SettingWrapper title={t['com.affine.aboutLumiBook.legal.title']()}>
         <a

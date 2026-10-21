@@ -191,7 +191,7 @@ export class AIErrorWrapper extends SignalWatcher(WithDisposable(LitElement)) {
   accessor errorMessage: string = '';
 
   @property({ attribute: false })
-  accessor actionText: string = 'Contact us';
+  accessor actionText: string = '联系我们';
 
   @property({ attribute: false })
   accessor actionTooltip: string = '';
@@ -208,16 +208,16 @@ export class AIErrorWrapper extends SignalWatcher(WithDisposable(LitElement)) {
 
 const PaymentRequiredErrorRenderer = (host?: EditorHost | null) => html`
   <ai-error-wrapper
-    .text=${"You've reached the current usage cap for 识光 AI. You can subscribe to 识光 AI(with free 7-day-trial) to continue the AI experience!"}
-    .actionText=${'Upgrade'}
+    .text=${'您已达到 识光 AI 的当前使用额度上限。您可以订阅 识光 AI（含 7 天免费试用）以继续使用 AI 体验！'}
+    .actionText=${'升级'}
     .onClick=${() => AIAppEvents.requestUpgradePlan.next({ host })}
   ></ai-error-wrapper>
 `;
 
 const LoginRequiredErrorRenderer = (host?: EditorHost | null) => html`
   <ai-error-wrapper
-    .text=${'You need to login to 识光 Cloud to continue using 识光 AI.'}
-    .actionText=${'Login'}
+    .text=${'需要登录 识光 Cloud 才能继续使用 识光 AI。'}
+    .actionText=${'登录'}
     .onClick=${() => AIAppEvents.requestLogin.next({ host })}
   ></ai-error-wrapper>
 `;
@@ -232,7 +232,7 @@ type ErrorProps = {
 };
 
 const generalErrorText =
-  'An error occurred, If this issue persists please let us know.';
+  '发生了一个错误，如果该问题持续存在，请告诉我们。';
 
 const GeneralErrorRenderer = (props: ErrorProps = {}) => {
   const contactSupport = () => {
@@ -243,7 +243,7 @@ const GeneralErrorRenderer = (props: ErrorProps = {}) => {
     .text=${props.text ?? generalErrorText}
     .errorMessage=${props.errorMessage ?? ''}
     .showDetailPanel=${!!props.errorMessage}
-    .actionText=${props.actionText ?? 'Contact us'}
+    .actionText=${props.actionText ?? '联系我们'}
     .actionTooltip=${props.actionTooltip ?? 'support@toeverything.info'}
     .onClick=${props.onClick ?? contactSupport}
     .showAction=${props.showAction ?? true}

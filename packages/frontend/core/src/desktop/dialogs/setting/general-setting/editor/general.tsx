@@ -223,7 +223,7 @@ const FontMenuItems = ({ onSelect }: { onSelect: (font: string) => void }) => {
                 )}
               />
             ) : (
-              <div className={styles.notFound}>No results found.</div>
+              <div className={styles.notFound}>没有找到结果。</div>
             )}
           </Scrollable.Viewport>
           <Scrollable.Scrollbar />

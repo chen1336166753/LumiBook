@@ -342,7 +342,7 @@ export const ModalInner = forwardRef<HTMLDivElement, ModalProps>(
                     <IconButton
                       size="20"
                       className={clsx(styles.closeButton, closeButtonClassName)}
-                      aria-label="Close"
+                      aria-label="关闭"
                       data-testid="modal-close-button"
                       {...otherCloseButtonProps}
                     >

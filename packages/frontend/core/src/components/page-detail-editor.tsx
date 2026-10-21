@@ -63,7 +63,7 @@ export const PageDetailEditor = ({
       {docMeta?.headerImage && (
         <img
           src={docMeta.headerImage}
-          alt="Document header"
+          alt="文档头部"
           style={{
             width: '100%',
             maxHeight: 240,

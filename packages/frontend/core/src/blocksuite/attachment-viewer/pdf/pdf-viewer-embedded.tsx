@@ -225,7 +225,7 @@ export function PDFViewerEmbedded({ model }: AttachmentViewerProps) {
             icon={<ArrowUpSmallIcon />}
             className={styles.pdfControlButton}
             onDoubleClick={stopPropagation}
-            aria-label="Prev"
+            aria-label="上一页"
             {...navigator.prev}
           />
           <IconButton
@@ -233,7 +233,7 @@ export function PDFViewerEmbedded({ model }: AttachmentViewerProps) {
             icon={<ArrowDownSmallIcon />}
             className={styles.pdfControlButton}
             onDoubleClick={stopPropagation}
-            aria-label="Next"
+            aria-label="下一页"
             {...navigator.next}
           />
           <IconButton

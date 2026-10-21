@@ -44,7 +44,7 @@ export const OpenInAppCard = () => {
       data-hidden={!show}
     >
       <div className={styles.appIconCol}>
-        <img src={appIcon} alt="app icon" width={48} height={48} />
+        <img src={appIcon} alt="应用图标" width={48} height={48} />
       </div>
       <div className={styles.contentCol}>
         <div className={styles.titleRow}>

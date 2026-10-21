@@ -1,7 +1,6 @@
 import { DisposableGroup } from '@blocksuite/affine/global/disposable';
 import { RefNodeSlotsProvider } from '@blocksuite/affine/inlines/reference';
 import { type DocMode, DocModes } from '@blocksuite/affine/model';
-import { Logo1Icon } from '@blocksuite/icons/rc';
 import { Scrollable, uniReactRoot } from '@lumibook/component';
 import type { AffineEditorContainer } from '@lumibook/core/blocksuite/block-suite-editor';
 import { EditorOutlineViewer } from '@lumibook/core/blocksuite/outline-viewer';
@@ -9,7 +8,7 @@ import { useActiveBlocksuiteEditor } from '@lumibook/core/components/hooks/use-b
 import { useNavigateHelper } from '@lumibook/core/components/hooks/use-navigate-helper';
 import { PageDetailEditor } from '@lumibook/core/components/page-detail-editor';
 import { AppContainer } from '@lumibook/core/desktop/components/app-container';
-import { AuthService, ServerService } from '@lumibook/core/modules/cloud';
+import { ServerService } from '@lumibook/core/modules/cloud';
 import { type Doc, DocsService } from '@lumibook/core/modules/doc';
 import {
   type Editor,
@@ -35,7 +34,6 @@ import { useLocation } from 'react-router-dom';
 import { filter, firstValueFrom, timeout } from 'rxjs';
 
 import { PageNotFound } from '../../404';
-import { ShareFooter } from './share-footer';
 import { ShareHeader } from './share-header';
 import * as styles from './share-page.css';
 import {
@@ -397,9 +395,6 @@ const SharePageInner = ({
                   )}
                 >
                   <PageDetailEditor onLoad={onEditorLoad} readonly />
-                  {currentPublishMode === 'page' && !BUILD_CONFIG.isElectron ? (
-                    <ShareFooter />
-                  ) : null}
                 </Scrollable.Viewport>
                 <Scrollable.Scrollbar />
               </Scrollable.Root>
@@ -407,7 +402,6 @@ const SharePageInner = ({
                 editor={editorContainer?.host ?? null}
                 show={currentPublishMode === 'page'}
               />
-              {!BUILD_CONFIG.isElectron && <SharePageFooter />}
             </div>
           </div>
           <PeekViewManagerModal />
@@ -415,30 +409,5 @@ const SharePageInner = ({
         </FrameworkScope>
       </FrameworkScope>
     </FrameworkScope>
-  );
-};
-
-const SharePageFooter = () => {
-  const t = useI18n();
-  const editorService = useService(EditorService);
-  const isPresent = useLiveData(editorService.editor.isPresenting$);
-  const authService = useService(AuthService);
-  const loginStatus = useLiveData(authService.session.status$);
-
-  if (isPresent || loginStatus === 'authenticated') {
-    return null;
-  }
-  return (
-    <a
-      href="https://affine.pro"
-      target="_blank"
-      className={styles.link}
-      rel="noreferrer"
-    >
-      <span className={styles.linkText}>
-        {t['com.affine.share-page.footer.built-with']()}
-      </span>
-      <Logo1Icon fontSize={20} />
-    </a>
   );
 };

@@ -117,8 +117,8 @@ export const SignInStep = ({
         }));
       } else {
         notify.error({
-          title: 'Failed to sign in',
-          message: 'This email is not available for sign in.',
+          title: '登录失败',
+          message: '此邮箱不可用于登录。',
         });
       }
     } catch (err: any) {
@@ -126,7 +126,7 @@ export const SignInStep = ({
 
       // TODO(@eyhn): better error handling
       notify.error({
-        title: 'Failed to sign in',
+        title: '登录失败',
         message: err.message,
       });
     }
@@ -212,7 +212,7 @@ export const SignInStep = ({
             </div>
             <div className={style.skipDivider}>
               <div className={style.skipDividerLine} />
-              <span className={style.skipDividerText}>or</span>
+              <span className={style.skipDividerText}>或</span>
               <div className={style.skipDividerLine} />
             </div>
             <div className={style.skipSection}>

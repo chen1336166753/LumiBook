@@ -109,15 +109,6 @@ export function copyAsImage(std: BlockStdScope) {
     notify.error({
       title: I18n.t('com.affine.copy.asImage.notAvailable.title'),
       message: I18n.t('com.affine.copy.asImage.notAvailable.message'),
-      actions: [
-        {
-          key: 'download',
-          label: I18n.t('com.affine.copy.asImage.notAvailable.action'),
-          onClick: () => {
-            window.open('https://github.com/chen1336166753/LumiBook/releases');
-          },
-        },
-      ],
     });
     return;
   }
@@ -219,7 +210,7 @@ export function copyAsImage(std: BlockStdScope) {
 export function createCopyAsPngMenuItem(framework: FrameworkProvider) {
   return {
     icon: CopyAsImgaeIcon({ width: '20', height: '20' }),
-    label: 'Copy as Image',
+    label: '复制为图片',
     type: 'copy-as-image',
     when: (ctx: MenuContext) => {
       if (ctx.isEmpty()) return false;

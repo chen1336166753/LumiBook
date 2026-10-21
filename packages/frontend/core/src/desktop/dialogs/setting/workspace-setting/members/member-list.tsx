@@ -177,7 +177,7 @@ const MemberItem = ({
       })
       .catch(error => {
         notify.error({
-          title: 'Operation failed',
+          title: '操作失败',
           message: error.message,
         });
       });

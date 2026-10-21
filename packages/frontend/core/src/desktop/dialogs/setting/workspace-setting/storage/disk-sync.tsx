@@ -55,7 +55,7 @@ export const DiskSyncPanel = ({ workspaceId }: { workspaceId: string }) => {
       return;
     }
     notify.success({
-      title: 'Disk sync folder updated',
+      title: '磁盘同步文件夹已更新',
     });
   }, [desktopApi.handler.dialog, enabled, folder, workspaceId]);
 
@@ -73,19 +73,19 @@ export const DiskSyncPanel = ({ workspaceId }: { workspaceId: string }) => {
   return (
     <>
       <SettingRow
-        name={'Markdown Folder Sync (Experimental)'}
-        desc={'Sync pages with Markdown files in a local folder.'}
+        name={'Markdown 文件夹同步（实验性）'}
+        desc={'将页面与本地文件夹中的 Markdown 文件同步。'}
       >
         <Switch
-          aria-label="Disk Markdown Sync"
+          aria-label="磁盘 Markdown 同步"
           data-testid="disk-sync-toggle"
           checked={!!enabled}
           onChange={onToggle}
         />
       </SettingRow>
       <SettingRow
-        name={'Sync Folder'}
-        desc={folder ?? 'No folder selected'}
+        name={'同步文件夹'}
+        desc={folder ?? '尚未选择文件夹'}
         spreadCol={false}
       >
         <div style={{ display: 'flex', gap: 8, marginTop: 8 }}>
@@ -94,7 +94,7 @@ export const DiskSyncPanel = ({ workspaceId }: { workspaceId: string }) => {
             disabled={!enabled}
             onClick={onChooseFolder}
           >
-            Choose Folder
+            选择文件夹
           </Button>
           {folder ? (
             <Button
@@ -102,15 +102,15 @@ export const DiskSyncPanel = ({ workspaceId }: { workspaceId: string }) => {
               disabled={!enabled}
               onClick={onClearFolder}
             >
-              Clear
+              清空
             </Button>
           ) : null}
         </div>
       </SettingRow>
       {enabled && folder ? (
         <SettingRow
-          name={'Review Markdown changes'}
-          desc={`Changes to existing files are saved in ${folder}/.affine-sync/candidates. Review a candidate, then copy it over the Markdown file with the same id to accept it.`}
+          name={'查看 Markdown 变更'}
+          desc={`对已有文件的变更会保存在 ${folder}/.affine-sync/candidates。请检查候选文件，然后用同名 Markdown 文件覆盖以接受变更。`}
           spreadCol={false}
         />
       ) : null}

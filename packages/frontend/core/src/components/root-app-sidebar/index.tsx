@@ -4,12 +4,10 @@ import {
   AiOutlineIcon,
   AllDocsIcon,
   ImportIcon,
-  JournalIcon,
   SettingsIcon,
 } from '@blocksuite/icons/rc';
 import {
   AddPageButton,
-  AppDownloadButton,
   AppSidebar,
   MenuItem,
   MenuLinkItem,
@@ -17,7 +15,6 @@ import {
   SidebarContainer,
   SidebarScrollableContainer,
 } from '@lumibook/core/modules/app-sidebar/views';
-import { ExternalMenuLinkItem } from '@lumibook/core/modules/app-sidebar/views/menu-item/external-menu-link-item';
 import { AuthService, ServerService } from '@lumibook/core/modules/cloud';
 import { WorkspaceDialogService } from '@lumibook/core/modules/dialogs';
 import { FeatureFlagService } from '@lumibook/core/modules/feature-flag';
@@ -246,16 +243,11 @@ export const RootAppSidebar = memo((): ReactElement => {
           </MenuItem>
           <InviteMembersButton />
           <TemplateDocEntrance />
-          <ExternalMenuLinkItem
-            href="https://github.com/chen1336166753/LumiBook?tag=Release+Note"
-            icon={<JournalIcon />}
-            label={t['com.affine.app-sidebar.learn-more']()}
-          />
         </CollapsibleSection>
       </SidebarScrollableContainer>
       <SidebarContainer className={bottomContainer}>
         <SidebarAudioPlayer />
-        {BUILD_CONFIG.isElectron ? <UpdaterButton /> : <AppDownloadButton />}
+        {BUILD_CONFIG.isElectron ? <UpdaterButton /> : null}
       </SidebarContainer>
     </AppSidebar>
   );

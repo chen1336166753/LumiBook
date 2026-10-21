@@ -147,45 +147,45 @@ const imageBlockShowWhen = (chain: Chain<InitCommandCtx>) => {
 };
 
 const EditTextAIGroup: AIItemGroupConfig = {
-  name: 'edit text',
+  name: '编辑文本',
   items: [
     {
-      name: 'Translate to',
+      name: '翻译为',
       testId: 'action-translate',
       icon: LanguageIcon(),
       showWhen: textBlockShowWhen,
       subItem: translateSubItem,
     },
     {
-      name: 'Change tone to',
+      name: '调整语气为',
       testId: 'action-change-tone',
       icon: ToneIcon(),
       showWhen: textBlockShowWhen,
       subItem: toneSubItem,
     },
     {
-      name: 'Improve writing',
+      name: '改进写作',
       testId: 'action-improve-writing',
       icon: ImproveWritingIcon(),
       showWhen: textBlockShowWhen,
       handler: actionToHandler('improveWriting', AIStarIconWithAnimation),
     },
     {
-      name: 'Make it longer',
+      name: '扩写',
       testId: 'action-make-it-longer',
       icon: LongerIcon(),
       showWhen: textBlockShowWhen,
       handler: actionToHandler('makeLonger', AIStarIconWithAnimation),
     },
     {
-      name: 'Make it shorter',
+      name: '缩写',
       testId: 'action-make-it-shorter',
       icon: ShorterIcon(),
       showWhen: textBlockShowWhen,
       handler: actionToHandler('makeShorter', AIStarIconWithAnimation),
     },
     {
-      name: 'Continue writing',
+      name: '续写',
       testId: 'action-continue-writing',
       icon: PenIcon(),
       showWhen: textBlockShowWhen,
@@ -195,38 +195,38 @@ const EditTextAIGroup: AIItemGroupConfig = {
 };
 
 const DraftFromTextAIGroup: AIItemGroupConfig = {
-  name: 'draft from text',
+  name: '按文本起草',
   items: [
     {
-      name: 'Write an article about this',
+      name: '就此写一篇文章',
       testId: 'action-write-article',
       icon: PenIcon(),
       showWhen: textBlockShowWhen,
       handler: actionToHandler('writeArticle', AIPenIconWithAnimation),
     },
     {
-      name: 'Write a tweet about this',
+      name: '就此写一条推文',
       testId: 'action-write-twitter-post',
       icon: PenIcon(),
       showWhen: textBlockShowWhen,
       handler: actionToHandler('writeTwitterPost', AIPenIconWithAnimation),
     },
     {
-      name: 'Write a poem about this',
+      name: '就此写一首诗',
       testId: 'action-write-poem',
       icon: PenIcon(),
       showWhen: textBlockShowWhen,
       handler: actionToHandler('writePoem', AIPenIconWithAnimation),
     },
     {
-      name: 'Write a blog post about this',
+      name: '就此写一篇博客',
       testId: 'action-write-blog-post',
       icon: PenIcon(),
       showWhen: textBlockShowWhen,
       handler: actionToHandler('writeBlogPost', AIPenIconWithAnimation),
     },
     {
-      name: 'Brainstorm ideas about this',
+      name: '就此头脑风暴',
       testId: 'action-brainstorm',
       icon: PenIcon(),
       showWhen: textBlockShowWhen,
@@ -236,10 +236,10 @@ const DraftFromTextAIGroup: AIItemGroupConfig = {
 };
 
 const ReviewImageAIGroup: AIItemGroupConfig = {
-  name: 'review image',
+  name: '解读图片',
   items: [
     {
-      name: 'Explain this image',
+      name: '解释这张图片',
       testId: 'action-explain-image',
       icon: PenIcon(),
       showWhen: imageBlockShowWhen,
@@ -249,17 +249,17 @@ const ReviewImageAIGroup: AIItemGroupConfig = {
 };
 
 const ReviewCodeAIGroup: AIItemGroupConfig = {
-  name: 'review code',
+  name: '检查代码',
   items: [
     {
-      name: 'Explain this code',
+      name: '解释这段代码',
       testId: 'action-explain-code',
       icon: ExplainIcon(),
       showWhen: codeBlockShowWhen,
       handler: actionToHandler('explainCode', AIStarIconWithAnimation),
     },
     {
-      name: 'Check code error',
+      name: '检查代码错误',
       testId: 'action-check-code-error',
       icon: ExplainIcon(),
       showWhen: codeBlockShowWhen,
@@ -269,17 +269,17 @@ const ReviewCodeAIGroup: AIItemGroupConfig = {
 };
 
 const ReviewTextAIGroup: AIItemGroupConfig = {
-  name: 'review text',
+  name: '校对文本',
   items: [
     {
-      name: 'Fix spelling',
+      name: '修正拼写',
       testId: 'action-fix-spelling',
       icon: DoneIcon(),
       showWhen: textBlockShowWhen,
       handler: actionToHandler('fixSpelling', AIStarIconWithAnimation),
     },
     {
-      name: 'Fix grammar',
+      name: '修正语法',
       testId: 'action-fix-grammar',
       icon: DoneIcon(),
       showWhen: textBlockShowWhen,
@@ -287,7 +287,7 @@ const ReviewTextAIGroup: AIItemGroupConfig = {
     },
 
     {
-      name: 'Explain selection',
+      name: '解释选中内容',
       testId: 'action-explain-selection',
       icon: SelectionIcon(),
       showWhen: textBlockShowWhen,
@@ -297,17 +297,17 @@ const ReviewTextAIGroup: AIItemGroupConfig = {
 };
 
 const GenerateFromTextAIGroup: AIItemGroupConfig = {
-  name: 'generate from text',
+  name: '从文本生成',
   items: [
     {
-      name: 'Summarize',
+      name: '总结',
       testId: 'action-summarize',
       icon: PenIcon(),
       showWhen: textBlockShowWhen,
       handler: actionToHandler('summary', AIPenIconWithAnimation),
     },
     {
-      name: 'Generate headings',
+      name: '生成标题',
       testId: 'action-generate-headings',
       icon: PenIcon(),
       beta: true,
@@ -329,28 +329,28 @@ const GenerateFromTextAIGroup: AIItemGroupConfig = {
       },
     },
     {
-      name: 'Generate outline',
+      name: '生成大纲',
       testId: 'action-generate-outline',
       icon: PenIcon(),
       showWhen: textBlockShowWhen,
       handler: actionToHandler('writeOutline', AIPenIconWithAnimation),
     },
     {
-      name: 'Generate an image',
+      name: '生成图片',
       testId: 'action-generate-image',
       icon: ImageIcon(),
       showWhen: textBlockShowWhen,
       handler: actionToHandler('createImage', AIImageIconWithAnimation),
     },
     {
-      name: 'Brainstorm ideas with mind map',
+      name: '用思维导图发散思路',
       testId: 'action-brainstorm-mindmap',
       icon: MindmapIcon(),
       showWhen: textBlockShowWhen,
       handler: actionToHandler('brainstormMindmap', AIPenIconWithAnimation),
     },
     {
-      name: 'Generate presentation',
+      name: '生成演示文稿',
       testId: 'action-generate-presentation',
       icon: PresentationIcon(),
       showWhen: textBlockShowWhen,
@@ -358,7 +358,7 @@ const GenerateFromTextAIGroup: AIItemGroupConfig = {
       beta: true,
     },
     {
-      name: 'Make it real',
+      name: '改为实现需求',
       testId: 'action-make-it-real',
       icon: MakeItRealIcon(),
       beta: true,
@@ -366,7 +366,7 @@ const GenerateFromTextAIGroup: AIItemGroupConfig = {
       handler: actionToHandler('makeItReal', MakeItRealIconWithAnimation),
     },
     {
-      name: 'Find actions',
+      name: '查找操作',
       testId: 'action-find-actions',
       icon: SearchIcon(),
       showWhen: textBlockShowWhen,
@@ -377,10 +377,10 @@ const GenerateFromTextAIGroup: AIItemGroupConfig = {
 };
 
 const OthersAIGroup: AIItemGroupConfig = {
-  name: 'Others',
+  name: '其他',
   items: [
     {
-      name: 'Continue in AI Chat',
+      name: '在 AI 对话中继续',
       testId: 'action-continue-with-ai',
       icon: CommentIcon(),
       handler: host => {
@@ -410,10 +410,10 @@ export const pageAIGroups: AIItemGroupConfig[] = [
 export function buildAIImageItemGroups(): AIItemGroupConfig[] {
   return [
     {
-      name: 'review image',
+      name: '解读图片',
       items: [
         {
-          name: 'Explain this image',
+          name: '解释这张图片',
           testId: 'action-explain-image',
           icon: ImageIcon(),
           showWhen: () => true,
@@ -427,10 +427,10 @@ export function buildAIImageItemGroups(): AIItemGroupConfig[] {
       ],
     },
     {
-      name: 'generate from text',
+      name: '从文本生成',
       items: [
         {
-          name: 'Generate an image',
+          name: '生成图片',
           testId: 'action-generate-image',
           icon: ImageIcon(),
           showWhen: () => true,
@@ -444,10 +444,10 @@ export function buildAIImageItemGroups(): AIItemGroupConfig[] {
       ],
     },
     {
-      name: 'touch up image',
+      name: '修饰图片',
       items: [
         {
-          name: 'Image processing',
+          name: '图像处理',
           testId: 'action-image-processing',
           icon: ImageIcon(),
           showWhen: () => true,
@@ -456,7 +456,7 @@ export function buildAIImageItemGroups(): AIItemGroupConfig[] {
           beta: true,
         },
         {
-          name: 'AI image filter',
+          name: 'AI 图片滤镜',
           testId: 'action-ai-image-filter',
           icon: ImproveWritingIcon(),
           showWhen: () => true,
@@ -465,7 +465,7 @@ export function buildAIImageItemGroups(): AIItemGroupConfig[] {
           beta: true,
         },
         {
-          name: 'Generate a caption',
+          name: '生成题注',
           testId: 'action-generate-caption',
           icon: PenIcon(),
           showWhen: () => true,
@@ -486,10 +486,10 @@ export function buildAIImageItemGroups(): AIItemGroupConfig[] {
 export function buildAICodeItemGroups(): AIItemGroupConfig[] {
   return [
     {
-      name: 'review code',
+      name: '检查代码',
       items: [
         {
-          name: 'Explain this code',
+          name: '解释这段代码',
           testId: 'action-explain-code',
           icon: ExplainIcon(),
           showWhen: () => true,
@@ -501,7 +501,7 @@ export function buildAICodeItemGroups(): AIItemGroupConfig[] {
           ),
         },
         {
-          name: 'Check code error',
+          name: '检查代码错误',
           testId: 'action-check-code-error',
           icon: ExplainIcon(),
           showWhen: () => true,

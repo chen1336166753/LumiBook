@@ -192,7 +192,7 @@ export class TypstPreview extends SignalWatcher(
           <pre
             class="typst-error-text"
             tabindex="0"
-            aria-label="Typst error message"
+            aria-label="Typst 错误信息"
           >
 ${this.errorMessage}</pre>
           <div class="typst-copy-row">

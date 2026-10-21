@@ -122,20 +122,20 @@ function toImportErrorState(error: unknown): ImportErrorState {
   if (error instanceof DOMException && error.name === 'AbortError') {
     return {
       code: 'cancelled',
-      message: 'Import cancelled',
+      message: '导入已取消',
       sourcePath,
     };
   }
   if (error instanceof Error) {
     return {
       code: error.name || 'import-error',
-      message: error.message || 'Unknown error occurred',
+      message: error.message || '发生了未知错误',
       sourcePath,
     };
   }
   return {
     code: 'unknown',
-    message: 'Unknown error occurred',
+    message: '发生了未知错误',
     sourcePath,
   };
 }
@@ -519,16 +519,7 @@ const ImportOptions = ({
         )}
       </div>
       <div className={style.importModalTip}>
-        {t['com.affine.import.modal.tip']()}{' '}
-        <a
-          className={style.link}
-          href={BUILD_CONFIG.discordUrl}
-          target="_blank"
-          rel="noreferrer"
-        >
-          Discord
-        </a>
-        .
+        {t['com.affine.import.modal.tip']()}
       </div>
     </>
   );
@@ -580,16 +571,7 @@ const SuccessStatus = ({
         {t['com.affine.import.status.success.title']()}
       </div>
       <p className={style.importStatusContent}>
-        {t['com.affine.import.status.success.message']()}{' '}
-        <a
-          className={style.link}
-          href={BUILD_CONFIG.discordUrl}
-          target="_blank"
-          rel="noreferrer"
-        >
-          Discord
-        </a>
-        .
+        {t['com.affine.import.status.success.message']()}
       </p>
       {warnings.length ? (
         <div className={style.importWarnings}>

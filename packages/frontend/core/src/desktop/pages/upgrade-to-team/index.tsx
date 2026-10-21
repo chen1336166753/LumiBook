@@ -383,7 +383,7 @@ const CreateWorkspaceDialog = ({
       name
     );
     notify.success({
-      title: 'Workspace Created',
+      title: '工作区已创建',
     });
     onSelect(newWorkspace.meta);
     onOpenChange(false);

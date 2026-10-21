@@ -19,7 +19,7 @@ export function useRegisterNavigationCommands() {
         category: 'affine:general',
         preconditionStrategy: PreconditionStrategy.Never,
         icon: 'none',
-        label: 'go back',
+        label: '后退',
         keyBinding: {
           binding: '$mod+[',
         },
@@ -36,7 +36,7 @@ export function useRegisterNavigationCommands() {
         category: 'affine:general',
         preconditionStrategy: PreconditionStrategy.Never,
         icon: 'none',
-        label: 'go forward',
+        label: '前进',
         keyBinding: {
           binding: '$mod+]',
         },

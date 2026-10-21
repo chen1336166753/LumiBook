@@ -44,17 +44,8 @@ export const ImportPage = ({
       <CloseIcon />
     </IconButton>
     <div className={importPageBodyStyle}>
-      <div className="title">Import</div>
-      <span>
-        识光 will gradually support more and more file types for import.&nbsp;
-        <a
-          href="https://github.com/chen1336166753/LumiBook"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Provide feedback.
-        </a>
-      </span>
+      <div className="title">导入</div>
+      <span>识光 会逐步支持更多文件类型的导入。</span>
     </div>
     <div className={importPageButtonContainerStyle}>
       <BlockCard
@@ -71,7 +62,7 @@ export const ImportPage = ({
         left={<NotionIcon width={20} height={20} />}
         title="Notion"
         right={
-          <Tooltip content={'Learn how to Import your Notion pages into 识光.'}>
+          <Tooltip content={'了解如何将 Notion 页面导入 识光。'}>
             <HelpIcon width={20} height={20} />
           </Tooltip>
         }
@@ -79,7 +70,7 @@ export const ImportPage = ({
       />
       <BlockCard
         left={<NewIcon width={20} height={20} />}
-        title="Coming soon..."
+        title="即将上线..."
         disabled
         onClick={importHtml}
       />

@@ -54,7 +54,7 @@ export const MemberOptions = ({
             })
             .catch(error => {
               notify.error({
-                title: 'Operation failed',
+                title: '操作失败',
                 message: error.message,
               });
             }),
@@ -94,7 +94,7 @@ export const MemberOptions = ({
       })
       .catch(error => {
         notify.error({
-          title: 'Operation failed',
+          title: '操作失败',
           message: error.message,
         });
       });
@@ -136,7 +136,7 @@ export const MemberOptions = ({
       })
       .catch(error => {
         notify.error({
-          title: 'Operation failed',
+          title: '操作失败',
           message: error.message,
         });
       });
@@ -159,7 +159,7 @@ export const MemberOptions = ({
       })
       .catch(error => {
         notify.error({
-          title: 'Operation failed',
+          title: '操作失败',
           message: error.message,
         });
       });

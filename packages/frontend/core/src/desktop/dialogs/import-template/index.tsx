@@ -175,10 +175,10 @@ const Dialog = ({
           })}
         </h6>
         {noWorkspace ? (
-          <p className={styles.desc}>A new workspace will be created.</p>
+          <p className={styles.desc}>将创建一个新的工作区。</p>
         ) : (
           <>
-            <p className={styles.desc}>Choose a workspace.</p>
+            <p className={styles.desc}>选择一个工作区。</p>
             <WorkspaceSelector
               workspaceMetadata={selectedWorkspace}
               onSelectWorkspace={handleSelectedWorkspace}

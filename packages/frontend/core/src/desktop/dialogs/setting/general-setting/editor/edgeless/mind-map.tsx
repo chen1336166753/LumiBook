@@ -20,19 +20,19 @@ import { EdgelessSnapshot } from './snapshot';
 const MINDMAP_STYLES = [
   {
     value: MindmapStyle.ONE,
-    name: 'Style 1',
+    name: '样式 1',
   },
   {
     value: MindmapStyle.TWO,
-    name: 'Style 2',
+    name: '样式 2',
   },
   {
     value: MindmapStyle.THREE,
-    name: 'Style 3',
+    name: '样式 3',
   },
   {
     value: MindmapStyle.FOUR,
-    name: 'Style 4',
+    name: '样式 4',
   },
 ];
 

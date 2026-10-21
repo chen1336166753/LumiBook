@@ -46,7 +46,7 @@ const RemoteWorkspaceStatus = ({ selfHosted }: { selfHosted?: boolean }) => {
   return (
     <>
       <Icon />
-      {selfHosted ? '识光' : 'Cloud'}
+      {selfHosted ? '识光' : '云端'}
     </>
   );
 };
@@ -55,7 +55,7 @@ const SyncingWorkspaceStatus = ({ progress }: { progress?: number }) => {
   return (
     <>
       <Loading progress={progress} speed={0} />
-      Syncing...
+      同步中...
     </>
   );
 };
@@ -64,7 +64,7 @@ const UnSyncWorkspaceStatus = () => {
   return (
     <>
       <UnsyncIcon />
-      Wait for upload
+      待上传
     </>
   );
 };
@@ -77,7 +77,7 @@ const LocalWorkspaceStatus = () => {
       ) : (
         <LocalWorkspaceIcon />
       )}
-      Local
+      本地
     </>
   );
 };
@@ -86,7 +86,7 @@ const OfflineStatus = () => {
   return (
     <>
       <NoNetworkIcon />
-      Offline
+      离线
     </>
   );
 };
@@ -124,26 +124,24 @@ const useSyncEngineSyncProgress = (meta: WorkspaceMetadata) => {
     (engineState.total - engineState.syncing) / engineState.total;
   const syncing = engineState.syncing > 0 || engineState.syncRetrying;
 
-  let content;
-  // TODO(@eyhn): add i18n
   if (workspace.flavour === 'local') {
     if (!BUILD_CONFIG.isElectron) {
-      content = 'This is a local demo workspace.';
+      content = '这是一个本地演示工作区。';
     } else {
-      content = 'Saved locally';
+      content = '已保存在本地';
     }
   } else if (!isOnline) {
-    content = 'Disconnected, please check your network connection';
+    content = '已断开连接，请检查网络连接';
   } else if (engineState.syncRetrying && engineState.syncErrorMessage) {
-    content = `${engineState.syncErrorMessage}, reconnecting.`;
+    content = `${engineState.syncErrorMessage}，正在重连。`;
   } else if (engineState.syncRetrying) {
-    content = 'Sync disconnected due to unexpected issues, reconnecting.';
+    content = '因异常问题导致同步断开，正在重连。';
   } else if (syncing) {
     content =
-      `Syncing with ${syncTarget}` +
-      (progress ? ` (${Math.floor(progress * 100)}%)` : '');
+      `正在与${syncTarget}同步` +
+      (progress ? `（${Math.floor(progress * 100)}%）` : '');
   } else {
-    content = `Synced with ${syncTarget}`;
+    content = `已与${syncTarget}同步`;
   }
 
   const CloudWorkspaceSyncStatus = () => {

@@ -198,7 +198,7 @@ export class AIChatTabs extends WithDisposable(ShadowlessElement) {
         <button
           class="tab-close"
           data-testid="ai-chat-tab-close"
-          aria-label="Close tab"
+          aria-label="关闭标签页"
           @click=${(e: Event) => this._handleClose(e, session.sessionId)}
         >
           ${CloseIcon()}

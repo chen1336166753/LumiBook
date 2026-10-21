@@ -44,7 +44,7 @@ export const SidebarContainer = ({
           />
         ))
       ) : (
-        <div className={styles.sidebarBodyNoSelection}>No Selection</div>
+        <div className={styles.sidebarBodyNoSelection}>暂无选择</div>
       )}
     </div>
   );

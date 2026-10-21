@@ -34,7 +34,7 @@ export const MeetingsWelcomePage = () => {
         </div>
       </div>
       <div className={styles.meetingAppsWrapper}>
-        <img src={meetingApps} alt="meeting-apps" />
+        <img src={meetingApps} alt="会议应用" />
       </div>
 
       <div className={styles.hintsContainer}>

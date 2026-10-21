@@ -60,7 +60,7 @@ export class EdgelessCopilotToolbarEntry extends WithDisposable(LitElement) {
 
   override render() {
     return html`<edgeless-tool-icon-button
-      aria-label="Ask AI"
+      aria-label="询问 AI"
       class="copilot-icon-button"
       data-testid="ask-ai-button"
       @click=${this._onClick}

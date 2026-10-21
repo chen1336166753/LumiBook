@@ -146,14 +146,14 @@ export class AIPanelError extends WithDisposable(LitElement) {
           AIErrorType.Unauthorized,
           () =>
             html` <div class="error-info">
-                You need to login to 识光 Cloud to continue using 识光 AI.
+                需要登录 识光 Cloud 才能继续使用 识光 AI。
               </div>
               <div class="action-button-group">
                 <div @click=${this.config.cancel} class="action-button">
-                  <span>Cancel</span>
+                  <span>取消</span>
                 </div>
                 <div @click=${this.config.login} class="action-button primary">
-                  <span>Login</span>
+                  <span>登录</span>
                 </div>
               </div>`,
         ],
@@ -161,19 +161,17 @@ export class AIPanelError extends WithDisposable(LitElement) {
           AIErrorType.PaymentRequired,
           () =>
             html` <div class="error-info">
-                You've reached the current usage cap for 识光 AI. You can
-                subscribe to 识光 AI(with free 7-day-trial) to continue the AI
-                experience!
+                您已达到 识光 AI 的当前使用额度上限。订阅 识光 AI（含 7 天免费试用）即可继续使用 AI 体验！
               </div>
               <div class="action-button-group">
                 <div @click=${this.config.cancel} class="action-button">
-                  <span>Cancel</span>
+                  <span>取消</span>
                 </div>
                 <div
                   @click=${this.config.upgrade}
                   class="action-button primary"
                 >
-                  <span>Upgrade</span>
+                  <span>升级</span>
                 </div>
               </div>`,
         ],
@@ -183,12 +181,12 @@ export class AIPanelError extends WithDisposable(LitElement) {
         const tip = this.config.error?.message;
         const error = tip
           ? html`<span class="error-tip">
-              An error occurred
+              发生了一个错误
               <affine-tooltip tip-position="bottom-start">
                 ${tip}
               </affine-tooltip>
             </span>`
-          : 'An error occurred';
+          : '发生了一个错误';
         return html`
           <style>
             .error-tip {
@@ -196,11 +194,11 @@ export class AIPanelError extends WithDisposable(LitElement) {
             }
           </style>
           <div class="error-info">
-            ${error}. Please try again later. If this issue persists, please let
-            us know at
+            ${error}。请稍后再试。如果该问题持续存在，请通过
             <a href="mailto:support@toeverything.info">
               support@toeverything.info
             </a>
+            告诉我们。
           </div>
         `;
       }

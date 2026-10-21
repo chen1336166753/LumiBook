@@ -42,7 +42,7 @@ export const StorageProgress = () => {
 
   if (isLoading) {
     if (loadError) {
-      return <ErrorMessage>Load error</ErrorMessage>;
+      return <ErrorMessage>加载失败</ErrorMessage>;
     }
     return <Skeleton height={26} />;
   }

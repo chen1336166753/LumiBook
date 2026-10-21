@@ -52,7 +52,7 @@ const ToggleButton = ({ onToggle }: { onToggle?: () => void }) => {
       size="24"
       onClick={onToggle}
       data-testid="right-sidebar-close"
-      tooltip="Close sidebar"
+      tooltip="关闭侧栏"
     >
       <RightSidebarOpenIcon />
     </IconButton>
