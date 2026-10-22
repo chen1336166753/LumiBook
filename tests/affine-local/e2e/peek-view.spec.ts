@@ -194,7 +194,7 @@ test('can open peek view for embedded frames', async ({ page }) => {
   await surfaceRef.click();
   await surfaceRef.hover();
   await page
-    .locator('affine-toolbar-widget editor-menu-button[aria-label="Open"]')
+    .locator('affine-toolbar-widget editor-menu-button[aria-label="打开"]')
     .click();
   await page
     .locator(

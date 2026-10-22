@@ -164,8 +164,8 @@ test('should preview PDF in embed view', async ({ page }) => {
   const pageCount = portal.locator('.page-count');
   expect(await pageCount.textContent()).toBe('3');
 
-  const prevButton = portal.getByRole('button', { name: 'Prev' });
-  const nextButton = portal.getByRole('button', { name: 'Next' });
+  const prevButton = portal.getByRole('button', { name: '上一页' });
+  const nextButton = portal.getByRole('button', { name: '下一页' });
 
   await nextButton.click();
   expect(await pageCursor.textContent()).toBe('2');
