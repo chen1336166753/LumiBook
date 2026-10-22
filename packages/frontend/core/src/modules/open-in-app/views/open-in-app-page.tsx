@@ -56,7 +56,6 @@ export const OpenInAppPage = ({
         <a href="/" rel="noreferrer" className={styles.affineLogo}>
           <Logo1Icon width={24} height={24} />
         </a>
-
       </div>
 
       <div className={styles.centerContent}>

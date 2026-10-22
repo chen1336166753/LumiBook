@@ -231,8 +231,7 @@ type ErrorProps = {
   showAction?: boolean;
 };
 
-const generalErrorText =
-  '发生了一个错误，如果该问题持续存在，请告诉我们。';
+const generalErrorText = '发生了一个错误，如果该问题持续存在，请告诉我们。';
 
 const GeneralErrorRenderer = (props: ErrorProps = {}) => {
   const contactSupport = () => {

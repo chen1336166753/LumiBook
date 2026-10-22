@@ -161,7 +161,8 @@ export class AIPanelError extends WithDisposable(LitElement) {
           AIErrorType.PaymentRequired,
           () =>
             html` <div class="error-info">
-                您已达到 识光 AI 的当前使用额度上限。订阅 识光 AI（含 7 天免费试用）即可继续使用 AI 体验！
+                您已达到 识光 AI 的当前使用额度上限。订阅 识光 AI（含 7
+                天免费试用）即可继续使用 AI 体验！
               </div>
               <div class="action-button-group">
                 <div @click=${this.config.cancel} class="action-button">

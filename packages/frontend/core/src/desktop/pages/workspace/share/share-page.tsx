@@ -13,7 +13,6 @@ import { type Doc, DocsService } from '@lumibook/core/modules/doc';
 import {
   type Editor,
   type EditorSelector,
-  EditorService,
   EditorsService,
 } from '@lumibook/core/modules/editor';
 import { PeekViewManagerModal } from '@lumibook/core/modules/peek-view';

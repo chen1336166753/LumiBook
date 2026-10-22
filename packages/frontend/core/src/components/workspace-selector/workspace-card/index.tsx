@@ -124,6 +124,7 @@ const useSyncEngineSyncProgress = (meta: WorkspaceMetadata) => {
     (engineState.total - engineState.syncing) / engineState.total;
   const syncing = engineState.syncing > 0 || engineState.syncRetrying;
 
+  let content;
   if (workspace.flavour === 'local') {
     if (!BUILD_CONFIG.isElectron) {
       content = '这是一个本地演示工作区。';
